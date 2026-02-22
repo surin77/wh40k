@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wahapedia WH40k Mirror</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Wahapedia WH40k Mirror</h1>
+      <p>Локальная витрина данных из официального WH40k export.</p>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <label>
+          Таблица
+          <select id="dataset-select"></select>
+        </label>
+
+        <label>
+          Поиск
+          <input id="search-input" type="search" placeholder="Например: Adeptus" />
+        </label>
+
+        <button id="reload-button" type="button">Обновить</button>
+      </section>
+
+      <section class="meta" id="meta"></section>
+
+      <section class="table-wrap">
+        <table id="data-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
