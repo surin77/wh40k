@@ -4,18 +4,31 @@ const unitSearchEl = document.querySelector("#unit-search");
 const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
 const unitTitleEl = document.querySelector("#unit-title");
-const unitSubtitleEl = document.querySelector("#unit-subtitle");
-const profileBodyEl = document.querySelector("#profile-table tbody");
+const unitMetaEl = document.querySelector("#unit-meta");
+const roleBadgeEl = document.querySelector("#role-badge");
+const statlineEl = document.querySelector("#statline");
+const rangedHeadEl = document.querySelector("#ranged-table thead");
+const rangedBodyEl = document.querySelector("#ranged-table tbody");
+const meleeHeadEl = document.querySelector("#melee-table thead");
+const meleeBodyEl = document.querySelector("#melee-table tbody");
+const abilitiesListEl = document.querySelector("#abilities-list");
 const keywordsEl = document.querySelector("#keywords");
-const abilitiesHeadEl = document.querySelector("#abilities-table thead");
-const abilitiesBodyEl = document.querySelector("#abilities-table tbody");
+const compositionEl = document.querySelector("#composition");
 
-const REQUIRED_FILES = ["Factions.csv", "Datasheets.csv", "Datasheets_keywords.csv", "Datasheets_abilities.csv"];
+const REQUIRED_FILES = [
+  "Factions.csv",
+  "Datasheets.csv",
+  "Datasheets_models.csv",
+  "Datasheets_wargear.csv",
+  "Datasheets_keywords.csv",
+  "Datasheets_abilities.csv",
+  "Abilities.csv",
+];
 
 let indexData = null;
+let parserWarnings = [];
 let catalog = { factions: [], units: [] };
 let currentUnitId = null;
-let parserWarnings = [];
 
 function escapeHtml(value) {
   return String(value)
@@ -32,8 +45,23 @@ function formatUtc(dateLike) {
   return dt.toLocaleString("ru-RU", { timeZone: "UTC" }) + " UTC";
 }
 
+function stripHtml(value) {
+  const raw = String(value || "");
+  return raw
+    .replace(/<br\s*\/?\s*>/gi, "\n")
+    .replace(/<li>/gi, "- ")
+    .replace(/<\/li>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .trim();
+}
+
 function normalized(text) {
   return String(text || "")
+    .replace(/^\uFEFF/, "")
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
@@ -41,10 +69,10 @@ function normalized(text) {
 
 function pickKey(row, candidates) {
   const keys = Object.keys(row || {});
-  const map = new Map(keys.map((k) => [normalized(k), k]));
+  const normalizedMap = new Map(keys.map((key) => [normalized(key), key]));
   for (const candidate of candidates) {
-    const found = map.get(normalized(candidate));
-    if (found) return found;
+    const match = normalizedMap.get(normalized(candidate));
+    if (match) return match;
   }
   return null;
 }
@@ -59,27 +87,27 @@ function parseCsvWithDelimiter(text, delimiter) {
     header: true,
     delimiter,
     skipEmptyLines: "greedy",
-    transformHeader: (h) => String(h || "").trim(),
+    transformHeader: (header) => String(header || "").replace(/^\uFEFF/, "").trim(),
   });
 }
 
 function parseCsvSmart(text, fileName) {
-  const delimiters = [";", ",", "\t", "|"];
+  const delimiters = ["|", ";", ",", "\t"];
   const attempts = delimiters.map((delimiter) => {
     const parsed = parseCsvWithDelimiter(text, delimiter);
     const fields = parsed.meta.fields ?? [];
-    const severeErrors = parsed.errors.filter((e) => e.type !== "FieldMismatch").length;
-    const mismatchErrors = parsed.errors.filter((e) => e.type === "FieldMismatch").length;
-    const score = fields.length * 1000 + parsed.data.length - severeErrors * 10000 - mismatchErrors;
-    return { delimiter, parsed, score, severeErrors, mismatchErrors };
+    const severeErrors = parsed.errors.filter((error) => error.type !== "FieldMismatch").length;
+    const mismatchErrors = parsed.errors.filter((error) => error.type === "FieldMismatch").length;
+    const score = fields.length * 10000 + parsed.data.length - severeErrors * 100000 - mismatchErrors;
+    return { delimiter, parsed, fields, severeErrors, mismatchErrors, score };
   });
 
   attempts.sort((a, b) => b.score - a.score);
   const best = attempts[0];
 
-  if (!best || best.severeErrors > 0) {
-    const err = best?.parsed?.errors?.[0]?.message || "Cannot parse csv";
-    throw new Error(`${fileName}: ${err}`);
+  if (!best || best.severeErrors > 0 || !best.fields.length) {
+    const reason = best?.parsed?.errors?.[0]?.message || "Cannot parse csv";
+    throw new Error(`${fileName}: ${reason}`);
   }
 
   if (best.mismatchErrors > 0) {
@@ -91,13 +119,13 @@ function parseCsvSmart(text, fileName) {
       const copy = {};
       for (const [key, value] of Object.entries(row)) {
         if (key === "__parsed_extra") continue;
-        copy[String(key).trim()] = value;
+        copy[String(key || "").replace(/^\uFEFF/, "").trim()] = String(value ?? "").trim();
       }
       return copy;
     })
-    .filter((row) => Object.values(row).some((v) => String(v ?? "").trim() !== ""));
+    .filter((row) => Object.values(row).some((value) => value !== ""));
 
-  return { rows, fields: best.parsed.meta.fields ?? [] };
+  return { rows, fields: best.fields };
 }
 
 async function loadCsv(fileName) {
@@ -112,52 +140,151 @@ async function loadCsv(fileName) {
 function renderMeta() {
   const changed = indexData.changed_files?.length ? indexData.changed_files.join(", ") : "изменений нет";
   const skipped = indexData.skipped_missing_files?.length
-    ? `<br /><strong>Пропущены (404):</strong> ${escapeHtml(indexData.skipped_missing_files.join(", "))}`
+    ? `<br><strong>Пропущены (404):</strong> ${escapeHtml(indexData.skipped_missing_files.join(", "))}`
     : "";
   const warnings = parserWarnings.length
-    ? `<br /><strong>Предупреждения парсера:</strong> ${escapeHtml(parserWarnings.join(" | "))}`
+    ? `<br><strong>Предупреждения парсинга:</strong> ${escapeHtml(parserWarnings.join(" | "))}`
     : "";
 
-  metaEl.innerHTML = `
-    <strong>Источник:</strong> ${escapeHtml(indexData.source || "Wahapedia")}
-    <br /><strong>Последняя проверка:</strong> ${escapeHtml(formatUtc(indexData.updated_at_utc))}
-    <br /><strong>Файлы с изменениями:</strong> ${escapeHtml(changed)}${skipped}${warnings}
-  `;
+  metaEl.innerHTML = `<strong>Источник:</strong> ${escapeHtml(indexData.source || "Wahapedia")}
+    <br><strong>Обновлено:</strong> ${escapeHtml(formatUtc(indexData.updated_at_utc))}
+    <br><strong>Изменения:</strong> ${escapeHtml(changed)}${skipped}${warnings}`;
 }
 
-function renderUnitProfile(unit) {
-  unitTitleEl.textContent = unit.name;
-  unitSubtitleEl.textContent = `Фракция: ${unit.factionName}`;
+function parseWeaponTags(description) {
+  const clean = stripHtml(description);
+  if (!clean) return [];
+  return clean
+    .split(/[\n,]+/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .slice(0, 6);
+}
 
-  const rows = Object.entries(unit.raw)
-    .filter(([, value]) => String(value ?? "").trim() !== "")
-    .slice(0, 40)
-    .map(([key, value]) => `<tr><td><strong>${escapeHtml(key)}</strong></td><td>${escapeHtml(value)}</td></tr>`)
-    .join("");
-  profileBodyEl.innerHTML = rows || "<tr><td colspan=\"2\" class=\"note\">Нет полей профиля</td></tr>";
+function renderWeaponTable(type, weapons) {
+  const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
+  const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
 
-  keywordsEl.innerHTML = unit.keywords.length
-    ? unit.keywords.map((k) => `<span class=\"chip\">${escapeHtml(k)}</span>`).join("")
-    : '<span class="note">Нет keywords</span>';
+  head.innerHTML = `
+    <tr>
+      <th>Weapon</th>
+      <th>Range</th>
+      <th>A</th>
+      <th>${type === "Ranged" ? "BS" : "WS"}</th>
+      <th>S</th>
+      <th>AP</th>
+      <th>D</th>
+    </tr>`;
 
-  const abilityRows = unit.abilities.slice(0, 200);
-  if (!abilityRows.length) {
-    abilitiesHeadEl.innerHTML = "<tr><th>Ability</th><th>Description</th></tr>";
-    abilitiesBodyEl.innerHTML = '<tr><td colspan="2" class="note">Нет abilities</td></tr>';
+  if (!weapons.length) {
+    body.innerHTML = '<tr><td colspan="7" class="note">Нет данных</td></tr>';
     return;
   }
 
-  const aNameKey = pickKey(abilityRows[0], ["ability", "name", "ability_name", "title"]);
-  const aDescKey = pickKey(abilityRows[0], ["description", "desc", "text", "rule"]);
+  body.innerHTML = weapons
+    .slice(0, 60)
+    .map((weapon) => {
+      const tags = parseWeaponTags(weapon.description);
+      const tagsHtml = tags.length
+        ? `<div class="tag-list">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>`
+        : "";
 
-  abilitiesHeadEl.innerHTML = "<tr><th>Ability</th><th>Description</th></tr>";
-  abilitiesBodyEl.innerHTML = abilityRows
-    .map((row) => {
-      const name = aNameKey ? row[aNameKey] : "";
-      const desc = aDescKey ? row[aDescKey] : JSON.stringify(row);
-      return `<tr><td>${escapeHtml(name || "-")}</td><td>${escapeHtml(desc || "-")}</td></tr>`;
+      return `<tr>
+        <td>${escapeHtml(weapon.name || "-")}${tagsHtml}</td>
+        <td>${escapeHtml(weapon.range || "-")}</td>
+        <td>${escapeHtml(weapon.A || "-")}</td>
+        <td>${escapeHtml(weapon.BS_WS || "-")}</td>
+        <td>${escapeHtml(weapon.S || "-")}</td>
+        <td>${escapeHtml(weapon.AP || "-")}</td>
+        <td>${escapeHtml(weapon.D || "-")}</td>
+      </tr>`;
     })
     .join("");
+}
+
+function renderAbilities(abilities) {
+  if (!abilities.length) {
+    abilitiesListEl.innerHTML = '<p class="note">Нет данных</p>';
+    return;
+  }
+
+  abilitiesListEl.innerHTML = abilities
+    .slice(0, 120)
+    .map((ability) => {
+      const title = ability.name || "Unnamed ability";
+      const type = ability.type || "Datasheet";
+      const desc = stripHtml(ability.description || "");
+      return `<div class="ability">
+        <div class="ability-top">${escapeHtml(type)}</div>
+        <div class="ability-name">${escapeHtml(title)}</div>
+        <div class="ability-desc">${escapeHtml(desc || "-")}</div>
+      </div>`;
+    })
+    .join("");
+}
+
+function renderKeywords(keywords) {
+  if (!keywords.length) {
+    keywordsEl.innerHTML = '<span class="note">Нет keywords</span>';
+    return;
+  }
+
+  keywordsEl.innerHTML = keywords
+    .slice(0, 80)
+    .map((keyword) => `<span class="chip">${escapeHtml(keyword)}</span>`)
+    .join("");
+}
+
+function renderComposition(unit) {
+  const chunks = [];
+  if (unit.loadout) {
+    chunks.push(`<p><strong>Loadout:</strong><br>${escapeHtml(stripHtml(unit.loadout))}</p>`);
+  }
+  if (unit.legend) {
+    chunks.push(`<p><strong>Legend:</strong><br>${escapeHtml(stripHtml(unit.legend))}</p>`);
+  }
+  if (unit.damaged_description) {
+    chunks.push(`<p><strong>Damaged:</strong><br>${escapeHtml(stripHtml(unit.damaged_description))}</p>`);
+  }
+  if (!chunks.length) {
+    chunks.push('<p class="note">Нет дополнительных описаний</p>');
+  }
+
+  compositionEl.innerHTML = chunks.join("");
+}
+
+function renderStatline(unit) {
+  const stats = [
+    ["M", unit.stats.M],
+    ["T", unit.stats.T],
+    ["Sv", unit.stats.Sv],
+    ["W", unit.stats.W],
+    ["Ld", unit.stats.Ld],
+    ["OC", unit.stats.OC],
+  ];
+
+  const html = stats
+    .map(([k, v]) => `<div class="stat"><div class="k">${escapeHtml(k)}</div><div class="v">${escapeHtml(v || "-")}</div></div>`)
+    .join("");
+
+  const invuln = unit.stats.inv_sv
+    ? `<div class="stat invuln"><div class="k">Inv</div><div class="v">${escapeHtml(unit.stats.inv_sv)}</div></div>`
+    : "";
+
+  statlineEl.innerHTML = html + invuln;
+}
+
+function renderUnit(unit) {
+  unitTitleEl.textContent = unit.name || "Unknown unit";
+  unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}`;
+  roleBadgeEl.textContent = unit.role || "Role n/a";
+
+  renderStatline(unit);
+  renderWeaponTable("Ranged", unit.weapons.ranged);
+  renderWeaponTable("Melee", unit.weapons.melee);
+  renderAbilities(unit.abilities);
+  renderKeywords(unit.keywords);
+  renderComposition(unit);
 }
 
 function getFilteredUnits() {
@@ -165,7 +292,7 @@ function getFilteredUnits() {
   const query = unitSearchEl.value.trim().toLowerCase();
 
   return catalog.units.filter((unit) => {
-    if (faction !== "__all__" && unit.factionName !== faction) return false;
+    if (faction && faction !== "__all__" && unit.factionName !== faction) return false;
     if (!query) return true;
     return unit.name.toLowerCase().includes(query);
   });
@@ -175,30 +302,20 @@ function renderUnitList() {
   const units = getFilteredUnits();
 
   if (!units.length) {
-    unitListEl.innerHTML = '<p class="note">Нет юнитов по текущему фильтру.</p>';
-    currentUnitId = null;
-    unitTitleEl.textContent = "Юнит не найден";
-    unitSubtitleEl.textContent = "";
-    profileBodyEl.innerHTML = '<tr><td colspan="2" class="note">Нет данных</td></tr>';
-    keywordsEl.innerHTML = '<span class="note">Нет данных</span>';
-    abilitiesHeadEl.innerHTML = "";
-    abilitiesBodyEl.innerHTML = "";
+    unitListEl.innerHTML = '<p class="note">Нет юнитов по фильтру.</p>';
     return;
   }
 
-  if (!currentUnitId || !units.some((u) => u.id === currentUnitId)) {
+  if (!currentUnitId || !units.some((unit) => unit.id === currentUnitId)) {
     currentUnitId = units[0].id;
   }
 
   unitListEl.innerHTML = units
     .map((unit) => {
       const active = unit.id === currentUnitId ? "active" : "";
-      return `<button class=\"unit-btn ${active}\" data-unit-id=\"${escapeHtml(unit.id)}\">${escapeHtml(unit.name)}</button>`;
+      return `<button class="unit-btn ${active}" data-unit-id="${escapeHtml(unit.id)}">${escapeHtml(unit.name)}</button>`;
     })
     .join("");
-
-  const activeUnit = units.find((u) => u.id === currentUnitId);
-  if (activeUnit) renderUnitProfile(activeUnit);
 
   for (const button of unitListEl.querySelectorAll(".unit-btn")) {
     button.addEventListener("click", () => {
@@ -206,81 +323,178 @@ function renderUnitList() {
       renderUnitList();
     });
   }
+
+  const selected = units.find((unit) => unit.id === currentUnitId);
+  if (selected) renderUnit(selected);
+}
+
+function chooseAbilityDefinition(abilityDefs, abilityId, factionId) {
+  const list = abilityDefs.get(abilityId);
+  if (!list || !list.length) return null;
+
+  const sameFaction = list.find((item) => item.faction_id === factionId);
+  if (sameFaction) return sameFaction;
+
+  const common = list.find((item) => !item.faction_id);
+  if (common) return common;
+
+  return list[0];
 }
 
 function buildCatalog(datasets) {
   const factionsRows = datasets.get("Factions.csv")?.rows || [];
   const datasheetsRows = datasets.get("Datasheets.csv")?.rows || [];
+  const modelsRows = datasets.get("Datasheets_models.csv")?.rows || [];
+  const wargearRows = datasets.get("Datasheets_wargear.csv")?.rows || [];
   const keywordsRows = datasets.get("Datasheets_keywords.csv")?.rows || [];
-  const abilitiesRows = datasets.get("Datasheets_abilities.csv")?.rows || [];
+  const datasheetAbilitiesRows = datasets.get("Datasheets_abilities.csv")?.rows || [];
+  const abilityRows = datasets.get("Abilities.csv")?.rows || [];
 
   const factionById = new Map();
   for (const row of factionsRows) {
-    const id = firstNonEmpty(row, ["id", "faction_id", "ID"]);
-    const name = firstNonEmpty(row, ["name", "faction", "title", "Name"]);
+    const id = firstNonEmpty(row, ["id"]);
+    const name = firstNonEmpty(row, ["name"]);
     if (id && name) factionById.set(id, name);
   }
 
+  const modelsByDsId = new Map();
+  for (const row of modelsRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    if (!dsId) continue;
+    if (!modelsByDsId.has(dsId)) modelsByDsId.set(dsId, []);
+    modelsByDsId.get(dsId).push(row);
+  }
+
+  for (const [dsId, lines] of modelsByDsId.entries()) {
+    lines.sort((a, b) => Number(firstNonEmpty(a, ["line"]) || "0") - Number(firstNonEmpty(b, ["line"]) || "0"));
+    modelsByDsId.set(dsId, lines);
+  }
+
+  const wargearByDsId = new Map();
+  for (const row of wargearRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    if (!dsId) continue;
+    if (!wargearByDsId.has(dsId)) wargearByDsId.set(dsId, []);
+    wargearByDsId.get(dsId).push(row);
+  }
+
+  const keywordsByDsId = new Map();
+  for (const row of keywordsRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    const keyword = firstNonEmpty(row, ["keyword"]);
+    if (!dsId || !keyword) continue;
+    if (!keywordsByDsId.has(dsId)) keywordsByDsId.set(dsId, []);
+    keywordsByDsId.get(dsId).push(keyword);
+  }
+
+  const abilityDefs = new Map();
+  for (const row of abilityRows) {
+    const id = firstNonEmpty(row, ["id"]);
+    if (!id) continue;
+    if (!abilityDefs.has(id)) abilityDefs.set(id, []);
+    abilityDefs.get(id).push({
+      id,
+      name: firstNonEmpty(row, ["name"]),
+      legend: firstNonEmpty(row, ["legend"]),
+      faction_id: firstNonEmpty(row, ["faction_id"]),
+      description: firstNonEmpty(row, ["description"]),
+    });
+  }
+
+  const abilitiesByDsId = new Map();
+  for (const row of datasheetAbilitiesRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    if (!dsId) continue;
+    if (!abilitiesByDsId.has(dsId)) abilitiesByDsId.set(dsId, []);
+    abilitiesByDsId.get(dsId).push(row);
+  }
+
   const units = [];
-  const unitById = new Map();
 
   for (const row of datasheetsRows) {
-    const id = firstNonEmpty(row, ["id", "datasheet_id", "ID"]);
-    const name = firstNonEmpty(row, ["name", "datasheet_name", "title", "label", "Name"]);
-    const factionId = firstNonEmpty(row, ["faction_id", "factionid", "faction"]);
-
+    const id = firstNonEmpty(row, ["id"]);
+    const name = firstNonEmpty(row, ["name"]);
+    const factionId = firstNonEmpty(row, ["faction_id"]);
     if (!id || !name) continue;
 
-    const factionName = factionById.get(factionId) || factionId || "Unknown";
+    const modelLines = modelsByDsId.get(id) || [];
+    const primaryModel = modelLines[0] || {};
+
+    const weapons = (wargearByDsId.get(id) || []).map((item) => ({
+      name: firstNonEmpty(item, ["name"]),
+      type: firstNonEmpty(item, ["type"]),
+      description: firstNonEmpty(item, ["description"]),
+      range: firstNonEmpty(item, ["range"]),
+      A: firstNonEmpty(item, ["A"]),
+      BS_WS: firstNonEmpty(item, ["BS_WS"]),
+      S: firstNonEmpty(item, ["S"]),
+      AP: firstNonEmpty(item, ["AP"]),
+      D: firstNonEmpty(item, ["D"]),
+    }));
+
+    const ranged = weapons.filter((weapon) => weapon.type.toLowerCase() === "ranged");
+    const melee = weapons.filter((weapon) => weapon.type.toLowerCase() === "melee");
+
+    const resolvedAbilities = (abilitiesByDsId.get(id) || []).map((item) => {
+      const abilityId = firstNonEmpty(item, ["ability_id"]);
+      const inlineName = firstNonEmpty(item, ["name"]);
+      const inlineDescription = firstNonEmpty(item, ["description"]);
+      const type = firstNonEmpty(item, ["type"]);
+      const def = abilityId ? chooseAbilityDefinition(abilityDefs, abilityId, factionId) : null;
+
+      return {
+        type: type || "Datasheet",
+        name: inlineName || def?.name || "",
+        description: inlineDescription || def?.description || def?.legend || "",
+      };
+    });
+
+    const keywords = [...new Set((keywordsByDsId.get(id) || []).map((k) => k.trim()).filter(Boolean))].sort((a, b) =>
+      a.localeCompare(b)
+    );
+
     const unit = {
       id,
       name,
       factionId,
-      factionName,
-      raw: row,
-      keywords: [],
-      abilities: [],
+      factionName: factionById.get(factionId) || factionId || "Unknown",
+      role: firstNonEmpty(row, ["role"]),
+      baseSize: firstNonEmpty(primaryModel, ["base_size", "base_size_descr"]),
+      legend: firstNonEmpty(row, ["legend"]),
+      loadout: firstNonEmpty(row, ["loadout"]),
+      damaged_description: firstNonEmpty(row, ["damaged_description"]),
+      link: firstNonEmpty(row, ["link"]),
+      stats: {
+        M: firstNonEmpty(primaryModel, ["M"]),
+        T: firstNonEmpty(primaryModel, ["T"]),
+        Sv: firstNonEmpty(primaryModel, ["Sv"]),
+        inv_sv: firstNonEmpty(primaryModel, ["inv_sv"]),
+        W: firstNonEmpty(primaryModel, ["W"]),
+        Ld: firstNonEmpty(primaryModel, ["Ld"]),
+        OC: firstNonEmpty(primaryModel, ["OC"]),
+      },
+      weapons: {
+        ranged,
+        melee,
+      },
+      abilities: resolvedAbilities.filter((ability) => ability.name || ability.description),
+      keywords,
     };
+
     units.push(unit);
-    unitById.set(id, unit);
-  }
-
-  for (const row of keywordsRows) {
-    const dsId = firstNonEmpty(row, ["datasheet_id", "id", "sheet_id", "datasheet"]);
-    const keyword = firstNonEmpty(row, ["keyword", "name", "value", "tag"]);
-    if (!dsId || !keyword) continue;
-    const unit = unitById.get(dsId);
-    if (!unit) continue;
-    if (!unit.keywords.includes(keyword)) unit.keywords.push(keyword);
-  }
-
-  for (const row of abilitiesRows) {
-    const dsId = firstNonEmpty(row, ["datasheet_id", "id", "sheet_id", "datasheet"]);
-    if (!dsId) continue;
-    const unit = unitById.get(dsId);
-    if (!unit) continue;
-    unit.abilities.push(row);
-  }
-
-  for (const unit of units) {
-    unit.keywords.sort((a, b) => a.localeCompare(b));
   }
 
   units.sort((a, b) => a.name.localeCompare(b.name));
 
-  const factionNames = [...new Set(units.map((u) => u.factionName))].sort((a, b) =>
-    a.localeCompare(b)
-  );
-
-  return { factions: factionNames, units };
+  const factions = [...new Set(units.map((unit) => unit.factionName))].sort((a, b) => a.localeCompare(b));
+  return { factions, units };
 }
 
 function populateFactionSelect() {
-  const options = ['<option value="__all__">Все фракции</option>'];
-  for (const faction of catalog.factions) {
-    options.push(`<option value="${escapeHtml(faction)}">${escapeHtml(faction)}</option>`);
-  }
-  factionSelectEl.innerHTML = options.join("");
+  factionSelectEl.innerHTML = [
+    '<option value="__all__">Все фракции</option>',
+    ...catalog.factions.map((faction) => `<option value="${escapeHtml(faction)}">${escapeHtml(faction)}</option>`),
+  ].join("");
 }
 
 async function loadIndexAndInit() {
@@ -294,9 +508,9 @@ async function loadIndexAndInit() {
   indexData = await response.json();
   const files = Object.keys(indexData.files || {});
 
-  const missingRequired = REQUIRED_FILES.filter((file) => !files.includes(file));
-  if (missingRequired.length) {
-    throw new Error(`Не хватает обязательных CSV: ${missingRequired.join(", ")}`);
+  const missingFiles = REQUIRED_FILES.filter((file) => !files.includes(file));
+  if (missingFiles.length) {
+    throw new Error(`Не хватает CSV: ${missingFiles.join(", ")}`);
   }
 
   const datasets = new Map();
@@ -307,7 +521,7 @@ async function loadIndexAndInit() {
 
   catalog = buildCatalog(datasets);
   if (!catalog.units.length) {
-    throw new Error("Не удалось собрать каталог юнитов из CSV");
+    throw new Error("Не удалось собрать каталог юнитов");
   }
 
   populateFactionSelect();
@@ -317,7 +531,6 @@ async function loadIndexAndInit() {
 
 factionSelectEl.addEventListener("change", renderUnitList);
 unitSearchEl.addEventListener("input", renderUnitList);
-
 reloadBtn.addEventListener("click", () => {
   loadIndexAndInit().catch((error) => {
     metaEl.textContent = `Ошибка обновления: ${error.message}`;

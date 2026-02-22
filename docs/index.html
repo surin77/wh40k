@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Wahapedia WH40k Mirror</title>
+    <title>WH40k Datasheet Viewer</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <h1>Wahapedia WH40k Mirror</h1>
-      <p>Просмотр данных WH40k: фракции, юниты, способности.</p>
+      <div class="topbar-inner">
+        <h1>WH40k Datasheet Viewer</h1>
+        <p>Данные из Wahapedia export. Представление в стиле оригинального даташита.</p>
+      </div>
     </header>
 
-    <main class="container">
-      <section class="controls">
+    <main class="page">
+      <section class="toolbar">
         <label>
           Фракция
           <select id="faction-select"></select>
@@ -21,37 +23,67 @@
 
         <label>
           Поиск юнита
-          <input id="unit-search" type="search" placeholder="Например: Intercessor" />
+          <input id="unit-search" type="search" placeholder="Например: Culexus Assassin" />
         </label>
 
-        <button id="reload-button" type="button">Обновить данные</button>
+        <button id="reload-button" type="button">Обновить</button>
       </section>
 
-      <section class="meta" id="meta"></section>
+      <section id="meta" class="meta"></section>
 
-      <section class="layout">
-        <aside class="panel">
-          <h2>Юниты</h2>
+      <section class="workspace">
+        <aside class="sidebar panel">
+          <h2>Datasheets</h2>
           <div id="unit-list" class="unit-list"></div>
         </aside>
 
-        <article class="panel detail">
-          <h2 id="unit-title">Выберите юнит</h2>
-          <p id="unit-subtitle" class="subtitle"></p>
+        <article class="panel datasheet">
+          <header class="sheet-header">
+            <div>
+              <h2 id="unit-title">Выберите юнит</h2>
+              <p id="unit-meta" class="muted"></p>
+            </div>
+            <div id="role-badge" class="role-badge"></div>
+          </header>
 
-          <h3>Профиль</h3>
-          <table class="kv-table" id="profile-table">
-            <tbody></tbody>
-          </table>
+          <section id="statline" class="statline"></section>
 
-          <h3>Keywords</h3>
-          <div id="keywords" class="chips"></div>
+          <section class="sheet-grid">
+            <div>
+              <section class="block">
+                <h3>Ranged Weapons</h3>
+                <table id="ranged-table" class="data-table">
+                  <thead></thead>
+                  <tbody></tbody>
+                </table>
+              </section>
 
-          <h3>Abilities</h3>
-          <table class="data-table" id="abilities-table">
-            <thead></thead>
-            <tbody></tbody>
-          </table>
+              <section class="block">
+                <h3>Melee Weapons</h3>
+                <table id="melee-table" class="data-table">
+                  <thead></thead>
+                  <tbody></tbody>
+                </table>
+              </section>
+            </div>
+
+            <div>
+              <section class="block">
+                <h3>Abilities</h3>
+                <div id="abilities-list" class="abilities-list"></div>
+              </section>
+
+              <section class="block">
+                <h3>Keywords</h3>
+                <div id="keywords" class="chips"></div>
+              </section>
+
+              <section class="block">
+                <h3>Unit Composition / Loadout</h3>
+                <div id="composition" class="text-block"></div>
+              </section>
+            </div>
+          </section>
         </article>
       </section>
     </main>
