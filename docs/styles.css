@@ -5,6 +5,7 @@
   --line: #d8cdb9;
   --text: #2f2617;
   --accent: #8c5a10;
+  --accent-dark: #6f470e;
 }
 
 * {
@@ -38,7 +39,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -46,7 +47,7 @@ body {
 .controls {
   display: grid;
   gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   align-items: end;
 }
 
@@ -70,9 +71,9 @@ body {
 .controls button {
   cursor: pointer;
   font-weight: 700;
-  color: white;
+  color: #fff;
   background: var(--accent);
-  border-color: #6f470e;
+  border-color: var(--accent-dark);
 }
 
 .meta {
@@ -84,34 +85,102 @@ body {
   font-size: 0.95rem;
 }
 
-.table-wrap {
+.layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 320px 1fr;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  padding: 0.8rem;
+}
+
+.panel h2,
+.panel h3 {
+  margin: 0 0 0.6rem;
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  color: #5f4c2f;
+}
+
+.unit-list {
+  max-height: 70vh;
   overflow: auto;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.unit-btn {
+  text-align: left;
+  padding: 0.55rem 0.6rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel);
+  background: #fcf7ed;
+  color: var(--text);
+  cursor: pointer;
 }
 
-table {
+.unit-btn:hover {
+  background: #f7eddc;
+}
+
+.unit-btn.active {
+  background: #ecd6af;
+  border-color: #c9a86f;
+}
+
+.kv-table,
+.data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
 }
 
-th,
-td {
+.kv-table td,
+.data-table td,
+.data-table th {
   border-bottom: 1px solid #eee4d2;
   padding: 0.45rem;
   text-align: left;
   vertical-align: top;
 }
 
-th {
-  position: sticky;
-  top: 0;
+.data-table th {
   background: #f8f2e6;
-  z-index: 1;
 }
 
-tr:hover td {
-  background: #fdf7ea;
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+}
+
+.chip {
+  border: 1px solid #d1b480;
+  background: #f5e5c7;
+  color: #4f3712;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.84rem;
+}
+
+.note {
+  color: #6f470e;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .unit-list {
+    max-height: 38vh;
+  }
 }

@@ -9,31 +9,50 @@
   <body>
     <header class="topbar">
       <h1>Wahapedia WH40k Mirror</h1>
-      <p>Локальная витрина данных из официального WH40k export.</p>
+      <p>Просмотр данных WH40k: фракции, юниты, способности.</p>
     </header>
 
     <main class="container">
       <section class="controls">
         <label>
-          Таблица
-          <select id="dataset-select"></select>
+          Фракция
+          <select id="faction-select"></select>
         </label>
 
         <label>
-          Поиск
-          <input id="search-input" type="search" placeholder="Например: Adeptus" />
+          Поиск юнита
+          <input id="unit-search" type="search" placeholder="Например: Intercessor" />
         </label>
 
-        <button id="reload-button" type="button">Обновить</button>
+        <button id="reload-button" type="button">Обновить данные</button>
       </section>
 
       <section class="meta" id="meta"></section>
 
-      <section class="table-wrap">
-        <table id="data-table">
-          <thead></thead>
-          <tbody></tbody>
-        </table>
+      <section class="layout">
+        <aside class="panel">
+          <h2>Юниты</h2>
+          <div id="unit-list" class="unit-list"></div>
+        </aside>
+
+        <article class="panel detail">
+          <h2 id="unit-title">Выберите юнит</h2>
+          <p id="unit-subtitle" class="subtitle"></p>
+
+          <h3>Профиль</h3>
+          <table class="kv-table" id="profile-table">
+            <tbody></tbody>
+          </table>
+
+          <h3>Keywords</h3>
+          <div id="keywords" class="chips"></div>
+
+          <h3>Abilities</h3>
+          <table class="data-table" id="abilities-table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </article>
       </section>
     </main>
 
