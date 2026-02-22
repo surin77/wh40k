@@ -167,6 +167,27 @@ function parseWeaponTags(description) {
     .slice(0, 6);
 }
 
+function normalizeRuleName(text) {
+  return normalized(String(text || "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim());
+}
+
+function simplifyRuleName(text) {
+  return String(text || "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/\s+\d+\+?$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function chooseByFaction(definitions, factionId) {
+  if (!definitions || !definitions.length) return null;
+  const sameFaction = definitions.find((item) => item.faction_id === factionId);
+  if (sameFaction) return sameFaction;
+  const common = definitions.find((item) => !item.faction_id);
+  if (common) return common;
+  return definitions[0];
+}
+
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
@@ -190,9 +211,21 @@ function renderWeaponTable(type, weapons) {
   body.innerHTML = weapons
     .slice(0, 60)
     .map((weapon) => {
-      const tags = parseWeaponTags(weapon.description);
+      const tags = weapon.ruleTags || [];
       const tagsHtml = tags.length
-        ? `<div class="tag-list">${tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>`
+        ? `<div class="tag-list">${tags
+            .map((tag) => {
+              const hasTip = Boolean(tag.tooltip);
+              const cls = hasTip ? "kw-link weapon-rule" : "kw-link weapon-rule disabled";
+              const body = hasTip ? tag.tooltip : "Описание правила не найдено в источнике.";
+              return `<button
+                type="button"
+                class="${cls}"
+                data-tip-title="${escapeHtml(tag.label || "")}"
+                data-tip-body="${escapeHtml(body)}"
+              >${escapeHtml(tag.label || "")}</button>`;
+            })
+            .join("")}</div>`
         : "";
 
       return `<tr>
@@ -467,17 +500,32 @@ function buildCatalog(datasets) {
   }
 
   const abilityDefs = new Map();
+  const abilityDefsByName = new Map();
   for (const row of abilityRows) {
     const id = firstNonEmpty(row, ["id"]);
-    if (!id) continue;
-    if (!abilityDefs.has(id)) abilityDefs.set(id, []);
-    abilityDefs.get(id).push({
+    const name = firstNonEmpty(row, ["name"]);
+    const entry = {
       id,
-      name: firstNonEmpty(row, ["name"]),
+      name,
       legend: firstNonEmpty(row, ["legend"]),
       faction_id: firstNonEmpty(row, ["faction_id"]),
       description: firstNonEmpty(row, ["description"]),
-    });
+    };
+
+    if (!id) continue;
+    if (!abilityDefs.has(id)) abilityDefs.set(id, []);
+    abilityDefs.get(id).push(entry);
+
+    const k1 = normalizeRuleName(name);
+    if (k1) {
+      if (!abilityDefsByName.has(k1)) abilityDefsByName.set(k1, []);
+      abilityDefsByName.get(k1).push(entry);
+    }
+    const k2 = normalizeRuleName(simplifyRuleName(name));
+    if (k2 && k2 !== k1) {
+      if (!abilityDefsByName.has(k2)) abilityDefsByName.set(k2, []);
+      abilityDefsByName.get(k2).push(entry);
+    }
   }
 
   const abilitiesByDsId = new Map();
@@ -499,17 +547,34 @@ function buildCatalog(datasets) {
     const modelLines = modelsByDsId.get(id) || [];
     const primaryModel = modelLines[0] || {};
 
-    const weapons = (wargearByDsId.get(id) || []).map((item) => ({
-      name: firstNonEmpty(item, ["name"]),
-      type: firstNonEmpty(item, ["type"]),
-      description: firstNonEmpty(item, ["description"]),
-      range: firstNonEmpty(item, ["range"]),
-      A: firstNonEmpty(item, ["A"]),
-      BS_WS: firstNonEmpty(item, ["BS_WS"]),
-      S: firstNonEmpty(item, ["S"]),
-      AP: firstNonEmpty(item, ["AP"]),
-      D: firstNonEmpty(item, ["D"]),
-    }));
+    const weapons = (wargearByDsId.get(id) || []).map((item) => {
+      const description = firstNonEmpty(item, ["description"]);
+      const ruleTags = parseWeaponTags(description).map((label) => {
+        const exactKey = normalizeRuleName(label);
+        const simpleKey = normalizeRuleName(simplifyRuleName(label));
+        const found = chooseByFaction(
+          abilityDefsByName.get(exactKey) || abilityDefsByName.get(simpleKey) || [],
+          factionId
+        );
+        return {
+          label,
+          tooltip: found ? stripHtml(found.description || found.legend || "") : "",
+        };
+      });
+
+      return {
+        name: firstNonEmpty(item, ["name"]),
+        type: firstNonEmpty(item, ["type"]),
+        description,
+        range: firstNonEmpty(item, ["range"]),
+        A: firstNonEmpty(item, ["A"]),
+        BS_WS: firstNonEmpty(item, ["BS_WS"]),
+        S: firstNonEmpty(item, ["S"]),
+        AP: firstNonEmpty(item, ["AP"]),
+        D: firstNonEmpty(item, ["D"]),
+        ruleTags,
+      };
+    });
 
     const ranged = weapons.filter((weapon) => weapon.type.toLowerCase() === "ranged");
     const melee = weapons.filter((weapon) => weapon.type.toLowerCase() === "melee");

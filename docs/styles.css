@@ -331,6 +331,12 @@ body {
   cursor: default;
 }
 
+.weapon-rule {
+  font-size: 0.72rem;
+  padding: 0.04rem 0.3rem;
+  border-style: dashed;
+}
+
 .chips {
   padding: 0.6rem;
   display: flex;
