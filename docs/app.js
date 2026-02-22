@@ -14,6 +14,7 @@ const meleeBodyEl = document.querySelector("#melee-table tbody");
 const abilitiesListEl = document.querySelector("#abilities-list");
 const keywordsEl = document.querySelector("#keywords");
 const compositionEl = document.querySelector("#composition");
+const tooltipEl = document.createElement("div");
 
 const REQUIRED_FILES = [
   "Factions.csv",
@@ -29,6 +30,11 @@ let indexData = null;
 let parserWarnings = [];
 let catalog = { factions: [], units: [] };
 let currentUnitId = null;
+let tooltipVisible = false;
+
+tooltipEl.className = "keyword-tooltip";
+tooltipEl.innerHTML = '<div class="keyword-tooltip-title"></div><div class="keyword-tooltip-body"></div>';
+document.body.appendChild(tooltipEl);
 
 function escapeHtml(value) {
   return String(value)
@@ -208,16 +214,34 @@ function renderAbilities(abilities) {
     return;
   }
 
-  abilitiesListEl.innerHTML = abilities
-    .slice(0, 120)
-    .map((ability) => {
-      const title = ability.name || "Unnamed ability";
-      const type = ability.type || "Datasheet";
-      const desc = stripHtml(ability.description || "");
+  const grouped = new Map();
+  for (const ability of abilities.slice(0, 160)) {
+    const type = (ability.type || "Datasheet").toUpperCase();
+    if (!grouped.has(type)) grouped.set(type, []);
+    grouped.get(type).push(ability);
+  }
+
+  abilitiesListEl.innerHTML = [...grouped.entries()]
+    .map(([type, list]) => {
+      const chips = list
+        .map((ability) => {
+          const title = ability.name || "Unnamed ability";
+          const desc = stripHtml(ability.description || "");
+          const hasDesc = Boolean(desc);
+          const cls = hasDesc ? "kw-link" : "kw-link disabled";
+          const body = hasDesc ? desc : "Описание отсутствует в источнике.";
+          return `<button
+            type="button"
+            class="${cls}"
+            data-tip-title="${escapeHtml(title)}"
+            data-tip-body="${escapeHtml(body)}"
+          >${escapeHtml(title)}</button>`;
+        })
+        .join("");
+
       return `<div class="ability">
         <div class="ability-top">${escapeHtml(type)}</div>
-        <div class="ability-name">${escapeHtml(title)}</div>
-        <div class="ability-desc">${escapeHtml(desc || "-")}</div>
+        <div class="ability-keywords">${chips}</div>
       </div>`;
     })
     .join("");
@@ -285,6 +309,61 @@ function renderUnit(unit) {
   renderAbilities(unit.abilities);
   renderKeywords(unit.keywords);
   renderComposition(unit);
+}
+
+function showTooltip(target, x, y) {
+  if (!target) return;
+  const title = target.dataset.tipTitle || "";
+  const body = target.dataset.tipBody || "";
+  if (!title && !body) return;
+
+  tooltipEl.querySelector(".keyword-tooltip-title").textContent = title;
+  tooltipEl.querySelector(".keyword-tooltip-body").textContent = body;
+  tooltipEl.classList.add("visible");
+  tooltipVisible = true;
+  moveTooltip(x, y);
+}
+
+function hideTooltip() {
+  tooltipEl.classList.remove("visible");
+  tooltipVisible = false;
+}
+
+function moveTooltip(x, y) {
+  if (!tooltipVisible) return;
+  const margin = 14;
+  const width = tooltipEl.offsetWidth || 320;
+  const height = tooltipEl.offsetHeight || 120;
+
+  let left = x + margin;
+  let top = y + margin;
+
+  if (left + width > window.innerWidth - 8) left = x - width - margin;
+  if (top + height > window.innerHeight - 8) top = y - height - margin;
+
+  tooltipEl.style.left = `${Math.max(8, left)}px`;
+  tooltipEl.style.top = `${Math.max(8, top)}px`;
+}
+
+function initTooltipHandlers() {
+  document.addEventListener("mouseover", (event) => {
+    const target = event.target.closest(".kw-link");
+    if (!target || target.classList.contains("disabled")) return;
+    showTooltip(target, event.clientX, event.clientY);
+  });
+
+  document.addEventListener("mouseout", (event) => {
+    const from = event.target.closest(".kw-link");
+    const to = event.relatedTarget?.closest?.(".kw-link");
+    if (from && !to) hideTooltip();
+  });
+
+  document.addEventListener("mousemove", (event) => {
+    if (tooltipVisible) moveTooltip(event.clientX, event.clientY);
+  });
+
+  document.addEventListener("scroll", hideTooltip, true);
+  window.addEventListener("blur", hideTooltip);
 }
 
 function getFilteredUnits() {
@@ -536,6 +615,8 @@ reloadBtn.addEventListener("click", () => {
     metaEl.textContent = `Ошибка обновления: ${error.message}`;
   });
 });
+
+initTooltipHandlers();
 
 loadIndexAndInit().catch((error) => {
   metaEl.textContent = `Ошибка инициализации: ${error.message}`;

@@ -300,18 +300,35 @@ body {
   color: #d8b2b4;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
 }
 
-.ability-name {
-  margin-top: 0.1rem;
-  font-weight: 700;
+.ability-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
 }
 
-.ability-desc {
-  margin-top: 0.2rem;
-  color: #c8d2df;
-  font-size: 0.92rem;
-  line-height: 1.35;
+.kw-link {
+  border: 1px solid #5b6673;
+  background: linear-gradient(180deg, #283242, #202a39);
+  color: #ebf2fb;
+  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: help;
+}
+
+.kw-link:hover {
+  border-color: #b94a53;
+  background: linear-gradient(180deg, #4b1d24, #321a26);
+}
+
+.kw-link.disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 
 .chips {
@@ -338,6 +355,42 @@ body {
 .note {
   color: var(--muted);
   padding: 0.5rem;
+}
+
+.keyword-tooltip {
+  position: fixed;
+  z-index: 2000;
+  max-width: min(560px, 90vw);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.08s linear, transform 0.08s linear;
+  border: 1px solid #3a4a59;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  background: #111922;
+}
+
+.keyword-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.keyword-tooltip-title {
+  background: linear-gradient(90deg, #8f1e25, #651d2a);
+  padding: 0.4rem 0.55rem;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f2f4f7;
+}
+
+.keyword-tooltip-body {
+  padding: 0.55rem;
+  color: #d3dce8;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 1100px) {
