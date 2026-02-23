@@ -7,6 +7,8 @@ const unitTitleEl = document.querySelector("#unit-title");
 const unitMetaEl = document.querySelector("#unit-meta");
 const roleBadgeEl = document.querySelector("#role-badge");
 const statlineEl = document.querySelector("#statline");
+const rangedBlockEl = document.querySelector("#ranged-block");
+const meleeBlockEl = document.querySelector("#melee-block");
 const rangedHeadEl = document.querySelector("#ranged-table thead");
 const rangedBodyEl = document.querySelector("#ranged-table tbody");
 const meleeHeadEl = document.querySelector("#melee-table thead");
@@ -173,6 +175,25 @@ function parseWeaponTags(description) {
     .slice(0, 6);
 }
 
+function isMeaningfulValue(value) {
+  const v = String(value ?? "").trim();
+  if (!v) return false;
+  const low = v.toLowerCase();
+  return v !== "-" && v !== "—" && v !== "–" && low !== "n/a" && low !== "na" && low !== "none";
+}
+
+function hasWeaponData(weapon) {
+  return (
+    isMeaningfulValue(weapon.name) ||
+    isMeaningfulValue(weapon.range) ||
+    isMeaningfulValue(weapon.A) ||
+    isMeaningfulValue(weapon.BS_WS) ||
+    isMeaningfulValue(weapon.S) ||
+    isMeaningfulValue(weapon.AP) ||
+    isMeaningfulValue(weapon.D)
+  );
+}
+
 function normalizeRuleName(text) {
   return normalized(String(text || "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim());
 }
@@ -274,6 +295,7 @@ function buildCoreRuleIndex(coreRulesPayload) {
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
+  const rows = (weapons || []).filter(hasWeaponData);
 
   head.innerHTML = `
     <tr>
@@ -286,12 +308,13 @@ function renderWeaponTable(type, weapons) {
       <th>D</th>
     </tr>`;
 
-  if (!weapons.length) {
-    body.innerHTML = '<tr><td colspan="7" class="note">Нет данных</td></tr>';
-    return;
+  if (!rows.length) {
+    head.innerHTML = "";
+    body.innerHTML = "";
+    return false;
   }
 
-  body.innerHTML = weapons
+  body.innerHTML = rows
     .slice(0, 60)
     .map((weapon) => {
       const tags = weapon.ruleTags || [];
@@ -326,6 +349,8 @@ function renderWeaponTable(type, weapons) {
       </tr>`;
     })
     .join("");
+
+  return true;
 }
 
 function renderAbilities(abilities) {
@@ -415,7 +440,7 @@ function renderStatline(unit) {
     .map(([k, v]) => `<div class="stat"><div class="k">${escapeHtml(k)}</div><div class="v">${escapeHtml(v || "-")}</div></div>`)
     .join("");
 
-  const invuln = unit.stats.inv_sv
+  const invuln = isMeaningfulValue(unit.stats.inv_sv)
     ? `<div class="stat invuln"><div class="k">Inv</div><div class="v">${escapeHtml(unit.stats.inv_sv)}</div></div>`
     : "";
 
@@ -428,8 +453,10 @@ function renderUnit(unit) {
   roleBadgeEl.textContent = unit.role || "Role n/a";
 
   renderStatline(unit);
-  renderWeaponTable("Ranged", unit.weapons.ranged);
-  renderWeaponTable("Melee", unit.weapons.melee);
+  const hasRanged = renderWeaponTable("Ranged", unit.weapons.ranged);
+  const hasMelee = renderWeaponTable("Melee", unit.weapons.melee);
+  rangedBlockEl.style.display = hasRanged ? "" : "none";
+  meleeBlockEl.style.display = hasMelee ? "" : "none";
   renderAbilities(unit.abilities);
   renderKeywords(unit.keywords);
   renderComposition(unit);
