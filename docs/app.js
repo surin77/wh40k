@@ -405,6 +405,21 @@ function buildAbilityTooltipIndex(abilities) {
   return index;
 }
 
+function abilityDisplayName(ability) {
+  const baseName = String(ability?.name || "").trim() || "Unnamed ability";
+  const parameter = String(ability?.parameter || "").trim();
+  if (!parameter) return baseName;
+
+  const hasParamAlready = new RegExp(`\\b${parameter.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(baseName);
+  if (hasParamAlready) return baseName;
+
+  // Common Wahapedia format uses "x" placeholder (e.g. "Deadly Demise x").
+  if (/\bx\b/i.test(baseName)) {
+    return baseName.replace(/\bx\b/i, parameter);
+  }
+  return `${baseName} ${parameter}`;
+}
+
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
@@ -484,7 +499,7 @@ function renderAbilities(abilities) {
       const showTextDescriptions = !["CORE", "FACTION"].includes(type);
       const chips = list
         .map((ability) => {
-          const title = ability.name || "Unnamed ability";
+          const title = abilityDisplayName(ability);
           const tip = buildTooltipPayload(title, ability.legend || "", ability.description || "");
           const hasDesc = Boolean(tip.intro || tip.body || (tip.points && tip.points.length));
           const cls = hasDesc ? "kw-link" : "kw-link disabled";
@@ -505,7 +520,7 @@ function renderAbilities(abilities) {
       const details = showTextDescriptions
         ? list
             .map((ability) => {
-              const title = ability.name || "Unnamed ability";
+              const title = abilityDisplayName(ability);
               const desc = stripHtml(ability.description || ability.legend || "");
               if (!isMeaningfulValue(desc)) return "";
               return `<div class="ability-detail">
@@ -1131,6 +1146,7 @@ function buildCatalog(datasets) {
       return {
         type: type || "Datasheet",
         name: inlineName || def?.name || "",
+        parameter: firstNonEmpty(item, ["parameter"]),
         legend: def?.legend || "",
         description: inlineDescription || def?.description || "",
       };
