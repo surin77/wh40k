@@ -150,7 +150,7 @@ function parseCsvSmart(text, fileName) {
   }
 
   if (best.mismatchErrors > 0) {
-    parserWarnings.push(`${fileName}: ${best.mismatchErrors} строк(и) с нестандартным числом полей`);
+    parserWarnings.push(`${fileName}: ${best.mismatchErrors} row(s) with non-standard field count`);
   }
 
   const rows = best.parsed.data
@@ -178,17 +178,17 @@ async function loadCsv(fileName) {
 
 function renderMeta() {
   if (!metaEl) return;
-  const changed = indexData.changed_files?.length ? indexData.changed_files.join(", ") : "изменений нет";
+  const changed = indexData.changed_files?.length ? indexData.changed_files.join(", ") : "no changes";
   const skipped = indexData.skipped_missing_files?.length
-    ? `<br><strong>Пропущены (404):</strong> ${escapeHtml(indexData.skipped_missing_files.join(", "))}`
+    ? `<br><strong>Skipped (404):</strong> ${escapeHtml(indexData.skipped_missing_files.join(", "))}`
     : "";
   const warnings = parserWarnings.length
-    ? `<br><strong>Предупреждения парсинга:</strong> ${escapeHtml(parserWarnings.join(" | "))}`
+    ? `<br><strong>Parsing warnings:</strong> ${escapeHtml(parserWarnings.join(" | "))}`
     : "";
 
-  metaEl.innerHTML = `<strong>Источник:</strong> ${escapeHtml(indexData.source || "Wahapedia")}
-    <br><strong>Обновлено:</strong> ${escapeHtml(formatUtc(indexData.updated_at_utc))}
-    <br><strong>Изменения:</strong> ${escapeHtml(changed)}${skipped}${warnings}`;
+  metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(indexData.source || "Wahapedia")}
+    <br><strong>Updated:</strong> ${escapeHtml(formatUtc(indexData.updated_at_utc))}
+    <br><strong>Changes:</strong> ${escapeHtml(changed)}${skipped}${warnings}`;
 }
 
 function parseWeaponTags(description) {
@@ -438,7 +438,7 @@ function renderWeaponTable(type, weapons) {
               const cls = hasTip ? "kw-link weapon-rule" : "kw-link weapon-rule disabled";
               const tip = hasTip
                 ? tag.tooltip
-                : { title: tag.label || "", intro: "", body: "Описание правила не найдено в источнике.", points: [] };
+                : { title: tag.label || "", intro: "", body: "Rule description not found in source.", points: [] };
               return `<button
                 type="button"
                 class="${cls}"
@@ -468,7 +468,7 @@ function renderWeaponTable(type, weapons) {
 
 function renderAbilities(abilities) {
   if (!abilities.length) {
-    abilitiesListEl.innerHTML = '<p class="note">Нет данных</p>';
+    abilitiesListEl.innerHTML = '<p class="note">No data</p>';
     return;
   }
 
@@ -490,7 +490,7 @@ function renderAbilities(abilities) {
           const cls = hasDesc ? "kw-link" : "kw-link disabled";
           const fallback = hasDesc
             ? tip
-            : { title, intro: "", body: "Описание отсутствует в источнике.", points: [] };
+            : { title, intro: "", body: "Description is missing in source.", points: [] };
           return `<button
             type="button"
             class="${cls}"
@@ -528,7 +528,7 @@ function renderAbilities(abilities) {
 
 function renderKeywords(keywords) {
   if (!keywords.length) {
-    keywordsEl.innerHTML = '<span class="note">Нет keywords</span>';
+    keywordsEl.innerHTML = '<span class="note">No keywords</span>';
     return;
   }
 
@@ -562,7 +562,7 @@ function renderComposition(unit) {
     chunks.push(`<p><strong>Damaged:</strong><br>${escapeHtml(stripHtml(unit.damaged_description))}</p>`);
   }
   if (!chunks.length) {
-    chunks.push('<p class="note">Нет дополнительных описаний</p>');
+    chunks.push('<p class="note">No additional descriptions</p>');
   }
 
   compositionEl.innerHTML = chunks.join("");
@@ -572,7 +572,7 @@ function renderUnitCost(unit) {
   if (!unitCostEl) return;
   const costs = (unit.costOptions || []).filter((item) => Number.isFinite(item.points) && item.points > 0);
   if (!costs.length) {
-    unitCostEl.innerHTML = '<p class="note">Нет данных по стоимости</p>';
+    unitCostEl.innerHTML = '<p class="note">No unit cost data</p>';
     return;
   }
 
@@ -635,7 +635,7 @@ function getActiveDetachment() {
 function renderDetachmentInfo() {
   const det = getActiveDetachment();
   if (!det) {
-    detachmentContentEl.innerHTML = '<p class="note">Выберите детачмент, чтобы увидеть его особенности.</p>';
+    detachmentContentEl.innerHTML = '<p class="note">Select a detachment to view its rules.</p>';
     return;
   }
 
@@ -810,8 +810,8 @@ function renderKeywordFilterIndicator() {
 
   keywordFilterIndicatorEl.style.display = "";
   keywordFilterIndicatorEl.innerHTML = `
-    <span>Фильтр keyword: <strong>${escapeHtml(activeKeywordFilter)}</strong></span>
-    <button type="button" id="clear-keyword-filter" class="clear-filter-btn">Сбросить</button>
+    <span>Keyword filter: <strong>${escapeHtml(activeKeywordFilter)}</strong></span>
+    <button type="button" id="clear-keyword-filter" class="clear-filter-btn">Clear</button>
   `;
   const btn = document.querySelector("#clear-keyword-filter");
   if (btn) {
@@ -828,7 +828,7 @@ function renderUnitList() {
   renderKeywordFilterIndicator();
 
   if (!units.length) {
-    unitListEl.innerHTML = '<p class="note">Нет юнитов по фильтру.</p>';
+    unitListEl.innerHTML = '<p class="note">No units match the current filters.</p>';
     return;
   }
 
@@ -1263,7 +1263,7 @@ function buildCatalog(datasets) {
 
 function populateFactionSelect() {
   factionSelectEl.innerHTML = [
-    '<option value="__all__">Все фракции</option>',
+    '<option value="__all__">All factions</option>',
     ...catalog.factions.map((faction) => `<option value="${escapeHtml(faction)}">${escapeHtml(faction)}</option>`),
   ].join("");
 }
@@ -1271,20 +1271,20 @@ function populateFactionSelect() {
 function populateDetachmentSelect() {
   const faction = factionSelectEl.value;
   if (!faction || faction === "__all__") {
-    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    detachmentSelectEl.innerHTML = '<option value="__all__">All detachments</option>';
     return;
   }
   const sample = catalog.units.find((u) => (faction === "__all__" ? true : u.factionName === faction));
   if (!sample) {
-    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    detachmentSelectEl.innerHTML = '<option value="__all__">All detachments</option>';
     return;
   }
   const byFaction = catalog.detachmentsByFaction.get(sample.factionId);
   if (!byFaction || !byFaction.size) {
-    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    detachmentSelectEl.innerHTML = '<option value="__all__">All detachments</option>';
     return;
   }
-  const options = ['<option value="__all__">Все детачменты</option>'];
+  const options = ['<option value="__all__">All detachments</option>'];
   const sorted = [...byFaction.values()].sort((a, b) => a.name.localeCompare(b.name));
   for (const det of sorted) {
     options.push(`<option value="${escapeHtml(det.id)}">${escapeHtml(det.name)}</option>`);
@@ -1305,7 +1305,7 @@ async function loadIndexAndInit() {
 
   const missingFiles = REQUIRED_FILES.filter((file) => !files.includes(file));
   if (missingFiles.length) {
-    throw new Error(`Не хватает CSV: ${missingFiles.join(", ")}`);
+    throw new Error(`Missing CSV files: ${missingFiles.join(", ")}`);
   }
 
   const datasets = new Map();
@@ -1338,7 +1338,7 @@ async function loadIndexAndInit() {
 
   catalog = buildCatalog(datasets);
   if (!catalog.units.length) {
-    throw new Error("Не удалось собрать каталог юнитов");
+    throw new Error("Failed to build unit catalog");
   }
 
   populateFactionSelect();
@@ -1380,8 +1380,8 @@ initThemeToggle();
 
 loadIndexAndInit().catch((error) => {
   if (metaEl) {
-    metaEl.textContent = `Ошибка инициализации: ${error.message}`;
+    metaEl.textContent = `Initialization error: ${error.message}`;
   } else {
-    console.error("Ошибка инициализации:", error);
+    console.error("Initialization error:", error);
   }
 });

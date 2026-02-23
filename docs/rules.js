@@ -66,9 +66,9 @@ function splitSectionBlocks(blocks) {
 
 function renderMeta() {
   const count = payload.sections?.length || 0;
-  metaEl.innerHTML = `<strong>Источник:</strong> ${escapeHtml(payload.source || "Wahapedia Core Rules")}
-    <br><strong>Секции:</strong> ${count}
-    <br><strong>Обновлено:</strong> ${escapeHtml(formatUtc(payload.updated_at_utc))}`;
+  metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Wahapedia Core Rules")}
+    <br><strong>Sections:</strong> ${count}
+    <br><strong>Updated:</strong> ${escapeHtml(formatUtc(payload.updated_at_utc))}`;
 }
 
 function renderSectionsNav() {
@@ -95,8 +95,8 @@ function renderAllSections() {
 
   if (!sections.length) {
     titleEl.textContent = payload.page_title || "Core Rules";
-    subtitleEl.textContent = "Секции не найдены";
-    contentEl.innerHTML = '<p class="note">Нет данных правил. Запустите sync workflow.</p>';
+    subtitleEl.textContent = "No sections found";
+    contentEl.innerHTML = '<p class="note">No rules data. Run the sync workflow.</p>';
     return;
   }
 
@@ -143,5 +143,5 @@ async function init() {
 initThemeToggle();
 
 init().catch((error) => {
-  metaEl.textContent = `Ошибка загрузки правил: ${error.message}`;
+  metaEl.textContent = `Rules loading error: ${error.message}`;
 });

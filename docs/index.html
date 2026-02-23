@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -11,14 +11,14 @@
       <div class="topbar-inner">
         <div>
           <h1>WH40k Datasheet Viewer</h1>
-          <p>Данные из Wahapedia export.</p>
+          <p>Data from Wahapedia export.</p>
         </div>
         <div class="topbar-controls">
           <nav class="top-nav">
             <a class="top-nav-link active" href="./index.html">Datasheets</a>
             <a class="top-nav-link" href="./rules.html">Core Rules</a>
           </nav>
-          <label class="theme-toggle" aria-label="Переключение темы">
+          <label class="theme-toggle" aria-label="Theme toggle">
             <span>Theme</span>
             <input id="theme-toggle" class="toggle-switch" type="checkbox" />
           </label>
@@ -29,24 +29,24 @@
     <main class="page">
       <section class="toolbar">
         <label>
-          Фракция
+          Faction
           <select id="faction-select"></select>
         </label>
 
         <label>
-          Детачмент
+          Detachment
           <select id="detachment-select"></select>
         </label>
 
         <label>
-          Поиск юнита
-          <input id="unit-search" type="search" placeholder="Например: Culexus Assassin" />
+          Unit Search
+          <input id="unit-search" type="search" placeholder="Example: Culexus Assassin" />
         </label>
 
         <label class="toolbar-checkbox">
           <span>Legends</span>
           <span class="toolbar-checkbox-control">
-            <input id="show-legends-toggle" class="toggle-switch" type="checkbox" aria-label="Показывать Legends" />
+            <input id="show-legends-toggle" class="toggle-switch" type="checkbox" aria-label="Show Legends" />
           </span>
         </label>
       </section>
@@ -61,7 +61,7 @@
         <article class="panel datasheet">
           <header class="sheet-header">
             <div>
-              <h2 id="unit-title">Выберите юнит</h2>
+              <h2 id="unit-title">Select a unit</h2>
               <p id="unit-meta" class="muted"></p>
             </div>
             <div id="role-badge" class="role-badge"></div>
@@ -139,6 +139,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <script src="./app.js" type="module"></script>
-    <button id="scroll-top-btn" class="scroll-top-btn" type="button" aria-label="Наверх">↑</button>
+    <button id="scroll-top-btn" class="scroll-top-btn" type="button" aria-label="Back to top">↑</button>
   </body>
 </html>

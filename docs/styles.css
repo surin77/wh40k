@@ -124,6 +124,7 @@ body {
   display: grid;
   gap: 0.7rem;
   grid-template-columns: 220px 220px 1fr 200px;
+  margin-bottom: 1rem;
 }
 
 .toolbar label {
@@ -214,7 +215,7 @@ body {
 }
 
 .toolbar select,
-.toolbar input,
+.toolbar input:not(.toggle-switch),
 .toolbar button {
   height: 2.4rem;
   border-radius: 6px;
