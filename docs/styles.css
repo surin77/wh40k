@@ -333,6 +333,29 @@ body {
   gap: 0.3rem;
 }
 
+.ability-details {
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ability-detail {
+  border-left: 2px solid #8b3037;
+  padding-left: 0.45rem;
+}
+
+.ability-detail-name {
+  font-weight: 700;
+  color: #e2e8f1;
+  margin-bottom: 0.12rem;
+}
+
+.ability-detail-text {
+  color: #d2dce8;
+  line-height: 1.38;
+  font-size: 0.9rem;
+}
+
 .kw-link {
   border: 1px solid #5b6673;
   background: linear-gradient(180deg, #283242, #202a39);
@@ -393,6 +416,18 @@ body {
 
 .muted-inline {
   color: #9eb0c6;
+}
+
+.det-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.det-link {
+  text-transform: none;
+  font-size: 0.76rem;
 }
 
 .note {

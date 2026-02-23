@@ -424,6 +424,7 @@ function renderAbilities(abilities) {
 
   abilitiesListEl.innerHTML = [...grouped.entries()]
     .map(([type, list]) => {
+      const showTextDescriptions = !["CORE", "FACTION"].includes(type);
       const chips = list
         .map((ability) => {
           const title = ability.name || "Unnamed ability";
@@ -444,9 +445,25 @@ function renderAbilities(abilities) {
         })
         .join("");
 
+      const details = showTextDescriptions
+        ? list
+            .map((ability) => {
+              const title = ability.name || "Unnamed ability";
+              const desc = stripHtml(ability.description || ability.legend || "");
+              if (!isMeaningfulValue(desc)) return "";
+              return `<div class="ability-detail">
+                <div class="ability-detail-name">${escapeHtml(title)}:</div>
+                <div class="ability-detail-text">${escapeHtml(desc)}</div>
+              </div>`;
+            })
+            .filter(Boolean)
+            .join("")
+        : "";
+
       return `<div class="ability">
         <div class="ability-top">${escapeHtml(type)}</div>
         <div class="ability-keywords">${chips}</div>
+        ${details ? `<div class="ability-details">${details}</div>` : ""}
       </div>`;
     })
     .join("");
@@ -538,22 +555,54 @@ function renderDetachmentInfo() {
 
   const abilityItems = det.abilities
     .slice(0, 6)
-    .map((a) => `<li><strong>${escapeHtml(a.name || "Ability")}:</strong> ${escapeHtml(stripHtml(a.description || a.legend || ""))}</li>`)
+    .map((a) => {
+      const tip = buildTooltipPayload(a.name || "Detachment Rule", a.legend || "", a.description || "");
+      return `<button
+        type="button"
+        class="kw-link det-link"
+        data-tip-title="${escapeHtml(tip.title || a.name || "Detachment Rule")}"
+        data-tip-intro="${escapeHtml(tip.intro || "")}"
+        data-tip-body="${escapeHtml(tip.body || "")}"
+        data-tip-points="${escapeHtml((tip.points || []).join("||"))}"
+      >${escapeHtml(a.name || "Detachment Rule")}</button>`;
+    })
     .join("");
   const stratItems = det.stratagems
     .slice(0, 8)
-    .map((s) => `<li>${escapeHtml(s.name || "Stratagem")}${s.cpCost ? ` <span class="muted-inline">(${escapeHtml(s.cpCost)}CP)</span>` : ""}</li>`)
+    .map((s) => {
+      const tip = buildTooltipPayload(s.name || "Stratagem", s.type || "", s.description || "");
+      const label = `${s.name || "Stratagem"}${s.cpCost ? ` (${s.cpCost}CP)` : ""}`;
+      return `<button
+        type="button"
+        class="kw-link det-link"
+        data-tip-title="${escapeHtml(tip.title || s.name || "Stratagem")}"
+        data-tip-intro="${escapeHtml(tip.intro || "")}"
+        data-tip-body="${escapeHtml(tip.body || "")}"
+        data-tip-points="${escapeHtml((tip.points || []).join("||"))}"
+      >${escapeHtml(label)}</button>`;
+    })
     .join("");
   const enhItems = det.enhancements
     .slice(0, 8)
-    .map((e) => `<li>${escapeHtml(e.name || "Enhancement")}${e.cost ? ` <span class="muted-inline">(${escapeHtml(e.cost)} pts)</span>` : ""}</li>`)
+    .map((e) => {
+      const tip = buildTooltipPayload(e.name || "Enhancement", e.legend || "", e.description || "");
+      const label = `${e.name || "Enhancement"}${e.cost ? ` (${e.cost} pts)` : ""}`;
+      return `<button
+        type="button"
+        class="kw-link det-link"
+        data-tip-title="${escapeHtml(tip.title || e.name || "Enhancement")}"
+        data-tip-intro="${escapeHtml(tip.intro || "")}"
+        data-tip-body="${escapeHtml(tip.body || "")}"
+        data-tip-points="${escapeHtml((tip.points || []).join("||"))}"
+      >${escapeHtml(label)}</button>`;
+    })
     .join("");
 
   detachmentContentEl.innerHTML = `
     <p><strong>${escapeHtml(det.name)}</strong></p>
-    ${abilityItems ? `<p><strong>Rule:</strong></p><ul class="compact-list">${abilityItems}</ul>` : ""}
-    ${stratItems ? `<p><strong>Stratagems:</strong></p><ul class="compact-list">${stratItems}</ul>` : ""}
-    ${enhItems ? `<p><strong>Enhancements:</strong></p><ul class="compact-list">${enhItems}</ul>` : ""}
+    ${abilityItems ? `<p><strong>Rule:</strong></p><div class="det-chip-list">${abilityItems}</div>` : ""}
+    ${stratItems ? `<p><strong>Stratagems:</strong></p><div class="det-chip-list">${stratItems}</div>` : ""}
+    ${enhItems ? `<p><strong>Enhancements:</strong></p><div class="det-chip-list">${enhItems}</div>` : ""}
   `;
 }
 
