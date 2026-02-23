@@ -124,7 +124,7 @@ body {
   display: grid;
   gap: 0.7rem;
   width: 100%;
-  grid-template-columns: minmax(260px, 1fr) minmax(260px, 1fr) minmax(380px, 2fr) 200px;
+  grid-template-columns: 300px minmax(220px, 1fr) minmax(320px, 1.6fr) max-content;
   align-items: end;
   margin-bottom: 1rem;
 }
@@ -219,13 +219,12 @@ body {
 .toolbar select,
 .toolbar input:not(.toggle-switch),
 .toolbar button {
-  height: 2.75rem;
+  height: 2.4rem;
   border-radius: 6px;
   border: 1px solid var(--line);
   background: #0f1620;
   color: var(--text);
-  padding: 0 0.85rem;
-  font-size: 0.96rem;
+  padding: 0 0.65rem;
 }
 
 .toolbar button {
