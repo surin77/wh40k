@@ -349,6 +349,22 @@ function makePsychicTooltip() {
   };
 }
 
+function buildAbilityTooltipIndex(abilities) {
+  const index = new Map();
+  for (const ability of abilities || []) {
+    const name = String(ability?.name || "").trim();
+    if (!name) continue;
+    const tip = buildTooltipPayload(name, ability.legend || "", ability.description || "");
+    if (!tip.intro && !tip.body && !tip.points.length) continue;
+
+    const k1 = normalizeRuleName(name);
+    if (k1) index.set(k1, tip);
+    const k2 = normalizeRuleName(simplifyRuleName(name));
+    if (k2) index.set(k2, tip);
+  }
+  return index;
+}
+
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
@@ -977,6 +993,22 @@ function buildCatalog(datasets) {
     const modelLines = modelsByDsId.get(id) || [];
     const primaryModel = modelLines[0] || {};
 
+    const resolvedAbilities = (abilitiesByDsId.get(id) || []).map((item) => {
+      const abilityId = firstNonEmpty(item, ["ability_id"]);
+      const inlineName = firstNonEmpty(item, ["name"]);
+      const inlineDescription = firstNonEmpty(item, ["description"]);
+      const type = firstNonEmpty(item, ["type"]);
+      const def = abilityId ? chooseAbilityDefinition(abilityDefs, abilityId, factionId) : null;
+
+      return {
+        type: type || "Datasheet",
+        name: inlineName || def?.name || "",
+        legend: def?.legend || "",
+        description: inlineDescription || def?.description || "",
+      };
+    });
+    const unitAbilityTipIndex = buildAbilityTooltipIndex(resolvedAbilities);
+
     const weapons = (wargearByDsId.get(id) || []).map((item) => {
       const description = firstNonEmpty(item, ["description"]);
       const ruleTags = parseWeaponTags(description).map((label) => {
@@ -997,10 +1029,13 @@ function buildCatalog(datasets) {
           abilityDefsByName.get(exactKey) || abilityDefsByName.get(simpleKey) || [],
           factionId
         );
+        const unitTip = unitAbilityTipIndex.get(exactKey) || unitAbilityTipIndex.get(simpleKey) || null;
         return {
           label,
           tooltip: coreTip
             ? coreTip
+            : unitTip
+            ? unitTip
             : found
             ? buildTooltipPayload(label, found.legend || "", found.description || "")
             : null,
@@ -1023,21 +1058,6 @@ function buildCatalog(datasets) {
 
     const ranged = weapons.filter((weapon) => weapon.type.toLowerCase() === "ranged");
     const melee = weapons.filter((weapon) => weapon.type.toLowerCase() === "melee");
-
-    const resolvedAbilities = (abilitiesByDsId.get(id) || []).map((item) => {
-      const abilityId = firstNonEmpty(item, ["ability_id"]);
-      const inlineName = firstNonEmpty(item, ["name"]);
-      const inlineDescription = firstNonEmpty(item, ["description"]);
-      const type = firstNonEmpty(item, ["type"]);
-      const def = abilityId ? chooseAbilityDefinition(abilityDefs, abilityId, factionId) : null;
-
-      return {
-        type: type || "Datasheet",
-        name: inlineName || def?.name || "",
-        legend: def?.legend || "",
-        description: inlineDescription || def?.description || "",
-      };
-    });
 
     const keywords = [...new Set((keywordsByDsId.get(id) || []).map((k) => k.trim()).filter(Boolean))].sort((a, b) =>
       a.localeCompare(b)
