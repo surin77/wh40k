@@ -20,6 +20,7 @@ EXPORT_FILES = {
     "Secondaries.csv": "https://wahapedia.ru/wh40k10ed/Secondaries.csv",
     "Datasheets_abilities.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_abilities.csv",
     "Datasheets_models.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_models.csv",
+    "Datasheets_models_cost.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_models_cost.csv",
     "Datasheets_keywords.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_keywords.csv",
     "Datasheets_wargear.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_wargear.csv",
     "Datasheets_stratagems.csv": "https://wahapedia.ru/wh40k10ed/Datasheets_stratagems.csv",

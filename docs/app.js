@@ -17,6 +17,7 @@ const meleeHeadEl = document.querySelector("#melee-table thead");
 const meleeBodyEl = document.querySelector("#melee-table tbody");
 const abilitiesListEl = document.querySelector("#abilities-list");
 const keywordsEl = document.querySelector("#keywords");
+const unitCostEl = document.querySelector("#unit-cost");
 const compositionEl = document.querySelector("#composition");
 const detachmentContentEl = document.querySelector("#detachment-content");
 const scrollTopBtnEl = document.querySelector("#scroll-top-btn");
@@ -37,13 +38,14 @@ const REQUIRED_FILES = [
   "Detachment_abilities.csv",
 ];
 
+const OPTIONAL_FILES = ["Datasheets_models_cost.csv"];
+
 let indexData = null;
 let parserWarnings = [];
 let catalog = { factions: [], units: [], detachmentsByFaction: new Map() };
 let currentUnitId = null;
 let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
-let unitCostsByName = new Map();
 let activeKeywordFilter = "";
 
 tooltipEl.className = "keyword-tooltip";
@@ -217,6 +219,14 @@ function formatRange(value) {
   if (!raw) return "-";
   if (/^\d+$/.test(raw)) return `${raw}"`;
   return raw;
+}
+
+function parseCostNumber(value) {
+  const raw = String(value ?? "").trim();
+  const match = raw.match(/\d+/);
+  if (!match) return null;
+  const num = Number(match[0]);
+  return Number.isFinite(num) && num > 0 ? num : null;
 }
 
 function normalizeRuleName(text) {
@@ -545,6 +555,22 @@ function renderComposition(unit) {
   compositionEl.innerHTML = chunks.join("");
 }
 
+function renderUnitCost(unit) {
+  if (!unitCostEl) return;
+  const costs = (unit.costOptions || []).filter((item) => Number.isFinite(item.points) && item.points > 0);
+  if (!costs.length) {
+    unitCostEl.innerHTML = '<p class="note">Нет данных по стоимости</p>';
+    return;
+  }
+
+  unitCostEl.innerHTML = costs
+    .map(
+      (item) =>
+        `<div class="cost-row"><div class="cost-row-label">${escapeHtml(item.label || unit.name)}</div><div class="cost-row-points">${escapeHtml(String(item.points))}</div></div>`
+    )
+    .join("");
+}
+
 function renderStatline(unit) {
   const stats = [
     ["M", unit.stats.M],
@@ -568,8 +594,7 @@ function renderStatline(unit) {
 
 function renderUnit(unit) {
   unitTitleEl.textContent = unit.name || "Unknown unit";
-  const pointsLabel = unit.points ? ` • ${unit.points} pts` : "";
-  unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}${pointsLabel}`;
+  unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}`;
   roleBadgeEl.textContent = unit.role || "Role n/a";
 
   renderStatline(unit);
@@ -579,6 +604,7 @@ function renderUnit(unit) {
   meleeBlockEl.style.display = hasMelee ? "" : "none";
   renderAbilities(unit.abilities);
   renderKeywords(unit.keywords);
+  renderUnitCost(unit);
   renderComposition(unit);
 }
 
@@ -831,6 +857,7 @@ function buildCatalog(datasets) {
   const factionsRows = datasets.get("Factions.csv")?.rows || [];
   const datasheetsRows = datasets.get("Datasheets.csv")?.rows || [];
   const modelsRows = datasets.get("Datasheets_models.csv")?.rows || [];
+  const modelCostsRows = datasets.get("Datasheets_models_cost.csv")?.rows || [];
   const wargearRows = datasets.get("Datasheets_wargear.csv")?.rows || [];
   const keywordsRows = datasets.get("Datasheets_keywords.csv")?.rows || [];
   const datasheetAbilitiesRows = datasets.get("Datasheets_abilities.csv")?.rows || [];
@@ -859,6 +886,28 @@ function buildCatalog(datasets) {
   for (const [dsId, lines] of modelsByDsId.entries()) {
     lines.sort((a, b) => Number(firstNonEmpty(a, ["line"]) || "0") - Number(firstNonEmpty(b, ["line"]) || "0"));
     modelsByDsId.set(dsId, lines);
+  }
+
+  const costsByDsId = new Map();
+  const costsByName = new Map();
+  for (const row of modelCostsRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id", "datasheetid", "id_datasheet"]);
+    const dsName = firstNonEmpty(row, ["datasheet", "datasheet_name", "datasheet_name_en", "unit_name", "name"]);
+    if (dsId) {
+      if (!costsByDsId.has(dsId)) costsByDsId.set(dsId, []);
+      costsByDsId.get(dsId).push(row);
+    }
+    if (dsName) {
+      const key = normalized(dsName);
+      if (key) {
+        if (!costsByName.has(key)) costsByName.set(key, []);
+        costsByName.get(key).push(row);
+      }
+    }
+  }
+  for (const [dsId, lines] of costsByDsId.entries()) {
+    lines.sort((a, b) => Number(firstNonEmpty(a, ["line", "id"]) || "0") - Number(firstNonEmpty(b, ["line", "id"]) || "0"));
+    costsByDsId.set(dsId, lines);
   }
 
   const wargearByDsId = new Map();
@@ -1144,8 +1193,32 @@ function buildCatalog(datasets) {
       abilities: resolvedAbilities.filter((ability) => ability.name || ability.description),
       keywords,
       detachmentIds: [...(dsDetachmentIds.get(id) || new Set())],
-      points: unitCostsByName.get(name) || null,
+      costOptions: [],
     };
+
+    const rawCostRows = [...(costsByDsId.get(id) || []), ...(costsByName.get(normalized(name)) || [])];
+    const seenCosts = new Set();
+    for (const costRow of rawCostRows) {
+      const pointsRaw = firstNonEmpty(costRow, ["cost", "pts", "points", "unit_cost", "model_cost", "cost_pts"]);
+      const points = parseCostNumber(pointsRaw);
+      if (!points) continue;
+      const label =
+        firstNonEmpty(costRow, [
+          "description",
+          "models",
+          "unit_composition",
+          "model",
+          "model_name",
+          "name",
+          "variant",
+          "option",
+          "loadout",
+        ]) || name;
+      const key = `${normalized(label)}::${points}`;
+      if (seenCosts.has(key)) continue;
+      seenCosts.add(key);
+      unit.costOptions.push({ label, points });
+    }
 
     units.push(unit);
   }
@@ -1209,6 +1282,15 @@ async function loadIndexAndInit() {
     datasets.set(file, parsed);
   }
 
+  for (const file of OPTIONAL_FILES) {
+    try {
+      const parsed = await loadCsv(file);
+      datasets.set(file, parsed);
+    } catch {
+      // Optional dataset: skip when unavailable.
+    }
+  }
+
   coreRuleDefsByName = new Map();
   if (files.includes("core_rules.json")) {
     try {
@@ -1220,21 +1302,6 @@ async function loadIndexAndInit() {
     } catch {
       coreRuleDefsByName = new Map();
     }
-  }
-
-  unitCostsByName = new Map();
-  try {
-    const costsResp = await fetch("./data/unit_costs.json", { cache: "no-store" });
-    if (costsResp.ok) {
-      const costsPayload = await costsResp.json();
-      const costs = costsPayload?.costs || {};
-      for (const [name, info] of Object.entries(costs)) {
-        const value = Number(info?.min || 0);
-        if (value > 0) unitCostsByName.set(name, value);
-      }
-    }
-  } catch {
-    unitCostsByName = new Map();
   }
 
   catalog = buildCatalog(datasets);

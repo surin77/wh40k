@@ -489,6 +489,44 @@ body {
   gap: 0.35rem;
 }
 
+.cost-list {
+  padding: 0.6rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px dashed #2c3845;
+  padding-bottom: 0.35rem;
+}
+
+.cost-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cost-row-label {
+  color: #d6e0ec;
+  line-height: 1.3;
+}
+
+.cost-row-points {
+  background: linear-gradient(180deg, #8c222b, #5a1b24);
+  border: 1px solid #97363f;
+  color: #fff4f4;
+  border-radius: 999px;
+  min-width: 3rem;
+  text-align: center;
+  padding: 0.08rem 0.45rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 .chip {
   background: var(--chip);
   border: 1px solid var(--chip-border);
