@@ -41,6 +41,7 @@ let catalog = { factions: [], units: [], detachmentsByFaction: new Map() };
 let currentUnitId = null;
 let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
+let unitCostsByName = new Map();
 
 tooltipEl.className = "keyword-tooltip";
 tooltipEl.innerHTML = `
@@ -522,7 +523,8 @@ function renderStatline(unit) {
 
 function renderUnit(unit) {
   unitTitleEl.textContent = unit.name || "Unknown unit";
-  unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}`;
+  const pointsLabel = unit.points ? ` • ${unit.points} pts` : "";
+  unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}${pointsLabel}`;
   roleBadgeEl.textContent = unit.role || "Role n/a";
 
   renderStatline(unit);
@@ -1068,6 +1070,7 @@ function buildCatalog(datasets) {
       abilities: resolvedAbilities.filter((ability) => ability.name || ability.description),
       keywords,
       detachmentIds: [...(dsDetachmentIds.get(id) || new Set())],
+      points: unitCostsByName.get(name) || null,
     };
 
     units.push(unit);
@@ -1143,6 +1146,21 @@ async function loadIndexAndInit() {
     } catch {
       coreRuleDefsByName = new Map();
     }
+  }
+
+  unitCostsByName = new Map();
+  try {
+    const costsResp = await fetch("./data/unit_costs.json", { cache: "no-store" });
+    if (costsResp.ok) {
+      const costsPayload = await costsResp.json();
+      const costs = costsPayload?.costs || {};
+      for (const [name, info] of Object.entries(costs)) {
+        const value = Number(info?.min || 0);
+        if (value > 0) unitCostsByName.set(name, value);
+      }
+    }
+  } catch {
+    unitCostsByName = new Map();
   }
 
   catalog = buildCatalog(datasets);

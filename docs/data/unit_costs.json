@@ -1,0 +1,7071 @@
+{
+  "source": "Munitorum Field Manual PDF",
+  "source_file": "/Users/sa/Downloads/eng_11-02_warhammer_40000_core_rules_munitorum_field_manua-nhzplimifq-x47lmaz27p.pdf",
+  "generated_at_utc": "2026-02-23T08:50:00+00:00",
+  "units_with_costs": 1135,
+  "costs": {
+    "AX-1-0 Tiger Shark": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Abaddon The Despoiler": {
+      "min": 270,
+      "tiers": [
+        270
+      ]
+    },
+    "Aberrants": {
+      "min": 135,
+      "tiers": [
+        135,
+        300
+      ]
+    },
+    "Abominant": {
+      "min": 355,
+      "tiers": [
+        355
+      ]
+    },
+    "Accursed Cultists": {
+      "min": 90,
+      "tiers": [
+        90,
+        195
+      ]
+    },
+    "Achilles Ridgerunners": {
+      "min": 95,
+      "tiers": [
+        95,
+        170
+      ]
+    },
+    "Acolyte Hybrids With Autopistols": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Acolyte Hybrids With Hand Flamers": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Acolyte Iconward": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Adrax Agatone": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Aegis Defence Line": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Aestred Thurga And Agathae Dolan": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Aetaos\u2019rau\u2019keres": {
+      "min": 315,
+      "tiers": [
+        315
+      ]
+    },
+    "Aethon Shaan": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Aggressor Squad": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Ahriman": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Aleya": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Allarus Custodians": {
+      "min": 110,
+      "tiers": [
+        110,
+        165
+      ]
+    },
+    "Amallyn Shadowguide": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Ambull": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Anathema Psykana Rhino": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Ancient": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Ancient In Terminator Armour": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Ancient on Bike": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Angron": {
+      "min": 340,
+      "tiers": [
+        340
+      ]
+    },
+    "Annihilation Barge": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Anrakyr The Traveller": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "An\u2019ggrath the Unbound": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Apothecary": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Apothecary Biologis": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Apothecary on Bike": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Aquila Kill Team": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Aquila Lander": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Aquilon Custodians": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Archaeopter Fusilave": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Archaeopter Stratoraptor": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Archaeopter Transvector": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Archon": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Arco-flagellants": {
+      "min": 45,
+      "tiers": [
+        45,
+        140
+      ]
+    },
+    "Ares Gunship": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Arjac Rockfist": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Arkanyst Evaluator": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Arkurian Stormhammer": {
+      "min": 480,
+      "tiers": [
+        480
+      ]
+    },
+    "Armageddon-pattern Medusa": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Armiger Helverin": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Armiger Moirax": {
+      "min": 410,
+      "tiers": [
+        410
+      ]
+    },
+    "Armiger Warglaive": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Armoured Sentinels": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Artillery Team": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Arvus Lighter": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Asmodai": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Assault Intercessor Squad": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Assault Intercessors With Jump Packs": {
+      "min": 90,
+      "tiers": [
+        90,
+        170
+      ]
+    },
+    "Assault Squad": {
+      "min": 150,
+      "tiers": [
+        150,
+        300
+      ]
+    },
+    "Assault Squad with Jump Packs": {
+      "min": 115,
+      "tiers": [
+        115,
+        230
+      ]
+    },
+    "Astartes Servitors": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Astorath": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Astraeus": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Asurmen": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Atalan Jackals": {
+      "min": 85,
+      "tiers": [
+        85,
+        150
+      ]
+    },
+    "Atlas Recovery Vehicle": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Attack Bike Squad": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Attack Fighta": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Attilan Rough Riders": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Aun\u2019shi": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Aun\u2019va": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Autarch": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Autarch Skyrunner": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Autarch Wayleaper": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Avatar of Khaine": {
+      "min": 280,
+      "tiers": [
+        280
+      ]
+    },
+    "Avenger Strike Fighter": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Azrael": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Baal Predator": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Baharroth": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Ballistus Dreadnought": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Baneblade": {
+      "min": 450,
+      "tiers": [
+        450
+      ]
+    },
+    "Banehammer": {
+      "min": 420,
+      "tiers": [
+        420
+      ]
+    },
+    "Banesword": {
+      "min": 450,
+      "tiers": [
+        450
+      ]
+    },
+    "Barbed Hierodule": {
+      "min": 340,
+      "tiers": [
+        340
+      ]
+    },
+    "Barbgaunts": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Barracuda": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Basilisk": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Battle Sanctum": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Battle Sisters Squad": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Battlewagon": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Beast Snagga Boyz": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Beastboss": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Beastboss On Squigosaur": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Beastmaster": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Beasts Of Nurgle": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Beasts of Nurgle": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Belial": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Belisarius Cawl": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Benefictus": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Be\u2019lakor": {
+      "min": 375,
+      "tiers": [
+        375
+      ]
+    },
+    "Big Gunz": {
+      "min": 20,
+      "tiers": [
+        20,
+        40
+      ]
+    },
+    "Big Mek": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Big Mek In Mega Armour": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Big Mek On Warbike": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Big Mek With Kustom Force Field": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Big Mek With Shokk Attack Gun": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Big Trakk": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Big\u2019ed Bossbunka": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Bike Squad": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Biologus Putrifier": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Biophagus": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Biovores": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Bjorn The Fell-handed": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Blade Champion": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Bladeguard Ancient": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Bladeguard Veteran Squad": {
+      "min": 80,
+      "tiers": [
+        80,
+        170
+      ]
+    },
+    "Blightlord Terminators": {
+      "min": 115,
+      "tiers": [
+        115,
+        185
+      ]
+    },
+    "Blitza-bommer": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Blood Angels Captain": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Blood Claws": {
+      "min": 135,
+      "tiers": [
+        135,
+        285
+      ]
+    },
+    "Blood Slaughterer": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Bloodcrushers": {
+      "min": 110,
+      "tiers": [
+        110,
+        220
+      ]
+    },
+    "Bloodletters": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Bloodmaster": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Bloodthirster": {
+      "min": 305,
+      "tiers": [
+        305
+      ]
+    },
+    "Blue Horrors": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Bonesinger": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Boomdakka Snazzwagon": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Boss Snikrot": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Boss Zagstruk": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Boyz": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Breacher Team": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Breaka Boyz": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Broadside Battlesuits": {
+      "min": 80,
+      "tiers": [
+        80,
+        170
+      ]
+    },
+    "Broodlord": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Brother Corbulo": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Brother-captain": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Brother-captain Stern": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Brotherhood Champion": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Brotherhood Chaplain": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Brotherhood Librarian": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Brotherhood Techmarine": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Brotherhood Terminator Squad": {
+      "min": 160,
+      "tiers": [
+        160,
+        200
+      ]
+    },
+    "Brutalis Dreadnought": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Br\u00f4khyr Iron-master": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Br\u00f4khyr Thunderkyn": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Bullgryn Squad": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Buri Aegnirssen": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Burna Boyz": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Burna-bommer": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Burning Chariot": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Caanok Var": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Cadian Castellan": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Cadian Command Squad": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Cadian Heavy Weapons Squad": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Cadian Shock Troops": {
+      "min": 65,
+      "tiers": [
+        65,
+        120
+      ]
+    },
+    "Cadre Fireblade": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Caestus Assault Ram": {
+      "min": 215,
+      "tiers": [
+        215
+      ]
+    },
+    "Caladius Grav-tank": {
+      "min": 150,
+      "tiers": [
+        150,
+        190
+      ]
+    },
+    "Callidus Assassin": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Canis Rex": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Canis Wolfborn": {
+      "min": 120,
+      "tiers": [
+        120,
+        240
+      ]
+    },
+    "Canoness": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Canoness with Jump Pack": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Canoptek Acanthrites": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Canoptek Doomstalker": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Canoptek Macrocytes": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Canoptek Reanimator": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Canoptek Scarab Swarms": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Canoptek Spyders": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Canoptek Tomb Crawlers": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Canoptek Tomb Sentinel": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Canoptek Tomb Stalker": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Canoptek Wraiths": {
+      "min": 110,
+      "tiers": [
+        110,
+        220
+      ]
+    },
+    "Captain": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Captain In Gravis Armour": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Captain In Phobos Armour": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Captain In Terminator Armour": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Captain Sicarius": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Captain Titus": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Captain Tycho": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Captain With Jump Pack": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Captain on Bike": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Carab Culln The Risen": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Carnifexes": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Castellan Crowe": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Castigator": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Catachan Command Squad": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Catachan Heavy Weapons Squad": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Catachan Jungle Fighters": {
+      "min": 65,
+      "tiers": [
+        65,
+        120
+      ]
+    },
+    "Catacomb Command Barge": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Cato Sicarius": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Celestian Insidiants": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Celestian Sacresant Aveline": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Celestian Sacresants": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Centaur Light Carrier": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Centurion Assault Squad": {
+      "min": 150,
+      "tiers": [
+        150,
+        300
+      ]
+    },
+    "Cerberus": {
+      "min": 270,
+      "tiers": [
+        270
+      ]
+    },
+    "Changecaster": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Chaos Bikers": {
+      "min": 70,
+      "tiers": [
+        70,
+        130
+      ]
+    },
+    "Chaos Deimos Predator": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Chaos Land Raider": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Chaos Lord": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Chaos Lord In Terminator Armour": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Chaos Lord On Bike": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Chaos Lord On Disc Of Tzeentch": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Chaos Lord On Juggernaut": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Chaos Lord On Palanquin Of Nurgle": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Chaos Lord On Steed Of Slaanesh": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Chaos Lord with Jump Pack": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Chaos Predator Annihilator": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Chaos Predator Destructor": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Chaos Rhino": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Chaos Spawn": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Chaos Terminator Squad": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Chaos Terminators": {
+      "min": 155,
+      "tiers": [
+        155
+      ]
+    },
+    "Chaos Thunderhawk": {
+      "min": 840,
+      "tiers": [
+        840
+      ]
+    },
+    "Chaos Vindicator": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Chaplain": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Chaplain Cassius": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Chaplain Grimaldus": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Chaplain On Bike": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Chaplain Venerable Dreadnought": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Chief Librarian Mephiston": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Chimera": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Chinork Warkopta": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Chosen": {
+      "min": 125,
+      "tiers": [
+        125,
+        250
+      ]
+    },
+    "Chronomancer": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Clamavus": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Cobra": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Colossus": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Commander Dante": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Commander Farsight": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Commander In Coldstar Battlesuit": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Commander In Crisis Battlesuit": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Commander In Enforcer Battlesuit": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Commander Shadowsun": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Commissar": {
+      "min": 30,
+      "tiers": [
+        30
+      ]
+    },
+    "Company Champion On Bike": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Company Heroes": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Company Veterans On Bikes": {
+      "min": 110,
+      "tiers": [
+        110,
+        275
+      ]
+    },
+    "Contorted Epitome": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Convergence Of Dominion": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Coronus Grav-carrier": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Corpuscarii Electro-priests": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Corsair Cloud Dancer Band": {
+      "min": 105,
+      "tiers": [
+        105,
+        140
+      ]
+    },
+    "Corsair Reaver Band": {
+      "min": 125,
+      "tiers": [
+        125,
+        150
+      ]
+    },
+    "Corsair Skyreaver Band": {
+      "min": 125,
+      "tiers": [
+        125,
+        150
+      ]
+    },
+    "Corsair Skyreavers": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Corsair Voidreavers": {
+      "min": 65,
+      "tiers": [
+        65,
+        110
+      ]
+    },
+    "Corsair Voidscarred": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Corvus Blackstar": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Court of the Archon": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Crassus": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Crimson Hunter": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Crisis Battlesuits": {
+      "min": 200,
+      "tiers": [
+        200,
+        400
+      ]
+    },
+    "Crisis Fireknife Battlesuits": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Crisis Starscythe Battlesuits": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Crisis Sunforge Battlesuits": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Cronos": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Crusade Ancient": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Crusader Squad": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Crusaders": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Cryptothralls": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Cthonian Beserks": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Cthonian Earthshakers": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Culexus Assassin": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Cultist Firebrand": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Cultist Mob": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Cultist Mob with Firearms": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Custodian Guard": {
+      "min": 150,
+      "tiers": [
+        150,
+        190
+      ]
+    },
+    "Custodian Wardens": {
+      "min": 210,
+      "tiers": [
+        210,
+        260
+      ]
+    },
+    "Cybernetica Datasmith": {
+      "min": 35,
+      "tiers": [
+        35
+      ]
+    },
+    "Cyberwolf": {
+      "min": 240,
+      "tiers": [
+        240
+      ]
+    },
+    "Cyclops Demolition Vehicle": {
+      "min": 25,
+      "tiers": [
+        25
+      ]
+    },
+    "Cypher": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "C\u2019tan Shard of the Deceiver": {
+      "min": 285,
+      "tiers": [
+        285
+      ]
+    },
+    "C\u2019tan Shard of the Nightbringer": {
+      "min": 315,
+      "tiers": [
+        315
+      ]
+    },
+    "C\u2019tan Shard of the Void Dragon": {
+      "min": 310,
+      "tiers": [
+        310
+      ]
+    },
+    "D-cannon Platform": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Da Red Gobbo": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Daemon Prince Of Chaos With Wings": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Daemon Prince of Chaos": {
+      "min": 190,
+      "tiers": [
+        190
+      ]
+    },
+    "Daemon Prince of Khorne": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Daemon Prince of Khorne with Wings": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Daemon Prince of Nurgle": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Daemon Prince of Nurgle with Wings": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Daemon Prince of Slaanesh": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Daemon Prince of Tzeentch": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Daemon Prince of Tzeentch with Wings": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Daemonettes": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Daemonhost": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Daemonifuge": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Dakkajet": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Damned Legionnaires": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Dark Apostle": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Dark Commune": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Dark Reapers": {
+      "min": 90,
+      "tiers": [
+        90,
+        195
+      ]
+    },
+    "Darkstrider": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Darnath Lysander": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Death Company Captain": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Death Company Captain with Jump Pack": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Death Company Dreadnought": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Death Company Marines": {
+      "min": 85,
+      "tiers": [
+        85,
+        160
+      ]
+    },
+    "Death Company Marines With Jump Packs": {
+      "min": 120,
+      "tiers": [
+        120,
+        230
+      ]
+    },
+    "Death Company Marines with Bolt Rifles": {
+      "min": 85,
+      "tiers": [
+        85,
+        160
+      ]
+    },
+    "Death Company Marines with Boltguns": {
+      "min": 125,
+      "tiers": [
+        125,
+        250
+      ]
+    },
+    "Death Cult Assassins": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Death Guard Chaos Lord": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Death Guard Chaos Lord In Terminator Armour": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Death Guard Cultists": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Death Guard Possessed": {
+      "min": 155,
+      "tiers": [
+        155,
+        310
+      ]
+    },
+    "Death Guard Sorcerer In Terminator Armour": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Death Jester": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Death Korps Grenadier Squad": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Death Korps Of Krieg": {
+      "min": 65,
+      "tiers": [
+        65,
+        145
+      ]
+    },
+    "Death Rider Commissar": {
+      "min": 35,
+      "tiers": [
+        35
+      ]
+    },
+    "Death Riders": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Deathleaper": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Deathmarks": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Deathshroud Terminators": {
+      "min": 160,
+      "tiers": [
+        160,
+        320
+      ]
+    },
+    "Deathstorm Drop Pod": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Deathstrike": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Deathwatch Kill Team": {
+      "min": 100,
+      "tiers": [
+        100,
+        190
+      ]
+    },
+    "Deathwatch Terminator Squad": {
+      "min": 190,
+      "tiers": [
+        190,
+        350
+      ]
+    },
+    "Deathwatch Veterans": {
+      "min": 100,
+      "tiers": [
+        100,
+        190
+      ]
+    },
+    "Deathwing Knights": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Deathwing Terminator Squad": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Decimator": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Decimus Kill Team": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Deff Dread": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Deff Rolla Battle Fortress": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Deffkilla Wartrike": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Deffkoptas": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Deffkoptas With Big Shootas": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Defiler": {
+      "min": 190,
+      "tiers": [
+        190
+      ]
+    },
+    "Deimos Predator": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Deredeo Dreadnought": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Desolation Squad": {
+      "min": 90,
+      "tiers": [
+        90,
+        170
+      ]
+    },
+    "Devilfish": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Dialogus": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Dimachaeron": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Dire Avengers": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Dogmata": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Dominion Squad": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Dominus Armoured Siege Bombard": {
+      "min": 325,
+      "tiers": [
+        325
+      ]
+    },
+    "Doom Scythe": {
+      "min": 230,
+      "tiers": [
+        230
+      ]
+    },
+    "Doomhammer": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Doomsday Ark": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Drazhar": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Dreadclaw Drop Pod": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Dreadnought Drop Pod": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Drone Sentry Turret": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Drop Pod": {
+      "min": 80,
+      "tiers": [
+        80,
+        170
+      ]
+    },
+    "Earthshaker Carriage Battery": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Earthshaker Platform": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Eightbound": {
+      "min": 135,
+      "tiers": [
+        135,
+        270
+      ]
+    },
+    "Einhyr Champion": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Einhyr Hearthguard": {
+      "min": 135,
+      "tiers": [
+        135,
+        270
+      ]
+    },
+    "Eldrad Ulthran": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Eliminator Squad": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Elysian Drop Sentinel": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Elysian Sniper Squad": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Emperor\u2019s Champion": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Epidemius": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Eradicator Squad": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Eversor Assassin": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Exaction Squad": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Exalted Champion": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Exalted Eightbound": {
+      "min": 140,
+      "tiers": [
+        140,
+        280
+      ]
+    },
+    "Exalted Flamer": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Exalted Seeker Chariot": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Exalted Sorcerer": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Exalted Sorcerer on Disc of Tzeentch": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Execrator": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Exocrine": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Exorcist": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Ezekiel": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Fabius Bile": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Falchion": {
+      "min": 420,
+      "tiers": [
+        420
+      ]
+    },
+    "Falcon": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Farseer": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Farseer Skyrunner": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Fateskimmer": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Feculent Gnarlmaw": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Fellblade": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Fellgor Beastmen": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Fenrisian Wolves": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Fiends": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Fighta-bommer": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Fire Dragons": {
+      "min": 120,
+      "tiers": [
+        120,
+        240
+      ]
+    },
+    "Fire Prism": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Fire Raptor Gunship": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Firesight Team": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Firestorm": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Firestorm Redoubt": {
+      "min": 260,
+      "tiers": [
+        260
+      ]
+    },
+    "Flamers": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Flash Gitz": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Flawless Blades": {
+      "min": 110,
+      "tiers": [
+        110,
+        220
+      ]
+    },
+    "Flayed Ones": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Flesh Hounds": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Fluxmaster": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Foetid Bloat-drone": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Forgefiend": {
+      "min": 270,
+      "tiers": [
+        270
+      ]
+    },
+    "Fortis Kill Team": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Fortress Of Redemption": {
+      "min": 480,
+      "tiers": [
+        480
+      ]
+    },
+    "Foul Blightspawn": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Fuegan": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Fulgrim": {
+      "min": 340,
+      "tiers": [
+        340
+      ]
+    },
+    "Fulgurite Electro-priests": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Furies": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Furioso Dreadnought": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Gabriel Seth": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Gargantuan Squiggoth": {
+      "min": 440,
+      "tiers": [
+        440
+      ]
+    },
+    "Gargoyles": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Gaunt\u2019s Ghosts": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Gauss Pylon": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Gellerpox Infected": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Geomancer": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Ghazghkull Thraka": {
+      "min": 235,
+      "tiers": [
+        235
+      ]
+    },
+    "Ghost Ark": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Ghostkeel Battlesuit": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Giant Chaos Spawn": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Gladiator Lancer": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Gladiator Reaper": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Gladiator Valiant": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Goliath Rockgrinder": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Goliath Truck": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Goremongers": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Gorgon Heavy Transport": {
+      "min": 275,
+      "tiers": [
+        275
+      ]
+    },
+    "Gorkanaut": {
+      "min": 265,
+      "tiers": [
+        265
+      ]
+    },
+    "Grand Master": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Grand Master In Nemesis Dreadknight": {
+      "min": 225,
+      "tiers": [
+        225
+      ]
+    },
+    "Grand Master Voldus": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Great Knarloc": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Great Unclean One": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Greater Blight Drone": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Greater Brass Scorpion": {
+      "min": 500,
+      "tiers": [
+        500
+      ]
+    },
+    "Gretchin": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Grey Hunters": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Grey Knights Dreadnought": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Grey Knights Relic Razorback": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Grey Knights Terminator Squad": {
+      "min": 190,
+      "tiers": [
+        190
+      ]
+    },
+    "Griffon Mortar Carrier": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Grimnyr": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Grot Bomm Launcha": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Grot Mega-tank": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Grot Tanks": {
+      "min": 155,
+      "tiers": [
+        155,
+        310
+      ]
+    },
+    "Grotesques": {
+      "min": 80,
+      "tiers": [
+        80,
+        170
+      ]
+    },
+    "Guardian Defenders": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Guardian Drone": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Hades Breaching Drill": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Haemonculus": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Hammerfall Bunker": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Hammerhead Gunship": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Hand of the Archon": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Harald Deathwolf": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Harpy": {
+      "min": 215,
+      "tiers": [
+        215
+      ]
+    },
+    "Harridan": {
+      "min": 610,
+      "tiers": [
+        610
+      ]
+    },
+    "Haruspex": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Havocs": {
+      "min": 70,
+      "tiers": [
+        70,
+        130
+      ]
+    },
+    "Hearthkyn Warriors": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Heavy Gun Drones": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Heavy Mortar Team": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Heavy Quad Launcher Team": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Hekaton Land Fortress": {
+      "min": 240,
+      "tiers": [
+        240
+      ]
+    },
+    "Helbrute": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Heldrake": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Hell Blade": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Hell Talon": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Hellblaster Squad": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Hellflayer": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Hellflayers": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Hellhammer": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Hellhound": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Hellions": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Hemlock Wraithfighter": {
+      "min": 155,
+      "tiers": [
+        155
+      ]
+    },
+    "Herald Of Slaanesh On Steed Of Slaanesh": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Hernkyn Pioneers": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Hernkyn Yaegirs": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Hexmark Destroyer": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Hierophant": {
+      "min": 810,
+      "tiers": [
+        810
+      ]
+    },
+    "High Marshal Helbrecht": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Hive Crone": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Hive Guard": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Hive Tyrant": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Hormagaunts": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Hornet": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Horticulous Slimux": {
+      "min": 375,
+      "tiers": [
+        375
+      ]
+    },
+    "Hospitaller": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Howling Banshees": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Hunta Rig": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Huron Blackheart": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Hybrid Metamorphs": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Hydra": {
+      "min": 450,
+      "tiers": [
+        450
+      ]
+    },
+    "Hydra Platform": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Hyperadapted Raveners": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Icon Bearer": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Illic Nightspear": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Illuminor Szeras": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Imagifier": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Immolator": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Immortals": {
+      "min": 285,
+      "tiers": [
+        285
+      ]
+    },
+    "Imperial Navy Breachers": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Imperial Rhino": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Impulsor": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Inceptor Squad": {
+      "min": 120,
+      "tiers": [
+        120,
+        240
+      ]
+    },
+    "Incubi": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Incursor Squad": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Indomitor Kill Team": {
+      "min": 265,
+      "tiers": [
+        265
+      ]
+    },
+    "Infernal Enrapturess": {
+      "min": 110,
+      "tiers": [
+        110,
+        220
+      ]
+    },
+    "Infernal Master": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Infernus Squad": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Infiltrator Squad": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Infractors": {
+      "min": 85,
+      "tiers": [
+        85,
+        160
+      ]
+    },
+    "Inner Circle Companions": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Inquisitor": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Inquisitor Coteaz": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Inquisitor Draxus": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Inquisitor Eisenhorn": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Inquisitor Greyfax": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Inquisitor In Terminator Armour": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Inquisitor Karamazov": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Inquisitor Ostromandeus": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Inquisitorial Agents": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Inquisitorial Chimera": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Interceptor Squad": {
+      "min": 125,
+      "tiers": [
+        125,
+        250
+      ]
+    },
+    "Intercessor Squad": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Invader ATV": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Invictor Tactical Warsuit": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Irillyth": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Iron Father Feirros": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Iron Priest": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Ironkin Steeljacks with Melee Weapons": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Ironstrider Ballistarii": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Jackal Alphus": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Jain Zar": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Jakhals": {
+      "min": 65,
+      "tiers": [
+        65,
+        140
+      ]
+    },
+    "Janus Draik": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Jokaero Weaponsmith": {
+      "min": 30,
+      "tiers": [
+        30
+      ]
+    },
+    "Judiciar": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Junith Eruita": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Kabalite Warriors": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Kairos Fateweaver": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Kaldor Draigo": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Kannonwagon": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Kapricus Carrier": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Kapricus Defenders": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Kaptin Badrukk": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Karanak": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Karandras": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Kasrkin": {
+      "min": 450,
+      "tiers": [
+        450
+      ]
+    },
+    "Kastelan Robots": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Kataphron Breachers": {
+      "min": 160,
+      "tiers": [
+        160,
+        320
+      ]
+    },
+    "Kataphron Destroyers": {
+      "min": 105,
+      "tiers": [
+        105,
+        210
+      ]
+    },
+    "Kayvaan Shrike": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Keeper Of Secrets": {
+      "min": 305,
+      "tiers": [
+        305
+      ]
+    },
+    "Keeper of Secrets": {
+      "min": 305,
+      "tiers": [
+        305
+      ]
+    },
+    "Kelermorph": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Kharseth": {
+      "min": 280,
+      "tiers": [
+        280
+      ]
+    },
+    "Kharybdis Assault Claw": {
+      "min": 300,
+      "tiers": [
+        300
+      ]
+    },
+    "Khorne Berzerkers": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Kh\u00e2rn The Betrayer": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Kill Krusha": {
+      "min": 230,
+      "tiers": [
+        230
+      ]
+    },
+    "Kill Rig": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Kill Tank": {
+      "min": 295,
+      "tiers": [
+        295
+      ]
+    },
+    "Kill Team Cassius": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Killa Kans": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Knarloc Riders": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Knight Abominant": {
+      "min": 355,
+      "tiers": [
+        355
+      ]
+    },
+    "Knight Castellan": {
+      "min": 410,
+      "tiers": [
+        410
+      ]
+    },
+    "Knight Crusader": {
+      "min": 385,
+      "tiers": [
+        385
+      ]
+    },
+    "Knight Defender": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Knight Desecrator": {
+      "min": 355,
+      "tiers": [
+        355
+      ]
+    },
+    "Knight Despoiler": {
+      "min": 390,
+      "tiers": [
+        390
+      ]
+    },
+    "Knight Errant": {
+      "min": 365,
+      "tiers": [
+        365
+      ]
+    },
+    "Knight Gallant": {
+      "min": 365,
+      "tiers": [
+        365
+      ]
+    },
+    "Knight Paladin": {
+      "min": 375,
+      "tiers": [
+        375
+      ]
+    },
+    "Knight Preceptor": {
+      "min": 365,
+      "tiers": [
+        365
+      ]
+    },
+    "Knight Rampager": {
+      "min": 365,
+      "tiers": [
+        365
+      ]
+    },
+    "Knight Ruinator": {
+      "min": 355,
+      "tiers": [
+        355
+      ]
+    },
+    "Knight Tyrant": {
+      "min": 410,
+      "tiers": [
+        410
+      ]
+    },
+    "Knight Valiant": {
+      "min": 410,
+      "tiers": [
+        410
+      ]
+    },
+    "Knight Warden": {
+      "min": 375,
+      "tiers": [
+        375
+      ]
+    },
+    "Knight-centura": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Kommandos": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Kor\u2019sarro Khan": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Kratos": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Krom Dragongaze": {
+      "min": 175,
+      "tiers": [
+        175
+      ]
+    },
+    "Kroot Carnivores": {
+      "min": 65,
+      "tiers": [
+        65,
+        140
+      ]
+    },
+    "Kroot Farstalkers": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Kroot Flesh Shaper": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Kroot Hounds": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Kroot Lone-Spear": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Kroot Trail Shaper": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Kroot War Shaper": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Krootox Rampagers": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Krootox Riders": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Kytan Ravager": {
+      "min": 400,
+      "tiers": [
+        400
+      ]
+    },
+    "K\u00e2hl": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Lady Malys": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Land Raider": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Land Raider Achilles": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Land Raider Crusader": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Land Raider Helios": {
+      "min": 215,
+      "tiers": [
+        215
+      ]
+    },
+    "Land Raider Proteus": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Land Raider Redeemer": {
+      "min": 270,
+      "tiers": [
+        270
+      ]
+    },
+    "Land Speeder": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Land Speeder Storm": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Land Speeder Vengeance": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Lazarus": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Legionaries": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Lelith Hesperax": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Lemartes": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Lhykhis": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Librarian": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Librarian Dreadnought": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Librarian In Phobos Armour": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Librarian In Terminator Armour": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Librarian on Bike": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Lictor": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Lieutenant": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Lieutenant In Phobos Armour": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Lieutenant In Reiver Armour": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Lieutenant With Combi-weapon": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Lifta Wagon": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Lion El\u2019jonson": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Locus": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Logan Grimnar": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Lokhust Destroyers": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Lokhust Lord": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Longstrike": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Lootas": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Lord Exultant": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Lord Invocatus": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Lord Kakophonist": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Lord Marshal Dreir": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Lord Solar Leontus": {
+      "min": 30,
+      "tiers": [
+        30
+      ]
+    },
+    "Lord of Change": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Lord of Contagion": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Lord of Poxes": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Lord of Virulence": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Lord on Juggernaut": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Lucius the Eternal": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Lukas The Trickster": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Lychguard": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Lynx": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Macharius": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Macharius Omega": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Macharius Vulcan": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Macro-cannon Aquila Strongpoint": {
+      "min": 550,
+      "tiers": [
+        550
+      ]
+    },
+    "Mad Dok Grotsnik": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Magnus The Red": {
+      "min": 435,
+      "tiers": [
+        435
+      ]
+    },
+    "Magus": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Malanthrope": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Malcador": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Malcador Annihilator": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Malcador Defender": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Malcador Infernus": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Maleceptor": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Malignant Plaguecaster": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Mandrakes": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Manta": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Manticore": {
+      "min": 65,
+      "tiers": [
+        65,
+        145
+      ]
+    },
+    "Manticore Platform": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Marauder Bomber": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Marauder Destroyer": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Marneus Calgar": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Marneus Calgar in Armour of Antilochus": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Marshal": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Master Of Executions": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Master of Executions": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Mastodon": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Maugan Ra": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Maulerfiend": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Mawloc": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Mega Dread": {
+      "min": 225,
+      "tiers": [
+        225
+      ]
+    },
+    "Meganobz": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Megatrakk Scrapjet": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Mek": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Mek Gunz": {
+      "min": 80,
+      "tiers": [
+        80,
+        170
+      ]
+    },
+    "Meka-dread": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Mekboy Workshop": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Memnyr Strategist": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Miasmic Malignifier": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Ministorum Priest": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Minotaur": {
+      "min": 325,
+      "tiers": [
+        325
+      ]
+    },
+    "Monolith": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Morkanaut": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Mortarion": {
+      "min": 380,
+      "tiers": [
+        380
+      ]
+    },
+    "Mortifiers": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Mortis Dreadnought": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Morvenn Vahl": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Mozrog Skragbad": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Mucolid Spores": {
+      "min": 30,
+      "tiers": [
+        30,
+        60
+      ]
+    },
+    "Mukaali Riders": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Munitorum Servitors": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Murderfang": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Mutalith Vortex Beast": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Mutilators": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Mutoid Vermin": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Myphitic Blight-hauler": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Navigator": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Necron Warriors": {
+      "min": 110,
+      "tiers": [
+        110,
+        220
+      ]
+    },
+    "Negavolt Cultists": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Nekrosor Ammentar": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Nemesis Claw": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Nemesis Dreadknight": {
+      "min": 225,
+      "tiers": [
+        225
+      ]
+    },
+    "Nemesor Zahndrekh": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Neophyte Hybrids": {
+      "min": 65,
+      "tiers": [
+        65,
+        145
+      ]
+    },
+    "Nephilim Jetfighter": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Neurogaunts": {
+      "min": 45,
+      "tiers": [
+        45,
+        90
+      ]
+    },
+    "Neurolictor": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Neurotyrant": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Nexos": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Neyam Shai Murad": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Night Scythe": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Night Shroud": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Night Spinner": {
+      "min": 65,
+      "tiers": [
+        65,
+        110
+      ]
+    },
+    "Nightwing": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Njal Stormcaller": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Nobz": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Nobz On Warbikes": {
+      "min": 20,
+      "tiers": [
+        20,
+        40
+      ]
+    },
+    "Noctilith Crown": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Noise Marines": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Nork Deddog": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Norn Assimilator": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Norn Emissary": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Nurglings": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Obelisk": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Obliterators": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Ogryn Bodyguard": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Ogryn Squad": {
+      "min": 60,
+      "tiers": [
+        60,
+        130
+      ]
+    },
+    "Old One Eye": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Onager Dunecrawler": {
+      "min": 155,
+      "tiers": [
+        155
+      ]
+    },
+    "Ophydian Destroyers": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Orca Dropship": {
+      "min": 275,
+      "tiers": [
+        275
+      ]
+    },
+    "Orikan The Diviner": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Outrider Squad": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Overlord": {
+      "min": 230,
+      "tiers": [
+        230
+      ]
+    },
+    "Painboss": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Painboy": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Painboy On Warbike": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Paladin Squad": {
+      "min": 180,
+      "tiers": [
+        180,
+        225
+      ]
+    },
+    "Palatine": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Pallas Grav-attack": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Paragon Warsuits": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Parasite Of Mortrex": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Pathfinder Team": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Patriarch": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Pedro Kantor": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Penitent Engines": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Pink Horrors": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Piranhas": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Plague Drones": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Plague Marines": {
+      "min": 115,
+      "tiers": [
+        115,
+        185
+      ]
+    },
+    "Plague Surgeon": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Plague Toads": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Plaguebearers": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Plagueburst Crawler": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Plasma Obliterator": {
+      "min": 225,
+      "tiers": [
+        225
+      ]
+    },
+    "Plasmancer": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Possessed": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Pox Riders": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Poxbringer": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Poxwalkers": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Praetor": {
+      "min": 150,
+      "tiers": [
+        150,
+        225
+      ]
+    },
+    "Predator Annihilator": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Predator Destructor": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Primaris Psyker": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Primaris Redoubt": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Primus": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Prince Yriel": {
+      "min": 65,
+      "tiers": [
+        65,
+        110
+      ]
+    },
+    "Prosecutors": {
+      "min": 40,
+      "tiers": [
+        40,
+        50
+      ]
+    },
+    "Proteus Kill Team": {
+      "min": 160,
+      "tiers": [
+        160,
+        320
+      ]
+    },
+    "Psychomancer": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Psychophage": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Pteraxii Skystalkers": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Pteraxii Sterylizors": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Purgation Squad": {
+      "min": 115,
+      "tiers": [
+        115,
+        230
+      ]
+    },
+    "Purifier Squad": {
+      "min": 125,
+      "tiers": [
+        125,
+        250
+      ]
+    },
+    "Pyrovores": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Ragnar Blackmane": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Raider": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Rangers": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Rapier Carrier": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Raptors": {
+      "min": 190,
+      "tiers": [
+        190
+      ]
+    },
+    "Ratlings": {
+      "min": 60,
+      "tiers": [
+        60,
+        100
+      ]
+    },
+    "Ravager": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Raven Strike Fighter": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Raveners": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Razorback": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Razorwing Jetfighter": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Reaper": {
+      "min": 90,
+      "tiers": [
+        90,
+        195
+      ]
+    },
+    "Reavers": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Red Corsairs Raiders": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Redemptor Dreadnought": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Reductus Saboteur": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Regimental Attach\u00e9s": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Rein And Raus": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Reiver Squad": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Relic Contemptor Dreadnought": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Relic Razorback": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Relic Terminator Squad": {
+      "min": 200,
+      "tiers": [
+        200,
+        400
+      ]
+    },
+    "Remora Stealth Drones": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Remote Sensor Tower": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Renegade Enforcer": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Renegade Heavy Weapons Squad": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Repentia Squad": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Repressor": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Repulsor": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Repulsor Executioner": {
+      "min": 235,
+      "tiers": [
+        235
+      ]
+    },
+    "Retributor Squad": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Revenant Titan": {
+      "min": 1100,
+      "tiers": [
+        1100
+      ]
+    },
+    "Rhino": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Rhino Primaris": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Ripper Swarms": {
+      "min": 75,
+      "tiers": [
+        75,
+        140
+      ]
+    },
+    "Riptide Battlesuit": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Roboute Guilliman": {
+      "min": 340,
+      "tiers": [
+        340
+      ]
+    },
+    "Rogal Dorn Battle Tank": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Rogal Dorn Commander": {
+      "min": 275,
+      "tiers": [
+        275
+      ]
+    },
+    "Rogue Psyker": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Rogue Trader Entourage": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Rotigus": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Royal Warden": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Rubric Marines": {
+      "min": 100,
+      "tiers": [
+        100,
+        190
+      ]
+    },
+    "R\u2019varna Battlesuit": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Sagitaur": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Saint Celestine": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Sammael": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Sanctifiers": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Sanctus": {
+      "min": 95,
+      "tiers": [
+        95,
+        170
+      ]
+    },
+    "Sanguinary Guard": {
+      "min": 125,
+      "tiers": [
+        125,
+        260
+      ]
+    },
+    "Sanguinary Priest": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Sanguinary Priest With Jump Pack": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Sanguinary Priest on Bike": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Scabeiathrax The Bloated": {
+      "min": 275,
+      "tiers": [
+        275
+      ]
+    },
+    "Scarab Occult Terminators": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Scorpion": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Scout Bike Squad": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Scout Sentinels": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Scout Sniper Squad": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Scout Squad": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Screamer-killer": {
+      "min": 215,
+      "tiers": [
+        215
+      ]
+    },
+    "Screamers": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Scythed Hierodule": {
+      "min": 330,
+      "tiers": [
+        330
+      ]
+    },
+    "Secutarii Hoplites": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Secutarii Peltasts": {
+      "min": 50,
+      "tiers": [
+        50,
+        100
+      ]
+    },
+    "Seeker Chariot": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Seekers": {
+      "min": 45,
+      "tiers": [
+        45,
+        55
+      ]
+    },
+    "Sekhetar Robots": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Sentinel Powerlifter": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Sentry Pylon": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Seraphim Squad": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Seraptek Heavy Construct": {
+      "min": 540,
+      "tiers": [
+        540
+      ]
+    },
+    "Serberys Raiders": {
+      "min": 60,
+      "tiers": [
+        60,
+        120
+      ]
+    },
+    "Serberys Sulphurhounds": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Sergeant Chronus": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Sergeant Harker": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Sergeant Telion": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Servitor Battleclade": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Servitors": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Shadow Spectres": {
+      "min": 460,
+      "tiers": [
+        460
+      ]
+    },
+    "Shadowseer": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Shadowsword": {
+      "min": 410,
+      "tiers": [
+        410
+      ]
+    },
+    "Shalaxi Helbane": {
+      "min": 95,
+      "tiers": [
+        95,
+        190
+      ]
+    },
+    "Shas\u2019o R\u2019alai": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Shield-captain": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Shield-captain On Dawneagle Jetbike": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Shining Spears": {
+      "min": 90,
+      "tiers": [
+        90,
+        195
+      ]
+    },
+    "Shokkjump Dragsta": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Shroud Runners": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Sicaran Arcus": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Sicaran Battle Tank": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Sicaran Omega": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Sicaran Punisher": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Sicaran Venator": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Sicarian Infiltrators": {
+      "min": 75,
+      "tiers": [
+        75,
+        155
+      ]
+    },
+    "Sicarian Ruststalkers": {
+      "min": 80,
+      "tiers": [
+        80,
+        165
+      ]
+    },
+    "Sisters of Battle Immolator": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Skarbrand": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Skathach Wraithknight": {
+      "min": 490,
+      "tiers": [
+        490
+      ]
+    },
+    "Skitarii Marshal": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Skitarii Rangers": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Skitarii Vanguard": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Skorchas": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Skorpekh Destroyers": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Skorpekh Lord": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Skorpius Dunerider": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Skull Altar": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Skull Cannon": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Skullmaster": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Skulltaker": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Sky Ray Gunship": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Sky-slasher Swarms": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Skyclaws": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Skyshield Landing Pad": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Skyweavers": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Slaughterbound": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Sloppity Bilepiper": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Sly Marbo": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Sokar-pattern Stormbird": {
+      "min": 900,
+      "tiers": [
+        900
+      ]
+    },
+    "Solitaire": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Sorcerer": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Sorcerer In Terminator Armour": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Sorcerer On Bike": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Sorcerer On Disc Of Tzeentch": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Sororitas Rhino": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Soul Grinder": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Spartan": {
+      "min": 300,
+      "tiers": [
+        300
+      ]
+    },
+    "Spectrus Kill Team": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Spindle Drones": {
+      "min": 35,
+      "tiers": [
+        35
+      ]
+    },
+    "Spined Chaos Beast": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Spiritseer": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Spoilpox Scrivener": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Spore Mines": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Sporocyst": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Squiggoth": {
+      "min": 440,
+      "tiers": [
+        440
+      ]
+    },
+    "Squighog Boyz": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Stalker": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Starweaver": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Stealth Battlesuits": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Sternguard Veteran Squad": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Stompa": {
+      "min": 235,
+      "tiers": [
+        235
+      ]
+    },
+    "Storm Chimera": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Storm Eagle Gunship": {
+      "min": 250,
+      "tiers": [
+        250
+      ]
+    },
+    "Storm Guardians": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Storm Speeder Hailstrike": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Storm Speeder Hammerstrike": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Storm Speeder Thunderstrike": {
+      "min": 135,
+      "tiers": [
+        135
+      ]
+    },
+    "Stormblade": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Stormboyz": {
+      "min": 265,
+      "tiers": [
+        265
+      ]
+    },
+    "Stormfang Gunship": {
+      "min": 145,
+      "tiers": [
+        145
+      ]
+    },
+    "Stormhawk Interceptor": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Stormlord": {
+      "min": 430,
+      "tiers": [
+        430
+      ]
+    },
+    "Stormraven Gunship": {
+      "min": 280,
+      "tiers": [
+        280
+      ]
+    },
+    "Stormsurge": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Stormsword": {
+      "min": 465,
+      "tiers": [
+        465
+      ]
+    },
+    "Stormtalon Gunship": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Stormwolf": {
+      "min": 125,
+      "tiers": [
+        125,
+        250
+      ]
+    },
+    "Strike Squad": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Strike Team": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Striking Scorpions": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Stygies Destroyer Tank Hunter": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Subductor Squad": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Suboden Khan": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Succubus": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Sun Shark Bomber": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Suppressor Squad": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Swooping Hawks": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Sydonian Skatros": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Syll\u2019esske": {
+      "min": 120,
+      "tiers": [
+        120
+      ]
+    },
+    "Tactical Squad": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Tallyman": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Talonstrike Kill Team": {
+      "min": 275,
+      "tiers": [
+        275
+      ]
+    },
+    "Talos": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Tankbustas": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Tantalus": {
+      "min": 230,
+      "tiers": [
+        230
+      ]
+    },
+    "Tarantula Air Defence Battery": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Tarantula Battery": {
+      "min": 40,
+      "tiers": [
+        40,
+        80
+      ]
+    },
+    "Tarantula Sentry Battery": {
+      "min": 30,
+      "tiers": [
+        30,
+        60
+      ]
+    },
+    "Tauros Assault Vehicle": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Tauros Venator": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Taurox": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Taurox Prime": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Tech-priest Dominus": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Techmarine": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Techmarine on Bike": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Technoarcheologist": {
+      "min": 155,
+      "tiers": [
+        155
+      ]
+    },
+    "Technomancer": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Tectonic Fragdrill": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Tempestus Aquilons": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Tempestus Scions": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Termagants": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Terminator Assault Squad": {
+      "min": 180,
+      "tiers": [
+        180,
+        360
+      ]
+    },
+    "Terminator Squad": {
+      "min": 175,
+      "tiers": [
+        175,
+        330
+      ]
+    },
+    "Terminus Ultra": {
+      "min": 285,
+      "tiers": [
+        285
+      ]
+    },
+    "Terrax-pattern Termite": {
+      "min": 200,
+      "tiers": [
+        200
+      ]
+    },
+    "Tervigon": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Tesseract Ark": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Tesseract Vault": {
+      "min": 425,
+      "tiers": [
+        425
+      ]
+    },
+    "Tetras": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "The Archivist": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "The Blue Scribes": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "The Changeling": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "The Masque Of Slaanesh": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "The Sanguinor": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "The Silent King": {
+      "min": 400,
+      "tiers": [
+        400
+      ]
+    },
+    "The Swarmlord": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "The Visarch": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "The Yncarne": {
+      "min": 260,
+      "tiers": [
+        260
+      ]
+    },
+    "Thunderfire Cannon": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Thunderhawk Transporter": {
+      "min": 495,
+      "tiers": [
+        495
+      ]
+    },
+    "Thunderwolf Cavalry": {
+      "min": 115,
+      "tiers": [
+        115,
+        230
+      ]
+    },
+    "Tidewall Droneport": {
+      "min": 50,
+      "tiers": [
+        50
+      ]
+    },
+    "Tidewall Gunrig": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Tidewall Shieldline": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Tiger Shark": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Tomb Blades": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Tor Garadon": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Tormentbringer": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Tormentbringer On Exalted Seeker Chariot": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Tormentors": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Toxicrene": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Traitor Enforcer": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Traitor Guardsmen Squad": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Trajann Valoris": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Tranceweaver": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Transcendent C\u2019tan": {
+      "min": 305,
+      "tiers": [
+        305
+      ]
+    },
+    "Trazyn The Infinite": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Triarch Praetorians": {
+      "min": 90,
+      "tiers": [
+        90,
+        180
+      ]
+    },
+    "Triarch Stalker": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Trojan Support Vehicle": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Troupe": {
+      "min": 85,
+      "tiers": [
+        85,
+        100
+      ]
+    },
+    "Troupe Master": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Trukk": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Trygon": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Tx42 Piranha": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Tycho The Lost": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Typhon": {
+      "min": 320,
+      "tiers": [
+        320
+      ]
+    },
+    "Typhus": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Tyrannic War Veterans": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Tyrannocyte": {
+      "min": 45,
+      "tiers": [
+        45,
+        90
+      ]
+    },
+    "Tyrannofex": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Tyrant Guard": {
+      "min": 45,
+      "tiers": [
+        45,
+        90
+      ]
+    },
+    "Tzaangor Shaman": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Tzaangors": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "UR-025": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Ufthak Blackhawk": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Ulrik The Slayer": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Uriel Ventris": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Urien Rakarth": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Ursula Creed": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Valdor": {
+      "min": 285,
+      "tiers": [
+        285
+      ]
+    },
+    "Valerian": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Valkyrie": {
+      "min": 190,
+      "tiers": [
+        190
+      ]
+    },
+    "Valkyrie Sky Talon": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Vampire Hunter": {
+      "min": 460,
+      "tiers": [
+        460
+      ]
+    },
+    "Vampire Raider": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Vargard Obyron": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Vashtorr The Arkifane": {
+      "min": 175,
+      "tiers": [
+        175
+      ]
+    },
+    "Venatari Custodians": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Vendetta Gunship": {
+      "min": 255,
+      "tiers": [
+        255
+      ]
+    },
+    "Venerable Contemptor Dreadnought": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Venerable Land Raider": {
+      "min": 220,
+      "tiers": [
+        220
+      ]
+    },
+    "Vengeance Weapon Battery": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Venom": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Venomcrawler": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Venomthropes": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Vertus Praetors": {
+      "min": 150,
+      "tiers": [
+        150,
+        225
+      ]
+    },
+    "Vespid Stingwings": {
+      "min": 65,
+      "tiers": [
+        65,
+        140
+      ]
+    },
+    "Veteran Bike Squad": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Vibro Cannon Platform": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Victrix Honour Guard": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Vigilant Squad": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Vigilators": {
+      "min": 45,
+      "tiers": [
+        45,
+        55
+      ]
+    },
+    "Vindicare Assassin": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Vindicator": {
+      "min": 185,
+      "tiers": [
+        185
+      ]
+    },
+    "Vindicator Laser Destroyer": {
+      "min": 175,
+      "tiers": [
+        175
+      ]
+    },
+    "Void Shield Generator": {
+      "min": 155,
+      "tiers": [
+        155
+      ]
+    },
+    "Voidraven Bomber": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Voidsmen-at-arms": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Voidweaver": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Von Ryan\u2019s Leapers": {
+      "min": 70,
+      "tiers": [
+        70,
+        140
+      ]
+    },
+    "Vortex Missile Strongpoint": {
+      "min": 525,
+      "tiers": [
+        525
+      ]
+    },
+    "Voss-pattern Lightning": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Vulkan He\u2019stan": {
+      "min": 195,
+      "tiers": [
+        195
+      ]
+    },
+    "Vulture Gunship": {
+      "min": 225,
+      "tiers": [
+        225
+      ]
+    },
+    "Wall Of Martyrs Bunker": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Wall Of Martyrs Defence Emplacement": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Wall Of Martyrs Defence Line": {
+      "min": 140,
+      "tiers": [
+        140,
+        280
+      ]
+    },
+    "War Dog Brigand": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "War Dog Executioner": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "War Dog Huntsman": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "War Dog Karnivore": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "War Dog Moirax": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "War Dog Stalker": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Warbikers": {
+      "min": 65,
+      "tiers": [
+        65,
+        130
+      ]
+    },
+    "Warboss": {
+      "min": 75,
+      "tiers": [
+        75
+      ]
+    },
+    "Warboss In Mega Armour": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Warboss On Warbike": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Warbuggies": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Wardens of Ultramar": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Warhound Titan": {
+      "min": 1100,
+      "tiers": [
+        1100
+      ]
+    },
+    "Warlock": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Warlock Conclave": {
+      "min": 55,
+      "tiers": [
+        55,
+        130
+      ]
+    },
+    "Warlock Skyrunners": {
+      "min": 45,
+      "tiers": [
+        45,
+        90
+      ]
+    },
+    "Warp Hunter": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Warp Spiders": {
+      "min": 105,
+      "tiers": [
+        105,
+        190
+      ]
+    },
+    "Warp Talons": {
+      "min": 125,
+      "tiers": [
+        125,
+        270
+      ]
+    },
+    "Warpsmith": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Wartrakks": {
+      "min": 130,
+      "tiers": [
+        130
+      ]
+    },
+    "Wasp Assault Walker": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Watch Captain Artemis": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Watch Master": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "Wave Serpent": {
+      "min": 125,
+      "tiers": [
+        125
+      ]
+    },
+    "Wazbom Blastajet": {
+      "min": 175,
+      "tiers": [
+        175
+      ]
+    },
+    "Webway Gate": {
+      "min": 415,
+      "tiers": [
+        415
+      ]
+    },
+    "Weirdboy": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Whirlwind": {
+      "min": 180,
+      "tiers": [
+        180
+      ]
+    },
+    "Whirlwind Scorpius": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Windriders": {
+      "min": 80,
+      "tiers": [
+        80,
+        160
+      ]
+    },
+    "Winged Hive Tyrant": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Winged Tyranid Prime": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Witchseekers": {
+      "min": 45,
+      "tiers": [
+        45,
+        55
+      ]
+    },
+    "Wolf Guard": {
+      "min": 105,
+      "tiers": [
+        105
+      ]
+    },
+    "Wolf Guard Battle Leader": {
+      "min": 65,
+      "tiers": [
+        65
+      ]
+    },
+    "Wolf Priest": {
+      "min": 165,
+      "tiers": [
+        165
+      ]
+    },
+    "Wolf Scouts": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    },
+    "Wracks": {
+      "min": 75,
+      "tiers": [
+        75,
+        150
+      ]
+    },
+    "Wraithblades": {
+      "min": 160,
+      "tiers": [
+        160
+      ]
+    },
+    "Wraithguard": {
+      "min": 170,
+      "tiers": [
+        170
+      ]
+    },
+    "Wraithknight": {
+      "min": 435,
+      "tiers": [
+        435
+      ]
+    },
+    "Wraithknight with Ghostglaive": {
+      "min": 420,
+      "tiers": [
+        420
+      ]
+    },
+    "Wraithlord": {
+      "min": 140,
+      "tiers": [
+        140
+      ]
+    },
+    "Wraithseer": {
+      "min": 105,
+      "tiers": [
+        105,
+        140
+      ]
+    },
+    "Wulfen": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Wulfen Dreadnought": {
+      "min": 150,
+      "tiers": [
+        150
+      ]
+    },
+    "Wurrboy": {
+      "min": 60,
+      "tiers": [
+        60
+      ]
+    },
+    "Wyches": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Wyvern": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "X-101": {
+      "min": 40,
+      "tiers": [
+        40
+      ]
+    },
+    "Xiphon Interceptor": {
+      "min": 115,
+      "tiers": [
+        115
+      ]
+    },
+    "Xv9 Hazard Battlesuits": {
+      "min": 55,
+      "tiers": [
+        55,
+        110
+      ]
+    },
+    "Ynnari Archon": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Ynnari Incubi": {
+      "min": 85,
+      "tiers": [
+        85,
+        170
+      ]
+    },
+    "Ynnari Kabalite Warriors": {
+      "min": 110,
+      "tiers": [
+        110
+      ]
+    },
+    "Ynnari Raider": {
+      "min": 80,
+      "tiers": [
+        80
+      ]
+    },
+    "Ynnari Reavers": {
+      "min": 65,
+      "tiers": [
+        65,
+        120
+      ]
+    },
+    "Ynnari Succubus": {
+      "min": 45,
+      "tiers": [
+        45
+      ]
+    },
+    "Ynnari Venom": {
+      "min": 70,
+      "tiers": [
+        70
+      ]
+    },
+    "Ynnari Wyches": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "Yvraine": {
+      "min": 100,
+      "tiers": [
+        100
+      ]
+    },
+    "Y\u2019vahra Battlesuit": {
+      "min": 210,
+      "tiers": [
+        210
+      ]
+    },
+    "Zarakynel": {
+      "min": 320,
+      "tiers": [
+        320
+      ]
+    },
+    "Zephyrim Squad": {
+      "min": 85,
+      "tiers": [
+        85
+      ]
+    },
+    "Zoanthropes": {
+      "min": 100,
+      "tiers": [
+        100,
+        200
+      ]
+    },
+    "Zodgrod Wortsnagga": {
+      "min": 90,
+      "tiers": [
+        90
+      ]
+    },
+    "\u00dbthar the Destined": {
+      "min": 95,
+      "tiers": [
+        95
+      ]
+    },
+    "\u2018Iron Hand\u2019 Straken": {
+      "min": 55,
+      "tiers": [
+        55
+      ]
+    }
+  }
+}
