@@ -193,6 +193,10 @@ body {
   overflow: auto;
   display: grid;
   gap: 0.35rem;
+  align-content: start;
+  grid-auto-rows: max-content;
+  padding-right: 0.35rem;
+  scrollbar-gutter: stable;
 }
 
 .keyword-filter-indicator {
