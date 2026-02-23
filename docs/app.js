@@ -31,6 +31,7 @@ let parserWarnings = [];
 let catalog = { factions: [], units: [] };
 let currentUnitId = null;
 let tooltipVisible = false;
+let coreRuleDefsByName = new Map();
 
 tooltipEl.className = "keyword-tooltip";
 tooltipEl.innerHTML = `
@@ -217,6 +218,57 @@ function buildTooltipPayload(title, legend, description) {
     body: paragraphs.join("\n\n"),
     points,
   };
+}
+
+function buildTooltipFromCoreSection(section) {
+  const title = String(section?.title || "").trim();
+  const blocks = Array.isArray(section?.blocks) ? section.blocks : [];
+  let intro = "";
+  const bodyParagraphs = [];
+  const points = [];
+
+  for (const block of blocks) {
+    const text = String(block?.text || "").trim();
+    if (!text) continue;
+
+    if (block.type === "bullet") {
+      points.push(text.replace(/^[-\u2022]\s*/, "").trim());
+      continue;
+    }
+
+    if (!intro) {
+      intro = text;
+    } else {
+      bodyParagraphs.push(text);
+    }
+  }
+
+  return {
+    title,
+    intro,
+    body: bodyParagraphs.join("\n\n"),
+    points,
+  };
+}
+
+function buildCoreRuleIndex(coreRulesPayload) {
+  const index = new Map();
+  const sections = Array.isArray(coreRulesPayload?.sections) ? coreRulesPayload.sections : [];
+
+  for (const section of sections) {
+    const title = String(section?.title || "").trim();
+    if (!title) continue;
+    const tip = buildTooltipFromCoreSection(section);
+    if (!tip.intro && !tip.body && !tip.points.length) continue;
+
+    const k1 = normalizeRuleName(title);
+    if (k1) index.set(k1, tip);
+
+    const k2 = normalizeRuleName(simplifyRuleName(title));
+    if (k2) index.set(k2, tip);
+  }
+
+  return index;
 }
 
 function renderWeaponTable(type, weapons) {
@@ -612,13 +664,16 @@ function buildCatalog(datasets) {
       const ruleTags = parseWeaponTags(description).map((label) => {
         const exactKey = normalizeRuleName(label);
         const simpleKey = normalizeRuleName(simplifyRuleName(label));
+        const coreTip = coreRuleDefsByName.get(exactKey) || coreRuleDefsByName.get(simpleKey) || null;
         const found = chooseByFaction(
           abilityDefsByName.get(exactKey) || abilityDefsByName.get(simpleKey) || [],
           factionId
         );
         return {
           label,
-          tooltip: found
+          tooltip: coreTip
+            ? coreTip
+            : found
             ? buildTooltipPayload(label, found.legend || "", found.description || "")
             : null,
         };
@@ -724,6 +779,19 @@ async function loadIndexAndInit() {
   for (const file of REQUIRED_FILES) {
     const parsed = await loadCsv(file);
     datasets.set(file, parsed);
+  }
+
+  coreRuleDefsByName = new Map();
+  if (files.includes("core_rules.json")) {
+    try {
+      const coreRulesResponse = await fetch("./data/core_rules.json", { cache: "no-store" });
+      if (coreRulesResponse.ok) {
+        const coreRulesPayload = await coreRulesResponse.json();
+        coreRuleDefsByName = buildCoreRuleIndex(coreRulesPayload);
+      }
+    } catch {
+      coreRuleDefsByName = new Map();
+    }
   }
 
   catalog = buildCatalog(datasets);
