@@ -1,12 +1,15 @@
 {
   "source": "Wahapedia WH40k 10th Edition Data Export",
-  "updated_at_utc": "2026-02-23T06:10:36+00:00",
+  "updated_at_utc": "2026-02-23T06:20:41+00:00",
   "bootstrap_run": false,
-  "changed_files": [],
+  "changed_files": [
+    "core_rules.json"
+  ],
   "skipped_missing_files": [
     "Secondaries.csv",
     "Dataslates.csv"
   ],
+  "warnings": [],
   "files": {
     "Abilities.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Abilities.csv",
@@ -63,6 +66,10 @@
     "Source.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Source.csv",
       "sha256": "23ae3198d0b225a5f8df6532a563f64d8a1ed0db934240502a1b5de173120eeb"
+    },
+    "core_rules.json": {
+      "url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
+      "sha256": "b361a3859eef48de98bc494c64d8e5acf652725262edd806972d25bfb1cfe39b"
     }
   }
 }

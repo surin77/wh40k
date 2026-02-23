@@ -1,7 +1,2036 @@
 {
   "source": "Wahapedia WH40k 10th Edition Core Rules",
   "source_url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
-  "updated_at_utc": "1970-01-01T00:00:00+00:00",
+  "updated_at_utc": "2026-02-23T06:20:41+00:00",
   "page_title": "Core Rules",
-  "sections": []
+  "sections": [
+    {
+      "title": "Introduction",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Unit: One or more models from the same datasheet."
+        },
+        {
+          "type": "bullet",
+          "text": "Friendly Models/Units: All models/units from the same army."
+        },
+        {
+          "type": "bullet",
+          "text": "Enemy Models/Units: All models/units from your opponent\u2019s army."
+        }
+      ]
+    },
+    {
+      "title": "CORE CONCEPTS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This section introduces various rules terms that you will find throughout the Core Rules and beyond. These key concepts form the basis of the Warhammer 40,000 rules, and are essential for every kind of battle."
+        }
+      ]
+    },
+    {
+      "title": "Armies",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Army: All of the models under your command."
+        }
+      ]
+    },
+    {
+      "title": "Units",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Unit: One or more models from the same datasheet."
+        },
+        {
+          "type": "bullet",
+          "text": "Friendly Models/Units: All models/units from the same army."
+        },
+        {
+          "type": "bullet",
+          "text": "Enemy Models/Units: All models/units from your opponent\u2019s army."
+        }
+      ]
+    },
+    {
+      "title": "Engagement Range",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Engagement Range: Within 1\" horizontally and 5\" vertically."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot be set up or end a Normal, Advance or Fall Back move within Engagement Range of any enemy models."
+        }
+      ]
+    },
+    {
+      "title": "Unit Coherency",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "One other model from the same unit (in units of 2-6 models)."
+        },
+        {
+          "type": "bullet",
+          "text": "Two other models from the same unit (in units of 7+ models)."
+        },
+        {
+          "type": "bullet",
+          "text": "At the end of every turn, if a unit is not in Unit Coherency, the controlling player must remove models until that unit is in Unit Coherency again."
+        }
+      ]
+    },
+    {
+      "title": "Unit Fully Visible",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Model Visible: If any part of a model can be seen, it is visible."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit Visible: If any model in a unit is visible, that model\u2019s unit is visible."
+        },
+        {
+          "type": "bullet",
+          "text": "Model Fully Visible: If every facing part of a model can be seen, it is fully visible."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit Fully Visible: If every model in a unit is fully visible, that unit is fully visible."
+        }
+      ]
+    },
+    {
+      "title": "Re-rolls",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Unmodified Dice: the result after re-rolls, but before any modifiers."
+        },
+        {
+          "type": "bullet",
+          "text": "A dice can never be re-rolled more than once."
+        },
+        {
+          "type": "bullet",
+          "text": "You must re-roll all dice if several need adding together (e.g. 2D6)."
+        },
+        {
+          "type": "bullet",
+          "text": "Re-rolls are applied before any modifiers."
+        }
+      ]
+    },
+    {
+      "title": "The Battle Round",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Minute by bloody minute the battle grinds on, from the opening volleys of shots through furious offensives and desperate counter-attacks, into the last dying moments when victory hangs by a thread."
+        }
+      ]
+    },
+    {
+      "title": "COMMAND PHASE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Commanders gauge the flow of the battle, consolidating their objectives before making alterations to their battle plans and devising new tactics and strategies with which to defeat the foe."
+        }
+      ]
+    },
+    {
+      "title": "1. Command",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Both players gain 1CP."
+        },
+        {
+          "type": "bullet",
+          "text": "Resolve any other rules that occur in the Command phase."
+        }
+      ]
+    },
+    {
+      "title": "2. Battle-shock",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "The Objective Control characteristic of all of its models is 0."
+        },
+        {
+          "type": "bullet",
+          "text": "If it Falls Back, you must take a Desperate Escape test for every model in that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Its controlling player cannot use Stratagems to affect that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Take a Battle-shock test for each unit from your army on the battlefield that is Below Half-strength."
+        },
+        {
+          "type": "bullet",
+          "text": "Roll 2D6: if the result is greater than or equal to the unit\u2019s Leadership, the test is passed. Otherwise, the unit is Battle-shocked until the start of your next Command phase."
+        },
+        {
+          "type": "bullet",
+          "text": "Battle-shocked units have an OC of 0 and their controlling player cannot use Stratagems to affect them."
+        },
+        {
+          "type": "bullet",
+          "text": "Battle-shocked units must take Desperate Escape tests if they Fall Back."
+        }
+      ]
+    },
+    {
+      "title": "Below Half-strength",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "If a unit has a Starting Strength of 1, then it is said to be Below Half-strength while its remaining number of wounds is less than half of its Wounds characteristic."
+        },
+        {
+          "type": "bullet",
+          "text": "For any other unit, while the number of models in that unit is less than half of its Starting Strength, that unit is said to be Below Half-strength."
+        }
+      ]
+    },
+    {
+      "title": "MOVEMENT PHASE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The ground shakes to the tread of marching feet and the growl of engines as armies advance across the battlefield and vie for advantageous positions."
+        }
+      ]
+    },
+    {
+      "title": "1. Move Units",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Unless that unit is within Engagement Range of any enemy models, it can make a Normal move, or Advance, or Remain Stationary."
+        },
+        {
+          "type": "bullet",
+          "text": "If that unit is within Engagement Range of any enemy models, it can either Remain Stationary or Fall Back."
+        },
+        {
+          "type": "bullet",
+          "text": "When a unit moves it can make a Normal move, Advance or Remain Stationary."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that are within Engagement Range of any enemy models can only Fall Back or Remain Stationary."
+        }
+      ]
+    },
+    {
+      "title": "\u2018Surge\u2019 Moves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Each unit can only make one \u2018surge\u2019 move per phase."
+        },
+        {
+          "type": "bullet",
+          "text": "A unit cannot make a \u2018surge\u2019 move while it is Battle-shocked."
+        },
+        {
+          "type": "bullet",
+          "text": "A unit cannot make a \u2018surge\u2019 move while it is within Engagement Range of one or more enemy units."
+        }
+      ]
+    },
+    {
+      "title": "Normal Moves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Normal Move: Models move up to M\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any enemy models."
+        }
+      ]
+    },
+    {
+      "title": "Advance Moves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Advance Move: Models move up to M+D6\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that Advance cannot shoot or charge this turn."
+        }
+      ]
+    },
+    {
+      "title": "Fall Back Moves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Fall Back Move: Models move up to M\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that Fall Back cannot shoot or declare a charge in the same turn."
+        },
+        {
+          "type": "bullet",
+          "text": "Models can move over enemy models when Falling Back, but you must take Desperate Escape tests for them before they do so (excluding models that are TITANIC or can FLY)."
+        },
+        {
+          "type": "bullet",
+          "text": "If a Battle-shocked unit is selected to Fall Back, take a Desperate Escape test for every model in that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Desperate Escape Test: Roll one D6. On a 1-2, one model from that unit is destroyed."
+        }
+      ]
+    },
+    {
+      "title": "Moving Over Terrain",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Models can move freely over terrain features 2\" or less in height."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot move through terrain features taller than 2\", but can climb up and down them."
+        }
+      ]
+    },
+    {
+      "title": "Flying",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "FLY models can move over enemy models when they make a Normal, Advance or Fall Back move."
+        },
+        {
+          "type": "bullet",
+          "text": "FLY models that start or end a move on a terrain feature measure distance moved through the air when they make a Normal, Advance or Fall Back move."
+        }
+      ]
+    },
+    {
+      "title": "2. Reinforcements",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Reserves Unit: A unit that starts the battle in a location other than the battlefield."
+        },
+        {
+          "type": "bullet",
+          "text": "Always count as having made a Normal move in the turn they are set up on the battlefield."
+        },
+        {
+          "type": "bullet",
+          "text": "Any specified distance from enemy models applies to horizontal distance."
+        },
+        {
+          "type": "bullet",
+          "text": "Any Reserves unit not set up on the battlefield by the end of the battle counts as destroyed."
+        }
+      ]
+    },
+    {
+      "title": "Transport Capacity",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some transports have firing hatches, ports or platforms from which embarked passengers can shoot."
+        },
+        {
+          "type": "bullet",
+          "text": "Firing Deck \u2018x\u2019: Each time this TRANSPORT shoots, select one weapon (excluding weapons with the [ONE SHOT] ability) from up to \u2018x\u2019 models embarked within it whose units have not shot this phase; this TRANSPORT counts as being equipped with those weapons as well. Until the end of the phase, those selected models\u2019 units are not eligible to shoot."
+        }
+      ]
+    },
+    {
+      "title": "Embark",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "A unit can embark within a friendly TRANSPORT if all of its models end a Normal, Advance or Fall Back move within 3\" of that TRANSPORT."
+        },
+        {
+          "type": "bullet",
+          "text": "A unit cannot embark and disembark in the same phase."
+        }
+      ]
+    },
+    {
+      "title": "Disembark",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Units that start your Movement phase embarked within a TRANSPORT can disembark this phase, provided their TRANSPORT has not Advanced or Fallen Back."
+        },
+        {
+          "type": "bullet",
+          "text": "If a unit disembarks before its TRANSPORT moves, it can act normally."
+        },
+        {
+          "type": "bullet",
+          "text": "If a unit disembarks after its TRANSPORT moves, it cannot move or charge this turn, but can otherwise act normally."
+        },
+        {
+          "type": "bullet",
+          "text": "Disembarking units must be set up wholly within 3\" of their TRANSPORT and not within Engagement Range of any enemy models (or the unit cannot disembark)."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that disembark this turn cannot Remain Stationary."
+        }
+      ]
+    },
+    {
+      "title": "Destroyed Transports",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Until the start of its controlling player\u2019s next Command phase, that unit is Battle-shocked."
+        },
+        {
+          "type": "bullet",
+          "text": "Until the end of the turn, that unit counts as having made a Normal move this turn, and cannot declare a charge this turn."
+        },
+        {
+          "type": "bullet",
+          "text": "If a TRANSPORT is destroyed, any embarked units must disembark."
+        },
+        {
+          "type": "bullet",
+          "text": "Roll one D6 for each model that disembarks: for each 1, that model\u2019s unit suffers 1 mortal wound."
+        },
+        {
+          "type": "bullet",
+          "text": "Until the start of its controlling player\u2019s next Command phase, the disembarking unit is Battle-shocked."
+        },
+        {
+          "type": "bullet",
+          "text": "Until the end of the turn, the disembarking unit counts as having made a Normal move, and cannot declare a charge."
+        }
+      ]
+    },
+    {
+      "title": "Emergency Disembarkation",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Must be set up wholly within 6\" of it instead of wholly within 3\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Suffer 1 mortal wound for each roll of 1-3, instead of each roll of 1."
+        },
+        {
+          "type": "bullet",
+          "text": "Any disembarking model that cannot be set up is destroyed."
+        }
+      ]
+    },
+    {
+      "title": "SHOOTING PHASE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Guns thunder and shrapnel flies through the air. Bursts of muzzle flare and beams of las-fire illuminate the fog of war, and spent ammunition cartridges litter the battlefield."
+        },
+        {
+          "type": "bullet",
+          "text": "That unit Advanced this turn."
+        },
+        {
+          "type": "bullet",
+          "text": "That unit Fell Back this turn."
+        }
+      ]
+    },
+    {
+      "title": "Select Targets",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Before a unit shoots, select the targets for all of its ranged weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "At least one model in the target unit must be visible to the attacking model and within range of the weapon being used."
+        },
+        {
+          "type": "bullet",
+          "text": "Models with more than one ranged weapon can shoot them at the same or different targets, but models cannot split attacks from the same weapon across more than one target."
+        },
+        {
+          "type": "bullet",
+          "text": "Models in the same unit can shoot at the same or different targets."
+        },
+        {
+          "type": "paragraph",
+          "text": "Assassins and other covert agents are difficult to track and pinpoint in the swirling maelstrom of battle."
+        }
+      ]
+    },
+    {
+      "title": "Make Ranged Attacks",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "When a model shoots a weapon, it makes a number of attacks equal to that weapon\u2019s Attacks characteristic."
+        },
+        {
+          "type": "bullet",
+          "text": "Resolve all attacks against one unit before resolving attacks against any other unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Resolve all attacks made with the same weapon profile before resolving attacks with any other profile."
+        },
+        {
+          "type": "bullet",
+          "text": "If a weapon was in range and its target was visible when selected, that weapon\u2019s attacks can always be made."
+        }
+      ]
+    },
+    {
+      "title": "Locked in Combat",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Units cannot shoot while within Engagement Range of enemy units."
+        },
+        {
+          "type": "bullet",
+          "text": "Units cannot shoot at targets within Engagement Range of friendly units."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some warriors are masters of disguise and concealment."
+        }
+      ]
+    },
+    {
+      "title": "Big Guns Never Tire",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Monsters and war engines can dispense death from afar even as they trample the masses before them."
+        },
+        {
+          "type": "bullet",
+          "text": "MONSTERS and VEHICLES can shoot, and be shot at, even while they are within Engagement Range of enemy units. Each time a ranged attack is made by or against such a unit, subtract 1 from that attack\u2019s Hit roll (unless shooting with a Pistol)."
+        }
+      ]
+    },
+    {
+      "title": "Making Attacks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Attacks are made using ranged or melee weapons. Attacks can be made one at a time or, in some cases, you can roll for multiple attacks together (see Fast Dice Rolling)."
+        }
+      ]
+    },
+    {
+      "title": "1. Hit Roll",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Hit Roll (Ranged Attack): A hit is scored if the D6 result equals or exceeds that attack\u2019s BS."
+        },
+        {
+          "type": "bullet",
+          "text": "Hit Roll (Melee Attack): A hit is scored if the D6 result equals or exceeds that attack\u2019s WS."
+        },
+        {
+          "type": "bullet",
+          "text": "Critical Hit: Unmodified Hit roll of 6. Always successful."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified Hit roll of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A Hit roll can never be modified by more than -1 or +1."
+        }
+      ]
+    },
+    {
+      "title": "2. Wound Roll",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Critical Wound: Unmodified Wound roll of 6. Always successful."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified Wound roll of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A Wound roll can never be modified by more than -1 or +1."
+        }
+      ]
+    },
+    {
+      "title": "3. Allocate Attack",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "If a model in the target unit has already lost any wounds or had other attacks allocated to it this phase, the attack must be allocated to that model."
+        }
+      ]
+    },
+    {
+      "title": "4. Saving Throw",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Saving Throw: Roll one D6 and modify by the attack\u2019s AP. If the result is less than the Save of the model being rolled for, the saving throw is failed and that model suffers damage. Otherwise, that attack is saved."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified saving throw of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A saving throw can never be improved by more than +1."
+        }
+      ]
+    },
+    {
+      "title": "Invulnerable Saves",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whether shielded by force fields, enveloped in mystical energies or simply possessed of preternatural senses and lightning-fast reflexes, some warriors are protected by more than mere physical armour."
+        },
+        {
+          "type": "bullet",
+          "text": "Invulnerable Save: Never modified by an attack\u2019s AP."
+        },
+        {
+          "type": "bullet",
+          "text": "The controlling player can choose to use either a model\u2019s invulnerable save or its Save characteristic."
+        }
+      ]
+    },
+    {
+      "title": "Mortal Wounds",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some attacks are so powerful that no armour or force field can withstand their fury."
+        },
+        {
+          "type": "bullet",
+          "text": "Each mortal wound inflicted on a unit causes one model in that unit to lose one wound."
+        },
+        {
+          "type": "bullet",
+          "text": "Unless the source of the mortal wounds is the [HAZARDOUS] ability or an attack with the [DEVASTATING WOUNDS] ability, damage from mortal wounds is not lost if it can be allocated to another model."
+        },
+        {
+          "type": "bullet",
+          "text": "No saving throws can be made against mortal wounds."
+        },
+        {
+          "type": "bullet",
+          "text": "Mortal wounds inflicted by attacks always apply after any normal damage, even if that damage was saved."
+        }
+      ]
+    },
+    {
+      "title": "5. Inflict Damage",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "A model loses a number of wounds equal to the attack\u2019s Damage characteristic."
+        },
+        {
+          "type": "bullet",
+          "text": "If a model is destroyed by an attack, any excess damage inflicted by that attack is lost."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some warriors refuse to be laid low, even by what should be fatal wounds."
+        },
+        {
+          "type": "bullet",
+          "text": "Feel No Pain x+: Each time this model would lose a wound, roll one D6: if the result equals or exceeds \u2018x\u2019, that wound is not lost."
+        },
+        {
+          "type": "paragraph",
+          "text": "From detonating ammo stores to corrosive innards or frenzied death throes, some targets are deadly even in defeat."
+        },
+        {
+          "type": "bullet",
+          "text": "Deadly Demise x: When this model is destroyed, roll one D6. On a 6, each unit within 6\" suffers \u2018x\u2019 mortal wounds."
+        }
+      ]
+    },
+    {
+      "title": "Weapon Abilities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some weapons have additional abilities in their profiles. Often these are unique to those weapons and are written out in full, but others are common to many weapons, and may only be referenced by name on a weapon\u2019s profile. Some notable examples of these common abilities are defined here; further weapon abilities may be found in other locations such as Codexes."
+        }
+      ]
+    },
+    {
+      "title": "Assault",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Assault weapons fire so indiscriminately that they can be shot from the hip as warriors dash forward."
+        },
+        {
+          "type": "bullet",
+          "text": "Can be shot even if the bearer\u2019s unit Advanced."
+        }
+      ]
+    },
+    {
+      "title": "Rapid Fire",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Rapid fire weapons are capable of long-ranged precision shots or controlled bursts at nearby targets."
+        },
+        {
+          "type": "bullet",
+          "text": "[RAPID FIRE X]: Increase the Attacks by \u2018x\u2019 when targeting units within half range."
+        }
+      ]
+    },
+    {
+      "title": "Ignores Cover",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some weapons are designed to root enemy formations out of entrenched positions."
+        }
+      ]
+    },
+    {
+      "title": "Twin-linked",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Dual weapons are often grafted to the same targeting system for greater lethality."
+        }
+      ]
+    },
+    {
+      "title": "Pistol",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pistols can be wielded even at point-blank range."
+        },
+        {
+          "type": "bullet",
+          "text": "Can be shot even if the bearer\u2019s unit is within Engagement Range of enemy units, but must target one of those enemy units."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot be shot alongside any other non-Pistol weapon (except by a MONSTER or VEHICLE)."
+        }
+      ]
+    },
+    {
+      "title": "Torrent",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Torrent weapons shoot clouds of fire, gas or other lethal substances that few foes can hope to evade."
+        }
+      ]
+    },
+    {
+      "title": "Lethal Hits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some weapons can inflict fatal injuries on any foe, no matter their resilience."
+        }
+      ]
+    },
+    {
+      "title": "Lance",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Lance weapons are deadly on the charge."
+        }
+      ]
+    },
+    {
+      "title": "Indirect Fire",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Indirect fire weapons launch munitions over or around intervening obstacles \u2013 nowhere is safe from their fury."
+        },
+        {
+          "type": "bullet",
+          "text": "Can target and make attacks against units that are not visible to the attacking unit."
+        },
+        {
+          "type": "bullet",
+          "text": "If no models are visible in a target unit when it is selected, then when making an attack against that target with an Indirect Fire weapon, subtract 1 from that attack\u2019s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack."
+        }
+      ]
+    },
+    {
+      "title": "Precision",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Precision attacks can pick high-value targets out in a crowd, whether through the unerring aim of a sniper or the pinpoint accuracy of a blade-master\u2019s strike."
+        },
+        {
+          "type": "bullet",
+          "text": "When targeting an Attached unit, the attacking model\u2019s player can have the attack allocated to a CHARACTER model in that unit visible to the bearer."
+        }
+      ]
+    },
+    {
+      "title": "Blast",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "High-explosives can fell several warriors in a single blast, but firing them where your comrades will get caught in the ensuing detonation is simply unwise."
+        },
+        {
+          "type": "bullet",
+          "text": "Add 1 to the Attacks characteristic for every five models in the target unit (rounding down)."
+        },
+        {
+          "type": "bullet",
+          "text": "Can never be used against a target that is within Engagement Range of any units from the attacking model\u2019s army (including its own)."
+        }
+      ]
+    },
+    {
+      "title": "Melta",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Melta weapons are powerful heat rays whose fury is magnified at close range."
+        },
+        {
+          "type": "bullet",
+          "text": "[MELTA X]: Increase the Damage by \u2018x\u2019 when targeting units within half range."
+        }
+      ]
+    },
+    {
+      "title": "Heavy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Heavy weapons are amongst the biggest guns on the battlefield, but require bracing to fire at full effect and are unwieldy to bring to bear at close quarters."
+        },
+        {
+          "type": "bullet",
+          "text": "Add 1 to Hit rolls if the bearer\u2019s unit Remained Stationary this turn."
+        }
+      ]
+    },
+    {
+      "title": "Hazardous",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Weapons powered by unstable and dangerous energy sources pose a substantial risk to the wielder every time they are used."
+        },
+        {
+          "type": "bullet",
+          "text": "If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "Otherwise, if possible, select one model in that unit (excluding CHARACTER models) equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "Otherwise, select one CHARACTER model in that unit equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon used. For each 1, a model equipped with a hazardous weapon suffers 3 mortal wounds, that must be allocated to the selected model."
+        }
+      ]
+    },
+    {
+      "title": "Devastating Wounds",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "A Critical Wound inflicts mortal wounds equal to the weapon\u2019s Damage characteristic, instead of any normal damage."
+        }
+      ]
+    },
+    {
+      "title": "Sustained Hits",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some weapons strike in a flurry of blows, tearing the foe apart with relentless ferocity."
+        },
+        {
+          "type": "bullet",
+          "text": "[SUSTAINED HITS X]: Each Critical Hit scores \u2018x\u2019 additional hits on the target."
+        }
+      ]
+    },
+    {
+      "title": "Extra Attacks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some warriors ride to battle atop trusty mounts that gore and trample nearby foes. Others wield combat weapons that deliver a frenzy of additional blows."
+        },
+        {
+          "type": "bullet",
+          "text": "The bearer can attack with this weapon in addition to any other weapons it can make attacks with."
+        }
+      ]
+    },
+    {
+      "title": "Anti",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Certain weapons are the bane of a particular foe."
+        },
+        {
+          "type": "bullet",
+          "text": "[ANTI-KEYWORD X+]: An unmodified Wound roll of \u2018x+\u2019 against a target with the matching keyword scores a Critical Wound."
+        }
+      ]
+    },
+    {
+      "title": "CHARGE PHASE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Warriors hurl themselves into battle to slay with blade, hammer and claw. Strident war cries and frantic screams echo through the whirling smoke as the moment of cataclysmic violence draws near."
+        },
+        {
+          "type": "bullet",
+          "text": "That unit Advanced or Fell Back this turn."
+        },
+        {
+          "type": "bullet",
+          "text": "That unit is within Engagement Range of any enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "That unit is an AIRCRAFT unit."
+        }
+      ]
+    },
+    {
+      "title": "Charge Bonus",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Many warriors thunder headlong into combat, using the impetus of their charge to bring swift death to their foes."
+        }
+      ]
+    },
+    {
+      "title": "Charging with a Unit",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Within Engagement Range of every unit that you selected as a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "Without moving within Engagement Range of any enemy units that were not a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "In Unit Coherency."
+        },
+        {
+          "type": "bullet",
+          "text": "Charge Roll: 2D6\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Targets of a charge must be within 12\" but do not need to be visible."
+        },
+        {
+          "type": "bullet",
+          "text": "If the distance rolled is insufficient to move within Engagement Range of all targets while maintaining Unit Coherency, the charge fails."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any unit that was not a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "If the charge is successful, each model makes a Charge move less than or equal to the Charge roll, and must move into base-to-base contact with an enemy model if possible."
+        }
+      ]
+    },
+    {
+      "title": "Charging Over Terrain",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Models can be moved freely over terrain features 2\" or less in height."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot move through terrain features taller than 2\", but can climb up and down them."
+        }
+      ]
+    },
+    {
+      "title": "Charging with Flying Models",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "FLY models can move over other models when they make a Charge move."
+        },
+        {
+          "type": "bullet",
+          "text": "FLY models that start or end a Charge move on a terrain feature measure distance moved through the air when they make a Charge move."
+        }
+      ]
+    },
+    {
+      "title": "FIGHT PHASE",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Carnage engulfs the battlefield as the warring armies meet head-on. Fangs and claws crunch through bone. Blades ring like hammers on anvils. Blood spurts and flesh tears as hate-filled foes tear one another apart."
+        },
+        {
+          "type": "bullet",
+          "text": "It is within Engagement Range of one or more enemy units."
+        },
+        {
+          "type": "bullet",
+          "text": "It made a Charge move this turn."
+        }
+      ]
+    },
+    {
+      "title": "1. Fights First",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some warriors attack with blinding speed, landing their blows before their foes can react."
+        }
+      ]
+    },
+    {
+      "title": "Fight",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "When you select a unit to fight, it first Piles In, then its models make melee attacks, then the unit Consolidates."
+        }
+      ]
+    },
+    {
+      "title": "1. Pile In",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Pile-in Move: Up to 3\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Every model that moves must end closer to the closest enemy model, and in base-to-base contact with an enemy model if possible. The unit must end in Unit Coherency and within Engagement Range of at least one enemy unit (or no models can Pile In)."
+        }
+      ]
+    },
+    {
+      "title": "Which Models Fight",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "A model can fight if it is within Engagement Range of an enemy unit."
+        },
+        {
+          "type": "bullet",
+          "text": "A model can fight if it is in base-to-base contact with another model from its own unit that is itself in base-to-base contact with an enemy unit."
+        }
+      ]
+    },
+    {
+      "title": "Select Weapon",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Each model that can fight does so using one of its melee weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "Each model makes a number of attacks equal to the Attacks characteristic of its selected weapon."
+        }
+      ]
+    },
+    {
+      "title": "Select Targets",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Select targets for all attacks before any are resolved."
+        },
+        {
+          "type": "bullet",
+          "text": "Attacking model must either be within Engagement Range of an enemy unit to target it, or in base-to-base contact with another model in its unit that is itself in base-to-base contact with that enemy unit."
+        }
+      ]
+    },
+    {
+      "title": "Make Attacks",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Resolve all attacks against one unit before moving onto the next."
+        },
+        {
+          "type": "bullet",
+          "text": "Resolve all attacks with the same weapon profile before resolving any made with a different weapon profile."
+        },
+        {
+          "type": "bullet",
+          "text": "All attacks declared against a target unit are resolved, even if no models in that unit remain within Engagement Range."
+        }
+      ]
+    },
+    {
+      "title": "3. Consolidate",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Consolidation Move: Up to 3\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Every model that moves must end closer to the closest enemy model, and in base-to-base contact with an enemy model if possible. The unit must end in Unit Coherency and within Engagement Range of at least one enemy unit if possible."
+        },
+        {
+          "type": "bullet",
+          "text": "If the above is not possible, each model can move towards the closest objective marker, but this must result in the unit being within range of it and in Unit Coherency."
+        },
+        {
+          "type": "bullet",
+          "text": "If the above is also not possible, no models can Consolidate."
+        }
+      ]
+    },
+    {
+      "title": "Datasheets",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Each unit has a datasheet that lists the characteristics, wargear, abilities and keywords of its models. This section presents a summary of these elements and how they relate to playing the game."
+        }
+      ]
+    },
+    {
+      "title": "Deployment Abilities",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some abilities are used during deployment, or when setting a unit up \u2013 either on the battlefield or into Reserves. These are known as Deployment abilities, and some widespread examples of these are presented below."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some units make their way to battle via tunnelling, teleportation, high-altitude descent or other extraordinary means that allow them to appear suddenly in the thick of the fighting."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit can be set up in Reserves instead of on the battlefield."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit can be set up in your Reinforcements step, more than 9\" horizontally away from all enemy models."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scouts form the vanguard of many armies. Unnoticed by the enemy, they range ahead of the main force."
+        },
+        {
+          "type": "bullet",
+          "text": "Scouts x\": Unit can make a Normal move of up to x\" before the first turn begins."
+        },
+        {
+          "type": "bullet",
+          "text": "If embarked in a DEDICATED TRANSPORT, that DEDICATED TRANSPORT can make this move instead."
+        },
+        {
+          "type": "bullet",
+          "text": "Must end this move more than 9\" horizontally away from all enemy models."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many armies employ reconnaissance units who can sit concealed, waiting for the right moment to strike."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mighty heroes fight at the forefront of battle."
+        },
+        {
+          "type": "bullet",
+          "text": "Before the battle, CHARACTER units with the Leader ability can be attached to one of their Bodyguard units to form an Attached unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Attached units can only contain one Leader."
+        },
+        {
+          "type": "bullet",
+          "text": "Attacks cannot be allocated to CHARACTER models in Attached units."
+        }
+      ]
+    },
+    {
+      "title": "Stratagems",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Command points can be spent during the battle to use Stratagems. All players can use the Core Stratagems presented here. Additional Stratagems can be found in Codexes and other publications."
+        },
+        {
+          "type": "bullet",
+          "text": "To use a Stratagem you must pay the CP specified."
+        },
+        {
+          "type": "bullet",
+          "text": "The same Stratagem cannot be used more than once in the same phase."
+        }
+      ]
+    },
+    {
+      "title": "Strategic Reserves",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Strategic Reserves are forces that one or both players have chosen not to deploy at the start of the battle. These rules explain how to place units into Strategic Reserves, as well as how and when they arrive on the battlefield."
+        }
+      ]
+    },
+    {
+      "title": "Placing Units into Strategic Reserves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Strategic Reserves: Units that are not deployed at the start of the battle."
+        },
+        {
+          "type": "bullet",
+          "text": "Combined points value cannot exceed 25% of your army\u2019s total."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot put FORTIFICATIONS into Strategic Reserves."
+        }
+      ]
+    },
+    {
+      "title": "Arriving from Strategic Reserves",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Strategic Reserves units can arrive in the Reinforcements step of your Movement phase, from the second battle round onwards."
+        },
+        {
+          "type": "bullet",
+          "text": "Those not on the battlefield at the end of the battle count as destroyed."
+        }
+      ]
+    },
+    {
+      "title": "Setting Up Strategic Reserve Units",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "During the second battle round, Strategic Reserves units that arrive must be set up wholly within 6\" of any battlefield edge, but no model in those units can be set up within the enemy deployment zone."
+        },
+        {
+          "type": "bullet",
+          "text": "Starting from the third battle round, Strategic Reserves units that arrive must be set up wholly within 6\" of any battlefield edge."
+        },
+        {
+          "type": "bullet",
+          "text": "During the second battle round, set up wholly within 6\" of any battlefield edge (not in enemy deployment zone)."
+        },
+        {
+          "type": "bullet",
+          "text": "From the third battle round onwards, set up wholly within 6\" of any battlefield edge."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot be set up within 9\" of any enemy models."
+        }
+      ]
+    },
+    {
+      "title": "Terrain Features",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This section provides rules for using a range of terrain features that can transform your gaming table into an interactive, thematic battlefield set in the 41st Millennium. These rules help to bring your battlefield to life and introduce a new tactical dimension to your games."
+        }
+      ]
+    },
+    {
+      "title": "Benefit of Cover",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Shattered ruins and twisted wreckage afford much-needed shelter from enemy salvoes. Even heavily armoured warriors unfazed by small arms fire are thankful for such cover when foes bring their biggest guns to bear."
+        },
+        {
+          "type": "bullet",
+          "text": "Benefit of Cover: Add 1 to armour saving throws against ranged attacks."
+        },
+        {
+          "type": "bullet",
+          "text": "Does not apply to models with a Save of 3+ or better against attacks with an AP of 0."
+        },
+        {
+          "type": "bullet",
+          "text": "Multiple instances are not cumulative."
+        }
+      ]
+    },
+    {
+      "title": "Barricades and Fuel Pipes",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "In the Charge phase, if an enemy unit is within 1\" of this terrain feature, a charging unit on the opposite side of this terrain feature can still make a Charge move against that enemy unit provided it ends that Charge move as close as possible to this terrain feature and within 2\" of that enemy unit."
+        },
+        {
+          "type": "bullet",
+          "text": "In the Fight phase, units are eligible to fight \u2013 and models can make attacks \u2013 if their target is on the opposite side of this terrain feature and within 2\" of them."
+        }
+      ]
+    },
+    {
+      "title": "Ruins",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "INFANTRY, IMPERIUM PRIMARCH, BELISARIUS CAWL, and BEAST models can move through this terrain feature (walls, floors, ceilings, gantries, chains, etc.) as if it were not there. A model cannot end a move within a wall, a floor, etc."
+        },
+        {
+          "type": "bullet",
+          "text": "INFANTRY, IMPERIUM PRIMARCH, BELISARIUS CAWL, BEASTS and FLY models can be set up or end a move on any floor level of this terrain feature, but if that level is not the ground floor, such models can only do so if their base does not overhang the floor at that level (if a model does not have a base, no part of that model that would be in contact with the battlefield at ground level can overhang that floor). All other models can only be set up or end a move on the ground floor of this terrain feature."
+        }
+      ]
+    },
+    {
+      "title": "Example Battlefields",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In the far future, battles are fought across an infinite variety of strange and alien planets where no land is left untouched by the tempest of war. Crystal moons, derelict space hulks, carnivorous death worlds and war-ravaged cityscapes are just a few of the fantastical landscapes that can be recreated."
+        }
+      ]
+    },
+    {
+      "title": "Aircraft",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The airspace above a battle is often thronged with activity. Fighters and bomber craft hurtle through the skies, duelling with one another and strafing enemy formations on the ground."
+        }
+      ]
+    },
+    {
+      "title": "Deploying Aircraft",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Some aircraft can use vectored thrusters or anti-grav technology to hover over the battlefield, the better to hunt their prey or deploy embarked troops."
+        }
+      ]
+    },
+    {
+      "title": "Aircraft in the Movement Phase",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "AIRCRAFT can only make a Normal move, and can do so even when within Engagement Range of enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "AIRCRAFT must move straight forward at least 20\", and can then make one pivot of up to 90\u00b0."
+        },
+        {
+          "type": "bullet",
+          "text": "AIRCRAFT that cross the edge of the battlefield, or that cannot make their minimum move, are placed into Strategic Reserves."
+        }
+      ]
+    },
+    {
+      "title": "Aircraft and the Movement of Other Models",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Units can still make a Normal or Advance move if they are only within Engagement Range of enemy AIRCRAFT."
+        },
+        {
+          "type": "bullet",
+          "text": "Models can move within Engagement Range of enemy AIRCRAFT, but cannot end a move within Engagement Range of enemy AIRCRAFT."
+        },
+        {
+          "type": "bullet",
+          "text": "Models can move over AIRCRAFT when they make any kind of move."
+        }
+      ]
+    },
+    {
+      "title": "Aircraft in the Charge and Fight Phases",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Only units that can FLY can charge at or make melee attacks against AIRCRAFT."
+        },
+        {
+          "type": "bullet",
+          "text": "AIRCRAFT cannot charge, Pile In or Consolidate, and can only make melee attacks against units that can FLY."
+        },
+        {
+          "type": "bullet",
+          "text": "When a model Piles In or Consolidates, unless it can FLY, ignore AIRCRAFT when determining the closest enemy model."
+        }
+      ]
+    },
+    {
+      "title": "Muster Your Army",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In order to play a game of Warhammer 40,000, you will need to muster an army. To do so, follow the sequence below."
+        }
+      ]
+    },
+    {
+      "title": "5. Select Units",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "That unit has the Faction keyword you chose for your army in step 3."
+        },
+        {
+          "type": "bullet",
+          "text": "You have enough points remaining."
+        },
+        {
+          "type": "bullet",
+          "text": "Your army does not already contain three units with the same datasheet name as that unit \u2013 or six units with the same datasheet name as that unit if it is a BATTLELINE or DEDICATED TRANSPORT* unit."
+        }
+      ]
+    },
+    {
+      "title": "Missions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before you can wage war in a game of Warhammer 40,000, you must first select a mission. The Core Rules include a single mission \u2013 Only War \u2013 that is ideal to get the action started quickly. Others can be found elsewhere in this or other books, or you could play a mission of your own creation. If you and your opponent can\u2019t agree which mission to play, you must roll off, and the winner decides."
+        }
+      ]
+    },
+    {
+      "title": "Declare Battle Formations",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Which of their Leader units will start the battle attached (they must specify which Leader unit is attached to which Bodyguard unit)."
+        },
+        {
+          "type": "bullet",
+          "text": "Which of their units will start the battle embarked within TRANSPORT models (they must specify which units are embarked within which models)."
+        },
+        {
+          "type": "bullet",
+          "text": "Which of their units will start the battle in Reserves (including Strategic Reserves)."
+        }
+      ]
+    },
+    {
+      "title": "Objective Markers",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "A model is within range of an objective marker if within 3\" horizontally and 5\" vertically."
+        },
+        {
+          "type": "bullet",
+          "text": "Level of Control: Add together the OC characteristics of all of a player\u2019s models within range of the objective marker."
+        },
+        {
+          "type": "bullet",
+          "text": "An objective marker is controlled by the player with the highest Level of Control over it (in a tie, it is contested)."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot end a move on top of an objective marker."
+        }
+      ]
+    },
+    {
+      "title": "Only War",
+      "blocks": [
+        {
+          "type": "bullet",
+          "text": "Which of their Leader units will start the battle attached (they must specify which Leader unit is attached to which Bodyguard unit)."
+        },
+        {
+          "type": "bullet",
+          "text": "Which of their units will start the battle embarked within Transport models (they must specify which units are embarked within which models)."
+        },
+        {
+          "type": "bullet",
+          "text": "Which of their units will start the battle in Reserves (including Strategic Reserves)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many armies employ reconnaissance units who can sit concealed, waiting for the right moment to strike."
+        },
+        {
+          "type": "bullet",
+          "text": "Normal Move: Models move up to M\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "Advance Move: Models move up to M+D6\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that Advance cannot shoot or charge this turn."
+        },
+        {
+          "type": "bullet",
+          "text": "Fall Back Move: Models move up to M\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that Fall Back cannot shoot or declare a charge in the same turn."
+        },
+        {
+          "type": "bullet",
+          "text": "Models can move over enemy models when Falling Back, but you must take Desperate Escape tests for them before they do so (excluding models that are TITANIC or can FLY)."
+        },
+        {
+          "type": "bullet",
+          "text": "If a Battle-shocked unit is selected to Fall Back, take a Desperate Escape test for every model in that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Desperate Escape Test: Roll one D6. On a 1-2, one model from that unit is destroyed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some units make their way to battle via tunnelling, teleportation, high-altitude descent or other extraordinary means that allow them to appear suddenly in the thick of the fighting."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit can be set up in Reserves instead of on the battlefield."
+        },
+        {
+          "type": "bullet",
+          "text": "Unit can be set up in your Reinforcements step, more than 9\" horizontally away from all enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "A unit can embark within a friendly TRANSPORT if all of its models end a Normal, Advance or Fall Back move within 3\" of that TRANSPORT."
+        },
+        {
+          "type": "bullet",
+          "text": "A unit cannot embark and disembark in the same phase."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that start your Movement phase embarked within a TRANSPORT can disembark this phase, provided their TRANSPORT has not Advanced or Fallen Back."
+        },
+        {
+          "type": "bullet",
+          "text": "If a unit disembarks before its TRANSPORT moves, it can act normally."
+        },
+        {
+          "type": "bullet",
+          "text": "If a unit disembarks after its TRANSPORT moves, it cannot move or charge this turn, but can otherwise act normally."
+        },
+        {
+          "type": "bullet",
+          "text": "Disembarking units must be set up wholly within 3\" of their TRANSPORT and not within Engagement Range of any enemy models (or the unit cannot disembark)."
+        },
+        {
+          "type": "bullet",
+          "text": "Units that disembark this turn cannot Remain Stationary."
+        },
+        {
+          "type": "bullet",
+          "text": "Within Engagement Range of every unit that you selected as a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "Without moving within Engagement Range of any enemy units that were not a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "In Unit Coherency."
+        },
+        {
+          "type": "bullet",
+          "text": "Charge Roll: 2D6\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Targets of a charge must be within 12\" but do not need to be visible."
+        },
+        {
+          "type": "bullet",
+          "text": "If the distance rolled is insufficient to move within Engagement Range of all targets while maintaining Unit Coherency, the charge fails."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot move within Engagement Range of any unit that was not a target of the charge."
+        },
+        {
+          "type": "bullet",
+          "text": "If the charge is successful, each model makes a Charge move less than or equal to the Charge roll, and must move into base-to-base contact with an enemy model if possible."
+        },
+        {
+          "type": "bullet",
+          "text": "Hit Roll (Ranged Attack): A hit is scored if the D6 result equals or exceeds that attack\u2019s BS."
+        },
+        {
+          "type": "bullet",
+          "text": "Hit Roll (Melee Attack): A hit is scored if the D6 result equals or exceeds that attack\u2019s WS."
+        },
+        {
+          "type": "bullet",
+          "text": "Critical Hit: Unmodified Hit roll of 6. Always successful."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified Hit roll of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A Hit roll can never be modified by more than -1 or +1."
+        },
+        {
+          "type": "bullet",
+          "text": "The Objective Control characteristic of all of its models is 0."
+        },
+        {
+          "type": "bullet",
+          "text": "If it Falls Back, you must take a Desperate Escape test for every model in that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Its controlling player cannot use Stratagems to affect that unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Take a Battle-shock test for each unit from your army on the battlefield that is Below Half-strength."
+        },
+        {
+          "type": "bullet",
+          "text": "Roll 2D6: if the result is greater than or equal to the unit\u2019s Leadership, the test is passed. Otherwise, the unit is Battle-shocked until the start of your next Command phase."
+        },
+        {
+          "type": "bullet",
+          "text": "Battle-shocked units have an OC of 0 and their controlling player cannot use Stratagems to affect them."
+        },
+        {
+          "type": "bullet",
+          "text": "Battle-shocked units must take Desperate Escape tests if they Fall Back."
+        },
+        {
+          "type": "bullet",
+          "text": "If a unit has a Starting Strength of 1, then it is said to be Below Half-strength while its remaining number of wounds is less than half of its Wounds characteristic."
+        },
+        {
+          "type": "bullet",
+          "text": "For any other unit, while the number of models in that unit is less than half of its Starting Strength, that unit is said to be Below Half-strength."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mighty heroes fight at the forefront of battle."
+        },
+        {
+          "type": "bullet",
+          "text": "Before the battle, CHARACTER units with the Leader ability can be attached to one of their Bodyguard units to form an Attached unit."
+        },
+        {
+          "type": "bullet",
+          "text": "Attached units can only contain one Leader."
+        },
+        {
+          "type": "bullet",
+          "text": "Attacks cannot be allocated to CHARACTER models in Attached units."
+        },
+        {
+          "type": "bullet",
+          "text": "Engagement Range: Within 1\" horizontally and 5\" vertically."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot be set up or end a Normal, Advance or Fall Back move within Engagement Range of any enemy models."
+        },
+        {
+          "type": "bullet",
+          "text": "FLY models can move over enemy models when they make a Normal, Advance or Fall Back move."
+        },
+        {
+          "type": "bullet",
+          "text": "FLY models that start or end a move on a terrain feature measure distance moved through the air when they make a Normal, Advance or Fall Back move."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons powered by unstable and dangerous energy sources pose a substantial risk to the wielder every time they are used."
+        },
+        {
+          "type": "bullet",
+          "text": "If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "Otherwise, if possible, select one model in that unit (excluding CHARACTER models) equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "Otherwise, select one CHARACTER model in that unit equipped with one or more Hazardous weapons."
+        },
+        {
+          "type": "bullet",
+          "text": "After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon used. For each 1, a model equipped with a hazardous weapon suffers 3 mortal wounds, that must be allocated to the selected model."
+        },
+        {
+          "type": "bullet",
+          "text": "A Critical Wound inflicts mortal wounds equal to the weapon\u2019s Damage characteristic, instead of any normal damage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some attacks are so powerful that no armour or force field can withstand their fury."
+        },
+        {
+          "type": "bullet",
+          "text": "Each mortal wound inflicted on a unit causes one model in that unit to lose one wound."
+        },
+        {
+          "type": "bullet",
+          "text": "Unless the source of the mortal wounds is the [HAZARDOUS] ability or an attack with the [DEVASTATING WOUNDS] ability, damage from mortal wounds is not lost if it can be allocated to another model."
+        },
+        {
+          "type": "bullet",
+          "text": "No saving throws can be made against mortal wounds."
+        },
+        {
+          "type": "bullet",
+          "text": "Mortal wounds inflicted by attacks always apply after any normal damage, even if that damage was saved."
+        },
+        {
+          "type": "paragraph",
+          "text": "From detonating ammo stores to corrosive innards or frenzied death throes, some targets are deadly even in defeat."
+        },
+        {
+          "type": "bullet",
+          "text": "Deadly Demise x: When this model is destroyed, roll one D6. On a 6, each unit within 6\" suffers \u2018x\u2019 mortal wounds."
+        },
+        {
+          "type": "paragraph",
+          "text": "Beseeching the Chaos Gods with fanatical fervour, the profane champions of the Heretic Astartes pray for diabolic boons, promising the vilest of offerings in return for their power."
+        },
+        {
+          "type": "bullet",
+          "text": "[LETHAL HITS]"
+        },
+        {
+          "type": "bullet",
+          "text": "[SUSTAINED HITS 1]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Monsters and war engines can dispense death from afar even as they trample the masses before them."
+        },
+        {
+          "type": "bullet",
+          "text": "MONSTERS and VEHICLES can shoot, and be shot at, even while they are within Engagement Range of enemy units. Each time a ranged attack is made by or against such a unit, subtract 1 from that attack\u2019s Hit roll (unless shooting with a Pistol)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pistols can be wielded even at point-blank range."
+        },
+        {
+          "type": "bullet",
+          "text": "Can be shot even if the bearer\u2019s unit is within Engagement Range of enemy units, but must target one of those enemy units."
+        },
+        {
+          "type": "bullet",
+          "text": "Cannot be shot alongside any other non-Pistol weapon (except by a MONSTER or VEHICLE)."
+        },
+        {
+          "type": "bullet",
+          "text": "Critical Wound: Unmodified Wound roll of 6. Always successful."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified Wound roll of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A Wound roll can never be modified by more than -1 or +1."
+        },
+        {
+          "type": "bullet",
+          "text": "If a model in the target unit has already lost any wounds or had other attacks allocated to it this phase, the attack must be allocated to that model."
+        },
+        {
+          "type": "bullet",
+          "text": "Saving Throw: Roll one D6 and modify by the attack\u2019s AP. If the result is less than the Save of the model being rolled for, the saving throw is failed and that model suffers damage. Otherwise, that attack is saved."
+        },
+        {
+          "type": "bullet",
+          "text": "An unmodified saving throw of 1 always fails."
+        },
+        {
+          "type": "bullet",
+          "text": "A saving throw can never be improved by more than +1."
+        },
+        {
+          "type": "bullet",
+          "text": "A model loses a number of wounds equal to the attack\u2019s Damage characteristic."
+        },
+        {
+          "type": "bullet",
+          "text": "If a model is destroyed by an attack, any excess damage inflicted by that attack is lost."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whether shielded by force fields, enveloped in mystical energies or simply possessed of preternatural senses and lightning-fast reflexes, some warriors are protected by more than mere physical armour."
+        },
+        {
+          "type": "bullet",
+          "text": "Invulnerable Save: Never modified by an attack\u2019s AP."
+        },
+        {
+          "type": "bullet",
+          "text": "The controlling player can choose to use either a model\u2019s invulnerable save or its Save characteristic."
+        },
+        {
+          "type": "paragraph",
+          "text": "Precision attacks can pick high-value targets out in a crowd, whether through the unerring aim of a sniper or the pinpoint accuracy of a blade-master\u2019s strike."
+        },
+        {
+          "type": "bullet",
+          "text": "When targeting an Attached unit, the attacking model\u2019s player can have the attack allocated to a CHARACTER model in that unit visible to the bearer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Shattered ruins and twisted wreckage afford much-needed shelter from enemy salvoes. Even heavily armoured warriors unfazed by small arms fire are thankful for such cover when foes bring their biggest guns to bear."
+        },
+        {
+          "type": "bullet",
+          "text": "Benefit of Cover: Add 1 to armour saving throws against ranged attacks."
+        },
+        {
+          "type": "bullet",
+          "text": "Does not apply to models with a Save of 3+ or better against attacks with an AP of 0."
+        },
+        {
+          "type": "bullet",
+          "text": "Multiple instances are not cumulative."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some warriors attack with blinding speed, landing their blows before their foes can react."
+        },
+        {
+          "type": "bullet",
+          "text": "One other model from the same unit (in units of 2-6 models)."
+        },
+        {
+          "type": "bullet",
+          "text": "Two other models from the same unit (in units of 7+ models)."
+        },
+        {
+          "type": "bullet",
+          "text": "At the end of every turn, if a unit is not in Unit Coherency, the controlling player must remove models until that unit is in Unit Coherency again."
+        },
+        {
+          "type": "bullet",
+          "text": "Consolidation Move: Up to 3\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Every model that moves must end closer to the closest enemy model, and in base-to-base contact with an enemy model if possible. The unit must end in Unit Coherency and within Engagement Range of at least one enemy unit if possible."
+        },
+        {
+          "type": "bullet",
+          "text": "If the above is not possible, each model can move towards the closest objective marker, but this must result in the unit being within range of it and in Unit Coherency."
+        },
+        {
+          "type": "bullet",
+          "text": "If the above is also not possible, no models can Consolidate."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many warriors thunder headlong into combat, using the impetus of their charge to bring swift death to their foes."
+        },
+        {
+          "type": "bullet",
+          "text": "Pile-in Move: Up to 3\"."
+        },
+        {
+          "type": "bullet",
+          "text": "Every model that moves must end closer to the closest enemy model, and in base-to-base contact with an enemy model if possible. The unit must end in Unit Coherency and within Engagement Range of at least one enemy unit (or no models can Pile In)."
+        },
+        {
+          "type": "bullet",
+          "text": "A model is within range of an objective marker if within 3\" horizontally and 5\" vertically."
+        },
+        {
+          "type": "bullet",
+          "text": "Level of Control: Add together the OC characteristics of all of a player\u2019s models within range of the objective marker."
+        },
+        {
+          "type": "bullet",
+          "text": "An objective marker is controlled by the player with the highest Level of Control over it (in a tie, it is contested)."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot end a move on top of an objective marker."
+        },
+        {
+          "type": "paragraph",
+          "text": "The MONSTER keyword is used in the following Necrons datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Employing fractal corridors, dolmen gates and ancient translocation science, the Necrons are able to phase in and out of existence. Nowhere is safe for the terrified foe as mechanoid hunters appear from unfolding planar lattices to slaughter or escape retribution into gulfs of darkness, only to materialise elsewhere to kill anew."
+        },
+        {
+          "type": "paragraph",
+          "text": "The DAMNED keyword is used in the following Chaos Space Marines datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The SYNAPSE keyword is used in the following Tyranids datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The KROOT and INFANTRY keywords are used in the following T\u2019au Empire datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The CHARACTER keyword is used in the following T\u2019au Empire datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The ENDLESS MULTITUDE keyword is used in the following Tyranids datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The CHARACTER keyword is used in the following Tyranids datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The INFANTRY and REGIMENT keywords are used in the following Astra Militarum datasheets:"
+        },
+        {
+          "type": "bullet",
+          "text": "Unmodified Dice: the result after re-rolls, but before any modifiers."
+        },
+        {
+          "type": "bullet",
+          "text": "A dice can never be re-rolled more than once."
+        },
+        {
+          "type": "bullet",
+          "text": "You must re-roll all dice if several need adding together (e.g. 2D6)."
+        },
+        {
+          "type": "bullet",
+          "text": "Re-rolls are applied before any modifiers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Some warriors are masters of disguise and concealment."
+        },
+        {
+          "type": "bullet",
+          "text": "Models can move freely over terrain features 2\" or less in height."
+        },
+        {
+          "type": "bullet",
+          "text": "Models cannot move through terrain features taller than 2\", but can climb up and down them."
+        },
+        {
+          "type": "paragraph",
+          "text": "The PRIMARCH and IMPERIUM keywords are used in the following Space Marines datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The datasheets using AIRCRAFT keyword can be found in the following Factions:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The AIRCRAFT keyword is used in the following datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The datasheets using TOWERING keyword can be found in the following Factions:"
+        },
+        {
+          "type": "paragraph",
+          "text": "The TOWERING keyword is used in the following datasheets:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Some aircraft can use vectored thrusters or anti-grav technology to hover over the battlefield, the better to hunt their prey or deploy embarked troops."
+        }
+      ]
+    }
+  ]
 }
