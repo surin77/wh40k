@@ -2,6 +2,7 @@ const metaEl = document.querySelector("#meta");
 const factionSelectEl = document.querySelector("#faction-select");
 const detachmentSelectEl = document.querySelector("#detachment-select");
 const unitSearchEl = document.querySelector("#unit-search");
+const themeToggleEl = document.querySelector("#theme-toggle");
 const showLegendsToggleEl = document.querySelector("#show-legends-toggle");
 const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
@@ -50,6 +51,15 @@ let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
 let activeKeywordFilter = "";
 let showLegends = false;
+
+function initThemeToggle() {
+  if (!themeToggleEl) return;
+  document.documentElement.classList.remove("theme-light");
+  themeToggleEl.checked = false;
+  themeToggleEl.addEventListener("change", () => {
+    document.documentElement.classList.toggle("theme-light", themeToggleEl.checked);
+  });
+}
 
 tooltipEl.className = "keyword-tooltip";
 tooltipEl.innerHTML = `
@@ -1371,6 +1381,7 @@ if (scrollTopBtnEl) {
 }
 
 initTooltipHandlers();
+initThemeToggle();
 
 loadIndexAndInit().catch((error) => {
   metaEl.textContent = `Ошибка инициализации: ${error.message}`;

@@ -3,8 +3,18 @@ const sectionsEl = document.querySelector("#rules-sections");
 const titleEl = document.querySelector("#rules-title");
 const subtitleEl = document.querySelector("#rules-subtitle");
 const contentEl = document.querySelector("#rules-content");
+const themeToggleEl = document.querySelector("#theme-toggle");
 
 let payload = null;
+
+function initThemeToggle() {
+  if (!themeToggleEl) return;
+  document.documentElement.classList.remove("theme-light");
+  themeToggleEl.checked = false;
+  themeToggleEl.addEventListener("change", () => {
+    document.documentElement.classList.toggle("theme-light", themeToggleEl.checked);
+  });
+}
 
 function escapeHtml(value) {
   return String(value)
@@ -129,6 +139,8 @@ async function init() {
   renderSectionsNav();
   renderAllSections();
 }
+
+initThemeToggle();
 
 init().catch((error) => {
   metaEl.textContent = `Ошибка загрузки правил: ${error.message}`;
