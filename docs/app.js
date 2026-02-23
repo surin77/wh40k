@@ -292,6 +292,44 @@ function buildCoreRuleIndex(coreRulesPayload) {
   return index;
 }
 
+function parseAntiTag(label) {
+  const raw = String(label || "")
+    .toUpperCase()
+    .replace(/\s+/g, " ")
+    .trim();
+  const match = raw.match(/^ANTI[- ]([A-Z0-9 ]+?)\s+(\d\+)$/);
+  if (!match) return null;
+  return {
+    keyword: match[1].trim(),
+    threshold: match[2].trim(),
+  };
+}
+
+function makeAntiTooltip(label, antiCoreTip) {
+  const parsed = parseAntiTag(label);
+  if (!parsed) return antiCoreTip;
+  return {
+    title: String(label || "Anti").toUpperCase(),
+    intro: antiCoreTip?.intro || "Certain weapons are the bane of a particular foe.",
+    body: `Weapons with [${String(label || "").toUpperCase()}] in their profile are Anti weapons. Each time an attack is made with such a weapon against a target with the ${parsed.keyword} keyword, an unmodified Wound roll of ${parsed.threshold} scores a Critical Wound.`,
+    points: [
+      `Against ${parsed.keyword}, an unmodified Wound roll of ${parsed.threshold} scores a Critical Wound.`,
+    ],
+  };
+}
+
+function makeOneShotTooltip() {
+  return {
+    title: "ONE SHOT",
+    intro: "This weapon can be fired once during the battle.",
+    body: "In the current Wahapedia Core Rules export there is no standalone One Shot section. The rule is referenced in Core Rules (Firing Deck), where weapons with [ONE SHOT] are excluded from being selected via Firing Deck.",
+    points: [
+      "This weapon can be used once per battle.",
+      "It is excluded from Firing Deck selection in Core Rules.",
+    ],
+  };
+}
+
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
@@ -691,7 +729,14 @@ function buildCatalog(datasets) {
       const ruleTags = parseWeaponTags(description).map((label) => {
         const exactKey = normalizeRuleName(label);
         const simpleKey = normalizeRuleName(simplifyRuleName(label));
-        const coreTip = coreRuleDefsByName.get(exactKey) || coreRuleDefsByName.get(simpleKey) || null;
+        let coreTip = coreRuleDefsByName.get(exactKey) || coreRuleDefsByName.get(simpleKey) || null;
+        if (!coreTip && exactKey.startsWith("anti")) {
+          const antiCore = coreRuleDefsByName.get("anti");
+          if (antiCore) coreTip = makeAntiTooltip(label, antiCore);
+        }
+        if (!coreTip && exactKey === "oneshot") {
+          coreTip = makeOneShotTooltip();
+        }
         const found = chooseByFaction(
           abilityDefsByName.get(exactKey) || abilityDefsByName.get(simpleKey) || [],
           factionId
