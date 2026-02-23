@@ -4,7 +4,6 @@ const detachmentSelectEl = document.querySelector("#detachment-select");
 const unitSearchEl = document.querySelector("#unit-search");
 const themeToggleEl = document.querySelector("#theme-toggle");
 const showLegendsToggleEl = document.querySelector("#show-legends-toggle");
-const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
 const keywordFilterIndicatorEl = document.querySelector("#keyword-filter-indicator");
 const unitTitleEl = document.querySelector("#unit-title");
@@ -178,6 +177,7 @@ async function loadCsv(fileName) {
 }
 
 function renderMeta() {
+  if (!metaEl) return;
   const changed = indexData.changed_files?.length ? indexData.changed_files.join(", ") : "изменений нет";
   const skipped = indexData.skipped_missing_files?.length
     ? `<br><strong>Пропущены (404):</strong> ${escapeHtml(indexData.skipped_missing_files.join(", "))}`
@@ -1361,11 +1361,6 @@ if (showLegendsToggleEl) {
     renderUnitList();
   });
 }
-reloadBtn.addEventListener("click", () => {
-  loadIndexAndInit().catch((error) => {
-    metaEl.textContent = `Ошибка обновления: ${error.message}`;
-  });
-});
 
 function updateScrollTopButton() {
   if (!scrollTopBtnEl) return;
@@ -1384,5 +1379,9 @@ initTooltipHandlers();
 initThemeToggle();
 
 loadIndexAndInit().catch((error) => {
-  metaEl.textContent = `Ошибка инициализации: ${error.message}`;
+  if (metaEl) {
+    metaEl.textContent = `Ошибка инициализации: ${error.message}`;
+  } else {
+    console.error("Ошибка инициализации:", error);
+  }
 });

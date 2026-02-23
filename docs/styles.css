@@ -123,7 +123,7 @@ body {
 .toolbar {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: 220px 220px 1fr 200px 160px;
+  grid-template-columns: 220px 220px 1fr 200px;
 }
 
 .toolbar label {
@@ -150,13 +150,12 @@ body {
 .toolbar-checkbox-control {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 2.4rem;
-  border-radius: 6px;
-  border: 1px solid var(--line);
-  background: #0f1620;
+  border: 0;
+  background: transparent;
   color: var(--text);
-  padding: 0 0.65rem;
+  padding: 0;
   font-size: 0.9rem;
 }
 
@@ -831,15 +830,39 @@ body {
 }
 
 :root.theme-light .sheet-header {
-  background: linear-gradient(90deg, #b44d57 0%, #9b4251 40%, #7a4056 68%, #5c5f76 100%);
+  background: linear-gradient(90deg, #b44d57 0%, #a95766 40%, #b189a1 68%, #cbc5d6 100%);
+}
+
+:root.theme-light .sheet-header h2 {
+  color: #f8f2f4;
+}
+
+:root.theme-light .sheet-header .muted {
+  color: #f4e3e7;
 }
 
 :root.theme-light .statline {
   background: #f6f9fd;
 }
 
+:root.theme-light .stat .k {
+  color: #f0ced1;
+}
+
+:root.theme-light .stat .v {
+  color: #f5f8fd;
+}
+
 :root.theme-light .data-table th {
   color: #6a4521;
+}
+
+:root.theme-light .block h3 {
+  color: #f7f0f2;
+}
+
+:root.theme-light .ability-detail-name {
+  color: #223449;
 }
 
 :root.theme-light .ability-detail-text,
