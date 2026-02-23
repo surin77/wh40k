@@ -620,20 +620,32 @@ body {
 }
 
 .chip {
-  background: var(--chip);
-  border: 1px solid var(--chip-border);
+  appearance: none;
+  -webkit-appearance: none;
+  background: linear-gradient(180deg, #283242, #202a39);
+  border: 1px solid #5b6673;
+  color: #ebf2fb;
   border-radius: 999px;
-  padding: 0.12rem 0.5rem;
-  font-size: 0.8rem;
+  padding: 0.14rem 0.55rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+  line-height: 1.2;
 }
 
 .keyword-chip {
   cursor: pointer;
 }
 
+.chip:hover {
+  border-color: #b94a53;
+  background: linear-gradient(180deg, #4b1d24, #321a26);
+}
+
 .keyword-chip.active {
   border-color: #c44c57;
-  background: #3a2231;
+  background: linear-gradient(180deg, #6f1f29, #482030);
   color: #ffe8eb;
 }
 
