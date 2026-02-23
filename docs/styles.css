@@ -328,6 +328,36 @@ body {
   font-weight: 700;
 }
 
+.weapon-table {
+  table-layout: fixed;
+}
+
+.weapon-table .col-weapon {
+  width: 44%;
+}
+
+.weapon-table .col-range {
+  width: 14%;
+}
+
+.weapon-table .col-a,
+.weapon-table .col-bsws,
+.weapon-table .col-s,
+.weapon-table .col-ap,
+.weapon-table .col-d {
+  width: 8.4%;
+}
+
+.weapon-table th:nth-child(1),
+.weapon-table td:nth-child(1) {
+  text-align: left;
+}
+
+.weapon-table th:nth-child(n + 2),
+.weapon-table td:nth-child(n + 2) {
+  text-align: center;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
