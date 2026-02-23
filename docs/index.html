@@ -37,7 +37,10 @@
           <input id="unit-search" type="search" placeholder="Например: Culexus Assassin" />
         </label>
 
-        <button id="reload-button" type="button">Обновить</button>
+        <div class="toolbar-action">
+          <span class="toolbar-label-spacer">Действие</span>
+          <button id="reload-button" type="button">Обновить</button>
+        </div>
       </section>
 
       <section id="meta" class="meta"></section>
@@ -45,6 +48,7 @@
       <section class="workspace">
         <aside class="sidebar panel">
           <h2>Datasheets</h2>
+          <div id="keyword-filter-indicator" class="keyword-filter-indicator"></div>
           <div id="unit-list" class="unit-list"></div>
         </aside>
 

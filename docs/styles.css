@@ -90,6 +90,18 @@ body {
   color: var(--muted);
 }
 
+.toolbar-action {
+  display: grid;
+  gap: 0.3rem;
+  align-content: end;
+}
+
+.toolbar-label-spacer {
+  font-size: 0.88rem;
+  color: transparent;
+  user-select: none;
+}
+
 .toolbar select,
 .toolbar input,
 .toolbar button {
@@ -147,6 +159,28 @@ body {
   overflow: auto;
   display: grid;
   gap: 0.35rem;
+}
+
+.keyword-filter-indicator {
+  margin: 0 0 0.7rem;
+  border: 1px solid #364455;
+  border-radius: 6px;
+  padding: 0.45rem 0.55rem;
+  background: #131e2a;
+  color: #c8d3e1;
+  font-size: 0.82rem;
+  display: none;
+}
+
+.clear-filter-btn {
+  margin-left: 0.6rem;
+  border: 1px solid #6e3a40;
+  border-radius: 4px;
+  background: #2a1a24;
+  color: #f1d4d6;
+  padding: 0.1rem 0.45rem;
+  cursor: pointer;
+  font-size: 0.76rem;
 }
 
 .unit-btn {
@@ -397,6 +431,16 @@ body {
   border-radius: 999px;
   padding: 0.12rem 0.5rem;
   font-size: 0.8rem;
+}
+
+.keyword-chip {
+  cursor: pointer;
+}
+
+.keyword-chip.active {
+  border-color: #c44c57;
+  background: #3a2231;
+  color: #ffe8eb;
 }
 
 .text-block {

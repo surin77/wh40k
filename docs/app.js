@@ -4,6 +4,7 @@ const detachmentSelectEl = document.querySelector("#detachment-select");
 const unitSearchEl = document.querySelector("#unit-search");
 const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
+const keywordFilterIndicatorEl = document.querySelector("#keyword-filter-indicator");
 const unitTitleEl = document.querySelector("#unit-title");
 const unitMetaEl = document.querySelector("#unit-meta");
 const roleBadgeEl = document.querySelector("#role-badge");
@@ -42,6 +43,7 @@ let currentUnitId = null;
 let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
 let unitCostsByName = new Map();
+let activeKeywordFilter = "";
 
 tooltipEl.className = "keyword-tooltip";
 tooltipEl.innerHTML = `
@@ -494,8 +496,20 @@ function renderKeywords(keywords) {
 
   keywordsEl.innerHTML = keywords
     .slice(0, 80)
-    .map((keyword) => `<span class="chip">${escapeHtml(keyword)}</span>`)
+    .map((keyword) => {
+      const active = activeKeywordFilter === keyword ? "active" : "";
+      return `<button type="button" class="chip keyword-chip ${active}" data-keyword="${escapeHtml(keyword)}">${escapeHtml(keyword)}</button>`;
+    })
     .join("");
+
+  for (const button of keywordsEl.querySelectorAll(".keyword-chip")) {
+    button.addEventListener("click", () => {
+      const kw = button.dataset.keyword || "";
+      activeKeywordFilter = activeKeywordFilter === kw ? "" : kw;
+      renderKeywords(keywords);
+      renderUnitList();
+    });
+  }
 }
 
 function renderComposition(unit) {
@@ -710,6 +724,9 @@ function getFilteredUnits() {
     if (detachmentId && detachmentId !== "__all__") {
       if (unit.detachmentIds.length && !unit.detachmentIds.includes(detachmentId)) return false;
     }
+    if (activeKeywordFilter) {
+      if (!unit.keywords.some((kw) => kw.toLowerCase() === activeKeywordFilter.toLowerCase())) return false;
+    }
     if (!query) return true;
     return unit.name.toLowerCase().includes(query);
   });
@@ -729,9 +746,31 @@ function getFilteredUnits() {
   return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function renderKeywordFilterIndicator() {
+  if (!activeKeywordFilter) {
+    keywordFilterIndicatorEl.innerHTML = "";
+    keywordFilterIndicatorEl.style.display = "none";
+    return;
+  }
+
+  keywordFilterIndicatorEl.style.display = "";
+  keywordFilterIndicatorEl.innerHTML = `
+    <span>Фильтр keyword: <strong>${escapeHtml(activeKeywordFilter)}</strong></span>
+    <button type="button" id="clear-keyword-filter" class="clear-filter-btn">Сбросить</button>
+  `;
+  const btn = document.querySelector("#clear-keyword-filter");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      activeKeywordFilter = "";
+      renderUnitList();
+    });
+  }
+}
+
 function renderUnitList() {
   const units = getFilteredUnits();
   renderDetachmentInfo();
+  renderKeywordFilterIndicator();
 
   if (!units.length) {
     unitListEl.innerHTML = '<p class="note">Нет юнитов по фильтру.</p>';
@@ -1196,6 +1235,7 @@ async function loadIndexAndInit() {
 
 factionSelectEl.addEventListener("change", () => {
   populateDetachmentSelect();
+  activeKeywordFilter = "";
   renderUnitList();
 });
 detachmentSelectEl.addEventListener("change", renderUnitList);
