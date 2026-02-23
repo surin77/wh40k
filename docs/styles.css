@@ -71,6 +71,32 @@ body {
   background: linear-gradient(180deg, #6f1c20, #4f1a26);
 }
 
+.scroll-top-btn {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid #8d363d;
+  background: linear-gradient(180deg, #8f232b, #5b1a24);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 3000;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 .page {
   max-width: 1400px;
   margin: 0 auto;

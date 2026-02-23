@@ -19,6 +19,7 @@ const abilitiesListEl = document.querySelector("#abilities-list");
 const keywordsEl = document.querySelector("#keywords");
 const compositionEl = document.querySelector("#composition");
 const detachmentContentEl = document.querySelector("#detachment-content");
+const scrollTopBtnEl = document.querySelector("#scroll-top-btn");
 const tooltipEl = document.createElement("div");
 
 const REQUIRED_FILES = [
@@ -1259,6 +1260,19 @@ reloadBtn.addEventListener("click", () => {
     metaEl.textContent = `Ошибка обновления: ${error.message}`;
   });
 });
+
+function updateScrollTopButton() {
+  if (!scrollTopBtnEl) return;
+  scrollTopBtnEl.classList.toggle("visible", window.scrollY > 260);
+}
+
+if (scrollTopBtnEl) {
+  scrollTopBtnEl.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+  window.addEventListener("scroll", updateScrollTopButton, { passive: true });
+  updateScrollTopButton();
+}
 
 initTooltipHandlers();
 
