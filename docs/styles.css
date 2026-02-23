@@ -20,14 +20,16 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(1000px 500px at 100% -10%, #1a2230 0, transparent 50%),
-    linear-gradient(180deg, #0d131a, #0a1015);
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.012) 0 1px, rgba(0, 0, 0, 0.012) 1px 2px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.008) 0 1px, rgba(0, 0, 0, 0.008) 1px 2px),
+    radial-gradient(1100px 560px at 100% -8%, #1b2431 0%, #151f2b 34%, transparent 62%),
+    linear-gradient(180deg, #0f151d 0%, #0d131a 42%, #0b1118 72%, #0a1015 100%);
   font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
 }
 
 .topbar {
   border-bottom: 1px solid var(--line);
-  background: linear-gradient(90deg, #111922, #0f1821 65%, #151d29);
+  background: linear-gradient(90deg, #111922 0%, #141e2a 36%, #101a24 68%, #151d29 100%);
 }
 
 .topbar-inner {
@@ -237,7 +239,7 @@ body {
 }
 
 .unit-btn.active {
-  background: linear-gradient(90deg, #4f161b, #2c1b2a);
+  background: linear-gradient(90deg, #5a1a20 0%, #3f1a27 52%, #2c1b2a 100%);
   border-color: #844044;
 }
 
@@ -251,7 +253,7 @@ body {
   align-items: flex-start;
   gap: 1rem;
   padding: 0.8rem;
-  background: linear-gradient(90deg, #5d171b, #311a26 60%, #1a202b);
+  background: linear-gradient(90deg, #60191e 0%, #4b1b25 36%, #311a26 64%, #1a202b 100%);
   border-bottom: 1px solid #7b3136;
 }
 
@@ -336,7 +338,7 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  background: linear-gradient(90deg, #6f1c20, #4f1c2a);
+  background: linear-gradient(90deg, #751f24 0%, #651f25 38%, #57202a 70%, #4f1c2a 100%);
 }
 
 .data-table {
