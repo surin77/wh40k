@@ -135,7 +135,7 @@ body {
 .toolbar-checkbox-control {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   height: 2.4rem;
   border-radius: 6px;
   border: 1px solid var(--line);
