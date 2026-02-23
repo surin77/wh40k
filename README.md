@@ -1,12 +1,12 @@
 # Wahapedia WH40k GitHub Mirror
 
-Автоматическая выгрузка данных Wahapedia (раздел Warhammer 40,000 10th edition export) раз в час в GitHub, с простой веб-страницей для просмотра CSV.
+Автоматическая выгрузка данных Wahapedia (WH40k export CSV + Core Rules page) раз в час в GitHub, с веб-страницами для даташитов и чтения правил.
 
 ## Что уже настроено
 
-- `scripts/fetch_wh40k.py` — скачивает официальные CSV из `https://wahapedia.ru/wh40k10ed/` и обновляет только изменившиеся файлы.
+- `scripts/fetch_wh40k.py` — скачивает официальные CSV из `https://wahapedia.ru/wh40k10ed/`, а также выгружает Core Rules в `core_rules.json`, обновляя только изменившиеся файлы.
 - `.github/workflows/sync-wahapedia.yml` — GitHub Actions job раз в час (`0 * * * *`) + ручной запуск.
-- `docs/` — простая страница просмотра данных (`index.html`, `app.js`, `styles.css`).
+- `docs/` — страница даташитов (`index.html`) и отдельная страница Core Rules (`rules.html`).
 - `docs/data/index.json` — метаданные последней синхронизации (создаётся скриптом).
 
 ## Быстрый старт
@@ -34,5 +34,4 @@ Workflow выполняет скрипт и затем проверяет изм
 
 ## Ограничения
 
-- Это не официальный JSON API, а официальный CSV export Wahapedia.
-- В таблице на странице для производительности выводится до 500 строк (поиск работает по загруженной таблице).
+- Для Core Rules нет отдельного подтверждённого публичного CSV в экспорте; используется выгрузка и парсинг страницы `the-rules/core-rules`.

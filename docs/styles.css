@@ -34,6 +34,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0.9rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .topbar h1 {
@@ -45,6 +49,26 @@ body {
 .topbar p {
   margin: 0.3rem 0 0;
   color: var(--muted);
+}
+
+.top-nav {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.top-nav-link {
+  border: 1px solid #3c4a5c;
+  border-radius: 6px;
+  padding: 0.35rem 0.55rem;
+  color: #dce6f1;
+  text-decoration: none;
+  background: #141e2a;
+  font-size: 0.86rem;
+}
+
+.top-nav-link.active {
+  border-color: #9b3e45;
+  background: linear-gradient(180deg, #6f1c20, #4f1a26);
 }
 
 .page {
@@ -397,6 +421,49 @@ body {
   font-size: 0.92rem;
   line-height: 1.4;
   white-space: pre-wrap;
+}
+
+.rules-workspace {
+  grid-template-columns: 320px 1fr;
+}
+
+.rules-article {
+  overflow: hidden;
+}
+
+.rules-content {
+  padding: 0.9rem;
+}
+
+.rule-heading {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  color: #f0d8b7;
+}
+
+.rule-paragraph {
+  margin: 0 0 0.7rem;
+  color: #d4dde8;
+  line-height: 1.45;
+}
+
+.rule-bullet {
+  margin: 0 0 0.6rem;
+  padding-left: 1rem;
+  color: #dce6f2;
+  line-height: 1.4;
+  position: relative;
+}
+
+.rule-bullet::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 2px;
+  background: #b7333d;
+  position: absolute;
+  left: 0;
+  top: 0.46rem;
 }
 
 @media (max-width: 1100px) {
