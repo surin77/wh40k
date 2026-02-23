@@ -144,6 +144,8 @@ body {
 
 .sidebar {
   padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar h2 {
@@ -155,8 +157,10 @@ body {
 }
 
 .unit-list {
-  max-height: 76vh;
-  overflow: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
   display: grid;
   gap: 0.35rem;
 }
@@ -623,7 +627,7 @@ body {
   }
 
   .unit-list {
-    max-height: 35vh;
+    max-height: none;
   }
 
   .sheet-grid {
