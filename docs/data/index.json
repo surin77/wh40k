@@ -1,8 +1,9 @@
 {
   "source": "Wahapedia WH40k 10th Edition Data Export",
-  "updated_at_utc": "2026-02-23T15:48:17+00:00",
+  "updated_at_utc": "2026-02-23T16:59:18+00:00",
   "bootstrap_run": false,
   "changed_files": [
+    "Datasheets_models_cost.csv",
     "core_rules.json"
   ],
   "skipped_missing_files": [
@@ -30,6 +31,10 @@
     "Datasheets_models.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_models.csv",
       "sha256": "7432d3752ba19c608153783770f64500011cb6a517312a7efd23ab1708884d7f"
+    },
+    "Datasheets_models_cost.csv": {
+      "url": "https://wahapedia.ru/wh40k10ed/Datasheets_models_cost.csv",
+      "sha256": "dfc82fdada96341f164962418a39d62c097bced90e777fed8d6f1a54142bcb33"
     },
     "Datasheets_keywords.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_keywords.csv",
@@ -69,7 +74,7 @@
     },
     "core_rules.json": {
       "url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
-      "sha256": "47452a8e63c8e5bd758a78432faf032cda349fb1b415f6a46c91826a33ca6e67"
+      "sha256": "1796ee99df6e982332986baf9383ca2d557bc65fad7a3ae5895b60ade1e46d2f"
     }
   }
 }
