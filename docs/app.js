@@ -204,6 +204,20 @@ function hasWeaponData(weapon) {
   );
 }
 
+function formatBsWs(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "-";
+  if (/^\d+$/.test(raw)) return `${raw}+`;
+  return raw;
+}
+
+function formatRange(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "-";
+  if (/^\d+$/.test(raw)) return `${raw}"`;
+  return raw;
+}
+
 function normalizeRuleName(text) {
   return normalized(String(text || "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim());
 }
@@ -415,9 +429,9 @@ function renderWeaponTable(type, weapons) {
 
       return `<tr>
         <td>${escapeHtml(weapon.name || "-")}${tagsHtml}</td>
-        <td>${escapeHtml(weapon.range || "-")}</td>
+        <td>${escapeHtml(formatRange(weapon.range))}</td>
         <td>${escapeHtml(weapon.A || "-")}</td>
-        <td>${escapeHtml(weapon.BS_WS || "-")}</td>
+        <td>${escapeHtml(formatBsWs(weapon.BS_WS))}</td>
         <td>${escapeHtml(weapon.S || "-")}</td>
         <td>${escapeHtml(weapon.AP || "-")}</td>
         <td>${escapeHtml(weapon.D || "-")}</td>
