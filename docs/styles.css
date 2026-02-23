@@ -390,14 +390,15 @@ body {
 .keyword-tooltip {
   position: fixed;
   z-index: 2000;
-  max-width: min(560px, 90vw);
+  max-width: min(640px, 92vw);
   pointer-events: none;
   opacity: 0;
   transform: translateY(4px);
   transition: opacity 0.08s linear, transform 0.08s linear;
-  border: 1px solid #3a4a59;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-  background: #111922;
+  border: 1px solid #2e3f4f;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.62);
+  background: #101822;
+  padding: 0.7rem;
 }
 
 .keyword-tooltip.visible {
@@ -406,21 +407,60 @@ body {
 }
 
 .keyword-tooltip-title {
-  background: linear-gradient(90deg, #8f1e25, #651d2a);
-  padding: 0.4rem 0.55rem;
-  font-size: 1rem;
+  background: linear-gradient(90deg, #8b1f24, #6a1b2b);
+  padding: 0.42rem 0.58rem;
+  font-size: 1.02rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 700;
   color: #f2f4f7;
 }
 
+.keyword-tooltip-intro {
+  margin-top: 0.5rem;
+  color: #d3deea;
+  font-size: 0.96rem;
+  line-height: 1.35;
+  font-style: italic;
+}
+
 .keyword-tooltip-body {
-  padding: 0.55rem;
+  margin-top: 0.45rem;
   color: #d3dce8;
   font-size: 0.92rem;
   line-height: 1.4;
   white-space: pre-wrap;
+}
+
+.keyword-tooltip-points {
+  margin: 0.55rem 0 0;
+  padding: 0.55rem 0.7rem;
+  list-style: none;
+  background: #2a3542;
+  border-top: 1px solid #3f4a57;
+  border-bottom: 1px solid #3f4a57;
+}
+
+.keyword-tooltip-points li {
+  margin: 0 0 0.35rem;
+  padding-left: 1rem;
+  color: #ecf1f8;
+  line-height: 1.35;
+  position: relative;
+}
+
+.keyword-tooltip-points li:last-child {
+  margin-bottom: 0;
+}
+
+.keyword-tooltip-points li::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #d61f24;
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
 }
 
 .rules-workspace {
@@ -435,10 +475,29 @@ body {
   padding: 0.9rem;
 }
 
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.rule-card {
+  border: 1px solid #243241;
+  background: #0f1720;
+  padding: 0.7rem;
+}
+
+.rule-card:target {
+  border-color: #a04149;
+  box-shadow: inset 0 0 0 1px #a04149;
+}
+
 .rule-heading {
-  margin: 0 0 0.45rem;
-  font-size: 1.05rem;
-  color: #f0d8b7;
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+  color: #dfe4ec;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .rule-paragraph {
@@ -480,6 +539,10 @@ body {
   }
 
   .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .rules-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -33,7 +33,12 @@ let currentUnitId = null;
 let tooltipVisible = false;
 
 tooltipEl.className = "keyword-tooltip";
-tooltipEl.innerHTML = '<div class="keyword-tooltip-title"></div><div class="keyword-tooltip-body"></div>';
+tooltipEl.innerHTML = `
+  <div class="keyword-tooltip-title"></div>
+  <div class="keyword-tooltip-intro"></div>
+  <div class="keyword-tooltip-body"></div>
+  <ul class="keyword-tooltip-points"></ul>
+`;
 document.body.appendChild(tooltipEl);
 
 function escapeHtml(value) {
@@ -188,6 +193,32 @@ function chooseByFaction(definitions, factionId) {
   return definitions[0];
 }
 
+function buildTooltipPayload(title, legend, description) {
+  const intro = stripHtml(legend || "");
+  const source = stripHtml(description || "");
+  const lines = source
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  const points = [];
+  const paragraphs = [];
+  for (const line of lines) {
+    if (line.startsWith("- ")) {
+      points.push(line.slice(2).trim());
+    } else {
+      paragraphs.push(line);
+    }
+  }
+
+  return {
+    title: title || "",
+    intro,
+    body: paragraphs.join("\n\n"),
+    points,
+  };
+}
+
 function renderWeaponTable(type, weapons) {
   const head = type === "Ranged" ? rangedHeadEl : meleeHeadEl;
   const body = type === "Ranged" ? rangedBodyEl : meleeBodyEl;
@@ -217,12 +248,16 @@ function renderWeaponTable(type, weapons) {
             .map((tag) => {
               const hasTip = Boolean(tag.tooltip);
               const cls = hasTip ? "kw-link weapon-rule" : "kw-link weapon-rule disabled";
-              const body = hasTip ? tag.tooltip : "Описание правила не найдено в источнике.";
+              const tip = hasTip
+                ? tag.tooltip
+                : { title: tag.label || "", intro: "", body: "Описание правила не найдено в источнике.", points: [] };
               return `<button
                 type="button"
                 class="${cls}"
-                data-tip-title="${escapeHtml(tag.label || "")}"
-                data-tip-body="${escapeHtml(body)}"
+                data-tip-title="${escapeHtml(tip.title || tag.label || "")}"
+                data-tip-intro="${escapeHtml(tip.intro || "")}"
+                data-tip-body="${escapeHtml(tip.body || "")}"
+                data-tip-points="${escapeHtml((tip.points || []).join("||"))}"
               >${escapeHtml(tag.label || "")}</button>`;
             })
             .join("")}</div>`
@@ -259,15 +294,19 @@ function renderAbilities(abilities) {
       const chips = list
         .map((ability) => {
           const title = ability.name || "Unnamed ability";
-          const desc = stripHtml(ability.description || "");
-          const hasDesc = Boolean(desc);
+          const tip = buildTooltipPayload(title, ability.legend || "", ability.description || "");
+          const hasDesc = Boolean(tip.intro || tip.body || (tip.points && tip.points.length));
           const cls = hasDesc ? "kw-link" : "kw-link disabled";
-          const body = hasDesc ? desc : "Описание отсутствует в источнике.";
+          const fallback = hasDesc
+            ? tip
+            : { title, intro: "", body: "Описание отсутствует в источнике.", points: [] };
           return `<button
             type="button"
             class="${cls}"
-            data-tip-title="${escapeHtml(title)}"
-            data-tip-body="${escapeHtml(body)}"
+            data-tip-title="${escapeHtml(fallback.title || title)}"
+            data-tip-intro="${escapeHtml(fallback.intro || "")}"
+            data-tip-body="${escapeHtml(fallback.body || "")}"
+            data-tip-points="${escapeHtml((fallback.points || []).join("||"))}"
           >${escapeHtml(title)}</button>`;
         })
         .join("");
@@ -347,11 +386,32 @@ function renderUnit(unit) {
 function showTooltip(target, x, y) {
   if (!target) return;
   const title = target.dataset.tipTitle || "";
+  const intro = target.dataset.tipIntro || "";
   const body = target.dataset.tipBody || "";
-  if (!title && !body) return;
+  const points = (target.dataset.tipPoints || "")
+    .split("||")
+    .map((item) => item.trim())
+    .filter(Boolean);
+  if (!title && !intro && !body && !points.length) return;
 
   tooltipEl.querySelector(".keyword-tooltip-title").textContent = title;
-  tooltipEl.querySelector(".keyword-tooltip-body").textContent = body;
+  const introEl = tooltipEl.querySelector(".keyword-tooltip-intro");
+  introEl.textContent = intro;
+  introEl.style.display = intro ? "block" : "none";
+
+  const bodyEl = tooltipEl.querySelector(".keyword-tooltip-body");
+  bodyEl.textContent = body;
+  bodyEl.style.display = body ? "block" : "none";
+
+  const pointsEl = tooltipEl.querySelector(".keyword-tooltip-points");
+  if (points.length) {
+    pointsEl.innerHTML = points.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    pointsEl.style.display = "block";
+  } else {
+    pointsEl.innerHTML = "";
+    pointsEl.style.display = "none";
+  }
+
   tooltipEl.classList.add("visible");
   tooltipVisible = true;
   moveTooltip(x, y);
@@ -558,7 +618,9 @@ function buildCatalog(datasets) {
         );
         return {
           label,
-          tooltip: found ? stripHtml(found.description || found.legend || "") : "",
+          tooltip: found
+            ? buildTooltipPayload(label, found.legend || "", found.description || "")
+            : null,
         };
       });
 
@@ -589,7 +651,8 @@ function buildCatalog(datasets) {
       return {
         type: type || "Datasheet",
         name: inlineName || def?.name || "",
-        description: inlineDescription || def?.description || def?.legend || "",
+        legend: def?.legend || "",
+        description: inlineDescription || def?.description || "",
       };
     });
 
