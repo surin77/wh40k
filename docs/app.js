@@ -2,6 +2,7 @@ const metaEl = document.querySelector("#meta");
 const factionSelectEl = document.querySelector("#faction-select");
 const detachmentSelectEl = document.querySelector("#detachment-select");
 const unitSearchEl = document.querySelector("#unit-search");
+const showLegendsToggleEl = document.querySelector("#show-legends-toggle");
 const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
 const keywordFilterIndicatorEl = document.querySelector("#keyword-filter-indicator");
@@ -36,6 +37,7 @@ const REQUIRED_FILES = [
   "Stratagems.csv",
   "Enhancements.csv",
   "Detachment_abilities.csv",
+  "Source.csv",
 ];
 
 const OPTIONAL_FILES = ["Datasheets_models_cost.csv"];
@@ -47,6 +49,7 @@ let currentUnitId = null;
 let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
 let activeKeywordFilter = "";
+let showLegends = false;
 
 tooltipEl.className = "keyword-tooltip";
 tooltipEl.innerHTML = `
@@ -761,6 +764,7 @@ function getFilteredUnits() {
   const query = unitSearchEl.value.trim().toLowerCase();
 
   const filtered = catalog.units.filter((unit) => {
+    if (!showLegends && unit.isLegend) return false;
     if (faction && faction !== "__all__" && unit.factionName !== faction) return false;
     if (detachmentId && detachmentId !== "__all__") {
       if (unit.detachmentIds.length && !unit.detachmentIds.includes(detachmentId)) return false;
@@ -867,12 +871,23 @@ function buildCatalog(datasets) {
   const stratagemRows = datasets.get("Stratagems.csv")?.rows || [];
   const enhancementRows = datasets.get("Enhancements.csv")?.rows || [];
   const detachmentAbilityRows = datasets.get("Detachment_abilities.csv")?.rows || [];
+  const sourceRows = datasets.get("Source.csv")?.rows || [];
 
   const factionById = new Map();
   for (const row of factionsRows) {
     const id = firstNonEmpty(row, ["id"]);
     const name = firstNonEmpty(row, ["name"]);
     if (id && name) factionById.set(id, name);
+  }
+
+  const sourceById = new Map();
+  for (const row of sourceRows) {
+    const id = firstNonEmpty(row, ["id"]);
+    if (!id) continue;
+    sourceById.set(id, {
+      name: firstNonEmpty(row, ["name"]),
+      type: firstNonEmpty(row, ["type"]),
+    });
   }
 
   const modelsByDsId = new Map();
@@ -1194,7 +1209,14 @@ function buildCatalog(datasets) {
       keywords,
       detachmentIds: [...(dsDetachmentIds.get(id) || new Set())],
       costOptions: [],
+      isLegend: false,
     };
+
+    const sourceId = firstNonEmpty(row, ["source_id"]);
+    const sourceName = sourceById.get(sourceId)?.name || "";
+    const sourceType = sourceById.get(sourceId)?.type || "";
+    const sourceText = `${sourceName} ${sourceType}`.toLowerCase();
+    unit.isLegend = sourceText.includes("legend");
 
     const rawCostRows = [...(costsByDsId.get(id) || []), ...(costsByName.get(normalized(name)) || [])];
     const seenCosts = new Set();
@@ -1322,6 +1344,13 @@ factionSelectEl.addEventListener("change", () => {
 });
 detachmentSelectEl.addEventListener("change", renderUnitList);
 unitSearchEl.addEventListener("input", renderUnitList);
+if (showLegendsToggleEl) {
+  showLegendsToggleEl.checked = false;
+  showLegendsToggleEl.addEventListener("change", () => {
+    showLegends = Boolean(showLegendsToggleEl.checked);
+    renderUnitList();
+  });
+}
 reloadBtn.addEventListener("click", () => {
   loadIndexAndInit().catch((error) => {
     metaEl.textContent = `Ошибка обновления: ${error.message}`;

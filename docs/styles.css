@@ -108,7 +108,7 @@ body {
 .toolbar {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: 220px 260px 1fr 160px;
+  grid-template-columns: 220px 220px 1fr 200px 160px;
 }
 
 .toolbar label {
@@ -122,6 +122,32 @@ body {
   display: grid;
   gap: 0.3rem;
   align-content: end;
+}
+
+.toolbar-checkbox {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  align-content: end;
+}
+
+.toolbar-checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #0f1620;
+  color: var(--text);
+  padding: 0 0.65rem;
+  font-size: 0.9rem;
+}
+
+.toolbar-checkbox-control input {
+  margin: 0;
+  accent-color: #9b3e45;
 }
 
 .toolbar-label-spacer {
