@@ -80,7 +80,7 @@ body {
 .toolbar {
   display: grid;
   gap: 0.7rem;
-  grid-template-columns: 260px 1fr 160px;
+  grid-template-columns: 220px 260px 1fr 160px;
 }
 
 .toolbar label {
@@ -380,6 +380,19 @@ body {
   padding: 0.65rem;
   color: #d2dbe7;
   line-height: 1.42;
+}
+
+.compact-list {
+  margin: 0.35rem 0 0.65rem;
+  padding-left: 1.1rem;
+}
+
+.compact-list li {
+  margin-bottom: 0.35rem;
+}
+
+.muted-inline {
+  color: #9eb0c6;
 }
 
 .note {

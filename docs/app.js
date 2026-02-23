@@ -1,5 +1,6 @@
 const metaEl = document.querySelector("#meta");
 const factionSelectEl = document.querySelector("#faction-select");
+const detachmentSelectEl = document.querySelector("#detachment-select");
 const unitSearchEl = document.querySelector("#unit-search");
 const reloadBtn = document.querySelector("#reload-button");
 const unitListEl = document.querySelector("#unit-list");
@@ -16,6 +17,7 @@ const meleeBodyEl = document.querySelector("#melee-table tbody");
 const abilitiesListEl = document.querySelector("#abilities-list");
 const keywordsEl = document.querySelector("#keywords");
 const compositionEl = document.querySelector("#composition");
+const detachmentContentEl = document.querySelector("#detachment-content");
 const tooltipEl = document.createElement("div");
 
 const REQUIRED_FILES = [
@@ -25,12 +27,17 @@ const REQUIRED_FILES = [
   "Datasheets_wargear.csv",
   "Datasheets_keywords.csv",
   "Datasheets_abilities.csv",
+  "Datasheets_stratagems.csv",
+  "Datasheets_enhancements.csv",
   "Abilities.csv",
+  "Stratagems.csv",
+  "Enhancements.csv",
+  "Detachment_abilities.csv",
 ];
 
 let indexData = null;
 let parserWarnings = [];
-let catalog = { factions: [], units: [] };
+let catalog = { factions: [], units: [], detachmentsByFaction: new Map() };
 let currentUnitId = null;
 let tooltipVisible = false;
 let coreRuleDefsByName = new Map();
@@ -201,7 +208,7 @@ function normalizeRuleName(text) {
 function simplifyRuleName(text) {
   return String(text || "")
     .replace(/\([^)]*\)/g, " ")
-    .replace(/\s+\d+\+?$/i, "")
+    .replace(/\s+(x|d\d+|\d+\+?)$/i, "")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -326,6 +333,17 @@ function makeOneShotTooltip() {
     points: [
       "This weapon can be used once per battle.",
       "It is excluded from Firing Deck selection in Core Rules.",
+    ],
+  };
+}
+
+function makePsychicTooltip() {
+  return {
+    title: "PSYCHIC",
+    intro: "This is a Psychic weapon ability.",
+    body: "In the current Core Rules export there is no standalone Psychic weapon ability section. Keep this tag available as a rules marker for interactions that reference Psychic attacks.",
+    points: [
+      "Used as a keyword marker for Psychic attack interactions.",
     ],
   };
 }
@@ -500,6 +518,45 @@ function renderUnit(unit) {
   renderComposition(unit);
 }
 
+function getActiveDetachment() {
+  const detId = detachmentSelectEl.value;
+  if (!detId || detId === "__all__") return null;
+  const faction = factionSelectEl.value;
+  const sample = catalog.units.find((u) => u.factionName === faction);
+  if (!sample) return null;
+  const byFaction = catalog.detachmentsByFaction.get(sample.factionId);
+  if (!byFaction) return null;
+  return byFaction.get(detId) || null;
+}
+
+function renderDetachmentInfo() {
+  const det = getActiveDetachment();
+  if (!det) {
+    detachmentContentEl.innerHTML = '<p class="note">Выберите детачмент, чтобы увидеть его особенности.</p>';
+    return;
+  }
+
+  const abilityItems = det.abilities
+    .slice(0, 6)
+    .map((a) => `<li><strong>${escapeHtml(a.name || "Ability")}:</strong> ${escapeHtml(stripHtml(a.description || a.legend || ""))}</li>`)
+    .join("");
+  const stratItems = det.stratagems
+    .slice(0, 8)
+    .map((s) => `<li>${escapeHtml(s.name || "Stratagem")}${s.cpCost ? ` <span class="muted-inline">(${escapeHtml(s.cpCost)}CP)</span>` : ""}</li>`)
+    .join("");
+  const enhItems = det.enhancements
+    .slice(0, 8)
+    .map((e) => `<li>${escapeHtml(e.name || "Enhancement")}${e.cost ? ` <span class="muted-inline">(${escapeHtml(e.cost)} pts)</span>` : ""}</li>`)
+    .join("");
+
+  detachmentContentEl.innerHTML = `
+    <p><strong>${escapeHtml(det.name)}</strong></p>
+    ${abilityItems ? `<p><strong>Rule:</strong></p><ul class="compact-list">${abilityItems}</ul>` : ""}
+    ${stratItems ? `<p><strong>Stratagems:</strong></p><ul class="compact-list">${stratItems}</ul>` : ""}
+    ${enhItems ? `<p><strong>Enhancements:</strong></p><ul class="compact-list">${enhItems}</ul>` : ""}
+  `;
+}
+
 function showTooltip(target, x, y) {
   if (!target) return;
   const title = target.dataset.tipTitle || "";
@@ -578,17 +635,36 @@ function initTooltipHandlers() {
 
 function getFilteredUnits() {
   const faction = factionSelectEl.value;
+  const detachmentId = detachmentSelectEl.value;
   const query = unitSearchEl.value.trim().toLowerCase();
 
-  return catalog.units.filter((unit) => {
+  const filtered = catalog.units.filter((unit) => {
     if (faction && faction !== "__all__" && unit.factionName !== faction) return false;
+    if (detachmentId && detachmentId !== "__all__") {
+      if (unit.detachmentIds.length && !unit.detachmentIds.includes(detachmentId)) return false;
+    }
     if (!query) return true;
     return unit.name.toLowerCase().includes(query);
   });
+
+  const byName = new Map();
+  for (const unit of filtered) {
+    const key = `${unit.factionName}::${unit.name}`.toLowerCase();
+    const prev = byName.get(key);
+    if (!prev) {
+      byName.set(key, unit);
+      continue;
+    }
+    const prevId = Number(prev.id || "0");
+    const currId = Number(unit.id || "0");
+    if (currId < prevId) byName.set(key, unit);
+  }
+  return [...byName.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function renderUnitList() {
   const units = getFilteredUnits();
+  renderDetachmentInfo();
 
   if (!units.length) {
     unitListEl.innerHTML = '<p class="note">Нет юнитов по фильтру.</p>';
@@ -637,7 +713,12 @@ function buildCatalog(datasets) {
   const wargearRows = datasets.get("Datasheets_wargear.csv")?.rows || [];
   const keywordsRows = datasets.get("Datasheets_keywords.csv")?.rows || [];
   const datasheetAbilitiesRows = datasets.get("Datasheets_abilities.csv")?.rows || [];
+  const datasheetStratRows = datasets.get("Datasheets_stratagems.csv")?.rows || [];
+  const datasheetEnhRows = datasets.get("Datasheets_enhancements.csv")?.rows || [];
   const abilityRows = datasets.get("Abilities.csv")?.rows || [];
+  const stratagemRows = datasets.get("Stratagems.csv")?.rows || [];
+  const enhancementRows = datasets.get("Enhancements.csv")?.rows || [];
+  const detachmentAbilityRows = datasets.get("Detachment_abilities.csv")?.rows || [];
 
   const factionById = new Map();
   for (const row of factionsRows) {
@@ -713,6 +794,127 @@ function buildCatalog(datasets) {
     abilitiesByDsId.get(dsId).push(row);
   }
 
+  const stratagemById = new Map();
+  for (const row of stratagemRows) {
+    const sid = firstNonEmpty(row, ["id"]);
+    if (!sid) continue;
+    stratagemById.set(sid, {
+      id: sid,
+      factionId: firstNonEmpty(row, ["faction_id"]),
+      name: firstNonEmpty(row, ["name"]),
+      detachmentId: firstNonEmpty(row, ["detachment_id"]),
+      detachmentName: firstNonEmpty(row, ["detachment"]),
+      cpCost: firstNonEmpty(row, ["cp_cost"]),
+      phase: firstNonEmpty(row, ["phase"]),
+      type: firstNonEmpty(row, ["type"]),
+      description: firstNonEmpty(row, ["description"]),
+    });
+  }
+
+  const enhancementById = new Map();
+  for (const row of enhancementRows) {
+    const eid = firstNonEmpty(row, ["id"]);
+    if (!eid) continue;
+    enhancementById.set(eid, {
+      id: eid,
+      factionId: firstNonEmpty(row, ["faction_id"]),
+      name: firstNonEmpty(row, ["name"]),
+      detachmentId: firstNonEmpty(row, ["detachment_id"]),
+      detachmentName: firstNonEmpty(row, ["detachment"]),
+      cost: firstNonEmpty(row, ["cost"]),
+      description: firstNonEmpty(row, ["description"]),
+      legend: firstNonEmpty(row, ["legend"]),
+    });
+  }
+
+  const detachmentsByFaction = new Map();
+  function ensureDetachment(factionId, detachmentId, detachmentName) {
+    const fId = factionId || "__unknown__";
+    if (!detachmentsByFaction.has(fId)) detachmentsByFaction.set(fId, new Map());
+    const detMap = detachmentsByFaction.get(fId);
+    const dId = detachmentId || "__unknown_detachment__";
+    if (!detMap.has(dId)) {
+      detMap.set(dId, {
+        id: dId,
+        name: detachmentName || "Unknown Detachment",
+        abilities: [],
+        stratagems: [],
+        enhancements: [],
+      });
+    }
+    const det = detMap.get(dId);
+    if (detachmentName && !det.name) det.name = detachmentName;
+    return det;
+  }
+
+  for (const row of detachmentAbilityRows) {
+    const factionId = firstNonEmpty(row, ["faction_id"]);
+    const detachmentId = firstNonEmpty(row, ["detachment_id"]);
+    const detachmentName = firstNonEmpty(row, ["detachment"]);
+    if (!factionId || !detachmentId) continue;
+    const det = ensureDetachment(factionId, detachmentId, detachmentName);
+    det.abilities.push({
+      id: firstNonEmpty(row, ["id"]),
+      name: firstNonEmpty(row, ["name"]),
+      legend: firstNonEmpty(row, ["legend"]),
+      description: firstNonEmpty(row, ["description"]),
+    });
+  }
+
+  for (const row of stratagemRows) {
+    const factionId = firstNonEmpty(row, ["faction_id"]);
+    const detachmentId = firstNonEmpty(row, ["detachment_id"]);
+    const detachmentName = firstNonEmpty(row, ["detachment"]);
+    if (!factionId || !detachmentId) continue;
+    const det = ensureDetachment(factionId, detachmentId, detachmentName);
+    det.stratagems.push({
+      id: firstNonEmpty(row, ["id"]),
+      name: firstNonEmpty(row, ["name"]),
+      cpCost: firstNonEmpty(row, ["cp_cost"]),
+      phase: firstNonEmpty(row, ["phase"]),
+      type: firstNonEmpty(row, ["type"]),
+      description: firstNonEmpty(row, ["description"]),
+    });
+  }
+
+  for (const row of enhancementRows) {
+    const factionId = firstNonEmpty(row, ["faction_id"]);
+    const detachmentId = firstNonEmpty(row, ["detachment_id"]);
+    const detachmentName = firstNonEmpty(row, ["detachment"]);
+    if (!factionId || !detachmentId) continue;
+    const det = ensureDetachment(factionId, detachmentId, detachmentName);
+    det.enhancements.push({
+      id: firstNonEmpty(row, ["id"]),
+      name: firstNonEmpty(row, ["name"]),
+      cost: firstNonEmpty(row, ["cost"]),
+      legend: firstNonEmpty(row, ["legend"]),
+      description: firstNonEmpty(row, ["description"]),
+    });
+  }
+
+  const dsDetachmentIds = new Map();
+  function pushDsDet(dsId, detId) {
+    if (!dsId || !detId) return;
+    if (!dsDetachmentIds.has(dsId)) dsDetachmentIds.set(dsId, new Set());
+    dsDetachmentIds.get(dsId).add(detId);
+  }
+
+  for (const row of datasheetStratRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    const stratId = firstNonEmpty(row, ["stratagem_id"]);
+    const strat = stratagemById.get(stratId);
+    if (!strat || !strat.detachmentId) continue;
+    pushDsDet(dsId, strat.detachmentId);
+  }
+
+  for (const row of datasheetEnhRows) {
+    const dsId = firstNonEmpty(row, ["datasheet_id"]);
+    const enhId = firstNonEmpty(row, ["enhancement_id"]);
+    const enh = enhancementById.get(enhId);
+    if (!enh || !enh.detachmentId) continue;
+    pushDsDet(dsId, enh.detachmentId);
+  }
+
   const units = [];
 
   for (const row of datasheetsRows) {
@@ -736,6 +938,9 @@ function buildCatalog(datasets) {
         }
         if (!coreTip && exactKey === "oneshot") {
           coreTip = makeOneShotTooltip();
+        }
+        if (!coreTip && exactKey === "psychic") {
+          coreTip = coreRuleDefsByName.get("psychic") || makePsychicTooltip();
         }
         const found = chooseByFaction(
           abilityDefsByName.get(exactKey) || abilityDefsByName.get(simpleKey) || [],
@@ -813,6 +1018,7 @@ function buildCatalog(datasets) {
       },
       abilities: resolvedAbilities.filter((ability) => ability.name || ability.description),
       keywords,
+      detachmentIds: [...(dsDetachmentIds.get(id) || new Set())],
     };
 
     units.push(unit);
@@ -821,7 +1027,7 @@ function buildCatalog(datasets) {
   units.sort((a, b) => a.name.localeCompare(b.name));
 
   const factions = [...new Set(units.map((unit) => unit.factionName))].sort((a, b) => a.localeCompare(b));
-  return { factions, units };
+  return { factions, units, detachmentsByFaction };
 }
 
 function populateFactionSelect() {
@@ -829,6 +1035,30 @@ function populateFactionSelect() {
     '<option value="__all__">Все фракции</option>',
     ...catalog.factions.map((faction) => `<option value="${escapeHtml(faction)}">${escapeHtml(faction)}</option>`),
   ].join("");
+}
+
+function populateDetachmentSelect() {
+  const faction = factionSelectEl.value;
+  if (!faction || faction === "__all__") {
+    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    return;
+  }
+  const sample = catalog.units.find((u) => (faction === "__all__" ? true : u.factionName === faction));
+  if (!sample) {
+    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    return;
+  }
+  const byFaction = catalog.detachmentsByFaction.get(sample.factionId);
+  if (!byFaction || !byFaction.size) {
+    detachmentSelectEl.innerHTML = '<option value="__all__">Все детачменты</option>';
+    return;
+  }
+  const options = ['<option value="__all__">Все детачменты</option>'];
+  const sorted = [...byFaction.values()].sort((a, b) => a.name.localeCompare(b.name));
+  for (const det of sorted) {
+    options.push(`<option value="${escapeHtml(det.id)}">${escapeHtml(det.name)}</option>`);
+  }
+  detachmentSelectEl.innerHTML = options.join("");
 }
 
 async function loadIndexAndInit() {
@@ -872,11 +1102,16 @@ async function loadIndexAndInit() {
   }
 
   populateFactionSelect();
+  populateDetachmentSelect();
   renderMeta();
   renderUnitList();
 }
 
-factionSelectEl.addEventListener("change", renderUnitList);
+factionSelectEl.addEventListener("change", () => {
+  populateDetachmentSelect();
+  renderUnitList();
+});
+detachmentSelectEl.addEventListener("change", renderUnitList);
 unitSearchEl.addEventListener("input", renderUnitList);
 reloadBtn.addEventListener("click", () => {
   loadIndexAndInit().catch((error) => {
