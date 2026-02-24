@@ -25,6 +25,7 @@ body {
     radial-gradient(1100px 560px at 100% -8%, #1b2431 0%, #151f2b 34%, transparent 62%),
     linear-gradient(180deg, #0f151d 0%, #0d131a 42%, #0b1118 72%, #0a1015 100%);
   font-family: "Trebuchet MS", "Segoe UI", Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 .topbar {
@@ -201,10 +202,6 @@ body {
   transition: transform 0.16s ease;
 }
 
-.toggle-switch:hover {
-  border-color: #547295;
-}
-
 .toggle-switch:focus-visible {
   outline: none;
   box-shadow:
@@ -329,10 +326,6 @@ body {
   padding: 0.45rem 0.55rem;
   cursor: pointer;
   font-size: 0.9rem;
-}
-
-.unit-btn:hover {
-  background: #172230;
 }
 
 .unit-btn.active {
@@ -567,11 +560,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   cursor: help;
-}
-
-.kw-link:hover {
-  border-color: #b94a53;
-  background: linear-gradient(180deg, #4b1d24, #321a26);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .kw-link.disabled {
@@ -643,15 +633,12 @@ body {
   letter-spacing: 0.02em;
   font-family: inherit;
   line-height: 1.2;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .keyword-chip {
   cursor: pointer;
-}
-
-.chip:hover {
-  border-color: #b94a53;
-  background: linear-gradient(180deg, #4b1d24, #321a26);
 }
 
 .keyword-chip.active {
@@ -962,12 +949,14 @@ body {
 
   .sidebar {
     position: static;
-    max-height: none;
-    overflow: visible;
+    max-height: 44vh;
+    overflow: hidden;
   }
 
   .unit-list {
-    max-height: none;
+    max-height: 35vh;
+    overflow: auto;
+    padding-right: 0.2rem;
   }
 
   .sheet-grid {
@@ -980,5 +969,25 @@ body {
 
   .rules-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .toggle-switch:hover {
+    border-color: #547295;
+  }
+
+  .unit-btn:hover {
+    background: #172230;
+  }
+
+  .kw-link:hover {
+    border-color: #b94a53;
+    background: linear-gradient(180deg, #4b1d24, #321a26);
+  }
+
+  .chip:hover {
+    border-color: #b94a53;
+    background: linear-gradient(180deg, #4b1d24, #321a26);
   }
 }

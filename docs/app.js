@@ -47,6 +47,7 @@ let parserWarnings = [];
 let catalog = { factions: [], units: [], detachmentsByFaction: new Map() };
 let currentUnitId = null;
 let tooltipVisible = false;
+let tooltipAnchorEl = null;
 let coreRuleDefsByName = new Map();
 let activeKeywordFilter = "";
 let showLegends = false;
@@ -738,12 +739,18 @@ function showTooltip(target, x, y) {
 
   tooltipEl.classList.add("visible");
   tooltipVisible = true;
+  tooltipAnchorEl = target;
   moveTooltip(x, y);
 }
 
 function hideTooltip() {
   tooltipEl.classList.remove("visible");
   tooltipVisible = false;
+  tooltipAnchorEl = null;
+  const active = document.activeElement;
+  if (active && active.classList && active.classList.contains("kw-link")) {
+    active.blur();
+  }
 }
 
 function moveTooltip(x, y) {
@@ -779,6 +786,38 @@ function initTooltipHandlers() {
     if (tooltipVisible) moveTooltip(event.clientX, event.clientY);
   });
 
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest(".kw-link");
+    if (!target || target.classList.contains("disabled")) {
+      hideTooltip();
+      return;
+    }
+    if (tooltipVisible && tooltipAnchorEl === target) {
+      hideTooltip();
+      return;
+    }
+    const rect = target.getBoundingClientRect();
+    showTooltip(target, rect.left + rect.width / 2, rect.bottom);
+  });
+
+  document.addEventListener(
+    "touchstart",
+    (event) => {
+      const target = event.target.closest(".kw-link");
+      if (!target || target.classList.contains("disabled")) {
+        hideTooltip();
+        return;
+      }
+      if (tooltipVisible && tooltipAnchorEl === target) {
+        hideTooltip();
+        return;
+      }
+      const rect = target.getBoundingClientRect();
+      showTooltip(target, rect.left + rect.width / 2, rect.bottom);
+    },
+    { passive: true }
+  );
+  document.addEventListener("touchmove", hideTooltip, { passive: true });
   document.addEventListener("scroll", hideTooltip, true);
   window.addEventListener("blur", hideTooltip);
 }
