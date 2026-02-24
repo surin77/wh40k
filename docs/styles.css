@@ -53,6 +53,17 @@ body {
   color: var(--muted);
 }
 
+.topbar p a {
+  color: #dce6f1;
+  text-decoration: none;
+  border-bottom: 1px dotted #6a7d95;
+}
+
+.topbar p a:hover {
+  color: #f2f6fb;
+  border-bottom-color: #9b3e45;
+}
+
 .top-nav {
   display: flex;
   gap: 0.45rem;
