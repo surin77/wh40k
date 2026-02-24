@@ -112,6 +112,87 @@ function formatUtc(dateLike) {
   return dt.toLocaleString("en-GB", { timeZone: "UTC" }) + " UTC";
 }
 
+function normalizeBlockText(value) {
+  return String(value || "")
+    .replaceAll("\u00a0", " ")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .replace(/([(\[])\s+/g, "$1")
+    .replace(/\s+([)\]])/g, "$1")
+    .trim();
+}
+
+function shouldMergeContinuation(prevText, nextText) {
+  const prev = String(prevText || "").trim();
+  const next = String(nextText || "").trim();
+  if (!prev || !next) return false;
+  if (/:$/.test(prev)) return true;
+  if (!/[.!?]$/.test(prev)) return true;
+  if (/^[,.;:)\]]/.test(next)) return true;
+  if (/^[a-z]/.test(next)) return true;
+  if (
+    /^(and|or|but|if|when|while|then|that|which|with|without|within|to|of|for|in|on|at|from|as|because|before|after|unless)\b/i.test(
+      next
+    )
+  ) {
+    return true;
+  }
+  return false;
+}
+
+function splitLongParagraph(text, maxLen = 320) {
+  const clean = normalizeBlockText(text);
+  if (clean.length <= maxLen) return [clean];
+  const sentences = clean.split(/(?<=[.!?])\s+(?=[A-Z0-9"'(])/g).filter(Boolean);
+  if (sentences.length <= 1) return [clean];
+
+  const chunks = [];
+  let current = "";
+  for (const sentence of sentences) {
+    if (!current) {
+      current = sentence;
+      continue;
+    }
+    if ((current + " " + sentence).length <= maxLen || current.length < 160) {
+      current += " " + sentence;
+    } else {
+      chunks.push(current);
+      current = sentence;
+    }
+  }
+  if (current) chunks.push(current);
+  return chunks;
+}
+
+function preprocessSectionBlocks(blocks) {
+  const merged = [];
+  for (const rawBlock of blocks || []) {
+    const type = rawBlock?.type === "bullet" ? "bullet" : rawBlock?.type === "heading" ? "heading" : "paragraph";
+    const text = normalizeBlockText(rawBlock?.text || "");
+    if (!text) continue;
+    if (/^CORE RULES\s*\|/i.test(text)) continue;
+    if (/^\d+$/.test(text)) continue;
+
+    const prev = merged[merged.length - 1];
+    if (prev) {
+      const mergeBulletContinuation =
+        prev.type === "bullet" &&
+        type === "paragraph" &&
+        (!/[.!?]$/.test(prev.text) || prev.text.split(" ").length <= 8 || /^[A-Z][a-z]+ [a-z]/.test(text));
+      if (mergeBulletContinuation) {
+        prev.text = normalizeBlockText(`${prev.text} ${text}`);
+        continue;
+      }
+      if (prev.type === type && (type === "paragraph" || type === "bullet") && shouldMergeContinuation(prev.text, text)) {
+        prev.text = normalizeBlockText(`${prev.text} ${text}`);
+        continue;
+      }
+    }
+    merged.push({ type, text });
+  }
+  return merged;
+}
+
 function renderBattleRoundPhases() {
   const phases = [
     { num: 1, name: "Command Phase", icon: "✹" },
@@ -175,6 +256,60 @@ function renderRollingD3Table() {
   </section>`;
 }
 
+function renderHitRollTable() {
+  return `<section class="rules-ref-card" aria-label="Hit roll quick reference">
+    <h4 class="rules-ref-title">Hit Roll Quick Reference</h4>
+    <table class="rules-d3-table rules-hit-table">
+      <thead>
+        <tr><th>D6 Result</th><th>Outcome</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="dice-pair">${renderDieFace(1)}</span></td>
+          <td>Always fails</td>
+        </tr>
+        <tr>
+          <td><span class="rules-range-pill">2-5</span></td>
+          <td>Compare with BS / WS of the attack</td>
+        </tr>
+        <tr>
+          <td><span class="dice-pair">${renderDieFace(6)}</span></td>
+          <td>Critical Hit (always successful)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>`;
+}
+
+function renderWoundRollTable() {
+  const rows = [
+    ["Strength is at least double Toughness", "2+"],
+    ["Strength is greater than Toughness", "3+"],
+    ["Strength equals Toughness", "4+"],
+    ["Strength is lower than Toughness", "5+"],
+    ["Strength is at most half Toughness", "6+"],
+  ];
+
+  return `<section class="rules-ref-card" aria-label="Wound roll table">
+    <h4 class="rules-ref-title">Wound Roll Table</h4>
+    <table class="rules-d3-table rules-wound-table">
+      <thead>
+        <tr><th>Strength vs Toughness</th><th>Required Roll</th></tr>
+      </thead>
+      <tbody>
+        ${rows
+          .map(
+            ([relation, roll]) => `<tr>
+            <td>${escapeHtml(relation)}</td>
+            <td><span class="rules-roll-badge">${escapeHtml(roll)}</span></td>
+          </tr>`
+          )
+          .join("")}
+      </tbody>
+    </table>
+  </section>`;
+}
+
 function renderSummaryPointsCard(points, title = "Summary") {
   const items = (points || []).map((x) => String(x || "").trim()).filter(Boolean);
   if (!items.length) return "";
@@ -189,6 +324,12 @@ function renderSummaryPointsCard(points, title = "Summary") {
 function renderSectionReferenceBlocks(section, sectionKey, hasRerollsSection) {
   const summaryPoints = Array.isArray(section?.summary_points) ? section.summary_points : [];
   let html = "";
+  if (sectionKey === "1hitroll" || sectionKey === "hitroll") {
+    html += renderHitRollTable();
+  }
+  if (sectionKey === "2woundroll" || sectionKey === "woundroll") {
+    html += renderWoundRollTable();
+  }
   if (sectionKey === "rerolls") {
     html += renderRollingD3Table();
   }
@@ -239,10 +380,11 @@ function renderRulesGuide() {
 
 function splitSectionBlocks(blocks, options = {}) {
   const suppressBullets = Boolean(options?.suppressBullets);
+  const preparedBlocks = preprocessSectionBlocks(blocks);
   const parsed = [];
   let firstParagraphUsedAsIntro = false;
 
-  for (const block of blocks || []) {
+  for (const block of preparedBlocks) {
     const text = String(block?.text || "").trim();
     if (!text) continue;
 
@@ -266,11 +408,19 @@ function splitSectionBlocks(blocks, options = {}) {
       continue;
     }
 
-    if (!firstParagraphUsedAsIntro && text.length < 220) {
-      parsed.push({ type: "intro", text });
-      firstParagraphUsedAsIntro = true;
-    } else {
-      parsed.push({ type: "paragraph", text });
+    const chunks = splitLongParagraph(text);
+    for (const chunk of chunks) {
+      const keyline = chunk.match(/^([A-Z][A-Za-z0-9 '"()\/+\-]{2,54}):\s+(.+)$/);
+      if (keyline && keyline[2].length <= 220) {
+        parsed.push({ type: "keyline", label: keyline[1], text: keyline[2] });
+        continue;
+      }
+      if (!firstParagraphUsedAsIntro && chunk.length < 220) {
+        parsed.push({ type: "intro", text: chunk });
+        firstParagraphUsedAsIntro = true;
+      } else {
+        parsed.push({ type: "paragraph", text: chunk });
+      }
     }
   }
 
@@ -351,8 +501,13 @@ function renderAllSections() {
           if (block.type === "subheading") return `<h4 class="rule-subheading">${escapeHtml(block.text)}</h4>`;
           if (block.type === "intro") return `<p class="rule-intro">${escapeHtml(block.text)}</p>`;
           if (block.type === "paragraph") return `<p class="rule-paragraph">${escapeHtml(block.text)}</p>`;
+          if (block.type === "keyline") {
+            return `<p class="rule-keyline"><span class="rule-keyline-label">${escapeHtml(block.label)}:</span> ${escapeHtml(
+              block.text
+            )}</p>`;
+          }
           if (block.type === "points") {
-            return `<ul class="keyword-tooltip-points">${block.items
+            return `<ul class="rule-points">${block.items
               .map((item) => `<li>${escapeHtml(item)}</li>`)
               .join("")}</ul>`;
           }
