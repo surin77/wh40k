@@ -9,8 +9,6 @@ const workspaceEl = document.querySelector(".rules-workspace");
 
 let payloadBySource = new Map();
 let currentSourceKey = "";
-let hasOriginalPdf = false;
-const ORIGINAL_PDF_URL = "./data/core_rules_full.pdf";
 
 function initThemeToggle() {
   if (!themeToggleEl) return;
@@ -80,26 +78,12 @@ function renderMeta() {
     return;
   }
   const count = payload.sections?.length || 0;
-  if (currentSourceKey === "pdf_original") {
-    metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Core Rules PDF")}
-      <br><strong>Layout:</strong> Original PDF document
-      <br><strong>Format:</strong> Embedded viewer`;
-    return;
-  }
   metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Wahapedia Core Rules")}
     <br><strong>Sections:</strong> ${count}
     <br><strong>Updated:</strong> ${escapeHtml(formatUtc(payload.updated_at_utc))}`;
 }
 
 function renderSectionsNav() {
-  if (currentSourceKey === "pdf_original") {
-    sectionsEl.innerHTML = `
-      <a class="unit-btn" href="${ORIGINAL_PDF_URL}" target="_blank" rel="noopener noreferrer">
-        Open PDF in new tab
-      </a>
-    `;
-    return;
-  }
   const payload = getCurrentPayload();
   if (!payload) {
     sectionsEl.innerHTML = "";
@@ -124,19 +108,6 @@ function renderSectionsNav() {
 }
 
 function renderAllSections() {
-  if (currentSourceKey === "pdf_original") {
-    titleEl.textContent = "Core Rules (Original PDF)";
-    subtitleEl.textContent = "Official PDF layout";
-    contentEl.innerHTML = `
-      <iframe
-        class="rules-pdf-frame"
-        src="${ORIGINAL_PDF_URL}#view=FitH"
-        title="Warhammer 40,000 Core Rules PDF"
-      ></iframe>
-    `;
-    return;
-  }
-
   const payload = getCurrentPayload();
   if (!payload) {
     titleEl.textContent = "Core Rules";
@@ -155,6 +126,32 @@ function renderAllSections() {
 
   titleEl.textContent = payload.page_title || "Core Rules";
   subtitleEl.textContent = payload.source_url || "";
+
+  if (currentSourceKey === "pdf") {
+    contentEl.innerHTML = `<div class="rules-doc">${sections
+      .map((section, index) => {
+        const blocks = splitSectionBlocks(section.blocks || []);
+        const inner = blocks
+          .map((block) => {
+            if (block.type === "subheading") return `<h4 class="rule-subheading">${escapeHtml(block.text)}</h4>`;
+            if (block.type === "intro") return `<p class="rule-intro">${escapeHtml(block.text)}</p>`;
+            if (block.type === "paragraph") return `<p class="rule-paragraph">${escapeHtml(block.text)}</p>`;
+            if (block.type === "points") {
+              return `<ul class="keyword-tooltip-points">${block.items
+                .map((item) => `<li>${escapeHtml(item)}</li>`)
+                .join("")}</ul>`;
+            }
+            return "";
+          })
+          .join("");
+        return `<section id="rule-sec-${index}" class="rule-doc-section">
+          <h3 class="rule-doc-title">${escapeHtml(section.title || `Section ${index + 1}`)}</h3>
+          ${inner}
+        </section>`;
+      })
+      .join("")}</div>`;
+    return;
+  }
 
   contentEl.innerHTML = `<div class="rules-grid">${sections
     .map((section, index) => {
@@ -182,9 +179,7 @@ function renderAllSections() {
 }
 
 function renderCurrentSource() {
-  if (workspaceEl) {
-    workspaceEl.classList.toggle("pdf-mode", currentSourceKey === "pdf_original");
-  }
+  if (workspaceEl) workspaceEl.classList.remove("pdf-mode");
   renderMeta();
   renderSectionsNav();
   renderAllSections();
@@ -194,13 +189,9 @@ function populateSourceSelect() {
   if (!sourceSelectEl) return;
   const options = [...payloadBySource.entries()].map(([key, payload]) => {
     let label = "Core Rules";
-    if (key === "pdf_original") label = "Core Rules (PDF Original)";
-    else if (key === "pdf") label = "Core Rules (PDF Parsed)";
+    if (key === "pdf") label = "Core Rules (PDF Parsed)";
     else if (key === "wahapedia") label = "Core Rules (Wahapedia)";
     const count = payload?.sections?.length || 0;
-    if (key === "pdf_original") {
-      return `<option value="${escapeHtml(key)}">${escapeHtml(label)}</option>`;
-    }
     return `<option value="${escapeHtml(key)}">${escapeHtml(label)} - ${count} sections</option>`;
   });
   sourceSelectEl.innerHTML = options.join("");
@@ -213,27 +204,8 @@ async function loadRulesPayload(fileName) {
   return response.json();
 }
 
-async function hasPdfDocument() {
-  try {
-    const response = await fetch(ORIGINAL_PDF_URL, { method: "HEAD", cache: "no-store" });
-    return response.ok;
-  } catch {
-    return false;
-  }
-}
-
 async function init() {
   payloadBySource = new Map();
-  hasOriginalPdf = await hasPdfDocument();
-
-  if (hasOriginalPdf) {
-    payloadBySource.set("pdf_original", {
-      source: "Warhammer 40,000 Core Rules PDF",
-      page_title: "Core Rules (Original PDF)",
-      source_url: ORIGINAL_PDF_URL,
-      sections: [],
-    });
-  }
 
   const wahapediaPayload = await loadRulesPayload("core_rules.json");
   if (wahapediaPayload) payloadBySource.set("wahapedia", wahapediaPayload);
@@ -245,8 +217,7 @@ async function init() {
     throw new Error("Cannot load core rules sources.");
   }
 
-  if (payloadBySource.has("pdf_original")) currentSourceKey = "pdf_original";
-  else if (payloadBySource.has("pdf")) currentSourceKey = "pdf";
+  if (payloadBySource.has("pdf")) currentSourceKey = "pdf";
   else currentSourceKey = payloadBySource.keys().next().value;
   populateSourceSelect();
   renderCurrentSource();

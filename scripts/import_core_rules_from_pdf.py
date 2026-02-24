@@ -338,6 +338,25 @@ def merge_sections(base: list[dict[str, object]], override: list[dict[str, objec
     return [sec for sec in by_title.values() if sec.get("title") and sec.get("blocks")]
 
 
+def section_to_tooltip(section: dict[str, object]) -> dict[str, object]:
+    title = str(section.get("title") or "").strip()
+    intro = ""
+    body_parts: list[str] = []
+    points: list[str] = []
+    for block in section.get("blocks", []):
+        text = str(block.get("text") or "").strip()
+        if not text:
+            continue
+        if block.get("type") == "bullet":
+            points.append(text)
+            continue
+        if not intro:
+            intro = text
+        else:
+            body_parts.append(text)
+    return {"title": title, "intro": intro, "body": "\n\n".join(body_parts), "points": points}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Import Core Rules from PDF into core_rules.json")
     parser.add_argument("--pdf", required=True, help="Path to Core Rules PDF file")
@@ -358,6 +377,7 @@ def main() -> int:
     sections = build_sections(lines)
     tooltip_sections = extract_tooltip_sections(lines)
     sections = merge_sections(sections, tooltip_sections)
+    tooltip_rules = [section_to_tooltip(sec) for sec in tooltip_sections]
     if not sections:
         raise RuntimeError("No sections parsed from PDF")
 
@@ -366,7 +386,9 @@ def main() -> int:
         "source_url": args.source_url.strip(),
         "updated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "page_title": "Core Rules",
+        "format": "digital_pdf",
         "sections": sections,
+        "tooltip_rules": tooltip_rules,
     }
     if args.include_source_file:
         payload["source_file"] = str(pdf_path)

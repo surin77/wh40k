@@ -324,6 +324,26 @@ function buildTooltipFromCoreSection(section) {
 
 function buildCoreRuleIndex(coreRulesPayload) {
   const index = new Map();
+  const tooltipRules = Array.isArray(coreRulesPayload?.tooltip_rules) ? coreRulesPayload.tooltip_rules : [];
+  if (tooltipRules.length) {
+    for (const rule of tooltipRules) {
+      const title = String(rule?.title || "").trim();
+      if (!title) continue;
+      const tip = {
+        title,
+        intro: String(rule?.intro || "").trim(),
+        body: String(rule?.body || "").trim(),
+        points: Array.isArray(rule?.points) ? rule.points.map((x) => String(x || "").trim()).filter(Boolean) : [],
+      };
+      if (!tip.intro && !tip.body && !tip.points.length) continue;
+      const k1 = normalizeRuleName(title);
+      if (k1) index.set(k1, tip);
+      const k2 = normalizeRuleName(simplifyRuleName(title));
+      if (k2) index.set(k2, tip);
+    }
+    return index;
+  }
+
   const sections = Array.isArray(coreRulesPayload?.sections) ? coreRulesPayload.sections : [];
 
   for (const section of sections) {
@@ -1381,16 +1401,17 @@ async function loadIndexAndInit() {
   }
 
   coreRuleDefsByName = new Map();
-  if (files.includes("core_rules.json")) {
-    try {
-      const coreRulesResponse = await fetch("./data/core_rules.json", { cache: "no-store" });
-      if (coreRulesResponse.ok) {
-        const coreRulesPayload = await coreRulesResponse.json();
-        coreRuleDefsByName = buildCoreRuleIndex(coreRulesPayload);
-      }
-    } catch {
-      coreRuleDefsByName = new Map();
+  try {
+    let coreRulesResponse = await fetch("./data/core_rules_pdf.json", { cache: "no-store" });
+    if (!coreRulesResponse.ok) {
+      coreRulesResponse = await fetch("./data/core_rules.json", { cache: "no-store" });
     }
+    if (coreRulesResponse.ok) {
+      const coreRulesPayload = await coreRulesResponse.json();
+      coreRuleDefsByName = buildCoreRuleIndex(coreRulesPayload);
+    }
+  } catch {
+    coreRuleDefsByName = new Map();
   }
 
   catalog = buildCatalog(datasets);

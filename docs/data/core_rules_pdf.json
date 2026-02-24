@@ -1,8 +1,9 @@
 {
   "source": "Warhammer 40,000 Core Rules PDF",
   "source_url": "Warhammer 40,000 Core Rules PDF (24.09)",
-  "updated_at_utc": "2026-02-24T19:05:00+00:00",
+  "updated_at_utc": "2026-02-24T19:23:50+00:00",
   "page_title": "Core Rules",
+  "format": "digital_pdf",
   "sections": [
     {
       "title": "Core Rules",
@@ -5267,6 +5268,105 @@
           "text": "ord after the word \u2018Anti-\u2019, an unmodified le: An attack made with an [ANTI-VEHICLE 4+] n [ANTI-PSYKER 2+] weapon will score a Critical"
         }
       ]
+    }
+  ],
+  "tooltip_rules": [
+    {
+      "title": "DEADLY DEMISE",
+      "intro": "frenzied death throes, some targets are deadly even in defeat.",
+      "body": "Some models have \u2018Deadly Demise x\u2019 listed in their\n\nExample: A Transport model with the Deadly Demise D3",
+      "points": [
+        "\u0007 Deadly Demise x: When this model is destroyed,"
+      ]
+    },
+    {
+      "title": "PISTOL",
+      "intro": "Pistols can be wielded even at point-blank range.",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "ASSAULT",
+      "intro": "contains any models equipped with Assault weapons, can only resolve attacks using Assault weapons its",
+      "body": "",
+      "points": [
+        "Can be shot even if the bearer\u2019s unit Advanced."
+      ]
+    },
+    {
+      "title": "PRECISION",
+      "intro": "",
+      "body": "",
+      "points": [
+        "\u0007 Can be shot even if the bearer\u2019s unit is within",
+        "\u0007 Cannot be shot alongside any other non-Pistol",
+        "\u0007 [RAPID FIRE X]: Increase the Attacks by \u2018x\u2019 when"
+      ]
+    },
+    {
+      "title": "IGNORES COVER",
+      "intro": "Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons. Each time an",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "TWIN-LINKED",
+      "intro": "Weapons with [TWIN-LINKED] in their profile are known",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "TORRENT",
+      "intro": "Weapons with [TORRENT] in their profile are known as Torrent weapons. Each time an attack is made",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "LETHAL HITS",
+      "intro": "Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons. Each time an attack is made",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "LANCE",
+      "intro": "Weapons with [LANCE] in their profile are known as",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "INDIRECT FIRE",
+      "intro": "Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons, and attacks can be against that target using an Indirect Fire weapon, [INDIRECT FIRE] ability. No models in the target unit",
+      "body": "against that target with an Indirect Fire",
+      "points": [
+        "\u0007 Can target and make attacks against units that",
+        "\u0007 If no models are visible in a target unit when"
+      ]
+    },
+    {
+      "title": "HAZARDOUS",
+      "intro": "Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons. Each time a unit is selected",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "DEVASTATING WOUNDS",
+      "intro": "Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons. Each",
+      "body": "Example: An attack made with a Devastating",
+      "points": [
+        "\u0007 A Critical Wound inflicts mortal wounds equal to"
+      ]
+    },
+    {
+      "title": "SUSTAINED HITS",
+      "intro": "n with the [SUSTAINED HITS 2] ability. If the",
+      "body": "",
+      "points": []
+    },
+    {
+      "title": "ANTI",
+      "intro": "ord after the word \u2018Anti-\u2019, an unmodified le: An attack made with an [ANTI-VEHICLE 4+] n [ANTI-PSYKER 2+] weapon will score a Critical",
+      "body": "",
+      "points": []
     }
   ]
 }

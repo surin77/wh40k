@@ -781,12 +781,38 @@ body {
   padding: 0.9rem;
 }
 
-.rules-pdf-frame {
-  width: 100%;
-  min-height: 900px;
-  height: calc(100vh - 220px);
-  border: 0;
-  background: #0b1016;
+.rules-doc {
+  display: grid;
+  gap: 1rem;
+}
+
+.rule-doc-section {
+  border: 1px solid #243241;
+  background: #0f1720;
+  padding: 0.7rem;
+}
+
+.rule-doc-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.2rem;
+  color: #e4e9f1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.rule-subheading {
+  margin: 0.65rem 0 0.45rem;
+  font-size: 1rem;
+  color: #d6dfe9;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.rule-intro {
+  margin: 0 0 0.65rem;
+  color: #d8e0ec;
+  line-height: 1.45;
+  font-style: italic;
 }
 
 .rules-toolbar {
@@ -928,6 +954,23 @@ body {
   color: #2a394a;
 }
 
+:root.theme-light .rule-doc-section {
+  background: #f8fbff;
+  border-color: #c6d5e6;
+}
+
+:root.theme-light .rule-doc-title {
+  color: #29384c;
+}
+
+:root.theme-light .rule-subheading {
+  color: #38506a;
+}
+
+:root.theme-light .rule-intro {
+  color: #3a4f67;
+}
+
 .rules-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
@@ -1018,11 +1061,6 @@ body {
 
   .rules-toolbar {
     grid-template-columns: 1fr;
-  }
-
-  .rules-pdf-frame {
-    min-height: 78vh;
-    height: 78vh;
   }
 }
 
