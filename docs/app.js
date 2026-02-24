@@ -53,6 +53,147 @@ let coreRuleDefsByName = new Map();
 let activeKeywordFilter = "";
 let showLegends = false;
 
+const CANONICAL_CORE_TOOLTIPS = [
+  {
+    title: "ASSAULT",
+    intro: "Assault weapons fire so indiscriminately that they can be shot from the hip as warriors dash forward.",
+    body:
+      "Weapons with [ASSAULT] in their profile are known as Assault weapons. If a unit that Advanced this turn contains models equipped with Assault weapons, it is still eligible to shoot in this turn's Shooting phase, but can only resolve attacks using Assault weapons.",
+    points: ["Can be shot even if the bearer's unit Advanced."],
+  },
+  {
+    title: "PISTOL",
+    intro: "Pistols can be wielded even at point-blank range.",
+    body:
+      "Weapons with [PISTOL] in their profile are known as Pistols. Units with Pistols can shoot in their controlling player's Shooting phase while within Engagement Range, but can only target one enemy unit they are within Engagement Range of. Unless a model is a MONSTER or VEHICLE, it can shoot with its Pistols or all of its other ranged weapons, not both.",
+    points: [
+      "Can be shot even if the bearer's unit is within Engagement Range of enemy units, but must target one of those enemy units.",
+      "Cannot be shot alongside any other non-Pistol weapon (except by a MONSTER or VEHICLE).",
+    ],
+  },
+  {
+    title: "RAPID FIRE",
+    intro: "Rapid fire weapons are capable of long-ranged precision shots or controlled bursts at nearby targets.",
+    body:
+      "Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half range, increase that weapon's Attacks characteristic by X.",
+    points: ["[RAPID FIRE X]: Increase the Attacks by X when targeting units within half range."],
+  },
+  {
+    title: "IGNORES COVER",
+    intro: "Some weapons are designed to root enemy formations out of entrenched positions.",
+    body:
+      "Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack (pg 44).",
+    points: [],
+  },
+  {
+    title: "TWIN-LINKED",
+    intro: "Dual weapons are often grafted to the same targeting system for greater lethality.",
+    body:
+      "Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack's Wound roll.",
+    points: [],
+  },
+  {
+    title: "TORRENT",
+    intro: "Torrent weapons shoot clouds of fire, gas or other lethal substances that few foes can hope to evade.",
+    body:
+      "Weapons with [TORRENT] in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target.",
+    points: [],
+  },
+  {
+    title: "LETHAL HITS",
+    intro: "Some weapons can inflict fatal injuries on any foe, no matter their resilience.",
+    body:
+      "Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target.",
+    points: [],
+  },
+  {
+    title: "LANCE",
+    intro: "Lance weapons are deadly on the charge.",
+    body:
+      "Weapons with [LANCE] in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack's Wound roll.",
+    points: [],
+  },
+  {
+    title: "INDIRECT FIRE",
+    intro: "Indirect fire weapons launch munitions over or around intervening obstacles.",
+    body:
+      "Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons and can target units not visible to the attacker. If no models in the target unit are visible when selected, attacks made with Indirect Fire are at -1 to Hit and the target has the Benefit of Cover.",
+    points: [
+      "Can target units that are not visible to the attacking unit.",
+      "If no models are visible, attacks are at -1 to Hit and the target has Benefit of Cover.",
+    ],
+  },
+  {
+    title: "PRECISION",
+    intro: "Precision attacks can pick high-value targets out in a crowd.",
+    body:
+      "Weapons with [PRECISION] in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a CHARACTER model in that unit is visible to the attacker, the attacking player can allocate that attack to that CHARACTER model.",
+    points: ["Can allocate attacks to a visible CHARACTER model in an Attached unit."],
+  },
+  {
+    title: "BLAST",
+    intro: "High-explosive weapons can fell several warriors in a single detonation.",
+    body:
+      "Weapons with [BLAST] in their profile are known as Blast weapons. Add 1 to their Attacks characteristic for every five models in the target unit (rounding down). Blast weapons can never target units within Engagement Range of one or more units from the attacking model's army.",
+    points: [
+      "Add 1 Attack for every five models in the target unit (rounding down).",
+      "Cannot target units within Engagement Range of the attacker's army.",
+    ],
+  },
+  {
+    title: "MELTA",
+    intro: "Melta weapons are powerful heat rays whose fury is magnified at close range.",
+    body:
+      "Weapons with [MELTA X] in their profile are known as Melta weapons. Each time such a weapon targets a unit within half range, increase that attack's Damage characteristic by X.",
+    points: ["[MELTA X]: Increase Damage by X within half range."],
+  },
+  {
+    title: "HEAVY",
+    intro: "Heavy weapons are strongest when braced by stationary firing positions.",
+    body:
+      "Weapons with [HEAVY] in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model's unit Remained Stationary this turn, add 1 to that attack's Hit roll.",
+    points: ["Add 1 to Hit rolls if the bearer's unit Remained Stationary this turn."],
+  },
+  {
+    title: "HAZARDOUS",
+    intro: "Weapons powered by unstable energy sources pose a risk to the bearer.",
+    body:
+      "Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons. After a unit shoots or fights, roll one D6 for each Hazardous weapon used. For each result of 1, one model in that unit equipped with a Hazardous weapon suffers 3 mortal wounds.",
+    points: [
+      "After shooting/fighting, roll one D6 for each Hazardous weapon used.",
+      "Each result of 1 inflicts 3 mortal wounds on a model equipped with a Hazardous weapon.",
+    ],
+  },
+  {
+    title: "DEVASTATING WOUNDS",
+    intro: "Some attacks inflict catastrophic injuries that bypass normal protections.",
+    body:
+      "Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons. Each time such an attack scores a Critical Wound, it inflicts mortal wounds equal to the weapon's Damage characteristic instead of normal damage.",
+    points: ["A Critical Wound inflicts mortal wounds equal to the weapon's Damage characteristic."],
+  },
+  {
+    title: "SUSTAINED HITS",
+    intro: "Some weapons strike in a flurry of blows, tearing the foe apart with relentless ferocity.",
+    body:
+      "Weapons with [SUSTAINED HITS X] in their profile are known as Sustained Hits weapons. Each time an attack with such a weapon scores a Critical Hit, it scores X additional hits on the target.",
+    points: ["[SUSTAINED HITS X]: Each Critical Hit scores X additional hits on the target."],
+  },
+  {
+    title: "EXTRA ATTACKS",
+    intro: "Some weapons are used for additional strikes beyond a model's primary attacks.",
+    body:
+      "Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks weapons. The bearer can make attacks with this weapon in addition to the weapons it selects to fight with.",
+    points: ["The bearer can attack with this weapon in addition to its other selected weapons."],
+  },
+  {
+    title: "ANTI",
+    intro: "Certain weapons are the bane of a particular foe.",
+    body:
+      "Weapons with [ANTI-KEYWORD X+] in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the matching keyword, an unmodified Wound roll of X+ scores a Critical Wound.",
+    points: ["[ANTI-KEYWORD X+]: An unmodified Wound roll of X+ scores a Critical Wound against a matching keyword."],
+  },
+];
+
 function initThemeToggle() {
   if (!themeToggleEl) return;
   document.documentElement.classList.remove("theme-light");
@@ -379,6 +520,26 @@ function mergeCoreRuleIndexes(baseIndex, overrideIndex) {
     }
   }
   return out;
+}
+
+function buildCanonicalCoreRuleIndex() {
+  const index = new Map();
+  for (const rule of CANONICAL_CORE_TOOLTIPS) {
+    const title = String(rule?.title || "").trim();
+    if (!title) continue;
+    const tip = {
+      title,
+      intro: String(rule?.intro || "").trim(),
+      body: String(rule?.body || "").trim(),
+      points: Array.isArray(rule?.points) ? rule.points.map((x) => String(x || "").trim()).filter(Boolean) : [],
+    };
+    if (!tip.intro && !tip.body && !tip.points.length) continue;
+    const k1 = normalizeRuleName(title);
+    if (k1) index.set(k1, tip);
+    const k2 = normalizeRuleName(simplifyRuleName(title));
+    if (k2) index.set(k2, tip);
+  }
+  return index;
 }
 
 function parseAntiTag(label) {
@@ -1429,7 +1590,9 @@ async function loadIndexAndInit() {
       pdfResponse && pdfResponse.ok ? buildCoreRuleIndex(await pdfResponse.json()) : new Map();
     const wahapediaIndex =
       wahapediaResponse && wahapediaResponse.ok ? buildCoreRuleIndex(await wahapediaResponse.json()) : new Map();
-    coreRuleDefsByName = mergeCoreRuleIndexes(wahapediaIndex, pdfIndex);
+    const mergedRemote = mergeCoreRuleIndexes(wahapediaIndex, pdfIndex);
+    const canonicalIndex = buildCanonicalCoreRuleIndex();
+    coreRuleDefsByName = mergeCoreRuleIndexes(mergedRemote, canonicalIndex);
   } catch {
     coreRuleDefsByName = new Map();
   }
