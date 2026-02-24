@@ -83,7 +83,7 @@ function escapeHtml(value) {
 function formatUtc(dateLike) {
   const dt = new Date(dateLike);
   if (Number.isNaN(dt.valueOf())) return "unknown";
-  return dt.toLocaleString("ru-RU", { timeZone: "UTC" }) + " UTC";
+  return dt.toLocaleString("en-GB", { timeZone: "UTC" }) + " UTC";
 }
 
 function stripHtml(value) {
@@ -360,6 +360,25 @@ function buildCoreRuleIndex(coreRulesPayload) {
   }
 
   return index;
+}
+
+function tooltipStrength(tip) {
+  if (!tip) return 0;
+  const intro = String(tip.intro || "").trim();
+  const body = String(tip.body || "").trim();
+  const points = Array.isArray(tip.points) ? tip.points.filter(Boolean) : [];
+  return intro.length + body.length + points.join(" ").length;
+}
+
+function mergeCoreRuleIndexes(baseIndex, overrideIndex) {
+  const out = new Map(baseIndex || []);
+  for (const [key, tip] of overrideIndex || new Map()) {
+    const prev = out.get(key);
+    if (!prev || tooltipStrength(tip) >= tooltipStrength(prev)) {
+      out.set(key, tip);
+    }
+  }
+  return out;
 }
 
 function parseAntiTag(label) {
@@ -1402,14 +1421,15 @@ async function loadIndexAndInit() {
 
   coreRuleDefsByName = new Map();
   try {
-    let coreRulesResponse = await fetch("./data/core_rules_pdf.json", { cache: "no-store" });
-    if (!coreRulesResponse.ok) {
-      coreRulesResponse = await fetch("./data/core_rules.json", { cache: "no-store" });
-    }
-    if (coreRulesResponse.ok) {
-      const coreRulesPayload = await coreRulesResponse.json();
-      coreRuleDefsByName = buildCoreRuleIndex(coreRulesPayload);
-    }
+    const [pdfResponse, wahapediaResponse] = await Promise.all([
+      fetch("./data/core_rules_pdf.json", { cache: "no-store" }).catch(() => null),
+      fetch("./data/core_rules.json", { cache: "no-store" }).catch(() => null),
+    ]);
+    const pdfIndex =
+      pdfResponse && pdfResponse.ok ? buildCoreRuleIndex(await pdfResponse.json()) : new Map();
+    const wahapediaIndex =
+      wahapediaResponse && wahapediaResponse.ok ? buildCoreRuleIndex(await wahapediaResponse.json()) : new Map();
+    coreRuleDefsByName = mergeCoreRuleIndexes(wahapediaIndex, pdfIndex);
   } catch {
     coreRuleDefsByName = new Map();
   }

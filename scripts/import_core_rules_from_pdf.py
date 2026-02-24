@@ -12,6 +12,7 @@ import Quartz
 
 HEADING_RE = re.compile(r"^[A-Z0-9][A-Z0-9 \-–—'\",:+\(\)\[\]\/&\.]+$")
 STRIP_PREFIX_RE = re.compile(r"^CORE RULES\s*\|\s*", re.I)
+FOOTER_RE = re.compile(r"^\s*CORE RULES\s*\|\s*.+$", re.I)
 SKIP_HEADINGS = {
     "CORE CONCEPTS",
     "THE BATTLE ROUND",
@@ -138,41 +139,46 @@ def should_join(prev: str, curr: str) -> bool:
     return False
 
 
-def extract_lines(pdf) -> list[str]:
-    lines: list[str] = []
+def clean_page_lines(lines: list[str], page_number: int) -> list[str]:
+    out: list[str] = []
+    for idx, line in enumerate(lines):
+        if FOOTER_RE.match(line):
+            continue
+        if line.upper().startswith("CORE RULES |"):
+            continue
+        if re.fullmatch(r"\d+", line):
+            # Drop footer page-number artifacts near the end of page text.
+            if idx >= max(0, len(lines) - 4) and int(line) == page_number:
+                continue
+        out.append(line)
+    return out
+
+
+def extract_pages(pdf, *, skip_first_pages: int = 2) -> list[dict[str, object]]:
+    pages: list[dict[str, object]] = []
     for i in range(pdf.pageCount()):
+        if i < max(0, skip_first_pages):
+            continue
         page = pdf.pageAtIndex_(i)
         page_rect = page.boundsForBox_(Quartz.kPDFDisplayBoxMediaBox)
         full_sel = page.selectionForRect_(page_rect)
         full_lines = extract_lines_from_selection(full_sel) if full_sel else []
-
-        mid_x = page_rect.origin.x + page_rect.size.width / 2
-        inset = 6
-        left_rect = Quartz.CGRectMake(
-            page_rect.origin.x + inset,
-            page_rect.origin.y + inset,
-            (mid_x - page_rect.origin.x) - (inset * 1.5),
-            page_rect.size.height - inset * 2,
+        page_number = i + 1
+        page_lines = clean_page_lines(full_lines, page_number)
+        pages.append(
+            {
+                "page_number": page_number,
+                "lines": page_lines,
+            }
         )
-        right_rect = Quartz.CGRectMake(
-            mid_x + inset / 2,
-            page_rect.origin.y + inset,
-            page_rect.size.width - (mid_x - page_rect.origin.x) - inset * 1.5,
-            page_rect.size.height - inset * 2,
-        )
+    return pages
 
-        left_sel = page.selectionForRect_(left_rect)
-        right_sel = page.selectionForRect_(right_rect)
-        left_lines = extract_lines_from_selection(left_sel) if left_sel else []
-        right_lines = extract_lines_from_selection(right_sel) if right_sel else []
 
-        # Two-column pages are more reliable when parsed per column.
-        if len(left_lines) >= 20 and len(right_lines) >= 20:
-            page_lines = left_lines + right_lines
-        else:
-            page_lines = full_lines
-
-        lines.extend(page_lines)
+def flatten_pages_lines(pages: list[dict[str, object]]) -> list[str]:
+    lines: list[str] = []
+    for page in pages:
+        for line in page.get("lines", []):
+            lines.append(str(line))
     return lines
 
 
@@ -357,11 +363,91 @@ def section_to_tooltip(section: dict[str, object]) -> dict[str, object]:
     return {"title": title, "intro": intro, "body": "\n\n".join(body_parts), "points": points}
 
 
+def build_tooltip_rules_from_full_text(full_text: str) -> list[dict[str, object]]:
+    text = " ".join(full_text.split())
+    specs = [
+        ("DEADLY DEMISE", "Some models have ‘Deadly Demise x’ listed in their abilities."),
+        ("ASSAULT", "Weapons with [ASSAULT] in their profile are known as Assault weapons."),
+        ("PISTOL", "Weapons with [PISTOL] in their profile are known as Pistols."),
+        ("RAPID FIRE", "Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons."),
+        ("IGNORES COVER", "Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons."),
+        ("TWIN-LINKED", "Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons."),
+        ("TORRENT", "Weapons with [TORRENT] in their profile are known as Torrent weapons."),
+        ("LETHAL HITS", "Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons."),
+        ("LANCE", "Weapons with [LANCE] in their profile are known as Lance weapons."),
+        ("INDIRECT FIRE", "Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons,"),
+        ("PRECISION", "Weapons with [PRECISION] in their profile are known as Precision weapons."),
+        ("BLAST", "Weapons with [BLAST] in their profile are known as Blast weapons,"),
+        ("MELTA", "Weapons with [MELTA X] in their profile are known as Melta weapons."),
+        ("HEAVY", "Weapons with [HEAVY] in their profile are known as Heavy weapons."),
+        ("HAZARDOUS", "Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons."),
+        ("DEVASTATING WOUNDS", "Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons."),
+        ("SUSTAINED HITS", "Weapons with [SUSTAINED HITS X] in their profile are known as Sustained Hits weapons."),
+        ("EXTRA ATTACKS", "Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks weapons."),
+        ("ANTI", "Weapons with [ANTI-KEYWORD X+] in their profile are known as Anti weapons."),
+        ("PSYCHIC WEAPONS", "PSYCHIC WEAPONS AND ABILITIES Some weapons and abilities can only be used by Psykers."),
+    ]
+    stop_markers = [
+        " ASSAULT ",
+        " PISTOL ",
+        " RAPID FIRE ",
+        " IGNORES COVER ",
+        " TWIN-LINKED ",
+        " TORRENT ",
+        " LETHAL HITS ",
+        " LANCE ",
+        " INDIRECT FIRE ",
+        " PRECISION ",
+        " BLAST ",
+        " MELTA ",
+        " HEAVY ",
+        " HAZARDOUS ",
+        " DEVASTATING WOUNDS ",
+        " SUSTAINED HITS ",
+        " EXTRA ATTACKS ",
+        " ANTI ",
+        " DEADLY DEMISE ",
+        " PSYCHIC WEAPONS AND ABILITIES ",
+        " CORE RULES | ",
+    ]
+
+    tooltips: list[dict[str, object]] = []
+    for title, anchor in specs:
+        start = text.find(anchor)
+        if start < 0:
+            continue
+        end = min(len(text), start + 1600)
+        for marker in stop_markers:
+            pos = text.find(marker, start + len(anchor))
+            if pos != -1 and pos < end:
+                end = pos
+        chunk = text[start:end].strip()
+        if not chunk:
+            continue
+        bullets = [m.strip() for m in re.findall(r"■\s*([^■]+)", chunk)]
+        body = chunk.split("■", 1)[0].strip()
+        tooltips.append(
+            {
+                "title": title,
+                "intro": "",
+                "body": body,
+                "points": bullets,
+            }
+        )
+    return tooltips
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Import Core Rules from PDF into core_rules.json")
     parser.add_argument("--pdf", required=True, help="Path to Core Rules PDF file")
     parser.add_argument("--out", default="docs/data/core_rules.json", help="Output JSON path")
     parser.add_argument("--source-url", default="", help="Public URL for this PDF source (optional)")
+    parser.add_argument(
+        "--skip-first-pages",
+        type=int,
+        default=2,
+        help="Skip this number of first PDF pages (default: 2, cover pages)",
+    )
     parser.add_argument(
         "--include-source-file",
         action="store_true",
@@ -373,11 +459,15 @@ def main() -> int:
     out_path = Path(args.out)
 
     pdf = get_pdf(pdf_path)
-    lines = extract_lines(pdf)
+    pages = extract_pages(pdf, skip_first_pages=args.skip_first_pages)
+    lines = flatten_pages_lines(pages)
     sections = build_sections(lines)
     tooltip_sections = extract_tooltip_sections(lines)
     sections = merge_sections(sections, tooltip_sections)
-    tooltip_rules = [section_to_tooltip(sec) for sec in tooltip_sections]
+    full_text = "\n".join(" ".join(page.get("lines", [])) for page in pages)
+    tooltip_rules = build_tooltip_rules_from_full_text(full_text)
+    if not tooltip_rules:
+        tooltip_rules = [section_to_tooltip(sec) for sec in tooltip_sections]
     if not sections:
         raise RuntimeError("No sections parsed from PDF")
 
@@ -387,6 +477,7 @@ def main() -> int:
         "updated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "page_title": "Core Rules",
         "format": "digital_pdf",
+        "pages": pages,
         "sections": sections,
         "tooltip_rules": tooltip_rules,
     }

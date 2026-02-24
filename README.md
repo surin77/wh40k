@@ -44,6 +44,7 @@ If you want a separate rules dataset parsed from a Core Rules PDF:
 python3 scripts/import_core_rules_from_pdf.py \
   --pdf "/absolute/path/to/warhammer40000_core_rules.pdf" \
   --out docs/data/core_rules_pdf.json \
+  --skip-first-pages 2 \
   --source-url "Warhammer 40,000 Core Rules PDF"
 ```
 

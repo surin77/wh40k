@@ -800,6 +800,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+.rule-doc-index {
+  color: #c88f96;
+  margin-right: 0.3rem;
+}
+
 .rule-subheading {
   margin: 0.65rem 0 0.45rem;
   font-size: 1rem;
@@ -813,6 +818,309 @@ body {
   color: #d8e0ec;
   line-height: 1.45;
   font-style: italic;
+}
+
+.rules-outline {
+  margin: 0 0 1rem;
+  border: 1px solid #4f5a66;
+  background:
+    radial-gradient(120% 110% at 8% 4%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.08) 80%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, rgba(0, 0, 0, 0.018) 1px 2px),
+    linear-gradient(180deg, #cbc7bf 0%, #c2bdb5 48%, #bbb6ad 100%);
+  color: #1f2329;
+  padding: 1rem 1rem 0.7rem;
+}
+
+.rules-outline-item {
+  margin: 0 0 1.2rem;
+  padding: 0.1rem 0;
+}
+
+.rules-outline-item:last-child {
+  margin-bottom: 0.3rem;
+}
+
+.rules-outline-item.outline-linkable {
+  cursor: pointer;
+}
+
+.rules-outline-item.outline-linkable:hover .rules-outline-title {
+  color: #7c2029;
+}
+
+.rules-outline-title {
+  margin: 0 0 0.32rem;
+  font-size: 2rem;
+  line-height: 1.03;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: #15191f;
+}
+
+.rules-outline-pages {
+  font-size: 1.72rem;
+  color: #2b2f36;
+  font-weight: 700;
+}
+
+.rules-outline-desc {
+  margin: 0;
+  color: #1e2228;
+  line-height: 1.28;
+  font-size: 1.04rem;
+  max-width: 54rem;
+}
+
+.rules-guide {
+  margin: 0 0 1rem;
+  border: 1px solid #4f5a66;
+  background:
+    radial-gradient(120% 110% at 8% 4%, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.08) 80%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, rgba(0, 0, 0, 0.018) 1px 2px),
+    linear-gradient(180deg, #cbc7bf 0%, #c2bdb5 48%, #bbb6ad 100%);
+  color: #1f2329;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 0.95rem 1.2rem;
+}
+
+.rules-guide-item {
+  border: 1px solid rgba(52, 59, 69, 0.2);
+  background: rgba(255, 255, 255, 0.17);
+  padding: 0.65rem 0.72rem;
+}
+
+.rules-guide-head {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.rules-guide-title {
+  margin: 0;
+  font-size: 1.44rem;
+  line-height: 1.03;
+  color: #15191f;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.rules-guide-desc {
+  margin: 0;
+  color: #1e2228;
+  line-height: 1.24;
+  font-size: 1.02rem;
+}
+
+.rules-guide-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  flex: 0 0 1.65rem;
+  border: 2px solid #9f2931;
+  transform: rotate(45deg);
+  background: #efe7dc;
+  position: relative;
+}
+
+.rules-guide-icon::after {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  color: #9f2931;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.guide-icon-abilities::after {
+  content: "⚙";
+}
+
+.guide-icon-hints::after {
+  content: "?";
+}
+
+.guide-icon-summary::after {
+  content: "▦";
+}
+
+.phase-ribbon-list {
+  margin-top: 0.85rem;
+  display: grid;
+  gap: 0.52rem;
+}
+
+.rules-ref-card {
+  margin-top: 0.85rem;
+  border: 1px solid #5f6872;
+  background: #d6d6d3;
+  color: #1c232b;
+}
+
+.rules-ref-title {
+  margin: 0;
+  padding: 0.38rem 0.55rem;
+  font-size: 1.44rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #eef2f6;
+  background: #334852;
+}
+
+.rules-d3-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rules-d3-table th {
+  text-align: left;
+  background: #6d757c;
+  color: #f2f5f8;
+  font-size: 1.06rem;
+  padding: 0.28rem 0.52rem;
+  border-top: 1px solid #566067;
+  border-bottom: 1px solid #566067;
+  text-transform: uppercase;
+}
+
+.rules-d3-table td {
+  padding: 0.46rem 0.52rem;
+  border-bottom: 1px dashed #8b9197;
+  vertical-align: middle;
+}
+
+.rules-d3-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.dice-pair {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36rem;
+}
+
+.dice-or {
+  font-weight: 700;
+  color: #313a43;
+  text-transform: lowercase;
+}
+
+.dice-face {
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 0.35rem;
+  border: 1px solid #41535d;
+  background: #3a525d;
+  position: relative;
+  display: inline-block;
+}
+
+.pip {
+  position: absolute;
+  width: 0.36rem;
+  height: 0.36rem;
+  border-radius: 50%;
+  background: #dbe0de;
+}
+
+.pip-tl {
+  left: 0.35rem;
+  top: 0.35rem;
+}
+
+.pip-tr {
+  right: 0.35rem;
+  top: 0.35rem;
+}
+
+.pip-ml {
+  left: 0.35rem;
+  top: calc(50% - 0.18rem);
+}
+
+.pip-mr {
+  right: 0.35rem;
+  top: calc(50% - 0.18rem);
+}
+
+.pip-c {
+  left: calc(50% - 0.18rem);
+  top: calc(50% - 0.18rem);
+}
+
+.pip-bl {
+  left: 0.35rem;
+  bottom: 0.35rem;
+}
+
+.pip-br {
+  right: 0.35rem;
+  bottom: 0.35rem;
+}
+
+.d3-result {
+  width: 8rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-align: center;
+  color: #25343f;
+}
+
+.phase-ribbon-item {
+  position: relative;
+  min-height: 2.35rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 3.35rem 0.2rem 0;
+  border: 1px solid #9d323a;
+  background: linear-gradient(90deg, #9f242b 0%, #8f2028 56%, #7a1d23 100%);
+  clip-path: polygon(0.9rem 0, calc(100% - 2.75rem) 0, 100% 50%, calc(100% - 2.75rem) 100%, 0.9rem 100%, 0 50%);
+}
+
+.phase-ribbon-num {
+  width: 2.3rem;
+  text-align: center;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #f8ecec;
+  flex: 0 0 2.3rem;
+}
+
+.phase-ribbon-name {
+  color: #fff6f6;
+  font-size: 1.17rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.phase-ribbon-icon-wrap {
+  position: absolute;
+  right: 0.52rem;
+  top: 50%;
+  width: 1.9rem;
+  height: 1.9rem;
+  transform: translateY(-50%) rotate(45deg);
+  border: 2px solid #a92d35;
+  background: #efe7dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phase-ribbon-icon {
+  transform: rotate(-45deg);
+  color: #9e2029;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 800;
 }
 
 .rules-toolbar {
@@ -963,12 +1271,75 @@ body {
   color: #29384c;
 }
 
+:root.theme-light .rule-doc-index {
+  color: #9f5460;
+}
+
 :root.theme-light .rule-subheading {
   color: #38506a;
 }
 
 :root.theme-light .rule-intro {
   color: #3a4f67;
+}
+
+:root.theme-light .rules-outline {
+  border-color: #b8b1a6;
+  background:
+    radial-gradient(120% 110% at 8% 4%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.05) 80%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, rgba(0, 0, 0, 0.015) 1px 2px),
+    linear-gradient(180deg, #e3dfd8 0%, #dad4cb 48%, #d2ccc2 100%);
+}
+
+:root.theme-light .rules-guide {
+  border-color: #b8b1a6;
+  background:
+    radial-gradient(120% 110% at 8% 4%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.05) 80%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, rgba(0, 0, 0, 0.015) 1px 2px),
+    linear-gradient(180deg, #e3dfd8 0%, #dad4cb 48%, #d2ccc2 100%);
+}
+
+:root.theme-light .rules-guide-item {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(95, 89, 79, 0.22);
+}
+
+:root.theme-light .rules-outline-item.outline-linkable:hover .rules-outline-title {
+  color: #8f3945;
+}
+
+:root.theme-light .phase-ribbon-item {
+  border-color: #b84f58;
+  background: linear-gradient(90deg, #ba505b 0%, #ae4c5d 56%, #a24a5c 100%);
+}
+
+:root.theme-light .rules-ref-card {
+  border-color: #a8afb5;
+  background: #e1e2df;
+}
+
+:root.theme-light .rules-ref-title {
+  background: #3f545f;
+  color: #f4f7fb;
+}
+
+:root.theme-light .rules-d3-table th {
+  background: #798188;
+  color: #f6f8fb;
+}
+
+:root.theme-light .phase-ribbon-num,
+:root.theme-light .phase-ribbon-name {
+  color: #fff6f7;
+}
+
+:root.theme-light .phase-ribbon-icon-wrap {
+  border-color: #bd4b56;
+  background: #f9f4ed;
+}
+
+:root.theme-light .phase-ribbon-icon {
+  color: #a73d47;
 }
 
 .rules-grid {
@@ -1061,6 +1432,35 @@ body {
 
   .rules-toolbar {
     grid-template-columns: 1fr;
+  }
+
+  .rules-outline {
+    padding: 0.8rem 0.75rem 0.5rem;
+  }
+
+  .rules-guide {
+    grid-template-columns: 1fr;
+    padding: 0.8rem 0.75rem;
+  }
+
+  .rules-outline-title {
+    font-size: 1.5rem;
+  }
+
+  .rules-outline-pages {
+    font-size: 1.18rem;
+  }
+
+  .rules-outline-desc {
+    font-size: 0.98rem;
+  }
+
+  .rules-guide-title {
+    font-size: 1.18rem;
+  }
+
+  .rules-guide-desc {
+    font-size: 0.95rem;
   }
 }
 
