@@ -257,6 +257,31 @@ CANONICAL_TOOLTIP_OVERRIDES: dict[str, dict[str, object]] = {
     },
 }
 
+CANONICAL_SECTION_OVERRIDES: list[dict[str, object]] = [
+    {
+        "title": "65 Charging with a Unit",
+        "aliases": ["65 CHARGING WITH A UNIT", "CHARGING WITH A UNIT"],
+        "paragraphs": [
+            "Once you have selected an eligible unit to declare a charge, you must select one or more enemy units within 12\" of it as the targets of that charge. The targets of a charge do not need to be visible to the charging unit.",
+            "You then make a Charge roll for the charging unit by rolling 2D6. The result is the maximum number of inches each model in that unit can be moved if a Charge move is possible.",
+            "For a Charge move to be possible, the Charge roll must be sufficient to enable the charging unit to end that move within Engagement Range of every unit selected as a target, without moving within Engagement Range of enemy units that were not targets, and in Unit Coherency.",
+            "If any of these conditions cannot be met, the charge fails and no models in the charging unit move this phase.",
+            "Otherwise, the charge is successful and the models in the charging unit make a Charge move. Move each model a distance in inches up to the result of the Charge roll. Each model must end its Charge move closer to one of the units selected as a target of its charge.",
+            "If you can also move a charging model so that it ends its Charge move in base-to-base contact with one or more enemy models while still satisfying all of the conditions above, you must do so. The controlling player chooses the order in which to move their models.",
+        ],
+        "summary_points": [
+            "Within Engagement Range of every unit that you selected as a target of the charge.",
+            "Without moving within Engagement Range of any enemy units that were not a target of the charge.",
+            "In Unit Coherency.",
+            "Charge Roll: 2D6\".",
+            "Targets of a charge must be within 12\" but do not need to be visible.",
+            "If the distance rolled is insufficient to move within Engagement Range of all targets while maintaining Unit Coherency, the charge fails.",
+            "Cannot move within Engagement Range of any unit that was not a target of the charge.",
+            "If the charge is successful, each model makes a Charge move less than or equal to the Charge roll, and must move into base-to-base contact with an enemy model if possible.",
+        ],
+    }
+]
+
 
 def get_pdf(path: Path):
     path_str = str(path)
@@ -628,7 +653,67 @@ def override_to_section(title: str, override: dict[str, object]) -> dict[str, ob
     return {"title": title, "blocks": blocks}
 
 
+def manual_override_to_section(override: dict[str, object]) -> dict[str, object]:
+    title = str(override.get("title") or "").strip() or "Section"
+    paragraphs = [str(x).strip() for x in (override.get("paragraphs") or []) if str(x).strip()]
+    section: dict[str, object] = {
+        "title": title,
+        "blocks": [{"type": "paragraph", "text": text} for text in paragraphs],
+    }
+    summary_points = [str(x).strip() for x in (override.get("summary_points") or []) if str(x).strip()]
+    if summary_points:
+        section["summary_points"] = summary_points
+    return section
+
+
+def apply_manual_section_overrides(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    key_to_index: dict[str, int] = {}
+    for i, section in enumerate(sections):
+        key = canonical_key(str(section.get("title") or ""))
+        if key and key not in key_to_index:
+            key_to_index[key] = i
+
+    for override in CANONICAL_SECTION_OVERRIDES:
+        aliases = override.get("aliases") or []
+        alias_keys = [canonical_key(str(x)) for x in aliases if str(x).strip()]
+        if not alias_keys:
+            alias_keys = [canonical_key(str(override.get("title") or ""))]
+        target_index = next((key_to_index.get(key) for key in alias_keys if key in key_to_index), None)
+        replacement = manual_override_to_section(override)
+
+        if target_index is not None:
+            sections[target_index] = replacement
+            # Refresh index mapping for all aliases to this updated section.
+            for key in alias_keys:
+                key_to_index[key] = target_index
+            key_to_index[canonical_key(str(replacement.get("title") or ""))] = target_index
+            continue
+
+        # Insert near charge-phase cluster when possible.
+        anchor_keys = {"65 CHARGING WITH A UNIT", "64 CHARGE BONUS", "CHARGE PHASE"}
+        anchor = None
+        for key in anchor_keys:
+            if key in key_to_index:
+                anchor = key_to_index[key]
+                break
+        if anchor is not None:
+            insert_at = anchor + 1
+            sections.insert(insert_at, replacement)
+            key_to_index = {}
+            for i, section in enumerate(sections):
+                key = canonical_key(str(section.get("title") or ""))
+                if key and key not in key_to_index:
+                    key_to_index[key] = i
+        else:
+            sections.append(replacement)
+            idx = len(sections) - 1
+            key_to_index[canonical_key(str(replacement.get("title") or ""))] = idx
+
+    return sections
+
+
 def apply_section_overrides(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    sections = apply_manual_section_overrides(sections)
     by_key: dict[str, dict[str, object]] = {}
     for section in sections:
         key = canonical_key(str(section.get("title") or ""))

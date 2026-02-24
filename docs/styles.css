@@ -962,6 +962,52 @@ body {
   color: #1c232b;
 }
 
+.rules-summary-card {
+  margin-top: 0.85rem;
+  border: 1px solid #a9ada6;
+  background: #dad9d2;
+  color: #1c232b;
+}
+
+.rules-summary-title {
+  margin: 0;
+  padding: 0.36rem 0.54rem;
+  font-size: 1.2rem;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #eef2f6;
+  background: #7b121a;
+}
+
+.rules-summary-list {
+  margin: 0;
+  list-style: none;
+  padding: 0.58rem 0.72rem 0.54rem;
+}
+
+.rules-summary-list li {
+  margin: 0 0 0.38rem;
+  padding-left: 1rem;
+  line-height: 1.28;
+  color: #1f242b;
+  position: relative;
+}
+
+.rules-summary-list li:last-child {
+  margin-bottom: 0;
+}
+
+.rules-summary-list li::before {
+  content: "";
+  width: 0.46rem;
+  height: 0.46rem;
+  background: #b31f28;
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
+}
+
 .rules-ref-title {
   margin: 0;
   padding: 0.38rem 0.55rem;
@@ -1316,6 +1362,16 @@ body {
 :root.theme-light .rules-ref-card {
   border-color: #a8afb5;
   background: #e1e2df;
+}
+
+:root.theme-light .rules-summary-card {
+  border-color: #b8bbb4;
+  background: #e4e3de;
+}
+
+:root.theme-light .rules-summary-title {
+  background: #8f1f2a;
+  color: #f5f7fa;
 }
 
 :root.theme-light .rules-ref-title {

@@ -175,14 +175,31 @@ function renderRollingD3Table() {
   </section>`;
 }
 
-function renderSectionReferenceBlocks(sectionKey, hasRerollsSection) {
+function renderSummaryPointsCard(points, title = "Summary") {
+  const items = (points || []).map((x) => String(x || "").trim()).filter(Boolean);
+  if (!items.length) return "";
+  return `<section class="rules-summary-card" aria-label="${escapeHtml(title)}">
+    <h4 class="rules-summary-title">${escapeHtml(title)}</h4>
+    <ul class="rules-summary-list">
+      ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+    </ul>
+  </section>`;
+}
+
+function renderSectionReferenceBlocks(section, sectionKey, hasRerollsSection) {
+  const summaryPoints = Array.isArray(section?.summary_points) ? section.summary_points : [];
+  let html = "";
   if (sectionKey === "rerolls") {
-    return renderRollingD3Table();
+    html += renderRollingD3Table();
   }
   if (!hasRerollsSection && sectionKey === "coreconcepts") {
-    return renderRollingD3Table();
+    html += renderRollingD3Table();
   }
-  return "";
+  if (summaryPoints.length) {
+    const summaryTitle = sectionKey.includes("chargingwithaunit") ? "Charge Summary" : "Summary";
+    html += renderSummaryPointsCard(summaryPoints, summaryTitle);
+  }
+  return html;
 }
 
 function renderRulesOutline(sections) {
@@ -220,7 +237,8 @@ function renderRulesGuide() {
   </section>`;
 }
 
-function splitSectionBlocks(blocks) {
+function splitSectionBlocks(blocks, options = {}) {
+  const suppressBullets = Boolean(options?.suppressBullets);
   const parsed = [];
   let firstParagraphUsedAsIntro = false;
 
@@ -229,6 +247,7 @@ function splitSectionBlocks(blocks) {
     if (!text) continue;
 
     if (block.type === "bullet") {
+      if (suppressBullets) continue;
       const value = text.replace(/^[-\u2022]\s*/, "").trim();
       if (!parsed.length || parsed[parsed.length - 1].type !== "points") {
         parsed.push({ type: "points", items: [] });
@@ -325,7 +344,8 @@ function renderAllSections() {
     .map((section, index) => {
       const title = section.title || `Section ${index + 1}`;
       const sectionKey = normalizeRuleKey(title);
-      const blocks = splitSectionBlocks(section.blocks || []);
+      const hasSummaryPoints = Array.isArray(section.summary_points) && section.summary_points.length > 0;
+      const blocks = splitSectionBlocks(section.blocks || [], { suppressBullets: hasSummaryPoints });
       const inner = blocks
         .map((block) => {
           if (block.type === "subheading") return `<h4 class="rule-subheading">${escapeHtml(block.text)}</h4>`;
@@ -340,7 +360,7 @@ function renderAllSections() {
         })
         .join("");
       const phaseRibbons = sectionKey === "thebattleround" ? renderBattleRoundPhases() : "";
-      const referenceBlocks = renderSectionReferenceBlocks(sectionKey, hasRerollsSection);
+      const referenceBlocks = renderSectionReferenceBlocks(section, sectionKey, hasRerollsSection);
       return `<section id="rule-sec-${index}" class="rule-doc-section">
         <h3 class="rule-doc-title"><span class="rule-doc-index">${index + 1}.</span> ${escapeHtml(title)}</h3>
         ${inner}

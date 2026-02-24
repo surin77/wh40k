@@ -1070,40 +1070,42 @@
       ]
     },
     {
-      "title": "Charging with a Unit",
+      "title": "65 Charging with a Unit",
       "blocks": [
         {
-          "type": "bullet",
-          "text": "Within Engagement Range of every unit that you selected as a target of the charge."
+          "type": "paragraph",
+          "text": "Once you have selected an eligible unit to declare a charge, you must select one or more enemy units within 12\" of it as the targets of that charge. The targets of a charge do not need to be visible to the charging unit."
         },
         {
-          "type": "bullet",
-          "text": "Without moving within Engagement Range of any enemy units that were not a target of the charge."
+          "type": "paragraph",
+          "text": "You then make a Charge roll for the charging unit by rolling 2D6. The result is the maximum number of inches each model in that unit can be moved if a Charge move is possible."
         },
         {
-          "type": "bullet",
-          "text": "In Unit Coherency."
+          "type": "paragraph",
+          "text": "For a Charge move to be possible, the Charge roll must be sufficient to enable the charging unit to end that move within Engagement Range of every unit selected as a target, without moving within Engagement Range of enemy units that were not targets, and in Unit Coherency."
         },
         {
-          "type": "bullet",
-          "text": "Charge Roll: 2D6\"."
+          "type": "paragraph",
+          "text": "If any of these conditions cannot be met, the charge fails and no models in the charging unit move this phase."
         },
         {
-          "type": "bullet",
-          "text": "Targets of a charge must be within 12\" but do not need to be visible."
+          "type": "paragraph",
+          "text": "Otherwise, the charge is successful and the models in the charging unit make a Charge move. Move each model a distance in inches up to the result of the Charge roll. Each model must end its Charge move closer to one of the units selected as a target of its charge."
         },
         {
-          "type": "bullet",
-          "text": "If the distance rolled is insufficient to move within Engagement Range of all targets while maintaining Unit Coherency, the charge fails."
-        },
-        {
-          "type": "bullet",
-          "text": "Cannot move within Engagement Range of any unit that was not a target of the charge."
-        },
-        {
-          "type": "bullet",
-          "text": "If the charge is successful, each model makes a Charge move less than or equal to the Charge roll, and must move into base-to-base contact with an enemy model if possible."
+          "type": "paragraph",
+          "text": "If you can also move a charging model so that it ends its Charge move in base-to-base contact with one or more enemy models while still satisfying all of the conditions above, you must do so. The controlling player chooses the order in which to move their models."
         }
+      ],
+      "summary_points": [
+        "Within Engagement Range of every unit that you selected as a target of the charge.",
+        "Without moving within Engagement Range of any enemy units that were not a target of the charge.",
+        "In Unit Coherency.",
+        "Charge Roll: 2D6\".",
+        "Targets of a charge must be within 12\" but do not need to be visible.",
+        "If the distance rolled is insufficient to move within Engagement Range of all targets while maintaining Unit Coherency, the charge fails.",
+        "Cannot move within Engagement Range of any unit that was not a target of the charge.",
+        "If the charge is successful, each model makes a Charge move less than or equal to the Charge roll, and must move into base-to-base contact with an enemy model if possible."
       ]
     },
     {
