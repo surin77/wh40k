@@ -52,6 +52,211 @@ TOOLTIP_RULE_HEADINGS = [
     "ONE SHOT",
 ]
 
+# Quartz extraction from two-column PDF can lose the second mechanics paragraph for some rules.
+# Use canonical weapon ability wording as deterministic fallback to keep tooltip quality stable.
+CANONICAL_TOOLTIP_OVERRIDES: dict[str, dict[str, object]] = {
+    "ASSAULT": {
+        "intro": "Assault weapons fire so indiscriminately that they can be shot from the hip as warriors dash forward.",
+        "body": (
+            "Weapons with [ASSAULT] in their profile are known as Assault weapons. "
+            "If a unit that Advanced this turn contains any models equipped with Assault weapons, "
+            "it is still eligible to shoot in this turn's Shooting phase. "
+            "When such a unit is selected to shoot, it can only resolve attacks using Assault weapons its models are equipped with."
+        ),
+        "points": ["Can be shot even if the bearer's unit Advanced."],
+    },
+    "PISTOL": {
+        "intro": "Pistols can be wielded even at point-blank range.",
+        "body": (
+            "Weapons with [PISTOL] in their profile are known as Pistols. "
+            "If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player's Shooting phase "
+            "even while it is within Engagement Range of one or more enemy units. "
+            "When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. "
+            "If a model is equipped with one or more Pistols, unless it is a MONSTER or VEHICLE model, it can either shoot with its Pistols or with all of its other ranged weapons."
+        ),
+        "points": [
+            "Can be shot even if the bearer's unit is within Engagement Range of enemy units, but must target one of those enemy units.",
+            "Cannot be shot alongside any other non-Pistol weapon (except by a MONSTER or VEHICLE).",
+        ],
+    },
+    "RAPID FIRE": {
+        "intro": "Rapid fire weapons are capable of long-ranged precision shots or controlled bursts at nearby targets.",
+        "body": (
+            "Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons. "
+            "Each time such a weapon targets a unit within half that weapon's range, "
+            "the Attacks characteristic of that weapon is increased by the amount denoted by X."
+        ),
+        "points": ["[RAPID FIRE X]: Increase the Attacks by X when targeting units within half range."],
+    },
+    "IGNORES COVER": {
+        "intro": "Some weapons are designed to root enemy formations out of entrenched positions.",
+        "body": (
+            "Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons. "
+            "Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack (pg 44)."
+        ),
+        "points": [],
+    },
+    "TWIN-LINKED": {
+        "intro": "Dual weapons are often grafted to the same targeting system for greater lethality.",
+        "body": (
+            "Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons. "
+            "Each time an attack is made with such a weapon, you can re-roll that attack's Wound roll."
+        ),
+        "points": [],
+    },
+    "TORRENT": {
+        "intro": "Torrent weapons shoot clouds of fire, gas or other lethal substances that few foes can hope to evade.",
+        "body": (
+            "Weapons with [TORRENT] in their profile are known as Torrent weapons. "
+            "Each time an attack is made with such a weapon, that attack automatically hits the target."
+        ),
+        "points": [],
+    },
+    "LETHAL HITS": {
+        "intro": "Some weapons can inflict fatal injuries on any foe, no matter their resilience.",
+        "body": (
+            "Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons. "
+            "Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target."
+        ),
+        "points": [],
+    },
+    "LANCE": {
+        "intro": "Lance weapons are deadly on the charge.",
+        "body": (
+            "Weapons with [LANCE] in their profile are known as Lance weapons. "
+            "Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack's Wound roll."
+        ),
+        "points": [],
+    },
+    "INDIRECT FIRE": {
+        "intro": "Indirect fire weapons launch munitions over or around intervening obstacles.",
+        "body": (
+            "Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons. "
+            "Such weapons can target units that are not visible to the attacking model's unit. "
+            "If no models in a target unit are visible to the attacking unit when that target is selected, "
+            "then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, "
+            "subtract 1 from that attack's Hit roll and the target has the Benefit of Cover against that attack."
+        ),
+        "points": [
+            "Can target units that are not visible to the attacking unit.",
+            "If no models are visible, attacks are at -1 to Hit and the target has Benefit of Cover.",
+        ],
+    },
+    "PRECISION": {
+        "intro": "Precision attacks can pick high-value targets out in a crowd.",
+        "body": (
+            "Weapons with [PRECISION] in their profile are known as Precision weapons. "
+            "Each time an attack made with such a weapon successfully wounds an Attached unit, "
+            "if a CHARACTER model in that unit is visible to the attacking model, "
+            "the attacking model's player can choose to have that attack allocated to that CHARACTER model instead."
+        ),
+        "points": [
+            "When targeting an Attached unit, the attacking player can allocate to a visible CHARACTER model in that unit.",
+        ],
+    },
+    "BLAST": {
+        "intro": "High-explosive weapons can fell several warriors in a single detonation.",
+        "body": (
+            "Weapons with [BLAST] in their profile are known as Blast weapons. "
+            "Each time a Blast weapon targets a unit, add 1 to that weapon's Attacks characteristic for every five models in the target unit (rounding down). "
+            "Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model's army."
+        ),
+        "points": [
+            "Add 1 Attack for every five models in the target unit (rounding down).",
+            "Cannot be used against targets within Engagement Range of the attacker's army.",
+        ],
+    },
+    "MELTA": {
+        "intro": "Melta weapons are powerful heat rays whose fury is magnified at close range.",
+        "body": (
+            "Weapons with [MELTA X] in their profile are known as Melta weapons. "
+            "Each time an attack made with such a weapon targets a unit within half that weapon's range, "
+            "that attack's Damage characteristic is increased by the amount denoted by X."
+        ),
+        "points": ["[MELTA X]: Increase Damage by X when targeting units within half range."],
+    },
+    "HEAVY": {
+        "intro": "Heavy weapons are strongest when braced by stationary firing positions.",
+        "body": (
+            "Weapons with [HEAVY] in their profile are known as Heavy weapons. "
+            "Each time an attack is made with such a weapon, if the attacking model's unit remained stationary this turn, add 1 to that attack's Hit roll."
+        ),
+        "points": ["Add 1 to Hit rolls if the bearer's unit Remained Stationary this turn."],
+    },
+    "HAZARDOUS": {
+        "intro": "Weapons powered by unstable energy sources pose a risk to the bearer.",
+        "body": (
+            "Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons. "
+            "After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon that was used. "
+            "For each result of 1, one model in that unit equipped with a Hazardous weapon suffers 3 mortal wounds."
+        ),
+        "points": [
+            "After shooting/fighting, roll one D6 for each used Hazardous weapon.",
+            "Each result of 1 inflicts 3 mortal wounds on a model equipped with a Hazardous weapon.",
+        ],
+    },
+    "DEVASTATING WOUNDS": {
+        "intro": "Some attacks inflict catastrophic injuries that bypass normal protections.",
+        "body": (
+            "Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons. "
+            "Each time an attack made with such a weapon scores a Critical Wound, "
+            "that attack inflicts mortal wounds equal to that weapon's Damage characteristic instead of normal damage."
+        ),
+        "points": ["A Critical Wound inflicts mortal wounds equal to the weapon's Damage characteristic."],
+    },
+    "SUSTAINED HITS": {
+        "intro": "Some weapons strike in a flurry of blows, tearing the foe apart with relentless ferocity.",
+        "body": (
+            "Weapons with [SUSTAINED HITS X] in their profile are known as Sustained Hits weapons. "
+            "Each time an attack is made with such a weapon, a Critical Hit scores a number of additional hits on the target equal to X."
+        ),
+        "points": ["[SUSTAINED HITS X]: Each Critical Hit scores X additional hits on the target."],
+    },
+    "EXTRA ATTACKS": {
+        "intro": "Some weapons are used for additional strikes beyond a model's primary attacks.",
+        "body": (
+            "Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks weapons. "
+            "The bearer can make attacks with such a weapon in addition to the weapons it chooses to fight with."
+        ),
+        "points": ["The bearer can attack with this weapon in addition to its other selected weapons."],
+    },
+    "ANTI": {
+        "intro": "Certain weapons are the bane of a particular foe.",
+        "body": (
+            "Weapons with [ANTI-KEYWORD X+] in their profile are known as Anti weapons. "
+            "Each time an attack is made with such a weapon against a target with the matching keyword, "
+            "an unmodified Wound roll of X+ scores a Critical Wound."
+        ),
+        "points": ["[ANTI-KEYWORD X+]: An unmodified Wound roll of X+ scores a Critical Wound against a matching keyword."],
+    },
+    "DEADLY DEMISE": {
+        "intro": "Some models are dangerous even in death.",
+        "body": (
+            "Some models have Deadly Demise X listed in their abilities. "
+            "When such a model is destroyed, roll one D6 before removing it from play. "
+            "On a 6, each unit within 6\" suffers a number of mortal wounds denoted by X."
+        ),
+        "points": ["Deadly Demise X: On destruction, roll one D6; on a 6, nearby units suffer X mortal wounds."],
+    },
+    "PSYCHIC WEAPONS AND ABILITIES": {
+        "intro": "Some weapons and abilities can only be used by Psykers.",
+        "body": (
+            "Such weapons and abilities are tagged with the word Psychic. "
+            "If a Psychic weapon or ability causes any unit to suffer one or more wounds, "
+            "each of those wounds is considered to have been inflicted by a Psychic Attack."
+        ),
+        "points": [],
+    },
+    "ONE SHOT": {
+        "intro": "One Shot weapons can only be fired once per battle.",
+        "body": (
+            "A weapon with [ONE SHOT] can be used only once per battle. "
+            "If another rule lets models fire weapons by proxy, [ONE SHOT] weapons are excluded unless that rule explicitly allows them."
+        ),
+        "points": ["This weapon can be fired once per battle."],
+    },
+}
+
 
 def get_pdf(path: Path):
     path_str = str(path)
@@ -363,6 +568,52 @@ def section_to_tooltip(section: dict[str, object]) -> dict[str, object]:
     return {"title": title, "intro": intro, "body": "\n\n".join(body_parts), "points": points}
 
 
+def canonical_key(title: str) -> str:
+    text = str(title or "").upper().replace("&", "AND")
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def apply_tooltip_overrides(tooltips: list[dict[str, object]]) -> list[dict[str, object]]:
+    by_key: dict[str, dict[str, object]] = {}
+    for tip in tooltips:
+        key = canonical_key(str(tip.get("title") or ""))
+        if key:
+            by_key[key] = tip
+
+    for title, override in CANONICAL_TOOLTIP_OVERRIDES.items():
+        key = canonical_key(title)
+        entry = {
+            "title": title,
+            "intro": str(override.get("intro") or "").strip(),
+            "body": str(override.get("body") or "").strip(),
+            "points": [str(x).strip() for x in (override.get("points") or []) if str(x).strip()],
+        }
+        if key in by_key:
+            # Keep existing canonical title casing from live data if available.
+            current_title = str(by_key[key].get("title") or "").strip() or title
+            entry["title"] = current_title
+            by_key[key] = entry
+        else:
+            by_key[key] = entry
+
+    # Preserve deterministic order: original list first, then missing canonical entries.
+    ordered: list[dict[str, object]] = []
+    used: set[str] = set()
+    for tip in tooltips:
+        key = canonical_key(str(tip.get("title") or ""))
+        if key and key in by_key and key not in used:
+            ordered.append(by_key[key])
+            used.add(key)
+    for title in CANONICAL_TOOLTIP_OVERRIDES:
+        key = canonical_key(title)
+        if key in by_key and key not in used:
+            ordered.append(by_key[key])
+            used.add(key)
+
+    return ordered
+
+
 def build_tooltip_rules_from_full_text(full_text: str) -> list[dict[str, object]]:
     text = " ".join(full_text.split())
     specs = [
@@ -468,6 +719,7 @@ def main() -> int:
     tooltip_rules = build_tooltip_rules_from_full_text(full_text)
     if not tooltip_rules:
         tooltip_rules = [section_to_tooltip(sec) for sec in tooltip_sections]
+    tooltip_rules = apply_tooltip_overrides(tooltip_rules)
     if not sections:
         raise RuntimeError("No sections parsed from PDF")
 
