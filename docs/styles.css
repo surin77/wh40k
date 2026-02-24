@@ -773,6 +773,29 @@ body {
   padding: 0.9rem;
 }
 
+.rules-toolbar {
+  display: grid;
+  grid-template-columns: minmax(280px, 420px);
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.rules-toolbar label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.rules-toolbar select {
+  height: 2.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #0f1620;
+  color: var(--text);
+  padding: 0 0.65rem;
+}
+
 :root.theme-light {
   --bg: #f2f6fb;
   --panel: #ffffff;
@@ -826,6 +849,10 @@ body {
 :root.theme-light .toolbar select,
 :root.theme-light .toolbar input,
 :root.theme-light .toolbar-checkbox-control {
+  background: #f7fbff;
+}
+
+:root.theme-light .rules-toolbar select {
   background: #f7fbff;
 }
 
@@ -970,6 +997,10 @@ body {
   }
 
   .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rules-toolbar {
     grid-template-columns: 1fr;
   }
 }

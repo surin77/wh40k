@@ -4,8 +4,10 @@ const titleEl = document.querySelector("#rules-title");
 const subtitleEl = document.querySelector("#rules-subtitle");
 const contentEl = document.querySelector("#rules-content");
 const themeToggleEl = document.querySelector("#theme-toggle");
+const sourceSelectEl = document.querySelector("#rules-source-select");
 
-let payload = null;
+let payloadBySource = new Map();
+let currentSourceKey = "";
 
 function initThemeToggle() {
   if (!themeToggleEl) return;
@@ -64,7 +66,16 @@ function splitSectionBlocks(blocks) {
   return parsed;
 }
 
+function getCurrentPayload() {
+  return payloadBySource.get(currentSourceKey) || null;
+}
+
 function renderMeta() {
+  const payload = getCurrentPayload();
+  if (!payload) {
+    metaEl.innerHTML = '<span class="note">No rules source loaded.</span>';
+    return;
+  }
   const count = payload.sections?.length || 0;
   metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Wahapedia Core Rules")}
     <br><strong>Sections:</strong> ${count}
@@ -72,6 +83,11 @@ function renderMeta() {
 }
 
 function renderSectionsNav() {
+  const payload = getCurrentPayload();
+  if (!payload) {
+    sectionsEl.innerHTML = "";
+    return;
+  }
   const sections = payload.sections || [];
   sectionsEl.innerHTML = sections
     .map((section, index) => {
@@ -91,6 +107,13 @@ function renderSectionsNav() {
 }
 
 function renderAllSections() {
+  const payload = getCurrentPayload();
+  if (!payload) {
+    titleEl.textContent = "Core Rules";
+    subtitleEl.textContent = "";
+    contentEl.innerHTML = '<p class="note">No rules source loaded.</p>';
+    return;
+  }
   const sections = payload.sections || [];
 
   if (!sections.length) {
@@ -128,16 +151,54 @@ function renderAllSections() {
     .join("")}</div>`;
 }
 
-async function init() {
-  const response = await fetch("./data/core_rules.json", { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`Cannot load core_rules.json: ${response.status}`);
-  }
-
-  payload = await response.json();
+function renderCurrentSource() {
   renderMeta();
   renderSectionsNav();
   renderAllSections();
+}
+
+function populateSourceSelect() {
+  if (!sourceSelectEl) return;
+  const options = [...payloadBySource.entries()].map(([key, payload]) => {
+    const label = key === "pdf" ? "Core Rules (PDF)" : "Core Rules (Wahapedia)";
+    const count = payload?.sections?.length || 0;
+    return `<option value="${escapeHtml(key)}">${escapeHtml(label)} - ${count} sections</option>`;
+  });
+  sourceSelectEl.innerHTML = options.join("");
+  sourceSelectEl.value = currentSourceKey;
+}
+
+async function loadRulesPayload(fileName) {
+  const response = await fetch(`./data/${fileName}`, { cache: "no-store" });
+  if (!response.ok) return null;
+  return response.json();
+}
+
+async function init() {
+  payloadBySource = new Map();
+
+  const wahapediaPayload = await loadRulesPayload("core_rules.json");
+  if (wahapediaPayload) payloadBySource.set("wahapedia", wahapediaPayload);
+
+  const pdfPayload = await loadRulesPayload("core_rules_pdf.json");
+  if (pdfPayload) payloadBySource.set("pdf", pdfPayload);
+
+  if (!payloadBySource.size) {
+    throw new Error("Cannot load core rules sources.");
+  }
+
+  currentSourceKey = payloadBySource.has("pdf") ? "pdf" : payloadBySource.keys().next().value;
+  populateSourceSelect();
+  renderCurrentSource();
+
+  if (sourceSelectEl) {
+    sourceSelectEl.addEventListener("change", () => {
+      const nextKey = sourceSelectEl.value;
+      if (!payloadBySource.has(nextKey)) return;
+      currentSourceKey = nextKey;
+      renderCurrentSource();
+    });
+  }
 }
 
 initThemeToggle();
