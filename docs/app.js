@@ -48,6 +48,7 @@ let catalog = { factions: [], units: [], detachmentsByFaction: new Map() };
 let currentUnitId = null;
 let tooltipVisible = false;
 let tooltipAnchorEl = null;
+let suppressTooltipClickUntil = 0;
 let coreRuleDefsByName = new Map();
 let activeKeywordFilter = "";
 let showLegends = false;
@@ -787,6 +788,7 @@ function initTooltipHandlers() {
   });
 
   document.addEventListener("click", (event) => {
+    if (Date.now() < suppressTooltipClickUntil) return;
     const target = event.target.closest(".kw-link");
     if (!target || target.classList.contains("disabled")) {
       hideTooltip();
@@ -803,6 +805,7 @@ function initTooltipHandlers() {
   document.addEventListener(
     "touchstart",
     (event) => {
+      suppressTooltipClickUntil = Date.now() + 700;
       const target = event.target.closest(".kw-link");
       if (!target || target.classList.contains("disabled")) {
         hideTooltip();
@@ -817,7 +820,6 @@ function initTooltipHandlers() {
     },
     { passive: true }
   );
-  document.addEventListener("touchmove", hideTooltip, { passive: true });
   document.addEventListener("scroll", hideTooltip, true);
   window.addEventListener("blur", hideTooltip);
 }

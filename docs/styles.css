@@ -562,6 +562,8 @@ body {
   cursor: help;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .kw-link.disabled {
