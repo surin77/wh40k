@@ -474,23 +474,11 @@
       "blocks": [
         {
           "type": "bullet",
-          "text": "Before a unit shoots, select the targets for all of its ranged weapons."
+          "text": "Select targets for all attacks before any are resolved."
         },
         {
           "type": "bullet",
-          "text": "At least one model in the target unit must be visible to the attacking model and within range of the weapon being used."
-        },
-        {
-          "type": "bullet",
-          "text": "Models with more than one ranged weapon can shoot them at the same or different targets, but models cannot split attacks from the same weapon across more than one target."
-        },
-        {
-          "type": "bullet",
-          "text": "Models in the same unit can shoot at the same or different targets."
-        },
-        {
-          "type": "paragraph",
-          "text": "Assassins and other covert agents are difficult to track and pinpoint in the swirling maelstrom of battle."
+          "text": "Attacking model must either be within Engagement Range of an enemy unit to target it, or in base-to-base contact with another model in its unit that is itself in base-to-base contact with that enemy unit."
         }
       ]
     },
@@ -698,15 +686,15 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Some models are dangerous even in death, erupting in catastrophic explosions when destroyed."
+          "text": "Some models are dangerous even in death."
         },
         {
           "type": "paragraph",
-          "text": "Some models have Deadly Demise x listed in their abilities."
+          "text": "Some models have Deadly Demise X listed in their abilities. When such a model is destroyed, roll one D6 before removing it from play. On a 6, each unit within 6\" suffers a number of mortal wounds denoted by X."
         },
         {
           "type": "bullet",
-          "text": "Deadly Demise x: When such a model is destroyed, roll one D6 before removing it from play. On a 6, each unit within 6\" suffers x mortal wounds."
+          "text": "Deadly Demise X: On destruction, roll one D6; on a 6, nearby units suffer X mortal wounds."
         }
       ]
     },
@@ -720,11 +708,32 @@
       ]
     },
     {
+      "title": "ONE SHOT",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "One Shot weapons can only be fired once per battle."
+        },
+        {
+          "type": "paragraph",
+          "text": "A weapon with [ONE SHOT] can be used only once per battle. If another rule lets models fire weapons by proxy, [ONE SHOT] weapons are excluded unless that rule explicitly allows them."
+        },
+        {
+          "type": "bullet",
+          "text": "This weapon can be fired once per battle."
+        }
+      ]
+    },
+    {
       "title": "Psychic Weapons And Abilities",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Some weapons and abilities can only be used by Psykers. Such weapons and abilities are tagged with the word \u2018Psychic\u2019. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack."
+          "text": "Some weapons and abilities can only be used by Psykers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Such weapons and abilities are tagged with the word Psychic. If a Psychic weapon or ability causes any unit to suffer one or more wounds, each of those wounds is considered to have been inflicted by a Psychic Attack."
         }
       ]
     },
@@ -736,8 +745,12 @@
           "text": "Assault weapons fire so indiscriminately that they can be shot from the hip as warriors dash forward."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [ASSAULT] in their profile are known as Assault weapons. If a unit that Advanced this turn contains any models equipped with Assault weapons, it is still eligible to shoot in this turn's Shooting phase. When such a unit is selected to shoot, it can only resolve attacks using Assault weapons its models are equipped with."
+        },
+        {
           "type": "bullet",
-          "text": "Can be shot even if the bearer\u2019s unit Advanced."
+          "text": "Can be shot even if the bearer's unit Advanced."
         }
       ]
     },
@@ -749,8 +762,12 @@
           "text": "Rapid fire weapons are capable of long-ranged precision shots or controlled bursts at nearby targets."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [RAPID FIRE X] in their profile are known as Rapid Fire weapons. Each time such a weapon targets a unit within half that weapon's range, the Attacks characteristic of that weapon is increased by the amount denoted by X."
+        },
+        {
           "type": "bullet",
-          "text": "[RAPID FIRE X]: Increase the Attacks by \u2018x\u2019 when targeting units within half range."
+          "text": "[RAPID FIRE X]: Increase the Attacks by X when targeting units within half range."
         }
       ]
     },
@@ -760,6 +777,10 @@
         {
           "type": "paragraph",
           "text": "Some weapons are designed to root enemy formations out of entrenched positions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [IGNORES COVER] in their profile are known as Ignores Cover weapons. Each time an attack is made with such a weapon, the target cannot have the Benefit of Cover against that attack (pg 44)."
         }
       ]
     },
@@ -769,6 +790,10 @@
         {
           "type": "paragraph",
           "text": "Dual weapons are often grafted to the same targeting system for greater lethality."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [TWIN-LINKED] in their profile are known as Twin-linked weapons. Each time an attack is made with such a weapon, you can re-roll that attack's Wound roll."
         }
       ]
     },
@@ -780,8 +805,12 @@
           "text": "Pistols can be wielded even at point-blank range."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [PISTOL] in their profile are known as Pistols. If a unit contains any models equipped with Pistols, that unit is eligible to shoot in its controlling player's Shooting phase even while it is within Engagement Range of one or more enemy units. When such a unit is selected to shoot, it can only resolve attacks using its Pistols and can only target one of the enemy units it is within Engagement Range of. If a model is equipped with one or more Pistols, unless it is a MONSTER or VEHICLE model, it can either shoot with its Pistols or with all of its other ranged weapons."
+        },
+        {
           "type": "bullet",
-          "text": "Can be shot even if the bearer\u2019s unit is within Engagement Range of enemy units, but must target one of those enemy units."
+          "text": "Can be shot even if the bearer's unit is within Engagement Range of enemy units, but must target one of those enemy units."
         },
         {
           "type": "bullet",
@@ -795,6 +824,10 @@
         {
           "type": "paragraph",
           "text": "Torrent weapons shoot clouds of fire, gas or other lethal substances that few foes can hope to evade."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [TORRENT] in their profile are known as Torrent weapons. Each time an attack is made with such a weapon, that attack automatically hits the target."
         }
       ]
     },
@@ -804,6 +837,10 @@
         {
           "type": "paragraph",
           "text": "Some weapons can inflict fatal injuries on any foe, no matter their resilience."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [LETHAL HITS] in their profile are known as Lethal Hits weapons. Each time an attack is made with such a weapon, a Critical Hit automatically wounds the target."
         }
       ]
     },
@@ -813,6 +850,10 @@
         {
           "type": "paragraph",
           "text": "Lance weapons are deadly on the charge."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [LANCE] in their profile are known as Lance weapons. Each time an attack is made with such a weapon, if the bearer made a Charge move this turn, add 1 to that attack's Wound roll."
         }
       ]
     },
@@ -821,15 +862,19 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Indirect fire weapons launch munitions over or around intervening obstacles \u2013 nowhere is safe from their fury."
+          "text": "Indirect fire weapons launch munitions over or around intervening obstacles."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [INDIRECT FIRE] in their profile are known as Indirect Fire weapons. Such weapons can target units that are not visible to the attacking model's unit. If no models in a target unit are visible to the attacking unit when that target is selected, then each time a model in the attacking unit makes an attack against that target using an Indirect Fire weapon, subtract 1 from that attack's Hit roll and the target has the Benefit of Cover against that attack."
         },
         {
           "type": "bullet",
-          "text": "Can target and make attacks against units that are not visible to the attacking unit."
+          "text": "Can target units that are not visible to the attacking unit."
         },
         {
           "type": "bullet",
-          "text": "If no models are visible in a target unit when it is selected, then when making an attack against that target with an Indirect Fire weapon, subtract 1 from that attack\u2019s Hit roll, an unmodified Hit roll of 1-3 always fails, and the target has the Benefit of Cover against that attack."
+          "text": "If no models are visible, attacks are at -1 to Hit and the target has Benefit of Cover."
         }
       ]
     },
@@ -838,11 +883,15 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Precision attacks can pick high-value targets out in a crowd, whether through the unerring aim of a sniper or the pinpoint accuracy of a blade-master\u2019s strike."
+          "text": "Precision attacks can pick high-value targets out in a crowd."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [PRECISION] in their profile are known as Precision weapons. Each time an attack made with such a weapon successfully wounds an Attached unit, if a CHARACTER model in that unit is visible to the attacking model, the attacking model's player can choose to have that attack allocated to that CHARACTER model instead."
         },
         {
           "type": "bullet",
-          "text": "When targeting an Attached unit, the attacking model\u2019s player can have the attack allocated to a CHARACTER model in that unit visible to the bearer."
+          "text": "When targeting an Attached unit, the attacking player can allocate to a visible CHARACTER model in that unit."
         }
       ]
     },
@@ -851,15 +900,19 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "High-explosives can fell several warriors in a single blast, but firing them where your comrades will get caught in the ensuing detonation is simply unwise."
+          "text": "High-explosive weapons can fell several warriors in a single detonation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [BLAST] in their profile are known as Blast weapons. Each time a Blast weapon targets a unit, add 1 to that weapon's Attacks characteristic for every five models in the target unit (rounding down). Blast weapons can never be used to make attacks against a unit that is within Engagement Range of one or more units from the attacking model's army."
         },
         {
           "type": "bullet",
-          "text": "Add 1 to the Attacks characteristic for every five models in the target unit (rounding down)."
+          "text": "Add 1 Attack for every five models in the target unit (rounding down)."
         },
         {
           "type": "bullet",
-          "text": "Can never be used against a target that is within Engagement Range of any units from the attacking model\u2019s army (including its own)."
+          "text": "Cannot be used against targets within Engagement Range of the attacker's army."
         }
       ]
     },
@@ -871,8 +924,12 @@
           "text": "Melta weapons are powerful heat rays whose fury is magnified at close range."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [MELTA X] in their profile are known as Melta weapons. Each time an attack made with such a weapon targets a unit within half that weapon's range, that attack's Damage characteristic is increased by the amount denoted by X."
+        },
+        {
           "type": "bullet",
-          "text": "[MELTA X]: Increase the Damage by \u2018x\u2019 when targeting units within half range."
+          "text": "[MELTA X]: Increase Damage by X when targeting units within half range."
         }
       ]
     },
@@ -881,11 +938,15 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Heavy weapons are amongst the biggest guns on the battlefield, but require bracing to fire at full effect and are unwieldy to bring to bear at close quarters."
+          "text": "Heavy weapons are strongest when braced by stationary firing positions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [HEAVY] in their profile are known as Heavy weapons. Each time an attack is made with such a weapon, if the attacking model's unit remained stationary this turn, add 1 to that attack's Hit roll."
         },
         {
           "type": "bullet",
-          "text": "Add 1 to Hit rolls if the bearer\u2019s unit Remained Stationary this turn."
+          "text": "Add 1 to Hit rolls if the bearer's unit Remained Stationary this turn."
         }
       ]
     },
@@ -894,23 +955,19 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Weapons powered by unstable and dangerous energy sources pose a substantial risk to the wielder every time they are used."
+          "text": "Weapons powered by unstable energy sources pose a risk to the bearer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [HAZARDOUS] in their profile are known as Hazardous weapons. After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon that was used. For each result of 1, one model in that unit equipped with a Hazardous weapon suffers 3 mortal wounds."
         },
         {
           "type": "bullet",
-          "text": "If possible, select one model in that unit that has lost one or more wounds and is equipped with one or more Hazardous weapons."
+          "text": "After shooting/fighting, roll one D6 for each used Hazardous weapon."
         },
         {
           "type": "bullet",
-          "text": "Otherwise, if possible, select one model in that unit (excluding CHARACTER models) equipped with one or more Hazardous weapons."
-        },
-        {
-          "type": "bullet",
-          "text": "Otherwise, select one CHARACTER model in that unit equipped with one or more Hazardous weapons."
-        },
-        {
-          "type": "bullet",
-          "text": "After a unit shoots or fights, roll one Hazardous test (one D6) for each Hazardous weapon used. For each 1, a model equipped with a hazardous weapon suffers 3 mortal wounds, that must be allocated to the selected model."
+          "text": "Each result of 1 inflicts 3 mortal wounds on a model equipped with a Hazardous weapon."
         }
       ]
     },
@@ -918,8 +975,16 @@
       "title": "Devastating Wounds",
       "blocks": [
         {
+          "type": "paragraph",
+          "text": "Some attacks inflict catastrophic injuries that bypass normal protections."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [DEVASTATING WOUNDS] in their profile are known as Devastating Wounds weapons. Each time an attack made with such a weapon scores a Critical Wound, that attack inflicts mortal wounds equal to that weapon's Damage characteristic instead of normal damage."
+        },
+        {
           "type": "bullet",
-          "text": "A Critical Wound inflicts mortal wounds equal to the weapon\u2019s Damage characteristic, instead of any normal damage."
+          "text": "A Critical Wound inflicts mortal wounds equal to the weapon's Damage characteristic."
         }
       ]
     },
@@ -931,8 +996,12 @@
           "text": "Some weapons strike in a flurry of blows, tearing the foe apart with relentless ferocity."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [SUSTAINED HITS X] in their profile are known as Sustained Hits weapons. Each time an attack is made with such a weapon, a Critical Hit scores a number of additional hits on the target equal to X."
+        },
+        {
           "type": "bullet",
-          "text": "[SUSTAINED HITS X]: Each Critical Hit scores \u2018x\u2019 additional hits on the target."
+          "text": "[SUSTAINED HITS X]: Each Critical Hit scores X additional hits on the target."
         }
       ]
     },
@@ -941,11 +1010,15 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Some warriors ride to battle atop trusty mounts that gore and trample nearby foes. Others wield combat weapons that deliver a frenzy of additional blows."
+          "text": "Some weapons are used for additional strikes beyond a model's primary attacks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weapons with [EXTRA ATTACKS] in their profile are known as Extra Attacks weapons. The bearer can make attacks with such a weapon in addition to the weapons it chooses to fight with."
         },
         {
           "type": "bullet",
-          "text": "The bearer can attack with this weapon in addition to any other weapons it can make attacks with."
+          "text": "The bearer can attack with this weapon in addition to its other selected weapons."
         }
       ]
     },
@@ -957,8 +1030,12 @@
           "text": "Certain weapons are the bane of a particular foe."
         },
         {
+          "type": "paragraph",
+          "text": "Weapons with [ANTI-KEYWORD X+] in their profile are known as Anti weapons. Each time an attack is made with such a weapon against a target with the matching keyword, an unmodified Wound roll of X+ scores a Critical Wound."
+        },
+        {
           "type": "bullet",
-          "text": "[ANTI-KEYWORD X+]: An unmodified Wound roll of \u2018x+\u2019 against a target with the matching keyword scores a Critical Wound."
+          "text": "[ANTI-KEYWORD X+]: An unmodified Wound roll of X+ scores a Critical Wound against a matching keyword."
         }
       ]
     },
@@ -1126,19 +1203,6 @@
         {
           "type": "bullet",
           "text": "Each model makes a number of attacks equal to the Attacks characteristic of its selected weapon."
-        }
-      ]
-    },
-    {
-      "title": "Select Targets",
-      "blocks": [
-        {
-          "type": "bullet",
-          "text": "Select targets for all attacks before any are resolved."
-        },
-        {
-          "type": "bullet",
-          "text": "Attacking model must either be within Engagement Range of an enemy unit to target it, or in base-to-base contact with another model in its unit that is itself in base-to-base contact with that enemy unit."
         }
       ]
     },

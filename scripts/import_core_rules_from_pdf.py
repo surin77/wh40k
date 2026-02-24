@@ -614,6 +614,70 @@ def apply_tooltip_overrides(tooltips: list[dict[str, object]]) -> list[dict[str,
     return ordered
 
 
+def override_to_section(title: str, override: dict[str, object]) -> dict[str, object]:
+    blocks: list[dict[str, str]] = []
+    intro = str(override.get("intro") or "").strip()
+    body = str(override.get("body") or "").strip()
+    points = [str(x).strip() for x in (override.get("points") or []) if str(x).strip()]
+    if intro:
+        blocks.append({"type": "paragraph", "text": intro})
+    if body:
+        blocks.append({"type": "paragraph", "text": body})
+    for point in points:
+        blocks.append({"type": "bullet", "text": point})
+    return {"title": title, "blocks": blocks}
+
+
+def apply_section_overrides(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    by_key: dict[str, dict[str, object]] = {}
+    for section in sections:
+        key = canonical_key(str(section.get("title") or ""))
+        if key:
+            by_key[key] = section
+
+    weapon_anchor = None
+    for i, section in enumerate(sections):
+        if canonical_key(str(section.get("title") or "")) == "WEAPON ABILITIES":
+            weapon_anchor = i
+            break
+
+    for title, override in CANONICAL_TOOLTIP_OVERRIDES.items():
+        key = canonical_key(title)
+        new_section = override_to_section(title, override)
+        if key in by_key:
+            # Keep existing title casing if present.
+            current_title = str(by_key[key].get("title") or "").strip()
+            if current_title:
+                new_section["title"] = current_title
+            by_key[key] = new_section
+        else:
+            by_key[key] = new_section
+            if weapon_anchor is not None:
+                sections.insert(weapon_anchor + 1, new_section)
+                weapon_anchor += 1
+            else:
+                sections.append(new_section)
+
+    # Keep original order, replacing matching titles with overridden content.
+    ordered: list[dict[str, object]] = []
+    used: set[str] = set()
+    for section in sections:
+        key = canonical_key(str(section.get("title") or ""))
+        if key and key in by_key and key not in used:
+            ordered.append(by_key[key])
+            used.add(key)
+        elif not key:
+            ordered.append(section)
+
+    for title in CANONICAL_TOOLTIP_OVERRIDES:
+        key = canonical_key(title)
+        if key in by_key and key not in used:
+            ordered.append(by_key[key])
+            used.add(key)
+
+    return ordered
+
+
 def build_tooltip_rules_from_full_text(full_text: str) -> list[dict[str, object]]:
     text = " ".join(full_text.split())
     specs = [
@@ -715,6 +779,7 @@ def main() -> int:
     sections = build_sections(lines)
     tooltip_sections = extract_tooltip_sections(lines)
     sections = merge_sections(sections, tooltip_sections)
+    sections = apply_section_overrides(sections)
     full_text = "\n".join(" ".join(page.get("lines", [])) for page in pages)
     tooltip_rules = build_tooltip_rules_from_full_text(full_text)
     if not tooltip_rules:
