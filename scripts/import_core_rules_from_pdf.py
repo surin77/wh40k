@@ -291,43 +291,401 @@ def get_pdf(path: Path):
         len(path_str),
         False,
     )
-    pdf = Quartz.PDFDocument.alloc().initWithURL_(url)
+    pdf = Quartz.CGPDFDocumentCreateWithURL(url)
     if pdf is None:
         raise RuntimeError(f"Unable to open PDF: {path}")
     return pdf
 
 
-def normalize_line(line: str) -> str:
-    text = line.replace("\x08", " ").replace("\u00a0", " ")
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+COLUMN_GAP_THRESHOLD = 130.0
+COLUMN_SPLIT_X = 300.0
+MIN_COLUMN_LINE_COUNT = 8
+MAX_CONTROL_CHARS_PER_LINE = 3
+
+LIGATURE_REPLACEMENTS: list[tuple[str, str]] = [
+    ("\x19\x1e", "ly"),
+    ("\x1a", "ffi"),
+    ("\x1b", "ft"),
+    ("\x1c", "ff"),
+    ("\x1d", "fi"),
+    ("\x1e", "fl"),
+    ("\x1f", "th"),
+    ("\x14", "fi"),
+    ("\x13", "ff"),
+    ("\x12", "fl"),
+]
+
+SIMPLE_CHAR_REPLACEMENTS: dict[str, str] = {
+    "\x91": "'",
+    "\x92": "'",
+    "\x93": '"',
+    "\x94": '"',
+    "\x96": "-",
+    "\x97": "-",
+    "\xad": "",
+    "\ufeff": "",
+}
+
+WORD_FIXES: dict[str, str] = {
+    "battletheld": "battlefield",
+    "battlethelds": "battlefields",
+    "theld": "field",
+    "thelds": "fields",
+    "thre": "fire",
+    "suftcient": "sufficient",
+    "suftciently": "sufficiently",
+    "unmodithed": "unmodified",
+    "modithed": "modified",
+    "infiicted": "inflicted",
+    "infiicting": "inflicting",
+    "diflerent": "different",
+    "afler": "after",
+    "affer": "after",
+    "suflers": "suffers",
+    "specithed": "specified",
+    "prothle": "profile",
+    "aflected": "affected",
+    "ese": "These",
+    "fte": "the",
+    "ftere": "there",
+    "infiict": "inflict",
+    "suflering": "suffering",
+    "diflerence": "difference",
+    "diflerences": "differences",
+}
+
+BULLET_PREFIX_RE = re.compile(r'^(?:v|"|•|▪|■|●|◦|\-|—)\s+')
+CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b-\x1f]")
 
 
-def extract_lines_from_selection(selection) -> list[str]:
-    text = str(selection.string() or "")
+def parse_pdf_string(text: str, start: int) -> tuple[str, int]:
+    idx = start + 1
     out: list[str] = []
-    for row in text.split("\n"):
-        line = normalize_line(row)
-        if not line:
+    depth = 1
+    while idx < len(text) and depth > 0:
+        ch = text[idx]
+        if ch == "\\":
+            idx += 1
+            if idx >= len(text):
+                break
+            esc = text[idx]
+            escaped = {
+                "n": "\n",
+                "r": "\r",
+                "t": "\t",
+                "b": "\b",
+                "f": "\f",
+                "(": "(",
+                ")": ")",
+                "\\": "\\",
+            }
+            if esc in escaped:
+                out.append(escaped[esc])
+                idx += 1
+                continue
+            if esc in "01234567":
+                octal = esc
+                idx += 1
+                for _ in range(2):
+                    if idx < len(text) and text[idx] in "01234567":
+                        octal += text[idx]
+                        idx += 1
+                    else:
+                        break
+                out.append(chr(int(octal, 8)))
+                continue
+            out.append(esc)
+            idx += 1
             continue
-        if re.fullmatch(r"\d+", line):
+        if ch == "(":
+            depth += 1
+            out.append(ch)
+            idx += 1
             continue
-        out.append(line)
+        if ch == ")":
+            depth -= 1
+            if depth == 0:
+                idx += 1
+                break
+            out.append(ch)
+            idx += 1
+            continue
+        out.append(ch)
+        idx += 1
+    return "".join(out), idx
+
+
+def tokenize_pdf_content(content: bytes):
+    text = content.decode("latin1", "ignore")
+    idx = 0
+    while idx < len(text):
+        ch = text[idx]
+        if ch.isspace():
+            idx += 1
+            continue
+        if ch == "%":
+            while idx < len(text) and text[idx] not in "\r\n":
+                idx += 1
+            continue
+        if ch == "(":
+            value, idx = parse_pdf_string(text, idx)
+            yield ("STRING", value)
+            continue
+        if ch == "[":
+            idx += 1
+            yield ("LBRACK", "[")
+            continue
+        if ch == "]":
+            idx += 1
+            yield ("RBRACK", "]")
+            continue
+        if ch == "/":
+            end = idx + 1
+            while end < len(text) and not text[end].isspace() and text[end] not in "[]()<>/%":
+                end += 1
+            yield ("NAME", text[idx + 1 : end])
+            idx = end
+            continue
+        if ch == "<" and idx + 1 < len(text) and text[idx + 1] != "<":
+            end = idx + 1
+            while end < len(text) and text[end] != ">":
+                end += 1
+            hex_data = text[idx + 1 : end]
+            try:
+                if len(hex_data) % 2:
+                    hex_data = f"{hex_data}0"
+                decoded = bytes.fromhex(hex_data).decode("latin1", "ignore")
+            except ValueError:
+                decoded = ""
+            yield ("STRING", decoded)
+            idx = end + 1
+            continue
+        if ch in "+-0123456789.":
+            end = idx + 1
+            while end < len(text) and text[end] in "0123456789.+-":
+                end += 1
+            token = text[idx:end]
+            try:
+                yield ("NUMBER", float(token))
+                idx = end
+                continue
+            except ValueError:
+                pass
+        end = idx + 1
+        while end < len(text) and not text[end].isspace() and text[end] not in "[]()<>/%":
+            end += 1
+        yield ("OP", text[idx:end])
+        idx = end
+
+
+def extract_page_content_bytes(page) -> bytes:
+    page_dict = Quartz.CGPDFPageGetDictionary(page)
+    chunks: list[bytes] = []
+
+    ok_stream, stream = Quartz.CGPDFDictionaryGetStream(page_dict, b"Contents", None)
+    if ok_stream and stream is not None:
+        data, _fmt = Quartz.CGPDFStreamCopyData(stream, None)
+        chunks.append(bytes(data))
+    else:
+        ok_array, arr = Quartz.CGPDFDictionaryGetArray(page_dict, b"Contents", None)
+        if ok_array and arr is not None:
+            count = Quartz.CGPDFArrayGetCount(arr)
+            for idx in range(count):
+                ok_item, item_stream = Quartz.CGPDFArrayGetStream(arr, idx, None)
+                if not ok_item or item_stream is None:
+                    continue
+                data, _fmt = Quartz.CGPDFStreamCopyData(item_stream, None)
+                chunks.append(bytes(data))
+
+    if not chunks:
+        return b""
+    return b"\n".join(chunks)
+
+
+def extract_page_text_items(content: bytes) -> list[tuple[float, float, str]]:
+    stack: list[tuple[str, object]] = []
+    x = 0.0
+    y = 0.0
+    out: list[tuple[float, float, str]] = []
+
+    def pop_number(default: float = 0.0) -> float:
+        if stack and stack[-1][0] == "NUMBER":
+            return float(stack.pop()[1])
+        return default
+
+    def pop_string() -> str:
+        if stack and stack[-1][0] == "STRING":
+            return str(stack.pop()[1])
+        return ""
+
+    def pop_array() -> list[tuple[str, object]]:
+        if stack and stack[-1][0] == "ARRAY":
+            return list(stack.pop()[1])  # type: ignore[arg-type]
+        return []
+
+    for kind, value in tokenize_pdf_content(content):
+        if kind in ("NUMBER", "STRING", "NAME", "ARRAY"):
+            stack.append((kind, value))
+            continue
+        if kind == "LBRACK":
+            stack.append(("ARR_START", value))
+            continue
+        if kind == "RBRACK":
+            arr: list[tuple[str, object]] = []
+            while stack and stack[-1][0] != "ARR_START":
+                arr.append(stack.pop())
+            if stack and stack[-1][0] == "ARR_START":
+                stack.pop()
+            arr.reverse()
+            stack.append(("ARRAY", arr))
+            continue
+        if kind != "OP":
+            continue
+
+        op = str(value)
+        if op == "Tm":
+            f = pop_number()
+            e = pop_number()
+            _d = pop_number()
+            _c = pop_number()
+            _b = pop_number()
+            _a = pop_number()
+            x, y = e, f
+            stack.clear()
+            continue
+        if op in ("Td", "TD"):
+            ty = pop_number()
+            tx = pop_number()
+            x += tx
+            y += ty
+            stack.clear()
+            continue
+        if op == "T*":
+            y -= 12.0
+            stack.clear()
+            continue
+        if op == "Tj":
+            text = pop_string().strip()
+            if text:
+                out.append((y, x, text))
+            stack.clear()
+            continue
+        if op == "TJ":
+            arr = pop_array()
+            text = "".join(str(v) for k, v in arr if k == "STRING").strip()
+            if text:
+                out.append((y, x, text))
+            stack.clear()
+            continue
+        if op == "'":
+            text = pop_string().strip()
+            y -= 12.0
+            if text:
+                out.append((y, x, text))
+            stack.clear()
+            continue
+        if op == '"':
+            text = pop_string().strip()
+            _char_space = pop_number()
+            _word_space = pop_number()
+            y -= 12.0
+            if text:
+                out.append((y, x, text))
+            stack.clear()
+            continue
+        if op in {"BT", "ET", "EMC"}:
+            stack.clear()
+            continue
     return out
 
 
+def normalize_line(line: str) -> str:
+    if not line:
+        return ""
+
+    control_count = len(CONTROL_CHAR_RE.findall(line))
+    if control_count > MAX_CONTROL_CHARS_PER_LINE:
+        return ""
+
+    text = line.replace("\u00a0", " ")
+    for src, dst in LIGATURE_REPLACEMENTS:
+        text = text.replace(src, dst)
+    for src, dst in SIMPLE_CHAR_REPLACEMENTS.items():
+        text = text.replace(src, dst)
+    text = CONTROL_CHAR_RE.sub(" ", text)
+    for wrong, fixed in WORD_FIXES.items():
+        text = re.sub(rf"\b{wrong}\b", fixed, text, flags=re.IGNORECASE)
+    text = re.sub(r"\band\s+\d+\s+you\b", "and you", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bfirst you can\s+\d+\s+move\b", "First you can move", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+    return text
+
+
+def page_items_to_lines(items: list[tuple[float, float, str]]) -> list[tuple[float, float, str]]:
+    if not items:
+        return []
+
+    rows: list[dict[str, object]] = []
+    for y, x, text in sorted(items, key=lambda item: (-item[0], item[1])):
+        merged = False
+        for row in rows:
+            if abs(float(row["y"]) - y) <= 0.35:
+                row["items"].append((x, text))  # type: ignore[index]
+                merged = True
+                break
+        if not merged:
+            rows.append({"y": y, "items": [(x, text)]})
+
+    entries: list[tuple[float, float, str]] = []
+    for row in rows:
+        y = float(row["y"])
+        row_items = sorted(row["items"], key=lambda item: item[0])  # type: ignore[index]
+        if not row_items:
+            continue
+
+        chunks: list[list[tuple[float, str]]] = []
+        current: list[tuple[float, str]] = [row_items[0]]
+        for x, text in row_items[1:]:
+            if x - current[-1][0] > COLUMN_GAP_THRESHOLD:
+                chunks.append(current)
+                current = [(x, text)]
+            else:
+                current.append((x, text))
+        chunks.append(current)
+
+        for chunk in chunks:
+            raw_line = " ".join(text for _, text in chunk)
+            text = normalize_line(raw_line)
+            if not text:
+                continue
+            entries.append((y, chunk[0][0], text))
+
+    left = [entry for entry in entries if entry[1] < COLUMN_SPLIT_X]
+    right = [entry for entry in entries if entry[1] >= COLUMN_SPLIT_X]
+    if len(left) >= MIN_COLUMN_LINE_COUNT and len(right) >= MIN_COLUMN_LINE_COUNT:
+        ordered = sorted(left, key=lambda entry: -entry[0]) + sorted(right, key=lambda entry: -entry[0])
+    else:
+        ordered = sorted(entries, key=lambda entry: (-entry[0], entry[1]))
+    return ordered
+
+
 def is_heading(text: str) -> bool:
-    if not text or len(text) < 3 or len(text) > 80:
+    if not text or len(text) < 3 or len(text) > 90:
         return False
     if text in SKIP_HEADINGS:
         return False
     if re.fullmatch(r"\d+", text):
         return False
+    if is_bullet(text):
+        return False
+    if re.match(r"^\d+\s+[A-Z]", text):
+        # Skip decorative step labels like "1 COMMAND PHASE" from early pages.
+        return False
     if not HEADING_RE.match(text):
         return False
     if not re.search(r"[A-Z]", text):
-        return False
-    if text.startswith(("■", "●", "◦", "-", "•")):
         return False
     return True
 
@@ -340,11 +698,11 @@ def clean_heading(text: str) -> str:
 
 
 def is_bullet(text: str) -> bool:
-    return text.startswith(("■", "●", "◦", "-", "•"))
+    return bool(BULLET_PREFIX_RE.match(text))
 
 
 def clean_bullet(text: str) -> str:
-    return re.sub(r"^[■●◦\-•\s]+", "", text).strip()
+    return BULLET_PREFIX_RE.sub("", text).strip()
 
 
 def normalize_token(text: str) -> str:
@@ -371,7 +729,10 @@ def should_join(prev: str, curr: str) -> bool:
 
 def clean_page_lines(lines: list[str], page_number: int) -> list[str]:
     out: list[str] = []
-    for idx, line in enumerate(lines):
+    for idx, raw_line in enumerate(lines):
+        line = normalize_line(raw_line)
+        if not line:
+            continue
         if FOOTER_RE.match(line):
             continue
         if line.upper().startswith("CORE RULES |"):
@@ -386,14 +747,17 @@ def clean_page_lines(lines: list[str], page_number: int) -> list[str]:
 
 def extract_pages(pdf, *, skip_first_pages: int = 2) -> list[dict[str, object]]:
     pages: list[dict[str, object]] = []
-    for i in range(pdf.pageCount()):
-        if i < max(0, skip_first_pages):
+    page_count = int(Quartz.CGPDFDocumentGetNumberOfPages(pdf))
+    for page_number in range(1, page_count + 1):
+        if page_number <= max(0, skip_first_pages):
             continue
-        page = pdf.pageAtIndex_(i)
-        page_rect = page.boundsForBox_(Quartz.kPDFDisplayBoxMediaBox)
-        full_sel = page.selectionForRect_(page_rect)
-        full_lines = extract_lines_from_selection(full_sel) if full_sel else []
-        page_number = i + 1
+        page = Quartz.CGPDFDocumentGetPage(pdf, page_number)
+        if page is None:
+            continue
+        content = extract_page_content_bytes(page)
+        items = extract_page_text_items(content)
+        line_entries = page_items_to_lines(items)
+        full_lines = [entry[2] for entry in line_entries]
         page_lines = clean_page_lines(full_lines, page_number)
         pages.append(
             {
@@ -490,6 +854,389 @@ def build_blocks_from_lines(lines: list[str]) -> list[dict[str, str]]:
 
     flush_paragraph()
     return blocks
+
+
+def strip_numeric_prefix(token: str) -> str:
+    return re.sub(r"^\d+", "", token or "")
+
+
+def heading_matches_reference_title(line: str, title: str) -> bool:
+    line_key = normalize_token(line)
+    title_key = normalize_token(title)
+    if not line_key or not title_key:
+        return False
+    if line_key == title_key:
+        return True
+
+    line_no_num = strip_numeric_prefix(line_key)
+    title_no_num = strip_numeric_prefix(title_key)
+    if not line_no_num or line_no_num != title_no_num:
+        return False
+
+    # Avoid matching decorative labels like "1 COMMAND PHASE" to "COMMAND PHASE".
+    if re.match(r"^\d", line.strip()) and not re.match(r"^\d", title.strip()):
+        return False
+    return True
+
+
+def load_reference_section_titles(path: Path) -> list[str]:
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    sections = payload.get("sections")
+    if not isinstance(sections, list):
+        return []
+    titles: list[str] = []
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+        title = str(section.get("title") or "").strip()
+        if title:
+            titles.append(title)
+    return titles
+
+
+def build_sections_from_reference_titles(lines: list[str], reference_titles: list[str]) -> list[dict[str, object]]:
+    if not reference_titles:
+        return build_sections(lines)
+
+    anchors: list[tuple[str, int]] = []
+    cursor = 0
+    for title in reference_titles:
+        normalized_title = str(title).strip()
+        if not normalized_title:
+            continue
+        if canonical_key(normalized_title) == "INTRODUCTION":
+            continue
+
+        match_index = None
+        for idx in range(cursor, len(lines)):
+            if heading_matches_reference_title(lines[idx], normalized_title):
+                match_index = idx
+                break
+        if match_index is None:
+            continue
+        anchors.append((normalized_title, match_index))
+        cursor = match_index + 1
+
+    if not anchors:
+        return build_sections(lines)
+
+    sections: list[dict[str, object]] = []
+    intro_title = str(reference_titles[0] if reference_titles else "Introduction").strip() or "Introduction"
+
+    intro_lines = lines[: anchors[0][1]]
+    intro_blocks = build_blocks_from_lines(intro_lines)
+    if intro_blocks:
+        sections.append({"title": intro_title, "blocks": intro_blocks})
+
+    for index, (title, start) in enumerate(anchors):
+        end = anchors[index + 1][1] if index + 1 < len(anchors) else len(lines)
+        section_lines = list(lines[start + 1 : end])
+        while section_lines and heading_matches_reference_title(section_lines[0], title):
+            section_lines.pop(0)
+        blocks = build_blocks_from_lines(section_lines)
+        if blocks:
+            sections.append({"title": title, "blocks": blocks})
+
+    return sections
+
+
+def attach_summary_points(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    for section in sections:
+        existing_points = section.get("summary_points")
+        if isinstance(existing_points, list) and existing_points:
+            cleaned = [str(point).strip() for point in existing_points if str(point).strip()]
+            if cleaned:
+                section["summary_points"] = cleaned
+                continue
+
+        blocks = section.get("blocks")
+        if not isinstance(blocks, list):
+            continue
+        bullets = [str(block.get("text") or "").strip() for block in blocks if isinstance(block, dict) and block.get("type") == "bullet"]
+        bullets = [point for point in bullets if point]
+        paragraphs = [block for block in blocks if isinstance(block, dict) and block.get("type") != "bullet" and str(block.get("text") or "").strip()]
+        if bullets and paragraphs:
+            section["summary_points"] = bullets
+    return sections
+
+
+def clean_sections_content(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    phase_titles = {
+        "COMMAND PHASE",
+        "MOVEMENT PHASE",
+        "SHOOTING PHASE",
+        "CHARGE PHASE",
+        "FIGHT PHASE",
+    }
+    phase_overview_lines = {
+        "Both players muster strategic resources, then you test your units' battle readiness.",
+        "Your units manoeuvre across the battlefield and reinforcements enter the fray.",
+        "Your units fire their ranged weapons at the foe.",
+        "Your units charge forward to battle at close quarters.",
+        "Both players' units pile in and attack with melee weapons.",
+    }
+    continuation_endings = {
+        "its",
+        "their",
+        "the",
+        "a",
+        "an",
+        "and",
+        "or",
+        "of",
+        "to",
+        "with",
+        "for",
+        "from",
+        "in",
+        "on",
+        "by",
+        "at",
+        "up",
+        "core",
+        "that",
+        "this",
+        "those",
+        "these",
+        "same",
+    }
+
+    def is_noisy_paragraph(text: str) -> bool:
+        stripped = text.strip()
+        if not stripped:
+            return True
+
+        words = stripped.split()
+        letters = sum(1 for ch in stripped if ch.isalpha())
+        digits = sum(1 for ch in stripped if ch.isdigit())
+
+        # Short all-caps labels from diagrams/tables.
+        if re.fullmatch(r"[A-Z0-9][A-Z0-9 '\-:()./]{2,80}", stripped) and len(words) <= 6:
+            return True
+
+        # Measurement-only snippets like "B 6\"" or "3\" 8\"".
+        if re.fullmatch(r"[A-Z]?\s*\d+\"(?:\s+\d+\")*", stripped):
+            return True
+
+        # Predominantly symbolic/number snippets are not readable prose.
+        if len(stripped) <= 24 and letters < 6 and digits >= 1:
+            return True
+        if letters and len(stripped) >= 10 and (letters / len(stripped)) < 0.42 and digits >= 2:
+            return True
+
+        return False
+
+    all_title_keys = {canonical_key(str(section.get("title") or "")) for section in sections if str(section.get("title") or "").strip()}
+    all_title_keys = {key for key in all_title_keys if key}
+
+    for section in sections:
+        blocks = section.get("blocks")
+        if not isinstance(blocks, list):
+            continue
+
+        cleaned_blocks: list[dict[str, object]] = []
+        for block in blocks:
+            if not isinstance(block, dict):
+                continue
+            text = str(block.get("text") or "").strip()
+            if not text:
+                continue
+            text = normalize_line(text)
+            text = re.sub(r"^e\s+", "The ", text)
+            text = re.sub(
+                r"(^|[.!?]\s+)the\b",
+                lambda match: f"{match.group(1)}The",
+                text,
+                flags=re.IGNORECASE,
+            )
+            if not text:
+                continue
+            if block.get("type") == "paragraph" and re.fullmatch(r"\d+", text):
+                continue
+            if block.get("type") == "paragraph" and re.fullmatch(r"[A-Z]", text):
+                continue
+            if block.get("type") == "paragraph" and re.fullmatch(r"Duration Up to \d+ hours", text):
+                continue
+            cleaned_blocks.append({"type": str(block.get("type") or "paragraph"), "text": text})
+
+        section_key = canonical_key(str(section.get("title") or ""))
+        filtered_blocks: list[dict[str, object]] = []
+        for block in cleaned_blocks:
+            if block.get("type") != "paragraph":
+                filtered_blocks.append(block)
+                continue
+            text = str(block.get("text") or "").strip()
+            if not text:
+                continue
+            if is_noisy_paragraph(text):
+                continue
+            text_key = canonical_key(text)
+
+            # Remove bleed-through headings from neighboring sections.
+            if text_key and text_key in all_title_keys and text_key != section_key:
+                continue
+            if text_key and text_key == section_key:
+                continue
+
+            # Remove short all-caps diagram labels (sequence boxes, map labels).
+            if re.fullmatch(r"[A-Z0-9][A-Z0-9 '\-]{2,48}", text):
+                words = text.split()
+                if len(words) <= 4:
+                    continue
+
+            if section_key in phase_titles and "battle round has been completed and the next one begins" in text.lower():
+                continue
+
+            filtered_blocks.append({"type": "paragraph", "text": text})
+
+        cleaned_blocks = filtered_blocks
+
+        if section_key in phase_titles and cleaned_blocks:
+            duplicate_title_index = next(
+                (
+                    idx
+                    for idx, block in enumerate(cleaned_blocks)
+                    if block.get("type") == "paragraph" and canonical_key(str(block.get("text") or "")) == section_key
+                ),
+                None,
+            )
+            if duplicate_title_index is not None and duplicate_title_index > 0:
+                cleaned_blocks = cleaned_blocks[duplicate_title_index + 1 :]
+
+            other_phase_titles = phase_titles - {section_key}
+            cleaned_blocks = [
+                block
+                for block in cleaned_blocks
+                if not (
+                    block.get("type") == "paragraph"
+                    and canonical_key(str(block.get("text") or "")) in other_phase_titles
+                )
+            ]
+            cleaned_blocks = [
+                block
+                for block in cleaned_blocks
+                if not (
+                    block.get("type") == "paragraph"
+                    and str(block.get("text") or "").strip() in phase_overview_lines
+                )
+            ]
+
+        merged_blocks: list[dict[str, object]] = []
+        for block in cleaned_blocks:
+            if block.get("type") != "paragraph":
+                merged_blocks.append(block)
+                continue
+            text = str(block.get("text") or "").strip()
+            if re.match(r"^\d+\s+[a-z]", text):
+                text = re.sub(r"^\d+\s+", "", text)
+            text = re.sub(r"\band\s+\d+\s+you\b", "and you", text, flags=re.IGNORECASE)
+            if not text:
+                continue
+
+            if merged_blocks and merged_blocks[-1].get("type") == "bullet":
+                prev_bullet = str(merged_blocks[-1].get("text") or "").strip()
+                prev_bullet_last = re.findall(r"[A-Za-z']+", prev_bullet.lower())
+                prev_bullet_last = prev_bullet_last[-1] if prev_bullet_last else ""
+                join_bullet = (
+                    prev_bullet
+                    and not prev_bullet.endswith((".", "!", "?", ":", ";"))
+                    and (
+                        bool(re.match(r"^[a-z]", text))
+                        or bool(re.match(r"^\d+\s+[a-z]", text))
+                        or (prev_bullet_last in continuation_endings)
+                        or len(prev_bullet.split()) <= 10
+                    )
+                )
+                if join_bullet:
+                    merged_blocks[-1]["text"] = f"{prev_bullet} {re.sub(r'^\d+\s+', '', text)}".strip()
+                    continue
+
+            if merged_blocks and merged_blocks[-1].get("type") == "paragraph":
+                prev = str(merged_blocks[-1].get("text") or "").strip()
+                prev_last_word = re.findall(r"[A-Za-z']+", prev.lower())
+                prev_last_word = prev_last_word[-1] if prev_last_word else ""
+                join_by_ending = bool(prev_last_word and prev_last_word in continuation_endings)
+                join_short_line = bool(prev and not prev.endswith((".", "!", "?", ":", ";")) and len(prev.split()) <= 10)
+                if prev and (
+                    should_join(prev, text)
+                    or re.match(r"^[a-z]", text)
+                    or re.match(r"^\d+\s+[a-z]", text)
+                    or join_by_ending
+                    or join_short_line
+                ):
+                    merged_blocks[-1]["text"] = f"{prev} {re.sub(r'^\d+\s+', '', text)}".strip()
+                    continue
+            merged_blocks.append({"type": "paragraph", "text": text})
+
+        section["blocks"] = merged_blocks
+
+    return sections
+
+
+def rebalance_attack_sequence_sections(sections: list[dict[str, object]]) -> list[dict[str, object]]:
+    section_by_title = {str(section.get("title") or ""): section for section in sections}
+    hit = section_by_title.get("1. Hit Roll")
+    wound = section_by_title.get("2. Wound Roll")
+    allocate = section_by_title.get("3. Allocate Attack")
+    saving = section_by_title.get("4. Saving Throw")
+    if not hit or not wound or not allocate or not saving:
+        return sections
+    hit_blocks = list(hit.get("blocks") or [])
+    wound_blocks = list(wound.get("blocks") or [])
+    allocate_blocks = list(allocate.get("blocks") or [])
+    if sum(len(blocks) for blocks in (hit_blocks, wound_blocks, allocate_blocks)) >= 8:
+        return sections
+
+    source_blocks = list(saving.get("blocks") or [])
+    if len(source_blocks) < 12:
+        return sections
+
+    buckets: dict[str, list[dict[str, str]]] = {
+        "hit": [],
+        "wound": [],
+        "allocate": [],
+        "saving": [],
+    }
+    state = "hit"
+
+    for raw_block in source_blocks:
+        if not isinstance(raw_block, dict):
+            continue
+        block_type = str(raw_block.get("type") or "paragraph")
+        text = normalize_line(str(raw_block.get("text") or ""))
+        if not text:
+            continue
+        upper = text.upper()
+        if "EACH TIME AN ATTACK SCORES A HIT AGAINST A TARGET UNIT" in upper:
+            state = "wound"
+        elif upper.startswith("IF AN ATTACK SUCCESSFULLY WOUNDS THE TARGET UNIT"):
+            state = "allocate"
+        elif "SAVING THROW" in upper and ("PLAYER CONTROLLING THE TARGET UNIT" in upper or upper.startswith("4. SAVING THROW")):
+            state = "saving"
+            text = re.sub(r"^\s*4\.\s*SAVING THROW\s*", "", text, flags=re.IGNORECASE).strip()
+
+        if not text or text == "+":
+            continue
+
+        if state == "wound" and text.startswith("+ "):
+            continue
+
+        buckets[state].append({"type": block_type, "text": text})
+
+    # Keep any fallback content if split failed, to avoid data loss.
+    if not buckets["saving"]:
+        return sections
+
+    hit["blocks"] = buckets["hit"] or hit.get("blocks") or []
+    wound["blocks"] = buckets["wound"] or wound.get("blocks") or []
+    allocate["blocks"] = buckets["allocate"] or allocate.get("blocks") or []
+    saving["blocks"] = buckets["saving"]
+    return sections
 
 
 def extract_tooltip_sections(lines: list[str]) -> list[dict[str, object]]:
@@ -841,12 +1588,22 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Import Core Rules from PDF into core_rules.json")
     parser.add_argument("--pdf", required=True, help="Path to Core Rules PDF file")
     parser.add_argument("--out", default="docs/data/core_rules.json", help="Output JSON path")
+    parser.add_argument(
+        "--reference-sections",
+        default="",
+        help="Optional JSON file to reuse section title order (defaults to --out if it exists)",
+    )
     parser.add_argument("--source-url", default="", help="Public URL for this PDF source (optional)")
     parser.add_argument(
         "--skip-first-pages",
         type=int,
         default=2,
         help="Skip this number of first PDF pages (default: 2, cover pages)",
+    )
+    parser.add_argument(
+        "--include-pages",
+        action="store_true",
+        help="Include extracted page lines in output payload (debug / diagnostics)",
     )
     parser.add_argument(
         "--include-source-file",
@@ -861,10 +1618,23 @@ def main() -> int:
     pdf = get_pdf(pdf_path)
     pages = extract_pages(pdf, skip_first_pages=args.skip_first_pages)
     lines = flatten_pages_lines(pages)
-    sections = build_sections(lines)
+    reference_path: Path | None = None
+    if args.reference_sections:
+        reference_path = Path(args.reference_sections)
+    else:
+        default_reference = Path("docs/data/core_rules.json")
+        if default_reference.exists():
+            reference_path = default_reference
+        elif out_path.exists():
+            reference_path = out_path
+    reference_titles = load_reference_section_titles(reference_path) if reference_path else []
+    sections = build_sections_from_reference_titles(lines, reference_titles) if reference_titles else build_sections(lines)
     tooltip_sections = extract_tooltip_sections(lines)
     sections = merge_sections(sections, tooltip_sections)
     sections = apply_section_overrides(sections)
+    sections = rebalance_attack_sequence_sections(sections)
+    sections = clean_sections_content(sections)
+    sections = attach_summary_points(sections)
     full_text = "\n".join(" ".join(page.get("lines", [])) for page in pages)
     tooltip_rules = build_tooltip_rules_from_full_text(full_text)
     if not tooltip_rules:
@@ -879,10 +1649,11 @@ def main() -> int:
         "updated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "page_title": "Core Rules",
         "format": "digital_pdf",
-        "pages": pages,
         "sections": sections,
         "tooltip_rules": tooltip_rules,
     }
+    if args.include_pages:
+        payload["pages"] = pages
     if args.include_source_file:
         payload["source_file"] = str(pdf_path)
 
