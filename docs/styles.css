@@ -765,12 +765,28 @@ body {
   grid-template-columns: 320px 1fr;
 }
 
+.rules-workspace.pdf-mode {
+  grid-template-columns: 1fr;
+}
+
+.rules-workspace.pdf-mode .sidebar {
+  display: none;
+}
+
 .rules-article {
   overflow: hidden;
 }
 
 .rules-content {
   padding: 0.9rem;
+}
+
+.rules-pdf-frame {
+  width: 100%;
+  min-height: 900px;
+  height: calc(100vh - 220px);
+  border: 0;
+  background: #0b1016;
 }
 
 .rules-toolbar {
@@ -1002,6 +1018,11 @@ body {
 
   .rules-toolbar {
     grid-template-columns: 1fr;
+  }
+
+  .rules-pdf-frame {
+    min-height: 78vh;
+    height: 78vh;
   }
 }
 

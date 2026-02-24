@@ -5,9 +5,12 @@ const subtitleEl = document.querySelector("#rules-subtitle");
 const contentEl = document.querySelector("#rules-content");
 const themeToggleEl = document.querySelector("#theme-toggle");
 const sourceSelectEl = document.querySelector("#rules-source-select");
+const workspaceEl = document.querySelector(".rules-workspace");
 
 let payloadBySource = new Map();
 let currentSourceKey = "";
+let hasOriginalPdf = false;
+const ORIGINAL_PDF_URL = "./data/core_rules_full.pdf";
 
 function initThemeToggle() {
   if (!themeToggleEl) return;
@@ -77,12 +80,26 @@ function renderMeta() {
     return;
   }
   const count = payload.sections?.length || 0;
+  if (currentSourceKey === "pdf_original") {
+    metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Core Rules PDF")}
+      <br><strong>Layout:</strong> Original PDF document
+      <br><strong>Format:</strong> Embedded viewer`;
+    return;
+  }
   metaEl.innerHTML = `<strong>Source:</strong> ${escapeHtml(payload.source || "Wahapedia Core Rules")}
     <br><strong>Sections:</strong> ${count}
     <br><strong>Updated:</strong> ${escapeHtml(formatUtc(payload.updated_at_utc))}`;
 }
 
 function renderSectionsNav() {
+  if (currentSourceKey === "pdf_original") {
+    sectionsEl.innerHTML = `
+      <a class="unit-btn" href="${ORIGINAL_PDF_URL}" target="_blank" rel="noopener noreferrer">
+        Open PDF in new tab
+      </a>
+    `;
+    return;
+  }
   const payload = getCurrentPayload();
   if (!payload) {
     sectionsEl.innerHTML = "";
@@ -107,6 +124,19 @@ function renderSectionsNav() {
 }
 
 function renderAllSections() {
+  if (currentSourceKey === "pdf_original") {
+    titleEl.textContent = "Core Rules (Original PDF)";
+    subtitleEl.textContent = "Official PDF layout";
+    contentEl.innerHTML = `
+      <iframe
+        class="rules-pdf-frame"
+        src="${ORIGINAL_PDF_URL}#view=FitH"
+        title="Warhammer 40,000 Core Rules PDF"
+      ></iframe>
+    `;
+    return;
+  }
+
   const payload = getCurrentPayload();
   if (!payload) {
     titleEl.textContent = "Core Rules";
@@ -152,6 +182,9 @@ function renderAllSections() {
 }
 
 function renderCurrentSource() {
+  if (workspaceEl) {
+    workspaceEl.classList.toggle("pdf-mode", currentSourceKey === "pdf_original");
+  }
   renderMeta();
   renderSectionsNav();
   renderAllSections();
@@ -160,8 +193,14 @@ function renderCurrentSource() {
 function populateSourceSelect() {
   if (!sourceSelectEl) return;
   const options = [...payloadBySource.entries()].map(([key, payload]) => {
-    const label = key === "pdf" ? "Core Rules (PDF)" : "Core Rules (Wahapedia)";
+    let label = "Core Rules";
+    if (key === "pdf_original") label = "Core Rules (PDF Original)";
+    else if (key === "pdf") label = "Core Rules (PDF Parsed)";
+    else if (key === "wahapedia") label = "Core Rules (Wahapedia)";
     const count = payload?.sections?.length || 0;
+    if (key === "pdf_original") {
+      return `<option value="${escapeHtml(key)}">${escapeHtml(label)}</option>`;
+    }
     return `<option value="${escapeHtml(key)}">${escapeHtml(label)} - ${count} sections</option>`;
   });
   sourceSelectEl.innerHTML = options.join("");
@@ -174,8 +213,27 @@ async function loadRulesPayload(fileName) {
   return response.json();
 }
 
+async function hasPdfDocument() {
+  try {
+    const response = await fetch(ORIGINAL_PDF_URL, { method: "HEAD", cache: "no-store" });
+    return response.ok;
+  } catch {
+    return false;
+  }
+}
+
 async function init() {
   payloadBySource = new Map();
+  hasOriginalPdf = await hasPdfDocument();
+
+  if (hasOriginalPdf) {
+    payloadBySource.set("pdf_original", {
+      source: "Warhammer 40,000 Core Rules PDF",
+      page_title: "Core Rules (Original PDF)",
+      source_url: ORIGINAL_PDF_URL,
+      sections: [],
+    });
+  }
 
   const wahapediaPayload = await loadRulesPayload("core_rules.json");
   if (wahapediaPayload) payloadBySource.set("wahapedia", wahapediaPayload);
@@ -187,7 +245,9 @@ async function init() {
     throw new Error("Cannot load core rules sources.");
   }
 
-  currentSourceKey = payloadBySource.has("pdf") ? "pdf" : payloadBySource.keys().next().value;
+  if (payloadBySource.has("pdf_original")) currentSourceKey = "pdf_original";
+  else if (payloadBySource.has("pdf")) currentSourceKey = "pdf";
+  else currentSourceKey = payloadBySource.keys().next().value;
   populateSourceSelect();
   renderCurrentSource();
 
