@@ -6977,7 +6977,7 @@
 000004186|2|000008340||||Core||
 000004186|3|000008369||||Faction||
 000004186|4|||Protective Disciples|While this model is within 3" of one or more other friendly Destroyer Cult units, this model has the Lone Operative ability.|Datasheet||
-000004186|5|||Infectious Murder-madness (Aura)|While a friendly <span class="kwb">NECRONS</span> unit (excluding Titanic units) is within 6" of this model, each time a model in that unit makes an attack, if that model has the Destroyer Cult keyword or that enemy unit is the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.|Datasheet||
+000004186|5|||Infectious Murder-madness (Aura)|While a friendly <span class="kwb">NECRONS</span> unit (excluding Monster and Titanic units) is within 6" of this model, each time a model in that unit makes an attack, if that model has the Destroyer Cult keyword or that enemy unit is the closest eligible target, that attack has the [SUSTAINED HITS 1] ability.|Datasheet||
 000004186|6|||Prophet of Destruction|Each time this model destroys an enemy unit, select one other friendly Destroyer Cult unit within 9" of it. Until the end of the phase, each time a model in that unit makes an attack, re-roll a Wound roll of 1.|Datasheet||
 000004186|7|||Nullstone Field Generator (Aura)|While a friendly <span class="kwb">NECRONS</span> unit is within 6" of the bearer, models in that unit have the Feel No Pain 5+ ability against mortal wounds and Psychic Attacks.|Wargear||
 000004187|1|000008338||||Core|5+|
@@ -7065,3 +7065,7 @@
 000004203|5|||Neocapacitor Shields|At the start of your opponent’s Charge phase, you can select one enemy unit (excluding <span class="kwb">MONSTER</span> and <span class="kwb">VEHICLE</span> units) within 12" of this unit. That unit must take a Battle-shock test and, until the end of the turn, subtract 1 from Charge rolls made for that unit.|Datasheet||
 000004203|6|||Retro-thrusters|At the end of the Fight phase, this unit can either make a Normal move of up to 6" or a Fall Back move.|Datasheet||
 000004203|7|||MV15 Gun Drone|The bearer is equipped with 1 twin pulse blaster.|Wargear||
+000004204|1|000008346||||Core||
+000004204|2|000008350||||Faction||
+000004204|3|||Master of Rites|In your Command phase, select one of the following to apply to this model’s unit until the end of the turn:<br><ul><li>This model’s unit is eligible to shoot in a turn in which it Advanced.</li><li>This model’s unit is eligible to declare a charge in a turn in it which it Advanced.</li><li>This model’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</li></ul>|Datasheet||
+000004204|4|||Unrelenting and Uncompromising|While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll.|Datasheet||
