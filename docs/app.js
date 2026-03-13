@@ -440,6 +440,12 @@ function resolveUnitImage(unit) {
   return unitImageEntriesById.get(String(unit.id || "").trim()) || unitImageEntriesByKey.get(unitLookupKey(unit)) || null;
 }
 
+function buildUnitImageSearchUrl(unit) {
+  const unitName = String(unit?.name || "").trim();
+  if (!unitName) return "";
+  return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(`warhammer.com ${unitName}`)}`;
+}
+
 function normalizeRuleName(text) {
   return normalized(String(text || "").replace(/\([^)]*\)/g, " ").replace(/\s+/g, " ").trim());
 }
@@ -879,22 +885,45 @@ function renderStatline(unit) {
 
 function setUnitPhotoButton(unit) {
   if (!unitPhotoBtnEl) return;
-  const imageEntry = resolveUnitImage(unit);
-  if (!imageEntry) {
+  if (!unit) {
     unitPhotoBtnEl.hidden = true;
     unitPhotoBtnEl.title = "";
     unitPhotoBtnEl.dataset.imageUrl = "";
     unitPhotoBtnEl.dataset.imagePageUrl = "";
+    unitPhotoBtnEl.dataset.imageSearchUrl = "";
     unitPhotoBtnEl.dataset.imageTitle = "";
+    unitPhotoBtnEl.dataset.hasPreview = "false";
     if (imagePreviewAnchorEl === unitPhotoBtnEl) hideImagePreview();
     return;
   }
 
+  const imageEntry = resolveUnitImage(unit);
+  const searchUrl = buildUnitImageSearchUrl(unit);
   unitPhotoBtnEl.hidden = false;
-  unitPhotoBtnEl.title = "Preview official unit image";
+  unitPhotoBtnEl.dataset.imageSearchUrl = searchUrl;
+  unitPhotoBtnEl.dataset.imageTitle = String(unit.name || "Unit image");
+
+  if (!imageEntry) {
+    unitPhotoBtnEl.title = "Open unit image search";
+    unitPhotoBtnEl.dataset.imageUrl = "";
+    unitPhotoBtnEl.dataset.imagePageUrl = searchUrl;
+    unitPhotoBtnEl.dataset.hasPreview = "false";
+    if (imagePreviewAnchorEl === unitPhotoBtnEl) hideImagePreview();
+    return;
+  }
+
+  unitPhotoBtnEl.title = "Preview unit image";
   unitPhotoBtnEl.dataset.imageUrl = String(imageEntry.local_path || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imagePageUrl = String(imageEntry.source_page_url || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imageTitle = String(imageEntry.unit_name || unit.name || "Unit image");
+  unitPhotoBtnEl.dataset.hasPreview = "true";
+}
+
+function openUnitImageSearch(target) {
+  const searchUrl = String(target?.dataset?.imageSearchUrl || target?.dataset?.imagePageUrl || "").trim();
+  if (!searchUrl) return false;
+  window.open(searchUrl, "_blank", "noopener,noreferrer");
+  return true;
 }
 
 function renderUnit(unit) {
@@ -1215,6 +1244,11 @@ function initImagePreviewHandlers() {
   unitPhotoBtnEl.addEventListener("click", (event) => {
     event.preventDefault();
     if (unitPhotoBtnEl.hidden) return;
+    if (!unitPhotoBtnEl.dataset.imageUrl) {
+      hideImagePreview();
+      openUnitImageSearch(unitPhotoBtnEl);
+      return;
+    }
     if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
       hideImagePreview();
       return;
@@ -1227,6 +1261,11 @@ function initImagePreviewHandlers() {
     (event) => {
       event.preventDefault();
       if (unitPhotoBtnEl.hidden) return;
+      if (!unitPhotoBtnEl.dataset.imageUrl) {
+        hideImagePreview();
+        openUnitImageSearch(unitPhotoBtnEl);
+        return;
+      }
       if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
         hideImagePreview();
         return;

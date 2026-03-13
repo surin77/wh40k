@@ -7,6 +7,7 @@ import html
 import json
 import mimetypes
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -15,8 +16,9 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USER_AGENT = "wh40k-unit-image-sync/1.0 (+https://github.com/surin77/wh40k)"
-DDG_HTML_SEARCH = "https://html.duckduckgo.com/html/?q={query}"
-BING_SEARCH = "https://www.bing.com/search?q={query}"
+GOOGLE_HTML_USER_AGENT = "Mozilla/5.0"
+GOOGLE_IMAGE_SEARCH = "https://www.google.com/search?tbm=isch&q={query}"
+RESOLVER_NAME = "google_images_warhammer_query_v2"
 MIME_TO_EXT = {
     "image/jpeg": ".jpg",
     "image/jpg": ".jpg",
@@ -25,6 +27,10 @@ MIME_TO_EXT = {
     "image/gif": ".gif",
     "image/avif": ".avif",
 }
+GOOGLE_IMAGE_RESULT_RE = re.compile(
+    r'<a href="(/url\?q=[^"]+)".*?<img class="DS1iW" alt="" src="([^"]+)".*?<span class="fYyStc">(.*?)</span>.*?<span class="fYyStc">(.*?)</span>',
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 def utcnow_iso() -> str:
@@ -84,13 +90,15 @@ def fetch_text(url: str, timeout: int) -> str:
 
 
 def fetch_bytes(url: str, timeout: int) -> tuple[bytes, str]:
+    host = urllib.parse.urlparse(url).netloc.lower()
+    referer = "https://www.google.com/" if host.endswith("gstatic.com") or host.endswith("googleusercontent.com") else "https://www.warhammer.com/"
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": USER_AGENT,
+            "User-Agent": GOOGLE_HTML_USER_AGENT if host.endswith("gstatic.com") or host.endswith("googleusercontent.com") else USER_AGENT,
             "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
-            "Referer": "https://www.warhammer.com/",
+            "Referer": referer,
         },
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
@@ -109,6 +117,10 @@ def decode_search_href(href: str) -> str:
         decoded = f"https:{decoded}"
 
     parsed = urllib.parse.urlparse(decoded)
+    if parsed.path == "/url":
+        target = urllib.parse.parse_qs(parsed.query).get("q", [""])[0]
+        return urllib.parse.unquote(target)
+
     if "duckduckgo.com" in parsed.netloc and parsed.path.startswith("/l/"):
         target = urllib.parse.parse_qs(parsed.query).get("uddg", [""])[0]
         return urllib.parse.unquote(target)
@@ -130,40 +142,55 @@ def is_official_result(url: str) -> bool:
     return host == "warhammer.com" or host.endswith(".warhammer.com")
 
 
-def parse_ddg_results(page_html: str) -> list[dict[str, str]]:
-    results: list[dict[str, str]] = []
-    pattern = re.compile(
-        r'<a[^>]+class="[^"]*result__a[^"]*"[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
-        re.IGNORECASE | re.DOTALL,
+def fetch_google_image_search_html(query: str, timeout: int) -> str:
+    url = GOOGLE_IMAGE_SEARCH.format(query=urllib.parse.quote_plus(query))
+    command = ["curl", "-A", GOOGLE_HTML_USER_AGENT, "-L", "-sS", "--max-time", str(max(5, timeout)), url]
+    completed = subprocess.run(
+        command,
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=max(5, timeout) + 2,
     )
-    for raw_href, raw_title in pattern.findall(page_html):
-        url = decode_search_href(raw_href)
-        if not is_official_result(url):
-            continue
-        results.append({"url": url, "title": strip_tags(raw_title), "engine": "duckduckgo"})
-    return results
+    return completed.stdout
 
 
-def parse_bing_results(page_html: str) -> list[dict[str, str]]:
+def parse_google_image_results(page_html: str) -> list[dict[str, str]]:
     results: list[dict[str, str]] = []
-    pattern = re.compile(
-        r'<li[^>]+class="[^"]*b_algo[^"]*"[^>]*>.*?<h2><a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',
-        re.IGNORECASE | re.DOTALL,
-    )
-    for raw_href, raw_title in pattern.findall(page_html):
-        url = decode_search_href(raw_href)
-        if not is_official_result(url):
+    seen: set[tuple[str, str]] = set()
+    for raw_href, raw_image_url, raw_title, raw_domain in GOOGLE_IMAGE_RESULT_RE.findall(page_html):
+        page_url = decode_search_href(raw_href)
+        image_url = html.unescape(raw_image_url or "").strip()
+        title = strip_tags(raw_title)
+        source_host = strip_tags(raw_domain).lower()
+        if not page_url or not image_url:
             continue
-        results.append({"url": url, "title": strip_tags(raw_title), "engine": "bing"})
+        key = (page_url, image_url)
+        if key in seen:
+            continue
+        seen.add(key)
+        results.append(
+            {
+                "url": page_url,
+                "title": title,
+                "image_url": image_url,
+                "source_host": source_host,
+                "engine": "google_images",
+            }
+        )
     return results
 
 
 def score_result(result: dict[str, str], unit_name: str, faction_name: str) -> int:
-    haystack = normalize(f"{result.get('title', '')} {result.get('url', '')}")
+    haystack = normalize(f"{result.get('title', '')} {result.get('url', '')} {result.get('source_host', '')}")
     score = 0
 
     unit_key = normalize(unit_name)
     faction_key = normalize(faction_name)
+    if is_official_result(str(result.get("url", ""))):
+        score += 50
     if unit_key and unit_key in haystack:
         score += 8
     if faction_key and faction_key in haystack:
@@ -181,31 +208,20 @@ def score_result(result: dict[str, str], unit_name: str, faction_name: str) -> i
 
 def search_candidates(unit_name: str, faction_name: str, timeout: int) -> list[tuple[str, list[dict[str, str]]]]:
     queries = [
-        f'warhammer.com "{unit_name}" "{faction_name}" "Warhammer 40,000"',
-        f'warhammer.com "{unit_name}" "Warhammer 40,000"',
-        f'site:warhammer.com "{unit_name}" "{faction_name}"',
-        f'site:warhammer.com "{unit_name}"',
+        f"warhammer.com {unit_name}",
+        f"warhammer.com {unit_name} {faction_name}",
+        f'warhammer.com "{unit_name}" "{faction_name}"',
+        f'warhammer.com "{unit_name}" "Warhammer 40000"',
     ]
 
     yielded: list[tuple[str, list[dict[str, str]]]] = []
     for query in queries:
-        encoded = urllib.parse.quote_plus(query)
         results: list[dict[str, str]] = []
 
         try:
-            results.extend(parse_ddg_results(fetch_text(DDG_HTML_SEARCH.format(query=encoded), timeout=timeout)))
-        except urllib.error.URLError:
+            results.extend(parse_google_image_results(fetch_google_image_search_html(query, timeout=timeout)))
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError):
             pass
-        except TimeoutError:
-            pass
-
-        if not results:
-            try:
-                results.extend(parse_bing_results(fetch_text(BING_SEARCH.format(query=encoded), timeout=timeout)))
-            except urllib.error.URLError:
-                pass
-            except TimeoutError:
-                pass
 
         deduped: dict[str, dict[str, str]] = {}
         for result in results:
@@ -323,6 +339,7 @@ def make_placeholder_entry(unit: dict[str, object], status: str = "pending", err
         "unit_name": unit["unit_name"],
         "faction_name": unit["faction_name"],
         "datasheet_ids": unit["datasheet_ids"],
+        "resolver": RESOLVER_NAME,
         "status": status,
         "lookup_query": f"warhammer.com {unit['unit_name']}",
         "source_page_url": "",
@@ -378,6 +395,8 @@ def parse_utc(value: str) -> datetime | None:
 
 
 def should_refresh(entry: dict[str, object], refresh_after: timedelta, retry_after: timedelta) -> bool:
+    if str(entry.get("resolver", "")).strip() != RESOLVER_NAME:
+        return True
     updated = parse_utc(str(entry.get("updated_at_utc", "")))
     if updated is None:
         return True
@@ -402,12 +421,7 @@ def lookup_unit_image(
         if query:
             lookup_query = query
         for candidate in candidates:
-            try:
-                image_url, page_title = extract_page_preview(candidate["url"], timeout=timeout)
-            except (urllib.error.URLError, TimeoutError, ValueError) as error:
-                last_error = str(error)
-                continue
-
+            image_url = str(candidate.get("image_url", "")).strip()
             lower_image_url = image_url.lower()
             if not image_url or any(fragment in lower_image_url for fragment in ["logo", "favicon", "icon"]):
                 continue
@@ -418,10 +432,11 @@ def lookup_unit_image(
                     "unit_name": unit_name,
                     "faction_name": faction_name,
                     "datasheet_ids": datasheet_ids,
+                    "resolver": RESOLVER_NAME,
                     "status": "ok",
                     "lookup_query": lookup_query,
                     "source_page_url": candidate["url"],
-                    "source_page_title": page_title,
+                    "source_page_title": str(candidate.get("title", "")).strip(),
                     "image_url": image_url,
                     "updated_at_utc": utcnow_iso(),
                     "search_engine": candidate.get("engine", ""),
@@ -438,6 +453,7 @@ def lookup_unit_image(
             "unit_name": unit_name,
             "faction_name": faction_name,
             "datasheet_ids": datasheet_ids,
+            "resolver": RESOLVER_NAME,
             "status": "not_found" if not last_error else "error",
             "lookup_query": lookup_query,
             "source_page_url": "",
@@ -455,7 +471,8 @@ def build_payload(entries: list[dict[str, object]], lookups_performed: int) -> d
     ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
     cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
     return {
-        "source": "Official warhammer.com image previews",
+        "source": "Google Images thumbnails seeded by warhammer.com queries",
+        "resolver": RESOLVER_NAME,
         "query_template": "warhammer.com {unit_name}",
         "generated_at_utc": utcnow_iso(),
         "entries_with_images": ok_count,
