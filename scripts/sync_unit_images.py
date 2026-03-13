@@ -482,6 +482,35 @@ def build_payload(entries: list[dict[str, object]], lookups_performed: int) -> d
     }
 
 
+def ordered_entries(entries_by_key: dict[str, dict[str, object]], units: list[dict[str, object]]) -> list[dict[str, object]]:
+    ordered: list[dict[str, object]] = []
+    for unit in units:
+        key = str(unit["unit_key"])
+        entry = entries_by_key.get(key)
+        if entry is not None:
+            ordered.append(entry)
+    return ordered
+
+
+def write_state(
+    *,
+    entries_by_key: dict[str, dict[str, object]],
+    units: list[dict[str, object]],
+    out_path: Path,
+    assets_dir: Path,
+    web_root: Path,
+    lookups_performed: int,
+    cleanup: bool,
+) -> list[dict[str, object]]:
+    entries = ordered_entries(entries_by_key, units)
+    payload = build_payload(entries, lookups_performed=lookups_performed)
+    if cleanup:
+        cleanup_stale_assets(entries, assets_dir=assets_dir, web_root=web_root)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2) + "\n", encoding="utf-8")
+    return entries
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Resolve unit preview images from official warhammer.com pages")
     parser.add_argument("--web-root", default="docs", help="Web root directory used to build relative asset paths")
@@ -508,6 +537,12 @@ def parse_args() -> argparse.Namespace:
         default=14,
         help="Retry missing/error entries after this many days",
     )
+    parser.add_argument(
+        "--checkpoint-every",
+        type=int,
+        default=10,
+        help="Write partial manifest after this many lookups (0 disables checkpoints)",
+    )
     return parser.parse_args()
 
 
@@ -524,75 +559,110 @@ def main() -> int:
     refresh_after = timedelta(days=max(1, args.refresh_days))
     retry_after = timedelta(days=max(1, args.retry_days))
 
-    entries: list[dict[str, object]] = []
+    entries_by_key: dict[str, dict[str, object]] = {}
     lookups_performed = 0
 
     for unit in units:
         key = str(unit["unit_key"])
         previous = existing_entries.get(key)
-        previous_hydrated = hydrate_entry(previous, unit) if previous else None
+        entries_by_key[key] = hydrate_entry(previous, unit) if previous else make_placeholder_entry(unit)
 
-        try:
-            has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
-            needs_refresh = previous_hydrated is None or should_refresh(
-                previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
-            )
+    try:
+        for unit in units:
+            key = str(unit["unit_key"])
+            previous = existing_entries.get(key)
+            previous_hydrated = hydrate_entry(previous, unit) if previous else None
 
-            if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
-                entries.append(previous_hydrated)
-                continue
+            try:
+                has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
+                needs_refresh = previous_hydrated is None or should_refresh(
+                    previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
+                )
 
-            if previous_hydrated and previous_hydrated.get("status") == "ok" and previous_hydrated.get("image_url") and not has_local_cache:
-                try:
-                    previous_hydrated["local_path"] = cache_image(
-                        image_url=str(previous_hydrated["image_url"]),
-                        unit_key=key,
-                        assets_dir=assets_dir,
-                        web_root=web_root,
-                        timeout=args.timeout,
-                    )
-                    previous_hydrated["updated_at_utc"] = utcnow_iso()
-                    entries.append(previous_hydrated)
+                if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
+                    entries_by_key[key] = previous_hydrated
                     continue
-                except (urllib.error.URLError, TimeoutError, ValueError, OSError):
-                    pass
 
-            if lookups_performed >= args.max_lookups:
-                entries.append(previous_hydrated or make_placeholder_entry(unit))
-                continue
+                if previous_hydrated and previous_hydrated.get("status") == "ok" and previous_hydrated.get("image_url") and not has_local_cache:
+                    try:
+                        previous_hydrated["local_path"] = cache_image(
+                            image_url=str(previous_hydrated["image_url"]),
+                            unit_key=key,
+                            assets_dir=assets_dir,
+                            web_root=web_root,
+                            timeout=args.timeout,
+                        )
+                        previous_hydrated["updated_at_utc"] = utcnow_iso()
+                        entries_by_key[key] = previous_hydrated
+                        continue
+                    except (urllib.error.URLError, TimeoutError, ValueError, OSError):
+                        pass
 
-            entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
-            lookups_performed += 1
+                if lookups_performed >= args.max_lookups:
+                    entries_by_key[key] = previous_hydrated or make_placeholder_entry(unit)
+                    continue
 
-            if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
-                entries.append(previous_hydrated)
-                continue
+                entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
+                lookups_performed += 1
 
-            if entry.get("status") == "ok" and entry.get("image_url"):
-                try:
-                    entry["local_path"] = cache_image(
-                        image_url=str(entry["image_url"]),
-                        unit_key=key,
+                if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
+                    entries_by_key[key] = previous_hydrated
+                    continue
+
+                if entry.get("status") == "ok" and entry.get("image_url"):
+                    try:
+                        entry["local_path"] = cache_image(
+                            image_url=str(entry["image_url"]),
+                            unit_key=key,
+                            assets_dir=assets_dir,
+                            web_root=web_root,
+                            timeout=args.timeout,
+                        )
+                    except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
+                        entry["status"] = "error"
+                        entry["error"] = str(error)
+                        entry["local_path"] = ""
+
+                entries_by_key[key] = entry
+                if args.checkpoint_every > 0 and lookups_performed % args.checkpoint_every == 0:
+                    write_state(
+                        entries_by_key=entries_by_key,
+                        units=units,
+                        out_path=out_path,
                         assets_dir=assets_dir,
                         web_root=web_root,
-                        timeout=args.timeout,
+                        lookups_performed=lookups_performed,
+                        cleanup=False,
                     )
-                except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
-                    entry["status"] = "error"
-                    entry["error"] = str(error)
-                    entry["local_path"] = ""
+            except Exception as error:
+                if previous_hydrated:
+                    entries_by_key[key] = previous_hydrated
+                else:
+                    entries_by_key[key] = make_placeholder_entry(unit, status="error", error=str(error))
+    except KeyboardInterrupt:
+        entries = write_state(
+            entries_by_key=entries_by_key,
+            units=units,
+            out_path=out_path,
+            assets_dir=assets_dir,
+            web_root=web_root,
+            lookups_performed=lookups_performed,
+            cleanup=False,
+        )
+        ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
+        cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
+        print(f"Checkpointed {out_path} with {ok_count} image entries, {cached_count} cached locally ({lookups_performed} lookups)")
+        raise
 
-            entries.append(entry)
-        except Exception as error:
-            if previous_hydrated:
-                entries.append(previous_hydrated)
-            else:
-                entries.append(make_placeholder_entry(unit, status="error", error=str(error)))
-
-    payload = build_payload(entries, lookups_performed=lookups_performed)
-    cleanup_stale_assets(entries, assets_dir=assets_dir, web_root=web_root)
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2) + "\n", encoding="utf-8")
+    entries = write_state(
+        entries_by_key=entries_by_key,
+        units=units,
+        out_path=out_path,
+        assets_dir=assets_dir,
+        web_root=web_root,
+        lookups_performed=lookups_performed,
+        cleanup=True,
+    )
 
     ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
     cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
