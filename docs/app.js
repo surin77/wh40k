@@ -1186,56 +1186,65 @@ function initTooltipHandlers() {
 }
 
 function initImagePreviewHandlers() {
-  document.addEventListener("mouseover", (event) => {
-    const target = event.target.closest(".unit-photo-btn");
-    if (!target || target.hidden) return;
-    showImagePreview(target);
+  if (!unitPhotoBtnEl) return;
+
+  const onLeave = (relatedTarget) => {
+    const toButton = relatedTarget?.closest?.(".unit-photo-btn");
+    const toPreview = relatedTarget?.closest?.(".unit-image-preview");
+    if (!toButton && !toPreview) hideImagePreview();
+  };
+
+  unitPhotoBtnEl.addEventListener("mouseenter", () => {
+    if (unitPhotoBtnEl.hidden) return;
+    showImagePreview(unitPhotoBtnEl);
   });
 
-  document.addEventListener("mouseout", (event) => {
-    const from = event.target.closest(".unit-photo-btn");
-    const toButton = event.relatedTarget?.closest?.(".unit-photo-btn");
-    const toPreview = event.relatedTarget?.closest?.(".unit-image-preview");
-    if (from && !toButton && !toPreview) {
-      hideImagePreview();
-    }
+  unitPhotoBtnEl.addEventListener("mouseleave", (event) => {
+    onLeave(event.relatedTarget);
   });
 
-  imagePreviewEl.addEventListener("mouseleave", () => {
-    hideImagePreview();
+  unitPhotoBtnEl.addEventListener("focus", () => {
+    if (unitPhotoBtnEl.hidden) return;
+    showImagePreview(unitPhotoBtnEl);
   });
 
-  document.addEventListener("click", (event) => {
-    const target = event.target.closest(".unit-photo-btn");
-    if (!target || target.hidden) {
-      if (!event.target.closest(".unit-image-preview")) hideImagePreview();
-      return;
-    }
+  unitPhotoBtnEl.addEventListener("blur", (event) => {
+    onLeave(event.relatedTarget);
+  });
+
+  unitPhotoBtnEl.addEventListener("click", (event) => {
     event.preventDefault();
-    if (imagePreviewVisible && imagePreviewAnchorEl === target) {
+    if (unitPhotoBtnEl.hidden) return;
+    if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
       hideImagePreview();
       return;
     }
-    showImagePreview(target);
+    showImagePreview(unitPhotoBtnEl);
   });
 
-  document.addEventListener(
+  unitPhotoBtnEl.addEventListener(
     "touchstart",
     (event) => {
-      const target = event.target.closest(".unit-photo-btn");
-      if (!target || target.hidden) {
-        if (!event.target.closest(".unit-image-preview")) hideImagePreview();
-        return;
-      }
       event.preventDefault();
-      if (imagePreviewVisible && imagePreviewAnchorEl === target) {
+      if (unitPhotoBtnEl.hidden) return;
+      if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
         hideImagePreview();
         return;
       }
-      showImagePreview(target);
+      showImagePreview(unitPhotoBtnEl);
     },
     { passive: false }
   );
+
+  imagePreviewEl.addEventListener("mouseleave", (event) => {
+    onLeave(event.relatedTarget);
+  });
+
+  document.addEventListener("pointerdown", (event) => {
+    if (!event.target.closest(".unit-photo-btn") && !event.target.closest(".unit-image-preview")) {
+      hideImagePreview();
+    }
+  });
 
   window.addEventListener("resize", moveImagePreview, { passive: true });
   window.addEventListener("scroll", hideImagePreview, { passive: true });
