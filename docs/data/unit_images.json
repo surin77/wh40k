@@ -2,9 +2,9 @@
   "source": "Google Images thumbnails seeded by warhammer.com queries",
   "resolver": "google_images_warhammer_query_v2",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T09:42:20+00:00",
-  "entries_with_images": 120,
-  "entries_with_local_cache": 120,
+  "generated_at_utc": "2026-03-13T10:40:06+00:00",
+  "entries_with_images": 180,
+  "entries_with_local_cache": 180,
   "lookups_performed": 60,
   "entries": [
     {
@@ -2054,14 +2054,15 @@
       "datasheet_ids": [
         "000004196"
       ],
-      "status": "error",
-      "lookup_query": "site:warhammer.com \"Corsair Skyreavers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:35+00:00",
-      "search_engine": "",
-      "error": "HTTP Error 405: Not Allowed"
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Corsair Skyreavers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-skyreavers-2026",
+      "source_page_title": "Corsair Skyreavers",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PuUxB0n_n-jmFwsXALi3mJCbUOEi3twYoX6m_tcAFUjg2ASElsjeuuBd00I&s",
+      "updated_at_utc": "2026-03-13T10:38:54+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__corsairskyreavers.jpg"
     },
     {
       "unit_key": "aeldari::corsairvoidreavers",
@@ -2070,14 +2071,15 @@
       "datasheet_ids": [
         "000002531"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Corsair Voidreavers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:01:28+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Corsair Voidreavers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-voidreavers-2026",
+      "source_page_title": "Corsair Voidreavers",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_R2eQr6XnsRA29aDYM0rkgMJic_L1gi8P3rMHwGtYvSGuyTSn_NNpzAFO1zo&s",
+      "updated_at_utc": "2026-03-13T10:38:55+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__corsairvoidreavers.jpg"
     },
     {
       "unit_key": "aeldari::corsairvoidscarred",
@@ -2086,14 +2088,15 @@
       "datasheet_ids": [
         "000002532"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Corsair Voidscarred\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:38+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Corsair Voidscarred",
+      "source_page_url": "https://www.warhammer.com/en-US/shop/kill-team-datacards-corsair-voidscarred-2024-eng",
+      "source_page_title": "Kill Team: Corsair...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9JfftEgw5jiXOn2l1aQQpsoKfXnqMM7dozvYgDIKerGtPwff4nC4z2jVbu4&s",
+      "updated_at_utc": "2026-03-13T10:38:56+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__corsairvoidscarred.jpg"
     },
     {
       "unit_key": "aeldari::crimsonhunter",
@@ -2102,14 +2105,15 @@
       "datasheet_ids": [
         "000000603"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Crimson Hunter\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:40+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Crimson Hunter",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Crimson-Hunter-2017",
+      "source_page_title": "99120104080_CrimsonHunterLe...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHciH9b-TJ0lXrbat5j87u3E8ggEkq176oKtSv27w66xA1cMzWOxnWhBtzTQ&s",
+      "updated_at_utc": "2026-03-13T10:38:57+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__crimsonhunter.jpg"
     },
     {
       "unit_key": "aeldari::dcannonplatform",
@@ -2118,14 +2122,15 @@
       "datasheet_ids": [
         "000003910"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"D-cannon Platform\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:42+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com D-cannon Platform",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Support-Weapon",
+      "source_page_title": "99120104028_EldarSupportWea...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KiFKPJAYG1ThrP38l_tGXMzm1nUR3ywkY6hW7H9Nlfen0XB4oR9Sk81T3ag&s",
+      "updated_at_utc": "2026-03-13T10:38:58+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__dcannonplatform.jpg"
     },
     {
       "unit_key": "aeldari::darkreapers",
@@ -2134,14 +2139,15 @@
       "datasheet_ids": [
         "000000607"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Dark Reapers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:45+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Dark Reapers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-dark-reapers-2022",
+      "source_page_title": "99120104068_AELDarkReapersL...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKNJ8ksrEDv6-xfIZiPI6s5fYXeVu03Iq_KuHHNNu0YJs57JCqNNpRtpWfg&s",
+      "updated_at_utc": "2026-03-13T10:39:00+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__darkreapers.jpg"
     },
     {
       "unit_key": "aeldari::deathjester",
@@ -2150,14 +2156,15 @@
       "datasheet_ids": [
         "000002537"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Death Jester\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:47+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Death Jester",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Death-Jester",
+      "source_page_title": "Death Jester",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDao5hUseEBe7JSr5xZyEOyJmDci1iwBD5ydgs_oIcRG2Feef7nu46MLg-Fg&s",
+      "updated_at_utc": "2026-03-13T10:39:01+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__deathjester.jpg"
     },
     {
       "unit_key": "aeldari::direavengers",
@@ -2166,14 +2173,15 @@
       "datasheet_ids": [
         "000000593"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Dire Avengers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:50+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Dire Avengers",
+      "source_page_url": "https://www.warhammer.com/it-IT/shop/Eldar-Dire-Avengers-2017",
+      "source_page_title": "Vendicatori Implacabili",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYy7eq3M7IGHtBFrZiiK-XJM67aKUDtDALypIKRnxVzytaEcsidmmDXUGP0Q&s",
+      "updated_at_utc": "2026-03-13T10:39:02+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__direavengers.jpg"
     },
     {
       "unit_key": "aeldari::eldradulthran",
@@ -2182,14 +2190,15 @@
       "datasheet_ids": [
         "000000568"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Eldrad Ulthran\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:52+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Eldrad Ulthran",
+      "source_page_url": "https://www.warhammer.com/fr-BE/shop/Eldrad-Ulthran-2017",
+      "source_page_title": "Eldrad Ulthran",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYHHw-_q3DdZNDYDv8exPMmnhkG3g4g9ESNAWRGP5hfmnZOy0eYFOLygphQ&s",
+      "updated_at_utc": "2026-03-13T10:39:03+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__eldradulthran.jpg"
     },
     {
       "unit_key": "aeldari::falcon",
@@ -2198,14 +2207,15 @@
       "datasheet_ids": [
         "000000609"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Falcon\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:54+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Falcon Aeldari",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-wave-serpent-2025",
+      "source_page_title": "Wave Serpent/Falcon",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzCBLQok6sZ-eW_iPnDSjCg-XNKa07FNm0XzMNRi6lEOfLl4lnZ2xK-DEuN4&s",
+      "updated_at_utc": "2026-03-13T10:39:05+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__falcon.jpg"
     },
     {
       "unit_key": "aeldari::farseer",
@@ -2214,14 +2224,15 @@
       "datasheet_ids": [
         "000000582"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Farseer\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:56+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Farseer",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Farseer",
+      "source_page_title": "Farseer",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOu2f5sDqFS0ps5fhFmbT35RQs2HEEj_x2mM1-XCqx1hRgn9BuhQrVIYQIw&s",
+      "updated_at_utc": "2026-03-13T10:39:06+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__farseer.jpg"
     },
     {
       "unit_key": "aeldari::farseerskyrunner",
@@ -2230,14 +2241,15 @@
       "datasheet_ids": [
         "000000583"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Farseer Skyrunner\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:48:59+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Farseer Skyrunner Aeldari",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Farseer-Skyrunner-2017",
+      "source_page_title": "99070104002_ELDARFARSEERSKY...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4otzQbukS8SpxqqEwL_Ngz8uxG7itkT7dqLeeypCbASMtA7eaIMubFOjcAA&s",
+      "updated_at_utc": "2026-03-13T10:39:07+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__farseerskyrunner.jpg"
     },
     {
       "unit_key": "aeldari::firedragons",
@@ -2246,14 +2258,15 @@
       "datasheet_ids": [
         "000000596"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Fire Dragons\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:01+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Fire Dragons",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-fire-dragons-2025",
+      "source_page_title": "99120104102_AELFireDragons0...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRMDVhOTSXa2zhZB1sbCqvgkU3Olha829nQArP-UvWHdAC2zj4h_86PTI_A&s",
+      "updated_at_utc": "2026-03-13T10:39:09+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__firedragons.jpg"
     },
     {
       "unit_key": "aeldari::fireprism",
@@ -2262,14 +2275,15 @@
       "datasheet_ids": [
         "000000610"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Fire Prism\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:03+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Fire Prism",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Fire-Prism",
+      "source_page_title": "Fire Prism",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYADeENB9-QXSFWxWkgWswQqzuS5vJ92Lyt9LjmyaPw6sVYYofiA4VeHC6Q&s",
+      "updated_at_utc": "2026-03-13T10:39:10+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__fireprism.jpg"
     },
     {
       "unit_key": "aeldari::firestorm",
@@ -2278,14 +2292,15 @@
       "datasheet_ids": [
         "000001393"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Firestorm\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:07+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Firestorm",
+      "source_page_url": "https://www.facebook.com/firestormgamesltd/photos/what-a-night-our-first-warhammer-40000-escalation-league-session-stage-3-of-our-/1504467775012439/",
+      "source_page_title": "Firestorm - What a night!...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNquHfwYJiQi1N_630QdvdLz_Z8JWSfFQ8ihOM10DjVl__cZURC6tioruolQ&s",
+      "updated_at_utc": "2026-03-13T10:39:11+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__firestorm.jpg"
     },
     {
       "unit_key": "aeldari::fuegan",
@@ -2294,14 +2309,15 @@
       "datasheet_ids": [
         "000000574"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Fuegan\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:11+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Fuegan",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-phoenix-lord-fuegan-2025",
+      "source_page_title": "99120104103_AELFuegan01.jpg...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPKM_x3Y_30H1YmsE4eAYwIjktXBJx9wq7PBphzS4Zasy9gyl--atHoPmHwo&s",
+      "updated_at_utc": "2026-03-13T10:39:12+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__fuegan.jpg"
     },
     {
       "unit_key": "aeldari::guardiandefenders",
@@ -2310,14 +2326,15 @@
       "datasheet_ids": [
         "000000589"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Guardian Defenders\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:16+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Guardian Defenders Aeldari",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-storm-guardians-2022",
+      "source_page_title": "Storm Guardians",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhfMsG4zycLFxAAnlPxvDlsxUATBjxDiJs_dsu_dp20c_V8qLomHUUCZypivo&s",
+      "updated_at_utc": "2026-03-13T10:39:13+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__guardiandefenders.jpg"
     },
     {
       "unit_key": "aeldari::hemlockwraithfighter",
@@ -2326,14 +2343,15 @@
       "datasheet_ids": [
         "000000606"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Hemlock Wraithfighter\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:20+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Hemlock Wraithfighter",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Hemlock-Wraithfighter-2017",
+      "source_page_title": "Hemlock Wraithfighter",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHh1rht06QbTNWGDuTc5oI0nniso1XRHZHrDeEz3YwRscRLDV79X-prDqMA_0&s",
+      "updated_at_utc": "2026-03-13T10:39:14+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__hemlockwraithfighter.jpg"
     },
     {
       "unit_key": "aeldari::hornet",
@@ -2342,14 +2360,15 @@
       "datasheet_ids": [
         "000000618"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Hornet\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:24+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Hornet",
+      "source_page_url": "https://7thcitycollectables.com/products/warhammer40k-aeldarieldarforgeworldhornet-ar059-ar059-dt230625",
+      "source_page_title": "Warhammer 40k: Aeldari...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRXn0D5lXoZVyT2gVkpIkG0j9EiBlhAy_cCNmvyg3ojAiA09AJra6FoFnJJc&s",
+      "updated_at_utc": "2026-03-13T10:39:16+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__hornet.jpg"
     },
     {
       "unit_key": "aeldari::howlingbanshees",
@@ -2358,14 +2377,15 @@
       "datasheet_ids": [
         "000000594"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Howling Banshees\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:28+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Howling Banshees",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Craftworlds-Howling-Banshees-2020",
+      "source_page_title": "Howling Banshees",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRYd1IWZtmSAB9MbBuA6OrMsaTlNR1NWELLADP6LJycmklCk_1ETTZ7vCO-E&s",
+      "updated_at_utc": "2026-03-13T10:39:17+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__howlingbanshees.jpg"
     },
     {
       "unit_key": "aeldari::illicnightspear",
@@ -2374,14 +2394,15 @@
       "datasheet_ids": [
         "000000570"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Illic Nightspear\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:33+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Illic Nightspear",
+      "source_page_url": "https://www.facebook.com/atticaminiaturesfantasy/posts/illic-nightspear-warhammer-40k-miniature-produced-by-warhammer-40000-painted-by-/899126358904904/",
+      "source_page_title": "Illic Nightspear, Warhammer...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusgkUq8-fTPT879hFY98Q2hz0wG-ETDgVZylyzGl5W22vuulspC-LPIl1AQ&s",
+      "updated_at_utc": "2026-03-13T10:39:18+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__illicnightspear.jpg"
     },
     {
       "unit_key": "aeldari::irillyth",
@@ -2390,14 +2411,15 @@
       "datasheet_ids": [
         "000000630"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Irillyth\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:37+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Irillyth",
+      "source_page_url": "https://www.miniaturepainters.com/aeldari-irillyth-phoenix-lord-of-the-shadow-spectres/",
+      "source_page_title": "AELDARI IRILLYTH PHOENIX...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaOGmdLKFCQh605rujG81D7nK9XgVKccfpzsgLgkSmVUllyX8unOfQxvkhG0M&s",
+      "updated_at_utc": "2026-03-13T10:39:19+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__irillyth.jpg"
     },
     {
       "unit_key": "aeldari::jainzar",
@@ -2406,14 +2428,15 @@
       "datasheet_ids": [
         "000000572"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Jain Zar\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:41+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Jain Zar",
+      "source_page_url": "https://www.warhammer.com/es-ES/shop/Craftworlds-Jain-Zar-2020",
+      "source_page_title": "Jain Zar",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOhdji8LpyPAUqZUx3eJszDyMF7b7JO8Sk0iNC2MO_dngAQMTuWJe3qIHNHA&s",
+      "updated_at_utc": "2026-03-13T10:39:21+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__jainzar.jpg"
     },
     {
       "unit_key": "aeldari::karandras",
@@ -2422,14 +2445,15 @@
       "datasheet_ids": [
         "000000573"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Karandras\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:45+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Karandras",
+      "source_page_url": "https://www.etsy.com/listing/1660058158/bespoke-phoenix-karandras-aeldari-figure",
+      "source_page_title": "Bespoke Phoenix Karandras...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGQpgr-QMLKMUEpj6xXwgX-tGS0DZO_r6LfGhHAUDYu3UUMvpNzV86nGNiFa4&s",
+      "updated_at_utc": "2026-03-13T10:39:22+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__karandras.jpg"
     },
     {
       "unit_key": "aeldari::kharseth",
@@ -2438,14 +2462,15 @@
       "datasheet_ids": [
         "000004194"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Kharseth\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:50+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Kharseth",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-kharseth-2026",
+      "source_page_title": "Kharseth",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HfcKB12GKni9mfNzZrwbPUwBXzfGih0hAvWxHjutn5LJIQttYFFsHxLcwg&s",
+      "updated_at_utc": "2026-03-13T10:39:23+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__kharseth.jpg"
     },
     {
       "unit_key": "aeldari::lhykhis",
@@ -2454,14 +2479,15 @@
       "datasheet_ids": [
         "000003909"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Lhykhis\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:54+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Lhykhis",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-phoenix-lord-lhykhis-2025",
+      "source_page_title": "Lhykhis",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdGd9mjBqE1H6hGDWwQTmHav0_Lk8oIazRo0EbJNP_HHXM327-jwX-jkB4w&s",
+      "updated_at_utc": "2026-03-13T10:39:24+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__lhykhis.jpg"
     },
     {
       "unit_key": "aeldari::lynx",
@@ -2470,14 +2496,15 @@
       "datasheet_ids": [
         "000000620"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Lynx\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:49:58+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Lynx",
+      "source_page_url": "https://www.instagram.com/p/Ctb4a1gNluR/",
+      "source_page_title": "Lynx for the Aeldari army...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JF2m0kQUeBibWC2uaGQNfk_SwDWLmievzSwdlLNxWzSQQHhzkejkhhFZhAU&s",
+      "updated_at_utc": "2026-03-13T10:39:25+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__lynx.jpg"
     },
     {
       "unit_key": "aeldari::mauganra",
@@ -2486,14 +2513,15 @@
       "datasheet_ids": [
         "000000576"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Maugan Ra\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:02+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Maugan Ra",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-maugan-ra-2022",
+      "source_page_title": "Maugan Ra",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGB1o1_vcJ4gdoIhmul3HBEdGIq9GYFFgLZpDC2Eeno-PslI_BjC6M3ADUQ2Y&s",
+      "updated_at_utc": "2026-03-13T10:39:26+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__mauganra.jpg"
     },
     {
       "unit_key": "aeldari::nightspinner",
@@ -2502,14 +2530,15 @@
       "datasheet_ids": [
         "000000611"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Night Spinner\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:06+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Night Spinner",
+      "source_page_url": "https://www.warhammer.com/de-AT/shop/Eldar-Night-Spinner",
+      "source_page_title": "Schattenspinne",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapxgJljCOpZ5fZ_y2HVqy1IFoALQwFedOneUu6qhpUpz4hzWlNih02VxH1g&s",
+      "updated_at_utc": "2026-03-13T10:39:28+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__nightspinner.jpg"
     },
     {
       "unit_key": "aeldari::nightwing",
@@ -2518,14 +2547,15 @@
       "datasheet_ids": [
         "000000623"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Nightwing\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:11+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Nightwing",
+      "source_page_url": "https://www.reddit.com/r/ImaginaryWarhammer/comments/1aojq0x/aeldari_nightwing_female_pilot_shycarp/",
+      "source_page_title": "Aeldari Nightwing female...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LqUeSjFCZ-kH0mIaOzUKjl5d9a5n_t1VPA6T3B3s2I7Hh6DtQVBp7_woGsk&s",
+      "updated_at_utc": "2026-03-13T10:39:29+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__nightwing.jpg"
     },
     {
       "unit_key": "aeldari::phantomtitan",
@@ -2534,14 +2564,15 @@
       "datasheet_ids": [
         "000000631"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Phantom Titan\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:15+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Phantom Titan",
+      "source_page_url": "https://www.reddit.com/r/Warhammer40k/comments/igfwoq/showing_scale_of_phantom_titan/",
+      "source_page_title": "Showing scale of Phantom...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8L7YA31KXTKjcGOxF78JFTO2rPF3Iym-NU04A6sF-DkoXQlb-wcFu71a4IXk&s",
+      "updated_at_utc": "2026-03-13T10:39:30+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__phantomtitan.jpg"
     },
     {
       "unit_key": "aeldari::phoenix",
@@ -2550,14 +2581,15 @@
       "datasheet_ids": [
         "000000624"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Phoenix\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:19+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Phoenix",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/high-elf-realms-flamespyre-phoenix-2025",
+      "source_page_title": "99122710019_HighElfRealmsFl...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQWxnD32p2RbbaqQiY1nI424K7uDi4A1dopbzkRh1LxiyP0Hbu33ItY3WdNs&s",
+      "updated_at_utc": "2026-03-13T10:39:31+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__phoenix.jpg"
     },
     {
       "unit_key": "aeldari::princeyriel",
@@ -2566,14 +2598,15 @@
       "datasheet_ids": [
         "000004193"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Prince Yriel\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:23+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Prince Yriel",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-prince-yriel-2026",
+      "source_page_title": "Prince Yriel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeEclD72HEGMASbm0v2T8lF3N0xbgOKwtOgXooSMDL4RrUljYbq5zHKpuCy4&s",
+      "updated_at_utc": "2026-03-13T10:39:33+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__princeyriel.jpg"
     },
     {
       "unit_key": "aeldari::princeyriellegendary",
@@ -2582,14 +2615,15 @@
       "datasheet_ids": [
         "000000569"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Prince Yriel (Legendary)\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:28+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Prince Yriel (Legendary)",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-prince-yriel-2026",
+      "source_page_title": "Prince Yriel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeEclD72HEGMASbm0v2T8lF3N0xbgOKwtOgXooSMDL4RrUljYbq5zHKpuCy4&s",
+      "updated_at_utc": "2026-03-13T10:39:34+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__princeyriellegendary.jpg"
     },
     {
       "unit_key": "aeldari::rangers",
@@ -2598,14 +2632,15 @@
       "datasheet_ids": [
         "000000592"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Rangers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:32+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Rangers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-rangers-2022",
+      "source_page_title": "Rangers",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2XfIMvDZbKeh5zz9xNg8sg4tL5z_cGU3fzF003Nap3q77ZS24C4z8CYpbhM&s",
+      "updated_at_utc": "2026-03-13T10:39:35+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__rangers.jpg"
     },
     {
       "unit_key": "aeldari::revenanttitan",
@@ -2614,14 +2649,15 @@
       "datasheet_ids": [
         "000000628"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Revenant Titan\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:36+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Revenant Titan",
+      "source_page_url": "https://7thcitycollectables.com/products/warhammer40k-aeldarirevenanttitan-ab326-ab326-dt0301",
+      "source_page_title": "Warhammer 40k: Aeldari...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSmm9SSgpDc2OFSEtGUnfsypJxuaBB8mJYW_eRJmTS4oYenRUlSRTUNO5Khw&s",
+      "updated_at_utc": "2026-03-13T10:39:36+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__revenanttitan.jpg"
     },
     {
       "unit_key": "aeldari::scorpion",
@@ -2630,14 +2666,15 @@
       "datasheet_ids": [
         "000000621"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Scorpion\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:41+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Scorpion",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/tomb-kings-of-khemri-tomb-scorpion-2024",
+      "source_page_title": "99852717005_WHTOWTKTombScor...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoa3yrr4zCmRKnzKfLam8Ox0Xhpd5HL4DDABlTgHLvHgjr20XoLiut_6agdWY&s",
+      "updated_at_utc": "2026-03-13T10:39:38+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__scorpion.jpg"
     },
     {
       "unit_key": "aeldari::shadowspectres",
@@ -2646,14 +2683,15 @@
       "datasheet_ids": [
         "000000615"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Shadow Spectres\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:45+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Shadow Spectres",
+      "source_page_url": "https://wh40k.lexicanum.com/wiki/Shadow_Spectres",
+      "source_page_title": "Shadow Spectres - Warhammer...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSZJ-ly4x_9etOQRxivZU1B9cL7cLmNf0gxAKoS0jhQ4YbVkskoEmmCl9Ivj8&s",
+      "updated_at_utc": "2026-03-13T10:39:39+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__shadowspectres.jpg"
     },
     {
       "unit_key": "aeldari::shadowweaverplatform",
@@ -2662,14 +2700,15 @@
       "datasheet_ids": [
         "000003911"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Shadow Weaver Platform\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:49+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Shadow Weaver Platform Aeldari",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Support-Weapon",
+      "source_page_title": "Support Weapon",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx81ivjURQqPoTRpjLGdKCFUvF7iCGS8Rw9sL_LeVvOXmn3dmQQOlK0Rw_Yg&s",
+      "updated_at_utc": "2026-03-13T10:39:40+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__shadowweaverplatform.jpg"
     },
     {
       "unit_key": "aeldari::shadowseer",
@@ -2678,14 +2717,15 @@
       "datasheet_ids": [
         "000002535"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Shadowseer\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:54+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Shadowseer",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Shadowseer",
+      "source_page_title": "Shadowseer",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_nbG4HbHqSERI6Yj9mOrMy69J9ROaix4lgS29Du2ti_H9xZG8_gAb753w5A&s",
+      "updated_at_utc": "2026-03-13T10:39:41+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__shadowseer.jpg"
     },
     {
       "unit_key": "aeldari::shiningspears",
@@ -2694,14 +2734,15 @@
       "datasheet_ids": [
         "000000602"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Shining Spears\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:50:58+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Shining Spears",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-shining-spears-2022",
+      "source_page_title": "Shining Spears",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzW5-9A5B31xoMQpB2RBe4moFUMs7MWeBwFb6zu2ijw0R0kL1NZpst_t4x4w&s",
+      "updated_at_utc": "2026-03-13T10:39:43+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__shiningspears.jpg"
     },
     {
       "unit_key": "aeldari::shroudrunners",
@@ -2710,14 +2751,15 @@
       "datasheet_ids": [
         "000002533"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Shroud Runners\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:02+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Shroud Runners",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-shroud-runners-2022",
+      "source_page_title": "99120104074_ShroudRunnersLe...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvwtgUeNSXHx1YJkl2ZBo9AHlCaOVZVMEV4bpez7_sPx8rBckcNtMLMR1Itc&s",
+      "updated_at_utc": "2026-03-13T10:39:44+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__shroudrunners.jpg"
     },
     {
       "unit_key": "aeldari::skathachwraithknight",
@@ -2726,14 +2768,15 @@
       "datasheet_ids": [
         "000000627"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Skathach Wraithknight\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:07+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Skathach Wraithknight",
+      "source_page_url": "https://darklegionmarket.com/shop/wr-40/xenos-armies/eldar/skathach-wraithknight-with-inferno-lances/",
+      "source_page_title": "Skathach Wraithknight with...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1ZkLgYl3oWtGC0YT89PIepKHzUD064u6u6UazqfiUvJYCAQNJ6wckmxXxA&s",
+      "updated_at_utc": "2026-03-13T10:39:45+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__skathachwraithknight.jpg"
     },
     {
       "unit_key": "aeldari::skyweavers",
@@ -2742,14 +2785,15 @@
       "datasheet_ids": [
         "000002539"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Skyweavers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:11+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Skyweavers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Skyweavers",
+      "source_page_title": "Skyweavers",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIbdpVff9qvPqTcnW5XYyjNyqaMyZtVUHgp2IXlTgVQNHy1snVFcfitGTMw&s",
+      "updated_at_utc": "2026-03-13T10:39:46+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__skyweavers.jpg"
     },
     {
       "unit_key": "aeldari::solitaire",
@@ -2758,14 +2802,15 @@
       "datasheet_ids": [
         "000002538"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Solitaire\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:15+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Solitaire",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Solitaire",
+      "source_page_title": "Solitaire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-TyQKEdO4wmmkFLJjmP-i7gfOwugKCf4Ltyv---ZWie6p_F6GBSWJdZOxkg&s",
+      "updated_at_utc": "2026-03-13T10:39:47+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__solitaire.jpg"
     },
     {
       "unit_key": "aeldari::spiritseer",
@@ -2774,14 +2819,15 @@
       "datasheet_ids": [
         "000000588"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Spiritseer\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:19+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Spiritseer",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Craftworlds-Spiritseer-2019",
+      "source_page_title": "Spiritseer",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuCjmIScY5QA7nZ6ui5t75PeTqMNmucKw0vzzLv1xefB9lirYwV0jfTkBEC4&s",
+      "updated_at_utc": "2026-03-13T10:39:48+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__spiritseer.jpg"
     },
     {
       "unit_key": "aeldari::starfangs",
@@ -2790,14 +2836,15 @@
       "datasheet_ids": [
         "000004195"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Starfangs\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:24+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Starfangs\" \"Warhammer 40000\"",
+      "source_page_url": "https://www.instagram.com/popular/warhammer-40000-aeldari-starfangs-miniature/",
+      "source_page_title": "Warhammer 40000 Aeldari...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTXQOmNVsTk_APte4FCoSEtPyr4GRJBvxj5ADiwowgOxnfmMyDL5rZLjN9yQ&s",
+      "updated_at_utc": "2026-03-13T10:39:50+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__starfangs.jpg"
     },
     {
       "unit_key": "aeldari::starweaver",
@@ -2806,14 +2853,15 @@
       "datasheet_ids": [
         "000002541"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Starweaver\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:28+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Starweaver",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Starweaver",
+      "source_page_title": "99120111006_AELStarweaverLe...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK3hX4LMtvw4tejeFxwnfsDAuoVKrlSmKYpG31y7EafDhkcVY5uzt_MXIgBg&s",
+      "updated_at_utc": "2026-03-13T10:39:51+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__starweaver.jpg"
     },
     {
       "unit_key": "aeldari::stormguardians",
@@ -2822,14 +2870,15 @@
       "datasheet_ids": [
         "000000590"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Storm Guardians\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:33+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Storm Guardians",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-storm-guardians-2022",
+      "source_page_title": "Storm Guardians",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhfMsG4zycLFxAAnlPxvDlsxUATBjxDiJs_dsu_dp20c_V8qLomHUUCZypivo&s",
+      "updated_at_utc": "2026-03-13T10:39:52+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__stormguardians.jpg"
     },
     {
       "unit_key": "aeldari::strikingscorpions",
@@ -2838,14 +2887,15 @@
       "datasheet_ids": [
         "000000595"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Striking Scorpions\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:37+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Striking Scorpions",
+      "source_page_url": "https://www.ebay.com/itm/256911692447",
+      "source_page_title": "Striking Scorpions Aeldari...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIzPhK1K1WT6QafHHpaal4XUL-hg6Oxxr23tJPrSj6im6m-IaH2HDV8LvMg&s",
+      "updated_at_utc": "2026-03-13T10:39:53+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__strikingscorpions.jpg"
     },
     {
       "unit_key": "aeldari::swoopinghawks",
@@ -2854,14 +2904,15 @@
       "datasheet_ids": [
         "000000600"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Swooping Hawks\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:42+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Swooping Hawks",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-swooping-hawks-2025",
+      "source_page_title": "99120104098_AELSwoopingHawk...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRayjiRVximBhupAHhe_IQHC8nxNTAdC43s6WTwKU5pcBZgC07xiHpsyJFXTJA&s",
+      "updated_at_utc": "2026-03-13T10:39:55+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__swoopinghawks.jpg"
     },
     {
       "unit_key": "aeldari::thevisarch",
@@ -2870,14 +2921,15 @@
       "datasheet_ids": [
         "000002543"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"The Visarch\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:46+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com The Visarch",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-the-visarch-2022",
+      "source_page_title": "The Visarch",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFMH2_wqjxT4wuc3LgmVKYRIPlQnJmPkuOxdlbFb57YpTMh0KKAjY3c4HPAI&s",
+      "updated_at_utc": "2026-03-13T10:39:56+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__thevisarch.jpg"
     },
     {
       "unit_key": "aeldari::theyncarne",
@@ -2886,14 +2938,15 @@
       "datasheet_ids": [
         "000002544"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"The Yncarne\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:50+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com The Yncarne Aeldari",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-the-yncarne-2022",
+      "source_page_title": "The Yncarne",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0umcuxVMGHq5oRysHsDpaN9hRk5DN8KbFIU99w4iHJzOwoWNzTyEWx6EF9m0&s",
+      "updated_at_utc": "2026-03-13T10:39:57+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__theyncarne.jpg"
     },
     {
       "unit_key": "aeldari::troupe",
@@ -2902,14 +2955,15 @@
       "datasheet_ids": [
         "000002536"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Troupe\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:55+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Troupe",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Troupe-Troop-2017",
+      "source_page_title": "Harlequin Troupe",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiO1Yh0fnDQf5y4ISVSTblEK-Bc1AsNpj4AsnQSU-4J4Dm9SC9kmUlXIkD5A&s",
+      "updated_at_utc": "2026-03-13T10:39:58+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__troupe.jpg"
     },
     {
       "unit_key": "aeldari::troupemaster",
@@ -2918,14 +2972,15 @@
       "datasheet_ids": [
         "000002534"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Troupe Master\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:51:59+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Troupe Master",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Troupe-Troop-2017",
+      "source_page_title": "Harlequin Troupe",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaFm7sQCGs8Cy9Njwq6HgGsZ1lCSUxWGbAwDYXbGk9IMdxb7cOLZe3UTl0w&s",
+      "updated_at_utc": "2026-03-13T10:40:00+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__troupemaster.jpg"
     },
     {
       "unit_key": "aeldari::vampirehunter",
@@ -2934,14 +2989,15 @@
       "datasheet_ids": [
         "000000626"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Vampire Hunter\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:52:04+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Vampire Hunter",
+      "source_page_url": "https://warhammerfantasy.fandom.com/wiki/Vampire_Hunter",
+      "source_page_title": "Vampire Hunter | Warhammer...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-S_BtQ2_CH9iANzdiWDAFlkOdW889m0nmVTa-vn7fVi2rdOEFwsTuHXNujg&s",
+      "updated_at_utc": "2026-03-13T10:40:01+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__vampirehunter.jpg"
     },
     {
       "unit_key": "aeldari::vampireraider",
@@ -2950,14 +3006,15 @@
       "datasheet_ids": [
         "000000625"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Vampire Raider\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:52:08+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Vampire Raider Aeldari",
+      "source_page_url": "https://wh40k.lexicanum.com/wiki/Vampire_Raider",
+      "source_page_title": "Vampire Raider - Warhammer...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPO8MTItCBHrhHY_JfwhNIOe3eZP9URAc-zgklaSQilEjRZYw-WDPT0qq8OgY&s",
+      "updated_at_utc": "2026-03-13T10:40:02+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__vampireraider.jpg"
     },
     {
       "unit_key": "aeldari::vibrocannonplatform",
@@ -2966,14 +3023,15 @@
       "datasheet_ids": [
         "000003912"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Vibro Cannon Platform\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:52:12+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Vibro Cannon Platform",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Support-Weapon",
+      "source_page_title": "Support Weapon",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRyrOrUbwoWTwHv7Dmw-vgzfORqFCvLzq5VeZLipYr_h9wvUkh38PI2GhsjE&s",
+      "updated_at_utc": "2026-03-13T10:40:03+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__vibrocannonplatform.jpg"
     },
     {
       "unit_key": "aeldari::voidweaver",
@@ -2982,14 +3040,15 @@
       "datasheet_ids": [
         "000002540"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Voidweaver\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:52:17+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Voidweaver",
+      "source_page_url": "https://www.warhammer.com/it-IT/shop/Voidweaver",
+      "source_page_title": "Tessivuoto",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYU7GIbGsUeJwMhuuaJjjvxnlkxQndF9xcUxz82NrsKMoLI0RPrMrhDNIMdo&s",
+      "updated_at_utc": "2026-03-13T10:40:04+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__voidweaver.jpg"
     },
     {
       "unit_key": "aeldari::vypers",
@@ -2998,14 +3057,15 @@
       "datasheet_ids": [
         "000000605"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Vypers\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T07:52:21+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Vypers",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-vyper-2026",
+      "source_page_title": "Vyper/Starfang",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTPWMNPecoXQl9-ijCSmhJ4LEvgbSno00qhhYSXLoU5v0VTbI9T9gu7s7eZw&s",
+      "updated_at_utc": "2026-03-13T10:40:05+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/aeldari__vypers.jpg"
     },
     {
       "unit_key": "aeldari::warwalkers",
