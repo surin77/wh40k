@@ -1,7 +1,7 @@
 {
   "source": "Official warhammer.com image previews",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T06:29:31+00:00",
+  "generated_at_utc": "2026-03-13T07:01:28+00:00",
   "entries_with_images": 0,
   "entries_with_local_cache": 0,
   "lookups_performed": 60,
@@ -990,13 +990,12 @@
       "datasheet_ids": [
         "000002519"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Valerian",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Valerian\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1007,13 +1006,12 @@
       "datasheet_ids": [
         "000001561"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Venatari Custodians",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Venatari Custodians\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1024,13 +1022,12 @@
       "datasheet_ids": [
         "000000883"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Venerable Contemptor Dreadnought",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Venerable Contemptor Dreadnought\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1041,13 +1038,12 @@
       "datasheet_ids": [
         "000000884"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Venerable Land Raider",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Venerable Land Raider\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1058,13 +1054,12 @@
       "datasheet_ids": [
         "000001454"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Vertus Praetors",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Vertus Praetors\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1075,13 +1070,12 @@
       "datasheet_ids": [
         "000002522"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Vigilators",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Vigilators\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1092,13 +1086,12 @@
       "datasheet_ids": [
         "000002523"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Witchseekers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Witchseekers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1109,13 +1102,12 @@
       "datasheet_ids": [
         "000002087"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Archaeopter Fusilave",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Archaeopter Fusilave\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1126,13 +1118,12 @@
       "datasheet_ids": [
         "000002086"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Archaeopter Stratoraptor",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Archaeopter Stratoraptor\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1143,13 +1134,12 @@
       "datasheet_ids": [
         "000002085"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Archaeopter Transvector",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Archaeopter Transvector\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1160,13 +1150,12 @@
       "datasheet_ids": [
         "000000838"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Belisarius Cawl",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Belisarius Cawl\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1177,13 +1166,12 @@
       "datasheet_ids": [
         "000000844"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Corpuscarii Electro-priests",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Corpuscarii Electro-priests\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:56:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1194,13 +1182,12 @@
       "datasheet_ids": [
         "000000846"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cybernetica Datasmith",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cybernetica Datasmith\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1211,13 +1198,12 @@
       "datasheet_ids": [
         "000000843"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Fulgurite Electro-priests",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Fulgurite Electro-priests\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1228,13 +1214,12 @@
       "datasheet_ids": [
         "000000852"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ironstrider Ballistarii",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ironstrider Ballistarii\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1245,13 +1230,12 @@
       "datasheet_ids": [
         "000000845"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kastelan Robots",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Kastelan Robots\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1262,13 +1246,12 @@
       "datasheet_ids": [
         "000000841"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kataphron Breachers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Kataphron Breachers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1279,13 +1262,12 @@
       "datasheet_ids": [
         "000000842"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kataphron Destroyers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Kataphron Destroyers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1296,13 +1278,12 @@
       "datasheet_ids": [
         "000000854"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Onager Dunecrawler",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Onager Dunecrawler\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1313,13 +1294,12 @@
       "datasheet_ids": [
         "000002084"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Pteraxii Skystalkers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Pteraxii Skystalkers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1330,13 +1310,12 @@
       "datasheet_ids": [
         "000002083"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Pteraxii Sterylizors",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Pteraxii Sterylizors\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1347,13 +1326,12 @@
       "datasheet_ids": [
         "000001525"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Secutarii Hoplites",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Secutarii Hoplites\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1364,13 +1342,12 @@
       "datasheet_ids": [
         "000001526"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Secutarii Peltasts",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Secutarii Peltasts\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1381,13 +1358,12 @@
       "datasheet_ids": [
         "000002082"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Serberys Raiders",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Serberys Raiders\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1398,13 +1374,12 @@
       "datasheet_ids": [
         "000002081"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Serberys Sulphurhounds",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Serberys Sulphurhounds\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:57:59+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1415,13 +1390,12 @@
       "datasheet_ids": [
         "000004119"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Servitor Battleclade",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Servitor Battleclade\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1432,13 +1406,12 @@
       "datasheet_ids": [
         "000000847"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Servitors",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Servitors\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1449,13 +1422,12 @@
       "datasheet_ids": [
         "000000850"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicarian Infiltrators",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Sicarian Infiltrators\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1466,13 +1438,12 @@
       "datasheet_ids": [
         "000000851"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicarian Ruststalkers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Sicarian Ruststalkers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1483,13 +1454,12 @@
       "datasheet_ids": [
         "000002478"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skitarii Marshal",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Skitarii Marshal\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1500,13 +1470,12 @@
       "datasheet_ids": [
         "000000848"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skitarii Rangers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Skitarii Rangers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1517,13 +1486,12 @@
       "datasheet_ids": [
         "000000849"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skitarii Vanguard",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Skitarii Vanguard\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1534,13 +1502,12 @@
       "datasheet_ids": [
         "000001651"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skorpius Disintegrator",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Skorpius Disintegrator\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1551,13 +1518,12 @@
       "datasheet_ids": [
         "000001650"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skorpius Dunerider",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Skorpius Dunerider\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1568,13 +1534,12 @@
       "datasheet_ids": [
         "000003694"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sydonian Dragoons With Radium Jezzails",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Sydonian Dragoons With Radium Jezzails\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1585,13 +1550,12 @@
       "datasheet_ids": [
         "000000853"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sydonian Dragoons With Taser Lances",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Sydonian Dragoons With Taser Lances\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1602,13 +1566,12 @@
       "datasheet_ids": [
         "000003695"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sydonian Skatros",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Sydonian Skatros\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:58:59+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1619,13 +1582,12 @@
       "datasheet_ids": [
         "000000839"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tech-priest Dominus",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Tech-priest Dominus\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1636,13 +1598,12 @@
       "datasheet_ids": [
         "000000840"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tech-priest Enginseer",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Tech-priest Enginseer\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1653,13 +1614,12 @@
       "datasheet_ids": [
         "000001580"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tech-priest Manipulus",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Tech-priest Manipulus\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1670,13 +1630,12 @@
       "datasheet_ids": [
         "000002477"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Technoarcheologist",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Technoarcheologist\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1687,13 +1646,12 @@
       "datasheet_ids": [
         "000001533"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Terrax-pattern Termite",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Terrax-pattern Termite\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1704,13 +1662,12 @@
       "datasheet_ids": [
         "000001822"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com X-101",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"X-101\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1721,13 +1678,12 @@
       "datasheet_ids": [
         "000000868"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Reaver Titan",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Reaver Titan\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1738,13 +1694,12 @@
       "datasheet_ids": [
         "000002077"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warbringer Nemesis Titan",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warbringer Nemesis Titan\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1755,13 +1710,12 @@
       "datasheet_ids": [
         "000000867"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warhound Titan",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warhound Titan\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1772,13 +1726,12 @@
       "datasheet_ids": [
         "000000869"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warlord Titan",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warlord Titan\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1789,13 +1742,12 @@
       "datasheet_ids": [
         "000001598"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Amallyn Shadowguide",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Amallyn Shadowguide\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T06:59:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1806,13 +1758,12 @@
       "datasheet_ids": [
         "000000571"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Asurmen",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Asurmen\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1823,13 +1774,12 @@
       "datasheet_ids": [
         "000000577"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Autarch",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Autarch\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1840,13 +1790,12 @@
       "datasheet_ids": [
         "000000580"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Autarch Skyrunner",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Autarch Skyrunner\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1857,13 +1806,12 @@
       "datasheet_ids": [
         "000002759"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Autarch Wayleaper",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Autarch Wayleaper\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1874,13 +1822,12 @@
       "datasheet_ids": [
         "000000581"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Avatar of Khaine",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Avatar of Khaine\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1891,13 +1838,12 @@
       "datasheet_ids": [
         "000000575"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Baharroth",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Baharroth\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1908,13 +1854,12 @@
       "datasheet_ids": [
         "000001400"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Bonesinger",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Bonesinger\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1925,13 +1870,12 @@
       "datasheet_ids": [
         "000000622"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cobra",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cobra\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1942,13 +1886,12 @@
       "datasheet_ids": [
         "000000629"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Corsair Cloud Dancer Band",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Corsair Cloud Dancer Band\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1959,13 +1902,12 @@
       "datasheet_ids": [
         "000000632"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Corsair Reaver Band",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Corsair Reaver Band\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1976,13 +1918,12 @@
       "datasheet_ids": [
         "000000633"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Corsair Skyreaver Band",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Corsair Skyreaver Band\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:00:53+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -2010,13 +1951,12 @@
       "datasheet_ids": [
         "000002531"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Corsair Voidreavers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Corsair Voidreavers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T07:01:28+00:00",
       "search_engine": "",
       "error": ""
     },
