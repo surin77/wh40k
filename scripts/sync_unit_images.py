@@ -5,6 +5,7 @@ import argparse
 import csv
 import html
 import json
+import mimetypes
 import re
 import time
 import urllib.error
@@ -16,6 +17,14 @@ from pathlib import Path
 USER_AGENT = "wh40k-unit-image-sync/1.0 (+https://github.com/surin77/wh40k)"
 DDG_HTML_SEARCH = "https://html.duckduckgo.com/html/?q={query}"
 BING_SEARCH = "https://www.bing.com/search?q={query}"
+MIME_TO_EXT = {
+    "image/jpeg": ".jpg",
+    "image/jpg": ".jpg",
+    "image/png": ".png",
+    "image/webp": ".webp",
+    "image/gif": ".gif",
+    "image/avif": ".avif",
+}
 
 
 def utcnow_iso() -> str:
@@ -72,6 +81,20 @@ def fetch_text(url: str, timeout: int) -> str:
     with urllib.request.urlopen(request, timeout=timeout) as response:
         charset = response.headers.get_content_charset() or "utf-8"
         return response.read().decode(charset, errors="replace")
+
+
+def fetch_bytes(url: str, timeout: int) -> tuple[bytes, str]:
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Referer": "https://www.warhammer.com/",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        return response.read(), str(response.headers.get("Content-Type", "")).split(";")[0].strip().lower()
 
 
 def strip_tags(value: str) -> str:
@@ -233,6 +256,83 @@ def extract_page_preview(page_url: str, timeout: int) -> tuple[str, str]:
     return urllib.parse.urljoin(page_url, image_url), title
 
 
+def asset_basename(unit_key: str) -> str:
+    return unit_key.replace("::", "__")
+
+
+def relative_asset_path(path: Path, web_root: Path) -> str:
+    return path.relative_to(web_root).as_posix()
+
+
+def resolve_local_asset(entry: dict[str, object], web_root: Path) -> Path | None:
+    local_path = str(entry.get("local_path", "")).strip()
+    if not local_path:
+        return None
+    candidate = web_root / local_path
+    if candidate.exists() and candidate.is_file() and candidate.stat().st_size > 0:
+        return candidate
+    return None
+
+
+def guess_extension(image_url: str, content_type: str) -> str:
+    ext = MIME_TO_EXT.get((content_type or "").lower(), "")
+    if ext:
+        return ext
+
+    suffix = Path(urllib.parse.urlparse(image_url).path).suffix.lower()
+    if suffix in {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"}:
+        return ".jpg" if suffix == ".jpeg" else suffix
+
+    guessed = mimetypes.guess_extension(content_type or "")
+    if guessed in {".jpe", ".jpeg"}:
+        return ".jpg"
+    if guessed in {".jpg", ".png", ".webp", ".gif", ".avif"}:
+        return guessed
+    return ".jpg"
+
+
+def cache_image(image_url: str, unit_key: str, assets_dir: Path, web_root: Path, timeout: int) -> str:
+    body, content_type = fetch_bytes(image_url, timeout=timeout)
+    if (content_type and not content_type.startswith("image/")) or body[:64].lstrip().startswith(b"<"):
+        raise ValueError(f"Unexpected image response content type: {content_type or 'unknown'}")
+    ext = guess_extension(image_url, content_type)
+    basename = asset_basename(unit_key)
+
+    assets_dir.mkdir(parents=True, exist_ok=True)
+    for old_file in assets_dir.glob(f"{basename}.*"):
+        if old_file.suffix.lower() != ext:
+            old_file.unlink(missing_ok=True)
+
+    target = assets_dir / f"{basename}{ext}"
+    target.write_bytes(body)
+    return relative_asset_path(target, web_root)
+
+
+def hydrate_entry(entry: dict[str, object], unit: dict[str, object]) -> dict[str, object]:
+    hydrated = dict(entry)
+    hydrated["unit_key"] = unit["unit_key"]
+    hydrated["unit_name"] = unit["unit_name"]
+    hydrated["faction_name"] = unit["faction_name"]
+    hydrated["datasheet_ids"] = unit["datasheet_ids"]
+    return hydrated
+
+
+def cleanup_stale_assets(entries: list[dict[str, object]], assets_dir: Path, web_root: Path) -> None:
+    if not assets_dir.exists():
+        return
+    keep = {
+        resolve_local_asset(entry, web_root).name
+        for entry in entries
+        if entry.get("status") == "ok" and resolve_local_asset(entry, web_root) is not None
+    }
+    keep.add(".gitkeep")
+    for file_path in assets_dir.iterdir():
+        if not file_path.is_file():
+            continue
+        if file_path.name not in keep:
+            file_path.unlink(missing_ok=True)
+
+
 def load_existing_entries(out_path: Path) -> dict[str, dict[str, object]]:
     if not out_path.exists():
         return {}
@@ -335,11 +435,13 @@ def lookup_unit_image(
 
 def build_payload(entries: list[dict[str, object]], lookups_performed: int) -> dict[str, object]:
     ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
+    cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
     return {
         "source": "Official warhammer.com image previews",
         "query_template": "warhammer.com {unit_name}",
         "generated_at_utc": utcnow_iso(),
         "entries_with_images": ok_count,
+        "entries_with_local_cache": cached_count,
         "lookups_performed": lookups_performed,
         "entries": entries,
     }
@@ -347,9 +449,15 @@ def build_payload(entries: list[dict[str, object]], lookups_performed: int) -> d
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Resolve unit preview images from official warhammer.com pages")
+    parser.add_argument("--web-root", default="docs", help="Web root directory used to build relative asset paths")
     parser.add_argument("--datasheets", default="docs/data/Datasheets.csv", help="Path to Datasheets.csv")
     parser.add_argument("--factions", default="docs/data/Factions.csv", help="Path to Factions.csv")
     parser.add_argument("--out", default="docs/data/unit_images.json", help="Output JSON path")
+    parser.add_argument(
+        "--assets-dir",
+        default="docs/assets/unit-previews",
+        help="Directory for cached preview images",
+    )
     parser.add_argument("--timeout", type=int, default=20, help="HTTP timeout in seconds")
     parser.add_argument("--max-lookups", type=int, default=60, help="Maximum refreshed/missing lookups per run")
     parser.add_argument("--delay-seconds", type=float, default=0.4, help="Delay between search attempts")
@@ -370,9 +478,11 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+    web_root = Path(args.web_root)
     datasheets_path = Path(args.datasheets)
     factions_path = Path(args.factions)
     out_path = Path(args.out)
+    assets_dir = Path(args.assets_dir)
 
     units = load_units(datasheets_path, factions_path)
     existing_entries = load_existing_entries(out_path)
@@ -385,22 +495,34 @@ def main() -> int:
     for unit in units:
         key = str(unit["unit_key"])
         previous = existing_entries.get(key)
+        previous_hydrated = hydrate_entry(previous, unit) if previous else None
+        has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
+        needs_refresh = previous_hydrated is None or should_refresh(
+            previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
+        )
 
-        if previous and not should_refresh(previous, refresh_after=refresh_after, retry_after=retry_after):
-            carry = dict(previous)
-            carry["unit_name"] = unit["unit_name"]
-            carry["faction_name"] = unit["faction_name"]
-            carry["datasheet_ids"] = unit["datasheet_ids"]
-            entries.append(carry)
+        if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
+            entries.append(previous_hydrated)
             continue
 
+        if previous_hydrated and previous_hydrated.get("status") == "ok" and previous_hydrated.get("image_url") and not has_local_cache:
+            try:
+                previous_hydrated["local_path"] = cache_image(
+                    image_url=str(previous_hydrated["image_url"]),
+                    unit_key=key,
+                    assets_dir=assets_dir,
+                    web_root=web_root,
+                    timeout=args.timeout,
+                )
+                previous_hydrated["updated_at_utc"] = utcnow_iso()
+                entries.append(previous_hydrated)
+                continue
+            except (urllib.error.URLError, TimeoutError, ValueError, OSError):
+                pass
+
         if lookups_performed >= args.max_lookups:
-            if previous:
-                carry = dict(previous)
-                carry["unit_name"] = unit["unit_name"]
-                carry["faction_name"] = unit["faction_name"]
-                carry["datasheet_ids"] = unit["datasheet_ids"]
-                entries.append(carry)
+            if previous_hydrated:
+                entries.append(previous_hydrated)
             else:
                 entries.append(
                     {
@@ -423,22 +545,34 @@ def main() -> int:
         entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
         lookups_performed += 1
 
-        if had_error and previous and previous.get("status") == "ok":
-            carry = dict(previous)
-            carry["unit_name"] = unit["unit_name"]
-            carry["faction_name"] = unit["faction_name"]
-            carry["datasheet_ids"] = unit["datasheet_ids"]
-            entries.append(carry)
+        if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
+            entries.append(previous_hydrated)
             continue
+
+        if entry.get("status") == "ok" and entry.get("image_url"):
+            try:
+                entry["local_path"] = cache_image(
+                    image_url=str(entry["image_url"]),
+                    unit_key=key,
+                    assets_dir=assets_dir,
+                    web_root=web_root,
+                    timeout=args.timeout,
+                )
+            except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
+                entry["status"] = "error"
+                entry["error"] = str(error)
+                entry["local_path"] = ""
 
         entries.append(entry)
 
     payload = build_payload(entries, lookups_performed=lookups_performed)
+    cleanup_stale_assets(entries, assets_dir=assets_dir, web_root=web_root)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, ensure_ascii=True, indent=2) + "\n", encoding="utf-8")
 
     ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
-    print(f"Wrote {out_path} with {ok_count} image entries ({lookups_performed} lookups)")
+    cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
+    print(f"Wrote {out_path} with {ok_count} image entries, {cached_count} cached locally ({lookups_performed} lookups)")
     return 0
 
 

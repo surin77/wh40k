@@ -423,7 +423,7 @@ function buildUnitImageIndex(payload) {
 
   const entries = Array.isArray(payload?.entries) ? payload.entries : [];
   for (const entry of entries) {
-    if (!entry || entry.status !== "ok" || !entry.image_url) continue;
+    if (!entry || entry.status !== "ok" || (!entry.local_path && !entry.image_url)) continue;
     const key = String(entry.unit_key || "").trim();
     if (key) unitImageEntriesByKey.set(key, entry);
 
@@ -892,7 +892,7 @@ function setUnitPhotoButton(unit) {
 
   unitPhotoBtnEl.hidden = false;
   unitPhotoBtnEl.title = "Preview official unit image";
-  unitPhotoBtnEl.dataset.imageUrl = String(imageEntry.image_url || "");
+  unitPhotoBtnEl.dataset.imageUrl = String(imageEntry.local_path || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imagePageUrl = String(imageEntry.source_page_url || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imageTitle = String(imageEntry.unit_name || unit.name || "Unit image");
 }

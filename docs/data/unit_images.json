@@ -3,6 +3,7 @@
   "query_template": "warhammer.com {unit_name}",
   "generated_at_utc": "",
   "entries_with_images": 0,
+  "entries_with_local_cache": 0,
   "lookups_performed": 0,
   "entries": []
 }

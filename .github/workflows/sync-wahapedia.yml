@@ -27,11 +27,11 @@ jobs:
         run: python scripts/fetch_wh40k.py
 
       - name: Refresh unit image index
-        run: python scripts/sync_unit_images.py --datasheets docs/data/Datasheets.csv --factions docs/data/Factions.csv --out docs/data/unit_images.json --max-lookups 60
+        run: python scripts/sync_unit_images.py --web-root docs --datasheets docs/data/Datasheets.csv --factions docs/data/Factions.csv --out docs/data/unit_images.json --assets-dir docs/assets/unit-previews --max-lookups 60 --timeout 8
 
       - name: Commit and push when changed
         run: |
-          git add docs/data
+          git add docs/data docs/assets
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
