@@ -1,7 +1,7 @@
 {
   "source": "Official warhammer.com image previews",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T07:52:56+00:00",
+  "generated_at_utc": "2026-03-13T08:46:20+00:00",
   "entries_with_images": 0,
   "entries_with_local_cache": 0,
   "lookups_performed": 60,
@@ -2894,15 +2894,14 @@
       "datasheet_ids": [
         "000000612"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com War Walkers",
+      "status": "error",
+      "lookup_query": "site:warhammer.com \"War Walkers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:04+00:00",
       "search_engine": "",
-      "error": ""
+      "error": "HTTP Error 405: Not Allowed"
     },
     {
       "unit_key": "aeldari::warlock",
@@ -2911,13 +2910,12 @@
       "datasheet_ids": [
         "000000585"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warlock",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warlock\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -2944,13 +2942,12 @@
       "datasheet_ids": [
         "000000587"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warlock Skyrunners",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warlock Skyrunners\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -2961,13 +2958,12 @@
       "datasheet_ids": [
         "000000619"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warp Hunter",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warp Hunter\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -2978,13 +2974,12 @@
       "datasheet_ids": [
         "000000601"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warp Spiders",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Warp Spiders\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -2995,13 +2990,12 @@
       "datasheet_ids": [
         "000000616"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wasp Assault Walker",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wasp Assault Walker\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3012,13 +3006,12 @@
       "datasheet_ids": [
         "000000599"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wave Serpent",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wave Serpent\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3029,13 +3022,12 @@
       "datasheet_ids": [
         "000002459"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Webway Gate",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Webway Gate\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3046,13 +3038,12 @@
       "datasheet_ids": [
         "000000591"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Windriders",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Windriders\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3063,13 +3054,12 @@
       "datasheet_ids": [
         "000000598"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithblades",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithblades\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3080,13 +3070,12 @@
       "datasheet_ids": [
         "000000597"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithguard",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithguard\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3097,13 +3086,12 @@
       "datasheet_ids": [
         "000000614"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithknight",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithknight\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3114,13 +3102,12 @@
       "datasheet_ids": [
         "000003913"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithknight with Ghostglaive",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithknight with Ghostglaive\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3131,13 +3118,12 @@
       "datasheet_ids": [
         "000000613"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithlord",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithlord\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3148,13 +3134,12 @@
       "datasheet_ids": [
         "000000617"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wraithseer",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Wraithseer\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3165,13 +3150,12 @@
       "datasheet_ids": [
         "000003914"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Archon",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Archon\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3182,13 +3166,12 @@
       "datasheet_ids": [
         "000003918"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Incubi",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Incubi\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3199,13 +3182,12 @@
       "datasheet_ids": [
         "000003916"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Kabalite Warriors",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Kabalite Warriors\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:53+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3216,13 +3198,12 @@
       "datasheet_ids": [
         "000003920"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Raider",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Raider\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:42:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3233,13 +3214,12 @@
       "datasheet_ids": [
         "000003919"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Reavers",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Reavers\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3250,13 +3230,12 @@
       "datasheet_ids": [
         "000003915"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Succubus",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Succubus\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3267,13 +3246,12 @@
       "datasheet_ids": [
         "000003921"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Venom",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Venom\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3284,13 +3262,12 @@
       "datasheet_ids": [
         "000003917"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ynnari Wyches",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Ynnari Wyches\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3301,13 +3278,12 @@
       "datasheet_ids": [
         "000002542"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Yvraine",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Yvraine\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3318,13 +3294,12 @@
       "datasheet_ids": [
         "000002619"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Aegis Defence Line",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Aegis Defence Line\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3335,13 +3310,12 @@
       "datasheet_ids": [
         "000000778"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Aquila Lander",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Aquila Lander\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3352,13 +3326,12 @@
       "datasheet_ids": [
         "000000764"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Arkurian Stormhammer",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Arkurian Stormhammer\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3369,13 +3342,12 @@
       "datasheet_ids": [
         "000000739"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Armageddon-pattern Medusa",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Armageddon-pattern Medusa\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3386,13 +3358,12 @@
       "datasheet_ids": [
         "000000691"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Armoured Sentinels",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Armoured Sentinels\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3403,13 +3374,12 @@
       "datasheet_ids": [
         "000003896"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Artillery Team",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Artillery Team\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3420,13 +3390,12 @@
       "datasheet_ids": [
         "000000779"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Arvus Lighter",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Arvus Lighter\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3437,13 +3406,12 @@
       "datasheet_ids": [
         "000000728"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Atlas Recovery Vehicle",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Atlas Recovery Vehicle\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3454,13 +3422,12 @@
       "datasheet_ids": [
         "000002616"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Attilan Rough Riders",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Attilan Rough Riders\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:43:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3471,13 +3438,12 @@
       "datasheet_ids": [
         "000000780"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Avenger Strike Fighter",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Avenger Strike Fighter\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3488,13 +3454,12 @@
       "datasheet_ids": [
         "000000702"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Baneblade",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Baneblade\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3505,13 +3470,12 @@
       "datasheet_ids": [
         "000000703"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Banehammer",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Banehammer\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3522,13 +3486,12 @@
       "datasheet_ids": [
         "000000704"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Banesword",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Banesword\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3539,13 +3502,12 @@
       "datasheet_ids": [
         "000000695"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Basilisk",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Basilisk\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3556,13 +3518,12 @@
       "datasheet_ids": [
         "000000723"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Bullgryn Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Bullgryn Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3573,13 +3534,12 @@
       "datasheet_ids": [
         "000002607"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cadian Castellan",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cadian Castellan\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3590,13 +3550,12 @@
       "datasheet_ids": [
         "000002609"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cadian Command Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cadian Command Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3607,13 +3566,12 @@
       "datasheet_ids": [
         "000000686"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cadian Heavy Weapons Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cadian Heavy Weapons Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3624,13 +3582,12 @@
       "datasheet_ids": [
         "000002612"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cadian Shock Troops",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cadian Shock Troops\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3641,13 +3598,12 @@
       "datasheet_ids": [
         "000001994"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Carnodon",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Carnodon\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3658,13 +3614,12 @@
       "datasheet_ids": [
         "000003891"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Catachan Command Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Catachan Command Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3675,13 +3630,12 @@
       "datasheet_ids": [
         "000003894"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Catachan Heavy Weapons Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Catachan Heavy Weapons Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3692,13 +3646,12 @@
       "datasheet_ids": [
         "000002614"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Catachan Jungle Fighters",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Catachan Jungle Fighters\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:44:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3709,13 +3662,12 @@
       "datasheet_ids": [
         "000000731"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Centaur Light Carrier",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Centaur Light Carrier\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3726,13 +3678,12 @@
       "datasheet_ids": [
         "000000692"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Chimera",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Chimera\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3743,13 +3694,12 @@
       "datasheet_ids": [
         "000000740"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Colossus",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Colossus\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3760,13 +3710,12 @@
       "datasheet_ids": [
         "000000716"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Commissar",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Commissar\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3777,13 +3726,12 @@
       "datasheet_ids": [
         "000000766"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Crassus",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Crassus\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3794,13 +3742,12 @@
       "datasheet_ids": [
         "000000741"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cyclops Demolition Vehicle",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Cyclops Demolition Vehicle\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3811,13 +3758,12 @@
       "datasheet_ids": [
         "000002374"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Death Korps Grenadier Squad",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Death Korps Grenadier Squad\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3828,13 +3774,12 @@
       "datasheet_ids": [
         "000002613"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Death Korps Of Krieg",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Death Korps Of Krieg\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3845,13 +3790,12 @@
       "datasheet_ids": [
         "000002378"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Death Rider Commissar",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Death Rider Commissar\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3862,13 +3806,12 @@
       "datasheet_ids": [
         "000003898"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Death Riders",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Death Riders\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3879,13 +3822,12 @@
       "datasheet_ids": [
         "000000699"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Deathstrike",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Deathstrike\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3896,13 +3838,12 @@
       "datasheet_ids": [
         "000000767"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Dominus Armoured Siege Bombard",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Dominus Armoured Siege Bombard\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:45:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -3947,13 +3888,12 @@
       "datasheet_ids": [
         "000002739"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Earthshaker Platform",
+      "status": "not_found",
+      "lookup_query": "site:warhammer.com \"Earthshaker Platform\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T08:46:20+00:00",
       "search_engine": "",
       "error": ""
     },
