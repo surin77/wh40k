@@ -1132,8 +1132,10 @@ function showImagePreview(target) {
     imgEl.alt = "";
     imagePreviewEl.classList.add("is-empty");
     statusEl.textContent =
-      previewStatus === "not_found" ? "No cached preview yet. Click to open image search." : "Preview is being indexed. Click to open image search.";
-    sourceEl.textContent = "Google Images search";
+      previewStatus === "not_found"
+        ? "No cached preview yet. Click to open image search."
+        : "Preview is not cached yet. It will appear after a GitHub Actions sync.";
+    sourceEl.textContent = "GitHub Actions image cache";
     imagePreviewEl.classList.add("visible");
     imagePreviewVisible = true;
     imagePreviewAnchorEl = target;
