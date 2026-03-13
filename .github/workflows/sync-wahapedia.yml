@@ -1,6 +1,9 @@
 name: Sync Wahapedia WH40k
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
@@ -22,6 +25,9 @@ jobs:
 
       - name: Fetch latest WH40k export data
         run: python scripts/fetch_wh40k.py
+
+      - name: Refresh unit image index
+        run: python scripts/sync_unit_images.py --datasheets docs/data/Datasheets.csv --factions docs/data/Factions.csv --out docs/data/unit_images.json --max-lookups 60
 
       - name: Commit and push when changed
         run: |

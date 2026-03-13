@@ -7,6 +7,7 @@ const showLegendsToggleEl = document.querySelector("#show-legends-toggle");
 const unitListEl = document.querySelector("#unit-list");
 const keywordFilterIndicatorEl = document.querySelector("#keyword-filter-indicator");
 const unitTitleEl = document.querySelector("#unit-title");
+const unitPhotoBtnEl = document.querySelector("#unit-photo-btn");
 const unitMetaEl = document.querySelector("#unit-meta");
 const roleBadgeEl = document.querySelector("#role-badge");
 const statlineEl = document.querySelector("#statline");
@@ -23,6 +24,7 @@ const compositionEl = document.querySelector("#composition");
 const detachmentContentEl = document.querySelector("#detachment-content");
 const scrollTopBtnEl = document.querySelector("#scroll-top-btn");
 const tooltipEl = document.createElement("div");
+const imagePreviewEl = document.createElement("div");
 
 const REQUIRED_FILES = [
   "Factions.csv",
@@ -50,6 +52,10 @@ let tooltipVisible = false;
 let tooltipAnchorEl = null;
 let suppressTooltipClickUntil = 0;
 let coreRuleDefsByName = new Map();
+let unitImageEntriesById = new Map();
+let unitImageEntriesByKey = new Map();
+let imagePreviewVisible = false;
+let imagePreviewAnchorEl = null;
 let activeKeywordFilter = "";
 let showLegends = false;
 
@@ -212,6 +218,19 @@ tooltipEl.innerHTML = `
 `;
 document.body.appendChild(tooltipEl);
 
+imagePreviewEl.className = "unit-image-preview";
+imagePreviewEl.innerHTML = `
+  <a class="unit-image-preview-link" href="#" target="_blank" rel="noopener noreferrer">
+    <div class="unit-image-preview-frame">
+      <img class="unit-image-preview-img" alt="" loading="lazy" referrerpolicy="no-referrer" />
+      <div class="unit-image-preview-status">Loading image...</div>
+    </div>
+    <div class="unit-image-preview-caption"></div>
+    <div class="unit-image-preview-source">Source: warhammer.com</div>
+  </a>
+`;
+document.body.appendChild(imagePreviewEl);
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -247,6 +266,13 @@ function normalized(text) {
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
+}
+
+function unitLookupKey(unitOrFaction, maybeName) {
+  if (typeof unitOrFaction === "object" && unitOrFaction) {
+    return `${normalized(unitOrFaction.factionName)}::${normalized(unitOrFaction.name)}`;
+  }
+  return `${normalized(unitOrFaction)}::${normalized(maybeName)}`;
 }
 
 function pickKey(row, candidates) {
@@ -319,6 +345,12 @@ async function loadCsv(fileName) {
   return parseCsvSmart(text, fileName);
 }
 
+async function loadJsonOptional(fileName) {
+  const response = await fetch(`./data/${encodeURIComponent(fileName)}`, { cache: "no-store" }).catch(() => null);
+  if (!response || !response.ok) return null;
+  return response.json();
+}
+
 function renderMeta() {
   if (!metaEl) return;
   const changed = indexData.changed_files?.length ? indexData.changed_files.join(", ") : "no changes";
@@ -383,6 +415,29 @@ function parseCostNumber(value) {
   if (!match) return null;
   const num = Number(match[0]);
   return Number.isFinite(num) && num > 0 ? num : null;
+}
+
+function buildUnitImageIndex(payload) {
+  unitImageEntriesById = new Map();
+  unitImageEntriesByKey = new Map();
+
+  const entries = Array.isArray(payload?.entries) ? payload.entries : [];
+  for (const entry of entries) {
+    if (!entry || entry.status !== "ok" || !entry.image_url) continue;
+    const key = String(entry.unit_key || "").trim();
+    if (key) unitImageEntriesByKey.set(key, entry);
+
+    const ids = Array.isArray(entry.datasheet_ids) ? entry.datasheet_ids : [];
+    for (const id of ids) {
+      const value = String(id || "").trim();
+      if (value) unitImageEntriesById.set(value, entry);
+    }
+  }
+}
+
+function resolveUnitImage(unit) {
+  if (!unit) return null;
+  return unitImageEntriesById.get(String(unit.id || "").trim()) || unitImageEntriesByKey.get(unitLookupKey(unit)) || null;
 }
 
 function normalizeRuleName(text) {
@@ -822,8 +877,30 @@ function renderStatline(unit) {
   statlineEl.innerHTML = html + invuln;
 }
 
+function setUnitPhotoButton(unit) {
+  if (!unitPhotoBtnEl) return;
+  const imageEntry = resolveUnitImage(unit);
+  if (!imageEntry) {
+    unitPhotoBtnEl.hidden = true;
+    unitPhotoBtnEl.title = "";
+    unitPhotoBtnEl.dataset.imageUrl = "";
+    unitPhotoBtnEl.dataset.imagePageUrl = "";
+    unitPhotoBtnEl.dataset.imageTitle = "";
+    if (imagePreviewAnchorEl === unitPhotoBtnEl) hideImagePreview();
+    return;
+  }
+
+  unitPhotoBtnEl.hidden = false;
+  unitPhotoBtnEl.title = "Preview official unit image";
+  unitPhotoBtnEl.dataset.imageUrl = String(imageEntry.image_url || "");
+  unitPhotoBtnEl.dataset.imagePageUrl = String(imageEntry.source_page_url || imageEntry.image_url || "");
+  unitPhotoBtnEl.dataset.imageTitle = String(imageEntry.unit_name || unit.name || "Unit image");
+}
+
 function renderUnit(unit) {
+  hideImagePreview();
   unitTitleEl.textContent = unit.name || "Unknown unit";
+  setUnitPhotoButton(unit);
   unitMetaEl.textContent = `${unit.factionName} • ${unit.baseSize || "base n/a"}`;
   roleBadgeEl.textContent = unit.role || "Role n/a";
 
@@ -911,6 +988,7 @@ function renderDetachmentInfo() {
 
 function showTooltip(target, x, y) {
   if (!target) return;
+  hideImagePreview();
   const title = target.dataset.tipTitle || "";
   const intro = target.dataset.tipIntro || "";
   const body = target.dataset.tipBody || "";
@@ -970,6 +1048,89 @@ function moveTooltip(x, y) {
   tooltipEl.style.top = `${Math.max(8, top)}px`;
 }
 
+function moveImagePreview() {
+  if (!imagePreviewVisible || !imagePreviewAnchorEl) return;
+  const rect = imagePreviewAnchorEl.getBoundingClientRect();
+  const width = imagePreviewEl.offsetWidth || 320;
+  const height = imagePreviewEl.offsetHeight || 340;
+  const margin = 12;
+
+  let left = rect.right - width;
+  let top = rect.bottom + margin;
+
+  if (left < 8) left = 8;
+  if (left + width > window.innerWidth - 8) left = window.innerWidth - width - 8;
+  if (top + height > window.innerHeight - 8) top = rect.top - height - margin;
+  if (top < 8) top = 8;
+
+  imagePreviewEl.style.left = `${Math.max(8, left)}px`;
+  imagePreviewEl.style.top = `${Math.max(8, top)}px`;
+}
+
+function hideImagePreview() {
+  imagePreviewEl.classList.remove("visible");
+  imagePreviewVisible = false;
+  imagePreviewAnchorEl = null;
+}
+
+function showImagePreview(target) {
+  if (!target) return;
+  const imageUrl = target.dataset.imageUrl || "";
+  if (!imageUrl) return;
+
+  hideTooltip();
+
+  const linkEl = imagePreviewEl.querySelector(".unit-image-preview-link");
+  const imgEl = imagePreviewEl.querySelector(".unit-image-preview-img");
+  const statusEl = imagePreviewEl.querySelector(".unit-image-preview-status");
+  const captionEl = imagePreviewEl.querySelector(".unit-image-preview-caption");
+
+  const title = target.dataset.imageTitle || "Unit image";
+  const pageUrl = target.dataset.imagePageUrl || imageUrl;
+
+  imagePreviewEl.classList.remove("is-loaded", "is-error");
+  captionEl.textContent = title;
+  linkEl.href = pageUrl;
+  imgEl.alt = title;
+  statusEl.textContent = "Loading image...";
+
+  const sameImage = imgEl.dataset.currentSrc === imageUrl;
+  if (!sameImage) {
+    imgEl.dataset.currentSrc = imageUrl;
+    imgEl.removeAttribute("src");
+    imgEl.src = imageUrl;
+  }
+
+  imgEl.onload = () => {
+    imagePreviewEl.classList.add("is-loaded");
+    imagePreviewEl.classList.remove("is-error");
+    statusEl.textContent = "";
+  };
+
+  imgEl.onerror = () => {
+    imagePreviewEl.classList.add("is-error");
+    imagePreviewEl.classList.remove("is-loaded");
+    statusEl.textContent = "Image unavailable";
+  };
+
+  if (sameImage && imgEl.complete) {
+    if (imgEl.naturalWidth > 0) {
+      imagePreviewEl.classList.add("is-loaded");
+      imagePreviewEl.classList.remove("is-error");
+      statusEl.textContent = "";
+    } else {
+      imagePreviewEl.classList.add("is-error");
+      imagePreviewEl.classList.remove("is-loaded");
+      statusEl.textContent = "Image unavailable";
+    }
+  }
+
+  imagePreviewEl.classList.add("visible");
+  imagePreviewVisible = true;
+  imagePreviewAnchorEl = target;
+  moveImagePreview();
+}
+
 function initTooltipHandlers() {
   document.addEventListener("mouseover", (event) => {
     const target = event.target.closest(".kw-link");
@@ -1022,6 +1183,63 @@ function initTooltipHandlers() {
   );
   document.addEventListener("scroll", hideTooltip, true);
   window.addEventListener("blur", hideTooltip);
+}
+
+function initImagePreviewHandlers() {
+  document.addEventListener("mouseover", (event) => {
+    const target = event.target.closest(".unit-photo-btn");
+    if (!target || target.hidden) return;
+    showImagePreview(target);
+  });
+
+  document.addEventListener("mouseout", (event) => {
+    const from = event.target.closest(".unit-photo-btn");
+    const toButton = event.relatedTarget?.closest?.(".unit-photo-btn");
+    const toPreview = event.relatedTarget?.closest?.(".unit-image-preview");
+    if (from && !toButton && !toPreview) {
+      hideImagePreview();
+    }
+  });
+
+  imagePreviewEl.addEventListener("mouseleave", () => {
+    hideImagePreview();
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest(".unit-photo-btn");
+    if (!target || target.hidden) {
+      if (!event.target.closest(".unit-image-preview")) hideImagePreview();
+      return;
+    }
+    event.preventDefault();
+    if (imagePreviewVisible && imagePreviewAnchorEl === target) {
+      hideImagePreview();
+      return;
+    }
+    showImagePreview(target);
+  });
+
+  document.addEventListener(
+    "touchstart",
+    (event) => {
+      const target = event.target.closest(".unit-photo-btn");
+      if (!target || target.hidden) {
+        if (!event.target.closest(".unit-image-preview")) hideImagePreview();
+        return;
+      }
+      event.preventDefault();
+      if (imagePreviewVisible && imagePreviewAnchorEl === target) {
+        hideImagePreview();
+        return;
+      }
+      showImagePreview(target);
+    },
+    { passive: false }
+  );
+
+  window.addEventListener("resize", moveImagePreview, { passive: true });
+  window.addEventListener("scroll", hideImagePreview, { passive: true });
+  window.addEventListener("blur", hideImagePreview);
 }
 
 function getFilteredUnits() {
@@ -1079,6 +1297,7 @@ function renderKeywordFilterIndicator() {
 }
 
 function renderUnitList() {
+  hideImagePreview();
   const units = getFilteredUnits();
   renderDetachmentInfo();
   renderKeywordFilterIndicator();
@@ -1597,6 +1816,8 @@ async function loadIndexAndInit() {
     coreRuleDefsByName = new Map();
   }
 
+  buildUnitImageIndex(await loadJsonOptional("unit_images.json"));
+
   catalog = buildCatalog(datasets);
   if (!catalog.units.length) {
     throw new Error("Failed to build unit catalog");
@@ -1637,6 +1858,7 @@ if (scrollTopBtnEl) {
 }
 
 initTooltipHandlers();
+initImagePreviewHandlers();
 initThemeToggle();
 
 loadIndexAndInit().catch((error) => {

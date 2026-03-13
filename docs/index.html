@@ -60,8 +60,17 @@
 
         <article class="panel datasheet">
           <header class="sheet-header">
-            <div>
-              <h2 id="unit-title">Select a unit</h2>
+            <div class="sheet-header-main">
+              <div class="unit-title-row">
+                <h2 id="unit-title">Select a unit</h2>
+                <button id="unit-photo-btn" class="unit-photo-btn" type="button" aria-label="Preview unit image" hidden>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M9 4.5 7.9 6H5.5A2.5 2.5 0 0 0 3 8.5v8A2.5 2.5 0 0 0 5.5 19h13a2.5 2.5 0 0 0 2.5-2.5v-8A2.5 2.5 0 0 0 18.5 6h-2.4L15 4.5H9Zm3 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.7 3.2 3.2 0 0 0 12 9.3Z"
+                    />
+                  </svg>
+                </button>
+              </div>
               <p id="unit-meta" class="muted"></p>
             </div>
             <div id="role-badge" class="role-badge"></div>

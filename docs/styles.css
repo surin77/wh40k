@@ -347,11 +347,54 @@ body {
   border-bottom: 1px solid #7b3136;
 }
 
+.sheet-header-main {
+  min-width: 0;
+}
+
+.unit-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
 .sheet-header h2 {
   margin: 0;
   font-size: 2rem;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+.unit-photo-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(214, 225, 238, 0.42);
+  background: rgba(11, 16, 24, 0.42);
+  color: #edf4fb;
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition:
+    background 120ms ease,
+    border-color 120ms ease,
+    transform 120ms ease;
+}
+
+.unit-photo-btn:hover,
+.unit-photo-btn:focus-visible {
+  background: rgba(126, 29, 36, 0.6);
+  border-color: rgba(255, 214, 214, 0.7);
+  transform: translateY(-1px);
+}
+
+.unit-photo-btn svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
 }
 
 .muted {
@@ -759,6 +802,85 @@ body {
   position: absolute;
   left: 0;
   top: 0.42rem;
+}
+
+.unit-image-preview {
+  position: fixed;
+  z-index: 2100;
+  width: min(340px, calc(100vw - 16px));
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.unit-image-preview.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.unit-image-preview-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #2e3f4f;
+  background: #101822;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.62);
+  padding: 0.7rem;
+}
+
+.unit-image-preview-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #2c3845;
+  background:
+    radial-gradient(circle at top, rgba(120, 33, 38, 0.18), rgba(10, 15, 22, 0) 55%),
+    linear-gradient(180deg, #141d28, #0d141c);
+  overflow: hidden;
+}
+
+.unit-image-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.16s ease;
+}
+
+.unit-image-preview.is-loaded .unit-image-preview-img {
+  opacity: 1;
+}
+
+.unit-image-preview-status {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.42rem 0.55rem;
+  background: linear-gradient(180deg, rgba(8, 12, 18, 0), rgba(8, 12, 18, 0.9));
+  color: #d5e0ea;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.unit-image-preview.is-loaded .unit-image-preview-status {
+  display: none;
+}
+
+.unit-image-preview-caption {
+  margin-top: 0.52rem;
+  color: #edf2f7;
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.unit-image-preview-source {
+  margin-top: 0.2rem;
+  color: #9fb0c6;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .rules-workspace {
@@ -1349,6 +1471,32 @@ body {
   color: #4b5f76;
 }
 
+:root.theme-light .unit-image-preview-link {
+  border-color: #c6d5e6;
+  background: #f8fbff;
+  box-shadow: 0 12px 28px rgba(29, 50, 76, 0.16);
+}
+
+:root.theme-light .unit-image-preview-frame {
+  border-color: #cfdae7;
+  background:
+    radial-gradient(circle at top, rgba(167, 66, 77, 0.12), rgba(255, 255, 255, 0) 55%),
+    linear-gradient(180deg, #eef4fa, #e8eef6);
+}
+
+:root.theme-light .unit-image-preview-status {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(233, 240, 248, 0.96));
+  color: #304257;
+}
+
+:root.theme-light .unit-image-preview-caption {
+  color: #24354a;
+}
+
+:root.theme-light .unit-image-preview-source {
+  color: #637891;
+}
+
 :root.theme-light .unit-btn {
   background: #f4f8fd;
   border-color: #c5d5e8;
@@ -1369,6 +1517,18 @@ body {
 
 :root.theme-light .sheet-header .muted {
   color: #f4e3e7;
+}
+
+:root.theme-light .unit-photo-btn {
+  border-color: rgba(255, 244, 246, 0.72);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff8fa;
+}
+
+:root.theme-light .unit-photo-btn:hover,
+:root.theme-light .unit-photo-btn:focus-visible {
+  background: rgba(153, 56, 67, 0.52);
+  border-color: rgba(255, 245, 246, 0.95);
 }
 
 :root.theme-light .statline {
@@ -1641,6 +1801,14 @@ body {
 
   .rules-guide-desc {
     font-size: 0.95rem;
+  }
+
+  .unit-title-row {
+    flex-wrap: wrap;
+  }
+
+  .unit-image-preview {
+    width: min(300px, calc(100vw - 16px));
   }
 }
 
