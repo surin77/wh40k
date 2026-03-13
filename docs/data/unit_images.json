@@ -2,9 +2,9 @@
   "source": "Google Images thumbnails seeded by warhammer.com queries",
   "resolver": "google_images_warhammer_query_v2",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T21:37:36+00:00",
-  "entries_with_images": 323,
-  "entries_with_local_cache": 323,
+  "generated_at_utc": "2026-03-13T22:31:49+00:00",
+  "entries_with_images": 326,
+  "entries_with_local_cache": 326,
   "lookups_performed": 60,
   "entries": [
     {
@@ -18409,13 +18409,13 @@
       "datasheet_ids": [
         "000000059"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Gargantuan Squiggoth",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Gargantuan Squiggoth\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18426,13 +18426,13 @@
       "datasheet_ids": [
         "000000008"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ghazghkull Thraka",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ghazghkull Thraka\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18443,13 +18443,13 @@
       "datasheet_ids": [
         "000000043"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Gorkanaut",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Gorkanaut\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18460,13 +18460,13 @@
       "datasheet_ids": [
         "000000017"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Gretchin",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Gretchin\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18477,13 +18477,13 @@
       "datasheet_ids": [
         "000001385"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Grot Bomm Launcha",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Grot Bomm Launcha\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18494,13 +18494,13 @@
       "datasheet_ids": [
         "000000050"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Grot Mega-tank",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Grot Mega-tank\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18511,13 +18511,13 @@
       "datasheet_ids": [
         "000000049"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Grot Tanks",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Grot Tanks\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18528,13 +18528,13 @@
       "datasheet_ids": [
         "000002498"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hunta Rig",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hunta Rig\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18545,15 +18545,15 @@
       "datasheet_ids": [
         "000000055"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kannonwagon",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Kannonwagon\" \"Orks\"",
+      "source_page_url": "https://www.reddit.com/r/orks/comments/1g7tawb/convertible_kannonwagon/",
+      "source_page_title": "Convertible Kannonwagon :...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXByjVaOa0Qk15_JV0wuXctnTqPnd1at6jVAUXa0DdiKLJSaiGy8kGoKBRPFo&s",
+      "updated_at_utc": "2026-03-13T22:29:56+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/orks__kannonwagon.jpg"
     },
     {
       "unit_key": "orks::kaptinbadrukk",
@@ -18562,13 +18562,13 @@
       "datasheet_ids": [
         "000000009"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kaptin Badrukk",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kaptin Badrukk\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:29:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18579,13 +18579,13 @@
       "datasheet_ids": [
         "000001389"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kill Krusha",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kill Krusha\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18596,13 +18596,13 @@
       "datasheet_ids": [
         "000002497"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kill Rig",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kill Rig\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18613,13 +18613,13 @@
       "datasheet_ids": [
         "000000056"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kill Tank",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kill Tank\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18630,13 +18630,13 @@
       "datasheet_ids": [
         "000000041"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Killa Kans",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Killa Kans\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18647,13 +18647,13 @@
       "datasheet_ids": [
         "000000025"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kommandos",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kommandos\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18664,15 +18664,15 @@
       "datasheet_ids": [
         "000001538"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kustom Boosta-blasta",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Kustom Boosta-blasta\" \"Orks\"",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Orks-Kustom-Boosta-Blasta-2019",
+      "source_page_title": "Kustom Boosta-blasta",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6UIahFpnlqSC4Sg94k4kuhUTEU12QePuENx6gJSIrIivsx7_ZVzzXcvjayk&s",
+      "updated_at_utc": "2026-03-13T22:30:11+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/orks__kustomboostablasta.jpg"
     },
     {
       "unit_key": "orks::liftawagon",
@@ -18681,13 +18681,13 @@
       "datasheet_ids": [
         "000000053"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lifta Wagon",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lifta Wagon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18698,13 +18698,13 @@
       "datasheet_ids": [
         "000000044"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lootas",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lootas\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18715,13 +18715,13 @@
       "datasheet_ids": [
         "000000015"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mad Dok Grotsnik",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mad Dok Grotsnik\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18732,13 +18732,13 @@
       "datasheet_ids": [
         "000002453"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mega Dread",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mega Dread\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18749,13 +18749,13 @@
       "datasheet_ids": [
         "000000024"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Meganobz",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Meganobz\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18766,13 +18766,13 @@
       "datasheet_ids": [
         "000001541"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Megatrakk Scrapjet",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Megatrakk Scrapjet\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18783,13 +18783,13 @@
       "datasheet_ids": [
         "000000012"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mek",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mek\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18800,13 +18800,13 @@
       "datasheet_ids": [
         "000000038"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mek Gunz",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mek Gunz\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18817,13 +18817,13 @@
       "datasheet_ids": [
         "000000052"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Meka-dread",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Meka-dread\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18834,13 +18834,13 @@
       "datasheet_ids": [
         "000001545"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mekboy Workshop",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mekboy Workshop\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18851,13 +18851,13 @@
       "datasheet_ids": [
         "000000042"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Morkanaut",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Morkanaut\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18868,13 +18868,13 @@
       "datasheet_ids": [
         "000002493"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Mozrog Skragbad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Mozrog Skragbad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18885,13 +18885,13 @@
       "datasheet_ids": [
         "000000022"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Nob With Waaagh! Banner",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Nob With Waaagh! Banner\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18902,13 +18902,13 @@
       "datasheet_ids": [
         "000000021"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Nobz",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Nobz\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18919,13 +18919,13 @@
       "datasheet_ids": [
         "000000023"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Nobz On Warbikes",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Nobz On Warbikes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18936,13 +18936,13 @@
       "datasheet_ids": [
         "000002491"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Painboss",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Painboss\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18953,13 +18953,13 @@
       "datasheet_ids": [
         "000000013"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Painboy",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Painboy\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18970,13 +18970,13 @@
       "datasheet_ids": [
         "000000014"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Painboy On Warbike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Painboy On Warbike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -18987,13 +18987,13 @@
       "datasheet_ids": [
         "000001542"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Rukkatrukk Squigbuggy",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Rukkatrukk Squigbuggy\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19004,13 +19004,13 @@
       "datasheet_ids": [
         "000001539"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Shokkjump Dragsta",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Shokkjump Dragsta\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:30:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19021,13 +19021,13 @@
       "datasheet_ids": [
         "000000035"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skorchas",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Skorchas\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19038,13 +19038,13 @@
       "datasheet_ids": [
         "000000051"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Squiggoth",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Squiggoth\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19055,13 +19055,13 @@
       "datasheet_ids": [
         "000002496"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Squighog Boyz",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Squighog Boyz\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19072,13 +19072,13 @@
       "datasheet_ids": [
         "000000046"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stompa",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stompa\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19089,13 +19089,13 @@
       "datasheet_ids": [
         "000000027"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormboyz",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormboyz\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19106,13 +19106,13 @@
       "datasheet_ids": [
         "000000020"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tankbustas",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tankbustas\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19123,13 +19123,13 @@
       "datasheet_ids": [
         "000000026"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Trukk",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Trukk\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19140,13 +19140,13 @@
       "datasheet_ids": [
         "000003709"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ufthak Blackhawk",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ufthak Blackhawk\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19157,13 +19157,13 @@
       "datasheet_ids": [
         "000000033"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warbikers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Warbikers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19174,13 +19174,13 @@
       "datasheet_ids": [
         "000000001"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warboss",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Warboss\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19191,13 +19191,13 @@
       "datasheet_ids": [
         "000000002"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warboss In Mega Armour",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Warboss In Mega Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19208,15 +19208,15 @@
       "datasheet_ids": [
         "000000003"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warboss On Warbike",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Warboss On Warbike\" \"Orks\"",
+      "source_page_url": "https://www.reddit.com/r/orks/comments/121xklt/warboss_on_warbike_fw_resin/",
+      "source_page_title": "Warboss on Warbike (FW...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiUdTpQ35lkcYLCDYIDYGhFZz40vyX0Sn32zj7G1KUU81ntz6xoAtmxUEwns&s",
+      "updated_at_utc": "2026-03-13T22:31:24+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/orks__warbossonwarbike.jpg"
     },
     {
       "unit_key": "orks::warbuggies",
@@ -19225,13 +19225,13 @@
       "datasheet_ids": [
         "000000036"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Warbuggies",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Warbuggies\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19242,13 +19242,13 @@
       "datasheet_ids": [
         "000000034"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wartrakks",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Wartrakks\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19259,13 +19259,13 @@
       "datasheet_ids": [
         "000000032"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wazbom Blastajet",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Wazbom Blastajet\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19276,13 +19276,13 @@
       "datasheet_ids": [
         "000000004"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Weirdboy",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Weirdboy\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19293,13 +19293,13 @@
       "datasheet_ids": [
         "000002492"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Wurrboy",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Wurrboy\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19310,13 +19310,13 @@
       "datasheet_ids": [
         "000002488"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Zodgrod Wortsnagga",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Zodgrod Wortsnagga\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19327,13 +19327,13 @@
       "datasheet_ids": [
         "000002100"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Adrax Agatone",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Adrax Agatone\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19344,13 +19344,13 @@
       "datasheet_ids": [
         "000004148"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Aethon Shaan",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Aethon Shaan\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19361,13 +19361,13 @@
       "datasheet_ids": [
         "000002099"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Aggressor Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Aggressor Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19378,13 +19378,13 @@
       "datasheet_ids": [
         "000002775"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ancient",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ancient\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19395,13 +19395,13 @@
       "datasheet_ids": [
         "000002677"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ancient In Terminator Armour",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ancient In Terminator Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -19412,13 +19412,13 @@
       "datasheet_ids": [
         "000001182"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ancient on Bike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ancient on Bike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T22:31:49+00:00",
       "search_engine": "",
       "error": ""
     },
