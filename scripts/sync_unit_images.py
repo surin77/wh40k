@@ -317,6 +317,24 @@ def hydrate_entry(entry: dict[str, object], unit: dict[str, object]) -> dict[str
     return hydrated
 
 
+def make_placeholder_entry(unit: dict[str, object], status: str = "pending", error: str = "") -> dict[str, object]:
+    return {
+        "unit_key": unit["unit_key"],
+        "unit_name": unit["unit_name"],
+        "faction_name": unit["faction_name"],
+        "datasheet_ids": unit["datasheet_ids"],
+        "status": status,
+        "lookup_query": f"warhammer.com {unit['unit_name']}",
+        "source_page_url": "",
+        "source_page_title": "",
+        "image_url": "",
+        "local_path": "",
+        "updated_at_utc": utcnow_iso() if status != "pending" else "",
+        "search_engine": "",
+        "error": error,
+    }
+
+
 def cleanup_stale_assets(entries: list[dict[str, object]], assets_dir: Path, web_root: Path) -> None:
     if not assets_dir.exists():
         return
@@ -496,74 +514,63 @@ def main() -> int:
         key = str(unit["unit_key"])
         previous = existing_entries.get(key)
         previous_hydrated = hydrate_entry(previous, unit) if previous else None
-        has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
-        needs_refresh = previous_hydrated is None or should_refresh(
-            previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
-        )
 
-        if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
-            entries.append(previous_hydrated)
-            continue
+        try:
+            has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
+            needs_refresh = previous_hydrated is None or should_refresh(
+                previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
+            )
 
-        if previous_hydrated and previous_hydrated.get("status") == "ok" and previous_hydrated.get("image_url") and not has_local_cache:
-            try:
-                previous_hydrated["local_path"] = cache_image(
-                    image_url=str(previous_hydrated["image_url"]),
-                    unit_key=key,
-                    assets_dir=assets_dir,
-                    web_root=web_root,
-                    timeout=args.timeout,
-                )
-                previous_hydrated["updated_at_utc"] = utcnow_iso()
+            if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
                 entries.append(previous_hydrated)
                 continue
-            except (urllib.error.URLError, TimeoutError, ValueError, OSError):
-                pass
 
-        if lookups_performed >= args.max_lookups:
+            if previous_hydrated and previous_hydrated.get("status") == "ok" and previous_hydrated.get("image_url") and not has_local_cache:
+                try:
+                    previous_hydrated["local_path"] = cache_image(
+                        image_url=str(previous_hydrated["image_url"]),
+                        unit_key=key,
+                        assets_dir=assets_dir,
+                        web_root=web_root,
+                        timeout=args.timeout,
+                    )
+                    previous_hydrated["updated_at_utc"] = utcnow_iso()
+                    entries.append(previous_hydrated)
+                    continue
+                except (urllib.error.URLError, TimeoutError, ValueError, OSError):
+                    pass
+
+            if lookups_performed >= args.max_lookups:
+                entries.append(previous_hydrated or make_placeholder_entry(unit))
+                continue
+
+            entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
+            lookups_performed += 1
+
+            if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
+                entries.append(previous_hydrated)
+                continue
+
+            if entry.get("status") == "ok" and entry.get("image_url"):
+                try:
+                    entry["local_path"] = cache_image(
+                        image_url=str(entry["image_url"]),
+                        unit_key=key,
+                        assets_dir=assets_dir,
+                        web_root=web_root,
+                        timeout=args.timeout,
+                    )
+                except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
+                    entry["status"] = "error"
+                    entry["error"] = str(error)
+                    entry["local_path"] = ""
+
+            entries.append(entry)
+        except Exception as error:
             if previous_hydrated:
                 entries.append(previous_hydrated)
             else:
-                entries.append(
-                    {
-                        "unit_key": unit["unit_key"],
-                        "unit_name": unit["unit_name"],
-                        "faction_name": unit["faction_name"],
-                        "datasheet_ids": unit["datasheet_ids"],
-                        "status": "pending",
-                        "lookup_query": f"warhammer.com {unit['unit_name']}",
-                        "source_page_url": "",
-                        "source_page_title": "",
-                        "image_url": "",
-                        "updated_at_utc": "",
-                        "search_engine": "",
-                        "error": "",
-                    }
-                )
-            continue
-
-        entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
-        lookups_performed += 1
-
-        if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
-            entries.append(previous_hydrated)
-            continue
-
-        if entry.get("status") == "ok" and entry.get("image_url"):
-            try:
-                entry["local_path"] = cache_image(
-                    image_url=str(entry["image_url"]),
-                    unit_key=key,
-                    assets_dir=assets_dir,
-                    web_root=web_root,
-                    timeout=args.timeout,
-                )
-            except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
-                entry["status"] = "error"
-                entry["error"] = str(error)
-                entry["local_path"] = ""
-
-        entries.append(entry)
+                entries.append(make_placeholder_entry(unit, status="error", error=str(error)))
 
     payload = build_payload(entries, lookups_performed=lookups_performed)
     cleanup_stale_assets(entries, assets_dir=assets_dir, web_root=web_root)

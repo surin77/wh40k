@@ -27,6 +27,7 @@ jobs:
         run: python scripts/fetch_wh40k.py
 
       - name: Refresh unit image index
+        continue-on-error: true
         run: python scripts/sync_unit_images.py --web-root docs --datasheets docs/data/Datasheets.csv --factions docs/data/Factions.csv --out docs/data/unit_images.json --assets-dir docs/assets/unit-previews --max-lookups 60 --timeout 8
 
       - name: Commit and push when changed
