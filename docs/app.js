@@ -893,6 +893,7 @@ function setUnitPhotoButton(unit) {
     unitPhotoBtnEl.dataset.imageSearchUrl = "";
     unitPhotoBtnEl.dataset.imageTitle = "";
     unitPhotoBtnEl.dataset.hasPreview = "false";
+    unitPhotoBtnEl.dataset.previewStatus = "";
     if (imagePreviewAnchorEl === unitPhotoBtnEl) hideImagePreview();
     return;
   }
@@ -908,6 +909,7 @@ function setUnitPhotoButton(unit) {
     unitPhotoBtnEl.dataset.imageUrl = "";
     unitPhotoBtnEl.dataset.imagePageUrl = searchUrl;
     unitPhotoBtnEl.dataset.hasPreview = "false";
+    unitPhotoBtnEl.dataset.previewStatus = "pending";
     if (imagePreviewAnchorEl === unitPhotoBtnEl) hideImagePreview();
     return;
   }
@@ -917,6 +919,7 @@ function setUnitPhotoButton(unit) {
   unitPhotoBtnEl.dataset.imagePageUrl = String(imageEntry.source_page_url || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imageTitle = String(imageEntry.unit_name || unit.name || "Unit image");
   unitPhotoBtnEl.dataset.hasPreview = "true";
+  unitPhotoBtnEl.dataset.previewStatus = "ready";
 }
 
 function openUnitImageSearch(target) {
@@ -1105,7 +1108,6 @@ function hideImagePreview() {
 function showImagePreview(target) {
   if (!target) return;
   const imageUrl = target.dataset.imageUrl || "";
-  if (!imageUrl) return;
 
   hideTooltip();
 
@@ -1113,15 +1115,35 @@ function showImagePreview(target) {
   const imgEl = imagePreviewEl.querySelector(".unit-image-preview-img");
   const statusEl = imagePreviewEl.querySelector(".unit-image-preview-status");
   const captionEl = imagePreviewEl.querySelector(".unit-image-preview-caption");
+  const sourceEl = imagePreviewEl.querySelector(".unit-image-preview-source");
 
   const title = target.dataset.imageTitle || "Unit image";
-  const pageUrl = target.dataset.imagePageUrl || imageUrl;
+  const pageUrl = target.dataset.imagePageUrl || target.dataset.imageSearchUrl || imageUrl || "#";
 
-  imagePreviewEl.classList.remove("is-loaded", "is-error");
+  imagePreviewEl.classList.remove("is-loaded", "is-error", "is-empty");
   captionEl.textContent = title;
   linkEl.href = pageUrl;
+  linkEl.setAttribute("aria-label", title);
+
+  if (!imageUrl) {
+    const previewStatus = target.dataset.previewStatus || "pending";
+    imgEl.dataset.currentSrc = "";
+    imgEl.removeAttribute("src");
+    imgEl.alt = "";
+    imagePreviewEl.classList.add("is-empty");
+    statusEl.textContent =
+      previewStatus === "not_found" ? "No cached preview yet. Click to open image search." : "Preview is being indexed. Click to open image search.";
+    sourceEl.textContent = "Google Images search";
+    imagePreviewEl.classList.add("visible");
+    imagePreviewVisible = true;
+    imagePreviewAnchorEl = target;
+    moveImagePreview();
+    return;
+  }
+
   imgEl.alt = title;
   statusEl.textContent = "Loading image...";
+  sourceEl.textContent = "Cached preview";
 
   const sameImage = imgEl.dataset.currentSrc === imageUrl;
   if (!sameImage) {
