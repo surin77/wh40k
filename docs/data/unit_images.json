@@ -2,9 +2,9 @@
   "source": "Google Images thumbnails seeded by warhammer.com queries",
   "resolver": "google_images_warhammer_query_v2",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T11:34:24+00:00",
-  "entries_with_images": 240,
-  "entries_with_local_cache": 240,
+  "generated_at_utc": "2026-03-13T13:03:20+00:00",
+  "entries_with_images": 300,
+  "entries_with_local_cache": 300,
   "lookups_performed": 60,
   "entries": [
     {
@@ -4094,15 +4094,15 @@
       "datasheet_ids": [
         "000000705"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Doomhammer",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-doomhammer-2023",
+      "source_page_title": "Doomhammer",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzdcm3QPjmLNkbvhi7kVYRL9OSu8G4xoyxHe4XvbV-gujRALDwd_dWqoYSd6E&s",
+      "updated_at_utc": "2026-03-13T13:02:09+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__doomhammer.jpg"
     },
     {
       "unit_key": "astramilitarum::earthshakercarriagebattery",
@@ -4111,15 +4111,15 @@
       "datasheet_ids": [
         "000000743"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Earthshaker Carriage Battery",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/14qwasr/printed_this_earthshaker_carriage_battery_it/",
+      "source_page_title": "Printed this Earthshaker...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjGXm9NWAmb4C2ZTN6WuRnE_E0tKVJ-dW4HPChj-jcfZNCFXZnItrVUxsTr_8&s",
+      "updated_at_utc": "2026-03-13T13:02:10+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__earthshakercarriagebattery.jpg"
     },
     {
       "unit_key": "astramilitarum::earthshakerplatform",
@@ -4128,14 +4128,15 @@
       "datasheet_ids": [
         "000002739"
       ],
-      "status": "not_found",
-      "lookup_query": "site:warhammer.com \"Earthshaker Platform\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T08:46:20+00:00",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Earthshaker Platform",
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1fri94g/earthshaker_platform/",
+      "source_page_title": "Earthshaker platform :...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQphJFrWQhZjUeJT0l8hSXJsil39HQXMLN6nkqpkR2Xw2J_uwDxBeV6TXcF5Vc&s",
+      "updated_at_utc": "2026-03-13T13:02:12+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__earthshakerplatform.jpg"
     },
     {
       "unit_key": "astramilitarum::elysiandropsentinel",
@@ -4144,15 +4145,15 @@
       "datasheet_ids": [
         "000002740"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Elysian Drop Sentinel",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/13hl2g8/just_finished_my_elysian_drop_sentinels/",
+      "source_page_title": "Just Finished My Elysian...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp3rD3id-10a8X_o_iwQsPG778IT3t0-T2shVco6UiLGyDE3vBIffgclwCges&s",
+      "updated_at_utc": "2026-03-13T13:02:13+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__elysiandropsentinel.jpg"
     },
     {
       "unit_key": "astramilitarum::elysiansnipersquad",
@@ -4161,15 +4162,15 @@
       "datasheet_ids": [
         "000002377"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Elysian Sniper Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1c8t591/elysian_sniper_squad/",
+      "source_page_title": "Elysian Sniper Squad :...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE011nB_ex6UUBPxxROewTa4KxSZfH03PzYYsAVKIl0uTYKpZqgJZ0w2Q1EA&s",
+      "updated_at_utc": "2026-03-13T13:02:14+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__elysiansnipersquad.jpg"
     },
     {
       "unit_key": "astramilitarum::fieldordnancebattery",
@@ -4178,15 +4179,15 @@
       "datasheet_ids": [
         "000003897"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Field Ordnance Battery",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-field-ordnance-battery-2023",
+      "source_page_title": "Field Ordnance Battery",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeLJ2DHoGXWjlcydE6gQvkHCV2a_IGZiGCjOR9JuEf3mbD99P9ZieVwtBnw&s",
+      "updated_at_utc": "2026-03-13T13:02:15+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__fieldordnancebattery.jpg"
     },
     {
       "unit_key": "astramilitarum::gauntsghosts",
@@ -4195,15 +4196,15 @@
       "datasheet_ids": [
         "000002485"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Gaunt\u2019s Ghosts",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Gaunts-Ghosts-2021",
+      "source_page_title": "Gaunt's Ghosts",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RZDwBAHbcCQajvRfIRR1rGsA3U1ZR01NHSvcqLyw_VJPX6MPMutsg6EO3-o&s",
+      "updated_at_utc": "2026-03-13T13:02:16+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__gauntsghosts.jpg"
     },
     {
       "unit_key": "astramilitarum::gorgonheavytransport",
@@ -4212,15 +4213,15 @@
       "datasheet_ids": [
         "000000768"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Gorgon Heavy Transport",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/yr0vbm/why_is_the_gorgon_heavy_transport_in_legends_when/",
+      "source_page_title": "Why is the Gorgon Heavy...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy4x25oletdjKuthbncNnvZa-A1PT7XGbRBnvSan7uAUx_IHzXzC8PITvW-A&s",
+      "updated_at_utc": "2026-03-13T13:02:18+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__gorgonheavytransport.jpg"
     },
     {
       "unit_key": "astramilitarum::griffonmortarcarrier",
@@ -4229,15 +4230,15 @@
       "datasheet_ids": [
         "000000744"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Griffon Mortar Carrier",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1cg0vrk/griffon_mortar_carrierssalamander_spotters/",
+      "source_page_title": "Griffon Mortar...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQKnqpAG2rHSfIBPGS28SD9ssNZi8U1ZSETPsyJ7X5PPjzUN4DdJtTezbP5E&s",
+      "updated_at_utc": "2026-03-13T13:02:19+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__griffonmortarcarrier.jpg"
     },
     {
       "unit_key": "astramilitarum::hadesbreachingdrill",
@@ -4246,15 +4247,15 @@
       "datasheet_ids": [
         "000000730"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hades Breaching Drill",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/o5e74k/hades_breaching_drill/",
+      "source_page_title": "Hades breaching drill :...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX6hKO9F3AULXsvWeL7C-0HcWcY28AzzyY14SzrVruhs2lmjz_LR0ZVA3tA&s",
+      "updated_at_utc": "2026-03-13T13:02:20+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hadesbreachingdrill.jpg"
     },
     {
       "unit_key": "astramilitarum::heavymortarteam",
@@ -4263,15 +4264,15 @@
       "datasheet_ids": [
         "000000745"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Heavy Mortar Team",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-artillery-team-2025",
+      "source_page_title": "Artillery Team",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbxxBP-OzSIdASX46dWOg82z1flMsFhjiCXnEZmSDWepZqKnrWiOyiqtrzmNs&s",
+      "updated_at_utc": "2026-03-13T13:02:21+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__heavymortarteam.jpg"
     },
     {
       "unit_key": "astramilitarum::heavyquadlauncherteam",
@@ -4280,15 +4281,15 @@
       "datasheet_ids": [
         "000000746"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Heavy Quad Launcher Team",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-artillery-team-2025",
+      "source_page_title": "Artillery Team",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30dK2jwjh6sSn_zIVD4t1_WeZhvR7enT1CUdAUSkLSKChuXYIesHTPTriPw&s",
+      "updated_at_utc": "2026-03-13T13:02:22+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__heavyquadlauncherteam.jpg"
     },
     {
       "unit_key": "astramilitarum::hellhammer",
@@ -4297,15 +4298,15 @@
       "datasheet_ids": [
         "000000706"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hellhammer",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-hellhammer-2023",
+      "source_page_title": "Hellhammer",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtxdxHwuCQ39Er0R5fTa6srnD4GPVjjDpyjg4GMoMy9TJYf_NyfhFYtqQH8I&s",
+      "updated_at_utc": "2026-03-13T13:02:23+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hellhammer.jpg"
     },
     {
       "unit_key": "astramilitarum::hellhound",
@@ -4314,15 +4315,15 @@
       "datasheet_ids": [
         "000000694"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hellhound",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Hellhound",
+      "source_page_title": "Hellhound",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt-uasnpFbBv8-BNSDckm-qCgPlRoXsVG81Drml9bXoNRbWqzZNqEWklGqqCg&s",
+      "updated_at_utc": "2026-03-13T13:02:24+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hellhound.jpg"
     },
     {
       "unit_key": "astramilitarum::hellslast",
@@ -4331,15 +4332,15 @@
       "datasheet_ids": [
         "000003922"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hell\u2019s Last",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-US/shop/minka-lesk-hells-last-special-edition-eng-2025",
+      "source_page_title": "Hell's Last (Special...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfEGYi_pUL2j_Y0iKUGW8d5sg2AO1UZOg-Vcdi9ObTwSgvubotpTY265Aeg&s",
+      "updated_at_utc": "2026-03-13T13:02:25+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hellslast.jpg"
     },
     {
       "unit_key": "astramilitarum::hydra",
@@ -4348,15 +4349,15 @@
       "datasheet_ids": [
         "000000696"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hydra",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Hydra",
+      "source_page_title": "Hydra",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHglwT0BRLz_3NCxCw9hfmnvmAxTe4fc68li7sMQEDBBXmiyZ-yAw_x1Wjow&s",
+      "updated_at_utc": "2026-03-13T13:02:26+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hydra.jpg"
     },
     {
       "unit_key": "astramilitarum::hydraplatform",
@@ -4365,15 +4366,15 @@
       "datasheet_ids": [
         "000000747"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Hydra Platform",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Hydra",
+      "source_page_title": "Hydra",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHglwT0BRLz_3NCxCw9hfmnvmAxTe4fc68li7sMQEDBBXmiyZ-yAw_x1Wjow&s",
+      "updated_at_utc": "2026-03-13T13:02:27+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__hydraplatform.jpg"
     },
     {
       "unit_key": "astramilitarum::kasrkin",
@@ -4382,15 +4383,15 @@
       "datasheet_ids": [
         "000002615"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Kasrkin",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/kill-team-kasrkin-2024",
+      "source_page_title": "Kill Team: Kasrkin",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vAYhM4BQJ4bgpkFs0h8JEwISB1tMNReDKYUgNYQmjY8SI4Sgg3qA66uV04Q&s",
+      "updated_at_utc": "2026-03-13T13:02:29+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__kasrkin.jpg"
     },
     {
       "unit_key": "astramilitarum::kriegcombatengineers",
@@ -4399,15 +4400,15 @@
       "datasheet_ids": [
         "000003893"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Krieg Combat Engineers",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/es-ES/shop/astra-militarum-krieg-combat-engineers-2025",
+      "source_page_title": "Ingenieros de Combate de...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1f51pw7L_6NNKXLvcBtr3I07tXeFPS1yKsebi_nZC_EOzrjwTui2GC--tpk&s",
+      "updated_at_utc": "2026-03-13T13:02:30+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__kriegcombatengineers.jpg"
     },
     {
       "unit_key": "astramilitarum::kriegcommandsquad",
@@ -4416,15 +4417,15 @@
       "datasheet_ids": [
         "000003889"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Krieg Command Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-command-squad-2025",
+      "source_page_title": "99120105127_AstraMilitarumK...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4762SrtnMK-UNNBTpau9UCHG_uKC1D-RmcHp1QdTWjfVjpemAUKUdXcCZA&s",
+      "updated_at_utc": "2026-03-13T13:02:31+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__kriegcommandsquad.jpg"
     },
     {
       "unit_key": "astramilitarum::kriegheavyweaponssquad",
@@ -4433,15 +4434,15 @@
       "datasheet_ids": [
         "000003895"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Krieg Heavy Weapons Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-heavy-weapons-squad-2025",
+      "source_page_title": "99120105130_AstraMilitarumK...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAhDv8YY7_kcZGOUsuuwKkAM0p27Wkxyelej7xXiSR8X5G-M0PHU_8Jits0w&s",
+      "updated_at_utc": "2026-03-13T13:02:32+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__kriegheavyweaponssquad.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrussbattletank",
@@ -4450,15 +4451,15 @@
       "datasheet_ids": [
         "000000700"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Leman Russ Battle Tank",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Leman Russ Battle Tank Astra Militarum",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
+      "source_page_title": "Leman Russ Battle Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
+      "updated_at_utc": "2026-03-13T13:02:34+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussbattletank.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrusscommander",
@@ -4467,15 +4468,15 @@
       "datasheet_ids": [
         "000000680"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Commander",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
+      "source_page_title": "Leman Russ Battle Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
+      "updated_at_utc": "2026-03-13T13:02:35+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrusscommander.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrussdemolisher",
@@ -4484,15 +4485,15 @@
       "datasheet_ids": [
         "000000701"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Demolisher",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-leman-russ-executioner-and-demolisher-squadron-2024",
+      "source_page_title": "Legions Imperialis: Leman...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1vU6h6kaS83objvoXT0A0LjYiT3e-H8DGJVWJPOSAjfdz8z_C1nrdn3qYQ&s",
+      "updated_at_utc": "2026-03-13T13:02:36+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussdemolisher.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrusseradicator",
@@ -4501,15 +4502,15 @@
       "datasheet_ids": [
         "000002741"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Eradicator",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
+      "source_page_title": "Leman Russ Battle Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCf1_Sc9Yb93sLhmbsXAVjYJ0gPkYjPt9KViWwu2v-vwkgeH7QG7WX9IF9Two&s",
+      "updated_at_utc": "2026-03-13T13:02:37+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrusseradicator.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrussexecutioner",
@@ -4518,15 +4519,15 @@
       "datasheet_ids": [
         "000002742"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Executioner",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-leman-russ-executioner-and-demolisher-squadron-2024",
+      "source_page_title": "Legions Imperialis: Leman...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSeMrnFl0RsfFjzq0dMgmH214-slguKaaa0Hq8yeUkFV5J0xAGAfR3rJdTXw&s",
+      "updated_at_utc": "2026-03-13T13:02:38+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussexecutioner.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrussexterminator",
@@ -4535,15 +4536,15 @@
       "datasheet_ids": [
         "000002743"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Exterminator",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/es-ES/shop/legions-imperialis-leman-russ-exterminator-and-annihilator-squadron-2024",
+      "source_page_title": "Legions Imperialis:...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IHvLjBDYTx1uZ0avWV3OQ-B_R8K0E5B46JL7Phj2xZdjOt0YpAIcJzvEVKM&s",
+      "updated_at_utc": "2026-03-13T13:02:40+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussexterminator.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrusspunisher",
@@ -4552,15 +4553,15 @@
       "datasheet_ids": [
         "000002744"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Punisher",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1i89vbg/leman_russ_punisherdemolisherexecutioner/",
+      "source_page_title": "Leman Russ...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0APkQsy_aI6XTLZdQaBjiYczxsRCSPpYjjAcfGVSFk1jQGd6B8RZ9V18uc34&s",
+      "updated_at_utc": "2026-03-13T13:02:41+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrusspunisher.jpg"
     },
     {
       "unit_key": "astramilitarum::lemanrussvanquisher",
@@ -4569,15 +4570,15 @@
       "datasheet_ids": [
         "000002745"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Leman Russ Vanquisher",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Leman Russ Vanquisher Astra Militarum",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
+      "source_page_title": "Leman Russ Battle Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
+      "updated_at_utc": "2026-03-13T13:02:42+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussvanquisher.jpg"
     },
     {
       "unit_key": "astramilitarum::lordmarshaldreir",
@@ -4586,15 +4587,15 @@
       "datasheet_ids": [
         "000003890"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Lord Marshal Dreir",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-lord-marshal-dreir-2025",
+      "source_page_title": "99120105125_AstraMilitarumK...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJXe745YHqPM0N25o6nEARPneY8FITrIQu6ccfSQ-0HXirpe13Wb9Dpn3fhw&s",
+      "updated_at_utc": "2026-03-13T13:02:44+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lordmarshaldreir.jpg"
     },
     {
       "unit_key": "astramilitarum::lordsolarleontus",
@@ -4603,15 +4604,15 @@
       "datasheet_ids": [
         "000002605"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Lord Solar Leontus",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-lord-solar-leontus-2023",
+      "source_page_title": "99120105095_AMLordSolarLeon...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfjSmBVUMaPJgqFuw4z4ZI0wsuQfsTU4jrAHg68ZaPcjLh-4YCzIxoJPcOg&s",
+      "updated_at_utc": "2026-03-13T13:02:45+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__lordsolarleontus.jpg"
     },
     {
       "unit_key": "astramilitarum::macharius",
@@ -4620,15 +4621,15 @@
       "datasheet_ids": [
         "000000769"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Macharius",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://warhammer40k.fandom.com/wiki/Macharius",
+      "source_page_title": "Macharius | Warhammer 40k...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRruU_hTEbHAl6oN9gmMq4aUoDPcLHI5z7xF5LIRgT-YLRn_GfgQK9RsDBVeyI&s",
+      "updated_at_utc": "2026-03-13T13:02:46+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__macharius.jpg"
     },
     {
       "unit_key": "astramilitarum::machariusomega",
@@ -4637,15 +4638,15 @@
       "datasheet_ids": [
         "000000770"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Macharius Omega",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/xdvr9n/the_macharius_omega/",
+      "source_page_title": "The Macharius Omega... :...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwgvMivZzpurvOB1nRCrocOLEiCe95IdpkPvVeV8q7ojbVcyY1FWjpPXv6Gs&s",
+      "updated_at_utc": "2026-03-13T13:02:47+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__machariusomega.jpg"
     },
     {
       "unit_key": "astramilitarum::machariusvanquisher",
@@ -4654,15 +4655,15 @@
       "datasheet_ids": [
         "000000771"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Macharius Vanquisher",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Macharius Vanquisher Astra Militarum",
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1b1h6iy/macharius_vanquisher_conversion/",
+      "source_page_title": "Macharius Vanquisher...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzMObstqycqFxEMIlhxaxtraw6s1f5U1Vh-myrogU5-ajOebWV6Mlyg2g_A&s",
+      "updated_at_utc": "2026-03-13T13:02:49+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__machariusvanquisher.jpg"
     },
     {
       "unit_key": "astramilitarum::machariusvulcan",
@@ -4671,15 +4672,15 @@
       "datasheet_ids": [
         "000000772"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Macharius Vulcan",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1dnifau/officio_prefectus_macharius_vulcan/",
+      "source_page_title": "Officio Prefectus Macharius...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44Q4IXJwGICZ1CFvadm9xcd1JWkBKWZU8mifl0bLrZNQXMa3dWwMPfu_pZI8&s",
+      "updated_at_utc": "2026-03-13T13:02:50+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__machariusvulcan.jpg"
     },
     {
       "unit_key": "astramilitarum::malcador",
@@ -4688,15 +4689,15 @@
       "datasheet_ids": [
         "000000753"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Malcador",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Malcador Astra Militarum",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/solar-auxilia-malcador-2024",
+      "source_page_title": "Malcador Heavy Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZvvdpGZDvbcS7d0AcBSOlxzlJoP7Uzo43fLeHbG37QUnrVvyU-vXHMIe04g&s",
+      "updated_at_utc": "2026-03-13T13:02:51+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__malcador.jpg"
     },
     {
       "unit_key": "astramilitarum::malcadorannihilator",
@@ -4705,15 +4706,15 @@
       "datasheet_ids": [
         "000000751"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Malcador Annihilator",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/solar-auxilia-malcador-2024",
+      "source_page_title": "Malcador Heavy Tank",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZvvdpGZDvbcS7d0AcBSOlxzlJoP7Uzo43fLeHbG37QUnrVvyU-vXHMIe04g&s",
+      "updated_at_utc": "2026-03-13T13:02:52+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__malcadorannihilator.jpg"
     },
     {
       "unit_key": "astramilitarum::malcadordefender",
@@ -4722,15 +4723,15 @@
       "datasheet_ids": [
         "000000752"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Malcador Defender",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.reddit.com/r/TheAstraMilitarum/comments/1mjrhvn/malcador_defender_from_my_collection/",
+      "source_page_title": "Malcador Defender from my...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GWEHEvDLZt_C9GKOXJNhhZmSWakF2C3yR5ivntrqAtEilNNrqRIhImuRJhc&s",
+      "updated_at_utc": "2026-03-13T13:02:54+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__malcadordefender.jpg"
     },
     {
       "unit_key": "astramilitarum::malcadorinfernus",
@@ -4739,15 +4740,15 @@
       "datasheet_ids": [
         "000000754"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Malcador Infernus",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/solar-auxilia-malcador-infernus-2025",
+      "source_page_title": "99123005013_HHSolarAuxiliaM...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2m-qo2BjntjzFmOba242YMYGZ2ob0Ie7Sm-I_31CYVg1vodW6W6fb-c0xrE&s",
+      "updated_at_utc": "2026-03-13T13:02:55+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__malcadorinfernus.jpg"
     },
     {
       "unit_key": "astramilitarum::manticore",
@@ -4756,15 +4757,15 @@
       "datasheet_ids": [
         "000000698"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Manticore",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Manticore Astra Militarum",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Manticore",
+      "source_page_title": "Manticore",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZIWaLM4AJPtG_fz-kbH8Z9hWvJxKXHfGBXShtRJvT4L25iAMN2vNrQiAFOk&s",
+      "updated_at_utc": "2026-03-13T13:02:57+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__manticore.jpg"
     },
     {
       "unit_key": "astramilitarum::manticoreplatform",
@@ -4773,15 +4774,15 @@
       "datasheet_ids": [
         "000000755"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Manticore Platform",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Manticore",
+      "source_page_title": "Manticore",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT21meZ-qsVo52RzqSZY-SuC4BozQlETn90icCLS-O149ZQrop_Jonz5h4Wlvk&s",
+      "updated_at_utc": "2026-03-13T13:02:58+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__manticoreplatform.jpg"
     },
     {
       "unit_key": "astramilitarum::marauderbomber",
@@ -4790,15 +4791,15 @@
       "datasheet_ids": [
         "000000773"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Marauder Bomber",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/es-ES/shop/legions-imperialis-marauder-bomber-squadron-2023",
+      "source_page_title": "Legions Imperialis:...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRceR43LXeEJtpibKVzfL7-CSDeesPfh03_kbjtPjKECzxPNIQMiaB1ar0c8&s",
+      "updated_at_utc": "2026-03-13T13:02:59+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__marauderbomber.jpg"
     },
     {
       "unit_key": "astramilitarum::marauderdestroyer",
@@ -4807,15 +4808,15 @@
       "datasheet_ids": [
         "000000774"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Marauder Destroyer",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-marauder-destroyers-2023",
+      "source_page_title": "Legions Imperialis:...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyGKcsFnK7hqHy0XT_fDn_RS_onaJv-fYv4eLyVHmEqi9P1aqMzTEoZXFl7U&s",
+      "updated_at_utc": "2026-03-13T13:03:00+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__marauderdestroyer.jpg"
     },
     {
       "unit_key": "astramilitarum::medusacarriagebattery",
@@ -4824,15 +4825,15 @@
       "datasheet_ids": [
         "000000756"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Medusa Carriage Battery",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-solar-auxilia-basilisks-medusas-2024",
+      "source_page_title": "Legions Imperialis: Medusa...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqP0TRn9HL_bnDQujgboI0M1ekuupINdI7A3FyZSVyQuqIJGiMbKkWLrtmig&s",
+      "updated_at_utc": "2026-03-13T13:03:01+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__medusacarriagebattery.jpg"
     },
     {
       "unit_key": "astramilitarum::militarumtempestuscommandsquad",
@@ -4841,15 +4842,15 @@
       "datasheet_ids": [
         "000000719"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Militarum Tempestus Command Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Tempestus-Scions-Command-Squad-2017",
+      "source_page_title": "Militarum Tempestus Scions...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_tDv0m2YuI8dBHx7CN_zdBMOGzaGczxV6CNBUB4RmlIH4bbm1sGz1gEWl20&s",
+      "updated_at_utc": "2026-03-13T13:03:02+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__militarumtempestuscommandsquad.jpg"
     },
     {
       "unit_key": "astramilitarum::ministorumpriest",
@@ -4858,15 +4859,15 @@
       "datasheet_ids": [
         "000001394"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Ministorum Priest",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/adepta-sororitas-ministorum-priest-2024",
+      "source_page_title": "99070108011_ASMinistorumPri...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsKvuiErK5zSnZncHgut0RCzjYc4A-9bM3rzI8PsBAgyYVP0tfVJPcfpd05Q&s",
+      "updated_at_utc": "2026-03-13T13:03:03+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__ministorumpriest.jpg"
     },
     {
       "unit_key": "astramilitarum::minotaur",
@@ -4875,15 +4876,15 @@
       "datasheet_ids": [
         "000000775"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Minotaur",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Minotaur\" \"Astra Militarum\"",
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/beastmen-brayherds-minotaur-herd-2025",
+      "source_page_title": "Minotaur Herd",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzRHBERX2v5kdfVi8ANReAHdNx4oWvBGv2RCahMyrmKwZTWW9NyrQ_x5Fc98&s",
+      "updated_at_utc": "2026-03-13T13:03:05+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__minotaur.jpg"
     },
     {
       "unit_key": "astramilitarum::mukaaliriders",
@@ -4892,15 +4893,15 @@
       "datasheet_ids": [
         "000001383"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Mukaali Riders",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.etsy.com/uk/market/mukaali_riders",
+      "source_page_title": "Mukaali Riders - Etsy UK",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYlbNYUSbiHlg-E6xpG0T6OgeNlgeVaX1xAfwHZBtESgy9mDxZliu8rLqmw&s",
+      "updated_at_utc": "2026-03-13T13:03:06+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__mukaaliriders.jpg"
     },
     {
       "unit_key": "astramilitarum::munitorumservitors",
@@ -4909,15 +4910,15 @@
       "datasheet_ids": [
         "000001397"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Munitorum Servitors",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://minifreemarket.com/catalog/games-with-miniatures/warhammer-40000/astra-militarum/munitorum-servitors-servitor-56694",
+      "source_page_title": "Munitorum Servitors....",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5tSvUZ7y8aj8XGLvjQnYLSkjK0VjUKmwsNLjE8m0X20mQjA5uiiEycDPfO0&s",
+      "updated_at_utc": "2026-03-13T13:03:07+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__munitorumservitors.jpg"
     },
     {
       "unit_key": "astramilitarum::norkdeddog",
@@ -4926,15 +4927,15 @@
       "datasheet_ids": [
         "000000725"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Nork Deddog",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Auxilla-Nork-Deddog",
+      "source_page_title": "01-01.jpg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjSI8Z4yPe7pYCBVw0-jLmKhJYLboK9houtSDwfcDLQSYC3wz-Ff9RAdNRQ&s",
+      "updated_at_utc": "2026-03-13T13:03:09+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__norkdeddog.jpg"
     },
     {
       "unit_key": "astramilitarum::ogrynbodyguard",
@@ -4943,15 +4944,15 @@
       "datasheet_ids": [
         "000001398"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Ogryn Bodyguard",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Auxilla-Ogryns",
+      "source_page_title": "Ogryns",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYovuyAw0xpAcfdSXsFJ3q1QjcIxUlCX20-EEaZ9PXBg3XgSASsxBthiyhIQ&s",
+      "updated_at_utc": "2026-03-13T13:03:10+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__ogrynbodyguard.jpg"
     },
     {
       "unit_key": "astramilitarum::ogrynsquad",
@@ -4960,15 +4961,15 @@
       "datasheet_ids": [
         "000000722"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Ogryn Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Auxilla-Ogryns",
+      "source_page_title": "Ogryns",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazuPiGjbjVrMP5EA8da4mOEM9SE990WYhO_si_2_IgRUqwXigHhPZa8diWQ&s",
+      "updated_at_utc": "2026-03-13T13:03:11+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__ogrynsquad.jpg"
     },
     {
       "unit_key": "astramilitarum::praetor",
@@ -4977,15 +4978,15 @@
       "datasheet_ids": [
         "000000776"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Praetor",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-astartes-praetor-with-power-axe-2022",
+      "source_page_title": "99123001028_HHPraetorPowerA...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2_9hsTSj2BJxVKzS6SONJiuboieyMxIXDptiv4SI1BOyTlL8ctg4Rh5AVA&s",
+      "updated_at_utc": "2026-03-13T13:03:12+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__praetor.jpg"
     },
     {
       "unit_key": "astramilitarum::primarispsyker",
@@ -4994,15 +4995,15 @@
       "datasheet_ids": [
         "000000889"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Primaris Psyker",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-primaris-psyker-2023",
+      "source_page_title": "99070105003_AMPrimarisPsyke...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBQDMmvjUW0iOkmDu5jvwMuxI1xIEn-ZwXQIkjvNKFUD3BL-zK8na6-xysXA&s",
+      "updated_at_utc": "2026-03-13T13:03:13+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__primarispsyker.jpg"
     },
     {
       "unit_key": "astramilitarum::provisionallyprepared",
@@ -5011,15 +5012,15 @@
       "datasheet_ids": [
         "000003937"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Provisionally Prepared",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.boardgamesdallas.com/products/warhammer-commemorative-series-astra-militarum-provisionally-prepared",
+      "source_page_title": "Warhammer Commemorative...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5p6xd7R8H9gCDdZDWcy5L-Owv3ujl7V9TP4pStA8vVNiqLJrNbwaLLr_cXL0&s",
+      "updated_at_utc": "2026-03-13T13:03:14+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__provisionallyprepared.jpg"
     },
     {
       "unit_key": "astramilitarum::quartermastercadresquad",
@@ -5028,15 +5029,15 @@
       "datasheet_ids": [
         "000002375"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Quartermaster Cadre Squad",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://wahapedia.ru/wh40k10ed/factions/astra-militarum/Quartermaster-Cadre-Squad",
+      "source_page_title": "Quartermaster Cadre Squad",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkDhl5WhI_VmBfjQAzfVP_LYxPBP_VnOMIp_5ythnAwlT3yoQZ0tWT6bzV8w&s",
+      "updated_at_utc": "2026-03-13T13:03:15+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__quartermastercadresquad.jpg"
     },
     {
       "unit_key": "astramilitarum::rapierlaserdestroyerbattery",
@@ -5045,15 +5046,15 @@
       "datasheet_ids": [
         "000000757"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Rapier Laser Destroyer Battery",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-astartes-rapier-laser-destroyer-2025",
+      "source_page_title": "Rapier Laser Destroyer and...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Lb1kmZgujkvh7So7KGgInyJ2jH2-PJr5vqjO37XKKF-hh_9pHOwlxp03SDk&s",
+      "updated_at_utc": "2026-03-13T13:03:16+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__rapierlaserdestroyerbattery.jpg"
     },
     {
       "unit_key": "astramilitarum::ratlings",
@@ -5062,15 +5063,15 @@
       "datasheet_ids": [
         "000000724"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Ratlings",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/kill-team-ratlings-2025",
+      "source_page_title": "Kill Team: Ratlings",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdiFLewi4-1xy-WBpgHqV1P9cXl3NJTe2wau76zyvHsPWj9WEC891TIYqdA&s",
+      "updated_at_utc": "2026-03-13T13:03:17+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__ratlings.jpg"
     },
     {
       "unit_key": "astramilitarum::regimentalattachs",
@@ -5079,15 +5080,15 @@
       "datasheet_ids": [
         "000002610"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Regimental Attach\u00e9s",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://www.warhammer.com/en-WW/shop/house-greim-military-attache-2021",
+      "source_page_title": "99850599060_HouseGreimMilit...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUENq1vG171qnFGI608xWh0_zFk__dV3yOtzTmu8vYjIeWoCIzUw-LddKxmLk&s",
+      "updated_at_utc": "2026-03-13T13:03:19+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__regimentalattachs.jpg"
     },
     {
       "unit_key": "astramilitarum::reinandraus",
@@ -5096,15 +5097,15 @@
       "datasheet_ids": [
         "000001596"
       ],
-      "status": "pending",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
       "lookup_query": "warhammer.com Rein And Raus",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "source_page_url": "https://wh40k.lexicanum.com/wiki/Rein_and_Raus",
+      "source_page_title": "Rein and Raus - Warhammer...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfD0pDvRIPvDpfSoP1cdDKEfHjdCInSdWyHsS1l6jOs8B46AK-gsbw4KMaGQ&s",
+      "updated_at_utc": "2026-03-13T13:03:20+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/astramilitarum__reinandraus.jpg"
     },
     {
       "unit_key": "astramilitarum::rogaldornbattletank",
