@@ -2,10 +2,10 @@
   "source": "Google Images thumbnails seeded by warhammer.com queries",
   "resolver": "google_images_warhammer_query_v2",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-13T20:50:40+00:00",
-  "entries_with_images": 320,
-  "entries_with_local_cache": 320,
-  "lookups_performed": 182,
+  "generated_at_utc": "2026-03-13T20:56:34+00:00",
+  "entries_with_images": 321,
+  "entries_with_local_cache": 321,
+  "lookups_performed": 60,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
@@ -16369,13 +16369,13 @@
       "datasheet_ids": [
         "000003839"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tech-priest Dominus",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tech-priest Dominus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16386,13 +16386,13 @@
       "datasheet_ids": [
         "000003840"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tech-priest Manipulus",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tech-priest Manipulus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16403,13 +16403,13 @@
       "datasheet_ids": [
         "000004142"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Arkanyst Evaluator",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Arkanyst Evaluator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16420,13 +16420,13 @@
       "datasheet_ids": [
         "000004201"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Berehk Stornbr\u00f6w",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Berehk Stornbr\u00f6w\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16437,13 +16437,13 @@
       "datasheet_ids": [
         "000002597"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Br\u00f4khyr Iron-master",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Br\u00f4khyr Iron-master\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16454,13 +16454,13 @@
       "datasheet_ids": [
         "000002603"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Br\u00f4khyr Thunderkyn",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Br\u00f4khyr Thunderkyn\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16471,13 +16471,13 @@
       "datasheet_ids": [
         "000004140"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Buri Aegnirssen",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Buri Aegnirssen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16488,13 +16488,13 @@
       "datasheet_ids": [
         "000002600"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cthonian Beserks",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Cthonian Beserks\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16505,13 +16505,13 @@
       "datasheet_ids": [
         "000004145"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cthonian Earthshakers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Cthonian Earthshakers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16522,13 +16522,13 @@
       "datasheet_ids": [
         "000002595"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Einhyr Champion",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Einhyr Champion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16539,13 +16539,13 @@
       "datasheet_ids": [
         "000002599"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Einhyr Hearthguard",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Einhyr Hearthguard\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16556,13 +16556,13 @@
       "datasheet_ids": [
         "000002596"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Grimnyr",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Grimnyr\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:54:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16573,13 +16573,13 @@
       "datasheet_ids": [
         "000002598"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hearthkyn Warriors",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hearthkyn Warriors\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16590,13 +16590,13 @@
       "datasheet_ids": [
         "000002604"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hekaton Land Fortress",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hekaton Land Fortress\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16607,13 +16607,13 @@
       "datasheet_ids": [
         "000002601"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hernkyn Pioneers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hernkyn Pioneers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16624,13 +16624,13 @@
       "datasheet_ids": [
         "000003710"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hernkyn Yaegirs",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hernkyn Yaegirs\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16641,13 +16641,13 @@
       "datasheet_ids": [
         "000004143"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ironkin Steeljacks with Heavy Volkanite Disintegrators",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ironkin Steeljacks with Heavy Volkanite Disintegrators\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16658,13 +16658,13 @@
       "datasheet_ids": [
         "000004144"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ironkin Steeljacks with Melee Weapons",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ironkin Steeljacks with Melee Weapons\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16675,13 +16675,13 @@
       "datasheet_ids": [
         "000004147"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kapricus Carrier",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kapricus Carrier\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16692,13 +16692,13 @@
       "datasheet_ids": [
         "000004146"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Kapricus Defenders",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Kapricus Defenders\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16709,13 +16709,13 @@
       "datasheet_ids": [
         "000002594"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com K\u00e2hl",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"K\u00e2hl\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16726,13 +16726,13 @@
       "datasheet_ids": [
         "000004141"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Memnyr Strategist",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Memnyr Strategist\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16743,13 +16743,13 @@
       "datasheet_ids": [
         "000002602"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sagitaur",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sagitaur\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16760,13 +16760,13 @@
       "datasheet_ids": [
         "000002593"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com \u00dbthar the Destined",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"\u00dbthar the Destined\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16777,13 +16777,13 @@
       "datasheet_ids": [
         "000000553"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Annihilation Barge",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Annihilation Barge\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16794,13 +16794,13 @@
       "datasheet_ids": [
         "000000531"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Anrakyr The Traveller",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Anrakyr The Traveller\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16811,13 +16811,13 @@
       "datasheet_ids": [
         "000000559"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Acanthrites",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Acanthrites\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16828,13 +16828,13 @@
       "datasheet_ids": [
         "000002115"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Doomstalker",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Doomstalker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16845,13 +16845,13 @@
       "datasheet_ids": [
         "000004176"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Macrocytes",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Macrocytes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16862,13 +16862,13 @@
       "datasheet_ids": [
         "000002112"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Reanimator",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Reanimator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16879,13 +16879,13 @@
       "datasheet_ids": [
         "000002114"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Scarab Swarms",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Scarab Swarms\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16896,15 +16896,15 @@
       "datasheet_ids": [
         "000000551"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Spyders",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com Canoptek Spyders Necrons",
+      "source_page_url": "https://www.warhammer.com/de-AT/shop/Canoptek-Spyder-2020",
+      "source_page_title": "99120110061_CanoptekSpyderL...",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8g4xleoaPcBkNKFwq-r7BzG1BgKwRHTmybQcm9rSxFwcBfVBP7Kz0Hz8L2s&s",
+      "updated_at_utc": "2026-03-13T20:55:37+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/necrons__canoptekspyders.jpg"
     },
     {
       "unit_key": "necrons::canoptektombcrawlers",
@@ -16913,13 +16913,13 @@
       "datasheet_ids": [
         "000004177"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Tomb Crawlers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Tomb Crawlers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16930,13 +16930,13 @@
       "datasheet_ids": [
         "000000560"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Tomb Sentinel",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Tomb Sentinel\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16947,13 +16947,13 @@
       "datasheet_ids": [
         "000000558"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Tomb Stalker",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Tomb Stalker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16964,13 +16964,13 @@
       "datasheet_ids": [
         "000000546"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Canoptek Wraiths",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Canoptek Wraiths\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16981,13 +16981,13 @@
       "datasheet_ids": [
         "000000533"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Catacomb Command Barge",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Catacomb Command Barge\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -16998,13 +16998,13 @@
       "datasheet_ids": [
         "000002354"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Chronomancer",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Chronomancer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17015,13 +17015,13 @@
       "datasheet_ids": [
         "000002361"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Convergence Of Dominion",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Convergence Of Dominion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17032,13 +17032,13 @@
       "datasheet_ids": [
         "000002111"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Cryptothralls",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Cryptothralls\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17049,13 +17049,13 @@
       "datasheet_ids": [
         "000000542"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com C\u2019tan Shard of the Deceiver",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"C\u2019tan Shard of the Deceiver\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17066,13 +17066,13 @@
       "datasheet_ids": [
         "000000541"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com C\u2019tan Shard of the Nightbringer",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"C\u2019tan Shard of the Nightbringer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17083,13 +17083,13 @@
       "datasheet_ids": [
         "000002357"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com C\u2019tan Shard of the Void Dragon",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"C\u2019tan Shard of the Void Dragon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:55:59+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17100,13 +17100,13 @@
       "datasheet_ids": [
         "000000537"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Deathmarks",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Deathmarks\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17117,13 +17117,13 @@
       "datasheet_ids": [
         "000000545"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Doom Scythe",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Doom Scythe\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17134,13 +17134,13 @@
       "datasheet_ids": [
         "000000554"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Doomsday Ark",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Doomsday Ark\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17151,13 +17151,13 @@
       "datasheet_ids": [
         "000000538"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Flayed Ones",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Flayed Ones\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17168,13 +17168,13 @@
       "datasheet_ids": [
         "000000567"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Gauss Pylon",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Gauss Pylon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17185,13 +17185,13 @@
       "datasheet_ids": [
         "000004178"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Geomancer",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Geomancer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17202,13 +17202,13 @@
       "datasheet_ids": [
         "000000543"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ghost Ark",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ghost Ark\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17219,13 +17219,13 @@
       "datasheet_ids": [
         "000002355"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Hexmark Destroyer",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hexmark Destroyer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17236,13 +17236,13 @@
       "datasheet_ids": [
         "000002092"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Illuminor Szeras",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Illuminor Szeras\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17253,13 +17253,13 @@
       "datasheet_ids": [
         "000000535"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Immortals",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Immortals\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17270,13 +17270,13 @@
       "datasheet_ids": [
         "000000522"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Imotekh The Stormlord",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Imotekh The Stormlord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17287,13 +17287,13 @@
       "datasheet_ids": [
         "000002359"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lokhust Destroyers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lokhust Destroyers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17304,13 +17304,13 @@
       "datasheet_ids": [
         "000002116"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lokhust Heavy Destroyers",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lokhust Heavy Destroyers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17321,13 +17321,13 @@
       "datasheet_ids": [
         "000002351"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lokhust Lord",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lokhust Lord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17338,13 +17338,13 @@
       "datasheet_ids": [
         "000000524"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lord",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17355,13 +17355,13 @@
       "datasheet_ids": [
         "000000536"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Lychguard",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Lychguard\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -17372,13 +17372,13 @@
       "datasheet_ids": [
         "000000552"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Monolith",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Monolith\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-13T20:56:34+00:00",
       "search_engine": "",
       "error": ""
     },
