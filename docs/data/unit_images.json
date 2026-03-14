@@ -2,9 +2,9 @@
   "source": "Google Images thumbnails seeded by warhammer.com queries",
   "resolver": "google_images_warhammer_query_v2",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T04:45:45+00:00",
-  "entries_with_images": 329,
-  "entries_with_local_cache": 329,
+  "generated_at_utc": "2026-03-14T05:48:53+00:00",
+  "entries_with_images": 330,
+  "entries_with_local_cache": 330,
   "lookups_performed": 60,
   "entries": [
     {
@@ -22494,13 +22494,13 @@
       "datasheet_ids": [
         "000002715"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Predator Destructor",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Predator Destructor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:46:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22511,13 +22511,13 @@
       "datasheet_ids": [
         "000002234"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Primaris Company Champion",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Primaris Company Champion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:46:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22528,13 +22528,13 @@
       "datasheet_ids": [
         "000000285"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ragnar Blackmane",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ragnar Blackmane\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22545,13 +22545,13 @@
       "datasheet_ids": [
         "000000110"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Rapier Carrier",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Rapier Carrier\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22562,13 +22562,13 @@
       "datasheet_ids": [
         "000000241"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ravenwing Black Knights",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ravenwing Black Knights\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22579,13 +22579,13 @@
       "datasheet_ids": [
         "000002748"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ravenwing Command Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ravenwing Command Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22596,13 +22596,13 @@
       "datasheet_ids": [
         "000000240"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ravenwing Dark Talon",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ravenwing Dark Talon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22613,13 +22613,13 @@
       "datasheet_ids": [
         "000000238"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ravenwing Darkshroud",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ravenwing Darkshroud\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22630,13 +22630,13 @@
       "datasheet_ids": [
         "000001423"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Ravenwing Talonmaster",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Ravenwing Talonmaster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22647,13 +22647,13 @@
       "datasheet_ids": [
         "000000129"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Razorback",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Razorback\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22664,13 +22664,13 @@
       "datasheet_ids": [
         "000002717"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Redemptor Dreadnought",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Redemptor Dreadnought\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22681,13 +22681,13 @@
       "datasheet_ids": [
         "000002718"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Reiver Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Reiver Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22698,13 +22698,13 @@
       "datasheet_ids": [
         "000002719"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Relic Contemptor Dreadnought",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Relic Contemptor Dreadnought\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22715,13 +22715,13 @@
       "datasheet_ids": [
         "000002720"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Relic Razorback",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Relic Razorback\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22732,13 +22732,13 @@
       "datasheet_ids": [
         "000000104"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Relic Terminator Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Relic Terminator Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22750,13 +22750,13 @@
         "000002721",
         "000002791"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Repulsor",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Repulsor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22768,13 +22768,13 @@
         "000002722",
         "000002790"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Repulsor Executioner",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Repulsor Executioner\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22785,13 +22785,13 @@
       "datasheet_ids": [
         "000002723"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Rhino",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Rhino\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22802,13 +22802,13 @@
       "datasheet_ids": [
         "000000085"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Rhino Primaris",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Rhino Primaris\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22819,13 +22819,13 @@
       "datasheet_ids": [
         "000000138"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Roboute Guilliman",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Roboute Guilliman\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22836,13 +22836,13 @@
       "datasheet_ids": [
         "000002291"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sammael",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sammael\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22853,13 +22853,13 @@
       "datasheet_ids": [
         "000000165"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sanguinary Guard",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sanguinary Guard\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22870,13 +22870,13 @@
       "datasheet_ids": [
         "000000158"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sanguinary Priest",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sanguinary Priest\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22887,13 +22887,13 @@
       "datasheet_ids": [
         "000002738"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sanguinary Priest With Jump Pack",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sanguinary Priest With Jump Pack\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22904,13 +22904,13 @@
       "datasheet_ids": [
         "000000159"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sanguinary Priest on Bike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sanguinary Priest on Bike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22921,13 +22921,13 @@
       "datasheet_ids": [
         "000000137"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Scout Bike Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Scout Bike Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22938,13 +22938,13 @@
       "datasheet_ids": [
         "000001523"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Scout Sniper Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Scout Sniper Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22955,13 +22955,13 @@
       "datasheet_ids": [
         "000001160"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Scout Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Scout Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22972,13 +22972,13 @@
       "datasheet_ids": [
         "000001524"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sergeant Chronus",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sergeant Chronus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -22989,13 +22989,13 @@
       "datasheet_ids": [
         "000001162"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sergeant Telion",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sergeant Telion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23006,13 +23006,13 @@
       "datasheet_ids": [
         "000001161"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicaran Arcus",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sicaran Arcus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23023,13 +23023,13 @@
       "datasheet_ids": [
         "000001185"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicaran Battle Tank",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sicaran Battle Tank\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:47:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23040,13 +23040,13 @@
       "datasheet_ids": [
         "000001163"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicaran Omega",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sicaran Omega\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23057,13 +23057,13 @@
       "datasheet_ids": [
         "000000123"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicaran Punisher",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sicaran Punisher\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23074,13 +23074,13 @@
       "datasheet_ids": [
         "000000092"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sicaran Venator",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sicaran Venator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23091,13 +23091,13 @@
       "datasheet_ids": [
         "000000324"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Skyclaws",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Skyclaws\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23108,13 +23108,13 @@
       "datasheet_ids": [
         "000001179"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sokar-pattern Stormbird",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sokar-pattern Stormbird\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23125,13 +23125,13 @@
       "datasheet_ids": [
         "000002252"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Spartan",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Spartan\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23142,13 +23142,13 @@
       "datasheet_ids": [
         "000002779"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Spectrus Kill Team",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Spectrus Kill Team\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23159,13 +23159,13 @@
       "datasheet_ids": [
         "000002258"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stalker",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stalker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23177,13 +23177,13 @@
         "000002255",
         "000004137"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sternguard Veteran Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sternguard Veteran Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23194,13 +23194,13 @@
       "datasheet_ids": [
         "000000113"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Storm Eagle Gunship",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Storm Eagle Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23211,13 +23211,13 @@
       "datasheet_ids": [
         "000000124"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Storm Speeder Hailstrike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Storm Speeder Hailstrike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23228,15 +23228,15 @@
       "datasheet_ids": [
         "000000114"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Storm Speeder Hammerstrike",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
-      "search_engine": "",
-      "error": ""
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "ok",
+      "lookup_query": "warhammer.com \"Storm Speeder Hammerstrike\" \"Space Marines\"",
+      "source_page_url": "https://www.warhammer.com/de-DE/shop/Space-Marines-Storm-Speeder-Hammerstrike",
+      "source_page_title": "Storm Speeder Hammerstrike",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSJpDLZ6yo5cCKkhPUE4wWq4uBDComiIQBMGyQUJan8KwLODLCNSFd3440CA&s",
+      "updated_at_utc": "2026-03-14T05:48:21+00:00",
+      "search_engine": "google_images",
+      "local_path": "assets/unit-previews/spacemarines__stormspeederhammerstrike.jpg"
     },
     {
       "unit_key": "spacemarines::stormspeederthunderstrike",
@@ -23245,13 +23245,13 @@
       "datasheet_ids": [
         "000001610"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Storm Speeder Thunderstrike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Storm Speeder Thunderstrike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23262,13 +23262,13 @@
       "datasheet_ids": [
         "000000325"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormfang Gunship",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormfang Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23279,13 +23279,13 @@
       "datasheet_ids": [
         "000000084"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormhawk Interceptor",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormhawk Interceptor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23296,13 +23296,13 @@
       "datasheet_ids": [
         "000001191"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormraven Gunship",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormraven Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23313,13 +23313,13 @@
       "datasheet_ids": [
         "000001190"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormtalon Gunship",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormtalon Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23330,13 +23330,13 @@
       "datasheet_ids": [
         "000000321"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Stormwolf",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Stormwolf\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23347,13 +23347,13 @@
       "datasheet_ids": [
         "000004167"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Suboden Khan",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Suboden Khan\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23364,13 +23364,13 @@
       "datasheet_ids": [
         "000000068"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Suppressor Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Suppressor Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23381,13 +23381,13 @@
       "datasheet_ids": [
         "000002798"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Sword Brethren Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Sword Brethren Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23398,13 +23398,13 @@
       "datasheet_ids": [
         "000000070"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tactical Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tactical Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23415,13 +23415,13 @@
       "datasheet_ids": [
         "000003874"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Talonstrike Kill Team",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Talonstrike Kill Team\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23432,13 +23432,13 @@
       "datasheet_ids": [
         "000000099"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tarantula Air Defence Battery",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tarantula Air Defence Battery\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23449,13 +23449,13 @@
       "datasheet_ids": [
         "000000098"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Tarantula Sentry Battery",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Tarantula Sentry Battery\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23466,13 +23466,13 @@
       "datasheet_ids": [
         "000000140"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Techmarine",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Techmarine\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23483,13 +23483,13 @@
       "datasheet_ids": [
         "000001527"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Techmarine on Bike",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Techmarine on Bike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -23500,13 +23500,13 @@
       "datasheet_ids": [
         "000000118"
       ],
-      "status": "pending",
-      "lookup_query": "warhammer.com Terminator Assault Squad",
+      "resolver": "google_images_warhammer_query_v2",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Terminator Assault Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "local_path": "",
-      "updated_at_utc": "",
+      "updated_at_utc": "2026-03-14T05:48:53+00:00",
       "search_engine": "",
       "error": ""
     },
