@@ -2,10 +2,10 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T17:13:44+00:00",
+  "generated_at_utc": "2026-03-14T18:05:05+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
-  "lookups_performed": 120,
+  "lookups_performed": 60,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
