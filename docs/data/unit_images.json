@@ -2,10 +2,10 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T12:56:02+00:00",
+  "generated_at_utc": "2026-03-14T13:17:49+00:00",
   "entries_with_images": 341,
   "entries_with_local_cache": 341,
-  "lookups_performed": 60,
+  "lookups_performed": 320,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
@@ -2146,15 +2146,16 @@
       "datasheet_ids": [
         "000004196"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corsair Skyreavers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-skyreavers-2026",
       "source_page_title": "Corsair Skyreavers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PuUxB0n_n-jmFwsXALi3mJCbUOEi3twYoX6m_tcAFUjg2ASElsjeuuBd00I&s",
-      "updated_at_utc": "2026-03-13T10:38:54+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104111_AeldariCorsairSkyreavers01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__corsairskyreavers.jpg"
+      "local_path": "assets/unit-previews/aeldari__corsairskyreavers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::corsairvoidreavers",
@@ -2163,15 +2164,16 @@
       "datasheet_ids": [
         "000002531"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corsair Voidreavers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-voidreavers-2026",
       "source_page_title": "Corsair Voidreavers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_R2eQr6XnsRA29aDYM0rkgMJic_L1gi8P3rMHwGtYvSGuyTSn_NNpzAFO1zo&s",
-      "updated_at_utc": "2026-03-13T10:38:55+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104115_AeldariCorsairVoidreavers01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:42+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__corsairvoidreavers.jpg"
+      "local_path": "assets/unit-previews/aeldari__corsairvoidreavers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::corsairvoidscarred",
@@ -2180,15 +2182,16 @@
       "datasheet_ids": [
         "000002532"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corsair Voidscarred",
       "source_page_url": "https://www.warhammer.com/en-US/shop/kill-team-datacards-corsair-voidscarred-2024-eng",
-      "source_page_title": "Kill Team: Corsair...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9JfftEgw5jiXOn2l1aQQpsoKfXnqMM7dozvYgDIKerGtPwff4nC4z2jVbu4&s",
-      "updated_at_utc": "2026-03-13T10:38:56+00:00",
+      "source_page_title": "Kill Team: Corsair Voidscarred \u2013 Datacards",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60050104004_KTCorsairVoidscarredDatacards1.jpg",
+      "updated_at_utc": "2026-03-14T13:04:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__corsairvoidscarred.jpg"
+      "local_path": "assets/unit-previews/aeldari__corsairvoidscarred.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::crimsonhunter",
@@ -2197,15 +2200,16 @@
       "datasheet_ids": [
         "000000603"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Crimson Hunter",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Crimson-Hunter-2017",
-      "source_page_title": "99120104080_CrimsonHunterLe...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHciH9b-TJ0lXrbat5j87u3E8ggEkq176oKtSv27w66xA1cMzWOxnWhBtzTQ&s",
-      "updated_at_utc": "2026-03-13T10:38:57+00:00",
+      "source_page_title": "Crimson Hunter",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104080_CrimsonHunterLead_a.jpg",
+      "updated_at_utc": "2026-03-14T13:04:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__crimsonhunter.jpg"
+      "local_path": "assets/unit-previews/aeldari__crimsonhunter.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::dcannonplatform",
@@ -2231,15 +2235,16 @@
       "datasheet_ids": [
         "000000607"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Dark Reapers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-dark-reapers-2022",
-      "source_page_title": "99120104068_AELDarkReapersL...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKNJ8ksrEDv6-xfIZiPI6s5fYXeVu03Iq_KuHHNNu0YJs57JCqNNpRtpWfg&s",
-      "updated_at_utc": "2026-03-13T10:39:00+00:00",
+      "source_page_title": "Dark Reapers",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104068_AELDarkReapersLead.jpg",
+      "updated_at_utc": "2026-03-14T13:04:49+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__darkreapers.jpg"
+      "local_path": "assets/unit-previews/aeldari__darkreapers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::deathjester",
@@ -2248,15 +2253,16 @@
       "datasheet_ids": [
         "000002537"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Death Jester",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Death-Jester",
       "source_page_title": "Death Jester",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDao5hUseEBe7JSr5xZyEOyJmDci1iwBD5ydgs_oIcRG2Feef7nu46MLg-Fg&s",
-      "updated_at_utc": "2026-03-13T10:39:01+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070111001_HarlequinDeathJester01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:51+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__deathjester.jpg"
+      "local_path": "assets/unit-previews/aeldari__deathjester.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::direavengers",
@@ -2265,15 +2271,16 @@
       "datasheet_ids": [
         "000000593"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Dire Avengers",
       "source_page_url": "https://www.warhammer.com/it-IT/shop/Eldar-Dire-Avengers-2017",
       "source_page_title": "Vendicatori Implacabili",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNYy7eq3M7IGHtBFrZiiK-XJM67aKUDtDALypIKRnxVzytaEcsidmmDXUGP0Q&s",
-      "updated_at_utc": "2026-03-13T10:39:02+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104033_DireAvengers01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:53+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__direavengers.jpg"
+      "local_path": "assets/unit-previews/aeldari__direavengers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::eldradulthran",
@@ -2282,15 +2289,16 @@
       "datasheet_ids": [
         "000000568"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Eldrad Ulthran",
       "source_page_url": "https://www.warhammer.com/fr-BE/shop/Eldrad-Ulthran-2017",
       "source_page_title": "Eldrad Ulthran",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSYHHw-_q3DdZNDYDv8exPMmnhkG3g4g9ESNAWRGP5hfmnZOy0eYFOLygphQ&s",
-      "updated_at_utc": "2026-03-13T10:39:03+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104006_Eldrad01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:55+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__eldradulthran.jpg"
+      "local_path": "assets/unit-previews/aeldari__eldradulthran.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::falcon",
@@ -2299,15 +2307,16 @@
       "datasheet_ids": [
         "000000609"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Falcon Aeldari",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-wave-serpent-2025",
       "source_page_title": "Wave Serpent/Falcon",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMzCBLQok6sZ-eW_iPnDSjCg-XNKa07FNm0XzMNRi6lEOfLl4lnZ2xK-DEuN4&s",
-      "updated_at_utc": "2026-03-13T10:39:05+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104023_WaveSerpentNEW_01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:56+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__falcon.jpg"
+      "local_path": "assets/unit-previews/aeldari__falcon.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::farseer",
@@ -2316,15 +2325,16 @@
       "datasheet_ids": [
         "000000582"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Farseer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Farseer",
       "source_page_title": "Farseer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOu2f5sDqFS0ps5fhFmbT35RQs2HEEj_x2mM1-XCqx1hRgn9BuhQrVIYQIw&s",
-      "updated_at_utc": "2026-03-13T10:39:06+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104001_EldarFarseer01.jpg",
+      "updated_at_utc": "2026-03-14T13:04:58+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__farseer.jpg"
+      "local_path": "assets/unit-previews/aeldari__farseer.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::farseerskyrunner",
@@ -2333,15 +2343,16 @@
       "datasheet_ids": [
         "000000583"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Farseer Skyrunner Aeldari",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Farseer-Skyrunner-2017",
-      "source_page_title": "99070104002_ELDARFARSEERSKY...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4otzQbukS8SpxqqEwL_Ngz8uxG7itkT7dqLeeypCbASMtA7eaIMubFOjcAA&s",
-      "updated_at_utc": "2026-03-13T10:39:07+00:00",
+      "source_page_title": "Farseer Skyrunner",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104002_ELDARFARSEERSKYRUNNER01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:00+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__farseerskyrunner.jpg"
+      "local_path": "assets/unit-previews/aeldari__farseerskyrunner.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::firedragons",
@@ -2350,15 +2361,16 @@
       "datasheet_ids": [
         "000000596"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Fire Dragons",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-fire-dragons-2025",
-      "source_page_title": "99120104102_AELFireDragons0...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRMDVhOTSXa2zhZB1sbCqvgkU3Olha829nQArP-UvWHdAC2zj4h_86PTI_A&s",
-      "updated_at_utc": "2026-03-13T10:39:09+00:00",
+      "source_page_title": "Fire Dragons",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104102_AELFireDragons01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__firedragons.jpg"
+      "local_path": "assets/unit-previews/aeldari__firedragons.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::fireprism",
@@ -2367,15 +2379,16 @@
       "datasheet_ids": [
         "000000610"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Fire Prism",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Fire-Prism",
       "source_page_title": "Fire Prism",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYADeENB9-QXSFWxWkgWswQqzuS5vJ92Lyt9LjmyaPw6sVYYofiA4VeHC6Q&s",
-      "updated_at_utc": "2026-03-13T10:39:10+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104029_FirePrismNEW_01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:04+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__fireprism.jpg"
+      "local_path": "assets/unit-previews/aeldari__fireprism.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::firestorm",
@@ -2401,15 +2414,16 @@
       "datasheet_ids": [
         "000000574"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Fuegan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-phoenix-lord-fuegan-2025",
-      "source_page_title": "99120104103_AELFuegan01.jpg...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTPKM_x3Y_30H1YmsE4eAYwIjktXBJx9wq7PBphzS4Zasy9gyl--atHoPmHwo&s",
-      "updated_at_utc": "2026-03-13T10:39:12+00:00",
+      "source_page_title": "Fuegan",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104103_AELFuegan01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:09+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__fuegan.jpg"
+      "local_path": "assets/unit-previews/aeldari__fuegan.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::guardiandefenders",
@@ -2435,15 +2449,16 @@
       "datasheet_ids": [
         "000000606"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hemlock Wraithfighter",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Hemlock-Wraithfighter-2017",
       "source_page_title": "Hemlock Wraithfighter",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHh1rht06QbTNWGDuTc5oI0nniso1XRHZHrDeEz3YwRscRLDV79X-prDqMA_0&s",
-      "updated_at_utc": "2026-03-13T10:39:14+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104080_HemlockWraithfighterLead_a.jpg",
+      "updated_at_utc": "2026-03-14T13:05:12+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__hemlockwraithfighter.jpg"
+      "local_path": "assets/unit-previews/aeldari__hemlockwraithfighter.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::hornet",
@@ -2469,15 +2484,16 @@
       "datasheet_ids": [
         "000000594"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Howling Banshees",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Craftworlds-Howling-Banshees-2020",
       "source_page_title": "Howling Banshees",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRYd1IWZtmSAB9MbBuA6OrMsaTlNR1NWELLADP6LJycmklCk_1ETTZ7vCO-E&s",
-      "updated_at_utc": "2026-03-13T10:39:17+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104064_HowlingBanshees01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:16+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__howlingbanshees.jpg"
+      "local_path": "assets/unit-previews/aeldari__howlingbanshees.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::illicnightspear",
@@ -2520,15 +2536,16 @@
       "datasheet_ids": [
         "000000572"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Jain Zar",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/Craftworlds-Jain-Zar-2020",
       "source_page_title": "Jain Zar",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOhdji8LpyPAUqZUx3eJszDyMF7b7JO8Sk0iNC2MO_dngAQMTuWJe3qIHNHA&s",
-      "updated_at_utc": "2026-03-13T10:39:21+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104063_CWJainZar01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:23+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__jainzar.jpg"
+      "local_path": "assets/unit-previews/aeldari__jainzar.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::karandras",
@@ -2554,15 +2571,16 @@
       "datasheet_ids": [
         "000004194"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Kharseth",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-kharseth-2026",
       "source_page_title": "Kharseth",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HfcKB12GKni9mfNzZrwbPUwBXzfGih0hAvWxHjutn5LJIQttYFFsHxLcwg&s",
-      "updated_at_utc": "2026-03-13T10:39:23+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104114_AeldariKharseth01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__kharseth.jpg"
+      "local_path": "assets/unit-previews/aeldari__kharseth.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::lhykhis",
@@ -2571,15 +2589,16 @@
       "datasheet_ids": [
         "000003909"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Lhykhis",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-phoenix-lord-lhykhis-2025",
       "source_page_title": "Lhykhis",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdGd9mjBqE1H6hGDWwQTmHav0_Lk8oIazRo0EbJNP_HHXM327-jwX-jkB4w&s",
-      "updated_at_utc": "2026-03-13T10:39:24+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104101_AELLhykhis01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__lhykhis.jpg"
+      "local_path": "assets/unit-previews/aeldari__lhykhis.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::lynx",
@@ -2605,15 +2624,16 @@
       "datasheet_ids": [
         "000000576"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Maugan Ra",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-maugan-ra-2022",
       "source_page_title": "Maugan Ra",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGB1o1_vcJ4gdoIhmul3HBEdGIq9GYFFgLZpDC2Eeno-PslI_BjC6M3ADUQ2Y&s",
-      "updated_at_utc": "2026-03-13T10:39:26+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104069_AELMauganRaLead.jpg",
+      "updated_at_utc": "2026-03-14T13:05:32+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__mauganra.jpg"
+      "local_path": "assets/unit-previews/aeldari__mauganra.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::nightspinner",
@@ -2622,15 +2642,16 @@
       "datasheet_ids": [
         "000000611"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Night Spinner",
       "source_page_url": "https://www.warhammer.com/de-AT/shop/Eldar-Night-Spinner",
       "source_page_title": "Schattenspinne",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTapxgJljCOpZ5fZ_y2HVqy1IFoALQwFedOneUu6qhpUpz4hzWlNih02VxH1g&s",
-      "updated_at_utc": "2026-03-13T10:39:28+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104029_NightSpinnerNEW_01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:34+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__nightspinner.jpg"
+      "local_path": "assets/unit-previews/aeldari__nightspinner.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::nightwing",
@@ -2673,15 +2694,16 @@
       "datasheet_ids": [
         "000000624"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Phoenix",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/high-elf-realms-flamespyre-phoenix-2025",
-      "source_page_title": "99122710019_HighElfRealmsFl...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQWxnD32p2RbbaqQiY1nI424K7uDi4A1dopbzkRh1LxiyP0Hbu33ItY3WdNs&s",
-      "updated_at_utc": "2026-03-13T10:39:31+00:00",
+      "source_page_title": "Flamespyre Phoenix",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122710019_HighElfRealmsFlamespyrePhoenix1.jpg",
+      "updated_at_utc": "2026-03-14T13:05:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__phoenix.jpg"
+      "local_path": "assets/unit-previews/aeldari__phoenix.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::princeyriel",
@@ -2690,15 +2712,16 @@
       "datasheet_ids": [
         "000004193"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Prince Yriel",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-prince-yriel-2026",
       "source_page_title": "Prince Yriel",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeEclD72HEGMASbm0v2T8lF3N0xbgOKwtOgXooSMDL4RrUljYbq5zHKpuCy4&s",
-      "updated_at_utc": "2026-03-13T10:39:33+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104113_AeldariPrinceYriel01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__princeyriel.jpg"
+      "local_path": "assets/unit-previews/aeldari__princeyriel.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::princeyriellegendary",
@@ -2707,15 +2730,16 @@
       "datasheet_ids": [
         "000000569"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Prince Yriel (Legendary)",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-prince-yriel-2026",
       "source_page_title": "Prince Yriel",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeEclD72HEGMASbm0v2T8lF3N0xbgOKwtOgXooSMDL4RrUljYbq5zHKpuCy4&s",
-      "updated_at_utc": "2026-03-13T10:39:34+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104113_AeldariPrinceYriel01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:44+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__princeyriellegendary.jpg"
+      "local_path": "assets/unit-previews/aeldari__princeyriellegendary.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::rangers",
@@ -2724,15 +2748,16 @@
       "datasheet_ids": [
         "000000592"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Rangers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-rangers-2022",
       "source_page_title": "Rangers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2XfIMvDZbKeh5zz9xNg8sg4tL5z_cGU3fzF003Nap3q77ZS24C4z8CYpbhM&s",
-      "updated_at_utc": "2026-03-13T10:39:35+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104073_AELRangersLead.jpg",
+      "updated_at_utc": "2026-03-14T13:05:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__rangers.jpg"
+      "local_path": "assets/unit-previews/aeldari__rangers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::revenanttitan",
@@ -2758,15 +2783,16 @@
       "datasheet_ids": [
         "000000621"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Scorpion",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/tomb-kings-of-khemri-tomb-scorpion-2024",
-      "source_page_title": "99852717005_WHTOWTKTombScor...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoa3yrr4zCmRKnzKfLam8Ox0Xhpd5HL4DDABlTgHLvHgjr20XoLiut_6agdWY&s",
-      "updated_at_utc": "2026-03-13T10:39:38+00:00",
+      "source_page_title": "Tomb Scorpion",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99852717005_WHTOWTKTombScorpion01.jpg",
+      "updated_at_utc": "2026-03-14T13:05:51+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__scorpion.jpg"
+      "local_path": "assets/unit-previews/aeldari__scorpion.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::shadowspectres",
@@ -2809,15 +2835,16 @@
       "datasheet_ids": [
         "000002535"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shadowseer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Shadowseer",
       "source_page_title": "Shadowseer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB_nbG4HbHqSERI6Yj9mOrMy69J9ROaix4lgS29Du2ti_H9xZG8_gAb753w5A&s",
-      "updated_at_utc": "2026-03-13T10:39:41+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070111005_AELShadowseerLead.jpg",
+      "updated_at_utc": "2026-03-14T13:05:57+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__shadowseer.jpg"
+      "local_path": "assets/unit-previews/aeldari__shadowseer.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::shiningspears",
@@ -2826,15 +2853,16 @@
       "datasheet_ids": [
         "000000602"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shining Spears",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-shining-spears-2022",
       "source_page_title": "Shining Spears",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzW5-9A5B31xoMQpB2RBe4moFUMs7MWeBwFb6zu2ijw0R0kL1NZpst_t4x4w&s",
-      "updated_at_utc": "2026-03-13T10:39:43+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104071_AELShiningSpearLead.jpg",
+      "updated_at_utc": "2026-03-14T13:05:59+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__shiningspears.jpg"
+      "local_path": "assets/unit-previews/aeldari__shiningspears.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::shroudrunners",
@@ -2843,15 +2871,16 @@
       "datasheet_ids": [
         "000002533"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shroud Runners",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-shroud-runners-2022",
-      "source_page_title": "99120104074_ShroudRunnersLe...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMvwtgUeNSXHx1YJkl2ZBo9AHlCaOVZVMEV4bpez7_sPx8rBckcNtMLMR1Itc&s",
-      "updated_at_utc": "2026-03-13T10:39:44+00:00",
+      "source_page_title": "Shroud Runners",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104074_ShroudRunnersLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__shroudrunners.jpg"
+      "local_path": "assets/unit-previews/aeldari__shroudrunners.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::skathachwraithknight",
@@ -2877,15 +2906,16 @@
       "datasheet_ids": [
         "000002539"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skyweavers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Skyweavers",
       "source_page_title": "Skyweavers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIbdpVff9qvPqTcnW5XYyjNyqaMyZtVUHgp2IXlTgVQNHy1snVFcfitGTMw&s",
-      "updated_at_utc": "2026-03-13T10:39:46+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120111005_AELSkyweaversLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:07+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__skyweavers.jpg"
+      "local_path": "assets/unit-previews/aeldari__skyweavers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::solitaire",
@@ -2894,15 +2924,16 @@
       "datasheet_ids": [
         "000002538"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Solitaire",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Solitaire",
       "source_page_title": "Solitaire",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-TyQKEdO4wmmkFLJjmP-i7gfOwugKCf4Ltyv---ZWie6p_F6GBSWJdZOxkg&s",
-      "updated_at_utc": "2026-03-13T10:39:47+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070111003_Solitaire01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:08+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__solitaire.jpg"
+      "local_path": "assets/unit-previews/aeldari__solitaire.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::spiritseer",
@@ -2911,15 +2942,16 @@
       "datasheet_ids": [
         "000000588"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Spiritseer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Craftworlds-Spiritseer-2019",
       "source_page_title": "Spiritseer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuCjmIScY5QA7nZ6ui5t75PeTqMNmucKw0vzzLv1xefB9lirYwV0jfTkBEC4&s",
-      "updated_at_utc": "2026-03-13T10:39:48+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104007_Spiritseer01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:10+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__spiritseer.jpg"
+      "local_path": "assets/unit-previews/aeldari__spiritseer.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::starfangs",
@@ -2945,15 +2977,16 @@
       "datasheet_ids": [
         "000002541"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Starweaver",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Starweaver",
-      "source_page_title": "99120111006_AELStarweaverLe...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK3hX4LMtvw4tejeFxwnfsDAuoVKrlSmKYpG31y7EafDhkcVY5uzt_MXIgBg&s",
-      "updated_at_utc": "2026-03-13T10:39:51+00:00",
+      "source_page_title": "Starweaver",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120111006_AELStarweaverLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:15+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__starweaver.jpg"
+      "local_path": "assets/unit-previews/aeldari__starweaver.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::stormguardians",
@@ -2962,15 +2995,16 @@
       "datasheet_ids": [
         "000000590"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Storm Guardians",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-storm-guardians-2022",
       "source_page_title": "Storm Guardians",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhfMsG4zycLFxAAnlPxvDlsxUATBjxDiJs_dsu_dp20c_V8qLomHUUCZypivo&s",
-      "updated_at_utc": "2026-03-13T10:39:52+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104067_AELGuardiansLeadAlt.jpg",
+      "updated_at_utc": "2026-03-14T13:06:16+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__stormguardians.jpg"
+      "local_path": "assets/unit-previews/aeldari__stormguardians.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::strikingscorpions",
@@ -2996,15 +3030,16 @@
       "datasheet_ids": [
         "000000600"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Swooping Hawks",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-swooping-hawks-2025",
-      "source_page_title": "99120104098_AELSwoopingHawk...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRayjiRVximBhupAHhe_IQHC8nxNTAdC43s6WTwKU5pcBZgC07xiHpsyJFXTJA&s",
-      "updated_at_utc": "2026-03-13T10:39:55+00:00",
+      "source_page_title": "Swooping Hawks",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104098_AELSwoopingHawks01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:21+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__swoopinghawks.jpg"
+      "local_path": "assets/unit-previews/aeldari__swoopinghawks.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::thevisarch",
@@ -3013,15 +3048,16 @@
       "datasheet_ids": [
         "000002543"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com The Visarch",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-the-visarch-2022",
       "source_page_title": "The Visarch",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFMH2_wqjxT4wuc3LgmVKYRIPlQnJmPkuOxdlbFb57YpTMh0KKAjY3c4HPAI&s",
-      "updated_at_utc": "2026-03-13T10:39:56+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104010_AELVisarchLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:23+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__thevisarch.jpg"
+      "local_path": "assets/unit-previews/aeldari__thevisarch.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::theyncarne",
@@ -3030,15 +3066,16 @@
       "datasheet_ids": [
         "000002544"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com The Yncarne Aeldari",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-the-yncarne-2022",
       "source_page_title": "The Yncarne",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0umcuxVMGHq5oRysHsDpaN9hRk5DN8KbFIU99w4iHJzOwoWNzTyEWx6EF9m0&s",
-      "updated_at_utc": "2026-03-13T10:39:57+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104076_AELYncarneLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__theyncarne.jpg"
+      "local_path": "assets/unit-previews/aeldari__theyncarne.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::troupe",
@@ -3047,15 +3084,16 @@
       "datasheet_ids": [
         "000002536"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Troupe",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Harlequin-Troupe-Troop-2017",
       "source_page_title": "Harlequin Troupe",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiO1Yh0fnDQf5y4ISVSTblEK-Bc1AsNpj4AsnQSU-4J4Dm9SC9kmUlXIkD5A&s",
-      "updated_at_utc": "2026-03-13T10:39:58+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120111007_AELHarlequinTroupeLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__troupe.jpg"
+      "local_path": "assets/unit-previews/aeldari__troupe.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::troupemaster",
@@ -3132,15 +3170,16 @@
       "datasheet_ids": [
         "000002540"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Voidweaver",
       "source_page_url": "https://www.warhammer.com/it-IT/shop/Voidweaver",
       "source_page_title": "Tessivuoto",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYU7GIbGsUeJwMhuuaJjjvxnlkxQndF9xcUxz82NrsKMoLI0RPrMrhDNIMdo&s",
-      "updated_at_utc": "2026-03-13T10:40:04+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120111003_HarlequinVoidweaver01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__voidweaver.jpg"
+      "local_path": "assets/unit-previews/aeldari__voidweaver.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::vypers",
@@ -3149,15 +3188,16 @@
       "datasheet_ids": [
         "000000605"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Vypers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-vyper-2026",
       "source_page_title": "Vyper/Starfang",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTPWMNPecoXQl9-ijCSmhJ4LEvgbSno00qhhYSXLoU5v0VTbI9T9gu7s7eZw&s",
-      "updated_at_utc": "2026-03-13T10:40:05+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104112_AeldariVyper01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:37+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__vypers.jpg"
+      "local_path": "assets/unit-previews/aeldari__vypers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::warwalkers",
@@ -3166,15 +3206,16 @@
       "datasheet_ids": [
         "000000612"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com War Walkers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-war-walkers-2025",
-      "source_page_title": "99120104107_AELWarWalkers01...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJsuvfuJ0d2u3DD-hhIDb-zQBbjdnG9I5lEwJk18yYJ8KXzxKhQqIw8KEYQ&s",
-      "updated_at_utc": "2026-03-13T11:32:55+00:00",
+      "source_page_title": "War Walkers",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104107_AELWarWalkers01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:41+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__warwalkers.jpg"
+      "local_path": "assets/unit-previews/aeldari__warwalkers.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::warlock",
@@ -3183,15 +3224,16 @@
       "datasheet_ids": [
         "000000585"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Warlock Aeldari",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-warlocks-2022",
       "source_page_title": "Warlocks",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKpJtgvVHKC-6IspFN2zmnyisePB5uL_PXdYHirgAFqzVKXVkPMtrW1znAbg&s",
-      "updated_at_utc": "2026-03-13T11:32:57+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104066_AELWarlocksLead.jpg",
+      "updated_at_utc": "2026-03-14T13:06:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__warlock.jpg"
+      "local_path": "assets/unit-previews/aeldari__warlock.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::warlockconclave",
@@ -3251,15 +3293,16 @@
       "datasheet_ids": [
         "000000601"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Warp Spiders",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-warp-spiders-2025",
-      "source_page_title": "99120104100_AELWarpSpiders0...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizlLDcvtcJiIOrv4E0WTAfhuDyJLeJROIJ0N5RFamtBDXU1g3AWrSabkMGJg&s",
-      "updated_at_utc": "2026-03-13T11:33:03+00:00",
+      "source_page_title": "Warp Spiders",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104100_AELWarpSpiders01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:51+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__warpspiders.jpg"
+      "local_path": "assets/unit-previews/aeldari__warpspiders.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::waspassaultwalker",
@@ -3285,15 +3328,16 @@
       "datasheet_ids": [
         "000000599"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Wave Serpent",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-wave-serpent-2025",
       "source_page_title": "Wave Serpent/Falcon",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcBX2K22LUQ6P6WmxPaxMNWQweIRKf5r4hy7zQw9fAMhu_y1sQD-TkCmpHLA&s",
-      "updated_at_utc": "2026-03-13T11:33:06+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104023_WaveSerpentNEW_01.jpg",
+      "updated_at_utc": "2026-03-14T13:06:56+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__waveserpent.jpg"
+      "local_path": "assets/unit-previews/aeldari__waveserpent.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::webwaygate",
@@ -3319,15 +3363,16 @@
       "datasheet_ids": [
         "000000591"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Windriders",
       "source_page_url": "https://www.warhammer.com/de-DE/shop/Eldar-Windriders-2017",
       "source_page_title": "Windreiter",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXvRnOvPXdis3_glCMQ7HywcS7zZoYq-QTaz31yA557A2FuKLNwEKWtWL4ag&s",
-      "updated_at_utc": "2026-03-13T11:33:09+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104038_ELDARWINDRIDERS01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__windriders.jpg"
+      "local_path": "assets/unit-previews/aeldari__windriders.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::wraithblades",
@@ -3336,15 +3381,16 @@
       "datasheet_ids": [
         "000000598"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Wraithblades",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Wraithblades-2017",
       "source_page_title": "Wraithblades",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFvR9h7dI7C5l-m1jjzeFwtOc182ZdMkw4Kgi4KvgwB4SMUl_l9tsTGV8T-n8&s",
-      "updated_at_utc": "2026-03-13T11:33:10+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104031_EldarWraithblades01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:03+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__wraithblades.jpg"
+      "local_path": "assets/unit-previews/aeldari__wraithblades.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::wraithguard",
@@ -3353,15 +3399,16 @@
       "datasheet_ids": [
         "000000597"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Wraithguard",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Wraithguard-2017",
-      "source_page_title": "99120104031_EldarWraithguar...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWdC-Gkum1yCyIoB1MLiuhtAkrMxiuppL4FomideCELHs6xe056ZnYesemA&s",
-      "updated_at_utc": "2026-03-13T11:33:12+00:00",
+      "source_page_title": "Wraithguard",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104031_EldarWraithguard01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:05+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__wraithguard.jpg"
+      "local_path": "assets/unit-previews/aeldari__wraithguard.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::wraithknight",
@@ -3370,15 +3417,16 @@
       "datasheet_ids": [
         "000000614"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Wraithknight",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Wraithknight-2017",
       "source_page_title": "Wraithknight",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQauLtnxU1_Q_dZsVdQ0VF4rMZ8z1THdwkrqHANdSkvL2Ht2h0c4QBqsBTr4Sk&s",
-      "updated_at_utc": "2026-03-13T11:33:13+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104084_AELWraithknightLead.jpg",
+      "updated_at_utc": "2026-03-14T13:07:07+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__wraithknight.jpg"
+      "local_path": "assets/unit-previews/aeldari__wraithknight.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::wraithknightwithghostglaive",
@@ -3404,15 +3452,16 @@
       "datasheet_ids": [
         "000000613"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Wraithlord",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Wraithlord-2017",
       "source_page_title": "Wraithlord",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnX0QhFa8rYlWdRMrwLgcln_g0VjlNKWF_Q_ToT293FT0vi76PhPXdjAPh7uo&s",
-      "updated_at_utc": "2026-03-13T11:33:16+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104013_WraithlordsNEW_01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:09+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__wraithlord.jpg"
+      "local_path": "assets/unit-previews/aeldari__wraithlord.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::wraithseer",
@@ -3472,15 +3521,16 @@
       "datasheet_ids": [
         "000003916"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Ynnari Kabalite Warriors",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Drukhari-Kabalite-Warriors-2017",
       "source_page_title": "Kabalite Warriors",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiLLi8gxTo9bLei1qAKsOyZHAUKDdmhr-hsXbLPuVtpIOzs7DlrHVV_NNR3g&s",
-      "updated_at_utc": "2026-03-13T11:33:21+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120112007_KabaliteWarriorsNEW01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:17+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__ynnarikabalitewarriors.jpg"
+      "local_path": "assets/unit-previews/aeldari__ynnarikabalitewarriors.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::ynnariraider",
@@ -3574,15 +3624,16 @@
       "datasheet_ids": [
         "000002542"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Yvraine",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-yvraine-2022",
-      "source_page_title": "99070104009_AELYvraineLead....",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeKVJri4B_QbXWhvrFdcRXvrpl-msCpWE9rAzia_SN7etOydBuaPeT-hSFV3c&s",
-      "updated_at_utc": "2026-03-13T11:33:29+00:00",
+      "source_page_title": "Yvraine",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104009_AELYvraineLead.jpg",
+      "updated_at_utc": "2026-03-14T13:07:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__yvraine.jpg"
+      "local_path": "assets/unit-previews/aeldari__yvraine.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::aegisdefenceline",
@@ -3591,15 +3642,16 @@
       "datasheet_ids": [
         "000002619"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Aegis Defence Line",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-aegis-defence-line-2023",
-      "source_page_title": "99120105108_AMAegisDefencel...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKHMmy503qCwb4-f0KT3MoFo853ZPEUnIbt2DS8MIrGn5WPF9Ix-scQmdxaw&s",
-      "updated_at_utc": "2026-03-13T11:33:31+00:00",
+      "source_page_title": "Aegis Defence Line",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105108_AMAegisDefenceline01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__aegisdefenceline.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__aegisdefenceline.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::aquilalander",
@@ -3676,15 +3728,16 @@
       "datasheet_ids": [
         "000003896"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Artillery Team",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-artillery-team-2025",
-      "source_page_title": "99120105126_AstraMilitarumK...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1b2_hSHbHpM90c3dGnhfok0s8XXWBRJ3h5dgKs32gcv5HFXa7ziTtQAMTBZo&s",
-      "updated_at_utc": "2026-03-13T11:33:38+00:00",
+      "source_page_title": "Artillery Team",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105126_AstraMilitarumKriegArtilleryTeam1.jpg",
+      "updated_at_utc": "2026-03-14T13:07:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__artilleryteam.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__artilleryteam.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::arvuslighter",
@@ -3693,15 +3746,16 @@
       "datasheet_ids": [
         "000000779"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Arvus Lighter",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/horus-heresy-arvus-lighter-2025",
       "source_page_title": "Arvus Lighter",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLutZnq8PtnN_jvEjbCpeYQo3ojZ3nsBOvTOp79lgBNuLSdJK-YGL-0rkKm0&s",
-      "updated_at_utc": "2026-03-13T11:33:40+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123008007_HHArvusLighterVehicle1.jpg",
+      "updated_at_utc": "2026-03-14T13:07:42+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__arvuslighter.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__arvuslighter.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::atlasrecoveryvehicle",
@@ -3727,15 +3781,16 @@
       "datasheet_ids": [
         "000002616"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Attilan Rough Riders",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-attilan-rough-riders-2023",
-      "source_page_title": "99120105092_AMAttilanRoughR...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR7quzlZZscegmtXq896Ccggwn6atTRDzd5fTBH8PPSktx6bKb8rcZU1iV6w&s",
-      "updated_at_utc": "2026-03-13T11:33:43+00:00",
+      "source_page_title": "Attilan Rough Riders",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105092_AMAttilanRoughRidersUpdate2.jpg",
+      "updated_at_utc": "2026-03-14T13:07:47+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__attilanroughriders.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__attilanroughriders.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::avengerstrikefighter",
@@ -3744,15 +3799,16 @@
       "datasheet_ids": [
         "000000780"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Avenger Strike Fighter",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Navy-Avenger-Strike-Fighter",
-      "source_page_title": "Imperial Navy Avenger...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRyxWD3RnVXoHHsxQwTYBjhePTZE82u32-dfkVIoHu2cr6__G8jSASq7qBzg&s",
-      "updated_at_utc": "2026-03-13T11:33:44+00:00",
+      "source_page_title": "Imperial Navy Avenger Strike Fighter",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99590108089_AvengerStrikeBomber01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:49+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__avengerstrikefighter.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__avengerstrikefighter.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::baneblade",
@@ -3761,15 +3817,16 @@
       "datasheet_ids": [
         "000000702"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Baneblade",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-baneblade-2023",
       "source_page_title": "Baneblade",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo3sK7R-66sRHSpFpJ6vMuoa5SM9MAv-uGWbVzQlTDO0hZDD0EZpN98RcJtYc&s",
-      "updated_at_utc": "2026-03-13T11:33:46+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105107_AMBanebladeLeadBaneblade.jpg",
+      "updated_at_utc": "2026-03-14T13:07:51+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__baneblade.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__baneblade.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::banehammer",
@@ -3778,15 +3835,16 @@
       "datasheet_ids": [
         "000000703"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Banehammer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-banehammer-2023",
       "source_page_title": "Banehammer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58p51NJOYsqPYWyaHgtRqrk5yjE2ZvjIZieEAMeiOr-o5CyNlPRsnZz-s5PQ&s",
-      "updated_at_utc": "2026-03-13T11:33:47+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105107_AMBanebladeLeadBanehammer.jpg",
+      "updated_at_utc": "2026-03-14T13:07:53+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__banehammer.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__banehammer.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::banesword",
@@ -3795,15 +3853,16 @@
       "datasheet_ids": [
         "000000704"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Banesword",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-banesword-2023",
       "source_page_title": "Banesword",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ct7aS34mQ9ZLkQVuJwqO-SzKTLPSsOoc-GsthXaZxAZ02etG70l5ipvQrg&s",
-      "updated_at_utc": "2026-03-13T11:33:49+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105107_AMBanebladeLeadBanesword.jpg",
+      "updated_at_utc": "2026-03-14T13:07:55+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__banesword.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__banesword.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::basilisk",
@@ -3812,15 +3871,16 @@
       "datasheet_ids": [
         "000000695"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Basilisk",
       "source_page_url": "https://www.warhammer.com/fr-BE/shop/Basilisk-de-la-Garde-Imp\u00e9riale",
       "source_page_title": "Basilisk",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N1_huS37VB6U1PDI16PB9i0oCPd7_Vc471B_R2zgi1WxZr-imxcxyL7tCE0&s",
-      "updated_at_utc": "2026-03-13T11:33:50+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105047_BasiliskNEW01.jpg",
+      "updated_at_utc": "2026-03-14T13:07:57+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__basilisk.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__basilisk.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::bullgrynsquad",
@@ -3846,15 +3906,16 @@
       "datasheet_ids": [
         "000002607"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Cadian Castellan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-cadian-castellan-2023",
-      "source_page_title": "99120105100_CadianCastellan...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS0bjAg4GFJo0HbexaH2tE5B-Z_kgRXaQYaHUVDNQtO5V9Sv-wEqKuWE_oPWM&s",
-      "updated_at_utc": "2026-03-13T11:33:53+00:00",
+      "source_page_title": "Cadian Castellan",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105100_CadianCastellan1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__cadiancastellan.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__cadiancastellan.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::cadiancommandsquad",
@@ -3863,15 +3924,16 @@
       "datasheet_ids": [
         "000002609"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Cadian Command Squad Astra Militarum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-cadian-command-squad-2023",
-      "source_page_title": "60010105001_EngAMCoreGame02...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZBQK2CRRmfcrKMhYeOTNQXdLhpVvAYkcS_YZrMCmB8lT5AQDNut3BOIOFg&s",
-      "updated_at_utc": "2026-03-13T11:33:55+00:00",
+      "source_page_title": "Cadian Command Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60010105001_EngAMCoreGame02.jpg",
+      "updated_at_utc": "2026-03-14T13:08:03+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__cadiancommandsquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__cadiancommandsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::cadianheavyweaponssquad",
@@ -3880,15 +3942,16 @@
       "datasheet_ids": [
         "000000686"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Cadian Heavy Weapons Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-cadian-heavy-weapons-squad-2023",
       "source_page_title": "Heavy Weapons Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Yim1j1YVEo2DkSV-ZgnuqPiI7JPuFOCip7gJ0EwWEkGBMYbqPIfxVdk8hXA&s",
-      "updated_at_utc": "2026-03-13T11:33:57+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105097_AMCadianHeavyWeaponsSquad01.jpg",
+      "updated_at_utc": "2026-03-14T13:08:05+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__cadianheavyweaponssquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__cadianheavyweaponssquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::cadianshocktroops",
@@ -3897,15 +3960,16 @@
       "datasheet_ids": [
         "000002612"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Cadian Shock Troops",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-cadian-shock-troops-2023",
       "source_page_title": "Cadian Shock Troops",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVKtRw8puBdK22eqv_J7fbyugGhpJd0rGLlBObXmL9bsd8mH6-oxpQ_Us6h00&s",
-      "updated_at_utc": "2026-03-13T11:33:58+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60020105008_CadianShockTroopsLead.jpg",
+      "updated_at_utc": "2026-03-14T13:08:07+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__cadianshocktroops.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__cadianshocktroops.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::carnodon",
@@ -3931,15 +3995,16 @@
       "datasheet_ids": [
         "000003891"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Catachan Command Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Catachan-Command-Squad",
-      "source_page_title": "99120105037_CatachanCommand...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMycv1GGZURUntgoRMCfX7kLxCdhr-iEq5eNOOVfavdlwwVe-RUrhyyYshqA&s",
-      "updated_at_utc": "2026-03-13T11:34:02+00:00",
+      "source_page_title": "Catachan Command Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105037_CatachanCommandSquadNEW01.jpg",
+      "updated_at_utc": "2026-03-14T13:08:12+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__catachancommandsquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__catachancommandsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::catachanheavyweaponssquad",
@@ -3948,15 +4013,16 @@
       "datasheet_ids": [
         "000003894"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Catachan Heavy Weapons Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-cadian-heavy-weapons-squad-2023",
       "source_page_title": "Heavy Weapons Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Yim1j1YVEo2DkSV-ZgnuqPiI7JPuFOCip7gJ0EwWEkGBMYbqPIfxVdk8hXA&s",
-      "updated_at_utc": "2026-03-13T11:34:04+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105097_AMCadianHeavyWeaponsSquad01.jpg",
+      "updated_at_utc": "2026-03-14T13:08:12+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__catachanheavyweaponssquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__catachanheavyweaponssquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::catachanjunglefighters",
@@ -3965,15 +4031,16 @@
       "datasheet_ids": [
         "000002614"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Catachan Jungle Fighters",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Catachan-Jungle-Fighters",
-      "source_page_title": "99120105040_AstraMilitarumC...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZDI1seLvRS6p6NSjR96nPpb05uPUrOjnLhcQpZuNOPT7EHfFQd1daw6kTg&s",
-      "updated_at_utc": "2026-03-13T11:34:06+00:00",
+      "source_page_title": "Catachan Jungle Fighters",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105040_AstraMilitarumCatachanJungleFightersUPDATE1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:14+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__catachanjunglefighters.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__catachanjunglefighters.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::centaurlightcarrier",
@@ -3999,15 +4066,16 @@
       "datasheet_ids": [
         "000000692"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Chimera",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Chimera",
       "source_page_title": "Chimera",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1Xtra00APostpWwwkt9C1A7n4kTiNBCgBnYll1eINnZ_A4fSLjwV1sIeY8s&s",
-      "updated_at_utc": "2026-03-13T11:34:09+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105114_AMChimera1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:19+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__chimera.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__chimera.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::colossus",
@@ -4016,15 +4084,16 @@
       "datasheet_ids": [
         "000000740"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Colossus",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/tomb-kings-of-khemri-necrolith-colossus-2024",
       "source_page_title": "Necrolith Colossus",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8cMOEQCr_pVQnWBRKRTSYgsv4BzZTAs-tPTZGz6hEENs4UJ0pfRQXNfzmgk&s",
-      "updated_at_utc": "2026-03-13T11:34:10+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99862717007_WHTOWTKNecrolithColossus01.jpg",
+      "updated_at_utc": "2026-03-14T13:08:21+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__colossus.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__colossus.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::commissar",
@@ -4033,15 +4102,16 @@
       "datasheet_ids": [
         "000000716"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Commissar",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-commissar-2023",
       "source_page_title": "Commissar",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQn12k5RKoE_R-yIk3jRYKxjGJiXB0wuKsk-vb1pJ1a_DprkIOo15yj7NXAU&s",
-      "updated_at_utc": "2026-03-13T11:34:12+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105099_AMCommissar1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:23+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__commissar.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__commissar.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::crassus",
@@ -4101,15 +4171,16 @@
       "datasheet_ids": [
         "000002613"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Death Korps Of Krieg",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-death-korps-of-krieg-2025",
       "source_page_title": "Death Korps of Krieg",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPWZNWZP7JnWyURmdlyFcmxnbKKGU-98sWe_Quld51mT-V7wDst8BsSXokA&s",
-      "updated_at_utc": "2026-03-13T11:34:17+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105135_AstraMilitarumDeathKorpsKriegInfantrySquad1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__deathkorpsofkrieg.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__deathkorpsofkrieg.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::deathridercommissar",
@@ -4135,15 +4206,16 @@
       "datasheet_ids": [
         "000003898"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Death Riders",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-death-riders-2025",
-      "source_page_title": "99120105128_AstraMilitarumK...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dqVJxdIuThLagmEjCwFThsquM1fjo4PBt9bpPcwlMktKQZqFFTry1-mtUg&s",
-      "updated_at_utc": "2026-03-13T11:34:20+00:00",
+      "source_page_title": "Death Riders",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105128_AstraMilitarumKriegDeathRidersSquad1.jpg",
+      "updated_at_utc": "2026-03-14T13:08:41+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__deathriders.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__deathriders.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::deathstrike",
@@ -4152,15 +4224,16 @@
       "datasheet_ids": [
         "000000699"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Deathstrike",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Deathstrike",
       "source_page_title": "Deathstrike",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLPpqW-F_RWZDZLwJqG1dyu69ohIdRoBry4zba8Mi8j_yPRiwDoydEA3Rq5k&s",
-      "updated_at_utc": "2026-03-13T11:34:22+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105049_DeathstrikeNEW02.jpg",
+      "updated_at_utc": "2026-03-14T13:08:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__deathstrike.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__deathstrike.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::dominusarmouredsiegebombard",
@@ -4186,15 +4259,16 @@
       "datasheet_ids": [
         "000000705"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Doomhammer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-doomhammer-2023",
       "source_page_title": "Doomhammer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzdcm3QPjmLNkbvhi7kVYRL9OSu8G4xoyxHe4XvbV-gujRALDwd_dWqoYSd6E&s",
-      "updated_at_utc": "2026-03-13T13:02:09+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105107_AMBanebladeLeadDoomhammer.jpg",
+      "updated_at_utc": "2026-03-14T13:08:49+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__doomhammer.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__doomhammer.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::earthshakercarriagebattery",
@@ -4271,15 +4345,16 @@
       "datasheet_ids": [
         "000003897"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Field Ordnance Battery",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-field-ordnance-battery-2023",
       "source_page_title": "Field Ordnance Battery",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWeLJ2DHoGXWjlcydE6gQvkHCV2a_IGZiGCjOR9JuEf3mbD99P9ZieVwtBnw&s",
-      "updated_at_utc": "2026-03-13T13:02:15+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105104_AMFieldOrdnanceBattery01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:03+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__fieldordnancebattery.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__fieldordnancebattery.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::gauntsghosts",
@@ -4288,15 +4363,16 @@
       "datasheet_ids": [
         "000002485"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Gaunt\u2019s Ghosts",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Gaunts-Ghosts-2021",
       "source_page_title": "Gaunt's Ghosts",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RZDwBAHbcCQajvRfIRR1rGsA3U1ZR01NHSvcqLyw_VJPX6MPMutsg6EO3-o&s",
-      "updated_at_utc": "2026-03-13T13:02:16+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105087_GauntsGhostsLead.jpg",
+      "updated_at_utc": "2026-03-14T13:09:05+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__gauntsghosts.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__gauntsghosts.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::gorgonheavytransport",
@@ -4390,15 +4466,16 @@
       "datasheet_ids": [
         "000000706"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hellhammer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-hellhammer-2023",
       "source_page_title": "Hellhammer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtxdxHwuCQ39Er0R5fTa6srnD4GPVjjDpyjg4GMoMy9TJYf_NyfhFYtqQH8I&s",
-      "updated_at_utc": "2026-03-13T13:02:23+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105107_AMBanebladeLeadHellhammer.jpg",
+      "updated_at_utc": "2026-03-14T13:09:17+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__hellhammer.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__hellhammer.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::hellhound",
@@ -4407,15 +4484,16 @@
       "datasheet_ids": [
         "000000694"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hellhound",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Imperial-Guard-Hellhound",
       "source_page_title": "Hellhound",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt-uasnpFbBv8-BNSDckm-qCgPlRoXsVG81Drml9bXoNRbWqzZNqEWklGqqCg&s",
-      "updated_at_utc": "2026-03-13T13:02:24+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105044_HellhoundNEW01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:19+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__hellhound.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__hellhound.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::hellslast",
@@ -4424,15 +4502,16 @@
       "datasheet_ids": [
         "000003922"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hell\u2019s Last",
       "source_page_url": "https://www.warhammer.com/en-US/shop/minka-lesk-hells-last-special-edition-eng-2025",
-      "source_page_title": "Hell's Last (Special...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfEGYi_pUL2j_Y0iKUGW8d5sg2AO1UZOg-Vcdi9ObTwSgvubotpTY265Aeg&s",
-      "updated_at_utc": "2026-03-13T13:02:25+00:00",
+      "source_page_title": "Hell's Last (Special Edition)",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60040181371_HellsLastRoyalHBSpecialEditionENG1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:21+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__hellslast.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__hellslast.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::hydra",
@@ -4441,15 +4520,16 @@
       "datasheet_ids": [
         "000000696"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hydra",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Hydra",
       "source_page_title": "Hydra",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHglwT0BRLz_3NCxCw9hfmnvmAxTe4fc68li7sMQEDBBXmiyZ-yAw_x1Wjow&s",
-      "updated_at_utc": "2026-03-13T13:02:26+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105115_AMHydra1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:22+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__hydra.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__hydra.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::hydraplatform",
@@ -4475,15 +4555,16 @@
       "datasheet_ids": [
         "000002615"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Kasrkin",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/kill-team-kasrkin-2024",
       "source_page_title": "Kill Team: Kasrkin",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-vAYhM4BQJ4bgpkFs0h8JEwISB1tMNReDKYUgNYQmjY8SI4Sgg3qA66uV04Q&s",
-      "updated_at_utc": "2026-03-13T13:02:29+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60010199049_EngKTShadowvaultGroup1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__kasrkin.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__kasrkin.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::kriegcombatengineers",
@@ -4492,15 +4573,16 @@
       "datasheet_ids": [
         "000003893"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Krieg Combat Engineers",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/astra-militarum-krieg-combat-engineers-2025",
-      "source_page_title": "Ingenieros de Combate de...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1f51pw7L_6NNKXLvcBtr3I07tXeFPS1yKsebi_nZC_EOzrjwTui2GC--tpk&s",
-      "updated_at_utc": "2026-03-13T13:02:30+00:00",
+      "source_page_title": "Ingenieros de Combate de Krieg",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105129_AstraMilitarumKriegCombatEngineersSquad1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__kriegcombatengineers.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__kriegcombatengineers.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::kriegcommandsquad",
@@ -4509,15 +4591,16 @@
       "datasheet_ids": [
         "000003889"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Krieg Command Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-command-squad-2025",
-      "source_page_title": "99120105127_AstraMilitarumK...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj4762SrtnMK-UNNBTpau9UCHG_uKC1D-RmcHp1QdTWjfVjpemAUKUdXcCZA&s",
-      "updated_at_utc": "2026-03-13T13:02:31+00:00",
+      "source_page_title": "Krieg Command Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105127_AstraMilitarumKriegCommandSquad1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__kriegcommandsquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__kriegcommandsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::kriegheavyweaponssquad",
@@ -4526,15 +4609,16 @@
       "datasheet_ids": [
         "000003895"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Krieg Heavy Weapons Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-heavy-weapons-squad-2025",
-      "source_page_title": "99120105130_AstraMilitarumK...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAhDv8YY7_kcZGOUsuuwKkAM0p27Wkxyelej7xXiSR8X5G-M0PHU_8Jits0w&s",
-      "updated_at_utc": "2026-03-13T13:02:32+00:00",
+      "source_page_title": "Krieg Heavy Weapons Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105130_AstraMilitarumKriegHeavyWeaponsSquad1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:31+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__kriegheavyweaponssquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__kriegheavyweaponssquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrussbattletank",
@@ -4543,15 +4627,16 @@
       "datasheet_ids": [
         "000000700"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Battle Tank Astra Militarum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
       "source_page_title": "Leman Russ Battle Tank",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
-      "updated_at_utc": "2026-03-13T13:02:34+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105111_AMLemanRussBattleTank01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:32+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrussbattletank.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussbattletank.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrusscommander",
@@ -4560,15 +4645,16 @@
       "datasheet_ids": [
         "000000680"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Commander",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
       "source_page_title": "Leman Russ Battle Tank",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
-      "updated_at_utc": "2026-03-13T13:02:35+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105111_AMLemanRussBattleTank01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:33+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrusscommander.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrusscommander.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrussdemolisher",
@@ -4577,15 +4663,16 @@
       "datasheet_ids": [
         "000000701"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Demolisher",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-leman-russ-executioner-and-demolisher-squadron-2024",
-      "source_page_title": "Legions Imperialis: Leman...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1vU6h6kaS83objvoXT0A0LjYiT3e-H8DGJVWJPOSAjfdz8z_C1nrdn3qYQ&s",
-      "updated_at_utc": "2026-03-13T13:02:36+00:00",
+      "source_page_title": "Legions Imperialis: Leman Russ Executioner and Demolisher Squadron",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122605011_LILemanRussExecutionerAndDemolisherSquadron01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrussdemolisher.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussdemolisher.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrusseradicator",
@@ -4594,15 +4681,16 @@
       "datasheet_ids": [
         "000002741"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Eradicator",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
       "source_page_title": "Leman Russ Battle Tank",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCf1_Sc9Yb93sLhmbsXAVjYJ0gPkYjPt9KViWwu2v-vwkgeH7QG7WX9IF9Two&s",
-      "updated_at_utc": "2026-03-13T13:02:37+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105111_AMLemanRussBattleTank01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:36+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrusseradicator.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrusseradicator.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrussexecutioner",
@@ -4611,15 +4699,16 @@
       "datasheet_ids": [
         "000002742"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Executioner",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-leman-russ-executioner-and-demolisher-squadron-2024",
-      "source_page_title": "Legions Imperialis: Leman...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDSeMrnFl0RsfFjzq0dMgmH214-slguKaaa0Hq8yeUkFV5J0xAGAfR3rJdTXw&s",
-      "updated_at_utc": "2026-03-13T13:02:38+00:00",
+      "source_page_title": "Legions Imperialis: Leman Russ Executioner and Demolisher Squadron",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122605011_LILemanRussExecutionerAndDemolisherSquadron01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:37+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrussexecutioner.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussexecutioner.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrussexterminator",
@@ -4628,15 +4717,16 @@
       "datasheet_ids": [
         "000002743"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Exterminator",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/legions-imperialis-leman-russ-exterminator-and-annihilator-squadron-2024",
-      "source_page_title": "Legions Imperialis:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IHvLjBDYTx1uZ0avWV3OQ-B_R8K0E5B46JL7Phj2xZdjOt0YpAIcJzvEVKM&s",
-      "updated_at_utc": "2026-03-13T13:02:40+00:00",
+      "source_page_title": "Legions Imperialis: Escuadr\u00f3n de Leman Russ Exterminator y Annihilator",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122605012_LILemanRussExterminatorAndAnnihilatorSquadron01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:39+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrussexterminator.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussexterminator.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lemanrusspunisher",
@@ -4662,15 +4752,16 @@
       "datasheet_ids": [
         "000002745"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Leman Russ Vanquisher Astra Militarum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-leman-russ-battle-tank-2023",
       "source_page_title": "Leman Russ Battle Tank",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUz5J7vsbPTf5XGHrdPRvqPTNvRnY9QHqBtmQrpwOCR36trN_ON7IEBa_M_xw&s",
-      "updated_at_utc": "2026-03-13T13:02:42+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105111_AMLemanRussBattleTank01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lemanrussvanquisher.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lemanrussvanquisher.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lordmarshaldreir",
@@ -4679,15 +4770,16 @@
       "datasheet_ids": [
         "000003890"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Lord Marshal Dreir",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-krieg-lord-marshal-dreir-2025",
-      "source_page_title": "99120105125_AstraMilitarumK...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlJXe745YHqPM0N25o6nEARPneY8FITrIQu6ccfSQ-0HXirpe13Wb9Dpn3fhw&s",
-      "updated_at_utc": "2026-03-13T13:02:44+00:00",
+      "source_page_title": "Lord Marshal Dreir",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105125_AstraMilitarumKriegLordMarshalDreir1.jpg",
+      "updated_at_utc": "2026-03-14T13:09:44+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lordmarshaldreir.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lordmarshaldreir.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::lordsolarleontus",
@@ -4696,15 +4788,16 @@
       "datasheet_ids": [
         "000002605"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Lord Solar Leontus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-lord-solar-leontus-2023",
-      "source_page_title": "99120105095_AMLordSolarLeon...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfjSmBVUMaPJgqFuw4z4ZI0wsuQfsTU4jrAHg68ZaPcjLh-4YCzIxoJPcOg&s",
-      "updated_at_utc": "2026-03-13T13:02:45+00:00",
+      "source_page_title": "Lord Solar Leontus",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105095_AMLordSolarLeontus01.jpg",
+      "updated_at_utc": "2026-03-14T13:09:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__lordsolarleontus.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__lordsolarleontus.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::macharius",
@@ -4781,15 +4874,16 @@
       "datasheet_ids": [
         "000000753"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Malcador Astra Militarum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/solar-auxilia-malcador-2024",
       "source_page_title": "Malcador Heavy Tank",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZvvdpGZDvbcS7d0AcBSOlxzlJoP7Uzo43fLeHbG37QUnrVvyU-vXHMIe04g&s",
-      "updated_at_utc": "2026-03-13T13:02:51+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123005005_SAMalcador1.jpg",
+      "updated_at_utc": "2026-03-14T13:10:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__malcador.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__malcador.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::malcadorannihilator",
@@ -4832,15 +4926,16 @@
       "datasheet_ids": [
         "000000754"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Malcador Infernus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/solar-auxilia-malcador-infernus-2025",
-      "source_page_title": "99123005013_HHSolarAuxiliaM...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2m-qo2BjntjzFmOba242YMYGZ2ob0Ie7Sm-I_31CYVg1vodW6W6fb-c0xrE&s",
-      "updated_at_utc": "2026-03-13T13:02:55+00:00",
+      "source_page_title": "Malcador Infernus",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123005013_HHSolarAuxiliaMalcadorInfernusVehicle1.jpg",
+      "updated_at_utc": "2026-03-14T13:10:08+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__malcadorinfernus.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__malcadorinfernus.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::manticore",
@@ -4849,15 +4944,16 @@
       "datasheet_ids": [
         "000000698"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Manticore Astra Militarum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Manticore",
       "source_page_title": "Manticore",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWZIWaLM4AJPtG_fz-kbH8Z9hWvJxKXHfGBXShtRJvT4L25iAMN2vNrQiAFOk&s",
-      "updated_at_utc": "2026-03-13T13:02:57+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105049_ManticoreNEW01.jpg",
+      "updated_at_utc": "2026-03-14T13:10:10+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__manticore.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__manticore.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::manticoreplatform",
@@ -4883,15 +4979,16 @@
       "datasheet_ids": [
         "000000773"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Marauder Bomber",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/legions-imperialis-marauder-bomber-squadron-2023",
-      "source_page_title": "Legions Imperialis:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRceR43LXeEJtpibKVzfL7-CSDeesPfh03_kbjtPjKECzxPNIQMiaB1ar0c8&s",
-      "updated_at_utc": "2026-03-13T13:02:59+00:00",
+      "source_page_title": "Legions Imperialis: Marauder Bomber Squadron",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122608003_MarauderBomberSquadron2.jpg",
+      "updated_at_utc": "2026-03-14T13:10:13+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__marauderbomber.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__marauderbomber.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::marauderdestroyer",
@@ -4900,15 +4997,16 @@
       "datasheet_ids": [
         "000000774"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Marauder Destroyer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legions-imperialis-marauder-destroyers-2023",
-      "source_page_title": "Legions Imperialis:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyGKcsFnK7hqHy0XT_fDn_RS_onaJv-fYv4eLyVHmEqi9P1aqMzTEoZXFl7U&s",
-      "updated_at_utc": "2026-03-13T13:03:00+00:00",
+      "source_page_title": "Legions Imperialis: Marauder Destroyers",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122608004_MarauderImperialNavyDestroyers2.jpg",
+      "updated_at_utc": "2026-03-14T13:10:18+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__marauderdestroyer.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__marauderdestroyer.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::medusacarriagebattery",
@@ -4934,15 +5032,16 @@
       "datasheet_ids": [
         "000000719"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Militarum Tempestus Command Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Tempestus-Scions-Command-Squad-2017",
-      "source_page_title": "Militarum Tempestus Scions...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb_tDv0m2YuI8dBHx7CN_zdBMOGzaGczxV6CNBUB4RmlIH4bbm1sGz1gEWl20&s",
-      "updated_at_utc": "2026-03-13T13:03:02+00:00",
+      "source_page_title": "Militarum Tempestus Scions Command Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105055_TempestusScionsCommand01.jpg",
+      "updated_at_utc": "2026-03-14T13:10:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__militarumtempestuscommandsquad.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__militarumtempestuscommandsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::ministorumpriest",
@@ -4951,15 +5050,16 @@
       "datasheet_ids": [
         "000001394"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Ministorum Priest",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adepta-sororitas-ministorum-priest-2024",
-      "source_page_title": "99070108011_ASMinistorumPri...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFsKvuiErK5zSnZncHgut0RCzjYc4A-9bM3rzI8PsBAgyYVP0tfVJPcfpd05Q&s",
-      "updated_at_utc": "2026-03-13T13:03:03+00:00",
+      "source_page_title": "Ministorum Priest",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108011_ASMinistorumPriest01.jpg",
+      "updated_at_utc": "2026-03-14T13:10:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__ministorumpriest.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__ministorumpriest.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::minotaur",
@@ -4968,15 +5068,16 @@
       "datasheet_ids": [
         "000000775"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com \"Minotaur\" \"Astra Militarum\"",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/beastmen-brayherds-minotaur-herd-2025",
       "source_page_title": "Minotaur Herd",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzRHBERX2v5kdfVi8ANReAHdNx4oWvBGv2RCahMyrmKwZTWW9NyrQ_x5Fc98&s",
-      "updated_at_utc": "2026-03-13T13:03:05+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122716005_TOWBBMinotaurHerd01.jpg",
+      "updated_at_utc": "2026-03-14T13:10:30+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__minotaur.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__minotaur.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::mukaaliriders",
@@ -5019,15 +5120,16 @@
       "datasheet_ids": [
         "000000725"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Nork Deddog",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Militarum-Auxilla-Nork-Deddog",
-      "source_page_title": "01-01.jpg",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPjSI8Z4yPe7pYCBVw0-jLmKhJYLboK9houtSDwfcDLQSYC3wz-Ff9RAdNRQ&s",
-      "updated_at_utc": "2026-03-13T13:03:09+00:00",
+      "source_page_title": "Nork Deddog",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105077_AMBullgrynNorkDeddog01.jpg",
+      "updated_at_utc": "2026-03-14T13:10:55+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__norkdeddog.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__norkdeddog.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::ogrynbodyguard",
@@ -5070,15 +5172,16 @@
       "datasheet_ids": [
         "000000776"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Praetor",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-astartes-praetor-with-power-axe-2022",
-      "source_page_title": "99123001028_HHPraetorPowerA...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL2_9hsTSj2BJxVKzS6SONJiuboieyMxIXDptiv4SI1BOyTlL8ctg4Rh5AVA&s",
-      "updated_at_utc": "2026-03-13T13:03:12+00:00",
+      "source_page_title": "Legion Praetor with Power Axe",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123001028_HHPraetorPowerAxeLead.jpg",
+      "updated_at_utc": "2026-03-14T13:10:59+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__praetor.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__praetor.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::primarispsyker",
@@ -5087,15 +5190,16 @@
       "datasheet_ids": [
         "000000889"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Primaris Psyker",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/astra-militarum-primaris-psyker-2023",
-      "source_page_title": "99070105003_AMPrimarisPsyke...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBQDMmvjUW0iOkmDu5jvwMuxI1xIEn-ZwXQIkjvNKFUD3BL-zK8na6-xysXA&s",
-      "updated_at_utc": "2026-03-13T13:03:13+00:00",
+      "source_page_title": "Primaris Psyker",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070105003_AMPrimarisPsyker01.jpg",
+      "updated_at_utc": "2026-03-14T13:11:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__primarispsyker.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__primarispsyker.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::provisionallyprepared",
@@ -5138,15 +5242,16 @@
       "datasheet_ids": [
         "000000757"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Rapier Laser Destroyer Battery",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-astartes-rapier-laser-destroyer-2025",
-      "source_page_title": "Rapier Laser Destroyer and...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Lb1kmZgujkvh7So7KGgInyJ2jH2-PJr5vqjO37XKKF-hh_9pHOwlxp03SDk&s",
-      "updated_at_utc": "2026-03-13T13:03:16+00:00",
+      "source_page_title": "Rapier Laser Destroyer and Quad Launcher Battery",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123001044_THHRapierLaserDestroyer01.jpg",
+      "updated_at_utc": "2026-03-14T13:11:09+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__rapierlaserdestroyerbattery.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__rapierlaserdestroyerbattery.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::ratlings",
@@ -5155,15 +5260,16 @@
       "datasheet_ids": [
         "000000724"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Ratlings",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/kill-team-ratlings-2025",
       "source_page_title": "Kill Team: Ratlings",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdiFLewi4-1xy-WBpgHqV1P9cXl3NJTe2wau76zyvHsPWj9WEC891TIYqdA&s",
-      "updated_at_utc": "2026-03-13T13:03:17+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120105132_ENGKTBrutalCunning2.jpg",
+      "updated_at_utc": "2026-03-14T13:11:11+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/astramilitarum__ratlings.jpg"
+      "local_path": "assets/unit-previews/astramilitarum__ratlings.jpg",
+      "error": ""
     },
     {
       "unit_key": "astramilitarum::regimentalattachs",
@@ -5206,13 +5312,13 @@
       "datasheet_ids": [
         "000002617"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rogal Dorn Battle Tank\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:42:51+00:00",
+      "updated_at_utc": "2026-03-14T13:11:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5223,13 +5329,13 @@
       "datasheet_ids": [
         "000003892"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rogal Dorn Commander\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:42:53+00:00",
+      "updated_at_utc": "2026-03-14T13:11:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5240,13 +5346,13 @@
       "datasheet_ids": [
         "000000758"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sabre Weapons Battery\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:42:55+00:00",
+      "updated_at_utc": "2026-03-14T13:11:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5257,13 +5363,13 @@
       "datasheet_ids": [
         "000000729"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Salamander Command Vehicle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:42:57+00:00",
+      "updated_at_utc": "2026-03-14T13:11:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5274,13 +5380,13 @@
       "datasheet_ids": [
         "000000735"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Salamander Scout Vehicle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:42:59+00:00",
+      "updated_at_utc": "2026-03-14T13:11:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5291,13 +5397,13 @@
       "datasheet_ids": [
         "000000690"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Scout Sentinels\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:01+00:00",
+      "updated_at_utc": "2026-03-14T13:11:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5308,13 +5414,13 @@
       "datasheet_ids": [
         "000000759"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sentinel Powerlifter\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:03+00:00",
+      "updated_at_utc": "2026-03-14T13:11:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5325,13 +5431,13 @@
       "datasheet_ids": [
         "000000714"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sergeant Harker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:06+00:00",
+      "updated_at_utc": "2026-03-14T13:11:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5342,13 +5448,13 @@
       "datasheet_ids": [
         "000000707"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Shadowsword\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:08+00:00",
+      "updated_at_utc": "2026-03-14T13:11:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5359,13 +5465,13 @@
       "datasheet_ids": [
         "000001406"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sly Marbo\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:11+00:00",
+      "updated_at_utc": "2026-03-14T13:11:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5376,13 +5482,13 @@
       "datasheet_ids": [
         "000002379"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Storm Chimera\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:13+00:00",
+      "updated_at_utc": "2026-03-14T13:11:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5393,13 +5499,13 @@
       "datasheet_ids": [
         "000000763"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Stormblade\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:15+00:00",
+      "updated_at_utc": "2026-03-14T13:11:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5410,13 +5516,13 @@
       "datasheet_ids": [
         "000000708"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Stormlord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:17+00:00",
+      "updated_at_utc": "2026-03-14T13:11:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5427,13 +5533,13 @@
       "datasheet_ids": [
         "000000709"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Stormsword\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:19+00:00",
+      "updated_at_utc": "2026-03-14T13:11:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5444,13 +5550,13 @@
       "datasheet_ids": [
         "000000760"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Stygies Destroyer Tank Hunter\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:21+00:00",
+      "updated_at_utc": "2026-03-14T13:11:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5461,13 +5567,13 @@
       "datasheet_ids": [
         "000000762"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tarantula Battery\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:23+00:00",
+      "updated_at_utc": "2026-03-14T13:12:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5478,13 +5584,13 @@
       "datasheet_ids": [
         "000000736"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tauros Assault Vehicle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:25+00:00",
+      "updated_at_utc": "2026-03-14T13:12:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5495,13 +5601,13 @@
       "datasheet_ids": [
         "000000737"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tauros Venator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:27+00:00",
+      "updated_at_utc": "2026-03-14T13:12:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5512,13 +5618,13 @@
       "datasheet_ids": [
         "000000693"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Taurox\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:29+00:00",
+      "updated_at_utc": "2026-03-14T13:12:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5529,13 +5635,13 @@
       "datasheet_ids": [
         "000000721"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Taurox Prime\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:31+00:00",
+      "updated_at_utc": "2026-03-14T13:12:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5546,13 +5652,13 @@
       "datasheet_ids": [
         "000001396"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tech-Priest Enginseer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:34+00:00",
+      "updated_at_utc": "2026-03-14T13:12:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5563,13 +5669,13 @@
       "datasheet_ids": [
         "000003834"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tempestus Aquilons\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:36+00:00",
+      "updated_at_utc": "2026-03-14T13:12:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5580,13 +5686,13 @@
       "datasheet_ids": [
         "000002746"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tempestus Scions\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:38+00:00",
+      "updated_at_utc": "2026-03-14T13:12:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5597,13 +5703,13 @@
       "datasheet_ids": [
         "000000733"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Trojan Support Vehicle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:40+00:00",
+      "updated_at_utc": "2026-03-14T13:12:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5614,13 +5720,13 @@
       "datasheet_ids": [
         "000002606"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Ursula Creed\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:42+00:00",
+      "updated_at_utc": "2026-03-14T13:12:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5631,13 +5737,13 @@
       "datasheet_ids": [
         "000000777"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Valdor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:45+00:00",
+      "updated_at_utc": "2026-03-14T13:12:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5648,13 +5754,13 @@
       "datasheet_ids": [
         "000000727"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Valkyrie\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:47+00:00",
+      "updated_at_utc": "2026-03-14T13:12:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5665,13 +5771,13 @@
       "datasheet_ids": [
         "000001237"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Valkyrie Sky Talon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:49+00:00",
+      "updated_at_utc": "2026-03-14T13:12:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5682,13 +5788,13 @@
       "datasheet_ids": [
         "000000783"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Vendetta Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:51+00:00",
+      "updated_at_utc": "2026-03-14T13:12:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5699,13 +5805,13 @@
       "datasheet_ids": [
         "000000781"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Voss-pattern Lightning\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:53+00:00",
+      "updated_at_utc": "2026-03-14T13:12:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5716,13 +5822,13 @@
       "datasheet_ids": [
         "000000784"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Vulture Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:55+00:00",
+      "updated_at_utc": "2026-03-14T13:12:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5733,13 +5839,13 @@
       "datasheet_ids": [
         "000000697"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Wyvern\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:43:57+00:00",
+      "updated_at_utc": "2026-03-14T13:12:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5750,13 +5856,13 @@
       "datasheet_ids": [
         "000000713"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"\u2018Iron Hand\u2019 Straken\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:00+00:00",
+      "updated_at_utc": "2026-03-14T13:12:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5767,13 +5873,13 @@
       "datasheet_ids": [
         "000004052"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Accursed Cultists\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:02+00:00",
+      "updated_at_utc": "2026-03-14T13:12:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5784,13 +5890,13 @@
       "datasheet_ids": [
         "000001333"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Aetaos\u2019rau\u2019keres\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:04+00:00",
+      "updated_at_utc": "2026-03-14T13:13:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5801,13 +5907,13 @@
       "datasheet_ids": [
         "000001329"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"An\u2019ggrath the Unbound\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:06+00:00",
+      "updated_at_utc": "2026-03-14T13:13:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5818,13 +5924,13 @@
       "datasheet_ids": [
         "000001134"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Beasts Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:08+00:00",
+      "updated_at_utc": "2026-03-14T13:13:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5835,13 +5941,13 @@
       "datasheet_ids": [
         "000001148"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Be\u2019lakor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:11+00:00",
+      "updated_at_utc": "2026-03-14T13:13:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5852,13 +5958,13 @@
       "datasheet_ids": [
         "000001115"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Bloodcrushers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:13+00:00",
+      "updated_at_utc": "2026-03-14T13:13:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5869,13 +5975,13 @@
       "datasheet_ids": [
         "000001114"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Bloodletters\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:15+00:00",
+      "updated_at_utc": "2026-03-14T13:13:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5886,13 +5992,13 @@
       "datasheet_ids": [
         "000001455"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Bloodmaster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:17+00:00",
+      "updated_at_utc": "2026-03-14T13:13:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5903,13 +6009,13 @@
       "datasheet_ids": [
         "000002582"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Bloodthirster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:19+00:00",
+      "updated_at_utc": "2026-03-14T13:13:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5920,13 +6026,13 @@
       "datasheet_ids": [
         "000002583"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Blue Horrors\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:21+00:00",
+      "updated_at_utc": "2026-03-14T13:13:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5937,13 +6043,13 @@
       "datasheet_ids": [
         "000001128"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Burning Chariot\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:24+00:00",
+      "updated_at_utc": "2026-03-14T13:13:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5954,13 +6060,13 @@
       "datasheet_ids": [
         "000001462"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Changecaster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:26+00:00",
+      "updated_at_utc": "2026-03-14T13:13:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5971,13 +6077,13 @@
       "datasheet_ids": [
         "000004036"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:28+00:00",
+      "updated_at_utc": "2026-03-14T13:13:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -5988,13 +6094,13 @@
       "datasheet_ids": [
         "000004037"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord In Terminator Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:30+00:00",
+      "updated_at_utc": "2026-03-14T13:13:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6005,13 +6111,13 @@
       "datasheet_ids": [
         "000004039"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Disc Of Tzeentch\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:32+00:00",
+      "updated_at_utc": "2026-03-14T13:13:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6022,13 +6128,13 @@
       "datasheet_ids": [
         "000004040"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Juggernaut\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:34+00:00",
+      "updated_at_utc": "2026-03-14T13:13:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6039,13 +6145,13 @@
       "datasheet_ids": [
         "000004041"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Palanquin Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:36+00:00",
+      "updated_at_utc": "2026-03-14T13:13:59+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6056,13 +6162,13 @@
       "datasheet_ids": [
         "000004042"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Steed Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:38+00:00",
+      "updated_at_utc": "2026-03-14T13:14:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6073,13 +6179,13 @@
       "datasheet_ids": [
         "000004038"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord with Jump Pack\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:40+00:00",
+      "updated_at_utc": "2026-03-14T13:14:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6090,13 +6196,13 @@
       "datasheet_ids": [
         "000004043"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Terminator Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:43+00:00",
+      "updated_at_utc": "2026-03-14T13:14:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6107,13 +6213,13 @@
       "datasheet_ids": [
         "000004044"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chosen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:46+00:00",
+      "updated_at_utc": "2026-03-14T13:14:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6124,13 +6230,13 @@
       "datasheet_ids": [
         "000001647"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Contorted Epitome\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:49+00:00",
+      "updated_at_utc": "2026-03-14T13:14:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6141,13 +6247,13 @@
       "datasheet_ids": [
         "000004045"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Firebrand\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:51+00:00",
+      "updated_at_utc": "2026-03-14T13:14:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6158,13 +6264,13 @@
       "datasheet_ids": [
         "000004050"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:54+00:00",
+      "updated_at_utc": "2026-03-14T13:14:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6175,13 +6281,13 @@
       "datasheet_ids": [
         "000004051"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob with Firearms\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:56+00:00",
+      "updated_at_utc": "2026-03-14T13:14:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6192,13 +6298,13 @@
       "datasheet_ids": [
         "000002758"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Daemon Prince Of Chaos With Wings\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:44:58+00:00",
+      "updated_at_utc": "2026-03-14T13:14:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6209,13 +6315,13 @@
       "datasheet_ids": [
         "000001149"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Daemon Prince of Chaos\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T14:45:00+00:00",
+      "updated_at_utc": "2026-03-14T13:14:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6226,13 +6332,13 @@
       "datasheet_ids": [
         "000001142"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Daemonettes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:39+00:00",
+      "updated_at_utc": "2026-03-14T13:14:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6243,13 +6349,13 @@
       "datasheet_ids": [
         "000004062"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Dark Apostle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:41+00:00",
+      "updated_at_utc": "2026-03-14T13:14:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6260,15 +6366,16 @@
       "datasheet_ids": [
         "000004046"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com \"Dark Commune\" \"Warhammer 40000\"",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/chaos-space-marines-dark-commune-2022",
       "source_page_title": "Dark Commune",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4PAC84rpmb-Zed293_Ye8-oY9AzwgqFC2vIBCIdSvkEbu0SXuSyShUNb0vA&s",
-      "updated_at_utc": "2026-03-13T15:43:43+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120102146_CSMDarkCommuneLead.jpg",
+      "updated_at_utc": "2026-03-14T13:14:45+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/chaosdaemons__darkcommune.jpg"
+      "local_path": "assets/unit-previews/chaosdaemons__darkcommune.jpg",
+      "error": ""
     },
     {
       "unit_key": "chaosdaemons::epidemius",
@@ -6277,13 +6384,13 @@
       "datasheet_ids": [
         "000001129"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Epidemius\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:45+00:00",
+      "updated_at_utc": "2026-03-14T13:14:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6294,13 +6401,13 @@
       "datasheet_ids": [
         "000001126"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Exalted Flamer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:47+00:00",
+      "updated_at_utc": "2026-03-14T13:14:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6311,13 +6418,13 @@
       "datasheet_ids": [
         "000001147"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Exalted Seeker Chariot\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:50+00:00",
+      "updated_at_utc": "2026-03-14T13:14:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6328,13 +6435,13 @@
       "datasheet_ids": [
         "000001463"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fateskimmer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:52+00:00",
+      "updated_at_utc": "2026-03-14T13:15:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6345,13 +6452,13 @@
       "datasheet_ids": [
         "000001470"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Feculent Gnarlmaw\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:55+00:00",
+      "updated_at_utc": "2026-03-14T13:15:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6362,13 +6469,13 @@
       "datasheet_ids": [
         "000004053"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fellgor Beastmen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:43:57+00:00",
+      "updated_at_utc": "2026-03-14T13:15:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6379,13 +6486,13 @@
       "datasheet_ids": [
         "000001143"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fiends\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:00+00:00",
+      "updated_at_utc": "2026-03-14T13:15:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6396,13 +6503,13 @@
       "datasheet_ids": [
         "000001125"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Flamers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:02+00:00",
+      "updated_at_utc": "2026-03-14T13:15:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6413,13 +6520,13 @@
       "datasheet_ids": [
         "000001112"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Flesh Hounds\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:05+00:00",
+      "updated_at_utc": "2026-03-14T13:15:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6430,13 +6537,13 @@
       "datasheet_ids": [
         "000001464"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fluxmaster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:08+00:00",
+      "updated_at_utc": "2026-03-14T13:15:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6447,13 +6554,13 @@
       "datasheet_ids": [
         "000001150"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Furies\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:10+00:00",
+      "updated_at_utc": "2026-03-14T13:15:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6464,13 +6571,13 @@
       "datasheet_ids": [
         "000004055"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Gellerpox Infected\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:13+00:00",
+      "updated_at_utc": "2026-03-14T13:15:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6481,13 +6588,13 @@
       "datasheet_ids": [
         "000001339"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Giant Chaos Spawn\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:16+00:00",
+      "updated_at_utc": "2026-03-14T13:15:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6498,13 +6605,13 @@
       "datasheet_ids": [
         "000001130"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Great Unclean One\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:18+00:00",
+      "updated_at_utc": "2026-03-14T13:15:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6515,13 +6622,13 @@
       "datasheet_ids": [
         "000004063"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Havocs\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:20+00:00",
+      "updated_at_utc": "2026-03-14T13:15:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6532,13 +6639,13 @@
       "datasheet_ids": [
         "000004101"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Hellflayer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:23+00:00",
+      "updated_at_utc": "2026-03-14T13:15:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6549,13 +6656,13 @@
       "datasheet_ids": [
         "000001144"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Hellflayers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:25+00:00",
+      "updated_at_utc": "2026-03-14T13:15:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6566,13 +6673,13 @@
       "datasheet_ids": [
         "000001139"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Herald Of Slaanesh On Steed Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:27+00:00",
+      "updated_at_utc": "2026-03-14T13:15:53+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6583,13 +6690,13 @@
       "datasheet_ids": [
         "000001466"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Horticulous Slimux\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:30+00:00",
+      "updated_at_utc": "2026-03-14T13:15:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6600,13 +6707,13 @@
       "datasheet_ids": [
         "000001589"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Infernal Enrapturess\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:32+00:00",
+      "updated_at_utc": "2026-03-14T13:16:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6617,13 +6724,13 @@
       "datasheet_ids": [
         "000001117"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Kairos Fateweaver\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:35+00:00",
+      "updated_at_utc": "2026-03-14T13:16:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6635,13 +6742,13 @@
         "000001104",
         "000004102"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Karanak\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:38+00:00",
+      "updated_at_utc": "2026-03-14T13:16:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6652,13 +6759,13 @@
       "datasheet_ids": [
         "000001137"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Keeper Of Secrets\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:41+00:00",
+      "updated_at_utc": "2026-03-14T13:16:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6669,13 +6776,13 @@
       "datasheet_ids": [
         "000004064"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Legionaries\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:43+00:00",
+      "updated_at_utc": "2026-03-14T13:16:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6686,13 +6793,13 @@
       "datasheet_ids": [
         "000001120"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Lord of Change\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:45+00:00",
+      "updated_at_utc": "2026-03-14T13:16:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6703,13 +6810,13 @@
       "datasheet_ids": [
         "000004065"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Master Of Possession\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:48+00:00",
+      "updated_at_utc": "2026-03-14T13:16:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6720,13 +6827,13 @@
       "datasheet_ids": [
         "000004056"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Mutoid Vermin\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:51+00:00",
+      "updated_at_utc": "2026-03-14T13:16:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6737,13 +6844,13 @@
       "datasheet_ids": [
         "000004057"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Negavolt Cultists\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:53+00:00",
+      "updated_at_utc": "2026-03-14T13:16:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6754,13 +6861,13 @@
       "datasheet_ids": [
         "000001133"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Nurglings\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:56+00:00",
+      "updated_at_utc": "2026-03-14T13:16:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6771,13 +6878,13 @@
       "datasheet_ids": [
         "000002584"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Pink Horrors\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:44:59+00:00",
+      "updated_at_utc": "2026-03-14T13:16:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6788,13 +6895,13 @@
       "datasheet_ids": [
         "000001135"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Plague Drones\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:01+00:00",
+      "updated_at_utc": "2026-03-14T13:16:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6805,13 +6912,13 @@
       "datasheet_ids": [
         "000001336"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Plague Toads\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:04+00:00",
+      "updated_at_utc": "2026-03-14T13:16:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6822,13 +6929,13 @@
       "datasheet_ids": [
         "000001132"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Plaguebearers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:06+00:00",
+      "updated_at_utc": "2026-03-14T13:16:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6839,13 +6946,13 @@
       "datasheet_ids": [
         "000004066"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Possessed\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:08+00:00",
+      "updated_at_utc": "2026-03-14T13:16:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6856,13 +6963,13 @@
       "datasheet_ids": [
         "000001337"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Pox Riders\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:11+00:00",
+      "updated_at_utc": "2026-03-14T13:16:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6873,13 +6980,13 @@
       "datasheet_ids": [
         "000001467"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Poxbringer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:13+00:00",
+      "updated_at_utc": "2026-03-14T13:17:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6890,13 +6997,13 @@
       "datasheet_ids": [
         "000004067"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Raptors\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:16+00:00",
+      "updated_at_utc": "2026-03-14T13:17:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6907,13 +7014,13 @@
       "datasheet_ids": [
         "000001111"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rendmaster On Blood Throne\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:18+00:00",
+      "updated_at_utc": "2026-03-14T13:17:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6924,13 +7031,13 @@
       "datasheet_ids": [
         "000004048"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:21+00:00",
+      "updated_at_utc": "2026-03-14T13:17:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6941,13 +7048,13 @@
       "datasheet_ids": [
         "000004058"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Heavy Weapons Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:23+00:00",
+      "updated_at_utc": "2026-03-14T13:17:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6958,13 +7065,13 @@
       "datasheet_ids": [
         "000004059"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Beast Handler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:26+00:00",
+      "updated_at_utc": "2026-03-14T13:17:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6975,13 +7082,13 @@
       "datasheet_ids": [
         "000004060"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Brutes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:28+00:00",
+      "updated_at_utc": "2026-03-14T13:17:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -6992,13 +7099,13 @@
       "datasheet_ids": [
         "000004061"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Plague Ogryns\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:30+00:00",
+      "updated_at_utc": "2026-03-14T13:17:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7009,13 +7116,13 @@
       "datasheet_ids": [
         "000004049"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rogue Psyker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:33+00:00",
+      "updated_at_utc": "2026-03-14T13:17:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7026,13 +7133,13 @@
       "datasheet_ids": [
         "000001465"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rotigus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:35+00:00",
+      "updated_at_utc": "2026-03-14T13:17:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7043,13 +7150,13 @@
       "datasheet_ids": [
         "000001340"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Scabeiathrax The Bloated\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:38+00:00",
+      "updated_at_utc": "2026-03-14T13:17:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7060,13 +7167,13 @@
       "datasheet_ids": [
         "000001127"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Screamers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:40+00:00",
+      "updated_at_utc": "2026-03-14T13:17:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7077,13 +7184,13 @@
       "datasheet_ids": [
         "000001146"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Seeker Chariot\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:42+00:00",
+      "updated_at_utc": "2026-03-14T13:17:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7094,13 +7201,13 @@
       "datasheet_ids": [
         "000001145"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Seekers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:45+00:00",
+      "updated_at_utc": "2026-03-14T13:17:49+00:00",
       "search_engine": "",
       "error": ""
     },
