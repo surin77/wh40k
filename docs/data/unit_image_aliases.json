@@ -1,0 +1,112 @@
+{
+  "entries": {
+    "adeptasororitas::aestredthurgaandagathaedolan": {
+      "page_urls": [
+        "https://www.warhammer.com/en-WW/shop/Aestred-Thurga-Relinquant-At-Arms"
+      ],
+      "search_queries": [
+        "warhammer.com Aestred Thurga Reliquant at Arms",
+        "warhammer.com Aestred Thurga Agathae Dolan"
+      ],
+      "match_terms": [
+        "Aestred Thurga",
+        "Reliquant at Arms",
+        "Agathae Dolan"
+      ]
+    },
+    "astramilitarum::rogaldornbattletank": {
+      "search_queries": [
+        "warhammer.com Astra Militarum Rogal Dorn Battle Tank",
+        "warhammer.com Rogal Dorn Battle Tank"
+      ],
+      "match_terms": [
+        "Rogal Dorn Battle Tank",
+        "Astra Militarum Rogal Dorn Battle Tank"
+      ]
+    },
+    "astramilitarum::rogaldorncommander": {
+      "search_queries": [
+        "warhammer.com Astra Militarum Rogal Dorn Battle Tank",
+        "warhammer.com Rogal Dorn Battle Tank"
+      ],
+      "match_terms": [
+        "Rogal Dorn Commander",
+        "Rogal Dorn Battle Tank"
+      ],
+      "shared_names": [
+        "Rogal Dorn Battle Tank"
+      ]
+    },
+    "astramilitarum::ironhandstraken": {
+      "search_queries": [
+        "warhammer.com Iron Hand Straken",
+        "warhammer.com Straken Astra Militarum"
+      ],
+      "match_terms": [
+        "Iron Hand Straken",
+        "Straken"
+      ]
+    },
+    "chaosdaemons::belakor": {
+      "search_queries": [
+        "warhammer.com Belakor",
+        "warhammer.com Be'lakor"
+      ],
+      "match_terms": [
+        "Belakor",
+        "Be'lakor",
+        "Be lakor"
+      ]
+    },
+    "chaosdaemons::syllesske": {
+      "search_queries": [
+        "warhammer.com Syll'Esske",
+        "warhammer.com Syllesske"
+      ],
+      "match_terms": [
+        "Syll'Esske",
+        "Syllesske"
+      ]
+    },
+    "chaosdaemons::thebluescribes": {
+      "search_queries": [
+        "warhammer.com The Blue Scribes",
+        "warhammer.com Blue Scribes"
+      ],
+      "match_terms": [
+        "The Blue Scribes",
+        "Blue Scribes"
+      ]
+    },
+    "chaosdaemons::themasqueofslaanesh": {
+      "search_queries": [
+        "warhammer.com The Masque of Slaanesh",
+        "warhammer.com Masque of Slaanesh"
+      ],
+      "match_terms": [
+        "The Masque of Slaanesh",
+        "Masque of Slaanesh"
+      ]
+    },
+    "chaosdaemons::skullmaster": {
+      "search_queries": [
+        "warhammer.com Skullmaster Herald of Khorne",
+        "warhammer.com Skullmaster"
+      ],
+      "match_terms": [
+        "Skullmaster",
+        "Herald of Khorne"
+      ]
+    },
+    "chaosdaemons::thechangeling": {
+      "search_queries": [
+        "warhammer.com The Changeling",
+        "warhammer.com Changeling Tzeentch"
+      ],
+      "match_terms": [
+        "The Changeling",
+        "Changeling"
+      ]
+    }
+  }
+}

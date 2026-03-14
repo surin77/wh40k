@@ -23,6 +23,7 @@ BROWSER_USER_AGENT = (
 )
 GOOGLE_IMAGE_SEARCH = "https://www.google.com/search?tbm=isch&q={query}"
 RESOLVER_NAME = "warhammer_page_preview_v3"
+SHARED_RESOLVER_NAME = "shared_unit_image_v1"
 MIME_TO_EXT = {
     "image/jpeg": ".jpg",
     "image/jpg": ".jpg",
@@ -43,6 +44,18 @@ def utcnow_iso() -> str:
 
 def normalize(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def canonicalize_search_text(text: str) -> str:
+    return (
+        str(text or "")
+        .replace("’", "'")
+        .replace("‘", "'")
+        .replace("“", '"')
+        .replace("”", '"')
+        .replace("–", "-")
+        .replace("—", "-")
+    )
 
 
 def read_pipe_rows(path: Path) -> list[dict[str, str]]:
@@ -77,6 +90,25 @@ def load_units(datasheets_csv: Path, factions_csv: Path) -> list[dict[str, objec
             entry["datasheet_ids"].append(unit_id)
 
     return sorted(units_by_key.values(), key=lambda item: (str(item["faction_name"]), str(item["unit_name"])))
+
+
+def load_aliases(path: Path) -> dict[str, dict[str, object]]:
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+
+    raw_entries = payload.get("entries", payload)
+    aliases: dict[str, dict[str, object]] = {}
+    if not isinstance(raw_entries, dict):
+        return aliases
+    for unit_key, config in raw_entries.items():
+        if not isinstance(config, dict):
+            continue
+        aliases[str(unit_key).strip()] = config
+    return aliases
 
 
 def fetch_text(url: str, timeout: int) -> str:
@@ -226,14 +258,12 @@ def score_result(result: dict[str, str], unit_name: str, faction_name: str) -> i
     return score
 
 
-def search_candidates(unit_name: str, faction_name: str, timeout: int) -> list[tuple[str, list[dict[str, str]]]]:
-    queries = [
-        f"warhammer.com {unit_name}",
-        f"warhammer.com {unit_name} {faction_name}",
-        f'warhammer.com "{unit_name}" "{faction_name}"',
-        f'warhammer.com "{unit_name}" "Warhammer 40000"',
-    ]
-
+def search_candidates_with_queries(
+    queries: list[str],
+    unit_name: str,
+    faction_name: str,
+    timeout: int,
+) -> list[tuple[str, list[dict[str, str]]]]:
     yielded: list[tuple[str, list[dict[str, str]]]] = []
     for query in queries:
         results: list[dict[str, str]] = []
@@ -257,6 +287,11 @@ def search_candidates(unit_name: str, faction_name: str, timeout: int) -> list[t
         yielded.append((query, ranked[:4]))
 
     return yielded
+
+
+def search_candidates(unit_name: str, faction_name: str, timeout: int) -> list[tuple[str, list[dict[str, str]]]]:
+    unit = {"unit_name": unit_name, "faction_name": faction_name}
+    return search_candidates_with_queries(alias_search_queries(unit, None), unit_name, faction_name, timeout)
 
 
 def extract_meta_content(page_html: str, attr_name: str, attr_value: str) -> str:
@@ -383,21 +418,85 @@ def is_usable_image_url(image_url: str) -> bool:
 
 
 def page_matches_unit(page_url: str, page_title: str, unit_name: str) -> bool:
-    unit_key = normalize(unit_name)
-    if not unit_key:
-        return False
+    return page_matches_any(page_url, page_title, [unit_name])
 
+
+def page_matches_any(page_url: str, page_title: str, names: list[str]) -> bool:
     haystack = normalize(f"{page_title} {page_url}")
-    if unit_key in haystack:
-        return True
-
-    tokens = [normalize(token) for token in re.split(r"[^a-zA-Z0-9]+", unit_name) if len(normalize(token)) >= 4]
-    if not tokens:
+    if not haystack:
         return False
-    matched = sum(1 for token in tokens if token in haystack)
-    if len(tokens) == 1:
-        return matched == 1
-    return matched >= max(2, len(tokens) - 1)
+
+    for name in names:
+        unit_key = normalize(name)
+        if not unit_key:
+            continue
+        if unit_key in haystack:
+            return True
+
+        tokens = [normalize(token) for token in re.split(r"[^a-zA-Z0-9]+", str(name)) if len(normalize(token)) >= 4]
+        if not tokens:
+            continue
+        matched = sum(1 for token in tokens if token in haystack)
+        if len(tokens) == 1 and matched == 1:
+            return True
+        if len(tokens) > 1 and matched >= max(2, len(tokens) - 1):
+            return True
+    return False
+
+
+def alias_match_terms(unit: dict[str, object], alias: dict[str, object] | None) -> list[str]:
+    terms = [str(unit.get("unit_name", "")).strip()]
+    if not alias:
+        return [term for term in terms if term]
+    for key in ["match_terms", "title_aliases", "name_aliases"]:
+        value = alias.get(key, [])
+        if isinstance(value, list):
+            for item in value:
+                term = str(item or "").strip()
+                if term and term not in terms:
+                    terms.append(term)
+    return terms
+
+
+def alias_page_urls(alias: dict[str, object] | None) -> list[str]:
+    if not alias:
+        return []
+    urls: list[str] = []
+    page_url = str(alias.get("page_url", "")).strip()
+    if page_url:
+        urls.append(page_url)
+    value = alias.get("page_urls", [])
+    if isinstance(value, list):
+        for item in value:
+            url = str(item or "").strip()
+            if url and url not in urls:
+                urls.append(url)
+    return urls
+
+
+def alias_search_queries(unit: dict[str, object], alias: dict[str, object] | None) -> list[str]:
+    unit_name = canonicalize_search_text(str(unit.get("unit_name", "")).strip())
+    faction_name = canonicalize_search_text(str(unit.get("faction_name", "")).strip())
+    queries: list[str] = []
+    if alias:
+        value = alias.get("search_queries", [])
+        if isinstance(value, list):
+            for item in value:
+                query = str(item or "").strip()
+                if query and query not in queries:
+                    queries.append(canonicalize_search_text(query))
+
+    defaults = [
+        f"warhammer.com {unit_name}",
+        f"warhammer.com {unit_name} {faction_name}",
+        f'warhammer.com "{unit_name}" "{faction_name}"',
+        f'warhammer.com "{unit_name}" "Warhammer 40000"',
+    ]
+    for query in defaults:
+        query = canonicalize_search_text(query)
+        if query and query not in queries:
+            queries.append(query)
+    return queries
 
 
 def asset_basename(unit_key: str) -> str:
@@ -452,7 +551,11 @@ def cache_image(image_url: str, unit_key: str, assets_dir: Path, web_root: Path,
     return relative_asset_path(target, web_root)
 
 
-def refresh_existing_official_preview(entry: dict[str, object], timeout: int) -> dict[str, object] | None:
+def refresh_existing_official_preview(
+    entry: dict[str, object],
+    timeout: int,
+    match_terms: list[str] | None = None,
+) -> dict[str, object] | None:
     page_url = str(entry.get("source_page_url", "")).strip()
     if not is_official_result(page_url):
         return None
@@ -460,7 +563,7 @@ def refresh_existing_official_preview(entry: dict[str, object], timeout: int) ->
     image_url, page_title = extract_page_preview(page_url, timeout=timeout)
     if not is_usable_image_url(image_url):
         return None
-    if not page_matches_unit(page_url, page_title, str(entry.get("unit_name", ""))):
+    if not page_matches_any(page_url, page_title, match_terms or [str(entry.get("unit_name", ""))]):
         return None
 
     refreshed = dict(entry)
@@ -545,7 +648,8 @@ def parse_utc(value: str) -> datetime | None:
 
 
 def should_refresh(entry: dict[str, object], refresh_after: timedelta, retry_after: timedelta) -> bool:
-    if str(entry.get("resolver", "")).strip() != RESOLVER_NAME:
+    resolver = str(entry.get("resolver", "")).strip()
+    if resolver not in {RESOLVER_NAME, SHARED_RESOLVER_NAME}:
         return True
     updated = parse_utc(str(entry.get("updated_at_utc", "")))
     if updated is None:
@@ -556,18 +660,117 @@ def should_refresh(entry: dict[str, object], refresh_after: timedelta, retry_aft
     return age >= retry_after
 
 
+def entry_rank(entry: dict[str, object]) -> tuple[int, int]:
+    resolver = str(entry.get("resolver", "")).strip()
+    if resolver == RESOLVER_NAME:
+        priority = 3
+    elif resolver == SHARED_RESOLVER_NAME:
+        priority = 2
+    elif str(entry.get("status", "")) == "ok":
+        priority = 1
+    else:
+        priority = 0
+    updated = parse_utc(str(entry.get("updated_at_utc", "")))
+    updated_ts = int(updated.timestamp()) if updated else 0
+    return priority, updated_ts
+
+
+def clone_shared_entry(source: dict[str, object], unit: dict[str, object]) -> dict[str, object]:
+    return {
+        "unit_key": unit["unit_key"],
+        "unit_name": unit["unit_name"],
+        "faction_name": unit["faction_name"],
+        "datasheet_ids": unit["datasheet_ids"],
+        "resolver": SHARED_RESOLVER_NAME,
+        "status": "ok",
+        "lookup_query": str(source.get("lookup_query", "")).strip(),
+        "source_page_url": str(source.get("source_page_url", "")).strip(),
+        "source_page_title": str(source.get("source_page_title", "")).strip(),
+        "image_url": str(source.get("image_url", "")).strip(),
+        "local_path": str(source.get("local_path", "")).strip(),
+        "updated_at_utc": utcnow_iso(),
+        "search_engine": str(source.get("search_engine", "")).strip(),
+        "shared_from_unit_key": str(source.get("unit_key", "")).strip(),
+        "error": "",
+    }
+
+
+def find_shared_entry(
+    unit: dict[str, object],
+    entries_by_key: dict[str, dict[str, object]],
+    alias: dict[str, object] | None,
+) -> dict[str, object] | None:
+    candidate_keys = {normalize(str(unit.get("unit_name", "")))}
+    if alias:
+        shared_names = alias.get("shared_names", [])
+        if isinstance(shared_names, list):
+            for item in shared_names:
+                normalized = normalize(str(item or ""))
+                if normalized:
+                    candidate_keys.add(normalized)
+        shared_from_keys = alias.get("shared_from_unit_keys", [])
+        if isinstance(shared_from_keys, list):
+            candidates = [entries_by_key.get(str(item).strip()) for item in shared_from_keys]
+            valid = [entry for entry in candidates if entry and entry.get("status") == "ok"]
+            if valid:
+                return max(valid, key=entry_rank)
+
+    best: dict[str, object] | None = None
+    own_key = str(unit.get("unit_key", "")).strip()
+    for key, entry in entries_by_key.items():
+        if key == own_key or str(entry.get("status", "")) != "ok":
+            continue
+        if not (str(entry.get("local_path", "")).strip() or str(entry.get("image_url", "")).strip()):
+            continue
+        if normalize(str(entry.get("unit_name", ""))) not in candidate_keys:
+            continue
+        if best is None or entry_rank(entry) > entry_rank(best):
+            best = entry
+    return best
+
+
 def lookup_unit_image(
     unit: dict[str, object],
     timeout: int,
     delay_seconds: float,
+    alias: dict[str, object] | None = None,
 ) -> tuple[dict[str, object], bool]:
     unit_name = str(unit["unit_name"])
     faction_name = str(unit["faction_name"])
     datasheet_ids = list(unit["datasheet_ids"])
-    lookup_query = f"warhammer.com {unit_name}"
+    lookup_query = f"warhammer.com {canonicalize_search_text(unit_name)}"
     last_error = ""
+    match_terms = alias_match_terms(unit, alias)
 
-    for query, candidates in search_candidates(unit_name, faction_name, timeout):
+    for page_url in alias_page_urls(alias):
+        try:
+            image_url, page_title = extract_page_preview(page_url, timeout=timeout)
+        except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
+            last_error = str(error)
+            continue
+        if not is_usable_image_url(image_url):
+            continue
+        if not page_matches_any(page_url, page_title, match_terms):
+            continue
+        return (
+            {
+                "unit_key": unit["unit_key"],
+                "unit_name": unit_name,
+                "faction_name": faction_name,
+                "datasheet_ids": datasheet_ids,
+                "resolver": RESOLVER_NAME,
+                "status": "ok",
+                "lookup_query": page_url,
+                "source_page_url": page_url,
+                "source_page_title": page_title,
+                "image_url": image_url,
+                "updated_at_utc": utcnow_iso(),
+                "search_engine": "alias_page",
+            },
+            False,
+        )
+
+    for query, candidates in search_candidates_with_queries(alias_search_queries(unit, alias), unit_name, faction_name, timeout):
         if query:
             lookup_query = query
         for candidate in candidates:
@@ -589,7 +792,7 @@ def lookup_unit_image(
                 if not image_url:
                     continue
 
-            if not page_matches_unit(page_url, page_title or str(candidate.get("title", "")).strip(), unit_name):
+            if not page_matches_any(page_url, page_title or str(candidate.get("title", "")).strip(), match_terms):
                 continue
 
             if not image_url and is_usable_image_url(candidate_image_url):
@@ -694,6 +897,7 @@ def parse_args() -> argparse.Namespace:
         default="docs/assets/unit-previews",
         help="Directory for cached preview images",
     )
+    parser.add_argument("--aliases", default="docs/data/unit_image_aliases.json", help="Optional image alias config JSON")
     parser.add_argument("--timeout", type=int, default=20, help="HTTP timeout in seconds")
     parser.add_argument("--max-lookups", type=int, default=60, help="Maximum refreshed/missing lookups per run")
     parser.add_argument("--delay-seconds", type=float, default=0.4, help="Delay between search attempts")
@@ -725,9 +929,11 @@ def main() -> int:
     factions_path = Path(args.factions)
     out_path = Path(args.out)
     assets_dir = Path(args.assets_dir)
+    aliases_path = Path(args.aliases)
 
     units = load_units(datasheets_path, factions_path)
     existing_entries = load_existing_entries(out_path)
+    aliases = load_aliases(aliases_path)
     refresh_after = timedelta(days=max(1, args.refresh_days))
     retry_after = timedelta(days=max(1, args.retry_days))
 
@@ -744,12 +950,33 @@ def main() -> int:
             key = str(unit["unit_key"])
             previous = existing_entries.get(key)
             previous_hydrated = hydrate_entry(previous, unit) if previous else None
+            alias = aliases.get(key)
+            match_terms = alias_match_terms(unit, alias)
+            if previous_hydrated:
+                source_title = str(previous_hydrated.get("source_page_title", "")).strip()
+                if source_title and source_title not in match_terms:
+                    match_terms.append(source_title)
 
             try:
                 has_local_cache = bool(previous_hydrated and resolve_local_asset(previous_hydrated, web_root))
                 needs_refresh = previous_hydrated is None or should_refresh(
                     previous_hydrated, refresh_after=refresh_after, retry_after=retry_after
                 )
+                alias_overrides = bool(
+                    alias_page_urls(alias)
+                    or (isinstance(alias, dict) and alias.get("search_queries"))
+                    or (isinstance(alias, dict) and alias.get("shared_names"))
+                    or (isinstance(alias, dict) and alias.get("shared_from_unit_keys"))
+                )
+
+                if previous_hydrated is None or previous_hydrated.get("status") != "ok":
+                    shared_entry = find_shared_entry(unit, entries_by_key, alias)
+                    if shared_entry:
+                        entries_by_key[key] = clone_shared_entry(shared_entry, unit)
+                        continue
+
+                if previous_hydrated and previous_hydrated.get("status") != "ok" and alias_overrides:
+                    needs_refresh = True
 
                 if previous_hydrated and not needs_refresh and (previous_hydrated.get("status") != "ok" or has_local_cache):
                     entries_by_key[key] = previous_hydrated
@@ -779,7 +1006,11 @@ def main() -> int:
 
                     lookups_performed += 1
                     try:
-                        refreshed_entry = refresh_existing_official_preview(previous_hydrated, timeout=args.timeout)
+                        refreshed_entry = refresh_existing_official_preview(
+                            previous_hydrated,
+                            timeout=args.timeout,
+                            match_terms=match_terms,
+                        )
                         if refreshed_entry and refreshed_entry.get("image_url"):
                             refreshed_entry["local_path"] = cache_image(
                                 image_url=str(refreshed_entry["image_url"]),
@@ -810,7 +1041,12 @@ def main() -> int:
                     entries_by_key[key] = previous_hydrated or make_placeholder_entry(unit)
                     continue
 
-                entry, had_error = lookup_unit_image(unit, timeout=args.timeout, delay_seconds=args.delay_seconds)
+                entry, had_error = lookup_unit_image(
+                    unit,
+                    timeout=args.timeout,
+                    delay_seconds=args.delay_seconds,
+                    alias=alias,
+                )
                 lookups_performed += 1
 
                 if had_error and previous_hydrated and previous_hydrated.get("status") == "ok":
