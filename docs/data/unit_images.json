@@ -2,10 +2,10 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T15:31:04+00:00",
+  "generated_at_utc": "2026-03-14T15:27:38+00:00",
   "entries_with_images": 341,
   "entries_with_local_cache": 341,
-  "lookups_performed": 60,
+  "lookups_performed": 281,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
@@ -7218,13 +7218,13 @@
       "datasheet_ids": [
         "000001648"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Shalaxi Helbane\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:47+00:00",
+      "updated_at_utc": "2026-03-14T15:17:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7235,13 +7235,13 @@
       "datasheet_ids": [
         "000001105"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Skarbrand\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:50+00:00",
+      "updated_at_utc": "2026-03-14T15:17:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7252,13 +7252,13 @@
       "datasheet_ids": [
         "000001588"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Skull Altar\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:53+00:00",
+      "updated_at_utc": "2026-03-14T15:17:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7269,13 +7269,13 @@
       "datasheet_ids": [
         "000001116"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Skull Cannon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:56+00:00",
+      "updated_at_utc": "2026-03-14T15:18:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7286,13 +7286,13 @@
       "datasheet_ids": [
         "000001456"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Skullmaster\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:45:58+00:00",
+      "updated_at_utc": "2026-03-14T15:18:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7303,13 +7303,13 @@
       "datasheet_ids": [
         "000001106"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Skulltaker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:46:01+00:00",
+      "updated_at_utc": "2026-03-14T15:18:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7320,13 +7320,13 @@
       "datasheet_ids": [
         "000001468"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sloppity Bilepiper\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:46:04+00:00",
+      "updated_at_utc": "2026-03-14T15:18:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7337,13 +7337,13 @@
       "datasheet_ids": [
         "000004068"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T15:46:06+00:00",
+      "updated_at_utc": "2026-03-14T15:18:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7354,13 +7354,13 @@
       "datasheet_ids": [
         "000004072"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer In Terminator Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:41:58+00:00",
+      "updated_at_utc": "2026-03-14T15:18:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7371,13 +7371,13 @@
       "datasheet_ids": [
         "000004069"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Disc Of Tzeentch\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:00+00:00",
+      "updated_at_utc": "2026-03-14T15:18:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7388,13 +7388,13 @@
       "datasheet_ids": [
         "000004070"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Palanquin Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:02+00:00",
+      "updated_at_utc": "2026-03-14T15:18:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7405,13 +7405,13 @@
       "datasheet_ids": [
         "000004071"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Steed Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:04+00:00",
+      "updated_at_utc": "2026-03-14T15:18:28+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7422,13 +7422,13 @@
       "datasheet_ids": [
         "000001151"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Soul Grinder\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:06+00:00",
+      "updated_at_utc": "2026-03-14T15:18:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7439,13 +7439,13 @@
       "datasheet_ids": [
         "000001338"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Spined Chaos Beast\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:08+00:00",
+      "updated_at_utc": "2026-03-14T15:18:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7456,13 +7456,13 @@
       "datasheet_ids": [
         "000001469"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Spoilpox Scrivener\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:10+00:00",
+      "updated_at_utc": "2026-03-14T15:18:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7473,13 +7473,13 @@
       "datasheet_ids": [
         "000001649"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Syll\u2019esske\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:12+00:00",
+      "updated_at_utc": "2026-03-14T15:18:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7490,13 +7490,13 @@
       "datasheet_ids": [
         "000001119"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"The Blue Scribes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:14+00:00",
+      "updated_at_utc": "2026-03-14T15:18:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7507,13 +7507,13 @@
       "datasheet_ids": [
         "000001118"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"The Changeling\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:16+00:00",
+      "updated_at_utc": "2026-03-14T15:18:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7524,13 +7524,13 @@
       "datasheet_ids": [
         "000001136"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"The Masque Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:18+00:00",
+      "updated_at_utc": "2026-03-14T15:18:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7541,13 +7541,13 @@
       "datasheet_ids": [
         "000004100"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tormentbringer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:20+00:00",
+      "updated_at_utc": "2026-03-14T15:18:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7558,13 +7558,13 @@
       "datasheet_ids": [
         "000001141"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tormentbringer On Exalted Seeker Chariot\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:22+00:00",
+      "updated_at_utc": "2026-03-14T15:18:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7575,13 +7575,13 @@
       "datasheet_ids": [
         "000004047"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Traitor Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:24+00:00",
+      "updated_at_utc": "2026-03-14T15:19:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7592,15 +7592,16 @@
       "datasheet_ids": [
         "000004054"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com \"Traitor Guardsmen Squad\" \"Warhammer 40000\"",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/chaos-space-marines-traitor-guardsmen-squad-2025",
       "source_page_title": "Traitor Guardsmen Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRNTS54fNcwCZDYnMMYahyvW5Yl7aJ5M5YDdDv0CJrUE-l1nc40rvyHBRSLA&s",
-      "updated_at_utc": "2026-03-13T16:42:26+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120102219_CSMTraitorGuardsmen2.jpg",
+      "updated_at_utc": "2026-03-14T15:19:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/chaosdaemons__traitorguardsmensquad.jpg"
+      "local_path": "assets/unit-previews/chaosdaemons__traitorguardsmensquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "chaosdaemons::tranceweaver",
@@ -7609,13 +7610,13 @@
       "datasheet_ids": [
         "000001138"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Tranceweaver\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:28+00:00",
+      "updated_at_utc": "2026-03-14T15:19:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7626,13 +7627,13 @@
       "datasheet_ids": [
         "000004073"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Warp Talons\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:30+00:00",
+      "updated_at_utc": "2026-03-14T15:19:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7643,13 +7644,13 @@
       "datasheet_ids": [
         "000001332"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Zarakynel\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:32+00:00",
+      "updated_at_utc": "2026-03-14T15:19:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7660,13 +7661,13 @@
       "datasheet_ids": [
         "000003851"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Accursed Cultists\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:34+00:00",
+      "updated_at_utc": "2026-03-14T15:19:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7677,13 +7678,13 @@
       "datasheet_ids": [
         "000001662"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Acastus Knight Asterius\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:36+00:00",
+      "updated_at_utc": "2026-03-14T15:19:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7694,13 +7695,13 @@
       "datasheet_ids": [
         "000001099"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Acastus Knight Porphyrion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:38+00:00",
+      "updated_at_utc": "2026-03-14T15:19:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7711,13 +7712,13 @@
       "datasheet_ids": [
         "000001094"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Cerastus Knight Acheron\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:40+00:00",
+      "updated_at_utc": "2026-03-14T15:19:25+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7728,13 +7729,13 @@
       "datasheet_ids": [
         "000001097"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Cerastus Knight Atrapos\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:42+00:00",
+      "updated_at_utc": "2026-03-14T15:19:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7745,13 +7746,13 @@
       "datasheet_ids": [
         "000001096"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Cerastus Knight Castigator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:44+00:00",
+      "updated_at_utc": "2026-03-14T15:19:32+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7762,13 +7763,13 @@
       "datasheet_ids": [
         "000001095"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Cerastus Knight Lancer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:46+00:00",
+      "updated_at_utc": "2026-03-14T15:19:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7779,13 +7780,13 @@
       "datasheet_ids": [
         "000001098"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Questoris Knight Magaera\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:48+00:00",
+      "updated_at_utc": "2026-03-14T15:19:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7796,13 +7797,13 @@
       "datasheet_ids": [
         "000001100"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Questoris Knight Styrix\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:50+00:00",
+      "updated_at_utc": "2026-03-14T15:19:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7813,13 +7814,13 @@
       "datasheet_ids": [
         "000003844"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Firebrand\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:52+00:00",
+      "updated_at_utc": "2026-03-14T15:19:46+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7830,13 +7831,13 @@
       "datasheet_ids": [
         "000003849"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:54+00:00",
+      "updated_at_utc": "2026-03-14T15:19:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7847,13 +7848,13 @@
       "datasheet_ids": [
         "000003850"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob with Firearms\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:56+00:00",
+      "updated_at_utc": "2026-03-14T15:19:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7864,13 +7865,13 @@
       "datasheet_ids": [
         "000003845"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Dark Commune\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:42:58+00:00",
+      "updated_at_utc": "2026-03-14T15:19:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7881,13 +7882,13 @@
       "datasheet_ids": [
         "000003852"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fellgor Beastmen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:00+00:00",
+      "updated_at_utc": "2026-03-14T15:19:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7898,13 +7899,13 @@
       "datasheet_ids": [
         "000003854"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Gellerpox Infected\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:02+00:00",
+      "updated_at_utc": "2026-03-14T15:20:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7915,13 +7916,13 @@
       "datasheet_ids": [
         "000002567"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Knight Abominant\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:04+00:00",
+      "updated_at_utc": "2026-03-14T15:20:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7932,13 +7933,13 @@
       "datasheet_ids": [
         "000001660"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Knight Desecrator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:06+00:00",
+      "updated_at_utc": "2026-03-14T15:20:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7949,13 +7950,13 @@
       "datasheet_ids": [
         "000001658"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Knight Despoiler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:08+00:00",
+      "updated_at_utc": "2026-03-14T15:20:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7966,13 +7967,13 @@
       "datasheet_ids": [
         "000001661"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Knight Rampager\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:10+00:00",
+      "updated_at_utc": "2026-03-14T15:20:15+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -7983,13 +7984,13 @@
       "datasheet_ids": [
         "000004134"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Knight Ruinator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:12+00:00",
+      "updated_at_utc": "2026-03-14T15:20:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8000,15 +8001,16 @@
       "datasheet_ids": [
         "000001659"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Knight Tyrant Chaos Knights",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/imperial-knights-knight-dominus-knight-tyrant-2022",
-      "source_page_title": "99120108016_KnightTyrantAlt...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8LFwPZCu-MyUFxTaAJzYR1djF-aHw-q2DZ6PCew3Mj-XT6TG5jM24z1MVFA&s",
-      "updated_at_utc": "2026-03-13T16:43:13+00:00",
+      "source_page_title": "Knight Tyrant",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108016_KnightTyrant.jpg",
+      "updated_at_utc": "2026-03-14T15:20:20+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/chaosknights__knighttyrant.jpg"
+      "local_path": "assets/unit-previews/chaosknights__knighttyrant.jpg",
+      "error": ""
     },
     {
       "unit_key": "chaosknights::mutoidvermin",
@@ -8017,13 +8019,13 @@
       "datasheet_ids": [
         "000003855"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Mutoid Vermin\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:15+00:00",
+      "updated_at_utc": "2026-03-14T15:20:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8034,13 +8036,13 @@
       "datasheet_ids": [
         "000003856"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Negavolt Cultists\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:17+00:00",
+      "updated_at_utc": "2026-03-14T15:20:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8051,13 +8053,13 @@
       "datasheet_ids": [
         "000003847"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:19+00:00",
+      "updated_at_utc": "2026-03-14T15:20:29+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8068,13 +8070,13 @@
       "datasheet_ids": [
         "000003857"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Heavy Weapons Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:21+00:00",
+      "updated_at_utc": "2026-03-14T15:20:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8085,13 +8087,13 @@
       "datasheet_ids": [
         "000003858"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Beast Handler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:23+00:00",
+      "updated_at_utc": "2026-03-14T15:20:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8102,13 +8104,13 @@
       "datasheet_ids": [
         "000003859"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Brutes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:25+00:00",
+      "updated_at_utc": "2026-03-14T15:20:39+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8119,13 +8121,13 @@
       "datasheet_ids": [
         "000003860"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Plague Ogryns\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:27+00:00",
+      "updated_at_utc": "2026-03-14T15:20:42+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8136,13 +8138,13 @@
       "datasheet_ids": [
         "000003848"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rogue Psyker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:29+00:00",
+      "updated_at_utc": "2026-03-14T15:20:45+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8153,13 +8155,13 @@
       "datasheet_ids": [
         "000003846"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Traitor Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:31+00:00",
+      "updated_at_utc": "2026-03-14T15:20:49+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8170,13 +8172,13 @@
       "datasheet_ids": [
         "000003853"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Traitor Guardsmen Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:33+00:00",
+      "updated_at_utc": "2026-03-14T15:20:52+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8187,13 +8189,13 @@
       "datasheet_ids": [
         "000002565"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Brigand\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:35+00:00",
+      "updated_at_utc": "2026-03-14T15:20:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8204,13 +8206,13 @@
       "datasheet_ids": [
         "000002562"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Executioner\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:37+00:00",
+      "updated_at_utc": "2026-03-14T15:20:59+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8221,13 +8223,13 @@
       "datasheet_ids": [
         "000002566"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Huntsman\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:39+00:00",
+      "updated_at_utc": "2026-03-14T15:21:02+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8238,13 +8240,13 @@
       "datasheet_ids": [
         "000002564"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Karnivore\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:41+00:00",
+      "updated_at_utc": "2026-03-14T15:21:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8255,13 +8257,13 @@
       "datasheet_ids": [
         "000001663"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Moirax\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:43+00:00",
+      "updated_at_utc": "2026-03-14T15:21:09+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8272,13 +8274,13 @@
       "datasheet_ids": [
         "000002563"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"War Dog Stalker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:45+00:00",
+      "updated_at_utc": "2026-03-14T15:21:12+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8289,13 +8291,13 @@
       "datasheet_ids": [
         "000000924"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Abaddon The Despoiler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:47+00:00",
+      "updated_at_utc": "2026-03-14T15:21:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8306,15 +8308,16 @@
       "datasheet_ids": [
         "000002571"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Accursed Cultists",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/chaos-space-marines-accursed-cultists-2022",
       "source_page_title": "Accursed Cultists",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLvYcu1NJeI5oBmlXOKDJ_H95ngnokBSHN3uj1293qdjyJYMzx6qtYmkKQco&s",
-      "updated_at_utc": "2026-03-13T16:43:48+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120102147_AccursedCultistsLead.jpg",
+      "updated_at_utc": "2026-03-14T15:21:17+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/chaosspacemarines__accursedcultists.jpg"
+      "local_path": "assets/unit-previews/chaosspacemarines__accursedcultists.jpg",
+      "error": ""
     },
     {
       "unit_key": "chaosspacemarines::bloodslaughterer",
@@ -8323,13 +8326,13 @@
       "datasheet_ids": [
         "000001293"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Blood Slaughterer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:50+00:00",
+      "updated_at_utc": "2026-03-14T15:21:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8340,13 +8343,13 @@
       "datasheet_ids": [
         "000003630"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cerberus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:52+00:00",
+      "updated_at_utc": "2026-03-14T15:21:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8357,13 +8360,13 @@
       "datasheet_ids": [
         "000000957"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Bikers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T16:43:54+00:00",
+      "updated_at_utc": "2026-03-14T15:21:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8374,13 +8377,13 @@
       "datasheet_ids": [
         "000001302"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Deimos Predator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:42+00:00",
+      "updated_at_utc": "2026-03-14T15:21:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8391,13 +8394,13 @@
       "datasheet_ids": [
         "000000962"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Land Raider\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:44+00:00",
+      "updated_at_utc": "2026-03-14T15:21:34+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8408,13 +8411,13 @@
       "datasheet_ids": [
         "000000929"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:46+00:00",
+      "updated_at_utc": "2026-03-14T15:21:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8425,13 +8428,13 @@
       "datasheet_ids": [
         "000000930"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord In Terminator Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:48+00:00",
+      "updated_at_utc": "2026-03-14T15:21:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8442,13 +8445,13 @@
       "datasheet_ids": [
         "000000931"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Bike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:51+00:00",
+      "updated_at_utc": "2026-03-14T15:21:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8459,13 +8462,13 @@
       "datasheet_ids": [
         "000000933"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Disc Of Tzeentch\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:53+00:00",
+      "updated_at_utc": "2026-03-14T15:21:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8476,13 +8479,13 @@
       "datasheet_ids": [
         "000000932"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Juggernaut\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:55+00:00",
+      "updated_at_utc": "2026-03-14T15:21:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8493,13 +8496,13 @@
       "datasheet_ids": [
         "000000934"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Palanquin Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:01:57+00:00",
+      "updated_at_utc": "2026-03-14T15:21:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8510,13 +8513,13 @@
       "datasheet_ids": [
         "000000935"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Steed Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:00+00:00",
+      "updated_at_utc": "2026-03-14T15:21:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8527,13 +8530,13 @@
       "datasheet_ids": [
         "000003711"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord with Jump Pack\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:02+00:00",
+      "updated_at_utc": "2026-03-14T15:22:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8544,13 +8547,13 @@
       "datasheet_ids": [
         "000002572"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Predator Annihilator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:04+00:00",
+      "updated_at_utc": "2026-03-14T15:22:05+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8561,13 +8564,13 @@
       "datasheet_ids": [
         "000000963"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Predator Destructor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:06+00:00",
+      "updated_at_utc": "2026-03-14T15:22:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8578,13 +8581,13 @@
       "datasheet_ids": [
         "000000956"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Rhino\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:08+00:00",
+      "updated_at_utc": "2026-03-14T15:22:11+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8595,13 +8598,13 @@
       "datasheet_ids": [
         "000000960"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Spawn\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:11+00:00",
+      "updated_at_utc": "2026-03-14T15:22:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8612,13 +8615,13 @@
       "datasheet_ids": [
         "000000947"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Terminator Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:13+00:00",
+      "updated_at_utc": "2026-03-14T15:22:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8629,13 +8632,13 @@
       "datasheet_ids": [
         "000001321"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Thunderhawk\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:15+00:00",
+      "updated_at_utc": "2026-03-14T15:22:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8646,13 +8649,13 @@
       "datasheet_ids": [
         "000000964"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Vindicator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:17+00:00",
+      "updated_at_utc": "2026-03-14T15:22:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8663,13 +8666,13 @@
       "datasheet_ids": [
         "000000952"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chosen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:20+00:00",
+      "updated_at_utc": "2026-03-14T15:22:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8680,13 +8683,13 @@
       "datasheet_ids": [
         "000003712"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Firebrand\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:22+00:00",
+      "updated_at_utc": "2026-03-14T15:22:31+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8697,13 +8700,13 @@
       "datasheet_ids": [
         "000000946"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:24+00:00",
+      "updated_at_utc": "2026-03-14T15:22:35+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8714,13 +8717,13 @@
       "datasheet_ids": [
         "000003713"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cultist Mob with Firearms\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:26+00:00",
+      "updated_at_utc": "2026-03-14T15:22:38+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8731,13 +8734,13 @@
       "datasheet_ids": [
         "000000926"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Cypher\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:29+00:00",
+      "updated_at_utc": "2026-03-14T15:22:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8748,13 +8751,13 @@
       "datasheet_ids": [
         "000000936"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Dark Apostle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:31+00:00",
+      "updated_at_utc": "2026-03-14T15:22:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8765,13 +8768,13 @@
       "datasheet_ids": [
         "000002569"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Dark Commune\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:33+00:00",
+      "updated_at_utc": "2026-03-14T15:22:48+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8782,13 +8785,13 @@
       "datasheet_ids": [
         "000001295"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Decimator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:35+00:00",
+      "updated_at_utc": "2026-03-14T15:22:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8799,13 +8802,13 @@
       "datasheet_ids": [
         "000000969"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Defiler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:38+00:00",
+      "updated_at_utc": "2026-03-14T15:22:55+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8816,13 +8819,13 @@
       "datasheet_ids": [
         "000003626"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Deredeo Dreadnought\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:40+00:00",
+      "updated_at_utc": "2026-03-14T15:22:58+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8833,13 +8836,13 @@
       "datasheet_ids": [
         "000001310"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Dreadclaw Drop Pod\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:42+00:00",
+      "updated_at_utc": "2026-03-14T15:23:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8867,13 +8870,13 @@
       "datasheet_ids": [
         "000000928"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fabius Bile\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:45+00:00",
+      "updated_at_utc": "2026-03-14T15:23:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8884,13 +8887,13 @@
       "datasheet_ids": [
         "000003690"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Falchion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:48+00:00",
+      "updated_at_utc": "2026-03-14T15:23:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8901,13 +8904,13 @@
       "datasheet_ids": [
         "000003654"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fellblade\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:50+00:00",
+      "updated_at_utc": "2026-03-14T15:23:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8918,13 +8921,13 @@
       "datasheet_ids": [
         "000001604"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fellgor Beastmen\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:52+00:00",
+      "updated_at_utc": "2026-03-14T15:23:18+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8935,13 +8938,13 @@
       "datasheet_ids": [
         "000003618"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Fire Raptor Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:54+00:00",
+      "updated_at_utc": "2026-03-14T15:23:21+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8952,13 +8955,13 @@
       "datasheet_ids": [
         "000000967"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Forgefiend\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:57+00:00",
+      "updated_at_utc": "2026-03-14T15:23:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8969,13 +8972,13 @@
       "datasheet_ids": [
         "000002592"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Gellerpox Infected\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:02:59+00:00",
+      "updated_at_utc": "2026-03-14T15:23:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -8986,13 +8989,13 @@
       "datasheet_ids": [
         "000001294"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Greater Blight Drone\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:01+00:00",
+      "updated_at_utc": "2026-03-14T15:23:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9003,13 +9006,13 @@
       "datasheet_ids": [
         "000001298"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Greater Brass Scorpion\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:04+00:00",
+      "updated_at_utc": "2026-03-14T15:23:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9020,13 +9023,13 @@
       "datasheet_ids": [
         "000001556"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Haarken Worldclaimer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:06+00:00",
+      "updated_at_utc": "2026-03-14T15:23:36+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9037,13 +9040,13 @@
       "datasheet_ids": [
         "000000966"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Havocs\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:08+00:00",
+      "updated_at_utc": "2026-03-14T15:23:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9054,13 +9057,13 @@
       "datasheet_ids": [
         "000000954"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Helbrute\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:10+00:00",
+      "updated_at_utc": "2026-03-14T15:23:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9071,13 +9074,13 @@
       "datasheet_ids": [
         "000000961"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Heldrake\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:13+00:00",
+      "updated_at_utc": "2026-03-14T15:23:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9088,13 +9091,13 @@
       "datasheet_ids": [
         "000001317"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Hell Blade\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:15+00:00",
+      "updated_at_utc": "2026-03-14T15:23:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9105,13 +9108,13 @@
       "datasheet_ids": [
         "000001318"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Hell Talon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:17+00:00",
+      "updated_at_utc": "2026-03-14T15:23:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9122,13 +9125,13 @@
       "datasheet_ids": [
         "000000937"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Heretic Astartes Daemon Prince\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:19+00:00",
+      "updated_at_utc": "2026-03-14T15:23:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9139,13 +9142,13 @@
       "datasheet_ids": [
         "000002730"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Heretic Astartes Daemon Prince With Wings\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:22+00:00",
+      "updated_at_utc": "2026-03-14T15:24:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9156,13 +9159,13 @@
       "datasheet_ids": [
         "000000925"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Huron Blackheart\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:24+00:00",
+      "updated_at_utc": "2026-03-14T15:24:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9173,13 +9176,13 @@
       "datasheet_ids": [
         "000001311"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Kharybdis Assault Claw\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:26+00:00",
+      "updated_at_utc": "2026-03-14T15:24:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9190,13 +9193,13 @@
       "datasheet_ids": [
         "000003582"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Khorne Berzerkers\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:28+00:00",
+      "updated_at_utc": "2026-03-14T15:24:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9207,13 +9210,13 @@
       "datasheet_ids": [
         "000000970"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Khorne Lord Of Skulls\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:30+00:00",
+      "updated_at_utc": "2026-03-14T15:24:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9224,13 +9227,13 @@
       "datasheet_ids": [
         "000003634"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Kratos\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:33+00:00",
+      "updated_at_utc": "2026-03-14T15:24:16+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9241,13 +9244,13 @@
       "datasheet_ids": [
         "000001297"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Kytan Ravager\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:35+00:00",
+      "updated_at_utc": "2026-03-14T15:24:19+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9258,13 +9261,13 @@
       "datasheet_ids": [
         "000003610"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Land Raider Achilles\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:37+00:00",
+      "updated_at_utc": "2026-03-14T15:24:22+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9275,13 +9278,13 @@
       "datasheet_ids": [
         "000003614"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Land Raider Proteus\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:39+00:00",
+      "updated_at_utc": "2026-03-14T15:24:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9292,13 +9295,13 @@
       "datasheet_ids": [
         "000002570"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Legionaries\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:41+00:00",
+      "updated_at_utc": "2026-03-14T15:24:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9309,13 +9312,13 @@
       "datasheet_ids": [
         "000003650"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Leviathan Dreadnought\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:44+00:00",
+      "updated_at_utc": "2026-03-14T15:24:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9326,13 +9329,13 @@
       "datasheet_ids": [
         "000001583"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Lord Discordant On Helstalker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:46+00:00",
+      "updated_at_utc": "2026-03-14T15:24:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9343,13 +9346,13 @@
       "datasheet_ids": [
         "000001584"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Master Of Executions\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:48+00:00",
+      "updated_at_utc": "2026-03-14T15:24:41+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9360,13 +9363,13 @@
       "datasheet_ids": [
         "000001581"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Master Of Possession\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:50+00:00",
+      "updated_at_utc": "2026-03-14T15:24:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9377,13 +9380,13 @@
       "datasheet_ids": [
         "000004190"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Masters of the Maelstrom\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:03:52+00:00",
+      "updated_at_utc": "2026-03-14T15:24:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9394,13 +9397,13 @@
       "datasheet_ids": [
         "000003646"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Mastodon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:42+00:00",
+      "updated_at_utc": "2026-03-14T15:24:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9411,13 +9414,13 @@
       "datasheet_ids": [
         "000000968"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Maulerfiend\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:44+00:00",
+      "updated_at_utc": "2026-03-14T15:24:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9428,13 +9431,13 @@
       "datasheet_ids": [
         "000000955"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Mutilators\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:47+00:00",
+      "updated_at_utc": "2026-03-14T15:24:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9445,13 +9448,13 @@
       "datasheet_ids": [
         "000002591"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Mutoid Vermin\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:49+00:00",
+      "updated_at_utc": "2026-03-14T15:25:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9462,13 +9465,13 @@
       "datasheet_ids": [
         "000001601"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Negavolt Cultists\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:51+00:00",
+      "updated_at_utc": "2026-03-14T15:25:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9479,13 +9482,13 @@
       "datasheet_ids": [
         "000003876"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Nemesis Claw\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:54+00:00",
+      "updated_at_utc": "2026-03-14T15:25:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9496,13 +9499,13 @@
       "datasheet_ids": [
         "000001587"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Noctilith Crown\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:56+00:00",
+      "updated_at_utc": "2026-03-14T15:25:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9513,13 +9516,13 @@
       "datasheet_ids": [
         "000004099"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Noise Marines\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:14:59+00:00",
+      "updated_at_utc": "2026-03-14T15:25:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9530,13 +9533,13 @@
       "datasheet_ids": [
         "000000965"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Obliterators\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:01+00:00",
+      "updated_at_utc": "2026-03-14T15:25:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9547,13 +9550,13 @@
       "datasheet_ids": [
         "000003584"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Plague Marines\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:04+00:00",
+      "updated_at_utc": "2026-03-14T15:25:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9564,13 +9567,13 @@
       "datasheet_ids": [
         "000000953"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Possessed\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:06+00:00",
+      "updated_at_utc": "2026-03-14T15:25:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9581,13 +9584,13 @@
       "datasheet_ids": [
         "000003670"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rapier Carrier\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:08+00:00",
+      "updated_at_utc": "2026-03-14T15:25:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9598,13 +9601,13 @@
       "datasheet_ids": [
         "000000958"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Raptors\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:11+00:00",
+      "updated_at_utc": "2026-03-14T15:25:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9615,13 +9618,13 @@
       "datasheet_ids": [
         "000004191"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Red Corsairs Raiders\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:13+00:00",
+      "updated_at_utc": "2026-03-14T15:25:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9632,13 +9635,13 @@
       "datasheet_ids": [
         "000004192"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Red Corsairs Reave-Captain\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:16+00:00",
+      "updated_at_utc": "2026-03-14T15:25:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9649,13 +9652,13 @@
       "datasheet_ids": [
         "000003658"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Relic Contemptor Dreadnought\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:18+00:00",
+      "updated_at_utc": "2026-03-14T15:25:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9666,13 +9669,13 @@
       "datasheet_ids": [
         "000002731"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:20+00:00",
+      "updated_at_utc": "2026-03-14T15:25:43+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9683,13 +9686,13 @@
       "datasheet_ids": [
         "000002732"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Heavy Weapons Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:23+00:00",
+      "updated_at_utc": "2026-03-14T15:25:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9700,13 +9703,13 @@
       "datasheet_ids": [
         "000002733"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Beast Handler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:25+00:00",
+      "updated_at_utc": "2026-03-14T15:25:50+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9717,13 +9720,13 @@
       "datasheet_ids": [
         "000002734"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Ogryn Brutes\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:27+00:00",
+      "updated_at_utc": "2026-03-14T15:25:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9734,13 +9737,13 @@
       "datasheet_ids": [
         "000002735"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Renegade Plague Ogryns\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:30+00:00",
+      "updated_at_utc": "2026-03-14T15:25:56+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9751,13 +9754,13 @@
       "datasheet_ids": [
         "000001600"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rogue Psyker\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:32+00:00",
+      "updated_at_utc": "2026-03-14T15:26:00+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9768,13 +9771,13 @@
       "datasheet_ids": [
         "000003583"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Rubric Marines\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:35+00:00",
+      "updated_at_utc": "2026-03-14T15:26:03+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9785,13 +9788,13 @@
       "datasheet_ids": [
         "000003642"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sicaran Battle Tank\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:37+00:00",
+      "updated_at_utc": "2026-03-14T15:26:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9802,13 +9805,13 @@
       "datasheet_ids": [
         "000003686"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sicaran Punisher\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:39+00:00",
+      "updated_at_utc": "2026-03-14T15:26:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9819,13 +9822,13 @@
       "datasheet_ids": [
         "000003678"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sicaran Venator\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:42+00:00",
+      "updated_at_utc": "2026-03-14T15:26:13+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9836,13 +9839,13 @@
       "datasheet_ids": [
         "000003638"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sokar-pattern Stormbird\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:44+00:00",
+      "updated_at_utc": "2026-03-14T15:26:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9853,13 +9856,13 @@
       "datasheet_ids": [
         "000000938"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:47+00:00",
+      "updated_at_utc": "2026-03-14T15:26:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9870,13 +9873,13 @@
       "datasheet_ids": [
         "000000939"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer In Terminator Armour\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:49+00:00",
+      "updated_at_utc": "2026-03-14T15:26:23+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9887,13 +9890,13 @@
       "datasheet_ids": [
         "000000940"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Bike\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:52+00:00",
+      "updated_at_utc": "2026-03-14T15:26:26+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9904,13 +9907,13 @@
       "datasheet_ids": [
         "000000941"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Disc Of Tzeentch\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:54+00:00",
+      "updated_at_utc": "2026-03-14T15:26:30+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9921,13 +9924,13 @@
       "datasheet_ids": [
         "000000942"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Palanquin Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:56+00:00",
+      "updated_at_utc": "2026-03-14T15:26:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9938,13 +9941,13 @@
       "datasheet_ids": [
         "000000943"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Sorcerer On Steed Of Slaanesh\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:15:59+00:00",
+      "updated_at_utc": "2026-03-14T15:26:37+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9955,13 +9958,13 @@
       "datasheet_ids": [
         "000003622"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Spartan\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:01+00:00",
+      "updated_at_utc": "2026-03-14T15:26:40+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9972,13 +9975,13 @@
       "datasheet_ids": [
         "000003674"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Storm Eagle Gunship\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:03+00:00",
+      "updated_at_utc": "2026-03-14T15:26:44+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -9989,13 +9992,13 @@
       "datasheet_ids": [
         "000003606"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Terrax-pattern Termite\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:06+00:00",
+      "updated_at_utc": "2026-03-14T15:26:47+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10006,13 +10009,13 @@
       "datasheet_ids": [
         "000002589"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Traitor Enforcer\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:08+00:00",
+      "updated_at_utc": "2026-03-14T15:26:51+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10023,13 +10026,13 @@
       "datasheet_ids": [
         "000002590"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Traitor Guardsmen Squad\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:11+00:00",
+      "updated_at_utc": "2026-03-14T15:26:54+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10040,13 +10043,13 @@
       "datasheet_ids": [
         "000003682"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Typhon\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:13+00:00",
+      "updated_at_utc": "2026-03-14T15:26:57+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10057,13 +10060,13 @@
       "datasheet_ids": [
         "000002679"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Vashtorr The Arkifane\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:15+00:00",
+      "updated_at_utc": "2026-03-14T15:27:01+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10074,13 +10077,13 @@
       "datasheet_ids": [
         "000001586"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Venomcrawler\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:18+00:00",
+      "updated_at_utc": "2026-03-14T15:27:04+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10091,13 +10094,13 @@
       "datasheet_ids": [
         "000000959"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Warp Talons\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:20+00:00",
+      "updated_at_utc": "2026-03-14T15:27:07+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10108,13 +10111,13 @@
       "datasheet_ids": [
         "000000944"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Warpsmith\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:22+00:00",
+      "updated_at_utc": "2026-03-14T15:27:10+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10125,13 +10128,13 @@
       "datasheet_ids": [
         "000003662"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Whirlwind Scorpius\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:25+00:00",
+      "updated_at_utc": "2026-03-14T15:27:14+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10142,13 +10145,13 @@
       "datasheet_ids": [
         "000003666"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Xiphon Interceptor\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:27+00:00",
+      "updated_at_utc": "2026-03-14T15:27:17+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10159,13 +10162,13 @@
       "datasheet_ids": [
         "000004115"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Beasts of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:29+00:00",
+      "updated_at_utc": "2026-03-14T15:27:20+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10176,13 +10179,13 @@
       "datasheet_ids": [
         "000001368"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Biologus Putrifier\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:32+00:00",
+      "updated_at_utc": "2026-03-14T15:27:24+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10193,13 +10196,13 @@
       "datasheet_ids": [
         "000001372"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Blightlord Terminators\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:34+00:00",
+      "updated_at_utc": "2026-03-14T15:27:27+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10210,15 +10213,16 @@
       "datasheet_ids": [
         "000003628"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Cerberus Death Guard",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-imperialis-cerberus-heavy-tank-destroyer-squadron-2025",
-      "source_page_title": "Legions Imperialis:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ipIrnCN1YQs8Iom9tVqacenKyL5mFF_srTrPQnjEV_2R5VWq8RJCnXFJCg&s",
-      "updated_at_utc": "2026-03-13T18:16:36+00:00",
+      "source_page_title": "Legions Imperialis: Cerberus Heavy Tank Destroyer Squadron",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122601031_LICerberusHeavyTankDestroyerSquadron01.jpg",
+      "updated_at_utc": "2026-03-14T15:27:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/deathguard__cerberus.jpg"
+      "local_path": "assets/unit-previews/deathguard__cerberus.jpg",
+      "error": ""
     },
     {
       "unit_key": "deathguard::chaoslandraider",
@@ -10227,13 +10231,13 @@
       "datasheet_ids": [
         "000001049"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Land Raider\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:38+00:00",
+      "updated_at_utc": "2026-03-14T15:27:33+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -10244,13 +10248,13 @@
       "datasheet_ids": [
         "000003592"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
       "lookup_query": "warhammer.com \"Chaos Lord On Palanquin Of Nurgle\" \"Warhammer 40000\"",
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-03-13T18:16:41+00:00",
+      "updated_at_utc": "2026-03-14T15:27:36+00:00",
       "search_engine": "",
       "error": ""
     },
