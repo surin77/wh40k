@@ -1,11 +1,11 @@
 {
-  "source": "Google Images thumbnails seeded by warhammer.com queries",
-  "resolver": "google_images_warhammer_query_v2",
+  "source": "Mixed cache: validated warhammer.com page previews plus legacy Google Images thumbnails",
+  "resolver": "mixed_v2_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T11:28:27+00:00",
+  "generated_at_utc": "2026-03-14T12:26:04+00:00",
   "entries_with_images": 341,
   "entries_with_local_cache": 341,
-  "lookups_performed": 60,
+  "lookups_performed": 120,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
@@ -31,15 +31,16 @@
       "datasheet_ids": [
         "000000896"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Arco-flagellants",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Arco-Flagellants-2020",
       "source_page_title": "Arco-flagellants",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmc7ZQyt68wLrp9cAW7duyQKSVpLG7DBBK_RjD7fK_Vx3VXzEhMgsHLtQWSnQ&s",
-      "updated_at_utc": "2026-03-13T09:21:07+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108032_ArcoFlagellants01.jpg",
+      "updated_at_utc": "2026-03-14T12:00:59+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__arcoflagellants.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__arcoflagellants.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::battlesanctum",
@@ -48,15 +49,16 @@
       "datasheet_ids": [
         "000002068"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Battle Sanctum",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Battlezone-Manufactorum-Sanctum-Administratus-2020",
-      "source_page_title": "Battlezone: Manufactorum \u2013...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQp6BexTAj2pr1ouINIpEvhh5yM3B-yl6U-hfbjtB0unOqN3f3QhtDrvmaIh8&s",
-      "updated_at_utc": "2026-03-13T09:21:09+00:00",
+      "source_page_title": "Battlezone: Manufactorum \u2013 Sanctum Administratus",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120199076_SanctumAdministratusLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:01+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__battlesanctum.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__battlesanctum.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::battlesisterssquad",
@@ -65,15 +67,16 @@
       "datasheet_ids": [
         "000000903"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Battle Sisters Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Battle-Sisters-Squad-2020",
-      "source_page_title": "Adepta Sororitas Battle...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTckfEsHXFSBlXeG8U4cK-gKDH8uhtYw8brYPEX4UR6sGT94w7eWQaFT2uPnQ&s",
-      "updated_at_utc": "2026-03-13T09:21:10+00:00",
+      "source_page_title": "Adepta Sororitas Battle Sisters Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108033_SoBSquad01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__battlesisterssquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__battlesisterssquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::canoness",
@@ -82,15 +85,16 @@
       "datasheet_ids": [
         "000000899"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Canoness",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Canoness-2020",
       "source_page_title": "Canoness",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSfy2A7fQQbXef1no0LiX6p-_cEZykwXbiPY6LnDA9QBtrYkfU9T6P9-UTjw&s",
-      "updated_at_utc": "2026-03-13T09:21:12+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108034_SoBCanonessLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:05+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__canoness.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__canoness.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::canonesswithjumppack",
@@ -99,15 +103,16 @@
       "datasheet_ids": [
         "000003714"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Canoness with Jump Pack",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adepta-sororitas-canoness-with-jump-pack-2024",
-      "source_page_title": "99120108103_ASCanonessJumpP...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0kP_mQLo0yzpFfIWro-lZlPbq707D2bQSfF1Oo2y0YT4B-OTHuiZ98TfHsLc&s",
-      "updated_at_utc": "2026-03-13T09:21:13+00:00",
+      "source_page_title": "Canoness with Jump Pack",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108103_ASCanonessJumpPack1.jpg",
+      "updated_at_utc": "2026-03-14T12:01:06+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__canonesswithjumppack.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__canonesswithjumppack.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::castigator",
@@ -116,15 +121,16 @@
       "datasheet_ids": [
         "000002484"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Castigator Adepta Sororitas",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Castigator",
-      "source_page_title": "99120108048_SoBCastigatorLe...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGR2TewLlrLKjV7cS3d6aDr7jlao-5H6aum2pLfsR5-ZgfCM5hA-QLx-0u-g&s",
-      "updated_at_utc": "2026-03-13T09:21:15+00:00",
+      "source_page_title": "Castigator",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108048_SoBCastigatorLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:09+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__castigator.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__castigator.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::celestianinsidiants",
@@ -167,15 +173,16 @@
       "datasheet_ids": [
         "000002481"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Celestian Sacresants",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Celestian-Sacresants-2021",
       "source_page_title": "Celestian Sacresants",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBv3sL4YVtSQJ7r0CAAlVNa-aNO0dzZBQi3sJYZl7JV-ATvXNQKoZ3t3d17XM&s",
-      "updated_at_utc": "2026-03-13T09:21:19+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108045_SoBCelestianSacresantsLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:16+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__celestiansacresants.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__celestiansacresants.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::crusaders",
@@ -184,15 +191,16 @@
       "datasheet_ids": [
         "000000894"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Crusaders",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/black-templars-primaris-crusader-squad-2021",
       "source_page_title": "Primaris Crusader Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPMPmNqEyP8pj3ZQFkpf9rG6SEAnvLzrvdvr9oJwcuQIoSanKnUrRSNFDHrw&s",
-      "updated_at_utc": "2026-03-13T09:21:20+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120101351_CrusaderSquadLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:17+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__crusaders.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__crusaders.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::daemonifuge",
@@ -201,15 +209,16 @@
       "datasheet_ids": [
         "000002771"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Daemonifuge",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Daemonifuge-Ephrael-Stern-and-Kyganil-2020",
-      "source_page_title": "Daemonifuge \u2013 Ephrael Stern...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0u4ThjdWNlycuLWkbpxa4ia3LHQI_F-tZrhOh2IjAeRyfGFbxRbJcovw4eA&s",
-      "updated_at_utc": "2026-03-13T09:21:21+00:00",
+      "source_page_title": "Daemonifuge \u2013 Ephrael Stern & Kyganil",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120199073_DaemonifugeEphraelSternKyganilLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:19+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__daemonifuge.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__daemonifuge.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::deathcultassassins",
@@ -235,15 +244,16 @@
       "datasheet_ids": [
         "000000902"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Dialogus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Dialogus-2020",
-      "source_page_title": "99120108022_SoBDialogusLead...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nbtYYhooGWBrdar6qlCufxq776dYXH2r9h2V1hg2ctJtRIng4UUKpcXRcMI&s",
-      "updated_at_utc": "2026-03-13T09:21:24+00:00",
+      "source_page_title": "Dialogus",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108022_SoBDialogusLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__dialogus.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__dialogus.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::dogmata",
@@ -252,15 +262,16 @@
       "datasheet_ids": [
         "000002482"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Dogmata",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Sister-Dogmata-2021",
-      "source_page_title": "99070108008_SoBSisterDogmat...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlAqtgd58MKs31aRnwLg0czeTWfVjYbobNFoVn6yz2AqMMyjdknYRF3zJ8xQ&s",
-      "updated_at_utc": "2026-03-13T09:21:25+00:00",
+      "source_page_title": "Sister Dogmata",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108008_SoBSisterDogmataLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:26+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__dogmata.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__dogmata.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::dominionsquad",
@@ -269,15 +280,16 @@
       "datasheet_ids": [
         "000000909"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Dominion Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Dominions-Celestians-2020",
-      "source_page_title": "Adepta Sororitas Dominion...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTckfEsHXFSBlXeG8U4cK-gKDH8uhtYw8brYPEX4UR6sGT94w7eWQaFT2uPnQ&s",
-      "updated_at_utc": "2026-03-13T09:21:27+00:00",
+      "source_page_title": "Adepta Sororitas Dominion Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108033_SoBDominions1.jpg",
+      "updated_at_utc": "2026-03-14T12:01:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__dominionsquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__dominionsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::exorcist",
@@ -286,15 +298,16 @@
       "datasheet_ids": [
         "000000912"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Exorcist",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Exorcist-2020",
       "source_page_title": "Exorcist",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe8ietb0NU9o8bWqywo8j66yd7vctr9uJIO7nA2zFO_1hjcko-_1QS0n0ZvQ&s",
-      "updated_at_utc": "2026-03-13T09:21:28+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108023_SoBExorcist01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:31+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__exorcist.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__exorcist.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::hospitaller",
@@ -303,15 +316,16 @@
       "datasheet_ids": [
         "000000901"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Hospitaller",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Hospitaller-2020",
       "source_page_title": "Hospitaller",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMBRY-LaiWzyVsjd1fCkVqNb694VG-eUJv9_DJNkbO0Xqh35HNRUrmri9Vd9k&s",
-      "updated_at_utc": "2026-03-13T09:21:29+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108024_Hospitaller01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:33+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__hospitaller.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__hospitaller.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::imagifier",
@@ -320,15 +334,16 @@
       "datasheet_ids": [
         "000000900"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Imagifier",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Imagifier-2020",
       "source_page_title": "Imagifier",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXrH34b_4qxQmB2IfeyqRcyn7tjenj9ulOccZTduSso8_86-_cjyCqF1X0Q&s",
-      "updated_at_utc": "2026-03-13T09:21:30+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108006_SoBImagifierLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__imagifier.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__imagifier.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::immolator",
@@ -337,15 +352,16 @@
       "datasheet_ids": [
         "000000911"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Immolator",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Immolator-2020",
       "source_page_title": "Immolator",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0A-bnHQ7CUzbEMadWqtTJKq8jtYoJXDPm8Ks3x2EtNG9gU8Of-NuTwE1OLQ&s",
-      "updated_at_utc": "2026-03-13T09:21:32+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108025_SoBImmolatorLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:38+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__immolator.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__immolator.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::junitheruita",
@@ -354,15 +370,16 @@
       "datasheet_ids": [
         "000002064"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Junith Eruita",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Junith-Eruita-2020",
       "source_page_title": "Junith Eruita",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL7VdHn4g2_6NdsZdfYSUSjBLsTImWc68BTdiIOSRkBaqkYoSGD8oSY0z3Ow&s",
-      "updated_at_utc": "2026-03-13T09:21:33+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108026_JunithEruita01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__junitheruita.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__junitheruita.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::ministorumpriest",
@@ -371,15 +388,16 @@
       "datasheet_ids": [
         "000001553"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Ministorum Priest",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adepta-sororitas-ministorum-priest-2024",
       "source_page_title": "Ministorum Priest",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_l7-ctJK54dmEhXFsvZuq5xsg6eFOsPHvFCALI7NfgqYz2O0U2qsLwMrIQs&s",
-      "updated_at_utc": "2026-03-13T09:21:34+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108011_ASMinistorumPriest01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:41+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__ministorumpriest.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__ministorumpriest.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::mortifiers",
@@ -388,15 +406,16 @@
       "datasheet_ids": [
         "000002067"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Mortifiers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Mortifier-2020",
       "source_page_title": "Mortifiers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIQsZy8KWTHqy6LbLVuOCTgP-G6vAqkC_vibbGqnZbuP8Av834eXfvYzmG0Q&s",
-      "updated_at_utc": "2026-03-13T09:21:36+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108035_ASMortifierLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__mortifiers.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__mortifiers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::morvennvahl",
@@ -405,15 +424,16 @@
       "datasheet_ids": [
         "000002479"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Morvenn Vahl",
       "source_page_url": "https://www.warhammer.com/es-ES/shop/Morvenn-Vahl-Abbess-Sanctorum-2021",
-      "source_page_title": "Morvenn Vahl, Abadesa...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIQ9h1oBcA_d8nV1Bo-MVZ8Q-Ish-vIar6XPtbJdM-dQieLiV2VFs6IrZEA&s",
-      "updated_at_utc": "2026-03-13T09:21:37+00:00",
+      "source_page_title": "Morvenn Vahl, Abadesa Sanctorum del Adepta Sororitas",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108047_SoBMorvennVahlAbbessSanctorumLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:45+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__morvennvahl.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__morvennvahl.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::palatine",
@@ -422,15 +442,16 @@
       "datasheet_ids": [
         "000002472"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Palatine",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Palatine-2021",
       "source_page_title": "Palatine",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorgelU-2HJ2kWsaYZUQhwTZ6PRrAssYx-etv26RtaJI7aqPS1cjJHDvtQ7VA&s",
-      "updated_at_utc": "2026-03-13T09:21:39+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108007_PalatineLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__palatine.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__palatine.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::paragonwarsuits",
@@ -439,15 +460,16 @@
       "datasheet_ids": [
         "000002483"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Paragon Warsuits",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Paragon-Warsuit-2021",
       "source_page_title": "Paragon Warsuits",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSdKQvZhs4HwwbncpBnHqtrCIMjdSS-8MwQWCwUycJgu0xG1honTEr_zgdRg&s",
-      "updated_at_utc": "2026-03-13T09:21:40+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108046_SoBParagonWarsuitsLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:49+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__paragonwarsuits.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__paragonwarsuits.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::penitentengines",
@@ -456,15 +478,16 @@
       "datasheet_ids": [
         "000000897"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Penitent Engines",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Penitent-Engines-2020",
-      "source_page_title": "99120108035_PenitentEngines...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8d6Cy-hfLaB_gUSMKKukQB7OZ2plLbFV2CQzSGslaRhNCu2NndkaRgkcBg&s",
-      "updated_at_utc": "2026-03-13T09:21:42+00:00",
+      "source_page_title": "Penitent Engines",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108035_PenitentEngines01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:51+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__penitentengines.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__penitentengines.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::repentiasquad",
@@ -473,15 +496,16 @@
       "datasheet_ids": [
         "000000907"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Repentia Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Repentia-Squad-2020",
       "source_page_title": "Repentia Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHL94npLS_0m-qMAIawRVXyFEu1IEOmv4dN8a4QbZPutxfUN54iU77VkrkQ&s",
-      "updated_at_utc": "2026-03-13T09:21:43+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108036_SoBRepSquadLead.jpg",
+      "updated_at_utc": "2026-03-14T12:01:53+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__repentiasquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__repentiasquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::repressor",
@@ -507,15 +531,16 @@
       "datasheet_ids": [
         "000000908"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Retributor Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Retributor-Squad-2020",
       "source_page_title": "Retributor Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8tYxabAYhJzaI_IOxtoArGmGGgy-L8vGNL7KJp7pXBrxLRs0Ph2DLvnE5A&s",
-      "updated_at_utc": "2026-03-13T09:21:46+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108038_SoBRetributorSquad01.jpg",
+      "updated_at_utc": "2026-03-14T12:01:58+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__retributorsquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__retributorsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::saintcelestine",
@@ -524,15 +549,16 @@
       "datasheet_ids": [
         "000000898"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Saint Celestine",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Space-Marine-Celestine-The-Living-Saint-2018",
-      "source_page_title": "Celestine, the Living Saint...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjL9b7PzVhWsndPvfSQBpZ1oeAaC-xWyMTykAzquDc0kJxVQ8ZRtKaZt4PQbQ&s",
-      "updated_at_utc": "2026-03-13T09:21:47+00:00",
+      "source_page_title": "Celestine, the Living Saint",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108008_TriumvirateoftheImperium06.jpg",
+      "updated_at_utc": "2026-03-14T12:02:00+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__saintcelestine.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__saintcelestine.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::sanctifiers",
@@ -541,15 +567,16 @@
       "datasheet_ids": [
         "000004075"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sanctifiers",
       "source_page_url": "https://www.warhammer.com/en-BE/shop/kill-team-sanctifiers-2025",
       "source_page_title": "Kill Team: Sanctifiers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3LFaa6aoshhlBPXsOfTGjJIMMlmOmh-Kph62DvC0fD7Ak59d9dhh0CJV_w&s",
-      "updated_at_utc": "2026-03-13T09:21:49+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108116_KillTeamSanctifiers01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__sanctifiers.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__sanctifiers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::seraphimsquad",
@@ -558,15 +585,16 @@
       "datasheet_ids": [
         "000000904"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Seraphim Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Seraphim-Squad-2020",
-      "source_page_title": "99120108040_SeraphimZephyri...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WqW-bUuqxEv_CzEXtyqmNOjzDHhP1jIDlKuvRTvSmCON_zTA-cOQXdNqDA&s",
-      "updated_at_utc": "2026-03-13T09:21:50+00:00",
+      "source_page_title": "Seraphim Squad",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108040_SeraphimZephyrimLead.jpg",
+      "updated_at_utc": "2026-03-14T12:02:04+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__seraphimsquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__seraphimsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::sistersnovitiatesquad",
@@ -575,15 +603,16 @@
       "datasheet_ids": [
         "000002507"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sisters Novitiate Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adepta-sororitas-sisters-novitiate-squad-2025",
       "source_page_title": "Sisters Novitiate Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4wmwaSs6im5kv7USyBufBRMY8krVPAtCTUZbYPw-WGPmqZxhydRts15MfHA&s",
-      "updated_at_utc": "2026-03-13T09:21:51+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108121_CalanathGroup1.jpg",
+      "updated_at_utc": "2026-03-14T12:02:06+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__sistersnovitiatesquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__sistersnovitiatesquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::sororitasrhino",
@@ -592,15 +621,16 @@
       "datasheet_ids": [
         "000000910"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sororitas Rhino",
       "source_page_url": "https://www.warhammer.com/it-IT/shop/Adepta-Sororitas-Rhino-2020",
-      "source_page_title": "01-12.jpg",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMa39xHgzSr-rboXYTca6q6K8DlNr87H-nw6evqBg9_LsnEKnzXB5PLTOxwg&s",
-      "updated_at_utc": "2026-03-13T09:21:53+00:00",
+      "source_page_title": "Adepta Sororitas Rhino",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108039_RhinoLead.jpg",
+      "updated_at_utc": "2026-03-14T12:02:08+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__sororitasrhino.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__sororitasrhino.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::triumphofsaintkatherine",
@@ -609,15 +639,16 @@
       "datasheet_ids": [
         "000002063"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Triumph Of Saint Katherine",
       "source_page_url": "https://www.warhammer.com/fr-FR/shop/Adepta-Sororitas-The-Triumph-Of-St-Katherine-2020",
-      "source_page_title": "The Triumph of Saint...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloSvxdM6BMX1beufwdhMeuwEsnsq0lNOW1Gj9-t7T4BfQMRFc1DK9sA2XEBQ&s",
-      "updated_at_utc": "2026-03-13T09:21:54+00:00",
+      "source_page_title": "The Triumph of Saint Katherine",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108037_TriumphofKatherine01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:10+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__triumphofsaintkatherine.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__triumphofsaintkatherine.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptasororitas::zephyrimsquad",
@@ -626,15 +657,16 @@
       "datasheet_ids": [
         "000002066"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Zephyrim Squad",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adepta-Sororitas-Zephyrim-Squad-2020",
       "source_page_title": "Zephyrim Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-EhErKt_f6io3EL7IVkYmAzaEp8_QRxY_dtSH01U_vBdWX7LPHFf3HrbkSIA&s",
-      "updated_at_utc": "2026-03-13T09:21:55+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108040_SeraphimZephyrimGroup.jpg",
+      "updated_at_utc": "2026-03-14T12:02:13+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptasororitas__zephyrimsquad.jpg"
+      "local_path": "assets/unit-previews/adeptasororitas__zephyrimsquad.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::agamatuscustodians",
@@ -660,15 +692,16 @@
       "datasheet_ids": [
         "000002088"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Aleya",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Talons-Of-The-Emperor-Valerian-And-Aleya-2020",
-      "source_page_title": "Talons of the Emperor:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJWBvVn4BgyQ8wAX-8RQ5y6Q5o5SBqlkwt1KOJgiZFiuUDMe4i3Mvtoo0oaPg&s",
-      "updated_at_utc": "2026-03-13T09:21:58+00:00",
+      "source_page_title": "Talons of the Emperor: Valerian and Aleya",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108031_AleyaValerianLead.jpg",
+      "updated_at_utc": "2026-03-14T12:02:17+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__aleya.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__aleya.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::allaruscustodians",
@@ -677,15 +710,16 @@
       "datasheet_ids": [
         "000001453"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Allarus Custodians",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Custodes-Allarus-Custodians-2018",
       "source_page_title": "Allarus Custodians",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8e4OZmdh4cu9FLfoVjCirvKH_xPRamS9vKJ7vBH71WS8UK6KRulNEUsfC&s",
-      "updated_at_utc": "2026-03-13T09:22:00+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108011_AllarusCustodians01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:18+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__allaruscustodians.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__allaruscustodians.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::anathemapsykanarhino",
@@ -728,15 +762,16 @@
       "datasheet_ids": [
         "000001680"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Ares Gunship",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Legio-Custodes-Ares-Gunship-2019",
-      "source_page_title": "Legio Custodes Ares Gunship...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTEZnn-EC1bMWUWyRWuZ-jNJzJUVsPlmee3Vvls5_c6t_rBkVAKSUHzCnrg&s",
-      "updated_at_utc": "2026-03-13T09:22:04+00:00",
+      "source_page_title": "Legio Custodes Ares Gunship",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108214_CustodesAresGunship01a.jpg",
+      "updated_at_utc": "2026-03-14T12:02:25+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__aresgunship.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__aresgunship.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::bladechampion",
@@ -745,15 +780,16 @@
       "datasheet_ids": [
         "000002518"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Blade Champion",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adeptus-custodes-blade-champion-2022",
       "source_page_title": "Blade Champion",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnKQxNa0z5-lrsUwh7a4gEDFgyV7vXa_QHbbXp062r-yRKHkb3A7jndMRcw0&s",
-      "updated_at_utc": "2026-03-13T09:22:06+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070108010_ACBladeChampionLead.jpg",
+      "updated_at_utc": "2026-03-14T12:02:27+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__bladechampion.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__bladechampion.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::caladiusgravtank",
@@ -830,15 +866,16 @@
       "datasheet_ids": [
         "000000882"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Custodian Guard",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Custodes-Custodian-Guard-2018",
       "source_page_title": "Custodian Guard",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvyQhljRJcWIzrOdGNQYmYQimm7mUT_Tj-fJDqg6XwoqdGK6-3TiLHHcrWw&s",
-      "updated_at_utc": "2026-03-13T09:22:13+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/60010101002_BurningProsperoENG02.jpg",
+      "updated_at_utc": "2026-03-14T12:02:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__custodianguard.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__custodianguard.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::custodianguardwithadrasiteandpyrithitespears",
@@ -864,15 +901,16 @@
       "datasheet_ids": [
         "000001450"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Custodian Wardens",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Custodes-Custodian-Wardens-2018",
       "source_page_title": "Custodian Wardens",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36Dcj54guhAGhMWHqidXTZlOjEzKpcAoHGgKxHdF_VqjQ8sXUoQiUenD0IA&s",
-      "updated_at_utc": "2026-03-13T09:22:16+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108013_CustodianWardens01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:39+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__custodianwardens.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__custodianwardens.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::knightcentura",
@@ -898,15 +936,16 @@
       "datasheet_ids": [
         "000001564"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Orion Assault Dropship",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Custodes-Gunship-2017",
-      "source_page_title": "Legio Custodes Orion...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUf0ayvh0hX6MAvefpBHc62fPT8g0GSvxDMwYjsB1tDFufrlcIKp1CuLTCvQ&s",
-      "updated_at_utc": "2026-03-13T09:22:19+00:00",
+      "source_page_title": "Legio Custodes Orion Assault Dropship",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108193_OrionDropship01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:43+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__orionassaultdropship.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__orionassaultdropship.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::pallasgravattack",
@@ -915,15 +954,16 @@
       "datasheet_ids": [
         "000001562"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Pallas Grav-attack",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Legio-Custodes-Pallas-Grav-attack",
-      "source_page_title": "Legio Custodes Pallas...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjnkBjfESn9tiEwg_aJaZAyUiuVZzV66k7F9jZ8hZ9SBZUOy_7OaFCeNSCOw&s",
-      "updated_at_utc": "2026-03-13T09:22:20+00:00",
+      "source_page_title": "Legio Custodes Pallas Grav-attack",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108173_CustodesPallasGravTank01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:45+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__pallasgravattack.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__pallasgravattack.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::prosecutors",
@@ -932,15 +972,16 @@
       "datasheet_ids": [
         "000002521"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Prosecutors",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/stormcast-eternals-prosecutors-2024",
       "source_page_title": "Prosecutors",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTELDWc_PyaDti4uMJdSrs4UH95LlDmd_yXweB9kgQ4mijpYk6619-z3CDqs4&s",
-      "updated_at_utc": "2026-03-13T09:22:22+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120218092_Prosecuters1.jpg",
+      "updated_at_utc": "2026-03-14T12:02:47+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__prosecutors.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__prosecutors.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::sagittarumcustodians",
@@ -966,15 +1007,16 @@
       "datasheet_ids": [
         "000001447"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shield-captain",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adeptus-custodes-shield-captain-2024",
       "source_page_title": "Shield-Captain",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0rx2qYiSauwgxZXb8IQvQYLH72MeuSkACcqAx9iSNSae8tzQAYdOXMBh-Dts&s",
-      "updated_at_utc": "2026-03-13T09:22:25+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108099_ACShieldCaptain01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:52+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptain.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptain.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::shieldcaptaininallarusterminatorarmour",
@@ -983,15 +1025,16 @@
       "datasheet_ids": [
         "000001448"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shield-captain In Allarus Terminator Armour",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Shield-Captain-in-Allarus-Terminator-Armour-2018",
-      "source_page_title": "Shield-Captain in Allarus...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hfPVgfaiMADQj_Jj7RqKh6xNkg2-zWIm5ESoxy7q36CD2NXkdy-x5UsITCo&s",
-      "updated_at_utc": "2026-03-13T09:22:26+00:00",
+      "source_page_title": "Shield-Captain in Allarus Terminator Armour",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108011_AllarusCustodiansCpt01.jpg",
+      "updated_at_utc": "2026-03-14T12:02:58+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptaininallarusterminatorarmour.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptaininallarusterminatorarmour.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::shieldcaptainondawneaglejetbike",
@@ -1000,15 +1043,16 @@
       "datasheet_ids": [
         "000001449"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Shield-captain On Dawneagle Jetbike",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Shield-captain-On-Dawneagle-and-2-Miniatures-2018",
-      "source_page_title": "Shield-Captain on Dawneagle...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1uY2IjAVzCJ3ZL84LvvJYsTAIsa8gZWbywUPzzdrMHxC7k4tqIA_0VX2Rhg&s",
-      "updated_at_utc": "2026-03-13T09:22:28+00:00",
+      "source_page_title": "Shield-Captain on Dawneagle Jetbike",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108014_VertusPraetors03.jpg",
+      "updated_at_utc": "2026-03-14T12:03:00+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptainondawneaglejetbike.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__shieldcaptainondawneaglejetbike.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::telemonheavydreadnought",
@@ -1017,15 +1061,16 @@
       "datasheet_ids": [
         "000001479"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Telemon Heavy Dreadnought",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Legio-custodes-heavy-dreadnought-body-2017",
-      "source_page_title": "Legio Custodes Telemon...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwCbrO2pwXpefrpa9tZjXkGPD6Am7vcG-zG_XhAh4eReLi62tgozk_PM9LGw&s",
-      "updated_at_utc": "2026-03-13T09:22:29+00:00",
+      "source_page_title": "Legio Custodes Telemon Heavy Dreadnought Body",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108185_TelemonDreadBody01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__telemonheavydreadnought.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__telemonheavydreadnought.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::trajannvaloris",
@@ -1034,15 +1079,16 @@
       "datasheet_ids": [
         "000001446"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Trajann Valoris",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Captain-general-Trajann-Valoris-2018",
-      "source_page_title": "Captain-General Trajann...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6lRqzfG5cgEiEIKurkgEEhw7lwFYHCN2xbVLBZy8OhEKPhwjM0KKU4-ADA&s",
-      "updated_at_utc": "2026-03-13T09:41:10+00:00",
+      "source_page_title": "Captain-General Trajann Valoris",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108012_GeneralTrajannValoris01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:04+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__trajannvaloris.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__trajannvaloris.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::valerian",
@@ -1051,15 +1097,16 @@
       "datasheet_ids": [
         "000002519"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Valerian",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Talons-Of-The-Emperor-Valerian-And-Aleya-2020",
-      "source_page_title": "Talons of the Emperor:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAspnDacyW-YvQ9VE5FlDgRJMu43mTDaUyTtwf4M61w6EfxH60mNtWPc5Fw&s",
-      "updated_at_utc": "2026-03-13T09:41:11+00:00",
+      "source_page_title": "Talons of the Emperor: Valerian and Aleya",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108031_AleyaValerianLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:05+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__valerian.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__valerian.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::venataricustodians",
@@ -1085,15 +1132,16 @@
       "datasheet_ids": [
         "000000883"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Venerable Contemptor Dreadnought Adeptus Custodes",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/legiones-astartes-contemptor-dreadnought-2022",
-      "source_page_title": "99123001007_ContemptorLead....",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN4R-tBGVVApPtgXJknSZ5k8C4hZbToSkawBZOSuAosctHBe6KdJBKHwVcYg&s",
-      "updated_at_utc": "2026-03-13T09:41:14+00:00",
+      "source_page_title": "Contemptor Dreadnought",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99123001007_ContemptorLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:08+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__venerablecontemptordreadnought.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__venerablecontemptordreadnought.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::venerablelandraider",
@@ -1102,15 +1150,16 @@
       "datasheet_ids": [
         "000000884"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Venerable Land Raider",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Venerable-Land-Raider",
-      "source_page_title": "99120101061_CustodianLandra...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaCQ3bOsZQjGeOn_FiL3Ge-jZZrKs5HgBRC4m43rk3VCs3C7qC1_X9CYk4HeY&s",
-      "updated_at_utc": "2026-03-13T09:41:15+00:00",
+      "source_page_title": "Venerable Land Raider",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120101061_CustodianLandraider01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:10+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__venerablelandraider.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__venerablelandraider.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::vertuspraetors",
@@ -1119,15 +1168,16 @@
       "datasheet_ids": [
         "000001454"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Vertus Praetors",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Custodes-Vertus-Praetors-2018",
       "source_page_title": "Vertus Praetors",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmu-13PycoH4X6XxQiCHaC-0lcBjGP5m8vpydprsE4fD09LGgcjYhbnrxfRo&s",
-      "updated_at_utc": "2026-03-13T09:41:16+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108014_VertusPraetors01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:12+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__vertuspraetors.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__vertuspraetors.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::vigilators",
@@ -1136,15 +1186,16 @@
       "datasheet_ids": [
         "000002522"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Vigilators",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Vigilator-Squad",
       "source_page_title": "Vigilator Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PNquBbblOC6gkc8fS104QdluvHMCTQhyfYiuhT8_Suymyg2Dj0Ny3tOQ6W0&s",
-      "updated_at_utc": "2026-03-13T09:41:17+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108007_VigilatorSquad01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:14+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__vigilators.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__vigilators.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::witchseekers",
@@ -1153,15 +1204,16 @@
       "datasheet_ids": [
         "000002523"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Witchseekers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Witchseeker-Squad",
       "source_page_title": "Witchseeker Squad",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSdjEiaGPWq5dZ_1U_lHIcjaGDj5DbQ5UNvhYFyFVUQN6X2X-AZQRArxpww&s",
-      "updated_at_utc": "2026-03-13T09:41:18+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108007_WitchseekerSquad01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:16+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__witchseekers.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__witchseekers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::archaeopterfusilave",
@@ -1170,15 +1222,16 @@
       "datasheet_ids": [
         "000002087"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Archaeopter Fusilave",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Archaeopter-Fusilave-2020",
       "source_page_title": "Archaeopter Fusilave",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvil8nlU6PnIwIAX4uLGooYnOcWFCC4qFSn95kYyTnHf27JOZyIn93PQIly1g&s",
-      "updated_at_utc": "2026-03-13T09:41:19+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116024_AMFusilaveLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:19+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__archaeopterfusilave.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__archaeopterfusilave.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::archaeopterstratoraptor",
@@ -1187,15 +1240,16 @@
       "datasheet_ids": [
         "000002086"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Archaeopter Stratoraptor",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Archaeopter-Stratoraptor-2020",
       "source_page_title": "Archaeopter Stratoraptor",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvil8nlU6PnIwIAX4uLGooYnOcWFCC4qFSn95kYyTnHf27JOZyIn93PQIly1g&s",
-      "updated_at_utc": "2026-03-13T09:41:20+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116024_AMStratoraptorLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:21+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__archaeopterstratoraptor.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__archaeopterstratoraptor.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::archaeoptertransvector",
@@ -1204,15 +1258,16 @@
       "datasheet_ids": [
         "000002085"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Archaeopter Transvector Adeptus Mechanicus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Archaeopter-2020",
-      "source_page_title": "99120116024_AMTransvectorLe...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmimLZ1kTyMZrVkMCpg77gluzm8kPxR7FW29ZKk3bH3Qm-n4n1ng01qb5FyI&s",
-      "updated_at_utc": "2026-03-13T09:41:22+00:00",
+      "source_page_title": "Archaeopter Transvector",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116024_AMTransvectorLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:23+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__archaeoptertransvector.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__archaeoptertransvector.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::belisariuscawl",
@@ -1221,15 +1276,16 @@
       "datasheet_ids": [
         "000000838"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Belisarius Cawl",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Belisarius-Cawl-2017",
-      "source_page_title": "99120108008_Triumvirateofth...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskGw2btGPH3jMasOvSnF42oK8TDfjzoQ75AExDt8swgHbp6L123mwPMx4vw&s",
-      "updated_at_utc": "2026-03-13T09:41:23+00:00",
+      "source_page_title": "Belisarius Cawl",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120108008_TriumvirateoftheImperium02.jpg",
+      "updated_at_utc": "2026-03-14T12:03:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__belisariuscawl.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__belisariuscawl.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::corpuscariielectropriests",
@@ -1238,15 +1294,16 @@
       "datasheet_ids": [
         "000000844"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corpuscarii Electro-priests",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Ad-Mec-Corpuscarii-Electro-Priests",
-      "source_page_title": "Corpuscarii Electro-Priests...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLR92BW7Na0omzQXjfxIhroZ3zsUum89Oiw7dWEgKViMH1QbIlSY05dVqVQ&s",
-      "updated_at_utc": "2026-03-13T09:41:24+00:00",
+      "source_page_title": "Corpuscarii Electro-Priests",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116009_AdMechCorpuscariiElectroPriests01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:27+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__corpuscariielectropriests.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__corpuscariielectropriests.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::cyberneticadatasmith",
@@ -1272,15 +1329,16 @@
       "datasheet_ids": [
         "000000843"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Fulgurite Electro-priests Adeptus Mechanicus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Ad-Mec-Fulgurite-Electro-Priests",
       "source_page_title": "Fulgurite Electro-Priests",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1n1XQZf1qLskUcJ7hPk5WQQgt66QJPPEg3pO-_KrYMucCLzAh9hIg-h6b1lI&s",
-      "updated_at_utc": "2026-03-13T09:41:27+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116009_AdMechFulguriteElectroPriests01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:31+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__fulguriteelectropriests.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__fulguriteelectropriests.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::ironstriderballistarii",
@@ -1306,15 +1364,16 @@
       "datasheet_ids": [
         "000000845"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Kastelan Robots",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Kastelan-Robots-2017",
-      "source_page_title": "99120116005_AdMechKastelanR...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4RhU-t6wPI1oAnDzgCEjJ66_TuF3mgPUVxfEuA4Mrih9EY2fw3C2APYM7Q&s",
-      "updated_at_utc": "2026-03-13T09:41:29+00:00",
+      "source_page_title": "Kastelan Robots",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116005_AdMechKastelanRobots01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__kastelanrobots.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__kastelanrobots.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::kataphronbreachers",
@@ -1323,15 +1382,16 @@
       "datasheet_ids": [
         "000000841"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Kataphron Breachers Adeptus Mechanicus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Kataphron-Battle-Servitors-Breachers-2017",
-      "source_page_title": "99120116006_AdMechBattleSer...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXP915fdYZc6P56d2K9tCkdiuW8npmfli2oSSgmU64ss3HqKEY3Tx_I0_pfNU&s",
-      "updated_at_utc": "2026-03-13T09:41:30+00:00",
+      "source_page_title": "Kataphron Breachers",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116006_AdMechBattleServitorsBreachers01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:37+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__kataphronbreachers.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__kataphronbreachers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::kataphrondestroyers",
@@ -1340,15 +1400,16 @@
       "datasheet_ids": [
         "000000842"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Kataphron Destroyers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Kataphron-Battle-Servitors-Destroyers-2017",
-      "source_page_title": "99120116006_AdMechBattleSer...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBOLezMz-GwuN3RaafIlw77VAY9sHCLBXzJ-76KJGu81-eM1NKrMpiwdaYxw&s",
-      "updated_at_utc": "2026-03-13T09:41:31+00:00",
+      "source_page_title": "Kataphron Destroyers",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116006_AdMechBattleServitorsDestroyers01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__kataphrondestroyers.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__kataphrondestroyers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::onagerdunecrawler",
@@ -1357,15 +1418,16 @@
       "datasheet_ids": [
         "000000854"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Onager Dunecrawler",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Onager-Dunecrawler",
-      "source_page_title": "Adeptus Mechanicus Onager...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0c04yqkn_kPwtorzmN9NyY_FUQ-vLpRojQ3km8xg1rLNXH-jDl33OOVIzA&s",
-      "updated_at_utc": "2026-03-13T09:41:32+00:00",
+      "source_page_title": "Adeptus Mechanicus Onager Dunecrawler",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116004_AdMecOnagerDunecrawler01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:42+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__onagerdunecrawler.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__onagerdunecrawler.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::pteraxiiskystalkers",
@@ -1374,15 +1436,16 @@
       "datasheet_ids": [
         "000002084"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Pteraxii Skystalkers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Pteraxii-2020",
       "source_page_title": "Pteraxii Skystalkers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmsOKD4etKDcFrzsQ2iKBxDcxh42QelpY5-fpdomKM6r4-1VwZOHvbW1Rnaw&s",
-      "updated_at_utc": "2026-03-13T09:41:34+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116025_PteraxiiLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:44+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__pteraxiiskystalkers.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__pteraxiiskystalkers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::pteraxiisterylizors",
@@ -1391,15 +1454,16 @@
       "datasheet_ids": [
         "000002083"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Pteraxii Sterylizors",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Pteraxii-Sterylizors-2020",
       "source_page_title": "Pteraxii Sterylizors",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC5iRgGNSRrFH_dYvY-t8DszTXj-7E4jEI5u2V2Nbn4tz08nfiCJAhEr-x9vs&s",
-      "updated_at_utc": "2026-03-13T09:41:35+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116025_SterylizorsLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__pteraxiisterylizors.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__pteraxiisterylizors.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::secutariihoplites",
@@ -1408,15 +1472,16 @@
       "datasheet_ids": [
         "000001525"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Secutarii Hoplites",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Mechanicum-Secutarii-Hoplites-Upgrade-set",
-      "source_page_title": "SECUTARII HOPLITES UPGRADE...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCjyNQZDYLbxikJLR4KY7CMpRF-pwbj4oBKk9yY_3E4spSKPJTu-wiweE2n0&s",
-      "updated_at_utc": "2026-03-13T09:41:36+00:00",
+      "source_page_title": "SECUTARII HOPLITES UPGRADE SET",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99550108158_SecutariiHoplites04.jpg",
+      "updated_at_utc": "2026-03-14T12:03:48+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__secutariihoplites.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__secutariihoplites.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::secutariipeltasts",
@@ -1425,15 +1490,16 @@
       "datasheet_ids": [
         "000001526"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com \"Secutarii Peltasts\" \"Adeptus Mechanicus\"",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Mechanicum-Secutarii-Peltasts-Upgrade-Set",
-      "source_page_title": "SECUTARII PELTASTS UPGRADE...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnCjyNQZDYLbxikJLR4KY7CMpRF-pwbj4oBKk9yY_3E4spSKPJTu-wiweE2n0&s",
-      "updated_at_utc": "2026-03-13T09:41:37+00:00",
+      "source_page_title": "SECUTARII PELTASTS UPGRADE SET",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99550108159_SecutariiPeltasts04.jpg",
+      "updated_at_utc": "2026-03-14T12:03:50+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__secutariipeltasts.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__secutariipeltasts.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::serberysraiders",
@@ -1442,15 +1508,16 @@
       "datasheet_ids": [
         "000002082"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Serberys Raiders",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Serberys-Raiders-2020",
       "source_page_title": "Serberys Raiders",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9GMmgnRo_57lpQHFO5AjE4Zxopphh74xqe1OoJMFdw2px8fIohfgV8Oz6kyU&s",
-      "updated_at_utc": "2026-03-13T09:41:38+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116026_AMSerberysRaidersLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:52+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__serberysraiders.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__serberysraiders.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::serberyssulphurhounds",
@@ -1459,15 +1526,16 @@
       "datasheet_ids": [
         "000002081"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Serberys Sulphurhounds Adeptus Mechanicus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Serberys-Sulphurhounds--2020",
       "source_page_title": "Serberys Sulphurhounds",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTcfVslwMd1ljAWWTNr9vyFQU7yLs3INGHbopdPm3LH725UbZF2d9GOAThg&s",
-      "updated_at_utc": "2026-03-13T09:41:40+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116026_AMSerberysSulphurhoundsLead.jpg",
+      "updated_at_utc": "2026-03-14T12:03:54+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__serberyssulphurhounds.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__serberyssulphurhounds.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::servitorbattleclade",
@@ -1510,15 +1578,16 @@
       "datasheet_ids": [
         "000000850"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sicarian Infiltrators",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Sicarian-Infiltrators-2017",
       "source_page_title": "Sicarian Infiltrators",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7K9o2rsRlWTULVBAUYVOipQexoULXaFbfd8hrBgot-XGNxnvFXmEpcnuqAw&s",
-      "updated_at_utc": "2026-03-13T09:41:44+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116003_SicarianInfiltrators01.jpg",
+      "updated_at_utc": "2026-03-14T12:03:58+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__sicarianinfiltrators.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__sicarianinfiltrators.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::sicarianruststalkers",
@@ -1527,15 +1596,16 @@
       "datasheet_ids": [
         "000000851"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sicarian Ruststalkers Adeptus Mechanicus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Sicarians-2017",
       "source_page_title": "Sicarian Ruststalkers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHn0NE-QAfFkQBU-8RBBd1vfe62LX8JDyAHdAb5FrNakcbPdIwx6F349depns&s",
-      "updated_at_utc": "2026-03-13T09:41:45+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116003_SicarianRuststalkers01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:00+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__sicarianruststalkers.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__sicarianruststalkers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::skitariimarshal",
@@ -1544,15 +1614,16 @@
       "datasheet_ids": [
         "000002478"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skitarii Marshal",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Skitarii-Marshall-2021",
       "source_page_title": "Skitarii Marshal",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweg3ErSDIMMWxLLDUYmJUZ5iTFByUIFaMaZxBnuFOW62IYmai6KqDSMGmhQ&s",
-      "updated_at_utc": "2026-03-13T09:41:46+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070116003_AMSkitariiMarshalLead.jpg",
+      "updated_at_utc": "2026-03-14T12:04:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__skitariimarshal.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__skitariimarshal.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::skitariirangers",
@@ -1561,15 +1632,16 @@
       "datasheet_ids": [
         "000000848"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skitarii Rangers",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Skitarii-Rangers-2017",
       "source_page_title": "Skitarii Rangers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrsCYPP0Cv7PuTW-ps1XvSZ9m5PvXcKh4gTaWwgg2tCVFzfehlBRovo6FDQ&s",
-      "updated_at_utc": "2026-03-13T09:41:47+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116002_SkitariiRangers01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:04+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__skitariirangers.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__skitariirangers.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::skitariivanguard",
@@ -1578,15 +1650,16 @@
       "datasheet_ids": [
         "000000849"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skitarii Vanguard",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Skitarii-Vanguard-2017",
       "source_page_title": "Skitarii Vanguard",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJppHOIGqUHQg-PLfCAvb4d07MIT8zUVFL-pHv35xEKl8tGCy8XcKx-2Q6ha8&s",
-      "updated_at_utc": "2026-03-13T09:41:48+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116002_SkitariiVanguard01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:06+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__skitariivanguard.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__skitariivanguard.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::skorpiusdisintegrator",
@@ -1595,15 +1668,16 @@
       "datasheet_ids": [
         "000001651"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skorpius Disintegrator",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Skorpius-Disintegrator-2019",
       "source_page_title": "Skorpius Disintegrator",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eApmNZl9BWjeX8eWGspiSycokdmBd1UsyYSLPuNWc5H573iQiMKOQEbidu4&s",
-      "updated_at_utc": "2026-03-13T09:41:50+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116023_SkorpiusDistintegrator01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:08+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__skorpiusdisintegrator.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__skorpiusdisintegrator.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::skorpiusdunerider",
@@ -1612,15 +1686,16 @@
       "datasheet_ids": [
         "000001650"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Skorpius Dunerider",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Skorpius-Dunerider-2019",
-      "source_page_title": "99120116023_SkorpiusDistint...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacmo_BfJpsXdJQj8M9ctHeCSCRj0ow2YYBPnaRBcWYnxTJjFvQQcTEF7XhrQ&s",
-      "updated_at_utc": "2026-03-13T09:41:51+00:00",
+      "source_page_title": "Skorpius Dunerider",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116023_SkorpiusDistintegrator02.jpg",
+      "updated_at_utc": "2026-03-14T12:04:10+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__skorpiusdunerider.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__skorpiusdunerider.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::sydoniandragoonswithradiumjezzails",
@@ -1663,15 +1738,16 @@
       "datasheet_ids": [
         "000003695"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Sydonian Skatros",
       "source_page_url": "https://www.warhammer.com/it-IT/shop/adeptus-mechanicus-sydonian-skatros-2023",
       "source_page_title": "Skatros Sydoniano",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4DIBp1I3K_R45aF6hzOzb6GDySvQYfhlLxCJmP4ZfgU1eMpKyM-jvSVWr8yk&s",
-      "updated_at_utc": "2026-03-13T09:41:54+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120116045_ADMECHSydonianSkatros01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:14+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__sydonianskatros.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__sydonianskatros.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::techpriestdominus",
@@ -1680,15 +1756,16 @@
       "datasheet_ids": [
         "000000839"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Tech-priest Dominus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Ad-Mec-Tech-Priest-Dominus",
       "source_page_title": "Tech-Priest Dominus",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9UEI0tmUPvtkScq38YcqlpSvmUHPmkAg8-VmjlRzVgEAMdZLxiyyUMH9eYMs&s",
-      "updated_at_utc": "2026-03-13T09:41:55+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070116001_AdMechTechPriestDominus01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:16+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestdominus.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestdominus.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::techpriestenginseer",
@@ -1697,15 +1774,16 @@
       "datasheet_ids": [
         "000000840"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Tech-priest Enginseer",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Astra-Militarum-Tech-Priest-Enginseer",
       "source_page_title": "Tech-Priest Enginseer",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4S0C4S5W6rgTSGFaykSQ0BOszGacK9HeyFxIw7_9WnMyl99mNH91sPI_4PzU&s",
-      "updated_at_utc": "2026-03-13T09:41:56+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070105002_TechpriestEnginseer01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:18+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestenginseer.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestenginseer.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::techpriestmanipulus",
@@ -1714,15 +1792,16 @@
       "datasheet_ids": [
         "000001580"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Tech-priest Manipulus",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Adeptus-Mechanicus-Tech-priest-Manipulus-2020",
       "source_page_title": "Tech-Priest Manipulus",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGjQV00eIYPoF1FaQEL3PMyBlHsIdEoTcIEXR5_9V0LoGGv3iNY1uThMyQHQ&s",
-      "updated_at_utc": "2026-03-13T09:41:57+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070116002_TechPriestManipulusLead.jpg",
+      "updated_at_utc": "2026-03-14T12:04:20+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestmanipulus.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__techpriestmanipulus.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::technoarcheologist",
@@ -1731,15 +1810,16 @@
       "datasheet_ids": [
         "000002477"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Technoarcheologist",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/adeptus-mechanicus-technoarchaeologist-2022",
       "source_page_title": "Technoarcheologist",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmYRVVO8-9evK5GU0Tt8n51aO994ili-tW7tMgWO6r7GYKJnnU8WPGY7-rtQ&s",
-      "updated_at_utc": "2026-03-13T09:41:58+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070116007_AMTechnoarchaeologist01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:22+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__technoarcheologist.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__technoarcheologist.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::terraxpatterntermite",
@@ -1748,15 +1828,16 @@
       "datasheet_ids": [
         "000001533"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Terrax-pattern Termite",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Terrax-Pattern-Termite-Assault-Drill-2018",
-      "source_page_title": "99560108198_TermiteAssaultD...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzoX5Cdw6GXXS2BJbHWikDV8K20kFo8PYD-vj6Ilbn33H5y31g8lQFtChuWg&s",
-      "updated_at_utc": "2026-03-13T09:41:59+00:00",
+      "source_page_title": "Terrax Pattern Termite Assault Drill",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108198_TermiteAssaultDrill01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:24+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptusmechanicus__terraxpatterntermite.jpg"
+      "local_path": "assets/unit-previews/adeptusmechanicus__terraxpatterntermite.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptusmechanicus::x101",
@@ -1782,15 +1863,16 @@
       "datasheet_ids": [
         "000000868"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Reaver Titan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Mars-Pattern-Reaver-Titan-Body-Only",
-      "source_page_title": "Mars Pattern Reaver Titan...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiaBFD4itgo1aQqY3ZXdIhXlmhqP8QTskpxlG7DR4QBq6v5Tbmy1WQF2K89SM&s",
-      "updated_at_utc": "2026-03-13T09:42:02+00:00",
+      "source_page_title": "Mars Pattern Reaver Titan Body",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99590108065_ReaverTitanBody01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:28+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptustitanicus__reavertitan.jpg"
+      "local_path": "assets/unit-previews/adeptustitanicus__reavertitan.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptustitanicus::warbringernemesistitan",
@@ -1799,15 +1881,16 @@
       "datasheet_ids": [
         "000002077"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Warbringer Nemesis Titan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/warbringer-nemesis-titan-w-quake-cannon-2024",
-      "source_page_title": "Legions Imperialis:...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMfHJQQUeHPe6nyj0JI-Iy1lRBSu8Hf30EXDwYvg3pOWgKwnrVsrX4OkBow&s",
-      "updated_at_utc": "2026-03-13T09:42:03+00:00",
+      "source_page_title": "Legions Imperialis: Warbringer Nemesis Titan with Quake Cannon, Volcano Cannon, and Laser Blaster",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99122699027_WarbringerNemesisTitan1.jpg",
+      "updated_at_utc": "2026-03-14T12:04:30+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptustitanicus__warbringernemesistitan.jpg"
+      "local_path": "assets/unit-previews/adeptustitanicus__warbringernemesistitan.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptustitanicus::warhoundtitan",
@@ -1816,15 +1899,16 @@
       "datasheet_ids": [
         "000000867"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Warhound Titan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Mars-Pattern-Warhound-Titan-Body-Only",
-      "source_page_title": "Mars Pattern Warhound Titan...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDic_YeeszN4KyMJFeTtcxVSeyBQP_v4fJAUtFi6wxE06U4NUCUZBOv9bjulc&s",
-      "updated_at_utc": "2026-03-13T09:42:04+00:00",
+      "source_page_title": "Mars Pattern Warhound Titan Body",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99590108067_WarhoundTitanMars01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:33+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptustitanicus__warhoundtitan.jpg"
+      "local_path": "assets/unit-previews/adeptustitanicus__warhoundtitan.jpg",
+      "error": ""
     },
     {
       "unit_key": "adeptustitanicus::warlordtitan",
@@ -1833,15 +1917,16 @@
       "datasheet_ids": [
         "000000869"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Warlord Titan",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/mars-pattern-warlord-titan-body",
-      "source_page_title": "Mars Pattern Warlord Titan...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBerDZxm_De5hgmTv2tnLClIo829-aw9krjZzl1JQkYOad-ps4LMQngiFPgmw&s",
-      "updated_at_utc": "2026-03-13T09:42:05+00:00",
+      "source_page_title": "Mars Pattern Warlord Titan Body",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99560108140_MarsPatternWarlordTitanBody01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:35+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptustitanicus__warlordtitan.jpg"
+      "local_path": "assets/unit-previews/adeptustitanicus__warlordtitan.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::amallynshadowguide",
@@ -1867,15 +1952,16 @@
       "datasheet_ids": [
         "000000571"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Asurmen",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-asurmen-2025",
-      "source_page_title": "99120104089_AELAsurmen01.jp...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fPXq0A0oDoqgTcJNMtTr_ZDmrmd-f9WzkP0EuQb2qFcKq8iXDP3mCQZNYA&s",
-      "updated_at_utc": "2026-03-13T09:42:07+00:00",
+      "source_page_title": "Asurmen",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104089_AELAsurmen01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:40+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__asurmen.jpg"
+      "local_path": "assets/unit-previews/aeldari__asurmen.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::autarch",
@@ -1884,15 +1970,16 @@
       "datasheet_ids": [
         "000000577"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Autarch",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-autarch-2022",
-      "source_page_title": "99120104077_AELAutarchLead....",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfChaD7JztirDniHc0OJWp-01lgXvFWRL6CvTagOZhNgHt7XCCv_f5oNbpJRk&s",
-      "updated_at_utc": "2026-03-13T09:42:09+00:00",
+      "source_page_title": "Autarch",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104077_AELAutarchLead.jpg",
+      "updated_at_utc": "2026-03-14T12:04:42+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__autarch.jpg"
+      "local_path": "assets/unit-previews/aeldari__autarch.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::autarchskyrunner",
@@ -1918,15 +2005,16 @@
       "datasheet_ids": [
         "000002759"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Autarch Wayleaper",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/Eldar-Autarch",
       "source_page_title": "Autarch Wayleaper",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsOUeOp__jnDlSBQULyker__q1TWqiNBj7MJl4WWu_hXmqVgYHrz5QYMNhkA&s",
-      "updated_at_utc": "2026-03-13T09:42:11+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99070104003_ELDARAUTARCH01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:46+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__autarchwayleaper.jpg"
+      "local_path": "assets/unit-previews/aeldari__autarchwayleaper.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::avatarofkhaine",
@@ -1935,15 +2023,16 @@
       "datasheet_ids": [
         "000000581"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com \"Avatar of Khaine\" \"Warhammer 40000\"",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-avatar-of-khaine-2022",
       "source_page_title": "Avatar of Khaine",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv23YDXfsQZRLAqxJGWJx5Kta3z1shbOmhSVx7aQS_ElZCKl2MkQq_KDLpHg&s",
-      "updated_at_utc": "2026-03-13T09:42:13+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104072_AELAvatarofKhaineLead.jpg",
+      "updated_at_utc": "2026-03-14T12:04:48+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__avatarofkhaine.jpg"
+      "local_path": "assets/unit-previews/aeldari__avatarofkhaine.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::baharroth",
@@ -1952,15 +2041,16 @@
       "datasheet_ids": [
         "000000575"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Baharroth",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-phoenix-lord-baharroth-2025",
-      "source_page_title": "99120104099_AELBaharroth01....",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAZVjXb45JZ9bOdO5NSGThaJgvXoMihr8Y2vpNDlSGEJ48zgpqAJV9INRvY4&s",
-      "updated_at_utc": "2026-03-13T09:42:14+00:00",
+      "source_page_title": "Baharroth",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104099_AELBaharroth01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:50+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__baharroth.jpg"
+      "local_path": "assets/unit-previews/aeldari__baharroth.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::bonesinger",
@@ -2020,15 +2110,16 @@
       "datasheet_ids": [
         "000000632"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corsair Reaver Band Aeldari",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-voidreavers-2026",
       "source_page_title": "Corsair Voidreavers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_R2eQr6XnsRA29aDYM0rkgMJic_L1gi8P3rMHwGtYvSGuyTSn_NNpzAFO1zo&s",
-      "updated_at_utc": "2026-03-13T09:42:19+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104115_AeldariCorsairVoidreavers01.jpg",
+      "updated_at_utc": "2026-03-14T12:04:59+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__corsairreaverband.jpg"
+      "local_path": "assets/unit-previews/aeldari__corsairreaverband.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::corsairskyreaverband",
@@ -2037,15 +2128,16 @@
       "datasheet_ids": [
         "000000633"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Corsair Skyreaver Band",
       "source_page_url": "https://www.warhammer.com/en-WW/shop/aeldari-corsair-skyreavers-2026",
       "source_page_title": "Corsair Skyreavers",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7PuUxB0n_n-jmFwsXALi3mJCbUOEi3twYoX6m_tcAFUjg2ASElsjeuuBd00I&s",
-      "updated_at_utc": "2026-03-13T09:42:20+00:00",
+      "image_url": "https://www.warhammer.com/app/resources/catalog/product/920x950/99120104111_AeldariCorsairSkyreavers01.jpg",
+      "updated_at_utc": "2026-03-14T12:05:02+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/aeldari__corsairskyreaverband.jpg"
+      "local_path": "assets/unit-previews/aeldari__corsairskyreaverband.jpg",
+      "error": ""
     },
     {
       "unit_key": "aeldari::corsairskyreavers",

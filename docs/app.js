@@ -905,7 +905,7 @@ function setUnitPhotoButton(unit) {
   unitPhotoBtnEl.dataset.imageTitle = String(unit.name || "Unit image");
 
   if (!imageEntry) {
-    unitPhotoBtnEl.title = "Open unit image search";
+    unitPhotoBtnEl.title = "Open Google Images";
     unitPhotoBtnEl.dataset.imageUrl = "";
     unitPhotoBtnEl.dataset.imagePageUrl = searchUrl;
     unitPhotoBtnEl.dataset.hasPreview = "false";
@@ -914,7 +914,7 @@ function setUnitPhotoButton(unit) {
     return;
   }
 
-  unitPhotoBtnEl.title = "Preview unit image";
+  unitPhotoBtnEl.title = "Hover for preview, click to open Google Images";
   unitPhotoBtnEl.dataset.imageUrl = String(imageEntry.local_path || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imagePageUrl = String(imageEntry.source_page_url || imageEntry.image_url || "");
   unitPhotoBtnEl.dataset.imageTitle = String(imageEntry.unit_name || unit.name || "Unit image");
@@ -1118,7 +1118,7 @@ function showImagePreview(target) {
   const sourceEl = imagePreviewEl.querySelector(".unit-image-preview-source");
 
   const title = target.dataset.imageTitle || "Unit image";
-  const pageUrl = target.dataset.imagePageUrl || target.dataset.imageSearchUrl || imageUrl || "#";
+  const pageUrl = target.dataset.imageSearchUrl || target.dataset.imagePageUrl || imageUrl || "#";
 
   imagePreviewEl.classList.remove("is-loaded", "is-error", "is-empty");
   captionEl.textContent = title;
@@ -1135,7 +1135,7 @@ function showImagePreview(target) {
       previewStatus === "not_found"
         ? "No cached preview yet. Click to open image search."
         : "Preview is not cached yet. It will appear after a GitHub Actions sync.";
-    sourceEl.textContent = "GitHub Actions image cache";
+    sourceEl.textContent = "Click to open Google Images";
     imagePreviewEl.classList.add("visible");
     imagePreviewVisible = true;
     imagePreviewAnchorEl = target;
@@ -1145,7 +1145,7 @@ function showImagePreview(target) {
 
   imgEl.alt = title;
   statusEl.textContent = "Loading image...";
-  sourceEl.textContent = "Cached preview";
+  sourceEl.textContent = "Cached preview • Click to open Google Images";
 
   const sameImage = imgEl.dataset.currentSrc === imageUrl;
   if (!sameImage) {
@@ -1268,16 +1268,7 @@ function initImagePreviewHandlers() {
   unitPhotoBtnEl.addEventListener("click", (event) => {
     event.preventDefault();
     if (unitPhotoBtnEl.hidden) return;
-    if (!unitPhotoBtnEl.dataset.imageUrl) {
-      hideImagePreview();
-      openUnitImageSearch(unitPhotoBtnEl);
-      return;
-    }
-    if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
-      hideImagePreview();
-      return;
-    }
-    showImagePreview(unitPhotoBtnEl);
+    openUnitImageSearch(unitPhotoBtnEl);
   });
 
   unitPhotoBtnEl.addEventListener(
@@ -1285,16 +1276,7 @@ function initImagePreviewHandlers() {
     (event) => {
       event.preventDefault();
       if (unitPhotoBtnEl.hidden) return;
-      if (!unitPhotoBtnEl.dataset.imageUrl) {
-        hideImagePreview();
-        openUnitImageSearch(unitPhotoBtnEl);
-        return;
-      }
-      if (imagePreviewVisible && imagePreviewAnchorEl === unitPhotoBtnEl) {
-        hideImagePreview();
-        return;
-      }
-      showImagePreview(unitPhotoBtnEl);
+      openUnitImageSearch(unitPhotoBtnEl);
     },
     { passive: false }
   );

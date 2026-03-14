@@ -16,9 +16,13 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USER_AGENT = "wh40k-unit-image-sync/1.0 (+https://github.com/surin77/wh40k)"
-GOOGLE_HTML_USER_AGENT = "Mozilla/5.0"
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/122.0.0.0 Safari/537.36"
+)
 GOOGLE_IMAGE_SEARCH = "https://www.google.com/search?tbm=isch&q={query}"
-RESOLVER_NAME = "google_images_warhammer_query_v2"
+RESOLVER_NAME = "warhammer_page_preview_v3"
 MIME_TO_EXT = {
     "image/jpeg": ".jpg",
     "image/jpg": ".jpg",
@@ -76,17 +80,33 @@ def load_units(datasheets_csv: Path, factions_csv: Path) -> list[dict[str, objec
 
 
 def fetch_text(url: str, timeout: int) -> str:
-    request = urllib.request.Request(
+    command = [
+        "curl",
+        "-A",
+        BROWSER_USER_AGENT,
+        "-L",
+        "-sS",
+        "--compressed",
+        "--max-time",
+        str(max(5, timeout)),
+        "-H",
+        "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "-H",
+        "Accept-Language: en-US,en;q=0.9",
+        "-H",
+        "Referer: https://www.warhammer.com/",
         url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
-        },
+    ]
+    completed = subprocess.run(
+        command,
+        check=True,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=max(5, timeout) + 2,
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+    return completed.stdout
 
 
 def fetch_bytes(url: str, timeout: int) -> tuple[bytes, str]:
@@ -95,7 +115,7 @@ def fetch_bytes(url: str, timeout: int) -> tuple[bytes, str]:
     request = urllib.request.Request(
         url,
         headers={
-            "User-Agent": GOOGLE_HTML_USER_AGENT if host.endswith("gstatic.com") or host.endswith("googleusercontent.com") else USER_AGENT,
+            "User-Agent": BROWSER_USER_AGENT,
             "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
             "Referer": referer,
@@ -144,7 +164,7 @@ def is_official_result(url: str) -> bool:
 
 def fetch_google_image_search_html(query: str, timeout: int) -> str:
     url = GOOGLE_IMAGE_SEARCH.format(query=urllib.parse.quote_plus(query))
-    command = ["curl", "-A", GOOGLE_HTML_USER_AGENT, "-L", "-sS", "--max-time", str(max(5, timeout)), url]
+    command = ["curl", "-A", BROWSER_USER_AGENT, "-L", "-sS", "--max-time", str(max(5, timeout)), url]
     completed = subprocess.run(
         command,
         check=True,
@@ -258,8 +278,28 @@ def extract_meta_content(page_html: str, attr_name: str, attr_value: str) -> str
     return ""
 
 
+def is_not_found_page(page_html: str) -> bool:
+    match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', page_html)
+    if not match:
+        return False
+    try:
+        payload = json.loads(match.group(1))
+    except json.JSONDecodeError:
+        return False
+    return str(payload.get("page", "")).strip() == "/404"
+
+
+def extract_tag_attr(tag_html: str, attr_name: str) -> str:
+    match = re.search(rf'{re.escape(attr_name)}="([^"]*)"', tag_html, re.IGNORECASE)
+    if not match:
+        return ""
+    return html.unescape(match.group(1)).strip().replace("\\/", "/")
+
+
 def extract_page_preview(page_url: str, timeout: int) -> tuple[str, str]:
     page_html = fetch_text(page_url, timeout=timeout)
+    if is_not_found_page(page_html):
+        return "", ""
     image_url = extract_meta_content(page_html, "property", "og:image") or extract_meta_content(
         page_html, "name", "twitter:image"
     )
@@ -268,8 +308,96 @@ def extract_page_preview(page_url: str, timeout: int) -> tuple[str, str]:
         title_match = re.search(r"<title>(.*?)</title>", page_html, re.IGNORECASE | re.DOTALL)
         title = strip_tags(title_match.group(1)) if title_match else ""
     if not image_url:
+        carousel_candidates: list[tuple[int, str]] = []
+        for tag_html in re.findall(r"<img\b[^>]*>", page_html, re.IGNORECASE):
+            lower_tag = tag_html.lower()
+            if "image-carousel" not in lower_tag and "product-gallery" not in lower_tag:
+                continue
+            src = extract_tag_attr(tag_html, "src")
+            alt = extract_tag_attr(tag_html, "alt")
+            if not src or not alt:
+                continue
+            base_src = src.split("?", 1)[0]
+            if not page_matches_unit(base_src, alt, title):
+                continue
+            score = 0
+            if "image-carousel-desktop-image" in lower_tag:
+                score += 10
+            if "view 1" in alt.lower():
+                score += 6
+            if "/920x950/" in base_src.lower():
+                score += 5
+            carousel_candidates.append((score, base_src))
+
+        if carousel_candidates:
+            carousel_candidates.sort(key=lambda item: item[0], reverse=True)
+            image_url = carousel_candidates[0][1]
+
+    if not image_url:
+        image_candidates: list[tuple[int, str]] = []
+        seen: set[str] = set()
+        title_key = normalize(title)
+        title_tokens = [normalize(token) for token in re.split(r"[^a-zA-Z0-9]+", title) if len(normalize(token)) >= 5]
+        for raw_url, raw_label in re.findall(r'"url":"([^"]+)","label":"([^"]+)"', page_html):
+            candidate_url = html.unescape(raw_url or "").strip().replace("\\/", "/")
+            candidate_label = html.unescape(raw_label or "").strip().lower()
+            if not candidate_url or candidate_url in seen:
+                continue
+            seen.add(candidate_url)
+            lower_candidate = candidate_url.lower()
+            if "/app/resources/catalog/product/" not in lower_candidate:
+                continue
+            if "/threesixty/" in lower_candidate:
+                continue
+
+            candidate_haystack = normalize(candidate_url)
+            matched_tokens = sum(1 for token in title_tokens if token in candidate_haystack)
+            if title_key and title_key in candidate_haystack:
+                matched_tokens += 3
+            if matched_tokens <= 0:
+                continue
+
+            score = 0
+            if "/920x950/" in lower_candidate:
+                score += 8
+            if "lead" in lower_candidate:
+                score += 12
+            if candidate_label == "image":
+                score += 4
+            score += matched_tokens * 5
+            image_candidates.append((score, candidate_url))
+
+        if image_candidates:
+            image_candidates.sort(key=lambda item: item[0], reverse=True)
+            image_url = image_candidates[0][1]
+    if not image_url:
         return "", title
     return urllib.parse.urljoin(page_url, image_url), title
+
+
+def is_usable_image_url(image_url: str) -> bool:
+    lower_image_url = str(image_url or "").strip().lower()
+    if not lower_image_url:
+        return False
+    return not any(fragment in lower_image_url for fragment in ["logo", "favicon", "icon"])
+
+
+def page_matches_unit(page_url: str, page_title: str, unit_name: str) -> bool:
+    unit_key = normalize(unit_name)
+    if not unit_key:
+        return False
+
+    haystack = normalize(f"{page_title} {page_url}")
+    if unit_key in haystack:
+        return True
+
+    tokens = [normalize(token) for token in re.split(r"[^a-zA-Z0-9]+", unit_name) if len(normalize(token)) >= 4]
+    if not tokens:
+        return False
+    matched = sum(1 for token in tokens if token in haystack)
+    if len(tokens) == 1:
+        return matched == 1
+    return matched >= max(2, len(tokens) - 1)
 
 
 def asset_basename(unit_key: str) -> str:
@@ -322,6 +450,28 @@ def cache_image(image_url: str, unit_key: str, assets_dir: Path, web_root: Path,
     target = assets_dir / f"{basename}{ext}"
     target.write_bytes(body)
     return relative_asset_path(target, web_root)
+
+
+def refresh_existing_official_preview(entry: dict[str, object], timeout: int) -> dict[str, object] | None:
+    page_url = str(entry.get("source_page_url", "")).strip()
+    if not is_official_result(page_url):
+        return None
+
+    image_url, page_title = extract_page_preview(page_url, timeout=timeout)
+    if not is_usable_image_url(image_url):
+        return None
+    if not page_matches_unit(page_url, page_title, str(entry.get("unit_name", ""))):
+        return None
+
+    refreshed = dict(entry)
+    refreshed["resolver"] = RESOLVER_NAME
+    refreshed["status"] = "ok"
+    refreshed["image_url"] = image_url
+    refreshed["updated_at_utc"] = utcnow_iso()
+    refreshed["error"] = ""
+    if page_title:
+        refreshed["source_page_title"] = page_title
+    return refreshed
 
 
 def hydrate_entry(entry: dict[str, object], unit: dict[str, object]) -> dict[str, object]:
@@ -421,9 +571,31 @@ def lookup_unit_image(
         if query:
             lookup_query = query
         for candidate in candidates:
-            image_url = str(candidate.get("image_url", "")).strip()
-            lower_image_url = image_url.lower()
-            if not image_url or any(fragment in lower_image_url for fragment in ["logo", "favicon", "icon"]):
+            page_url = str(candidate.get("url", "")).strip()
+            candidate_image_url = str(candidate.get("image_url", "")).strip()
+            image_url = ""
+            page_title = str(candidate.get("title", "")).strip()
+
+            if is_official_result(page_url):
+                try:
+                    page_image_url, extracted_title = extract_page_preview(page_url, timeout=timeout)
+                    if is_usable_image_url(page_image_url):
+                        image_url = page_image_url
+                    if extracted_title:
+                        page_title = extracted_title
+                except (urllib.error.URLError, TimeoutError, ValueError, OSError) as error:
+                    last_error = str(error)
+
+                if not image_url:
+                    continue
+
+            if not page_matches_unit(page_url, page_title or str(candidate.get("title", "")).strip(), unit_name):
+                continue
+
+            if not image_url and is_usable_image_url(candidate_image_url):
+                image_url = candidate_image_url
+
+            if not image_url:
                 continue
 
             return (
@@ -435,8 +607,8 @@ def lookup_unit_image(
                     "resolver": RESOLVER_NAME,
                     "status": "ok",
                     "lookup_query": lookup_query,
-                    "source_page_url": candidate["url"],
-                    "source_page_title": str(candidate.get("title", "")).strip(),
+                    "source_page_url": page_url,
+                    "source_page_title": page_title,
                     "image_url": image_url,
                     "updated_at_utc": utcnow_iso(),
                     "search_engine": candidate.get("engine", ""),
@@ -471,7 +643,7 @@ def build_payload(entries: list[dict[str, object]], lookups_performed: int) -> d
     ok_count = sum(1 for entry in entries if entry.get("status") == "ok")
     cached_count = sum(1 for entry in entries if entry.get("status") == "ok" and entry.get("local_path"))
     return {
-        "source": "Google Images thumbnails seeded by warhammer.com queries",
+        "source": "warhammer.com page preview images discovered via Google Images search",
         "resolver": RESOLVER_NAME,
         "query_template": "warhammer.com {unit_name}",
         "generated_at_utc": utcnow_iso(),
@@ -598,6 +770,42 @@ def main() -> int:
                     except (urllib.error.URLError, TimeoutError, ValueError, OSError):
                         pass
 
+                if previous_hydrated and previous_hydrated.get("status") == "ok" and is_official_result(
+                    str(previous_hydrated.get("source_page_url", ""))
+                ):
+                    if lookups_performed >= args.max_lookups:
+                        entries_by_key[key] = previous_hydrated
+                        continue
+
+                    lookups_performed += 1
+                    try:
+                        refreshed_entry = refresh_existing_official_preview(previous_hydrated, timeout=args.timeout)
+                        if refreshed_entry and refreshed_entry.get("image_url"):
+                            refreshed_entry["local_path"] = cache_image(
+                                image_url=str(refreshed_entry["image_url"]),
+                                unit_key=key,
+                                assets_dir=assets_dir,
+                                web_root=web_root,
+                                timeout=args.timeout,
+                            )
+                            entries_by_key[key] = refreshed_entry
+                        else:
+                            entries_by_key[key] = previous_hydrated
+                        if args.checkpoint_every > 0 and lookups_performed % args.checkpoint_every == 0:
+                            write_state(
+                                entries_by_key=entries_by_key,
+                                units=units,
+                                out_path=out_path,
+                                assets_dir=assets_dir,
+                                web_root=web_root,
+                                lookups_performed=lookups_performed,
+                                cleanup=False,
+                            )
+                        continue
+                    except (urllib.error.URLError, TimeoutError, ValueError, OSError):
+                        entries_by_key[key] = previous_hydrated
+                        continue
+
                 if lookups_performed >= args.max_lookups:
                     entries_by_key[key] = previous_hydrated or make_placeholder_entry(unit)
                     continue
@@ -622,6 +830,10 @@ def main() -> int:
                         entry["status"] = "error"
                         entry["error"] = str(error)
                         entry["local_path"] = ""
+
+                if previous_hydrated and previous_hydrated.get("status") == "ok" and entry.get("status") != "ok":
+                    entries_by_key[key] = previous_hydrated
+                    continue
 
                 entries_by_key[key] = entry
                 if args.checkpoint_every > 0 and lookups_performed % args.checkpoint_every == 0:
