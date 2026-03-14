@@ -1,11 +1,11 @@
 {
-  "source": "Mixed cache: validated warhammer.com page previews plus legacy Google Images thumbnails",
-  "resolver": "mixed_v2_v3",
+  "source": "warhammer.com page preview images discovered via Google Images search",
+  "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-03-14T12:26:04+00:00",
+  "generated_at_utc": "2026-03-14T12:30:46+00:00",
   "entries_with_images": 341,
   "entries_with_local_cache": 341,
-  "lookups_performed": 120,
+  "lookups_performed": 60,
   "entries": [
     {
       "unit_key": "adeptasororitas::aestredthurgaandagathaedolan",
