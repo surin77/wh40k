@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-04-01T20:47:41+00:00",
+  "generated_at_utc": "2026-04-01T21:46:41+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -9292,6 +9292,24 @@
       "error": ""
     },
     {
+      "unit_key": "chaosspacemarines::kravekmorne",
+      "unit_name": "Kravek Morne",
+      "faction_name": "Chaos Space Marines",
+      "datasheet_ids": [
+        "000004205"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Kravek Morne",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
+      "search_engine": "",
+      "error": ""
+    },
+    {
       "unit_key": "chaosspacemarines::kytanravager",
       "unit_name": "Kytan Ravager",
       "faction_name": "Chaos Space Marines",
@@ -9485,7 +9503,7 @@
       "unit_name": "Mutilators",
       "faction_name": "Chaos Space Marines",
       "datasheet_ids": [
-        "000000955"
+        "000004206"
       ],
       "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
@@ -9494,6 +9512,24 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-14T15:24:57+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "chaosspacemarines::mutilatorslegendary",
+      "unit_name": "Mutilators (Legendary)",
+      "faction_name": "Chaos Space Marines",
+      "datasheet_ids": [
+        "000000955"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Mutilators (Legendary)",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
       "search_engine": "",
       "error": ""
     },
@@ -28422,7 +28458,7 @@
       "unit_name": "Defiler",
       "faction_name": "World Eaters",
       "datasheet_ids": [
-        "000002635"
+        "000004207"
       ],
       "resolver": "google_images_warhammer_query_v2",
       "status": "not_found",

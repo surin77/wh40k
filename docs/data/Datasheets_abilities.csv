@@ -2517,10 +2517,10 @@
 000000968|1|000008339||||Core|D3|
 000000968|2|000008359||||Faction||
 000000968|3|||Siege Crawler|You can ignore any or all modifiers to this model’s Move characteristic and to Advance and Charge rolls made for it.|Datasheet||
-000000969|1|000008339||||Core|D3|
+000000969|1|000008339||||Core|D6|
 000000969|2|000008359||||Faction||
-000000969|3|||Daemonforge|Once per Fight phase, one unit from your army with this ability can be targeted with the Counter-offensive Stratagem for 0CP, even if you have already targeted a different unit with that Stratagem this phase.|Datasheet||
-000000969|4|||Scuttling Walker|Each time this model makes a Normal or Advance move, it can be moved over friendly <span class="kwb">MONSTER</span> and <span class="kwb">VEHICLE</span> models as if they were not there. This model can move over terrain features that are 4" or less in height as if they were not there.|Datasheet||
+000000969|3|||Scuttling Walker|Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding <span class="kwb">TITANIC</span> models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.|Datasheet||
+000000969|4|||Daemonforge|Each time this unit makes a Dark Pact, until the end of the phase, each time this model makes an attack, re-roll a Wound roll of 1. In addition, once per battle, when this unit makes a Dark Pact, before making the resulting Leadership test, you can declare it will overcharge its daemonforge. If it does:<br><ul><li>If the resulting Leadership test is failed, this model suffers 3 mortal wounds instead of D3 mortal wounds.</li><li>Until the end of the phase, each time this model makes an attack, you can re-roll the Wound roll.</li></ul>|Datasheet||
 000000970|1|000008339||||Core|D6+2|
 000000970|2|000008359||||Faction||
 000000970|3|||Plough Through the Enemy|In the Fight phase, after this model has finished making its attacks, if this model destroyed one or more enemy units this phase, each enemy unit within 6" of this model must take a Battle-shock test.|Datasheet||
@@ -4596,10 +4596,6 @@
 000002634|1|000008339||||Core|D6|
 000002634|2|000008428||||Faction||
 000002634|3|||Assault Ramp|Each time a unit disembarks from this model after it has made a Normal move, that unit is still eligible to declare a charge this turn.|Datasheet||
-000002635|1|000008339||||Core|D3|
-000002635|2|000008428||||Faction||
-000002635|3|||Scuttling Walker|Each time this model makes a Normal, Advance or Fall Back move, it can move through friendly Monster and Vehicle models and sections of terrain features that are 4" or less in height.|Datasheet||
-000002635|4|||Unleash Wrath|At the end of your opponent’s Movement phase, you can select one enemy unit that was set up on the battlefield within 12" of this model; this model can then either:<br><ul><li>Shoot at that unit, but only if it is an eligible target.</li><li>Declare a charge against that unit (note that even if this charge is successful, this model does not receive any Charge bonus this turn).</li></ul>|Datasheet||
 000002636|1|000008339||||Core|D3|
 000002636|2|000008428||||Faction||
 000002636|3|||Punishing Suppression|In your Shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks (excluding <span class="kwb">MONSTERS</span> and <span class="kwb">VEHICLES</span>). Until the start of your next turn, that enemy unit is suppressed. While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from the Hit roll.|Datasheet||
@@ -7069,3 +7065,15 @@
 000004204|2|000008350||||Faction||
 000004204|3|||Master of Rites|In your Command phase, select one of the following to apply to this model’s unit until the end of the turn:<br><ul><li>This model’s unit is eligible to shoot in a turn in which it Advanced.</li><li>This model’s unit is eligible to declare a charge in a turn in it which it Advanced.</li><li>This model’s unit is eligible to shoot and declare a charge in a turn in which it Fell Back.</li></ul>|Datasheet||
 000004204|4|||Unrelenting and Uncompromising|While this model is leading a unit, each time a model in that unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or all modifiers to the Hit roll.|Datasheet||
+000004205|1|000008343||||Core||
+000004205|2|000008346||||Core||
+000004205|3|000008359||||Faction||
+000004205|4|||Headlong Destruction|Each time a model in this unit makes an attack that targets the closest eligible enemy unit, improve the Armour Penetration characteristic of that attack by 1.|Datasheet||
+000004205|5|||Architect of Ruin|At the start of the battle, select one unit in your opponent’s army to be this model’s hated foe. Each time this model makes an attack that targets its hated foe, you can re-roll the Wound roll. Each time this model’s hated foe is destroyed, you can select a new unit from your opponent’s army to be its hated foe. |Datasheet||
+000004206|1|000008343||||Core||
+000004206|2|000008359||||Faction||
+000004206|3|||Crushing Charge|You can re-roll charge rolls made for this unit, and each time this unit makes a Charge move, select one enemy unit and roll one D6 for each model in this unit that is within Engagement Range of that unit: for each 4+, that enemy unit suffers D3 mortal wounds.|Datasheet||
+000004207|1|000008339||||Core|D6|
+000004207|2|000008428||||Faction||
+000004207|3|||Scuttling Walker|Each time this unit makes a Normal, Advance or Fall Back move, it can move through models (excluding <span class="kwb">TITANIC</span> models) and terrain features. When doing so, it can move within Engagement Range of enemy models, but cannot end that move within Engagement Range of them, and any Desperate Escape test is automatically passed.|Datasheet||
+000004207|4|||Unleash Wrath|At the end of your opponent’s Movement phase, you can select one enemy unit that was set up on the battlefield within 12" of this model; this model can then either:<br><ul><li>Shoot at that unit, but only if it is an eligible target.</li><li>Declare a charge against that unit (note that even if this charge is successful, this model does not receive any Charge bonus this turn).</li></ul>|Datasheet||
