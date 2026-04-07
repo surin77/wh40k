@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-04-07T19:08:24+00:00",
+  "generated_at_utc": "2026-04-07T20:53:09+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -1344,6 +1344,40 @@
       "error": ""
     },
     {
+      "unit_key": "adeptusmechanicus::hastariiexterminators",
+      "unit_name": "Hastarii Exterminators",
+      "faction_name": "Adeptus Mechanicus",
+      "datasheet_ids": [
+        "000004211"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hastarii Exterminators\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-07T20:50:52+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "adeptusmechanicus::hastariifusiliers",
+      "unit_name": "Hastarii Fusiliers",
+      "faction_name": "Adeptus Mechanicus",
+      "datasheet_ids": [
+        "000004212"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Hastarii Fusiliers\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-07T20:50:55+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
       "unit_key": "adeptusmechanicus::ironstriderballistarii",
       "unit_name": "Ironstrider Ballistarii",
       "faction_name": "Adeptus Mechanicus",
@@ -1845,6 +1879,23 @@
       "updated_at_utc": "2026-03-14T12:04:24+00:00",
       "search_engine": "google_images",
       "local_path": "assets/unit-previews/adeptusmechanicus__terraxpatterntermite.jpg",
+      "error": ""
+    },
+    {
+      "unit_key": "adeptusmechanicus::thuliaghuld",
+      "unit_name": "Thulia Ghuld",
+      "faction_name": "Adeptus Mechanicus",
+      "datasheet_ids": [
+        "000004210"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Thulia Ghuld\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-07T20:50:57+00:00",
+      "search_engine": "",
       "error": ""
     },
     {
@@ -10586,7 +10637,7 @@
       "unit_name": "Defiler",
       "faction_name": "Death Guard",
       "datasheet_ids": [
-        "000001051"
+        "000004209"
       ],
       "resolver": "warhammer_page_preview_v3",
       "status": "not_found",
@@ -12426,6 +12477,24 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-13T19:33:59+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "emperorschildren::defiler",
+      "unit_name": "Defiler",
+      "faction_name": "Emperor\u2019s Children",
+      "datasheet_ids": [
+        "000004208"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Defiler",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
       "search_engine": "",
       "error": ""
     },
@@ -16672,6 +16741,24 @@
       "error": ""
     },
     {
+      "unit_key": "imperialknights::knightdestrier",
+      "unit_name": "Knight Destrier",
+      "faction_name": "Imperial Knights",
+      "datasheet_ids": [
+        "000004213"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Knight Destrier",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
+      "search_engine": "",
+      "error": ""
+    },
+    {
       "unit_key": "imperialknights::knighterrant",
       "unit_name": "Knight Errant",
       "faction_name": "Imperial Knights",
@@ -20490,23 +20577,6 @@
       "error": ""
     },
     {
-      "unit_key": "spacemarines::captainsicarius",
-      "unit_name": "Captain Sicarius",
-      "faction_name": "Space Marines",
-      "datasheet_ids": [
-        "000000081"
-      ],
-      "resolver": "google_images_warhammer_query_v2",
-      "status": "not_found",
-      "lookup_query": "warhammer.com \"Captain Sicarius\" \"Warhammer 40000\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-13T23:31:21+00:00",
-      "search_engine": "",
-      "error": ""
-    },
-    {
       "unit_key": "spacemarines::captaintitus",
       "unit_name": "Captain Titus",
       "faction_name": "Space Marines",
@@ -22826,23 +22896,6 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-14T04:45:21+00:00",
-      "search_engine": "",
-      "error": ""
-    },
-    {
-      "unit_key": "spacemarines::marneuscalgar",
-      "unit_name": "Marneus Calgar",
-      "faction_name": "Space Marines",
-      "datasheet_ids": [
-        "000002199"
-      ],
-      "resolver": "google_images_warhammer_query_v2",
-      "status": "not_found",
-      "lookup_query": "warhammer.com \"Marneus Calgar\" \"Warhammer 40000\"",
-      "source_page_url": "",
-      "source_page_title": "",
-      "image_url": "",
-      "updated_at_utc": "2026-03-14T04:45:23+00:00",
       "search_engine": "",
       "error": ""
     },

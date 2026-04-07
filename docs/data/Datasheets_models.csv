@@ -73,7 +73,6 @@
 000000073|1|Captain|6"|4|3+|4||5|6+|1|40mm||
 000000076|1|Lieutenant With Combi-weapon|6"|4|3+|-||4|6+|1|40mm||
 000000079|1|Librarian In Terminator Armour|5"|5|2+|4||5|6+|1|40mm||
-000000081|1|Captain Sicarius|6"|4|2+|4||5|6+|1|32mm||
 000000083|1|Captain With Jump Pack|12"|4|3+|4||5|6+|1|40mm||
 000000084|1|Stormhawk Interceptor|20+"|9|3+|-||10|6+|0|120 x 92mm flying base||
 000000085|1|Rhino Primaris|12"|9|3+|-||10|6+|3|Use model||
@@ -654,7 +653,7 @@
 000001027|1|Chaos Vindicator|9"|11|2+|-||11|6+|3|Use model||
 000001028|1|Forgefiend|8"|10|3+|5||12|6+|3|120 x 92mm||
 000001029|1|Maulerfiend|10"|10|3+|5||12|6+|3|120 x 92mm||
-000001030|1|Defiler|8"|10|3+|5||14|6+|5|160mm||
+000001030|1|Defiler|12"|11|3+|5||18|6+|5|160mm||
 000001031|1|Magnus The Red|14"|11|2+|4||16|5+|6|100mm||
 000001032|1|Ahriman|10"|4|3+|4||6|6+|2|40mm||
 000001033|1|Exalted Sorcerer|6"|4|3+|4||5|6+|1|32mm||
@@ -673,7 +672,6 @@
 000001048|1|Chaos Spawn|8"|7|4+|-||4|7+|1|50mm||
 000001049|1|Chaos Land Raider|10"|12|2+|-||16|6+|5|Use model||
 000001050|1|Chaos Predator Annihilator|10"|10|3+|-||11|6+|3|Use model||
-000001051|1|Defiler|8"|11|3+|5||14|6+|5|160mm||
 000001052|1|Daemon Prince of Nurgle|8"|12|2+|4||10|6+|3|60mm||
 000001053|1|Typhus|5"|7|2+|4||6|6+|1|50mm||
 000001054|1|Lord of Contagion|5"|7|2+|4||6|6+|1|40mm||
@@ -964,8 +962,6 @@
 000002115|1|Canoptek Doomstalker|8"|8|3+|4||12|8+|4|90mm||
 000002116|1|Lokhust Heavy Destroyers|8"|6|3+|-||4|7+|2|60mm||
 000002173|1|Land Raider Redeemer|12"|12|2+|-||16|6+|5|Use model||
-000002199|1|MARNEUS CALGAR|6"|6|2+|4||6|6+|1|50mm||
-000002199|2|VICTRIX HONOUR GUARD|6"|4|2+|4||3|6+|1|40mm||
 000002202|1|Devastator Squad|6"|4|3+|-||2|6+|1|32mm||
 000002234|1|Primaris Company Champion|6"|4|3+|-||4|6+|1|32mm||
 000002252|1|Spartan|10"|12|2+|-||18|6+|6|Use model||
@@ -1784,8 +1780,8 @@
 000004189|1|Celestian Insidiants|6"|3|3+|5||1|7+|1|32mm||
 000004190|1|GARLON SOULEATER, GARREON THE CORPSEMASTER, KATAR GARRIX|6"|4|3+|-||4|6+|1|40mm||
 000004190|2|CAPTAIN SARGOTTA, THE ENFORCER|6"|3|4+|-||3|6+|1|40mm|The Enforcer 32mm|
-000004191|1||6"|4|3+|-||3|6+|2|40mm||
-000004192|1||6"|4|3+|4||5|6+|1|32mm||
+000004191|1||6"|4|3+|-||3|6+|2|32mm||
+000004192|1||6"|4|3+|4||5|6+|1|40mm||
 000004193|1|Prince Yriel|7"|3|3+|4||5|6+|1|40mm||
 000004194|1|Prince Yriel|7"|3|6+|4||4|6+|1|32mm||
 000004195|1|Starfangs|14"|6|3+|-||6|7+|2|105 x 70mm||
@@ -1801,3 +1797,9 @@
 000004205|1||5"|5|2+|4||6|6+|1|50mm||
 000004206|1|Mutilators|5"|7|2+|5||5|6+|2|50mm||
 000004207|1|Defiler|14"|11|3+|5||18|6+|5|160mm||
+000004208|1|Defiler|12"|11|3+|5||18|6+|5|160mm||
+000004209|1|Defiler|12"|11|3+|5||18|6+|5|160mm||
+000004210|1|Thulia Ghuld|8"|8|2+|4||10|6+|3|80mm||
+000004211|1|Hastarii Exterminators|5"|4|3+|5||2|7+|1|32mm||
+000004212|1|Hastarii Fusiliers|5"|4|3+|5||2|7+|1|32mm||
+000004213|1|Knight Destrier|12"|10|3+|5|* against ranged attacks only|18|6+|8|150 x 95mm||
