@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-04-14T05:27:46+00:00",
+  "generated_at_utc": "2026-04-14T07:51:21+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -24767,7 +24767,6 @@
       "unit_name": "Wolf Scouts",
       "faction_name": "Space Marines",
       "datasheet_ids": [
-        "000000310",
         "000004182"
       ],
       "resolver": "google_images_warhammer_query_v2",
@@ -24777,6 +24776,24 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-14T06:51:56+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "spacemarines::wolfscoutslegendary",
+      "unit_name": "Wolf Scouts (Legendary)",
+      "faction_name": "Space Marines",
+      "datasheet_ids": [
+        "000000310"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Wolf Scouts (Legendary)",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
       "search_engine": "",
       "error": ""
     },

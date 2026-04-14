@@ -1,8 +1,14 @@
 {
   "source": "Wahapedia WH40k 10th Edition Data Export",
-  "updated_at_utc": "2026-04-14T05:25:04+00:00",
+  "updated_at_utc": "2026-04-14T07:48:51+00:00",
   "bootstrap_run": false,
   "changed_files": [
+    "Abilities.csv",
+    "Datasheets_models.csv",
+    "Datasheets_stratagems.csv",
+    "Datasheets_leader.csv",
+    "Datasheets.csv",
+    "Detachment_abilities.csv",
     "core_rules.json"
   ],
   "skipped_missing_files": [
@@ -13,7 +19,7 @@
   "files": {
     "Abilities.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Abilities.csv",
-      "sha256": "e237b2349885adb07b63fe5add99ca488b3fea34b65e1131be4cac320c0fb135"
+      "sha256": "90fde2ec7f45b8048863beae5b4d17a78da088be36d0c47fc803311e7e82ab1b"
     },
     "Stratagems.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Stratagems.csv",
@@ -29,7 +35,7 @@
     },
     "Datasheets_models.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_models.csv",
-      "sha256": "6733b9afbb84ef93f7d6e03bba671ff95cf2588cf5c826c9addc17267e1f72f3"
+      "sha256": "667691e2a011fe38ae31784d5d3d880bcc5bd299b83f74bcecde005ef65c1d55"
     },
     "Datasheets_models_cost.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_models_cost.csv",
@@ -45,7 +51,7 @@
     },
     "Datasheets_stratagems.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_stratagems.csv",
-      "sha256": "49f8f5eb0b678baee07f918283e1097cf3760dc4fbba896c330c504c603a9d27"
+      "sha256": "c2a1ac4b56f7558a3195be2e0a5c9564ff3f521fabf2928b9befa8869a4daa6e"
     },
     "Datasheets_enhancements.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_enhancements.csv",
@@ -53,15 +59,15 @@
     },
     "Datasheets_leader.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets_leader.csv",
-      "sha256": "1be42109556d2cbfaee08f7a00a6a38652dd1d340936039ab950714e358056c9"
+      "sha256": "aa58b78220e83a79fb9660cab372d46ec094018866d8e85d2ce32e279754bdfd"
     },
     "Datasheets.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Datasheets.csv",
-      "sha256": "1c8815b7bec9a86620ca0fec86d44271ef5cc8fb7b4138a0e8cebd77442e3c5d"
+      "sha256": "ac19c7a5dee420e69b71116f7690c83744da43d283aae725ed127daa806fd51b"
     },
     "Detachment_abilities.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Detachment_abilities.csv",
-      "sha256": "8a20530450d64809b9da0a74434c3012d69a66d896d3c0b3533bf28d1a7e0fb5"
+      "sha256": "c49a8d1c0b787580f941ca436bdea7d5580870211f6a0f1756039daa9df03da7"
     },
     "Factions.csv": {
       "url": "https://wahapedia.ru/wh40k10ed/Factions.csv",
@@ -73,7 +79,7 @@
     },
     "core_rules.json": {
       "url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
-      "sha256": "1214ae11fca8f6162f5e1a36b9bc4cad6e667e0aaa17177073ce7e3d8cce5ae4"
+      "sha256": "b0e6d496aff83505cea53ae9a91a7ce8bfd120cd9e22b16192eef2b3b0bac463"
     }
   }
 }
