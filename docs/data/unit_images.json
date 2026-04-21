@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-04-21T19:19:15+00:00",
+  "generated_at_utc": "2026-04-21T20:57:58+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -1356,7 +1356,7 @@
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-04-07T20:50:52+00:00",
+      "updated_at_utc": "2026-04-21T20:56:06+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1373,7 +1373,7 @@
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-04-07T20:50:55+00:00",
+      "updated_at_utc": "2026-04-21T20:56:08+00:00",
       "search_engine": "",
       "error": ""
     },
@@ -1894,7 +1894,7 @@
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-04-07T20:50:57+00:00",
+      "updated_at_utc": "2026-04-21T20:56:10+00:00",
       "search_engine": "",
       "error": ""
     },
