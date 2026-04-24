@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-04-24T13:58:24+00:00",
+  "generated_at_utc": "2026-04-24T15:13:24+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -362,6 +362,23 @@
       "updated_at_utc": "2026-03-14T12:01:38+00:00",
       "search_engine": "google_images",
       "local_path": "assets/unit-previews/adeptasororitas__immolator.jpg",
+      "error": ""
+    },
+    {
+      "unit_key": "adeptasororitas::intranziafraye",
+      "unit_name": "Intranzia Fraye",
+      "faction_name": "Adepta Sororitas",
+      "datasheet_ids": [
+        "000004215"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Intranzia Fraye\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-24T15:10:43+00:00",
+      "search_engine": "",
       "error": ""
     },
     {
@@ -4135,6 +4152,23 @@
       "local_path": "assets/unit-previews/astramilitarum__centaurlightcarrier.jpg"
     },
     {
+      "unit_key": "astramilitarum::centaurrsv",
+      "unit_name": "Centaur RSV",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004220"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Centaur RSV\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-24T15:12:35+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
       "unit_key": "astramilitarum::chimera",
       "unit_name": "Chimera",
       "faction_name": "Astra Militarum",
@@ -4186,6 +4220,57 @@
       "updated_at_utc": "2026-03-14T13:08:23+00:00",
       "search_engine": "google_images",
       "local_path": "assets/unit-previews/astramilitarum__commissar.jpg",
+      "error": ""
+    },
+    {
+      "unit_key": "astramilitarum::commissargraves",
+      "unit_name": "Commissar Graves",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004217"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Commissar Graves\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-24T15:12:39+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "astramilitarum::commissargravesonfoot",
+      "unit_name": "Commissar Graves on Foot",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004218"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Commissar Graves on Foot\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-24T15:12:43+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "astramilitarum::commissaryarrick",
+      "unit_name": "Commissar Yarrick",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004216"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Commissar Yarrick\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-04-24T15:12:47+00:00",
+      "search_engine": "",
       "error": ""
     },
     {
@@ -4588,6 +4673,24 @@
       "updated_at_utc": "2026-03-14T13:09:21+00:00",
       "search_engine": "google_images",
       "local_path": "assets/unit-previews/astramilitarum__hellslast.jpg",
+      "error": ""
+    },
+    {
+      "unit_key": "astramilitarum::hippogriffafv",
+      "unit_name": "Hippogriff AFV",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004219"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Hippogriff AFV",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
+      "search_engine": "",
       "error": ""
     },
     {
@@ -16125,6 +16228,24 @@
       "error": ""
     },
     {
+      "unit_key": "imperialagents::inquisitorkroyle",
+      "unit_name": "Inquisitor Kroyle",
+      "faction_name": "Imperial Agents",
+      "datasheet_ids": [
+        "000004214"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Inquisitor Kroyle",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
+      "search_engine": "",
+      "error": ""
+    },
+    {
       "unit_key": "imperialagents::inquisitorostromandeus",
       "unit_name": "Inquisitor Ostromandeus",
       "faction_name": "Imperial Agents",
@@ -19876,6 +19997,24 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-13T22:31:30+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "orks::wazdakkagutsmek",
+      "unit_name": "Wazdakka Gutsmek",
+      "faction_name": "Orks",
+      "datasheet_ids": [
+        "000004221"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com Wazdakka Gutsmek",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
       "search_engine": "",
       "error": ""
     },
