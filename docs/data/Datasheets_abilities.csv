@@ -7137,3 +7137,8 @@
 000004221|8|||Shokk Attack Engine|In your Command phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.|Primarch||
 000004221|9|||Pulse Jet|Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase:<br><ul><li>Add 6" to the Move characteristic of models in this unit.</li><li>Models in this unit can move through models and terrain features.</li></ul>|Primarch||
 000004221|10|||WAAAGH! WAZDAKKA|If this model is your <span class="kwb">WARLORD</span>, Warbiker units from your army have the Battleline keyword.|Special (правая колонка)||
+000004222|1|000008339||||Core|D3|
+000004222|2|000008334||||Core|12|
+000004222|3|||Rapid Strike Vehicle|While one or more units are embarked within this model, unless this model is Battle-shocked, add 1 to this model’s Objective Control characteristic for every 3 models (rounding down) embarked within it.|Datasheet||
+000004223|1|000008339||||Core|1|
+000004223|2|||Convoy Escort Vehicle|In your Shooting phase, after this unit has shot, it can make a Normal move of up to D6". If it does, until the end of the turn, this unit is not eligible to declare a charge.|Datasheet||
