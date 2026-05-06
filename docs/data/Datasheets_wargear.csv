@@ -6167,11 +6167,11 @@
 000003556|4|1||Astartes chainsword||Melee|Melee|4|3|4|-1|1|
 000003556|5|1||Power weapon||Melee|Melee|5|2|5|-2|1|
 000003556|6|1||Power fist||Melee|Melee|3|3|8|-2|2|
-000003582||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003582||1||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
 000003582||2||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|4|8|-3|2|
 000003582||1||Chainblade||Melee|Melee|4|3|4|-1|1|
 000003582||1||Khornate eviscerator||Melee|Melee|3|3|8|-2|2|
+000003582||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003583||1||Inferno bolt pistol|pistol|12|Ranged|1|3|4|-1|1|
 000003583||1||Inferno boltgun||24|Ranged|2|3|4|-2|1|
 000003583||1||Malefic Curse|anti-infantry 4+, devastating wounds, psychic|24|Ranged|3|3|4|-3|1|
@@ -6180,73 +6180,73 @@
 000003583||1||Warpflamer|ignores cover, torrent|12|Ranged|D6|N/A|4|-1|1|
 000003583||1||Close combat weapon||Melee|Melee|2|3|4|0|1|
 000003583||1||Force weapon|psychic|Melee|Melee|3|3|6|-1|D3|
-000003584||1||Plague belcher|anti-infantry 4+, ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
-000003584||1||Bolt pistol|lethal hits, pistol|12|Ranged|1|3|4|0|1|
 000003584||1||Meltagun|melta 2|12|Ranged|1|3|9|-4|D6|
 000003584||1||Power fist|lethal hits|Melee|Melee|3|3|8|-2|2|
-000003584||1||Plague knives|lethal hits|Melee|Melee|3|3|4|0|1|
-000003584||1||Blight launcher|blast, lethal hits|24|Ranged|D3|3|6|-1|2|
-000003584||1||Boltgun|lethal hits|24|Ranged|2|3|4|0|1|
 000003584||1||Heavy plague weapon|lethal hits|Melee|Melee|3|4|8|-2|2|
-000003584||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|3|7|-2|1|
-000003584||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|3|8|-3|2|
-000003584||1||Plague spewer|anti-infantry 2+, ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003584||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|3|8|-3|2|
-000003584||1||Plasma pistol – standard|pistol|12|Ranged|1|3|7|-2|1|
+000003584||1||Boltgun|lethal hits|24|Ranged|2|3|4|0|1|
+000003584||1||Blight launcher|blast, lethal hits|24|Ranged|D3|3|6|-1|2|
 000003584||1||Bubotic weapons|lethal hits|Melee|Melee|4|3|5|-2|1|
+000003584||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|3|8|-3|2|
+000003584||2||Plasma pistol – standard|pistol|12|Ranged|1|3|7|-2|1|
+000003584||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|3|8|-3|2|
+000003584||2||Plasma gun – standard|rapid fire 1|24|Ranged|1|3|7|-2|1|
+000003584||1||Plague spewer|anti-infantry 2+, ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003584||1||Plague belcher|anti-infantry 4+, ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
+000003584||1||Bolt pistol|lethal hits, pistol|12|Ranged|1|3|4|0|1|
+000003584||1||Plague knives|lethal hits|Melee|Melee|3|3|4|0|1|
 000003585||1||Hellstrike missile battery|anti-fly 4+|72|Ranged|4|3|8|-2|3|
 000003585||1||Armoured hull||Melee|Melee|6|4|8|0|1|
-000003585||1||Lascannon||48|Ranged|1|3|12|-3|D6+1|
 000003585||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
-000003585||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
 000003585||1||Thunderhawk heavy cannon|blast|48|Ranged|D6+6|3|10|-2|3|
-000003586||1||Greater plague probe|lethal hits|Melee|Melee|4|3|6|-1|1|
-000003586||1||Blightreaper cannon|lethal hits|36|Ranged|6|3|8|-2|2|
+000003585||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
+000003585||1||Lascannon||48|Ranged|1|3|12|-3|D6+1|
 000003586||1||Bile maw|lethal hits|12|Ranged|3|3|5|0|1|
-000003587||1||Slaughter blade||Melee|Melee|5|3|12|-3|3|
-000003587||1||Twin slaughter blade|twin-linked|Melee|Melee|5|3|12|-3|3|
+000003586||1||Blightreaper cannon|lethal hits|36|Ranged|6|3|8|-2|2|
+000003586||1||Greater plague probe|lethal hits|Melee|Melee|4|3|6|-1|1|
 000003587||1||Impaler harpoon|anti-monster 2+, anti-vehicle 2+, impaled|12|Ranged|1|3|12|-2|3|
-000003588||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
+000003587||1||Twin slaughter blade|twin-linked|Melee|Melee|5|3|12|-3|3|
+000003587||1||Slaughter blade||Melee|Melee|5|3|12|-3|3|
 000003588||1||Thunderhawk heavy cannon|blast|48|Ranged|D6+6|3|10|-2|3|
-000003588||1||Lascannon||48|Ranged|1|3|12|-3|D6+1|
-000003588||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
-000003588||1||Armoured hull||Melee|Melee|6|4|8|0|1|
 000003588||1||Hellstrike missile battery|anti-fly 4+|72|Ranged|4|3|8|-2|3|
-000003589||1||Hellcrusher claws – strike||Melee|Melee|6|3|14|-3|6|
+000003588||1||Armoured hull||Melee|Melee|6|4|8|0|1|
+000003588||1||Lascannon||48|Ranged|1|3|12|-3|D6+1|
+000003588||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
+000003588||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
+000003589||1||Hellcrusher claws – sweep||Melee|Melee|18|3|8|-2|2|
+000003589||2||Hellcrusher claws – strike||Melee|Melee|6|3|14|-3|6|
 000003589||1||Scorpion cannon|sustained hits 1|36|Ranged|15|3|5|-1|2|
 000003589||1||Hellmaw flame cannons|ignores cover, torrent|12|Ranged|2D6|N/A|8|-1|1|
 000003589||1||Demolisher cannon|blast|24|Ranged|D6+3|3|14|-3|D6|
-000003589||1||Hellcrusher claws – sweep||Melee|Melee|18|3|8|-2|2|
 000003590||1||Kytan gatling cannon||36|Ranged|18|3|6|-2|2|
-000003590||1||Kytan cleaver – sweep||Melee|Melee|12|3|9|-3|2|
-000003590||2||Kytan cleaver – strike||Melee|Melee|4|3|14|-4|6|
-000003591||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
-000003591||1||Thunderhawk heavy cannon|blast|48|Ranged|D6+6|3|10|-2|3|
+000003590||1||Kytan cleaver – strike||Melee|Melee|4|3|14|-4|6|
+000003590||2||Kytan cleaver – sweep||Melee|Melee|12|3|9|-3|2|
 000003591||1||Lascannon||48|Ranged|1|3|12|-3|D6+1|
-000003591||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
-000003591||1||Hellstrike missile battery|anti-fly 4+|72|Ranged|4|3|8|-2|3|
+000003591||1||Thunderhawk heavy cannon|blast|48|Ranged|D6+6|3|10|-2|3|
+000003591||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
 000003591||1||Armoured hull||Melee|Melee|6|4|8|0|1|
+000003591||1||Hellstrike missile battery|anti-fly 4+|72|Ranged|4|3|8|-2|3|
+000003591||1||Turbo-laser destructor|blast|96|Ranged|D3+1|3|20|-4|D6+6|
+000003592||1||Close combat weapon||Melee|Melee|6|2|4|0|1|
+000003592||1||Astartes chainsword||Melee|Melee|7|2|4|-1|1|
+000003592||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|2|8|-3|2|
 000003592||1||Combi-bolter|rapid fire 2|24|Ranged|2|2|4|0|1|
-000003592||1||Nurgling’s claws and teeth|extra attacks, lethal hits|Melee|Melee|4|5|2|0|1|
 000003592||1||Bolt pistol|pistol|12|Ranged|1|2|4|0|1|
 000003592||1||Accursed weapon||Melee|Melee|6|2|5|-2|1|
 000003592||1||Combi-weapon|anti-infantry 4+, devastating wounds, rapid fire 1|24|Ranged|1|4|4|0|1|
-000003592||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|2|8|-3|2|
-000003592||1||Astartes chainsword||Melee|Melee|7|2|4|-1|1|
-000003592||1||Close combat weapon||Melee|Melee|6|2|4|0|1|
-000003592||1||Plasma pistol – standard|pistol|12|Ranged|1|2|7|-2|1|
-000003592||1||Paired accursed weapons|twin-linked|Melee|Melee|7|2|4|-1|1|
 000003592||1||Power fist||Melee|Melee|5|2|8|-2|2|
+000003592||1||Paired accursed weapons|twin-linked|Melee|Melee|7|2|4|-1|1|
+000003592||1||Plasma pistol – standard|pistol|12|Ranged|1|2|7|-2|1|
+000003592||1||Nurgling’s claws and teeth|extra attacks, lethal hits|Melee|Melee|4|5|2|0|1|
 000003593||1||Brutal weapons||Melee|Melee|2|4|4|0|1|
 000003593||1||Hideous mutations||Melee|Melee|4|4|6|-1|2|
 000003593||1||Belly-flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|0|1|
-000003594||1||Twin autocannon|twin-linked|48|Ranged|2|3|9|-3|3|
 000003594||1||Twin lascannon|twin-linked|48|Ranged|1|3|12|-3|D6+1|
+000003594||1||Twin autocannon|twin-linked|48|Ranged|2|3|9|-3|3|
 000003594||1||Armoured hull||Melee|Melee|3|4|6|0|1|
+000003595||1||Autocannon||48|Ranged|2|3|9|-1|3|
+000003595||1||Armoured hull||Melee|Melee|6|4|6|0|1|
 000003595||1||Twin lascannon|twin-linked|48|Ranged|1|3|12|-3|D6+1|
 000003595||1||Havoc launcher|blast|48|Ranged|D6|3|5|0|1|
-000003595||1||Armoured hull||Melee|Melee|6|4|6|0|1|
-000003595||1||Autocannon||48|Ranged|2|3|9|-1|3|
 000003596||1||Diseased claws and fangs|lethal hits|Melee|Melee|2|4|2|0|1|
 000003597||1||Power fist||Melee|Melee|5|2|8|-2|2|
 000003597||1||Paired accursed weapons|twin-linked|Melee|Melee|7|2|4|-1|1|
@@ -6697,35 +6697,35 @@
 000003652||1||Quad heavy bolter|sustained hits 1, twin-linked|36|Ranged|6|3|5|-1|2|
 000003652|1|1||Combi-weapon|anti-infantry 4+, devastating wounds, rapid fire 1|24|Ranged|1|4|4|0|1|
 000003653||1||Storm bolter|rapid fire 2|24|Ranged|2|3|4|0|1|
-000003653||1||||||0|3|-|0|-|
-000003653||1||Demolisher cannon|blast|24|Ranged|D6+3|3|14|-3|D6|
-000003653||1||Fellblade accelerator cannon – AP shells||72|Ranged|2|3|14|-3|6|
-000003653||2||Fellblade accelerator cannon – HE shells|blast|72|Ranged|2D6|3|8|-1|2|
-000003653||1||Quad lascannon||48|Ranged|4|3|12|-3|D6+1|
-000003653||1||Havoc launcher |blast|48|Ranged|D6|3|5|0|1|
-000003653||1||Heavy bolter|sustained hits 1|36|Ranged|3|3|5|-1|2|
-000003653||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003653||1||Laser destroyer|heavy|36|Ranged|3|3|14|-4|D6+1|
-000003653||1||Multi-melta|melta 2|18|Ranged|2|3|9|-4|D6|
-000003653||1||Quad heavy bolter|sustained hits 1, twin-linked|36|Ranged|6|3|5|-1|2|
 000003653||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
+000003653||1||Quad heavy bolter|sustained hits 1, twin-linked|36|Ranged|6|3|5|-1|2|
+000003653||1||Multi-melta|melta 2|18|Ranged|2|3|9|-4|D6|
+000003653||1||Laser destroyer|heavy|36|Ranged|3|3|14|-4|D6+1|
+000003653||1||Quad lascannon||48|Ranged|4|3|12|-3|D6+1|
+000003653||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003653||1||||||0|3|-|0|-|
+000003653||1||Heavy bolter|sustained hits 1|36|Ranged|3|3|5|-1|2|
+000003653||1||Havoc launcher |blast|48|Ranged|D6|3|5|0|1|
+000003653||1||Fellblade accelerator cannon – HE shells|blast|72|Ranged|2D6|3|8|-1|2|
+000003653||2||Fellblade accelerator cannon – AP shells||72|Ranged|2|3|14|-3|6|
+000003653||1||Demolisher cannon|blast|24|Ranged|D6+3|3|14|-3|D6|
 000003653||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
 000003653||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
 000003653|1|1||Combi-weapon|anti-infantry 4+, devastating wounds, rapid fire 1|24|Ranged|1|4|4|0|1|
-000003654||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
-000003654||1||Heavy bolter|sustained hits 1|36|Ranged|3|3|5|-1|2|
-000003654||1||||||0|3|-|0|-|
-000003654||1||Fellblade accelerator cannon – HE shells|blast|72|Ranged|2D6|3|8|-1|2|
-000003654||1||Demolisher cannon|blast|24|Ranged|D6+3|3|14|-3|D6|
-000003654||1||Havoc launcher |blast|48|Ranged|D6|3|5|0|1|
-000003654||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003654||1||Laser destroyer|heavy|36|Ranged|3|3|14|-4|D6+1|
-000003654||1||Multi-melta|melta 2|18|Ranged|2|3|9|-4|D6|
-000003654||1||Quad heavy bolter|sustained hits 1, twin-linked|36|Ranged|6|3|5|-1|2|
-000003654||1||Quad lascannon||48|Ranged|4|3|12|-3|D6+1|
-000003654||1||Fellblade accelerator cannon – AP shells||72|Ranged|2|3|14|-3|6|
 000003654||1||Storm bolter|rapid fire 2|24|Ranged|2|3|4|0|1|
+000003654||1||Quad lascannon||48|Ranged|4|3|12|-3|D6+1|
+000003654||1||Quad heavy bolter|sustained hits 1, twin-linked|36|Ranged|6|3|5|-1|2|
+000003654||1||Multi-melta|melta 2|18|Ranged|2|3|9|-4|D6|
+000003654||1||Laser destroyer|heavy|36|Ranged|3|3|14|-4|D6+1|
+000003654||1||Fellblade accelerator cannon – AP shells||72|Ranged|2|3|14|-3|6|
+000003654||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003654||1||Havoc launcher |blast|48|Ranged|D6|3|5|0|1|
+000003654||1||Demolisher cannon|blast|24|Ranged|D6+3|3|14|-3|D6|
+000003654||1||Fellblade accelerator cannon – HE shells|blast|72|Ranged|2D6|3|8|-1|2|
+000003654||1||||||0|3|-|0|-|
+000003654||1||Heavy bolter|sustained hits 1|36|Ranged|3|3|5|-1|2|
 000003654||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
+000003654||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
 000003654||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|3|5|-1|2|
 000003654|1|1||Combi-weapon|anti-infantry 4+, devastating wounds, rapid fire 1|24|Ranged|1|4|4|0|1|
 000003655||1||Cyclone missile launcher – frag|BLAST|36|Ranged|2D6 |3|4|0|1|
@@ -7317,76 +7317,76 @@
 000003841||1||Mechanicus pistol|devastating wounds, pistol|12|Ranged|1|3|6|-1|1|
 000003841||1||Control stave||Melee|Melee|4|3|6|-1|1|
 000003842||1||Plasma caliver – standard||30|Ranged|2|4|7|-2|1|
-000003842||1||Transuranic arquebus|heavy, precision|36|Ranged|1|4|7|-2|D3|
-000003842||1||Alpha combat weapon||Melee|Melee|2|4|5|-1|1|
+000003842||2||Plasma caliver – supercharge|hazardous|30|Ranged|2|4|8|-3|2|
+000003842||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
 000003842||1||Mechanicus pistol|devastating wounds, pistol|12|Ranged|1|4|6|-1|1|
 000003842||1||Arc rifle|anti-vehicle 4+, devastating wounds, rapid fire 1|30|Ranged|1|4|8|-1|D3|
-000003842||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
+000003842||1||Alpha combat weapon||Melee|Melee|2|4|5|-1|1|
 000003842||1||Galvanic rifle||30|Ranged|2|4|4|0|1|
-000003842||1||Plasma caliver – supercharge|hazardous|30|Ranged|2|4|8|-3|2|
-000003843||1||Transuranic arquebus|heavy, precision|36|Ranged|1|4|7|-2|D3|
-000003843||1||Plasma caliver – standard||30|Ranged|2|4|7|-2|1|
-000003843||2||Plasma caliver – supercharge|hazardous|30|Ranged|2|4|8|-3|2|
-000003843||1||Alpha combat weapon||Melee|Melee|2|4|5|-1|1|
-000003843||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
-000003843||1||Mechanicus pistol|devastating wounds, pistol|12|Ranged|1|4|6|-1|1|
-000003843||1||Arc rifle|anti-vehicle 4+, devastating wounds, rapid fire 1|30|Ranged|1|4|8|-1|D3|
+000003842||1||Transuranic arquebus|heavy, precision|36|Ranged|1|4|7|-2|D3|
 000003843||1||Radium carbine|anti-infantry 4+|18|Ranged|3|4|3|0|1|
-000003844||1||Close combat weapon||Melee|Melee|4|4|4|-1|1|
+000003843||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
+000003843||1||Plasma caliver – supercharge|hazardous|30|Ranged|2|4|8|-3|2|
+000003843||1||Alpha combat weapon||Melee|Melee|2|4|5|-1|1|
+000003843||1||Arc rifle|anti-vehicle 4+, devastating wounds, rapid fire 1|30|Ranged|1|4|8|-1|D3|
+000003843||1||Plasma caliver – standard||30|Ranged|2|4|7|-2|1|
+000003843||1||Transuranic arquebus|heavy, precision|36|Ranged|1|4|7|-2|D3|
+000003843||1||Mechanicus pistol|devastating wounds, pistol|12|Ranged|1|4|6|-1|1|
 000003844||1||Balefire pike|IGNORES COVER, TORRENT|12|Ranged|D6+3|N/A|5|-1|1|
+000003844||1||Close combat weapon||Melee|Melee|4|4|4|-1|1|
+000003845||1||Warp Curse – witchfire|psychic|18|Ranged|3|3|4|-1|2|
 000003845||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
 000003845||1||Autopistol|pistol|12|Ranged|1|4|3|0|1|
-000003845||1||Warp Curse – witchfire|psychic|18|Ranged|3|3|4|-1|2|
-000003845||2||Warp Curse – focused witchfire|hazardous, psychic, sustained hits 2|18|Ranged|3|3|5|-1|2|
+000003845||1||Warp Curse – focused witchfire|hazardous, psychic, sustained hits 2|18|Ranged|3|3|5|-1|2|
 000003845||1||Commune blade||Melee|Melee|2|4|4|-2|1|
 000003845||1||Commune stave|devastating wounds|Melee|Melee|2|4|3|0|D3|
-000003846||1||Bolt pistol|pistol|12|Ranged|1|3|4|0|1|
-000003846||1||Power fist||Melee|Melee|3|3|6|-2|2|
 000003846||1||Ogryn weapons||Melee|Melee|5|3|7|-1|2|
-000003847||1||Enforcer pistol|pistol|12|Ranged|1|3|4|0|1|
-000003847||1||Autogun|rapid fire 1|24|Ranged|1|3|3|0|1|
-000003847||1||Power weapon||Melee|Melee|3|3|4|-2|1|
-000003847||1||Power fist||Melee|Melee|3|3|6|-2|2|
+000003846||1||Power fist||Melee|Melee|3|3|6|-2|2|
+000003846||1||Bolt pistol|pistol|12|Ranged|1|3|4|0|1|
 000003847||1||Enforcer melee weapon||Melee|Melee|4|3|4|0|1|
-000003847||1||Lasgun|rapid fire 1|24|Ranged|1|3|3|0|1|
 000003847||1||Shotgun|assault|12|Ranged|2|3|4|0|1|
-000003848||1||Chaos stave|psychic|Melee|Melee|1|4|6|-1|D3|
+000003847||1||Power fist||Melee|Melee|3|3|6|-2|2|
+000003847||1||Autogun|rapid fire 1|24|Ranged|1|3|3|0|1|
+000003847||1||Enforcer pistol|pistol|12|Ranged|1|3|4|0|1|
+000003847||1||Lasgun|rapid fire 1|24|Ranged|1|3|3|0|1|
+000003847||1||Power weapon||Melee|Melee|3|3|4|-2|1|
 000003848||1||Psychic Strike – witchfire|blast, devastating wounds, psychic|12|Ranged|D6|3|6|-2|1|
-000003848||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
+000003848||1||Chaos stave|psychic|Melee|Melee|1|4|6|-1|D3|
 000003848||1||Psychic Strike – focused witchfire|blast, devastating wounds, hazardous, psychic|12|Ranged|D6+3|3|6|-2|2|
+000003848||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
+000003849||1||Autopistol|pistol|12|Ranged|1|4|3|0|1|
 000003849||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003849||1||Brutal assault weapon||Melee|Melee|2|4|3|0|1|
-000003849||1||Autopistol|pistol|12|Ranged|1|4|3|0|1|
-000003850||1||Autogun|rapid fire 1|24|Ranged|1|4|3|0|1|
-000003850||1||Grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
-000003850||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
-000003850||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003850||1||Grenade launcher – krak||24|Ranged|1|4|9|-2|D3|
 000003850||1||Autopistol|pistol|12|Ranged|1|4|3|0|1|
+000003850||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
+000003850||1||Grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
+000003850||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
+000003850||1||Autogun|rapid fire 1|24|Ranged|1|4|3|0|1|
 000003850||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
 000003850||1||Brutal assault weapon||Melee|Melee|2|4|3|0|1|
 000003850||1||Heavy stubber|heavy, rapid fire 3|36|Ranged|4|5|4|0|1|
-000003851||1||Blasphemous appendages||Melee|Melee|2|4|4|0|1|
 000003851||1||Hideous mutations||Melee|Melee|D6+2|4|5|-1|2|
-000003852||1||Close combat weapon||Melee|Melee|2|4|4|0|1|
-000003852||1||Corrupted stave|devastating wounds, psychic|Melee|Melee|2|4|4|-1|D3|
-000003852||1||Chainsword||Melee|Melee|3|4|4|0|1|
+000003851||1||Blasphemous appendages||Melee|Melee|2|4|4|0|1|
 000003852||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|4|8|-3|2|
-000003852||2||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
+000003852||1||Chainsword||Melee|Melee|3|4|4|0|1|
+000003852||1||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
 000003852||1||Corrupted stave|devastating wounds, psychic|18|Ranged|D3|4|5|-1|1|
 000003852||1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003852||1||Autopistol|pistol|12|Ranged|1|4|3|0|1|
 000003852||1||Great weapon||Melee|Melee|2|5|8|-1|2|
-000003853||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
-000003853||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
-000003853||1||Chainsword||Melee|Melee|3|4|3|0|1|
-000003853||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
-000003853||2||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
+000003852||1||Corrupted stave|devastating wounds, psychic|Melee|Melee|2|4|4|-1|D3|
+000003852||1||Close combat weapon||Melee|Melee|2|4|4|0|1|
+000003853||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
 000003853||1||Corrupted pistol|pistol|12|Ranged|1|4|4|-1|1|
 000003853||1||Power weapon||Melee|Melee|2|4|4|-2|1|
-000003853||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
-000003853||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
+000003853||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
+000003853||1||Chainsword||Melee|Melee|3|4|3|0|1|
 000003853||1||Cultist sniper rifle|heavy, precision|36|Ranged|1|4|4|-2|2|
+000003853||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
+000003853||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
+000003853||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
+000003853||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
 000003853||1||Cultist grenade launcher – krak||24|Ranged|1|4|9|-2|D3|
 000003853||2||Cultist grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
 000003853||1||Boltgun|rapid fire 1|24|Ranged|1|4|4|0|1|
@@ -7441,19 +7441,19 @@
 000003874|8|1||Close combat weapon||Melee|Melee|3|3|4|0|1|
 000003874|9|1||Power fist||Melee|Melee|3|3|8|-2|2|
 000003874|10|1||Power weapon||Melee|Melee|4|3|5|-2|1|
-000003875||1||Twin lightning claws|twin-linked|Melee|Melee|4|3|5|-2|1|
-000003875||1||Boltgun||24|Ranged|2|3|4|0|1|
 000003875||1||Bolt pistol|pistol|12|Ranged|1|3|4|0|1|
+000003875||1||Twin lightning claws|twin-linked|Melee|Melee|4|3|5|-2|1|
+000003875||1||Power fist||Melee|Melee|3|3|8|-2|2|
+000003875||1||Deathwatch twin boltgun|TWIN-LINKED|24|Ranged|2|3|4|0|1|
+000003875||1||Long Vigil melee weapon||Melee|Melee|3|3|5|-2|1|
+000003875||1||Force weapon|psychic|Melee|Melee|5|2|5|-3|D3|
 000003875||1||Frag cannon|blast, heavy, rapid fire d3|18|Ranged|D3|4|7|-1|2|
 000003875||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003875||1||Long Vigil ranged weapon|anti-infantry 4+, devastating wounds, rapid fire 1|24|Ranged|1|4|4|0|1|
 000003875||1||Psychic Cleanse|psychic|24|Ranged|D6|3|5|-1|D3|
-000003875||1||Artificer crozius||Melee|Melee|5|2|6|-1|2|
 000003875||1||Close combat weapon||Melee|Melee|3|3|5|-2|1|
-000003875||1||Force weapon|psychic|Melee|Melee|5|2|5|-3|D3|
-000003875||1||Long Vigil melee weapon||Melee|Melee|3|3|5|-2|1|
-000003875||1||Deathwatch twin boltgun|TWIN-LINKED|24|Ranged|2|3|4|0|1|
-000003875||1||Power fist||Melee|Melee|3|3|8|-2|2|
+000003875||1||Artificer crozius||Melee|Melee|5|2|6|-1|2|
+000003875||1||Boltgun||24|Ranged|2|3|4|0|1|
 000003876|1|1||Bolt pistol|pistol|12|Ranged|1|3|4|0|1|
 000003876|2|1||Boltgun||24|Ranged|2|3|4|0|1|
 000003876|3|1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
@@ -7473,18 +7473,18 @@
 000003876|17|1||Paired accursed weapons|twin-linked|Melee|Melee|4|3|5|-2|1|
 000003876|18|1||Power fist||Melee|Melee|3|3|8|-2|2|
 000003877||1||Lictor claws and talons|precision|Melee|Melee|6|2|7|-2|2|
-000003878||1||Clawed limbs||Melee|Melee|6|2|5|-1|1|
 000003878||1||Barbed ovipositor|anti-infantry 3+, extra attacks|Melee|Melee|1|2|3|-2|3|
+000003878||1||Clawed limbs||Melee|Melee|6|2|5|-1|1|
 000003879||1||Monstrous scything talons|extra attacks|Melee|Melee|4|2|7|-2|2|
 000003879||1||Tyrant talons||Melee|Melee|5|2|7|-2|2|
-000003879||1||Stranglethorn cannon|blast|36|Ranged|D6+1|2|7|-1|2|
 000003879||1||Heavy venom cannon|blast|36|Ranged|D3|2|9|-2|3|
+000003879||1||Stranglethorn cannon|blast|36|Ranged|D6+1|2|7|-1|2|
 000003879||1||Monstrous bonesword and lash whip|twin-linked|Melee|Melee|6|2|9|-2|3|
 000003880||1||Prime talons||Melee|Melee|6|2|6|-1|2|
 000003881||1||Blinding venom||Melee|Melee|1|4|3|0|1|
 000003881||1||Fleshborer|assault|18|Ranged|1|4|5|0|1|
-000003882||1||Flensing whips||Melee|Melee|6|4|7|-1|2|
 000003882||1||Tyrannocyte bio-weapons||24|Ranged|5|4|5|-1|2|
+000003882||1||Flensing whips||Melee|Melee|6|4|7|-1|2|
 000003883||1||Lictor claws and talons|precision|Melee|Melee|6|2|7|-2|2|
 000003884||1||Mawloc scything talons||Melee|Melee|16|3|8|-2|1|
 000003884||1||Distensible jaw|anti-infantry 4+, devastating wounds, extra attacks|Melee|Melee|1|3|5|0|3|
@@ -7640,15 +7640,15 @@
 000003922|7|1||Power weapon||Melee|Melee|4|3|4|-2|1|
 000003937|1|1||Sniper rifle|heavy, precision|36|Ranged|1|3|4|-2|2|
 000003937|2|1||Close combat weapons||Melee|Melee|2|5|2|0|1|
-000003938||1||Chainsword||Melee|Melee|5|3|3|0|1|
+000003938||1||Power weapon||Melee|Melee|4|3|4|-2|1|
 000003938||1||||||0|3|-|0|-|
 000003938||1||Bolt pistol|pistol|12|Ranged|1|3|4|0|1|
+000003938||1||Chainsword||Melee|Melee|5|3|3|0|1|
+000003938||1||Plasma pistol – standard|pistol|12|Ranged|1|3|7|-2|1|
 000003938||1||Boltgun|rapid fire 1|24|Ranged|1|3|4|0|1|
 000003938||1||Power fist||Melee|Melee|3|3|6|-2|2|
-000003938||1||Power weapon||Melee|Melee|4|3|4|-2|1|
-000003938||1||Laspistol|pistol|12|Ranged|1|3|3|0|1|
 000003938||1||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|3|8|-3|2|
-000003938||2||Plasma pistol – standard|pistol|12|Ranged|1|3|7|-2|1|
+000003938||1||Laspistol|pistol|12|Ranged|1|3|3|0|1|
 000003938|7|1||Close combat weapon||Melee|Melee|3|4|3|0|1|
 000003939||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
 000003939||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
@@ -7656,6 +7656,7 @@
 000003939||2||Grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
 000003939||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
 000003939||1||||||0|-|-|0|-|
+000003939||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
 000003939||1||||||0|-|-|0|-|
 000003939||1||Chainsword||Melee|Melee|4|4|3|0|1|
 000003939||1||Close combat weapon||Melee|Melee|2|4|3|0|1|
@@ -7663,10 +7664,11 @@
 000003939||1||Power weapon||Melee|Melee|3|4|4|-2|1|
 000003939||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
 000003939||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
-000003939||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
 000003939|1|1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003939|10|1||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
 000003939|10|2||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|4|8|-3|2|
+000003940||1||Close combat weapon||Melee|Melee|2|4|3|0|1|
+000003940||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
 000003940||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
 000003940||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003940||1||Grenade launcher – krak||24|Ranged|1|4|9|-2|D3|
@@ -7682,34 +7684,31 @@
 000003940||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
 000003940||2||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
 000003940||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
-000003940||1||Close combat weapon||Melee|Melee|2|4|3|0|1|
-000003940||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
 000003940|1|1||Bolt pistol|PISTOL|12|Ranged|1|4|4|0|1|
 000003940|2|1||Boltgun|rapid fire 1|24|Ranged|1|4|4|0|1|
 000003940|12|1||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
 000003940|12|2||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|4|8|-3|2|
 000003940|13|1||Sniper rifle|heavy, precision|36|Ranged|1|4|4|-2|2|
-000003941||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
-000003941||1||||||0|-|-|0|-|
-000003941||1||Close combat weapon||Melee|Melee|2|4|3|0|1|
+000003941||1||Grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
 000003941||1||Chainsword||Melee|Melee|4|4|3|0|1|
-000003941||1||||||0|-|-|0|-|
-000003941||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
-000003941||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
-000003941||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
-000003941||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
-000003941||1||Grenade launcher – krak||24|Ranged|1|4|9|-2|D3|
-000003941||2||Grenade launcher – frag|blast|24|Ranged|D3|4|4|0|1|
 000003941||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
 000003941||1||Trench club||Melee|Melee|3|4|4|0|1|
 000003941||1||||||0|-|-|0|-|
 000003941||1||Power weapon||Melee|Melee|3|4|4|-2|1|
+000003941||1||Close combat weapon||Melee|Melee|2|4|3|0|1|
 000003941||1||Power fist||Melee|Melee|3|4|6|-2|2|
+000003941||1||||||0|-|-|0|-|
+000003941||1||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|4|8|-3|2|
+000003941||2||Plasma gun – standard|rapid fire 1|24|Ranged|1|4|7|-2|1|
+000003941||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
+000003941||1||Laspistol|pistol|12|Ranged|1|4|3|0|1|
+000003941||1||||||0|-|-|0|-|
+000003941||1||Grenade launcher – krak||24|Ranged|1|4|9|-2|D3|
+000003941||1||Lasgun|rapid fire 1|24|Ranged|1|4|3|0|1|
 000003941|1|1||Boltgun|rapid fire 1|24|Ranged|1|4|4|0|1|
 000003941|2|1||Bolt pistol|pistol|12|Ranged|1|4|4|0|1|
 000003941|11|1||Plasma pistol – standard|pistol|12|Ranged|1|4|7|-2|1|
 000003941|11|2||Plasma pistol – supercharge|hazardous, pistol|12|Ranged|1|4|8|-3|2|
-000003942||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003942||1||||||0|-|-|0|-|
 000003942||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000003942||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
@@ -7725,6 +7724,7 @@
 000003942||1||||||0|-|-|0|-|
 000003942||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003942||1||||||0|-|-|0|-|
+000003942||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003942|1|1||Demolisher battle cannon|blast|24|Ranged|D6+1|4|14|-3|D6|
 000003942|2|1||Eradicator nova cannon|blast, ignores cover|36|Ranged|D3+6|4|7|-1|2|
 000003942|3|1||Executioner plasma cannon – standard|blast|36|Ranged|D6+3|4|7|-2|2|
@@ -7733,9 +7733,9 @@
 000003942|5|1||Punisher gatling cannon||24|Ranged|20|4|6|0|1|
 000003942|15|1||Vanquisher battle cannon|heavy|72|Ranged|1|4|18|-4|D6+6|
 000003943||1||Force weapon|psychic|Melee|Melee|3|4|6|-1|D3|
-000003943||1||Laspistol|pistol|12|Ranged|1|3|3|0|1|
 000003943||1||Psychic Maelstrom – witchfire|blast, devastating wounds, psychic|18|Ranged|D6|3|5|-2|1|
 000003943||2||Psychic Maelstrom – focused witchfire|blast, devastating wounds, hazardous, psychic|18|Ranged|D6+1|3|6|-2|2|
+000003943||1||Laspistol|pistol|12|Ranged|1|3|3|0|1|
 000003944||1||Twin battle cannon|blast, twin-linked|48|Ranged|D6+3|4|10|-1|3|
 000003944||1||Pulveriser cannon|blast|24|Ranged|D6|4|9|-3|3|
 000003944||1||Oppressor cannon|blast|72|Ranged|D6+3|4|12|-2|3|
@@ -8005,18 +8005,18 @@
 000003981||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003981||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003981||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003982||1||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
-000003982||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
-000003982||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
+000003982||1||Executioner plasma cannon – supercharge|blast, hazardous|36|Ranged|D6+3|4|8|-3|3|
+000003982||2||Executioner plasma cannon – standard|blast|36|Ranged|D6+3|4|7|-2|2|
 000003982||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
-000003982||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
-000003982||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
-000003982||1||Executioner plasma cannon – standard|blast|36|Ranged|D6+3|4|7|-2|2|
-000003982||2||Executioner plasma cannon – supercharge|blast, hazardous|36|Ranged|D6+3|4|8|-3|3|
 000003982||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000003982||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003982||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003982||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
+000003982||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
+000003982||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
+000003982||1||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
+000003982||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
+000003982||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003983||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
 000003983||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
 000003983||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
@@ -8028,35 +8028,33 @@
 000003983||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003983||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003983||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003984||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
-000003984||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003984||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
-000003984||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003984||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
 000003984||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
 000003984||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
 000003984||2||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
 000003984||1||Punisher gatling cannon||24|Ranged|20|4|6|0|1|
 000003984||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003984||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
+000003984||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
+000003984||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003984||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003984||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
+000003984||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
+000003985||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
+000003985||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003985||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
+000003985||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003985||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000003985||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
 000003985||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
-000003985||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
-000003985||2||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
+000003985||1||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
 000003985||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003985||1||Vanquisher battle cannon|heavy|72|Ranged|1|4|18|-4|D6+6|
 000003985||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
-000003985||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003985||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
-000003985||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003985||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003986||1||Storm eagle rockets|anti-infantry 2+, blast, indirect fire|120|Ranged|D6|4|7|-2|3|
+000003986||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
+000003986||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000003986||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000003986||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003986||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003986||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
-000003986||1||Storm eagle rockets|anti-infantry 2+, blast, indirect fire|120|Ranged|D6|4|7|-2|3|
-000003987||1||Twin battle cannon|blast, twin-linked|48|Ranged|D6+3|4|10|-1|3|
-000003987||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003987||1||Castigator gatling cannon||24|Ranged|12|4|5|0|1|
 000003987||1||Multi-melta|melta 2|18|Ranged|2|4|9|-4|D6|
 000003987||1||Coaxial autocannon||48|Ranged|2|4|9|-1|3|
@@ -8064,27 +8062,29 @@
 000003987||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003987||1||Meltagun|melta 2|12|Ranged|1|4|9|-4|D6|
 000003987||1||Oppressor cannon|blast|72|Ranged|D6+3|4|12|-2|3|
+000003987||1||Twin battle cannon|blast, twin-linked|48|Ranged|D6+3|4|10|-1|3|
+000003987||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003987||1||Pulveriser cannon|blast|24|Ranged|D6|4|9|-3|3|
-000003988||1||Missile launcher – frag|blast, heavy|48|Ranged|D6|4|4|0|1|
+000003988||1||Autocannon||48|Ranged|2|4|9|-1|3|
+000003988||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003988||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000003988||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
 000003988||1||Multi-laser||36|Ranged|4|4|6|0|1|
-000003988||1||Close combat weapon||Melee|Melee|2|4|6|0|1|
-000003988||1||Sentinel chainsaw||Melee|Melee|3|4|6|-1|1|
-000003988||1||Autocannon||48|Ranged|2|4|9|-1|3|
-000003988||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003988||1||Missile launcher – krak|heavy|48|Ranged|1|4|9|-2|D6|
+000003988||1||Missile launcher – frag|blast, heavy|48|Ranged|D6|4|4|0|1|
+000003988||2||Missile launcher – krak|heavy|48|Ranged|1|4|9|-2|D6|
 000003988||1||Plasma cannon – standard|blast|36|Ranged|D3|4|7|-2|1|
 000003988||2||Plasma cannon – supercharge|blast, hazardous|36|Ranged|D3|4|8|-3|2|
-000003989||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
-000003989||1||Volcano cannon|blast, heavy|96|Ranged|D3+1|4|24|-5|12|
-000003989||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
-000003989||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|4|5|-1|2|
+000003988||1||Close combat weapon||Melee|Melee|2|4|6|0|1|
+000003988||1||Sentinel chainsaw||Melee|Melee|3|4|6|-1|1|
 000003989||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
-000003990||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
-000003990||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|4|5|-1|2|
-000003990||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
+000003989||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|4|5|-1|2|
+000003989||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
+000003989||1||Volcano cannon|blast, heavy|96|Ranged|D3+1|4|24|-5|12|
+000003989||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
 000003990||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003990||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
+000003990||1||Twin heavy bolter|sustained hits 1, twin-linked|36|Ranged|3|4|5|-1|2|
+000003990||1||Twin heavy flamer|ignores cover, torrent, twin-linked|12|Ranged|D6|N/A|5|-1|1|
 000003990||1||Vulcan mega-bolter|sustained hits 1|48|Ranged|20|4|6|-1|2|
 000003990||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
 000003991||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
@@ -8108,18 +8108,23 @@
 000003994||1||Stormhammer cannon|blast|72|Ranged|3D6|4|12|-2|3|
 000003994||1||Twin battle cannon|blast, twin-linked|48|Ranged|D6+3|4|9|-1|3|
 000003994||1||Armoured tracks||Melee|Melee|6|4|8|0|1|
-000003995||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
-000003995||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000003995||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003995||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000003995||1||Medusa siege cannon|blast, indirect fire|36|Ranged|D6|4|12|-2|4|
 000003995||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003995||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
-000003996||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
+000003995||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
+000003995||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
+000003995||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003996||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003996||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000003996||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000003996||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003996||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
+000003997||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
+000003997||1||Militarum Multi-laser||36|Ranged|4|4|6|0|1|
+000003997||1||Volkite caliver|devastating wounds|24|Ranged|2|4|5|0|2|
+000003997||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
+000003997||1||Volkite culverin|devastating wounds|36|Ranged|4|4|6|0|2|
 000003997||1||Autocannon||48|Ranged|2|4|9|-1|3|
 000003997||1||Carnodon twin autocannon|twin-linked|48|Ranged|2|4|9|-1|3|
 000003997||1||Carnodon twin lascannon|twin-linked|48|Ranged|1|4|14|-3|D6+1|
@@ -8127,17 +8132,12 @@
 000003997||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000003997||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
 000003997||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003997||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
-000003997||1||Militarum Multi-laser||36|Ranged|4|4|6|0|1|
-000003997||1||Volkite caliver|devastating wounds|24|Ranged|2|4|5|0|2|
-000003997||1||Volkite culverin|devastating wounds|36|Ranged|4|4|6|0|2|
-000003997||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000003998||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
-000003998||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003998||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
-000003999||1||Colossus siege mortar|blast, devastating wounds|120|Ranged|D6|4|6|-1|D6+2|
-000003999||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003998||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000003999||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
+000003999||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
+000003999||1||Colossus siege mortar|blast, devastating wounds|120|Ranged|D6|4|6|-1|D6+2|
 000003999||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
 000003999||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000004000||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
@@ -8146,26 +8146,26 @@
 000004000||1||Armoured tracks||Melee|Melee|6|4|7|0|1|
 000004001||1||Sergeant’s close combat weapon||Melee|Melee|2|4|4|-2|1|
 000004001||1||Close combat weapon||Melee|Melee|1|4|3|0|1|
+000004001||1||Heavy stubber|heavy, rapid fire 3|36|Ranged|3|4|4|0|1|
 000004001||1||Flamer|ignores cover, torrent|12|Ranged|D6|N/A|4|0|1|
 000004001||1||Grenade launcher – frag|blast|24|Ranged|D3|3|4|0|1|
 000004001||2||Grenade launcher – krak||24|Ranged|1|3|9|-2|D3|
 000004001||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000004001||1||Heavy stubber|heavy, rapid fire 3|36|Ranged|3|4|4|0|1|
 000004001||1||Hot-shot lasgun|rapid fire 1|24|Ranged|1|3|3|-1|1|
 000004001||1||Meltagun|melta 2|12|Ranged|1|3|9|-4|D6|
 000004001||1||Plasma gun – standard|rapid fire 1|24|Ranged|1|3|7|-2|1|
 000004001||2||Plasma gun – supercharge|hazardous, rapid fire 1|24|Ranged|1|3|8|-3|2|
 000004001||1||Sergeant’s pistol|pistol|12|Ranged|1|3|3|-1|1|
 000004001||1||Sniper rifle|heavy, precision|36|Ranged|1|3|4|-2|2|
+000004002||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000004002||1||Storm bolter|rapid fire 2|24|Ranged|2|4|4|0|1|
+000004002||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
 000004002||1||Hunter-killer missile|one shot|48|Ranged|1|4|14|-3|D6|
 000004002||1||Heavy stubber|rapid fire 3|36|Ranged|3|4|4|0|1|
 000004002||1||Heavy flamer|ignores cover, torrent|12|Ranged|D6|N/A|5|-1|1|
-000004002||1||Heavy bolter|sustained hits 1|36|Ranged|3|4|5|-1|2|
 000004002||1||Lascannon||48|Ranged|1|4|12|-3|D6+1|
 000004002||1||Autocannon||48|Ranged|2|4|9|-1|3|
 000004002||1||Dominus triple bombard|blast, indirect fire|48|Ranged|2D6|4|12|-2|3|
-000004002||1||Armoured tracks||Melee|Melee|3|4|6|0|1|
 000004003||1||Battery close combat weapons||Melee|Melee|5|4|3|0|1|
 000004003||1||Earthshaker cannon|blast, heavy, indirect fire|240|Ranged|D6+3|5|8|-2|2|
 000004004||1||Close combat weapon||Melee|Melee|2|4|6|0|1|
