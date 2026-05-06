@@ -1,15 +1,8 @@
 {
   "source": "Wahapedia WH40k 10th Edition Data Export",
-  "updated_at_utc": "2026-05-06T11:48:46+00:00",
+  "updated_at_utc": "2026-05-06T14:14:21+00:00",
   "bootstrap_run": false,
   "changed_files": [
-    "Abilities.csv",
-    "Enhancements.csv",
-    "Datasheets_wargear.csv",
-    "Datasheets_stratagems.csv",
-    "Datasheets_enhancements.csv",
-    "Datasheets_leader.csv",
-    "Detachment_abilities.csv",
     "core_rules.json"
   ],
   "skipped_missing_files": [
@@ -80,7 +73,7 @@
     },
     "core_rules.json": {
       "url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
-      "sha256": "724cfc3be5472da1ef4175a6af4e4d548f984215788e54e49a6570e790bb33fe"
+      "sha256": "27902a36439c55506e96718f488b8707195224061f446fe877e0958e6d72765a"
     }
   }
 }
