@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-05-09T19:06:50+00:00",
+  "generated_at_utc": "2026-05-09T20:47:52+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -4043,6 +4043,23 @@
       "updated_at_utc": "2026-03-14T13:08:05+00:00",
       "search_engine": "google_images",
       "local_path": "assets/unit-previews/astramilitarum__cadianheavyweaponssquad.jpg",
+      "error": ""
+    },
+    {
+      "unit_key": "astramilitarum::cadianreconsquad",
+      "unit_name": "Cadian Recon Squad",
+      "faction_name": "Astra Militarum",
+      "datasheet_ids": [
+        "000004224"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "not_found",
+      "lookup_query": "warhammer.com \"Cadian Recon Squad\" \"Warhammer 40000\"",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "updated_at_utc": "2026-05-09T20:46:59+00:00",
+      "search_engine": "",
       "error": ""
     },
     {
@@ -26786,6 +26803,24 @@
       "source_page_title": "",
       "image_url": "",
       "updated_at_utc": "2026-03-14T08:38:39+00:00",
+      "search_engine": "",
+      "error": ""
+    },
+    {
+      "unit_key": "tyranids::theredterror",
+      "unit_name": "The Red Terror",
+      "faction_name": "Tyranids",
+      "datasheet_ids": [
+        "000004225"
+      ],
+      "resolver": "warhammer_page_preview_v3",
+      "status": "pending",
+      "lookup_query": "warhammer.com The Red Terror",
+      "source_page_url": "",
+      "source_page_title": "",
+      "image_url": "",
+      "local_path": "",
+      "updated_at_utc": "",
       "search_engine": "",
       "error": ""
     },
