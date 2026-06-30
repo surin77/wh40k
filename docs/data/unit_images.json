@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-06-30T12:10:55+00:00",
+  "generated_at_utc": "2026-06-30T15:29:49+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -834,15 +834,16 @@
       "datasheet_ids": [
         "000001458"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Contemptor-achillus Dreadnought",
       "source_page_url": "https://merch.warhammer.com/products/joytoy-warhammer-the-horus-heresy-action-figure-legio-custodes-contemptor-achillus-dreadnought-1-18-scale-preorder",
-      "source_page_title": "JoyToy Warhammer The Horus...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRI0MeLt_zgubv5RfEHdVoQfLLggCyKKnNDl5Bbg49KOmi9d1VLrQlaCAp&s",
-      "updated_at_utc": "2026-03-13T09:22:09+00:00",
+      "source_page_title": "Warhammer Officially Licensed Merchandise",
+      "image_url": "http://merch-usa.warhammer.com/cdn/shop/files/WHOLM.jpg?v=1770206538",
+      "updated_at_utc": "2026-06-30T15:29:38+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__contemptorachillusdreadnought.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__contemptorachillusdreadnought.webp",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::contemptorgalatusdreadnought",
@@ -851,15 +852,16 @@
       "datasheet_ids": [
         "000001557"
       ],
-      "resolver": "google_images_warhammer_query_v2",
+      "resolver": "warhammer_page_preview_v3",
       "status": "ok",
       "lookup_query": "warhammer.com Contemptor-galatus Dreadnought",
       "source_page_url": "https://merch.warhammer.com/products/joytoy-warhammer-the-horus-heresy-action-figure-legio-custodes-contemptor-galatus-dreadnought-1-18-scale-preorder",
-      "source_page_title": "JoyToy Warhammer The Horus...",
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQib8FYyLtnjmlqyrBMMazL9vHn1_giUTu6pqZIs4VeX3GnHR6tUohta_Y17g&s",
-      "updated_at_utc": "2026-03-13T09:22:10+00:00",
+      "source_page_title": "Warhammer Officially Licensed Merchandise",
+      "image_url": "http://merch-usa.warhammer.com/cdn/shop/files/WHOLM.jpg?v=1770206538",
+      "updated_at_utc": "2026-06-30T15:29:39+00:00",
       "search_engine": "google_images",
-      "local_path": "assets/unit-previews/adeptuscustodes__contemptorgalatusdreadnought.jpg"
+      "local_path": "assets/unit-previews/adeptuscustodes__contemptorgalatusdreadnought.webp",
+      "error": ""
     },
     {
       "unit_key": "adeptuscustodes::coronusgravcarrier",
