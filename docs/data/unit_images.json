@@ -2,7 +2,7 @@
   "source": "warhammer.com page preview images discovered via Google Images search",
   "resolver": "warhammer_page_preview_v3",
   "query_template": "warhammer.com {unit_name}",
-  "generated_at_utc": "2026-07-17T17:14:00+00:00",
+  "generated_at_utc": "2026-07-17T19:11:57+00:00",
   "entries_with_images": 483,
   "entries_with_local_cache": 483,
   "lookups_performed": 60,
@@ -377,7 +377,7 @@
       "source_page_url": "",
       "source_page_title": "",
       "image_url": "",
-      "updated_at_utc": "2026-07-03T18:14:14+00:00",
+      "updated_at_utc": "2026-07-17T19:11:40+00:00",
       "search_engine": "",
       "error": ""
     },
