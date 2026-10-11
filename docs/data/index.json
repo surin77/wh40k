@@ -1,6 +1,6 @@
 {
   "source": "Wahapedia WH40k 10th Edition Data Export",
-  "updated_at_utc": "2026-10-11T06:51:44+00:00",
+  "updated_at_utc": "2026-10-11T13:48:46+00:00",
   "bootstrap_run": false,
   "changed_files": [
     "core_rules.json"
@@ -73,7 +73,7 @@
     },
     "core_rules.json": {
       "url": "https://wahapedia.ru/wh40k10ed/the-rules/core-rules/",
-      "sha256": "288d9eb347a490ec00f651ad0ad98abcdfcabd48bfe4c7f36b3491d5de63ec48"
+      "sha256": "3d9e748ac343f69d914b804f546a8a16a01383575c832c397464d60420ccd1bc"
     }
   }
 }
